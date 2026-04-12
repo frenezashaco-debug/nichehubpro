@@ -117,22 +117,7 @@
       </div>
       <a href="category.html" class="btn btn-outline btn-sm">View All &rarr;</a>
     </div>
-
-    <div class="grid grid-3">
-      <div class="card">
-        <img src="images/how-to-stop-overthinking-at-night.jpg" alt="How to Stop Overthinking at Night" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;">
-        <div class="card-body">
-          <span class="card-tag">Mental Wellness</span>
-          <h3><a href="articles/how-to-stop-overthinking-at-night.html">How to Stop Overthinking at Night</a></h3>
-          <p>Your brain won't shut off at 2am. Here are 5 science-backed methods to quiet racing thoughts and finally sleep.</p>
-          <div class="card-meta">
-            <span>📅 Apr 2026</span>
-            <span>⏱ 8 min read</span>
-          </div>
-          <a href="articles/how-to-stop-overthinking-at-night.html" class="read-more">Read article &rarr;</a>
-        </div>
-      </div>
-    </div>
+    <div class="grid grid-3" id="latest-grid"></div>
   </div>
 </section>
 
@@ -165,7 +150,6 @@
       </div>
       <div class="footer-col">
         <h4>Mental Wellness</h4>
-        <a href="articles/how-to-stop-overthinking-at-night.html">Stop Overthinking at Night</a>
         <a href="category.html?cat=mental-wellness">All Articles &rarr;</a>
       </div>
       <div class="footer-col">
@@ -193,6 +177,34 @@
 
 <button id="back-to-top" aria-label="Back to top">↑</button>
 
+<script src="articles.js"></script>
 <script src="script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Update article count in stats bar
+  const statNum = document.querySelector('.stat-num');
+  if (statNum) statNum.textContent = ARTICLES.length;
+
+  // Render latest articles grid (max 6)
+  const grid = document.getElementById('latest-grid');
+  if (grid && ARTICLES.length > 0) {
+    grid.innerHTML = ARTICLES.slice(0, 6).map(a => `
+      <div class="card">
+        <img src="${a.image}" alt="${a.title}" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;" loading="lazy">
+        <div class="card-body">
+          <span class="card-tag">${a.category}</span>
+          <h3><a href="articles/${a.slug}.html">${a.title}</a></h3>
+          <p>${a.excerpt}</p>
+          <div class="card-meta">
+            <span>📅 ${a.date}</span>
+            <span>⏱ ${a.read_time} min read</span>
+          </div>
+          <a href="articles/${a.slug}.html" class="read-more">Read article &rarr;</a>
+        </div>
+      </div>
+    `).join('');
+  }
+});
+</script>
 </body>
 </html>

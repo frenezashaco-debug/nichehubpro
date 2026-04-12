@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mental Wellness Articles — NicheHubPro</title>
-  <meta name="description" content="Browse all mental wellness articles on NicheHubPro. Science-backed guides on anxiety, burnout, sleep, mindfulness, and emotional resilience.">
+  <title>Articles — NicheHubPro</title>
+  <meta name="description" content="Browse all articles on NicheHubPro. Science-backed guides on mental wellness, productivity, and healthy lifestyle.">
   <link rel="canonical" href="https://nichehubpro.com/category.html">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +12,6 @@
 
 <div id="progress-bar"></div>
 
-<!-- NAV -->
 <nav class="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">NicheHub<span>Pro</span></a>
@@ -32,20 +31,20 @@
   </div>
 </nav>
 
-<!-- CATEGORY HEADER -->
-<div class="cat-header">
-  <span class="hero-badge" style="margin-bottom:16px;">🧠 Mental Wellness</span>
-  <h1>Mental Wellness</h1>
-  <p>Evidence-based guides on anxiety, burnout, stress, sleep, mindfulness, and emotional resilience.</p>
+<!-- DYNAMIC HEADER -->
+<div class="cat-header" id="cat-header">
+  <span class="hero-badge" id="cat-badge"></span>
+  <h1 id="cat-title"></h1>
+  <p id="cat-desc"></p>
 </div>
 
 <!-- CATEGORY TABS -->
 <div class="cat-tabs">
   <div class="cat-tabs-inner">
-    <div class="cat-tab active">All</div>
-    <div class="cat-tab">Mental Wellness</div>
-    <div class="cat-tab">Productivity</div>
-    <div class="cat-tab">Healthy Lifestyle</div>
+    <div class="cat-tab" data-cat="all">All</div>
+    <div class="cat-tab" data-cat="mental-wellness">Mental Wellness</div>
+    <div class="cat-tab" data-cat="productivity">Productivity</div>
+    <div class="cat-tab" data-cat="healthy-lifestyle">Healthy Lifestyle</div>
   </div>
 </div>
 
@@ -57,24 +56,12 @@
 <!-- ARTICLE GRID -->
 <section class="section">
   <div class="container">
-    <div class="grid grid-3" id="article-grid">
-
-      <div class="card">
-        <img src="images/how-to-stop-overthinking-at-night.jpg" alt="How to Stop Overthinking at Night" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;">
-        <div class="card-body">
-          <span class="card-tag">Mental Wellness</span>
-          <h3><a href="articles/how-to-stop-overthinking-at-night.html">How to Stop Overthinking at Night</a></h3>
-          <p>Your brain won't shut off at 2am. Here are 5 science-backed methods to quiet racing thoughts and finally sleep.</p>
-          <div class="card-meta"><span>📅 Apr 2026</span><span>⏱ 8 min</span></div>
-          <a href="articles/how-to-stop-overthinking-at-night.html" class="read-more">Read article &rarr;</a>
-        </div>
-      </div>
-
+    <div class="grid grid-3" id="article-grid"></div>
+    <div id="empty-state" style="display:none;text-align:center;padding:60px 20px;">
+      <p style="font-size:1.1rem;color:var(--gray);">No articles in this category yet. Check back soon.</p>
+      <a href="category.html" class="btn btn-outline btn-sm" style="margin-top:16px;">View All Articles</a>
     </div>
-
-    <!-- AD SLOT MID-PAGE -->
     <div class="ad-slot ad-slot-banner" style="margin-top:40px;">Advertisement</div>
-
   </div>
 </section>
 
@@ -100,15 +87,10 @@
         <p class="footer-brand-desc">Free, science-backed guides on mental wellness, productivity, and healthy living.</p>
       </div>
       <div class="footer-col">
-        <h4>Mental Wellness</h4>
-        <a href="articles/how-to-stop-overthinking-at-night.html">Stop Overthinking at Night</a>
-        <a href="category.html?cat=mental-wellness">All Articles &rarr;</a>
-      </div>
-      <div class="footer-col">
-        <h4>Productivity</h4>
-        <a href="article.html">Focus Systems</a>
-        <a href="article.html">Time Management</a>
-        <a href="category.html?cat=productivity">All Articles &rarr;</a>
+        <h4>Categories</h4>
+        <a href="category.html?cat=mental-wellness">Mental Wellness</a>
+        <a href="category.html?cat=productivity">Productivity</a>
+        <a href="category.html?cat=healthy-lifestyle">Healthy Lifestyle</a>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
@@ -126,6 +108,75 @@
 </footer>
 
 <button id="back-to-top" aria-label="Back to top">↑</button>
+<script src="articles.js"></script>
 <script src="script.js"></script>
+<script>
+const CAT_INFO = {
+  'all':               { name: 'All Articles',     emoji: '📚', desc: 'Every guide we have published — mental wellness, productivity, and healthy lifestyle.' },
+  'mental-wellness':   { name: 'Mental Wellness',  emoji: '🧠', desc: 'Science-backed guides on anxiety, stress, overthinking, and emotional resilience.' },
+  'productivity':      { name: 'Productivity',     emoji: '⚡', desc: 'Focus systems, time management, deep work, and habit building that actually sticks.' },
+  'healthy-lifestyle': { name: 'Healthy Lifestyle',emoji: '🌿', desc: 'Nutrition, sleep, movement, and sustainable habits for a healthier you.' },
+};
+
+function getActiveCat() {
+  return new URLSearchParams(window.location.search).get('cat') || 'all';
+}
+
+function renderHeader(cat) {
+  const info = CAT_INFO[cat] || CAT_INFO['all'];
+  document.getElementById('cat-badge').textContent = info.emoji + ' ' + info.name;
+  document.getElementById('cat-title').textContent = info.name;
+  document.getElementById('cat-desc').textContent  = info.desc;
+  document.title = info.name + ' — NicheHubPro';
+}
+
+function renderTabs(activeCat) {
+  document.querySelectorAll('.cat-tab').forEach(tab => {
+    tab.classList.toggle('active', tab.dataset.cat === activeCat);
+    tab.addEventListener('click', function() {
+      const cat = this.dataset.cat;
+      const url = cat === 'all' ? 'category.html' : 'category.html?cat=' + cat;
+      window.location.href = url;
+    });
+  });
+}
+
+function renderGrid(cat) {
+  const grid = document.getElementById('article-grid');
+  const empty = document.getElementById('empty-state');
+  const filtered = cat === 'all' ? ARTICLES : ARTICLES.filter(a => a.cat_slug === cat);
+
+  if (filtered.length === 0) {
+    grid.style.display = 'none';
+    empty.style.display = 'block';
+    return;
+  }
+
+  grid.style.display = '';
+  empty.style.display = 'none';
+  grid.innerHTML = filtered.map(a => `
+    <div class="card">
+      <img src="${a.image}" alt="${a.title}" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;" loading="lazy">
+      <div class="card-body">
+        <span class="card-tag">${a.category}</span>
+        <h3><a href="articles/${a.slug}.html">${a.title}</a></h3>
+        <p>${a.excerpt}</p>
+        <div class="card-meta">
+          <span>📅 ${a.date}</span>
+          <span>⏱ ${a.read_time} min read</span>
+        </div>
+        <a href="articles/${a.slug}.html" class="read-more">Read article &rarr;</a>
+      </div>
+    </div>
+  `).join('');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const cat = getActiveCat();
+  renderHeader(cat);
+  renderTabs(cat);
+  renderGrid(cat);
+});
+</script>
 </body>
 </html>
