@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Python scripts (local dev only — not part of the website)
+*.py
+
+# Tracking and log files
+*.txt
+publish_log.txt
+medium_urls.txt
+debug_raw*.txt
+
+# Config with secrets
+config.py
+
+# Misc local files
+*.zip
+*.pdf
+Logo.png
+pinterest_token.json
+
