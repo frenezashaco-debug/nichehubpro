@@ -3,8 +3,11 @@ __pycache__/
 *.pyo
 .env
 
-# Python scripts (local dev only — not part of the website)
+# Python — exclude all except the publisher pipeline
 *.py
+!batch_30days.py
+!publisher_v2.py
+!generate_cover.py
 
 # Tracking and log files
 *.txt
@@ -12,7 +15,7 @@ publish_log.txt
 medium_urls.txt
 debug_raw*.txt
 
-# Config with secrets
+# Config with secrets — NEVER commit
 config.py
 
 # Misc local files
@@ -22,5 +25,4 @@ Logo.png
 pinterest_token.json
 
 .claude/
-.github/
 pinterest_pins.csv
