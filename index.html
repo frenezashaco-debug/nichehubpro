@@ -39,12 +39,12 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-badge">New Article Every Day &middot; Free Forever</div>
-    <h1>Calm Your Mind.<br>Take Back Control.</h1>
-    <p>Science-backed strategies on mental wellness, productivity, and healthy living — written for real people with real lives.</p>
+    <div class="hero-badge">Free &middot; Research-Backed &middot; No Paywall</div>
+    <h1>Struggling with Anxiety<br>or Overthinking?</h1>
+    <p>Simple, honest guides on mental wellness, productivity, and healthy living — written like a knowledgeable friend, not a textbook.</p>
     <div class="hero-btns">
-      <a href="/category.html" class="btn">Browse Articles</a>
-      <a href="/about/" class="btn btn-outline" style="color:rgba(255,255,255,0.85);border-color:rgba(255,255,255,0.25);background:rgba(255,255,255,0.08);">Start Here &rarr;</a>
+      <a href="/mental-wellness/" class="btn">Start Reading &rarr;</a>
+      <a href="/about/" class="btn btn-outline" style="color:rgba(255,255,255,0.85);border-color:rgba(255,255,255,0.25);background:rgba(255,255,255,0.08);">About NicheHubPro</a>
     </div>
   </div>
 </section>
@@ -68,6 +68,13 @@
       <span class="stat-num">0</span>
       <span class="stat-label">Clickbait articles</span>
     </div>
+  </div>
+</div>
+
+<!-- TRUST SECTION -->
+<div class="trust-strip">
+  <div class="container">
+    <p class="trust-text">NicheHubPro was built for people dealing with stress, anxiety, and overthinking. Every article is written in plain language, backed by research, and built around one goal: giving you something you can actually use today.</p>
   </div>
 </div>
 
@@ -112,12 +119,13 @@
   <div class="container">
     <div class="section-header" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;">
       <div>
-        <span class="section-label">Latest</span>
-        <h2 class="section-title mb-0">Recent Articles</h2>
+        <span class="section-label">Start Here</span>
+        <h2 class="section-title mb-0">Latest Articles</h2>
+        <p class="section-sub" style="margin-bottom:0;margin-top:8px;">New guides published every day. Pick one that fits what you're going through right now.</p>
       </div>
-      <a href="/category.html" class="btn btn-outline btn-sm">View All &rarr;</a>
+      <a href="/mental-wellness/" class="btn btn-outline btn-sm">Browse All &rarr;</a>
     </div>
-    <div class="grid grid-3" id="latest-grid"></div>
+    <div class="articles-grid" id="latest-grid"></div>
   </div>
 </section>
 
@@ -169,12 +177,30 @@ document.addEventListener('DOMContentLoaded', function() {
   const statNum = document.querySelector('.stat-num');
   if (statNum) statNum.textContent = ARTICLES.length;
 
-  // Render latest articles grid (max 6)
+  // Render articles grid — featured first card, rest as normal
   const grid = document.getElementById('latest-grid');
   if (grid && ARTICLES.length > 0) {
-    grid.innerHTML = ARTICLES.slice(0, 6).map(a => `
+    const featured = ARTICLES[0];
+    const rest = ARTICLES.slice(1, 6);
+
+    const featuredHTML = `
+      <div class="card card-featured">
+        <img src="${featured.image}" alt="${featured.title}" class="card-featured-img" loading="lazy">
+        <div class="card-body">
+          <span class="card-tag">${featured.category}</span>
+          <h3 style="font-size:1.25rem;line-height:1.35;"><a href="articles/${featured.slug}.html">${featured.title}</a></h3>
+          <p style="font-size:0.92rem;">${featured.excerpt}</p>
+          <div class="card-meta">
+            <span>📅 ${featured.date}</span>
+            <span>⏱ ${featured.read_time} min read</span>
+          </div>
+          <a href="articles/${featured.slug}.html" class="read-more">Read article &rarr;</a>
+        </div>
+      </div>`;
+
+    const restHTML = rest.map(a => `
       <div class="card">
-        <img src="${a.image}" alt="${a.title}" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;" loading="lazy">
+        <img src="${a.image}" alt="${a.title}" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:185px;" loading="lazy">
         <div class="card-body">
           <span class="card-tag">${a.category}</span>
           <h3><a href="articles/${a.slug}.html">${a.title}</a></h3>
@@ -185,8 +211,9 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
           <a href="articles/${a.slug}.html" class="read-more">Read article &rarr;</a>
         </div>
-      </div>
-    `).join('');
+      </div>`).join('');
+
+    grid.innerHTML = featuredHTML + restHTML;
   }
 });
 </script>
