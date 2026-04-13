@@ -21,3 +21,6 @@ config.py
 Logo.png
 pinterest_token.json
 
+.claude/
+.github/
+pinterest_pins.csv

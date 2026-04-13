@@ -691,11 +691,12 @@ a:hover { color: var(--green-dk); }
   margin: 0 auto;
   padding: 0 24px;
   display: flex;
+  justify-content: center;
   gap: 4px;
   overflow-x: auto;
 }
 .cat-tab {
-  padding: 14px 18px;
+  padding: 14px 22px;
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--gray);
@@ -704,7 +705,27 @@ a:hover { color: var(--green-dk); }
   cursor: pointer;
   transition: color var(--trans), border-color var(--trans);
 }
-.cat-tab:hover, .cat-tab.active {
+/* All */
+.cat-tab:first-child:hover,
+.cat-tab:first-child.active {
+  color: var(--dark);
+  border-color: var(--dark);
+}
+/* Mental Wellness */
+.cat-tab[data-url*="mental-wellness"]:hover,
+.cat-tab[data-url*="mental-wellness"].active {
+  color: #7B9ED9;
+  border-color: #7B9ED9;
+}
+/* Productivity */
+.cat-tab[data-url*="productivity"]:hover,
+.cat-tab[data-url*="productivity"].active {
+  color: #E8925A;
+  border-color: #E8925A;
+}
+/* Healthy Lifestyle */
+.cat-tab[data-url*="healthy-lifestyle"]:hover,
+.cat-tab[data-url*="healthy-lifestyle"].active {
   color: var(--green);
   border-color: var(--green);
 }
@@ -856,64 +877,37 @@ a:hover { color: var(--green-dk); }
 /* ── FOOTER ───────────────────────────────────────────────────── */
 .footer {
   background: var(--dark);
-  color: rgba(255,255,255,0.7);
-  padding: 56px 24px 32px;
+  padding: 36px 24px 28px;
+  text-align: center;
 }
 .footer-inner {
   max-width: var(--max-w);
   margin: 0 auto;
 }
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  margin-bottom: 28px;
-}
-.footer-brand-name {
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: var(--white);
-  margin-bottom: 10px;
-}
-.footer-brand-name span { color: var(--green); }
-.footer-brand-desc {
-  font-size: 0.85rem;
-  line-height: 1.7;
-  max-width: 260px;
-  margin-bottom: 20px;
-}
-.footer-col h4 {
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--white);
-  margin-bottom: 16px;
-}
-.footer-col a {
-  display: block;
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.55);
-  margin-bottom: 9px;
-  transition: color var(--trans);
-}
-.footer-col a:hover { color: var(--green); }
-.footer-bottom {
+.footer-links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
-  font-size: 0.78rem;
-  color: rgba(255,255,255,0.35);
+  gap: 6px 14px;
+  margin-bottom: 16px;
 }
-.footer-bottom a {
-  color: rgba(255,255,255,0.4);
-  font-size: 0.78rem;
+.footer-links a {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
+  transition: color var(--trans);
 }
-.footer-bottom a:hover { color: var(--green); }
+.footer-links a:hover { color: var(--green); }
+.footer-links .sep {
+  color: rgba(255,255,255,0.2);
+  font-size: 0.85rem;
+  user-select: none;
+}
+.footer-bottom {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.3);
+  text-align: center;
+}
 
 /* ── PAGINATION ───────────────────────────────────────────────── */
 .pagination {
@@ -992,7 +986,6 @@ a:hover { color: var(--green-dk); }
 /* ── RESPONSIVE ───────────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
