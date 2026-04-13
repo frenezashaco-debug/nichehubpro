@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Wellness Articles — NicheHubPro</title>
+  <meta name="description" content="Science-backed guides on anxiety, stress, overthinking, and emotional resilience. Free, practical articles.">
+  <link rel="canonical" href="https://nichehubpro.com/mental-wellness/">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../" class="nav-logo">NicheHub<span>Pro</span></a>
+    <div class="nav-links">
+      <a href="../mental-wellness/">Mental Wellness</a>
+      <a href="../productivity/">Productivity</a>
+      <a href="../healthy-lifestyle/">Healthy Lifestyle</a>
+      <a href="../about/" class="nav-cta">Start Here</a>
+    </div>
+    <div class="nav-burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="../mental-wellness/">Mental Wellness</a>
+    <a href="../productivity/">Productivity</a>
+    <a href="../healthy-lifestyle/">Healthy Lifestyle</a>
+    <a href="../about/">About</a>
+  </div>
+</nav>
+
+<div class="cat-header">
+  <span class="hero-badge">🧠 Mental Wellness</span>
+  <h1>Mental Wellness</h1>
+  <p>Science-backed guides on anxiety, stress, overthinking, and emotional resilience.</p>
+</div>
+
+<div class="cat-tabs">
+  <div class="cat-tabs-inner">
+    <div class="cat-tab" data-url="../category.html">All</div>
+    <div class="cat-tab active" data-url="../mental-wellness/">Mental Wellness</div>
+    <div class="cat-tab" data-url="../productivity/">Productivity</div>
+    <div class="cat-tab" data-url="../healthy-lifestyle/">Healthy Lifestyle</div>
+  </div>
+</div>
+
+<div class="container" style="padding-top:28px;padding-bottom:0;">
+  <div class="ad-slot ad-slot-banner">Advertisement</div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-3" id="article-grid"></div>
+    <div id="empty-state" style="display:none;text-align:center;padding:60px 20px;">
+      <p style="font-size:1.1rem;color:var(--gray);">No articles yet. Check back soon.</p>
+    </div>
+    <div class="ad-slot ad-slot-banner" style="margin-top:40px;">Advertisement</div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="container">
+    <h2>Weekly Wellness Insights</h2>
+    <p>Get one actionable guide every week. No spam, no fluff.</p>
+    <form class="nl-form" onsubmit="return false;">
+      <input type="email" placeholder="Your email address">
+      <button class="btn" type="submit">Subscribe Free</button>
+    </form>
+    <p class="nl-note">No spam. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">NicheHub<span>Pro</span></div>
+        <p class="footer-brand-desc">Free, science-backed guides on mental wellness, productivity, and healthy living.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <a href="../mental-wellness/">Mental Wellness</a>
+        <a href="../productivity/">Productivity</a>
+        <a href="../healthy-lifestyle/">Healthy Lifestyle</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="../about/">About</a>
+        <a href="../contact/">Contact</a>
+        <a href="../privacy/">Privacy Policy</a>
+        <a href="../disclaimer/">Disclaimer</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 NicheHubPro. All rights reserved.</span>
+      <span><a href="../privacy/">Privacy</a> &nbsp;&middot;&nbsp; <a href="../disclaimer/">Disclaimer</a></span>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script src="../articles.js"></script>
+<script src="../script.js"></script>
+<script>
+  document.querySelectorAll('.cat-tab').forEach(tab => {
+    tab.addEventListener('click', function() { window.location.href = this.dataset.url; });
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+    const filtered = ARTICLES.filter(a => a.cat_slug === 'mental-wellness');
+    const grid = document.getElementById('article-grid');
+    const empty = document.getElementById('empty-state');
+    if (!filtered.length) { grid.style.display='none'; empty.style.display='block'; return; }
+    grid.innerHTML = filtered.map(a => `
+      <div class="card">
+        <img src="../${a.image}" alt="${a.title}" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;" loading="lazy">
+        <div class="card-body">
+          <span class="card-tag">${a.category}</span>
+          <h3><a href="../articles/${a.slug}.html">${a.title}</a></h3>
+          <p>${a.excerpt}</p>
+          <div class="card-meta"><span>📅 ${a.date}</span><span>⏱ ${a.read_time} min read</span></div>
+          <a href="../articles/${a.slug}.html" class="read-more">Read article &rarr;</a>
+        </div>
+      </div>`).join('');
+  });
+</script>
+</body>
+</html>
