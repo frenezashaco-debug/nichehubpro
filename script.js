@@ -103,11 +103,16 @@ document.addEventListener('DOMContentLoaded', function () {
   // ── SEARCH ────────────────────────────────────────────────────
   var navInner = document.querySelector('.nav-inner');
   if (navInner) {
-    // Inject search button before burger
-    var searchBtn = document.createElement('button');
-    searchBtn.className = 'nav-search-btn';
+    // Inject visible search bar before burger
+    var searchBtn = document.createElement('div');
+    searchBtn.className = 'nav-search-bar';
+    searchBtn.setAttribute('role', 'button');
     searchBtn.setAttribute('aria-label', 'Search articles');
-    searchBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
+    searchBtn.tabIndex = 0;
+    searchBtn.innerHTML =
+      '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>' +
+      '<span>Search articles...</span>' +
+      '<kbd class="nav-search-shortcut">Ctrl K</kbd>';
     var burger = navInner.querySelector('.nav-burger');
     navInner.insertBefore(searchBtn, burger || null);
 
@@ -170,6 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function closeSearch() { overlay.classList.remove('open'); }
 
     searchBtn.addEventListener('click', openSearch);
+    searchBtn.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') openSearch(); });
     overlay.addEventListener('click', function(e) { if (e.target === overlay) closeSearch(); });
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') closeSearch();
