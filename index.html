@@ -177,34 +177,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const statNum = document.querySelector('.stat-num');
   if (statNum) statNum.textContent = ARTICLES.length;
 
-  // Render articles grid — featured first card, rest as normal
+  // Render all articles as consistent horizontal featured cards
   const grid = document.getElementById('latest-grid');
   if (grid && ARTICLES.length > 0) {
-    const featured = ARTICLES[0];
-    const rest = ARTICLES.slice(1, 6);
-
-    const featuredHTML = `
+    grid.innerHTML = ARTICLES.slice(0, 6).map(a => `
       <div class="card card-featured">
-        <img src="${featured.image}" alt="${featured.title}" class="card-featured-img" loading="lazy">
-        <div class="card-body">
-          <span class="card-tag">${featured.category}</span>
-          <h3 style="font-size:1.25rem;line-height:1.35;"><a href="articles/${featured.slug}.html">${featured.title}</a></h3>
-          <p style="font-size:0.92rem;">${featured.excerpt}</p>
-          <div class="card-meta">
-            <span>📅 ${featured.date}</span>
-            <span>⏱ ${featured.read_time} min read</span>
-          </div>
-          <a href="articles/${featured.slug}.html" class="read-more">Read article &rarr;</a>
-        </div>
-      </div>`;
-
-    const restHTML = rest.map(a => `
-      <div class="card">
-        <img src="${a.image}" alt="${a.title}" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:185px;" loading="lazy">
+        <img src="${a.image}" alt="${a.title}" class="card-featured-img" loading="lazy">
         <div class="card-body">
           <span class="card-tag">${a.category}</span>
-          <h3><a href="articles/${a.slug}.html">${a.title}</a></h3>
-          <p>${a.excerpt}</p>
+          <h3 style="font-size:1.2rem;line-height:1.35;"><a href="articles/${a.slug}.html">${a.title}</a></h3>
+          <p style="font-size:0.92rem;">${a.excerpt}</p>
           <div class="card-meta">
             <span>📅 ${a.date}</span>
             <span>⏱ ${a.read_time} min read</span>
@@ -212,8 +194,6 @@ document.addEventListener('DOMContentLoaded', function() {
           <a href="articles/${a.slug}.html" class="read-more">Read article &rarr;</a>
         </div>
       </div>`).join('');
-
-    grid.innerHTML = featuredHTML + restHTML;
   }
 });
 </script>

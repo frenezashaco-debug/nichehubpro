@@ -566,38 +566,35 @@ a:hover { color: var(--green-dk); }
   color: var(--green);
 }
 
-/* ── ARTICLES GRID (featured + rest) ─────────────────────────── */
+/* ── ARTICLES GRID (all horizontal featured cards) ────────────── */
 .articles-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
 }
-.articles-grid .card-featured {
-  grid-column: 1 / -1;
+.card-featured {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 420px 1fr;
+  min-height: 240px;
 }
 .card-featured-img {
   width: 100%;
   height: 100%;
-  min-height: 260px;
+  min-height: 240px;
   object-fit: cover;
   border-radius: var(--radius) 0 0 var(--radius);
   display: block;
 }
-.articles-grid .card-featured .card-body {
-  padding: 28px 28px;
+.card-featured .card-body {
+  padding: 28px 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 @media (max-width: 860px) {
-  .articles-grid { grid-template-columns: 1fr 1fr; }
-  .articles-grid .card-featured { grid-column: 1 / -1; grid-template-columns: 1fr; }
+  .card-featured { grid-template-columns: 1fr; }
   .card-featured-img { min-height: 220px; height: 220px; border-radius: var(--radius) var(--radius) 0 0; }
-}
-@media (max-width: 540px) {
-  .articles-grid { grid-template-columns: 1fr; }
+  .card-featured .card-body { padding: 20px; }
 }
 
 /* ── AD SLOTS ─────────────────────────────────────────────────── */
