@@ -38,6 +38,9 @@ body {
   color: var(--text);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 img { max-width: 100%; display: block; }
 a { color: var(--green); text-decoration: none; transition: color var(--trans); }
@@ -89,6 +92,31 @@ a:hover { color: var(--green-dk); }
   background: var(--green-lt);
   color: var(--green-dk);
 }
+/* Category-specific nav link colors */
+.nav-links a[href*="mental-wellness"] {
+  color: #7B9ED9;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+.nav-links a[href*="mental-wellness"]:hover { background: #eef3fb; color: #5a82c0; }
+.nav-links a[href*="productivity"] {
+  color: #E8925A;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+.nav-links a[href*="productivity"]:hover { background: #fdf0e8; color: #c9713a; }
+.nav-links a[href*="healthy-lifestyle"] {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+.nav-links a[href*="healthy-lifestyle"]:hover { background: var(--green-lt); color: var(--green-dk); }
+
+/* Mobile nav colors */
+.nav-mobile a[href*="mental-wellness"] { color: #7B9ED9; font-weight: 700; }
+.nav-mobile a[href*="productivity"] { color: #E8925A; font-weight: 700; }
+.nav-mobile a[href*="healthy-lifestyle"] { color: var(--green); font-weight: 700; }
+
 .nav-links a.nav-cta {
   background: var(--green);
   color: var(--white);
@@ -97,6 +125,100 @@ a:hover { color: var(--green-dk); }
 .nav-links a.nav-cta:hover {
   background: var(--green-dk);
   color: var(--white);
+}
+
+/* Search button */
+.nav-search-btn {
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 7px 10px;
+  cursor: pointer;
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  transition: border-color var(--trans), color var(--trans), background var(--trans);
+  margin-left: 4px;
+}
+.nav-search-btn:hover { border-color: var(--green); color: var(--green); background: var(--green-lt); }
+
+/* Search overlay */
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20,40,30,0.55);
+  backdrop-filter: blur(4px);
+  z-index: 9998;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 90px;
+}
+.search-overlay.open { display: flex; }
+.search-box {
+  background: var(--white);
+  border-radius: 16px;
+  width: 92%;
+  max-width: 580px;
+  padding: 22px;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.22);
+  animation: searchIn 0.18s ease;
+}
+@keyframes searchIn {
+  from { opacity:0; transform: translateY(-12px); }
+  to   { opacity:1; transform: translateY(0); }
+}
+.search-input {
+  width: 100%;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  padding: 11px 16px;
+  outline: none;
+  box-sizing: border-box;
+  color: var(--dark);
+  transition: border-color var(--trans);
+}
+.search-input:focus { border-color: var(--green); }
+.search-results { margin-top: 14px; max-height: 380px; overflow-y: auto; }
+.search-result-item {
+  display: flex;
+  gap: 12px;
+  padding: 11px 12px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background var(--trans);
+  text-decoration: none;
+}
+.search-result-item:hover { background: var(--green-lt); }
+.search-result-cat {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 3px;
+}
+.search-result-cat.mw { color: #7B9ED9; }
+.search-result-cat.pr { color: #E8925A; }
+.search-result-cat.hl { color: var(--green); }
+.search-result-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--dark);
+  line-height: 1.4;
+}
+.search-no-results {
+  text-align: center;
+  padding: 28px;
+  color: var(--gray);
+  font-size: 0.88rem;
+}
+.search-hint {
+  text-align: center;
+  padding: 20px;
+  color: var(--gray-lt);
+  font-size: 0.82rem;
 }
 .nav-burger {
   display: none;
@@ -879,6 +1001,7 @@ a:hover { color: var(--green-dk); }
   background: var(--dark);
   padding: 36px 24px 28px;
   text-align: center;
+  margin-top: auto;
 }
 .footer-inner {
   max-width: var(--max-w);

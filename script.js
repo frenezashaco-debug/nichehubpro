@@ -100,4 +100,82 @@ document.addEventListener('DOMContentLoaded', function () {
     }, { passive: true });
   }
 
+  // ── SEARCH ────────────────────────────────────────────────────
+  var navInner = document.querySelector('.nav-inner');
+  if (navInner) {
+    // Inject search button before burger
+    var searchBtn = document.createElement('button');
+    searchBtn.className = 'nav-search-btn';
+    searchBtn.setAttribute('aria-label', 'Search articles');
+    searchBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
+    var burger = navInner.querySelector('.nav-burger');
+    navInner.insertBefore(searchBtn, burger || null);
+
+    // Build overlay
+    var overlay = document.createElement('div');
+    overlay.className = 'search-overlay';
+    overlay.innerHTML =
+      '<div class="search-box">' +
+        '<input type="text" class="search-input" placeholder="Search articles..." autocomplete="off" spellcheck="false">' +
+        '<div class="search-results"><div class="search-hint">Start typing to find articles&hellip;</div></div>' +
+      '</div>';
+    document.body.appendChild(overlay);
+
+    var sInput   = overlay.querySelector('.search-input');
+    var sResults = overlay.querySelector('.search-results');
+
+    function catClass(cat) {
+      if (!cat) return '';
+      var c = cat.toLowerCase();
+      if (c.includes('mental'))     return 'mw';
+      if (c.includes('product'))    return 'pr';
+      if (c.includes('lifestyle'))  return 'hl';
+      return '';
+    }
+
+    function doSearch(q) {
+      var articles = (typeof ARTICLES !== 'undefined') ? ARTICLES : [];
+      if (!q.trim()) {
+        sResults.innerHTML = '<div class="search-hint">Start typing to find articles&hellip;</div>';
+        return;
+      }
+      var lq = q.toLowerCase();
+      var hits = articles.filter(function(a) {
+        return (a.title  && a.title.toLowerCase().includes(lq))  ||
+               (a.excerpt && a.excerpt.toLowerCase().includes(lq)) ||
+               (a.category && a.category.toLowerCase().includes(lq));
+      }).slice(0, 8);
+
+      if (!hits.length) {
+        sResults.innerHTML = '<div class="search-no-results">No results for &ldquo;' + q + '&rdquo;</div>';
+        return;
+      }
+      sResults.innerHTML = hits.map(function(a) {
+        var root = (window.location.pathname.startsWith('/articles/')) ? '../' : '/';
+        return '<a class="search-result-item" href="' + root + 'articles/' + a.slug + '.html">' +
+          '<div>' +
+            '<div class="search-result-cat ' + catClass(a.category) + '">' + (a.category || '') + '</div>' +
+            '<div class="search-result-title">' + a.title + '</div>' +
+          '</div>' +
+        '</a>';
+      }).join('');
+    }
+
+    function openSearch() {
+      overlay.classList.add('open');
+      sInput.value = '';
+      sResults.innerHTML = '<div class="search-hint">Start typing to find articles&hellip;</div>';
+      setTimeout(function() { sInput.focus(); }, 50);
+    }
+    function closeSearch() { overlay.classList.remove('open'); }
+
+    searchBtn.addEventListener('click', openSearch);
+    overlay.addEventListener('click', function(e) { if (e.target === overlay) closeSearch(); });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeSearch();
+      if ((e.ctrlKey || e.metaKey) && e.key === 'k') { e.preventDefault(); openSearch(); }
+    });
+    sInput.addEventListener('input', function() { doSearch(this.value); });
+  }
+
 });
