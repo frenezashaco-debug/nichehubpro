@@ -165,6 +165,15 @@ def build_html(data, keyword_day, cover_filename):
         for r in internal_links
     ])
 
+    # Build sidebar related articles HTML
+    sidebar_related_html = "".join([
+        '<div class="sidebar-related-item">'
+        f'<span class="sidebar-related-num">{i+1}</span>'
+        f'<a href="../articles/{r["slug"]}.html">{r.get("anchor") or r.get("title") or r["slug"]}</a>'
+        '</div>'
+        for i, r in enumerate(related)
+    ])
+
     # Build intro HTML
     intro_paragraphs = "".join([f"<p>{p.strip()}</p>" for p in intro.split("\n") if p.strip()])
 
@@ -300,10 +309,7 @@ def build_html(data, keyword_day, cover_filename):
     <div class="ad-slot ad-slot-sidebar">Advertisement</div>
     <div class="sidebar-box">
       <h4>Related Articles</h4>
-      {''.join([f"""<div class="sidebar-related-item">
-        <span class="sidebar-related-num">{i+1}</span>
-        <a href="../articles/{r['slug']}.html">{r.get('anchor') or r.get('title', r['slug'])}</a>
-      </div>""" for i, r in enumerate(related)])}
+      {sidebar_related_html}
     </div>
     <div class="sidebar-box" style="background:var(--dark);">
       <h4 style="color:rgba(255,255,255,0.5);">Weekly Wellness</h4>
