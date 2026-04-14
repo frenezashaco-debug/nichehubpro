@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (grid && ARTICLES.length > 0) {
     grid.innerHTML = ARTICLES.slice(0, 6).map(a => `
       <div class="card card-featured">
-        <img src="${a.image}" alt="${a.title}" class="card-featured-img" loading="lazy">
+        <img src="${a.image}" alt="${a.alt || a.title}" class="card-featured-img" loading="lazy">
         <div class="card-body">
           <span class="card-tag">${a.category}</span>
           <h3 style="font-size:1.2rem;line-height:1.35;"><a href="articles/${a.slug}.html">${a.title}</a></h3>

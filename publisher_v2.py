@@ -86,7 +86,8 @@ JSON STRUCTURE:
     {"question": "real Google question 5?", "answer": "short clear useful answer"}
   ],
   "conclusion": "string — 3 short paragraphs. Motivational. Encourages one small action today. Human and warm.",
-  "cover_image_prompt": "string — UNIQUE AI image prompt specific to THIS article topic only. STRICT RULES: (1) The scene must visually represent THIS specific topic, not wellness in general. (2) Describe a DIFFERENT person, environment, action, and emotion than any generic wellness photo. (3) Must include: exact subject description (age, what they are doing), exact environment (specific room details or outdoor setting), lighting, emotion on their face, one unique detail that ties to the article topic. (4) FORBIDDEN: woman sitting by window, person meditating on bed, hands clasped, eyes closed in bedroom — these are overused. Use creative unexpected scenes. Example for anxiety: 'A man in his 30s sitting at a kitchen table at dawn, both hands wrapped around a warm mug, steam rising, staring quietly at the window with a thoughtful calm expression, warm golden morning light, cozy kitchen with wooden countertops, soft shallow depth of field, photorealistic wellness photography, 4K'. Make it feel like a real candid moment."
+  "cover_image_prompt": "string — UNIQUE AI image prompt for THIS article. Follow this exact structure: 'Create a realistic, high-quality blog cover image for an article about: [TOPIC]. Scene: [specific real-life environment reflecting the topic]. Subject: a single person expressing [specific emotion tied to topic] with natural body language. Details: authentic everyday setting, minimal clean background, soft textures. Lighting: soft natural [morning/evening] light, warm calming tones. Style: photorealistic, minimalist wellness aesthetic, depth of field, shot like a real camera. Mood: emotional but peaceful, relatable and human. Composition: subject slightly off-center, focus on emotion. STRICT: no text, no logos, no watermark, not stock photo. Output: 4K ultra realistic natural colors.' FORBIDDEN scenes: woman sitting by window, person meditating on bed, hands clasped, eyes closed in bedroom. Each image must feel like a unique candid moment.",
+  "cover_alt_text": "string — short SEO alt text describing the image. Format: '[person/subject] [action] in [setting]'. Example: 'person overthinking at night in bedroom'. Max 10 words. Include the primary keyword naturally."
 }"""
 
 
@@ -119,6 +120,7 @@ def build_html(data, keyword_day, cover_filename):
     meta_desc    = data["meta_description"]
     category     = data["category"]
     article_slug = data["slug"]
+    cover_alt    = data.get("cover_alt_text", title)
     intro        = data["intro"]
     tldr         = data["tldr"]
     sections     = data["sections"]
@@ -274,7 +276,7 @@ def build_html(data, keyword_day, cover_filename):
 
     <!-- COVER IMAGE -->
     <img src="../images/{cover_filename}"
-         alt="{title}"
+         alt="{cover_alt}"
          style="width:100%;border-radius:12px;margin-bottom:28px;display:block;"
          loading="lazy">
 
@@ -489,7 +491,8 @@ def register_article(data, cover_filename):
         "date":     "Apr 2026",
         "read_time": "8",
         "excerpt":  excerpt,
-        "image":    f"images/{cover_filename}"
+        "image":    f"images/{cover_filename}",
+        "alt":      data.get("cover_alt_text", data["title"])
     }
 
     # Remove old entry for this slug if exists, prepend new one (newest first)

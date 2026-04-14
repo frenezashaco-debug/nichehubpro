@@ -66,34 +66,33 @@ def slug(title):
 # ── BUILD IMAGE PROMPT ────────────────────────────────────────────────────
 def build_image_prompt(topic, category, custom_prompt=None):
     """
-    Build the FLUX prompt from the global cover image rules.
+    Build the FLUX prompt using the new detailed cover image template.
     Uses Claude-generated custom_prompt if available, otherwise builds from template.
     """
-    # Global style rules applied to every cover image
-    style_rules = (
-        "Photorealistic wellness lifestyle photography. "
-        "Real person with natural unposed body language, not a model pose. "
-        "Soft natural window light, warm and calming color tones. "
-        "Slightly blurred background, shallow depth of field. "
-        "Clean minimal environment, no clutter. "
-        "Emotional but peaceful mood, relatable and human. "
-        "Warm color palette. "
-        "No text, no words, no watermark, no logo, no graphic overlays anywhere. "
-        "High resolution, sharp focus, 4K quality. "
-        "Could be mistaken for a real professional wellness photo."
+    strict_rules = (
+        "STRICT RULES: no text, no logos, no watermark, no over-editing, "
+        "do not make it look like a stock photo, each image must be unique. "
+        "No text, no words, no graphic overlays anywhere. "
+        "Output: 4K ultra realistic natural colors."
     )
 
     if custom_prompt and len(custom_prompt) > 30:
-        # Claude generated a unique topic-specific prompt — append global style rules
-        prompt = f"{custom_prompt}. {style_rules}"
+        # Claude generated a unique topic-specific prompt — append strict rules
+        prompt = f"{custom_prompt}. {strict_rules}"
     else:
         scene = CATEGORY_SCENES.get(category, CATEGORY_SCENES["Mental Wellness"])
         prompt = (
-            f"A real person experiencing {scene['emotion']}, "
-            f"{scene['action']}, "
-            f"in a {scene['setting']}. "
-            f"The scene visually represents the topic: {topic}. "
-            f"{style_rules}"
+            f"Create a realistic, high-quality blog cover image for an article about: {topic}. "
+            f"Scene: a calm, modern, real-life environment that reflects mental wellness and emotional state. "
+            f"Subject: a single person expressing {scene['emotion']} with natural unposed body language. "
+            f"Details: {scene['action']}, authentic everyday setting, minimal clean background, "
+            f"soft textures like bed sheets, desk, plants, natural light. "
+            f"Lighting: soft natural morning sunlight or dim evening light, warm calming tones (green, beige, soft blue). "
+            f"Style: photorealistic, minimalist wellness aesthetic, depth of field, slightly blurred background, "
+            f"shot like a real camera, not AI look. "
+            f"Mood: emotional but peaceful, relatable and human. "
+            f"Composition: subject slightly off-center, focus on emotion not perfection. "
+            f"{strict_rules}"
         )
     return prompt
 
