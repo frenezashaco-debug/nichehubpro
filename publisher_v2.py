@@ -103,7 +103,7 @@ def load_existing_articles():
         return []
     try:
         articles = json.loads(m.group(1))
-        return [{"slug": a["slug"], "title": a["title"]} for a in articles]
+        return [{"slug": a["slug"], "title": a["title"], "category": a.get("category", "")} for a in articles]
     except Exception:
         return []
 
@@ -416,13 +416,15 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category):
 
     client = anthropic.Anthropic(api_key=API_KEY)
 
-    # Load real published articles for accurate internal linking
+    # Load real published articles — same category only, exclude current article
     existing_articles = load_existing_articles()
-    # Exclude current article from link options
     current_slug = slug(primary_kw)
-    existing_articles = [a for a in existing_articles if a["slug"] != current_slug]
+    existing_articles = [
+        a for a in existing_articles
+        if a["slug"] != current_slug and a.get("category") == category
+    ]
     if existing_articles:
-        print(f"  Internal link pool: {len(existing_articles)} published article(s)")
+        print(f"  Internal link pool: {len(existing_articles)} article(s) in [{category}]")
 
     print("Calling Claude API...")
     message = client.messages.create(
