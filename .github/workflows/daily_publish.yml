@@ -23,8 +23,21 @@ jobs:
       - name: Install dependencies
         run: pip install anthropic json_repair Pillow requests
 
+      - name: Verify API key is set
+        run: |
+          if [ -z "${{ secrets.ANTHROPIC_API_KEY }}" ]; then
+            echo "ERROR: ANTHROPIC_API_KEY secret is not set!"
+            exit 1
+          fi
+          echo "API key is present (length: ${#ANTHROPIC_API_KEY})"
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
       - name: Create config.py from secret
         run: echo "ANTHROPIC_API_KEY = \"${{ secrets.ANTHROPIC_API_KEY }}\"" > config.py
+
+      - name: Show current publish status
+        run: python batch_30days.py --status
 
       - name: Run batch publisher
         run: python batch_30days.py
@@ -34,5 +47,4 @@ jobs:
           git config user.name "NicheHubPro Bot"
           git config user.email "bot@nichehubpro.com"
           git add articles/ images/ articles.js
-          git diff --staged --quiet && echo "Nothing to commit" || git commit -m "Auto-publish: daily article $(date +'%Y-%m-%d')"
-          git push
+          git diff --staged --quiet && echo "Nothing new to commit" || (git commit -m "Auto-publish: daily article $(date +'%Y-%m-%d')" && git push)

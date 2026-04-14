@@ -31,9 +31,9 @@ IMAGES_DIR  = os.path.join(BASE_DIR, "images")
 SITE_URL    = "https://nichehubpro.com"
 
 CATEGORY_URLS = {
-    "Mental Wellness":   "../category.html?cat=mental-wellness",
-    "Productivity":      "../category.html?cat=productivity",
-    "Healthy Lifestyle": "../category.html?cat=healthy-lifestyle",
+    "Mental Wellness":   "../mental-wellness/",
+    "Productivity":      "../productivity/",
+    "Healthy Lifestyle": "../healthy-lifestyle/",
 }
 
 # ── SYSTEM PROMPT ────────────────────────────────────────────────────────
