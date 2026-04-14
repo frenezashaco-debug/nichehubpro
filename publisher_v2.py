@@ -165,6 +165,16 @@ def build_html(data, keyword_day, cover_filename):
         for r in internal_links
     ])
 
+    # Build related article cards HTML (bottom of article)
+    related_cards_html = "".join([
+        '<div class="card"><div class="card-body">'
+        f'<span class="card-tag">{category}</span>'
+        f'<h3><a href="../articles/{r["slug"]}.html">{r.get("anchor") or r.get("title") or r["slug"]}</a></h3>'
+        f'<a href="../articles/{r["slug"]}.html" class="read-more">Read article &rarr;</a>'
+        '</div></div>'
+        for r in related[:3]
+    ])
+
     # Build sidebar related articles HTML
     sidebar_related_html = "".join([
         '<div class="sidebar-related-item">'
@@ -329,13 +339,7 @@ def build_html(data, keyword_day, cover_filename):
       <h2 class="section-title">More on {category}</h2>
     </div>
     <div class="grid grid-3">
-      {''.join([f"""<div class="card">
-        <div class="card-body">
-          <span class="card-tag">{category}</span>
-          <h3><a href="../articles/{r['slug']}.html">{r.get('anchor') or r.get('title', r['slug'])}</a></h3>
-          <a href="../articles/{r['slug']}.html" class="read-more">Read article &rarr;</a>
-        </div>
-      </div>""" for r in related[:3]])}
+      {related_cards_html}
     </div>
   </div>
 </section>
