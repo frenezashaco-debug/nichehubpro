@@ -545,6 +545,44 @@ def register_article(data, cover_filename):
         f.write(js_content)
 
     print(f"  Registered in articles.js ({len(existing)} total)")
+    update_sitemap(existing)
+
+
+def update_sitemap(articles):
+    """Rebuild sitemap.xml with all published articles."""
+    sitemap_path = os.path.join(BASE_DIR, "sitemap.xml")
+    SITE = "https://nichehubpro.com"
+
+    static_pages = [
+        (f"{SITE}/",                    "daily",   "1.0"),
+        (f"{SITE}/mental-wellness/",    "daily",   "0.9"),
+        (f"{SITE}/productivity/",       "weekly",  "0.9"),
+        (f"{SITE}/healthy-lifestyle/",  "weekly",  "0.9"),
+        (f"{SITE}/about/",              "monthly", "0.7"),
+        (f"{SITE}/contact/",            "monthly", "0.5"),
+        (f"{SITE}/privacy/",            "monthly", "0.4"),
+        (f"{SITE}/disclaimer/",         "monthly", "0.4"),
+        (f"{SITE}/terms/",              "monthly", "0.4"),
+    ]
+
+    urls = []
+    for loc, freq, pri in static_pages:
+        urls.append(f"  <url>\n    <loc>{loc}</loc>\n    <changefreq>{freq}</changefreq>\n    <priority>{pri}</priority>\n  </url>")
+
+    for a in articles:
+        loc = f"{SITE}/articles/{a['slug']}.html"
+        urls.append(f"  <url>\n    <loc>{loc}</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>")
+
+    xml = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\n'
+        + "\n".join(urls)
+        + "\n\n</urlset>\n"
+    )
+
+    with open(sitemap_path, "w", encoding="utf-8") as f:
+        f.write(xml)
+    print(f"  Sitemap updated ({len(articles)} articles)")
 
 
 if __name__ == "__main__":

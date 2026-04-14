@@ -11,6 +11,7 @@ __pycache__/
 
 # Tracking and log files
 *.txt
+!robots.txt
 publish_log.txt
 medium_urls.txt
 debug_raw*.txt
