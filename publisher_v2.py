@@ -91,7 +91,34 @@ JSON STRUCTURE:
 }"""
 
 
-def build_user_prompt(primary_kw, secondary_kw, longtail_kw, category):
+def load_existing_articles():
+    """Load published articles from articles.js for real internal linking."""
+    articles_js_path = os.path.join(BASE_DIR, "articles.js")
+    if not os.path.exists(articles_js_path):
+        return []
+    with open(articles_js_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    m = re.search(r'const ARTICLES = (\[[\s\S]*?\]);', content)
+    if not m:
+        return []
+    try:
+        articles = json.loads(m.group(1))
+        return [{"slug": a["slug"], "title": a["title"]} for a in articles]
+    except Exception:
+        return []
+
+
+def build_user_prompt(primary_kw, secondary_kw, longtail_kw, category, existing_articles=None):
+    # Build real internal link options from published articles
+    if existing_articles:
+        links_block = (
+            "INTERNAL LINKS — you MUST only link to articles from this exact list (real published pages):\n"
+            + "\n".join([f'  - slug: "{a["slug"]}" | title: "{a["title"]}"' for a in existing_articles])
+            + "\n  Pick 2-4 of these. Use descriptive anchor text. Never invent slugs not on this list."
+        )
+    else:
+        links_block = "Internal links: 3-5 with unique descriptive anchors relevant to the topic."
+
     return f"""Write a 1800+ word SEO article for NicheHubPro.
 
 KEYWORDS:
@@ -107,7 +134,7 @@ REQUIREMENTS:
 - 5 question-based H2 sections (What is / Signs / Why it happens / How to fix / Daily habits)
 - Each section: GEO structure (statement + fact + advice), bullets, bold key tips
 - Real life example: 2 paragraphs, human story showing transformation
-- Internal links: 3-5 with unique descriptive anchors — suggest topics like: how to stop overthinking, how to calm anxiety quickly, daily habits to reduce stress, morning routine for mental health, how to build discipline (match to article topic)
+- {links_block}
 - FAQ: 5 real questions people search on Google about this topic
 - Conclusion: motivational, encourage one small habit today
 - Cover image: unique realistic wellness photo prompt for this specific topic
@@ -389,6 +416,14 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category):
 
     client = anthropic.Anthropic(api_key=API_KEY)
 
+    # Load real published articles for accurate internal linking
+    existing_articles = load_existing_articles()
+    # Exclude current article from link options
+    current_slug = slug(primary_kw)
+    existing_articles = [a for a in existing_articles if a["slug"] != current_slug]
+    if existing_articles:
+        print(f"  Internal link pool: {len(existing_articles)} published article(s)")
+
     print("Calling Claude API...")
     message = client.messages.create(
         model="claude-haiku-4-5-20251001",
@@ -396,7 +431,7 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category):
         messages=[
             {
                 "role": "user",
-                "content": build_user_prompt(primary_kw, secondary_kw, longtail_kw, category)
+                "content": build_user_prompt(primary_kw, secondary_kw, longtail_kw, category, existing_articles)
             }
         ],
         system=SYSTEM_PROMPT
