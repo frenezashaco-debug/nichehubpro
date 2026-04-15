@@ -87,7 +87,21 @@ JSON STRUCTURE:
   ],
   "conclusion": "string — 3 short paragraphs. Motivational. Encourages one small action today. Human and warm.",
   "cover_image_prompt": "string — UNIQUE AI image prompt for THIS article. Follow this exact structure: 'Create a realistic, high-quality blog cover image for an article about: [TOPIC]. Scene: [specific real-life environment reflecting the topic]. Subject: a single person expressing [specific emotion tied to topic] with natural body language. Details: authentic everyday setting, minimal clean background, soft textures. Lighting: soft natural [morning/evening] light, warm calming tones. Style: photorealistic, minimalist wellness aesthetic, depth of field, shot like a real camera. Mood: emotional but peaceful, relatable and human. Composition: subject slightly off-center, focus on emotion. STRICT: no text, no logos, no watermark, not stock photo. Output: 4K ultra realistic natural colors.' FORBIDDEN scenes: woman sitting by window, person meditating on bed, hands clasped, eyes closed in bedroom. Each image must feel like a unique candid moment.",
-  "cover_alt_text": "string — short SEO alt text describing the image. Format: '[person/subject] [action] in [setting]'. Example: 'person overthinking at night in bedroom'. Max 10 words. Include the primary keyword naturally."
+  "cover_alt_text": "string — short SEO alt text describing the image. Format: '[person/subject] [action] in [setting]'. Example: 'person overthinking at night in bedroom'. Max 10 words. Include the primary keyword naturally.",
+  "pinterest_pins": [
+    {
+      "title": "string — Pin 1: 'How to...' style. CTR-optimized. Max 100 chars. Include primary keyword.",
+      "description": "string — 2-3 sentences. Include keyword naturally. End with a subtle CTA. Max 500 chars."
+    },
+    {
+      "title": "string — Pin 2: 'Stop...' or problem-focused style. Different from Pin 1. Max 100 chars.",
+      "description": "string — 2-3 sentences. Different angle from Pin 1. Include keyword. Max 500 chars."
+    },
+    {
+      "title": "string — Pin 3: 'Try this...' or solution-focused style. Different from Pins 1 and 2. Max 100 chars.",
+      "description": "string — 2-3 sentences. Actionable tone. Include keyword. Max 500 chars."
+    }
+  ]
 }"""
 
 
@@ -494,6 +508,12 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category):
     # Register article in articles.js
     register_article(data, cover_filename)
 
+    # Reverse linking — inject this article into existing same-category articles
+    backlink_existing_articles(article_slug, data["title"], category)
+
+    # Ping Google to re-crawl updated sitemap
+    ping_google()
+
     return article_slug
 
 
@@ -529,7 +549,8 @@ def register_article(data, cover_filename):
         "read_time": "8",
         "excerpt":  excerpt,
         "image":    f"images/{cover_filename}",
-        "alt":      data.get("cover_alt_text", data["title"])
+        "alt":      data.get("cover_alt_text", data["title"]),
+        "pins":     data.get("pinterest_pins", [])
     }
 
     # Remove old entry for this slug if exists, prepend new one (newest first)
@@ -583,6 +604,80 @@ def update_sitemap(articles):
     with open(sitemap_path, "w", encoding="utf-8") as f:
         f.write(xml)
     print(f"  Sitemap updated ({len(articles)} articles)")
+
+
+def backlink_existing_articles(new_slug, new_title, category):
+    """Inject a link to the new article into existing articles of the same category."""
+    articles_js_path = os.path.join(BASE_DIR, "articles.js")
+    if not os.path.exists(articles_js_path):
+        return
+
+    with open(articles_js_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    m = re.search(r'const ARTICLES = (\[[\s\S]*?\]);', content)
+    if not m:
+        return
+    try:
+        articles = json.loads(m.group(1))
+    except Exception:
+        return
+
+    targets = [a for a in articles if a.get("category") == category and a["slug"] != new_slug]
+    if not targets:
+        return
+
+    new_li = (
+        f'\n          <li><a href="../articles/{new_slug}.html" '
+        f'style="font-size:0.92rem;font-weight:500;color:var(--dark);">→ {new_title}</a></li>'
+    )
+
+    updated = 0
+    for article in targets:
+        html_path = os.path.join(OUT_DIR, f"{article['slug']}.html")
+        if not os.path.exists(html_path):
+            continue
+
+        with open(html_path, "r", encoding="utf-8") as f:
+            html = f.read()
+
+        # Skip if already linked to new slug
+        if f'href="../articles/{new_slug}.html"' in html:
+            continue
+
+        # Target the main article body Related Articles <ul> (unique style attribute)
+        ul_pattern = (
+            r'(<ul style="list-style:none;padding:0;margin:0;'
+            r'display:flex;flex-direction:column;gap:8px;">'
+            r'([\s\S]*?)</ul>)'
+        )
+        match = re.search(ul_pattern, html)
+        if not match:
+            continue
+
+        old_block = match.group(0)
+        new_block = old_block[:-5] + new_li + '\n        </ul>'  # insert before </ul>
+        html = html.replace(old_block, new_block, 1)
+
+        with open(html_path, "w", encoding="utf-8") as f:
+            f.write(html)
+        updated += 1
+
+    if updated:
+        print(f"  Backlinked into {updated} existing article(s) in [{category}]")
+
+
+def ping_google():
+    """Ping Google to re-crawl the updated sitemap."""
+    try:
+        import requests
+        url = "https://www.google.com/ping?sitemap=https://nichehubpro.com/sitemap.xml"
+        resp = requests.get(url, timeout=10)
+        if resp.status_code == 200:
+            print("  Google pinged: sitemap re-crawl requested")
+        else:
+            print(f"  Google ping returned {resp.status_code}")
+    except Exception as e:
+        print(f"  Google ping failed (non-critical): {e}")
 
 
 if __name__ == "__main__":
