@@ -278,7 +278,7 @@ def build_html(data, keyword_day, cover_filename):
 
 <nav class="nav">
   <div class="nav-inner">
-    <a href="../" class="nav-logo"><img src="../images/site-logo.png" alt="NicheHubPro"></a>
+    <a href="../" class="nav-logo">NicheHub<span>Pro</span></a>
     <div class="nav-links">
       <a href="../mental-wellness/">Mental Wellness</a>
       <a href="../productivity/">Productivity</a>
