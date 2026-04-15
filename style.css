@@ -77,6 +77,13 @@ a:hover { color: var(--green-dk); }
   font-weight: 800;
   color: var(--dark);
   letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+}
+.nav-logo img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 .nav-logo span { color: var(--green); }
 .nav-links { display: flex; align-items: center; gap: 6px; }
