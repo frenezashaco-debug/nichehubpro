@@ -2,6 +2,17 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "signs-of-mental-exhaustion",
+    "title": "7 Signs of Mental Exhaustion You're Ignoring (And How to Reclaim Your Energy)",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Recognizing signs of mental exhaustion is the first step toward healing yourself before burnout becomes a crisis. You're not lazy, unfocused, or broken if ",
+    "image": "images/signs-of-mental-exhaustion.jpg",
+    "alt": "Exhausted professional experiencing mental fatigue at desk during afternoon work"
+  },
+  {
     "slug": "how-to-stop-overthinking",
     "title": "5 Ways to Stop Overthinking and Reclaim Your Mental Peace Today",
     "category": "Mental Wellness",

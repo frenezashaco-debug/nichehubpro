@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Core pages -->
   <url>
     <loc>https://nichehubpro.com/</loc>
     <changefreq>daily</changefreq>
@@ -47,8 +46,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
-
-  <!-- Articles -->
+  <url>
+    <loc>https://nichehubpro.com/articles/signs-of-mental-exhaustion.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://nichehubpro.com/articles/how-to-stop-overthinking.html</loc>
     <changefreq>monthly</changefreq>
