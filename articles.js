@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-stop-negative-thoughts",
+    "title": "5 Ways to Stop Negative Thoughts Before They Spiral Out of Control",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to stop negative thoughts might feel impossible when your brain feels like a broken record of self-doubt and worry. The truth is, your mind isn't broke",
+    "image": "images/how-to-stop-negative-thoughts.jpg",
+    "alt": "Woman pausing during journaling to interrupt negative thoughts with relief",
+    "pins": [
+      {
+        "title": "How to Stop Negative Thoughts: 5 Science-Backed Techniques",
+        "description": "Discover the exact techniques therapists use to help clients break free from negative thinking patterns. Learn why your brain defaults to negativity and five practical, proven methods to interrupt the cycle before it spirals. These aren't toxic positivity affirmations—they're real neuroscience-backed strategies. Start with one technique today and rewire your thinking within weeks."
+      },
+      {
+        "title": "Stop Negative Thinking Spirals Before They Start (Do This Today)",
+        "description": "Tired of your mind constantly replaying worst-case scenarios? Learn why you always think negatively (hint: it's not your fault) and the two-minute techniques that reset your nervous system instantly. Includes the grounding method therapists recommend when anxiety peaks and the simple evening habit that stops rumination."
+      },
+      {
+        "title": "Negative Thoughts Won't Stop? Try This Daily Habit Instead",
+        "description": "Willpower doesn't work for negative thoughts—habits do. Build the five daily habits that literally rewire your brain away from negativity bias. Includes your 2-minute morning reset, midday interrupt technique, and the evening release that prevents thoughts from keeping you awake. Small consistent actions create lasting change."
+      }
+    ]
+  },
+  {
     "slug": "signs-of-mental-exhaustion",
     "title": "7 Signs of Mental Exhaustion You're Ignoring (And How to Reclaim Your Energy)",
     "category": "Mental Wellness",
