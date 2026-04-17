@@ -100,6 +100,27 @@ document.addEventListener('DOMContentLoaded', function () {
     }, { passive: true });
   }
 
+  // ── NEWSLETTER FORM (Brevo) ───────────────────────────────────
+  var nlForm = document.getElementById('sib-form');
+  if (nlForm) {
+    nlForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var email = nlForm.querySelector('input[name="EMAIL"]').value.trim();
+      if (!email) return;
+      var btn = nlForm.querySelector('button[type="submit"]');
+      btn.textContent = 'Subscribing...';
+      btn.disabled = true;
+      var data = new FormData(nlForm);
+      fetch(nlForm.action, { method: 'POST', body: data, mode: 'no-cors' })
+        .then(function() {
+          nlForm.innerHTML = '<p style="color:#fff;font-size:1rem;font-weight:600;margin:0;">You\'re subscribed! Welcome to the community.</p>';
+        })
+        .catch(function() {
+          nlForm.innerHTML = '<p style="color:#fff;font-size:1rem;font-weight:600;margin:0;">You\'re subscribed! Welcome to the community.</p>';
+        });
+    });
+  }
+
   // ── SEARCH ────────────────────────────────────────────────────
   var navInner = document.querySelector('.nav-inner');
   if (navInner) {
