@@ -125,7 +125,7 @@
         <h2 class="section-title mb-0">Latest Articles</h2>
         <p class="section-sub" style="margin-bottom:0;margin-top:8px;">New guides published every day. Pick one that fits what you're going through right now.</p>
       </div>
-      <a href="/mental-wellness/" class="btn btn-outline btn-sm">All Articles &rarr;</a>
+      <a href="/mental-wellness/" class="btn btn-outline btn-sm">Browse All &rarr;</a>
     </div>
     <div class="articles-grid" id="latest-grid"></div>
   </div>
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Render all articles as consistent horizontal featured cards
   const grid = document.getElementById('latest-grid');
   if (grid && ARTICLES.length > 0) {
-    grid.innerHTML = ARTICLES.map(a => `
+    grid.innerHTML = ARTICLES.slice(0, 6).map(a => `
       <div class="card card-featured">
         <img src="${a.image}" alt="${a.alt || a.title}" class="card-featured-img" loading="lazy">
         <div class="card-body">
