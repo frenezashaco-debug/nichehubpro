@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Productivity Articles — NicheHubPro</title>
-  <meta name="description" content="Focus systems, time management, deep work, and habit building that actually sticks. Free, practical guides.">
-  <link rel="canonical" href="https://nichehubpro.com/productivity/">
+  <title>All Articles — NicheHubPro</title>
+  <meta name="description" content="Browse all free science-backed articles on mental wellness, productivity, and healthy lifestyle. New guides published every day.">
+  <link rel="canonical" href="https://nichehubpro.com/all-articles/">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -32,16 +32,16 @@
 </nav>
 
 <div class="cat-header">
-  <span class="hero-badge">⚡ Productivity</span>
-  <h1>Productivity</h1>
-  <p>Focus systems, time management, deep work, and habit building that actually sticks.</p>
+  <span class="hero-badge">📚 All Articles</span>
+  <h1>All Articles</h1>
+  <p>Every guide we've published — mental wellness, productivity, and healthy lifestyle.</p>
 </div>
 
 <div class="cat-tabs">
   <div class="cat-tabs-inner">
-    <div class="cat-tab" data-url="../all-articles/">All</div>
+    <div class="cat-tab active" data-url="../all-articles/">All</div>
     <div class="cat-tab" data-url="../mental-wellness/">Mental Wellness</div>
-    <div class="cat-tab active" data-url="../productivity/">Productivity</div>
+    <div class="cat-tab" data-url="../productivity/">Productivity</div>
     <div class="cat-tab" data-url="../healthy-lifestyle/">Healthy Lifestyle</div>
   </div>
 </div>
@@ -99,13 +99,12 @@
     tab.addEventListener('click', function() { window.location.href = this.dataset.url; });
   });
   document.addEventListener('DOMContentLoaded', function() {
-    const filtered = ARTICLES.filter(a => a.cat_slug === 'productivity');
-    const grid = document.getElementById('article-grid');
+    const grid  = document.getElementById('article-grid');
     const empty = document.getElementById('empty-state');
-    if (!filtered.length) { grid.style.display='none'; empty.style.display='block'; return; }
-    grid.innerHTML = filtered.map(a => `
+    if (!ARTICLES.length) { grid.style.display='none'; empty.style.display='block'; return; }
+    grid.innerHTML = ARTICLES.map(a => `
       <div class="card">
-        <img src="../${a.image}" alt="${a.title}" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;" loading="lazy">
+        <img src="../${a.image}" alt="${a.alt || a.title}" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;" loading="lazy">
         <div class="card-body">
           <span class="card-tag">${a.category}</span>
           <h3><a href="../articles/${a.slug}.html">${a.title}</a></h3>
