@@ -64,9 +64,11 @@
   <div class="container">
     <h2>Weekly Wellness Insights</h2>
     <p>Get one actionable guide every week. No spam, no fluff.</p>
-    <form class="nl-form" onsubmit="return false;">
-      <input type="email" placeholder="Your email address">
+    <form class="nl-form" method="POST" action="https://1781df94.sibforms.com/serve/MUIFABtXrzMaI8A88PrzI10oMtw0B5ws-upYzYmZO7mYWfFa3ki3u-R9G0EdOr2E8lBWrGokcORpm15ZoeY3ZgiPdDVxO7NP7gze8Vi4tNHj7sAoz9PPm5-CheMlX0WFrJvDfzjmJCsSC9VqD-FYS8VIoox3qF8Dt0dP65ZgXg9rieMCtzx0jlj-88s6ug_y_LtpGFntWQ_VHbDufw==">
+      <input type="email" name="EMAIL" placeholder="Your email address" required>
       <button class="btn" type="submit">Subscribe Free</button>
+      <input type="text" name="email_address_check" value="" style="display:none;">
+      <input type="hidden" name="locale" value="en">
     </form>
     <p class="nl-note">No spam. Unsubscribe anytime.</p>
   </div>
@@ -94,6 +96,7 @@
 <button id="back-to-top" aria-label="Back to top">↑</button>
 <script src="../articles.js"></script>
 <script src="../script.js"></script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 <script>
   document.querySelectorAll('.cat-tab').forEach(tab => {
     tab.addEventListener('click', function() { window.location.href = this.dataset.url; });
