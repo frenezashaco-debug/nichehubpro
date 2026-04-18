@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-relax-your-mind",
+    "title": "5 Ways to Relax Your Mind Fast: The Science-Backed Method That Actually Works",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Your mind won't stop racing, and you're exhausted from trying to quiet it down. This is how to relax your mind when everything feels overwhelming and urgen",
+    "image": "images/how-to-relax-your-mind.jpg",
+    "alt": "Person sitting peacefully with closed eyes in calm living room during relaxation",
+    "pins": [
+      {
+        "title": "How to Relax Your Mind in 90 Seconds: Box Breathing for Instant Calm",
+        "description": "Tired of racing thoughts and mental exhaustion? Learn the fastest way to relax your mind with box breathing, a 90-second technique used by Navy SEALs. This simple mental relaxation method works because it directly signals your nervous system to shift into calm mode. No apps needed, no special setup, just breathe. Try it tonight and notice the difference by tomorrow morning. Your mind is begging for relief, and this technique delivers it."
+      },
+      {
+        "title": "Stop Mental Exhaustion: 5 Science-Backed Relaxation Techniques That Actually Work",
+        "description": "Is your mind stuck in overdrive? Mental relaxation isn't about forcing your brain to be blank, it's about deliberately shifting from stress mode to calm mode. Discover 5 proven techniques (box breathing, body scanning, progressive muscle relaxation, cognitive pause, and visualization) that neuroscience shows reduce anxiety and racing thoughts in minutes. Each method targets different stress patterns, so you'll find the one that clicks for your brain."
+      },
+      {
+        "title": "Try This Daily Relaxation Habit: 3 Minutes to a Calmer Mind Forever",
+        "description": "One meditation session helps for a few hours. A daily relaxation habit rewires your nervous system to be naturally calmer. Learn how to anchor mental relaxation into your existing routine so it becomes automatic. Research shows 66 days of consistent practice creates lasting change in how reactive your mind is to stress. Start with just 3 minutes daily, pick your trigger moment (after coffee, before bed), and watch your mental state transform in weeks."
+      }
+    ]
+  },
+  {
     "slug": "how-to-reduce-stress-naturally",
     "title": "5 Ways to Reduce Stress Naturally: Your Peace Starts Today",
     "category": "Mental Wellness",
