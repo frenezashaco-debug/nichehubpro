@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-deal-with-anxiety-daily",
+    "title": "5 Ways to Deal with Anxiety Daily: Your Realistic Recovery Plan",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to deal with anxiety daily starts with understanding that anxiety isn't a character flaw you need to fix overnight. It's a signal your nervous system i",
+    "image": "images/how-to-deal-with-anxiety-daily.jpg",
+    "alt": "person practicing breathing exercise at desk in morning dealing with daily anxiety",
+    "pins": [
+      {
+        "title": "How to Deal with Anxiety Daily: 5 Proven Practices That Actually Work",
+        "description": "Stop letting daily anxiety control your life. Learn five simple daily practices backed by science that reduce anxiety baseline within weeks, not months. These aren't meditation hacks or toxic positivity, just real strategies that rewire your nervous system. Start with one practice today and notice the difference. Your calm is waiting."
+      },
+      {
+        "title": "Stop Daily Anxiety Before It Starts: Your Morning Routine Hack",
+        "description": "Daily anxiety doesn't have to be your normal. Discover why box breathing works in minutes and how to build daily anxiety management into your existing routine without adding stress. Small consistent practices trump motivation every time. Learn the five-minute morning practice that changes everything."
+      },
+      {
+        "title": "Try This for Daily Anxiety Relief: Real Results in 4 Weeks",
+        "description": "Daily anxiety management works when you combine body techniques with daily habits. This guide shows exactly how to structure your day, what to practice when, and why consistency matters more than perfection. Stop fighting anxiety and start managing it like a skill you're building."
+      }
+    ]
+  },
+  {
     "slug": "how-to-relax-your-mind",
     "title": "5 Ways to Relax Your Mind Fast: The Science-Backed Method That Actually Works",
     "category": "Mental Wellness",
