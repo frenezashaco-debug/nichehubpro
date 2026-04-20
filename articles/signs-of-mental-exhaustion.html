@@ -219,9 +219,11 @@
     <div class="sidebar-box" style="background:var(--dark);">
       <h4 style="color:rgba(255,255,255,0.5);">Weekly Wellness</h4>
       <p style="font-size:0.85rem;color:rgba(255,255,255,0.65);margin-bottom:14px;line-height:1.6;">One actionable guide per week. Free forever.</p>
-      <form onsubmit="return false;" style="display:flex;flex-direction:column;gap:8px;">
-        <input type="email" placeholder="Your email" style="padding:10px 14px;border-radius:6px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.08);color:white;font-family:Poppins,sans-serif;font-size:0.85rem;outline:none;">
+      <form id="sib-form" method="POST" data-type="subscription" action="https://1781df94.sibforms.com/serve/MUIFABtXrzMaI8A88PrzI10oMtw0B5ws-upYzYmZO7mYWfFa3ki3u-R9G0EdOr2E8lBWrGokcORpm15ZoeY3ZgiPdDVxO7NP7gze8Vi4tNHj7sAoz9PPm5-CheMlX0WFrJvDfzjmJCsSC9VqD-FYS8VIoox3qF8Dt0dP65ZgXg9rieMCtzx0jlj-88s6ug_y_LtpGFntWQ_VHbDufw==" style="display:flex;flex-direction:column;gap:8px;">
+        <input type="email" name="EMAIL" placeholder="Your email" required style="padding:10px 14px;border-radius:6px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.08);color:white;font-family:Poppins,sans-serif;font-size:0.85rem;outline:none;">
         <button class="btn btn-sm" type="submit" style="width:100%;">Subscribe Free</button>
+        <input type="text" name="email_address_check" value="" style="display:none;">
+        <input type="hidden" name="locale" value="en">
       </form>
     </div>
   </aside>
