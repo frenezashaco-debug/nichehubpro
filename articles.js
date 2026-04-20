@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-stop-anxiety-attacks",
+    "title": "5 Ways to Stop Anxiety Attacks Before They Take Over Your Day",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to stop anxiety attacks is one of the most searched questions from people feeling trapped by their own nervous system. An anxiety attack can hit withou",
+    "image": "images/how-to-stop-anxiety-attacks.jpg",
+    "alt": "Person practicing breathing exercise on couch during anxiety attack relief",
+    "pins": [
+      {
+        "title": "How to Stop Anxiety Attacks: 5 Techniques That Work in Minutes",
+        "description": "Learn the science-backed methods for how to stop anxiety attacks before they spiral. Discover the 5-4-3-2-1 grounding technique, box breathing, and progressive muscle relaxation. These panic attack help strategies work in 2-5 minutes and can be practiced anywhere. Find calm again with techniques that actually address your nervous system. Save this pin to master anxiety relief today."
+      },
+      {
+        "title": "Stop Panic Attacks Before They Start: Daily Prevention Habits",
+        "description": "Stop anxiety attacks from happening in the first place with these 5 daily habits. Research shows consistent breathing practice, sleep regulation, and nervous system training reduce anxiety frequency by 60% in just 4 weeks. Learn what to do during panic attacks and what to do daily to prevent them. Your peace starts with these simple, science-backed practices."
+      },
+      {
+        "title": "What to Do During an Anxiety Attack: Immediate Relief Techniques",
+        "description": "Feeling anxious right now? Try the 5-4-3-2-1 grounding method or box breathing when panic strikes. These immediate anxiety attack solutions work by calming your nervous system and bringing you back to the present moment. No medication needed. Get instant relief and regain control with techniques you can do anywhere, anytime."
+      }
+    ]
+  },
+  {
     "slug": "how-to-deal-with-anxiety-daily",
     "title": "5 Ways to Deal with Anxiety Daily: Your Realistic Recovery Plan",
     "category": "Mental Wellness",
