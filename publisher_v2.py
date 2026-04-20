@@ -7,9 +7,11 @@ Usage:
   python publisher_v2.py "how to stop overthinking at night" "Mental Wellness"
 """
 
-import sys, os, re, json, textwrap
+import sys, os, re, json, textwrap, io, time
 sys.stdout.reconfigure(encoding='utf-8')
 import anthropic
+import requests
+from PIL import Image
 try:
     import json_repair
     _HAS_JSON_REPAIR = True
@@ -88,6 +90,23 @@ JSON STRUCTURE:
   "conclusion": "string — 3 short paragraphs. Motivational. Encourages one small action today. Human and warm.",
   "cover_image_prompt": "string — UNIQUE AI image prompt for THIS article. Follow this exact structure: 'Create a realistic, high-quality blog cover image for an article about: [TOPIC]. Scene: [specific real-life environment reflecting the topic]. Subject: a single person expressing [specific emotion tied to topic] with natural body language. Details: authentic everyday setting, minimal clean background, soft textures. Lighting: soft natural [morning/evening] light, warm calming tones. Style: photorealistic, minimalist wellness aesthetic, depth of field, shot like a real camera. Mood: emotional but peaceful, relatable and human. Composition: subject slightly off-center, focus on emotion. STRICT: no text, no logos, no watermark, not stock photo. Output: 4K ultra realistic natural colors.' FORBIDDEN scenes: woman sitting by window, person meditating on bed, hands clasped, eyes closed in bedroom. Each image must feel like a unique candid moment.",
   "cover_alt_text": "string — short SEO alt text describing the image. Format: '[person/subject] [action] in [setting]'. Example: 'person overthinking at night in bedroom'. Max 10 words. Include the primary keyword naturally.",
+  "section_image_prompts": [
+    {
+      "section_index": 0,
+      "prompt": "string — UNIQUE FLUX prompt for in-article image placed after section 1. Must differ from cover image. Specific real-life wellness moment related to section content. Warm, calming, photorealistic. STRICT: no text, no logos, no watermarks.",
+      "alt_text": "string — 8-10 words, describe the scene naturally, include primary keyword"
+    },
+    {
+      "section_index": 2,
+      "prompt": "string — UNIQUE FLUX prompt for in-article image after section 3. Completely different scene and person from section 1 prompt and cover. Solution-focused or process-oriented moment. Photorealistic wellness lifestyle. STRICT: no text.",
+      "alt_text": "string — 8-10 words, describe the scene, include primary keyword"
+    },
+    {
+      "section_index": 4,
+      "prompt": "string — UNIQUE FLUX prompt for in-article image after section 5. Calming, hopeful, empowering scene. Different from the two above. Could show outcome or transformation. Photorealistic. STRICT: no text, no logos.",
+      "alt_text": "string — 8-10 words, describe the scene naturally, include primary keyword"
+    }
+  ],
   "pinterest_pins": [
     {
       "title": "string — Pin 1: 'How to...' style. CTR-optimized. Max 100 chars. Include primary keyword.",
@@ -152,11 +171,57 @@ REQUIREMENTS:
 - FAQ: 5 real questions people search on Google about this topic
 - Conclusion: motivational, encourage one small habit today
 - Cover image: unique realistic wellness photo prompt for this specific topic
+- Section images: 3 unique FLUX prompts in section_image_prompts (indexes 0, 2, 4). Each must show a DIFFERENT scene, person, and moment from each other and from the cover. Contextual to section content. No text, no logos.
 
 Return ONLY the JSON. No em dashes anywhere."""
 
+# ── SECTION IMAGE DOWNLOADER ──────────────────────────────────────────────
+def download_section_image(prompt, article_slug, index, retries=2):
+    """Download a section image from Pollinations.ai and save as WebP (100-300 KB)."""
+    strict = "STRICT RULES: no text, no logos, no watermarks, no overlay. 4K ultra realistic natural colors."
+    full_prompt = f"{prompt}. {strict}"
+    encoded = requests.utils.quote(full_prompt)
+    url = (
+        f"https://image.pollinations.ai/prompt/{encoded}"
+        f"?width=1200&height=630&model=flux-realism&nologo=true&enhance=true"
+    )
+    filename = f"{article_slug}-sec{index}.webp"
+    out_path = os.path.join(IMAGES_DIR, filename)
+
+    for attempt in range(1, retries + 1):
+        try:
+            print(f"  Section image {index} (attempt {attempt})...")
+            resp = requests.get(url, timeout=90)
+            if resp.status_code == 200 and 'image' in resp.headers.get('content-type', ''):
+                img = Image.open(io.BytesIO(resp.content)).convert('RGB')
+                img = img.resize((900, 506), Image.LANCZOS)
+                # Target 100-300 KB WebP
+                chosen_buf = None
+                for quality in range(85, 10, -5):
+                    buf = io.BytesIO()
+                    img.save(buf, format='WEBP', quality=quality, method=4)
+                    size_kb = buf.tell() / 1024
+                    chosen_buf = buf
+                    if size_kb <= 300:
+                        break
+                with open(out_path, 'wb') as f:
+                    f.write(chosen_buf.getvalue())
+                size_kb = os.path.getsize(out_path) / 1024
+                print(f"  Saved: {filename} ({size_kb:.1f} KB)")
+                return filename
+            print(f"  HTTP {resp.status_code} — skipping")
+            return None
+        except Exception as e:
+            print(f"  Error: {e}")
+            if attempt < retries:
+                time.sleep(3)
+
+    print(f"  Section image {index} failed — skipping")
+    return None
+
+
 # ── ARTICLE HTML TEMPLATE ─────────────────────────────────────────────────
-def build_html(data, keyword_day, cover_filename):
+def build_html(data, keyword_day, cover_filename, section_images=None):
     title        = data["title"]
     meta_desc    = data["meta_description"]
     category     = data["category"]
@@ -186,6 +251,15 @@ def build_html(data, keyword_day, cover_filename):
     for i, sec in enumerate(sections):
         body = sec.get('content') or sec.get('body') or sec.get('text') or sec.get('html') or ''
         sections_html += f"\n      <h2>{sec['h2']}</h2>\n      {body}\n"
+        # Insert section image after sections 0, 2, 4
+        if section_images and i in section_images:
+            img_info = section_images[i]
+            sections_html += (
+                f'\n      <img src="../images/{img_info["filename"]}" '
+                f'alt="{img_info["alt_text"]}" '
+                f'style="width:100%;border-radius:10px;margin:28px 0 20px;display:block;object-fit:cover;" '
+                f'loading="lazy">\n'
+            )
         # Insert ad slot after section 2
         if i == 1:
             sections_html += '\n      <div class="ad-slot ad-slot-banner">Advertisement</div>\n'
@@ -496,9 +570,22 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category):
     generate_cover(data["title"], category, cover_path, custom_prompt=cover_prompt)
     print(f"Cover saved: {cover_filename}")
 
+    # Generate section images (WebP, contextual per section)
+    section_images = {}
+    for img_data in data.get("section_image_prompts", []):
+        sec_idx = img_data.get("section_index", 0)
+        prompt  = img_data.get("prompt", "")
+        alt     = img_data.get("alt_text", data["title"])
+        if prompt:
+            filename = download_section_image(prompt, article_slug, sec_idx + 1)
+            if filename:
+                section_images[sec_idx] = {"filename": filename, "alt_text": alt}
+    if section_images:
+        print(f"  {len(section_images)} section image(s) generated")
+
     # Build and save HTML
     print("Building HTML...")
-    html = build_html(data, primary_kw, cover_filename)
+    html = build_html(data, primary_kw, cover_filename, section_images)
     out_path = os.path.join(OUT_DIR, f"{article_slug}.html")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html)
