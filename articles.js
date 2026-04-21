@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-control-your-thoughts",
+    "title": "5 Ways to Control Your Thoughts: Stop the Mental Chaos Today",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Your mind is racing again. How to control your thoughts feels impossible when your brain keeps firing the same anxious loops, doubts, and what-ifs on repea",
+    "image": "images/how-to-control-your-thoughts.jpg",
+    "alt": "person managing intrusive thoughts peacefully at desk morning",
+    "pins": [
+      {
+        "title": "How to Control Your Thoughts: 5 Proven Techniques for Anxiety Relief",
+        "description": "Intrusive thoughts ruining your day? Learn how to control your thoughts without fighting them. These science-backed techniques rewire your brain in just 2-3 weeks. Stop the mental chaos and reclaim your peace. Try the first method today."
+      },
+      {
+        "title": "Stop Intrusive Thoughts: Why You Can't Control Them (And What Works)",
+        "description": "Why can't I control my thoughts? The answer isn't what you think. Discover why fighting intrusive thoughts makes them worse, and learn the acceptance-based method that actually reduces anxiety. Real results from real people in as little as two weeks."
+      },
+      {
+        "title": "5 Daily Habits to Master Thought Control: Your Mental Peace Starts Here",
+        "description": "Control your thoughts naturally with simple daily practices that rewire your brain. From morning intentions to evening release rituals, these five habits compound into lasting change. Build your mental strength one day at a time."
+      }
+    ]
+  },
+  {
     "slug": "how-to-stop-anxiety-attacks",
     "title": "5 Ways to Stop Anxiety Attacks Before They Take Over Your Day",
     "category": "Mental Wellness",
