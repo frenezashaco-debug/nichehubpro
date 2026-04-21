@@ -47,18 +47,19 @@
     </div>
   </div>
 
-  <form onsubmit="handleContact(event);" style="background:var(--white);padding:32px;border-radius:var(--radius);border:1px solid var(--border);">
+  <form id="contact-form" onsubmit="handleContact(event);" style="background:var(--white);padding:32px;border-radius:var(--radius);border:1px solid var(--border);">
+    <input type="hidden" name="_subject" value="New message from NicheHubPro Contact Form">
     <div class="form-group">
       <label for="name">Your Name</label>
-      <input type="text" id="name" placeholder="John Smith" required>
+      <input type="text" id="name" name="name" placeholder="John Smith" required>
     </div>
     <div class="form-group">
       <label for="email">Email Address</label>
-      <input type="email" id="email" placeholder="you@example.com" required>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
     </div>
     <div class="form-group">
       <label for="subject">Subject</label>
-      <select id="subject">
+      <select id="subject" name="subject">
         <option value="">Select a topic...</option>
         <option>General Question</option>
         <option>Article Suggestion</option>
@@ -69,11 +70,14 @@
     </div>
     <div class="form-group">
       <label for="message">Message</label>
-      <textarea id="message" placeholder="Your message..." required></textarea>
+      <textarea id="message" name="message" placeholder="Your message..." required></textarea>
     </div>
-    <button class="btn" type="submit" style="width:100%;">Send Message</button>
+    <button class="btn" id="contact-btn" type="submit" style="width:100%;">Send Message</button>
     <div id="contact-success" style="display:none;margin-top:16px;padding:14px;background:var(--green-lt);border-radius:8px;font-size:0.88rem;color:var(--green-dk);font-weight:500;">
       ✓ Message sent! We will get back to you within 2 business days.
+    </div>
+    <div id="contact-error" style="display:none;margin-top:16px;padding:14px;background:#fff0f0;border-radius:8px;font-size:0.88rem;color:#c0392b;font-weight:500;">
+      Something went wrong. Please email us directly at contact@nichehubpro.com
     </div>
   </form>
 </div>
@@ -102,9 +106,28 @@
 <script>
 function handleContact(e) {
   e.preventDefault();
-  document.getElementById('contact-success').style.display = 'block';
-  e.target.querySelector('button').disabled = true;
-  e.target.querySelector('button').textContent = 'Sent ✓';
+  var form = document.getElementById('contact-form');
+  var btn  = document.getElementById('contact-btn');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  fetch('https://formspree.io/f/mojyklpq', {
+    method: 'POST',
+    headers: { 'Accept': 'application/json' },
+    body: new FormData(form)
+  }).then(function(r) {
+    if (r.ok) {
+      document.getElementById('contact-success').style.display = 'block';
+      form.reset();
+    } else {
+      document.getElementById('contact-error').style.display = 'block';
+      btn.disabled = false;
+      btn.textContent = 'Send Message';
+    }
+  }).catch(function() {
+    document.getElementById('contact-error').style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = 'Send Message';
+  });
 }
 </script>
 </body>
