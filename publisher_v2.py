@@ -183,7 +183,7 @@ def download_section_image(prompt, article_slug, index, retries=2):
     encoded = requests.utils.quote(full_prompt)
     url = (
         f"https://image.pollinations.ai/prompt/{encoded}"
-        f"?width=1200&height=630&model=flux-realism&nologo=true&enhance=true"
+        f"?width=1920&height=1080&model=flux-realism&nologo=true&enhance=true"
     )
     filename = f"{article_slug}-sec{index}.webp"
     out_path = os.path.join(IMAGES_DIR, filename)
@@ -191,18 +191,18 @@ def download_section_image(prompt, article_slug, index, retries=2):
     for attempt in range(1, retries + 1):
         try:
             print(f"  Section image {index} (attempt {attempt})...")
-            resp = requests.get(url, timeout=90)
+            resp = requests.get(url, timeout=120)
             if resp.status_code == 200 and 'image' in resp.headers.get('content-type', ''):
                 img = Image.open(io.BytesIO(resp.content)).convert('RGB')
-                img = img.resize((900, 506), Image.LANCZOS)
-                # Target 100-300 KB WebP
+                img = img.resize((1920, 1080), Image.LANCZOS)
+                # Target ≤500 KB WebP (high quality)
                 chosen_buf = None
-                for quality in range(85, 10, -5):
+                for quality in range(92, 10, -5):
                     buf = io.BytesIO()
                     img.save(buf, format='WEBP', quality=quality, method=4)
                     size_kb = buf.tell() / 1024
                     chosen_buf = buf
-                    if size_kb <= 300:
+                    if size_kb <= 500:
                         break
                 with open(out_path, 'wb') as f:
                     f.write(chosen_buf.getvalue())

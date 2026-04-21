@@ -28,8 +28,8 @@ def _find_font(win_path, linux_names):
 
 FONT_BOLD = _find_font("c:/Windows/Fonts/arialbd.ttf", ["DejaVuSans-Bold.ttf", "LiberationSans-Bold.ttf"])
 FONT_REG  = _find_font("c:/Windows/Fonts/arial.ttf",   ["DejaVuSans.ttf",      "LiberationSans-Regular.ttf"])
-W, H      = 1200, 630
-MAX_KB    = 95
+W, H      = 1920, 1080
+MAX_KB    = 250
 
 # ── BRAND COLORS (fallback) ───────────────────────────────────────────────
 DARK1  = (30,  42,  47)
