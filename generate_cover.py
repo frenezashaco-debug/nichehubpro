@@ -1,6 +1,6 @@
 """
 NicheHubPro — Cover Image Generator
-Uses ai-ministries.com (FLUX-realism, free, no API key needed).
+Uses Leonardo.ai (Phoenix 1.0, paid) as primary.
 Falls back to branded Pillow cover on error.
 
 Usage:
@@ -13,7 +13,19 @@ sys.stdout.reconfigure(encoding='utf-8')
 from PIL import Image, ImageDraw, ImageFont
 
 # ── CONFIG ────────────────────────────────────────────────────────────────
-API_URL   = "https://www.ai-ministries.com/.netlify/functions/ai"
+try:
+    from config import LEONARDO_API_KEY
+except ImportError:
+    LEONARDO_API_KEY = os.environ.get("LEONARDO_API_KEY", "")
+
+LEONARDO_MODEL  = "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3"  # Phoenix 1.0
+LEONARDO_W, LEONARDO_H = 1360, 768  # native Phoenix ratio, upscaled to 1920x1080
+LEONARDO_NEGATIVE = (
+    "man, male, boy, masculine, text, watermark, logo, words, letters, "
+    "number, AI look, stock photo, fake smile, arms crossed, illustration, "
+    "cartoon, digital art, painting, oversaturated, dark, cold, clinical"
+)
+
 OUT_DIR   = os.path.join(os.path.dirname(os.path.abspath(__file__)), "images")
 # Font paths — Windows first, Linux fallback
 def _find_font(win_path, linux_names):
@@ -82,9 +94,9 @@ def build_image_prompt(topic, category, custom_prompt=None):
     else:
         scene = CATEGORY_SCENES.get(category, CATEGORY_SCENES["Mental Wellness"])
         prompt = (
-            f"Create a realistic, high-quality blog cover image for an article about: {topic}. "
-            f"Scene: a calm, modern, real-life environment that reflects mental wellness and emotional state. "
-            f"Subject: a single person expressing {scene['emotion']} with natural unposed body language. "
+            f"Photorealistic wellness lifestyle photo for an article about: {topic}. "
+            f"Scene: a calm, modern, real-life environment reflecting mental wellness. "
+            f"Subject: a young woman (25-35 years old) expressing {scene['emotion']} with natural unposed body language. "
             f"Details: {scene['action']}, authentic everyday setting, minimal clean background, "
             f"soft textures like bed sheets, desk, plants, natural light. "
             f"Lighting: soft natural morning sunlight or dim evening light, warm calming tones (green, beige, soft blue). "
@@ -110,28 +122,72 @@ def compress_to_limit(img, max_kb=MAX_KB):
     img.convert('RGB').save(buf, format='JPEG', quality=20, optimize=True)
     return buf.getvalue(), 20, buf.tell() / 1024
 
-# ── AI IMAGE GENERATION ───────────────────────────────────────────────────
+# ── AI IMAGE GENERATION — Leonardo.ai Phoenix 1.0 ────────────────────────
 def generate_with_ai(topic, category, custom_prompt=None, retries=2):
-    """Generate image via Pollinations.ai (FLUX-realism, free, no API key)."""
+    """Generate image via Leonardo.ai Phoenix 1.0."""
     prompt = build_image_prompt(topic, category, custom_prompt)
+
+    headers = {
+        "accept": "application/json",
+        "content-type": "application/json",
+        "authorization": f"Bearer {LEONARDO_API_KEY}",
+    }
 
     for attempt in range(1, retries + 1):
         try:
-            print(f"  Calling FLUX-realism (attempt {attempt})...")
-            encoded = requests.utils.quote(prompt)
-            url = (
-                f"https://image.pollinations.ai/prompt/{encoded}"
-                f"?width={W}&height={H}&model=flux-realism&nologo=true&enhance=true"
+            print(f"  Calling Leonardo Phoenix 1.0 (attempt {attempt})...")
+            body = {
+                "modelId": LEONARDO_MODEL,
+                "prompt": prompt,
+                "negative_prompt": LEONARDO_NEGATIVE,
+                "width": LEONARDO_W,
+                "height": LEONARDO_H,
+                "num_images": 1,
+                "alchemy": False,
+                "presetStyle": "CINEMATIC",
+                "public": False,
+            }
+            r = requests.post(
+                "https://cloud.leonardo.ai/api/rest/v1/generations",
+                json=body, headers=headers, timeout=30
             )
-            resp = requests.get(url, timeout=90)
-            if resp.status_code == 200 and 'image' in resp.headers.get('content-type', ''):
-                img = Image.open(io.BytesIO(resp.content))
-                return img
-            print(f"  Failed: {resp.status_code}")
+            if r.status_code != 200:
+                print(f"  Create failed: {r.status_code} {r.text[:200]}")
+                time.sleep(5)
+                continue
+
+            gen_id = r.json()["sdGenerationJob"]["generationId"]
+
+            # Poll until complete (max 120s)
+            for _ in range(20):
+                time.sleep(6)
+                poll = requests.get(
+                    f"https://cloud.leonardo.ai/api/rest/v1/generations/{gen_id}",
+                    headers=headers, timeout=20
+                )
+                if poll.status_code != 200:
+                    break
+                gen = poll.json().get("generations_by_pk", {})
+                status = gen.get("status", "")
+                if status == "COMPLETE":
+                    images = gen.get("generated_images", [])
+                    if images:
+                        img_url = images[0]["url"]
+                        img_resp = requests.get(img_url, timeout=60)
+                        if img_resp.status_code == 200:
+                            img = Image.open(io.BytesIO(img_resp.content))
+                            img = img.resize((W, H), Image.LANCZOS)
+                            return img
+                    break
+                if status == "FAILED":
+                    print("  Generation FAILED")
+                    break
+
+            print(f"  Attempt {attempt} did not return image")
         except Exception as e:
             print(f"  Error: {e}")
             if attempt < retries:
-                time.sleep(3)
+                time.sleep(5)
 
     return None
 

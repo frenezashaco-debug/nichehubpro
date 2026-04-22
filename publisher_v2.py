@@ -88,22 +88,22 @@ JSON STRUCTURE:
     {"question": "real Google question 5?", "answer": "short clear useful answer"}
   ],
   "conclusion": "string — 3 short paragraphs. Motivational. Encourages one small action today. Human and warm.",
-  "cover_image_prompt": "string — UNIQUE AI image prompt for THIS article. Follow this exact structure: 'Create a realistic, high-quality blog cover image for an article about: [TOPIC]. Scene: [specific real-life environment reflecting the topic]. Subject: a single person expressing [specific emotion tied to topic] with natural body language. Details: authentic everyday setting, minimal clean background, soft textures. Lighting: soft natural [morning/evening] light, warm calming tones. Style: photorealistic, minimalist wellness aesthetic, depth of field, shot like a real camera. Mood: emotional but peaceful, relatable and human. Composition: subject slightly off-center, focus on emotion. STRICT: no text, no logos, no watermark, not stock photo. Output: 4K ultra realistic natural colors.' FORBIDDEN scenes: woman sitting by window, person meditating on bed, hands clasped, eyes closed in bedroom. Each image must feel like a unique candid moment.",
-  "cover_alt_text": "string — short SEO alt text describing the image. Format: '[person/subject] [action] in [setting]'. Example: 'person overthinking at night in bedroom'. Max 10 words. Include the primary keyword naturally.",
+  "cover_image_prompt": "string — UNIQUE AI image prompt for THIS article. SUBJECT RULE: ALWAYS use a young woman (25-35), OR close-up of hands only, OR an environment with no person — NEVER a man or male subject. Follow this structure: 'Photorealistic wellness lifestyle photo for an article about: [TOPIC]. Scene: [specific real-life environment]. Subject: [a young woman / close-up of hands / environment only] expressing [specific emotion] with natural unposed body language. Details: authentic everyday setting, soft textures, warm calming tones, shallow depth of field. Style: photorealistic, shot like a real camera, not AI look. STRICT: no text, no logos, no watermark, no man, no male subject. 4K ultra realistic natural colors.' FORBIDDEN: man, male subject, arms crossed, fake smile, stock photo pose, woman sitting by window, person meditating on bed, eyes closed in bedroom. Each image must feel like a unique candid real-life moment.",
+  "cover_alt_text": "string — short SEO alt text describing the image. Format: '[woman/hands/scene] [action] in [setting]'. Max 10 words. Include the primary keyword naturally.",
   "section_image_prompts": [
     {
       "section_index": 0,
-      "prompt": "string — UNIQUE FLUX prompt for in-article image placed after section 1. Must differ from cover image. Specific real-life wellness moment related to section content. Warm, calming, photorealistic. STRICT: no text, no logos, no watermarks.",
+      "prompt": "string — UNIQUE Leonardo prompt for in-article image after section 1. SUBJECT RULE: young woman (25-35), OR hands-only close-up, OR environment only — NEVER a man. Must differ from cover. Specific real-life wellness moment tied to section content. Warm, photorealistic. STRICT: no text, no logos, no man.",
       "alt_text": "string — 8-10 words, describe the scene naturally, include primary keyword"
     },
     {
       "section_index": 2,
-      "prompt": "string — UNIQUE FLUX prompt for in-article image after section 3. Completely different scene and person from section 1 prompt and cover. Solution-focused or process-oriented moment. Photorealistic wellness lifestyle. STRICT: no text.",
+      "prompt": "string — UNIQUE Leonardo prompt for in-article image after section 3. SUBJECT RULE: young woman or hands-only or environment — NEVER a man. Completely different scene from section 1 and cover. Solution-focused moment. Photorealistic wellness lifestyle. STRICT: no text, no man.",
       "alt_text": "string — 8-10 words, describe the scene, include primary keyword"
     },
     {
       "section_index": 4,
-      "prompt": "string — UNIQUE FLUX prompt for in-article image after section 5. Calming, hopeful, empowering scene. Different from the two above. Could show outcome or transformation. Photorealistic. STRICT: no text, no logos.",
+      "prompt": "string — UNIQUE Leonardo prompt for in-article image after section 5. SUBJECT RULE: young woman or hands-only or environment — NEVER a man. Calming, hopeful, empowering scene. Different from all above. Could show outcome or transformation. Photorealistic. STRICT: no text, no man.",
       "alt_text": "string — 8-10 words, describe the scene naturally, include primary keyword"
     }
   ],
@@ -175,46 +175,94 @@ REQUIREMENTS:
 
 Return ONLY the JSON. No em dashes anywhere."""
 
-# ── SECTION IMAGE DOWNLOADER ──────────────────────────────────────────────
+# ── SECTION IMAGE DOWNLOADER — Leonardo.ai Phoenix 1.0 ───────────────────
+try:
+    from config import LEONARDO_API_KEY as _LEO_KEY
+except ImportError:
+    _LEO_KEY = os.environ.get("LEONARDO_API_KEY", "")
+
+_LEO_MODEL    = "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3"
+_LEO_NEGATIVE = (
+    "man, male, boy, masculine, text, watermark, logo, words, letters, "
+    "number, AI look, stock photo, fake smile, arms crossed, illustration, "
+    "cartoon, digital art, painting, oversaturated, dark, cold, clinical"
+)
+_LEO_HEADERS  = {
+    "accept": "application/json",
+    "content-type": "application/json",
+    "authorization": f"Bearer {_LEO_KEY}",
+}
+
 def download_section_image(prompt, article_slug, index, retries=2):
-    """Download a section image from Pollinations.ai and save as WebP (100-300 KB)."""
-    strict = "STRICT RULES: no text, no logos, no watermarks, no overlay. 4K ultra realistic natural colors."
+    """Download a section image via Leonardo.ai Phoenix 1.0 and save as WebP."""
+    strict = "Photorealistic wellness lifestyle, warm natural tones, no text, no logos, no watermarks, 4K quality."
     full_prompt = f"{prompt}. {strict}"
-    encoded = requests.utils.quote(full_prompt)
-    url = (
-        f"https://image.pollinations.ai/prompt/{encoded}"
-        f"?width=1920&height=1080&model=flux-realism&nologo=true&enhance=true"
-    )
     filename = f"{article_slug}-sec{index}.webp"
     out_path = os.path.join(IMAGES_DIR, filename)
 
     for attempt in range(1, retries + 1):
         try:
-            print(f"  Section image {index} (attempt {attempt})...")
-            resp = requests.get(url, timeout=120)
-            if resp.status_code == 200 and 'image' in resp.headers.get('content-type', ''):
-                img = Image.open(io.BytesIO(resp.content)).convert('RGB')
-                img = img.resize((1920, 1080), Image.LANCZOS)
-                # Target ≤500 KB WebP (high quality)
-                chosen_buf = None
-                for quality in range(92, 10, -5):
-                    buf = io.BytesIO()
-                    img.save(buf, format='WEBP', quality=quality, method=4)
-                    size_kb = buf.tell() / 1024
-                    chosen_buf = buf
-                    if size_kb <= 500:
-                        break
-                with open(out_path, 'wb') as f:
-                    f.write(chosen_buf.getvalue())
-                size_kb = os.path.getsize(out_path) / 1024
-                print(f"  Saved: {filename} ({size_kb:.1f} KB)")
-                return filename
-            print(f"  HTTP {resp.status_code} — skipping")
-            return None
+            print(f"  Section image {index} (Leonardo attempt {attempt})...")
+            body = {
+                "modelId": _LEO_MODEL,
+                "prompt": full_prompt,
+                "negative_prompt": _LEO_NEGATIVE,
+                "width": 1360,
+                "height": 768,
+                "num_images": 1,
+                "alchemy": False,
+                "presetStyle": "CINEMATIC",
+                "public": False,
+            }
+            r = requests.post(
+                "https://cloud.leonardo.ai/api/rest/v1/generations",
+                json=body, headers=_LEO_HEADERS, timeout=30
+            )
+            if r.status_code != 200:
+                print(f"  Create failed: {r.status_code} {r.text[:150]}")
+                time.sleep(5)
+                continue
+
+            gen_id = r.json()["sdGenerationJob"]["generationId"]
+
+            for _ in range(20):
+                time.sleep(6)
+                poll = requests.get(
+                    f"https://cloud.leonardo.ai/api/rest/v1/generations/{gen_id}",
+                    headers=_LEO_HEADERS, timeout=20
+                )
+                if poll.status_code != 200:
+                    break
+                gen = poll.json().get("generations_by_pk", {})
+                status = gen.get("status", "")
+                if status == "COMPLETE":
+                    images = gen.get("generated_images", [])
+                    if images:
+                        img_resp = requests.get(images[0]["url"], timeout=60)
+                        if img_resp.status_code == 200:
+                            img = Image.open(io.BytesIO(img_resp.content)).convert('RGB')
+                            img = img.resize((1920, 1080), Image.LANCZOS)
+                            chosen_buf = None
+                            for quality in range(92, 10, -5):
+                                buf = io.BytesIO()
+                                img.save(buf, format='WEBP', quality=quality, method=4)
+                                chosen_buf = buf
+                                if buf.tell() / 1024 <= 500:
+                                    break
+                            with open(out_path, 'wb') as f:
+                                f.write(chosen_buf.getvalue())
+                            size_kb = os.path.getsize(out_path) / 1024
+                            print(f"  Saved: {filename} ({size_kb:.1f} KB)")
+                            return filename
+                    break
+                if status == "FAILED":
+                    print("  Generation FAILED")
+                    break
+
         except Exception as e:
             print(f"  Error: {e}")
             if attempt < retries:
-                time.sleep(3)
+                time.sleep(5)
 
     print(f"  Section image {index} failed — skipping")
     return None
