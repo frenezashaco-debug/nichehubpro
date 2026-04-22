@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-calm-your-mind-instantly",
+    "title": "5 Ways to Calm Your Mind Instantly: Stop the Mental Spiral Right Now",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to calm your mind instantly is something you reach for when your thoughts start spiraling and your chest tightens without warning. Your nervous system i",
+    "image": "images/how-to-calm-your-mind-instantly.jpg",
+    "alt": "young woman sitting cross-legged on floor with closed eyes finding instant calm in morning light",
+    "pins": [
+      {
+        "title": "How to Calm Your Mind Instantly: 5 Techniques That Work in 90 Seconds",
+        "description": "Discover the five science-backed methods for how to calm your mind instantly when anxiety hits. Box breathing, cold water grounding, and the 5-4-3-2-1 sensory technique activate your parasympathetic nervous system in under two minutes. No meditation required. Use them anywhere, anytime your mind starts spiraling."
+      },
+      {
+        "title": "Stop a Racing Mind Fast: The 5 Instant Relaxation Techniques That Actually Work",
+        "description": "Racing thoughts do not have to take over your day. These five instant relaxation techniques work by signaling safety to your nervous system rather than fighting your thoughts. Research shows cortisol drops 15-20% within 90 seconds of slow breathing. Start with box breathing and build from there."
+      },
+      {
+        "title": "Try These 5 Methods to Relax Your Mind Quickly in Any Situation",
+        "description": "Whether you are at work, at home, or mid-panic, these five techniques help you relax your mind quickly without any tools or preparation. From rhythmic breath walks to progressive muscle release, each method is backed by neuroscience and takes under three minutes. Save this for when you need it most."
+      }
+    ]
+  },
+  {
     "slug": "how-to-control-your-thoughts",
     "title": "5 Ways to Control Your Thoughts: Stop the Mental Chaos Today",
     "category": "Mental Wellness",
