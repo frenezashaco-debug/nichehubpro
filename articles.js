@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-stop-worrying",
+    "title": "5 Ways to Stop Worrying: Reclaim Your Peace Starting Today",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to stop worrying has become the question millions of people ask themselves every single day. Your mind won't quit, your chest feels tight, and no matte",
+    "image": "images/how-to-stop-worrying.jpg",
+    "alt": "Person finding relief from worry at kitchen table",
+    "pins": [
+      {
+        "title": "How to Stop Worrying About Everything: 5 Proven Techniques",
+        "description": "Learn how to stop worrying with science-backed methods that actually work. Discover why your brain keeps worrying and five practical techniques to break the cycle. From grounding exercises to reframing thoughts, these daily habits reduce excessive worry in just 3-6 weeks. Start feeling calm again today."
+      },
+      {
+        "title": "Stop Excessive Worrying: Brain Secrets & Daily Habits",
+        "description": "What causes excessive worrying? Your brain thinks worry keeps you safe. But you can rewire this pattern. Read about the science behind worry, the signs you're worrying too much, and specific daily habits that quiet racing thoughts. Real relief starts with understanding why your mind won't quit."
+      },
+      {
+        "title": "5-Minute Worry Fix: Techniques to Calm Your Mind Daily",
+        "description": "Try these five-minute techniques to stop worrying before it takes over your day. Name your worry specifically, use grounding exercises, reframe scary stories, and create action plans. Each technique targets worry at a different point. Pick one and practice daily for real, lasting peace of mind."
+      }
+    ]
+  },
+  {
     "slug": "how-to-calm-your-mind-instantly",
     "title": "5 Ways to Calm Your Mind Instantly: Stop the Mental Spiral Right Now",
     "category": "Mental Wellness",
