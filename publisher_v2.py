@@ -88,23 +88,23 @@ JSON STRUCTURE:
     {"question": "real Google question 5?", "answer": "short clear useful answer"}
   ],
   "conclusion": "string — 3 short paragraphs. Motivational. Encourages one small action today. Human and warm.",
-  "cover_image_prompt": "string — UNIQUE AI image prompt for THIS article. SUBJECT RULE: ALWAYS use a young woman (25-35), OR close-up of hands only, OR an environment with no person — NEVER a man or male subject. Follow this structure: 'Photorealistic wellness lifestyle photo for an article about: [TOPIC]. Scene: [specific real-life environment]. Subject: [a young woman / close-up of hands / environment only] expressing [specific emotion] with natural unposed body language. Details: authentic everyday setting, soft textures, warm calming tones, shallow depth of field. Style: photorealistic, shot like a real camera, not AI look. STRICT: no text, no logos, no watermark, no man, no male subject. 4K ultra realistic natural colors.' FORBIDDEN: man, male subject, arms crossed, fake smile, stock photo pose, woman sitting by window, person meditating on bed, eyes closed in bedroom. Each image must feel like a unique candid real-life moment.",
-  "cover_alt_text": "string — short SEO alt text describing the image. Format: '[woman/hands/scene] [action] in [setting]'. Max 10 words. Include the primary keyword naturally.",
+  "cover_image_prompt": "string — UNIQUE humanized photo prompt for THIS article. RULES: (1) Subject MUST be a young woman 25-35, OR close-up of hands only, OR environment with no person — NEVER a man. (2) Use candid documentary photography language. (3) Include specific details: hair color/style, exact clothing item, specific object she holds or touches. (4) Include camera style: 'shot on 85mm f/1.8, shallow depth of field, slightly blurred background'. (5) Include 'real skin texture, natural imperfections, no plastic look'. STRUCTURE: 'Candid lifestyle photo: a young woman, [age], [specific location and time of day]. [Hair and clothing details]. [Exact action and emotional expression]. [One specific prop or environmental detail]. [Lighting details]. Shot on 85mm f/1.8, shallow depth of field. Real skin texture, natural imperfections. Photorealistic documentary photography. No text, no logos, no watermarks, no AI look, no man.' FORBIDDEN: man, male, arms crossed, fake smile, stock photo pose, studio lighting, perfect symmetry.",
+  "cover_alt_text": "string — short SEO alt text. Format: '[woman/hands/scene] [action] in [setting]'. Max 10 words. Include primary keyword.",
   "section_image_prompts": [
     {
       "section_index": 0,
-      "prompt": "string — UNIQUE Leonardo prompt for in-article image after section 1. SUBJECT RULE: young woman (25-35), OR hands-only close-up, OR environment only — NEVER a man. Must differ from cover. Specific real-life wellness moment tied to section content. Warm, photorealistic. STRICT: no text, no logos, no man.",
-      "alt_text": "string — 8-10 words, describe the scene naturally, include primary keyword"
+      "prompt": "string — UNIQUE humanized photo prompt for section 1 image. RULES: young woman OR hands-only OR environment — NEVER a man. Must be completely different scene from cover. Use candid documentary style with specific details: exact setting, exact clothing, specific object, camera style (50mm or 85mm, f/1.8-2.8, shallow DOF), real skin texture. Tied to section 1 topic. No text, no logos, no man.",
+      "alt_text": "string — 8-10 words describing the scene, include primary keyword"
     },
     {
       "section_index": 2,
-      "prompt": "string — UNIQUE Leonardo prompt for in-article image after section 3. SUBJECT RULE: young woman or hands-only or environment — NEVER a man. Completely different scene from section 1 and cover. Solution-focused moment. Photorealistic wellness lifestyle. STRICT: no text, no man.",
-      "alt_text": "string — 8-10 words, describe the scene, include primary keyword"
+      "prompt": "string — UNIQUE humanized photo prompt for section 3 image. RULES: young woman OR hands-only close-up OR outdoor/indoor environment — NEVER a man. Completely different from cover and section 1. Specific candid moment with exact details. Solution or progress-focused scene. Camera style included. No text, no logos, no man.",
+      "alt_text": "string — 8-10 words describing the scene, include primary keyword"
     },
     {
       "section_index": 4,
-      "prompt": "string — UNIQUE Leonardo prompt for in-article image after section 5. SUBJECT RULE: young woman or hands-only or environment — NEVER a man. Calming, hopeful, empowering scene. Different from all above. Could show outcome or transformation. Photorealistic. STRICT: no text, no man.",
-      "alt_text": "string — 8-10 words, describe the scene naturally, include primary keyword"
+      "prompt": "string — UNIQUE humanized photo prompt for section 5 image. RULES: young woman OR hands-only OR calm environment — NEVER a man. Different from all above images. Calming, hopeful, empowering candid moment. Specific props, lighting, clothing. Camera style included. No text, no logos, no man.",
+      "alt_text": "string — 8-10 words describing the scene naturally, include primary keyword"
     }
   ],
   "pinterest_pins": [
