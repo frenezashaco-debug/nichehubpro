@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-improve-mental-clarity",
+    "title": "5 Ways to Improve Mental Clarity: Stop Brain Fog and Think Sharp Again",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to improve mental clarity starts with understanding what's blocking your brain right now. Brain fog feels like you're thinking through mud, and it's on",
+    "image": "images/how-to-improve-mental-clarity.jpg",
+    "alt": "Young woman drinking water at desk, improving mental clarity in morning light",
+    "pins": [
+      {
+        "title": "How to Improve Mental Clarity in 7 Days: 5 Brain Fog Solutions That Work",
+        "description": "Stop struggling with brain fog and fuzzy thinking. These 5 science-backed strategies improve mental clarity fast, including hydration tricks, sleep timing, and nutrition hacks. Clear your mind and boost focus by the end of the week. Try the morning clarity ritual today."
+      },
+      {
+        "title": "Stop Brain Fog Now: Why You Can't Think Clearly and How to Fix It",
+        "description": "Brain fog is ruining your productivity and confidence, but it's not permanent. Learn the real causes of mental fog like dehydration, blood sugar crashes, and information overload, then apply the solutions that work in 24 to 48 hours. Your clarity is waiting."
+      },
+      {
+        "title": "5 Daily Habits for Sharp Mental Clarity: Your Brain Deserves Better",
+        "description": "Build mental clarity that lasts with these five simple daily habits. From morning rituals to nutrition tweaks to evening wind-down routines, these practices rewire your brain for focus and sharpness. Start the morning clarity ritual tomorrow and feel the difference instantly."
+      }
+    ]
+  },
+  {
     "slug": "how-to-stop-worrying",
     "title": "5 Ways to Stop Worrying: Reclaim Your Peace Starting Today",
     "category": "Mental Wellness",
