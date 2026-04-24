@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-feel-calm-instantly",
+    "title": "5 Ways to Feel Calm Instantly: Stop Stress Before It Stops You",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to feel calm instantly when your nervous system is firing on all cylinders. Your heart races, your palms sweat, and you can't think straight because pa",
+    "image": "images/how-to-feel-calm-instantly.jpg",
+    "alt": "Woman breathing calmly by window with hand on chest",
+    "pins": [
+      {
+        "title": "How to Feel Calm Instantly in 60 Seconds: Try This Now",
+        "description": "Discover 5 science-backed techniques to feel calm instantly without meditation. Box breathing, cold water exposure, and grounding work in minutes. Perfect for work stress, anxiety, or panic attacks. Your nervous system responds to these methods immediately. Save this guide and use it today."
+      },
+      {
+        "title": "Stop Anxiety Fast: 5 Instant Calm Methods That Actually Work",
+        "description": "Learn how to calm your mind fast when stress hits hardest. These proven nervous system techniques take less than 5 minutes and work even if nothing else has. From tactical cold exposure to 5-4-3-2-1 grounding, find the method your body loves. Real results, real relief, real science."
+      },
+      {
+        "title": "Calm Your Nervous System in Stressful Situations: This Trick Works",
+        "description": "The fastest way to relax in stressful situations is activating your parasympathetic nervous system. This simple guide shows you how to hijack your stress response in 60 seconds or less. Box breathing, muscle relaxation, and vagal maneuvers explained clearly. Transform your stress response today."
+      }
+    ]
+  },
+  {
     "slug": "how-to-improve-mental-clarity",
     "title": "5 Ways to Improve Mental Clarity: Stop Brain Fog and Think Sharp Again",
     "category": "Mental Wellness",
