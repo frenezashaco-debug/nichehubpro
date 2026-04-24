@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-relax-your-mind",
+    "title": "5 Ways to Relax Your Mind Fast: Break the Mental Exhaustion Cycle Today",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Learning how to relax your mind is not a luxury, it's survival in a world that never stops demanding your attention. Right now, millions of people feel the",
+    "image": "images/how-to-relax-your-mind.jpg",
+    "alt": "Person relaxing by window during golden hour with peaceful expression on their face.",
+    "pins": [
+      {
+        "title": "5 Ways to Relax Your Mind in Minutes: Stop Anxiety Fast",
+        "description": "Learn how to relax your mind with proven mental relaxation techniques that work in 2-5 minutes. From 4-7-8 breathing to grounding methods, discover the fastest ways to calm your nervous system and stop racing thoughts. These science-backed strategies help you regain mental clarity and peace. Save this pin and start one technique today for instant relief."
+      },
+      {
+        "title": "Stop Mental Exhaustion: Your Brain Needs This Daily",
+        "description": "Your mind is screaming for relaxation and you might not even know it. Racing thoughts, anxiety, and brain fog are signs your nervous system is stuck in stress mode. Discover how to relax your mind naturally without meditation or expensive therapy. These mental relaxation techniques rebuild your calm and transform how you feel every single day."
+      },
+      {
+        "title": "Try This 5-Minute Mind Relaxation Reset Right Now",
+        "description": "Overwhelmed? Anxious? Racing thoughts won't stop? The 5-4-3-2-1 grounding technique interrupts mental spirals instantly and anchors you to the present moment. This powerful mental relaxation method works even when nothing else does. Learn all 5 fastest techniques to calm your mind and finally get the peace you deserve. Pin this for your next anxiety moment."
+      }
+    ]
+  },
+  {
     "slug": "how-to-reduce-stress-naturally",
     "title": "5 Ways to Reduce Stress Naturally: Your Peace Starts Today",
     "category": "Mental Wellness",
