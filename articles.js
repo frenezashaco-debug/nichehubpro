@@ -2,27 +2,177 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
-    "slug": "how-to-relax-your-mind",
-    "title": "5 Ways to Relax Your Mind Fast: Break the Mental Exhaustion Cycle Today",
+    "slug": "how-to-improve-mental-clarity",
+    "title": "5 Ways to Improve Mental Clarity: Stop Brain Fog and Think Sharp Again",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
     "read_time": "8",
-    "excerpt": "Learning how to relax your mind is not a luxury, it's survival in a world that never stops demanding your attention. Right now, millions of people feel the",
-    "image": "images/how-to-relax-your-mind.jpg",
-    "alt": "Person relaxing by window during golden hour with peaceful expression on their face.",
+    "excerpt": "How to improve mental clarity starts with understanding what's blocking your brain right now. Brain fog feels like you're thinking through mud, and it's on",
+    "image": "images/how-to-improve-mental-clarity.jpg",
+    "alt": "Young woman drinking water at desk, improving mental clarity in morning light",
     "pins": [
       {
-        "title": "5 Ways to Relax Your Mind in Minutes: Stop Anxiety Fast",
-        "description": "Learn how to relax your mind with proven mental relaxation techniques that work in 2-5 minutes. From 4-7-8 breathing to grounding methods, discover the fastest ways to calm your nervous system and stop racing thoughts. These science-backed strategies help you regain mental clarity and peace. Save this pin and start one technique today for instant relief."
+        "title": "How to Improve Mental Clarity in 7 Days: 5 Brain Fog Solutions That Work",
+        "description": "Stop struggling with brain fog and fuzzy thinking. These 5 science-backed strategies improve mental clarity fast, including hydration tricks, sleep timing, and nutrition hacks. Clear your mind and boost focus by the end of the week. Try the morning clarity ritual today."
       },
       {
-        "title": "Stop Mental Exhaustion: Your Brain Needs This Daily",
-        "description": "Your mind is screaming for relaxation and you might not even know it. Racing thoughts, anxiety, and brain fog are signs your nervous system is stuck in stress mode. Discover how to relax your mind naturally without meditation or expensive therapy. These mental relaxation techniques rebuild your calm and transform how you feel every single day."
+        "title": "Stop Brain Fog Now: Why You Can't Think Clearly and How to Fix It",
+        "description": "Brain fog is ruining your productivity and confidence, but it's not permanent. Learn the real causes of mental fog like dehydration, blood sugar crashes, and information overload, then apply the solutions that work in 24 to 48 hours. Your clarity is waiting."
       },
       {
-        "title": "Try This 5-Minute Mind Relaxation Reset Right Now",
-        "description": "Overwhelmed? Anxious? Racing thoughts won't stop? The 5-4-3-2-1 grounding technique interrupts mental spirals instantly and anchors you to the present moment. This powerful mental relaxation method works even when nothing else does. Learn all 5 fastest techniques to calm your mind and finally get the peace you deserve. Pin this for your next anxiety moment."
+        "title": "5 Daily Habits for Sharp Mental Clarity: Your Brain Deserves Better",
+        "description": "Build mental clarity that lasts with these five simple daily habits. From morning rituals to nutrition tweaks to evening wind-down routines, these practices rewire your brain for focus and sharpness. Start the morning clarity ritual tomorrow and feel the difference instantly."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-stop-worrying",
+    "title": "5 Ways to Stop Worrying: Reclaim Your Peace Starting Today",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to stop worrying has become the question millions of people ask themselves every single day. Your mind won't quit, your chest feels tight, and no matte",
+    "image": "images/how-to-stop-worrying.jpg",
+    "alt": "Person finding relief from worry at kitchen table",
+    "pins": [
+      {
+        "title": "How to Stop Worrying About Everything: 5 Proven Techniques",
+        "description": "Learn how to stop worrying with science-backed methods that actually work. Discover why your brain keeps worrying and five practical techniques to break the cycle. From grounding exercises to reframing thoughts, these daily habits reduce excessive worry in just 3-6 weeks. Start feeling calm again today."
+      },
+      {
+        "title": "Stop Excessive Worrying: Brain Secrets & Daily Habits",
+        "description": "What causes excessive worrying? Your brain thinks worry keeps you safe. But you can rewire this pattern. Read about the science behind worry, the signs you're worrying too much, and specific daily habits that quiet racing thoughts. Real relief starts with understanding why your mind won't quit."
+      },
+      {
+        "title": "5-Minute Worry Fix: Techniques to Calm Your Mind Daily",
+        "description": "Try these five-minute techniques to stop worrying before it takes over your day. Name your worry specifically, use grounding exercises, reframe scary stories, and create action plans. Each technique targets worry at a different point. Pick one and practice daily for real, lasting peace of mind."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-calm-your-mind-instantly",
+    "title": "5 Ways to Calm Your Mind Instantly: Stop the Mental Spiral Right Now",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to calm your mind instantly is something you reach for when your thoughts start spiraling and your chest tightens without warning. Your nervous system i",
+    "image": "images/how-to-calm-your-mind-instantly.jpg",
+    "alt": "young woman sitting cross-legged on floor with closed eyes finding instant calm in morning light",
+    "pins": [
+      {
+        "title": "How to Calm Your Mind Instantly: 5 Techniques That Work in 90 Seconds",
+        "description": "Discover the five science-backed methods for how to calm your mind instantly when anxiety hits. Box breathing, cold water grounding, and the 5-4-3-2-1 sensory technique activate your parasympathetic nervous system in under two minutes. No meditation required. Use them anywhere, anytime your mind starts spiraling."
+      },
+      {
+        "title": "Stop a Racing Mind Fast: The 5 Instant Relaxation Techniques That Actually Work",
+        "description": "Racing thoughts do not have to take over your day. These five instant relaxation techniques work by signaling safety to your nervous system rather than fighting your thoughts. Research shows cortisol drops 15-20% within 90 seconds of slow breathing. Start with box breathing and build from there."
+      },
+      {
+        "title": "Try These 5 Methods to Relax Your Mind Quickly in Any Situation",
+        "description": "Whether you are at work, at home, or mid-panic, these five techniques help you relax your mind quickly without any tools or preparation. From rhythmic breath walks to progressive muscle release, each method is backed by neuroscience and takes under three minutes. Save this for when you need it most."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-control-your-thoughts",
+    "title": "5 Ways to Control Your Thoughts: Stop the Mental Chaos Today",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Your mind is racing again. How to control your thoughts feels impossible when your brain keeps firing the same anxious loops, doubts, and what-ifs on repea",
+    "image": "images/how-to-control-your-thoughts.jpg",
+    "alt": "person managing intrusive thoughts peacefully at desk morning",
+    "pins": [
+      {
+        "title": "How to Control Your Thoughts: 5 Proven Techniques for Anxiety Relief",
+        "description": "Intrusive thoughts ruining your day? Learn how to control your thoughts without fighting them. These science-backed techniques rewire your brain in just 2-3 weeks. Stop the mental chaos and reclaim your peace. Try the first method today."
+      },
+      {
+        "title": "Stop Intrusive Thoughts: Why You Can't Control Them (And What Works)",
+        "description": "Why can't I control my thoughts? The answer isn't what you think. Discover why fighting intrusive thoughts makes them worse, and learn the acceptance-based method that actually reduces anxiety. Real results from real people in as little as two weeks."
+      },
+      {
+        "title": "5 Daily Habits to Master Thought Control: Your Mental Peace Starts Here",
+        "description": "Control your thoughts naturally with simple daily practices that rewire your brain. From morning intentions to evening release rituals, these five habits compound into lasting change. Build your mental strength one day at a time."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-stop-anxiety-attacks",
+    "title": "5 Ways to Stop Anxiety Attacks Before They Take Over Your Day",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to stop anxiety attacks is one of the most searched questions from people feeling trapped by their own nervous system. An anxiety attack can hit withou",
+    "image": "images/how-to-stop-anxiety-attacks.jpg",
+    "alt": "Person practicing breathing exercise on couch during anxiety attack relief",
+    "pins": [
+      {
+        "title": "How to Stop Anxiety Attacks: 5 Techniques That Work in Minutes",
+        "description": "Learn the science-backed methods for how to stop anxiety attacks before they spiral. Discover the 5-4-3-2-1 grounding technique, box breathing, and progressive muscle relaxation. These panic attack help strategies work in 2-5 minutes and can be practiced anywhere. Find calm again with techniques that actually address your nervous system. Save this pin to master anxiety relief today."
+      },
+      {
+        "title": "Stop Panic Attacks Before They Start: Daily Prevention Habits",
+        "description": "Stop anxiety attacks from happening in the first place with these 5 daily habits. Research shows consistent breathing practice, sleep regulation, and nervous system training reduce anxiety frequency by 60% in just 4 weeks. Learn what to do during panic attacks and what to do daily to prevent them. Your peace starts with these simple, science-backed practices."
+      },
+      {
+        "title": "What to Do During an Anxiety Attack: Immediate Relief Techniques",
+        "description": "Feeling anxious right now? Try the 5-4-3-2-1 grounding method or box breathing when panic strikes. These immediate anxiety attack solutions work by calming your nervous system and bringing you back to the present moment. No medication needed. Get instant relief and regain control with techniques you can do anywhere, anytime."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-deal-with-anxiety-daily",
+    "title": "5 Ways to Deal with Anxiety Daily: Your Realistic Recovery Plan",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to deal with anxiety daily starts with understanding that anxiety isn't a character flaw you need to fix overnight. It's a signal your nervous system i",
+    "image": "images/how-to-deal-with-anxiety-daily.jpg",
+    "alt": "person practicing breathing exercise at desk in morning dealing with daily anxiety",
+    "pins": [
+      {
+        "title": "How to Deal with Anxiety Daily: 5 Proven Practices That Actually Work",
+        "description": "Stop letting daily anxiety control your life. Learn five simple daily practices backed by science that reduce anxiety baseline within weeks, not months. These aren't meditation hacks or toxic positivity, just real strategies that rewire your nervous system. Start with one practice today and notice the difference. Your calm is waiting."
+      },
+      {
+        "title": "Stop Daily Anxiety Before It Starts: Your Morning Routine Hack",
+        "description": "Daily anxiety doesn't have to be your normal. Discover why box breathing works in minutes and how to build daily anxiety management into your existing routine without adding stress. Small consistent practices trump motivation every time. Learn the five-minute morning practice that changes everything."
+      },
+      {
+        "title": "Try This for Daily Anxiety Relief: Real Results in 4 Weeks",
+        "description": "Daily anxiety management works when you combine body techniques with daily habits. This guide shows exactly how to structure your day, what to practice when, and why consistency matters more than perfection. Stop fighting anxiety and start managing it like a skill you're building."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-relax-your-mind",
+    "title": "5 Ways to Relax Your Mind Fast: The Science-Backed Method That Actually Works",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Your mind won't stop racing, and you're exhausted from trying to quiet it down. This is how to relax your mind when everything feels overwhelming and urgen",
+    "image": "images/how-to-relax-your-mind.jpg",
+    "alt": "Person sitting peacefully with closed eyes in calm living room during relaxation",
+    "pins": [
+      {
+        "title": "How to Relax Your Mind in 90 Seconds: Box Breathing for Instant Calm",
+        "description": "Tired of racing thoughts and mental exhaustion? Learn the fastest way to relax your mind with box breathing, a 90-second technique used by Navy SEALs. This simple mental relaxation method works because it directly signals your nervous system to shift into calm mode. No apps needed, no special setup, just breathe. Try it tonight and notice the difference by tomorrow morning. Your mind is begging for relief, and this technique delivers it."
+      },
+      {
+        "title": "Stop Mental Exhaustion: 5 Science-Backed Relaxation Techniques That Actually Work",
+        "description": "Is your mind stuck in overdrive? Mental relaxation isn't about forcing your brain to be blank, it's about deliberately shifting from stress mode to calm mode. Discover 5 proven techniques (box breathing, body scanning, progressive muscle relaxation, cognitive pause, and visualization) that neuroscience shows reduce anxiety and racing thoughts in minutes. Each method targets different stress patterns, so you'll find the one that clicks for your brain."
+      },
+      {
+        "title": "Try This Daily Relaxation Habit: 3 Minutes to a Calmer Mind Forever",
+        "description": "One meditation session helps for a few hours. A daily relaxation habit rewires your nervous system to be naturally calmer. Learn how to anchor mental relaxation into your existing routine so it becomes automatic. Research shows 66 days of consistent practice creates lasting change in how reactive your mind is to stress. Start with just 3 minutes daily, pick your trigger moment (after coffee, before bed), and watch your mental state transform in weeks."
       }
     ]
   },

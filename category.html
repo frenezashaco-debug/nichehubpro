@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Articles — NicheHubPro</title>
+  <title>Articles | NicheHubPro</title>
   <meta name="description" content="Browse all articles on NicheHubPro. Science-backed guides on mental wellness, productivity, and healthy lifestyle.">
   <link rel="canonical" href="https://nichehubpro.com/category.html">
   <link rel="stylesheet" href="style.css">
@@ -107,7 +107,7 @@
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 <script>
 const CAT_INFO = {
-  'all':               { name: 'All Articles',     emoji: '📚', desc: 'Every guide we have published — mental wellness, productivity, and healthy lifestyle.' },
+  'all':               { name: 'All Articles',     emoji: '📚', desc: 'Every guide we have published, mental wellness, productivity, and healthy lifestyle.' },
   'mental-wellness':   { name: 'Mental Wellness',  emoji: '🧠', desc: 'Science-backed guides on anxiety, stress, overthinking, and emotional resilience.' },
   'productivity':      { name: 'Productivity',     emoji: '⚡', desc: 'Focus systems, time management, deep work, and habit building that actually sticks.' },
   'healthy-lifestyle': { name: 'Healthy Lifestyle',emoji: '🌿', desc: 'Nutrition, sleep, movement, and sustainable habits for a healthier you.' },
@@ -122,7 +122,7 @@ function renderHeader(cat) {
   document.getElementById('cat-badge').textContent = info.emoji + ' ' + info.name;
   document.getElementById('cat-title').textContent = info.name;
   document.getElementById('cat-desc').textContent  = info.desc;
-  document.title = info.name + ' — NicheHubPro';
+  document.title = info.name + ' | NicheHubPro';
 }
 
 function renderTabs(activeCat) {

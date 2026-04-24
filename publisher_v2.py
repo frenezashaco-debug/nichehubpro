@@ -7,9 +7,11 @@ Usage:
   python publisher_v2.py "how to stop overthinking at night" "Mental Wellness"
 """
 
-import sys, os, re, json, textwrap
+import sys, os, re, json, textwrap, io, time
 sys.stdout.reconfigure(encoding='utf-8')
 import anthropic
+import requests
+from PIL import Image
 try:
     import json_repair
     _HAS_JSON_REPAIR = True
@@ -86,8 +88,25 @@ JSON STRUCTURE:
     {"question": "real Google question 5?", "answer": "short clear useful answer"}
   ],
   "conclusion": "string — 3 short paragraphs. Motivational. Encourages one small action today. Human and warm.",
-  "cover_image_prompt": "string — UNIQUE AI image prompt for THIS article. Follow this exact structure: 'Create a realistic, high-quality blog cover image for an article about: [TOPIC]. Scene: [specific real-life environment reflecting the topic]. Subject: a single person expressing [specific emotion tied to topic] with natural body language. Details: authentic everyday setting, minimal clean background, soft textures. Lighting: soft natural [morning/evening] light, warm calming tones. Style: photorealistic, minimalist wellness aesthetic, depth of field, shot like a real camera. Mood: emotional but peaceful, relatable and human. Composition: subject slightly off-center, focus on emotion. STRICT: no text, no logos, no watermark, not stock photo. Output: 4K ultra realistic natural colors.' FORBIDDEN scenes: woman sitting by window, person meditating on bed, hands clasped, eyes closed in bedroom. Each image must feel like a unique candid moment.",
-  "cover_alt_text": "string — short SEO alt text describing the image. Format: '[person/subject] [action] in [setting]'. Example: 'person overthinking at night in bedroom'. Max 10 words. Include the primary keyword naturally.",
+  "cover_image_prompt": "string — UNIQUE humanized photo prompt for THIS article. RULES: (1) Subject MUST be a young woman 25-35, OR close-up of hands only, OR environment with no person — NEVER a man. (2) Use candid documentary photography language. (3) Include specific details: hair color/style, exact clothing item, specific object she holds or touches. (4) Include camera style: 'shot on 85mm f/1.8, shallow depth of field, slightly blurred background'. (5) Include 'real skin texture, natural imperfections, no plastic look'. STRUCTURE: 'Candid lifestyle photo: a young woman, [age], [specific location and time of day]. [Hair and clothing details]. [Exact action and emotional expression]. [One specific prop or environmental detail]. [Lighting details]. Shot on 85mm f/1.8, shallow depth of field. Real skin texture, natural imperfections. Photorealistic documentary photography. No text, no logos, no watermarks, no AI look, no man.' FORBIDDEN: man, male, arms crossed, fake smile, stock photo pose, studio lighting, perfect symmetry.",
+  "cover_alt_text": "string — short SEO alt text. Format: '[woman/hands/scene] [action] in [setting]'. Max 10 words. Include primary keyword.",
+  "section_image_prompts": [
+    {
+      "section_index": 0,
+      "prompt": "string — UNIQUE humanized photo prompt for section 1 image. RULES: young woman OR hands-only OR environment — NEVER a man. Must be completely different scene from cover. Use candid documentary style with specific details: exact setting, exact clothing, specific object, camera style (50mm or 85mm, f/1.8-2.8, shallow DOF), real skin texture. Tied to section 1 topic. No text, no logos, no man.",
+      "alt_text": "string — 8-10 words describing the scene, include primary keyword"
+    },
+    {
+      "section_index": 2,
+      "prompt": "string — UNIQUE humanized photo prompt for section 3 image. RULES: young woman OR hands-only close-up OR outdoor/indoor environment — NEVER a man. Completely different from cover and section 1. Specific candid moment with exact details. Solution or progress-focused scene. Camera style included. No text, no logos, no man.",
+      "alt_text": "string — 8-10 words describing the scene, include primary keyword"
+    },
+    {
+      "section_index": 4,
+      "prompt": "string — UNIQUE humanized photo prompt for section 5 image. RULES: young woman OR hands-only OR calm environment — NEVER a man. Different from all above images. Calming, hopeful, empowering candid moment. Specific props, lighting, clothing. Camera style included. No text, no logos, no man.",
+      "alt_text": "string — 8-10 words describing the scene naturally, include primary keyword"
+    }
+  ],
   "pinterest_pins": [
     {
       "title": "string — Pin 1: 'How to...' style. CTR-optimized. Max 100 chars. Include primary keyword.",
@@ -152,11 +171,105 @@ REQUIREMENTS:
 - FAQ: 5 real questions people search on Google about this topic
 - Conclusion: motivational, encourage one small habit today
 - Cover image: unique realistic wellness photo prompt for this specific topic
+- Section images: 3 unique FLUX prompts in section_image_prompts (indexes 0, 2, 4). Each must show a DIFFERENT scene, person, and moment from each other and from the cover. Contextual to section content. No text, no logos.
 
 Return ONLY the JSON. No em dashes anywhere."""
 
+# ── SECTION IMAGE DOWNLOADER — Leonardo.ai Phoenix 1.0 ───────────────────
+try:
+    from config import LEONARDO_API_KEY as _LEO_KEY
+except ImportError:
+    _LEO_KEY = os.environ.get("LEONARDO_API_KEY", "")
+
+_LEO_MODEL    = "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3"
+_LEO_NEGATIVE = (
+    "man, male, boy, masculine, text, watermark, logo, words, letters, "
+    "number, AI look, stock photo, fake smile, arms crossed, illustration, "
+    "cartoon, digital art, painting, oversaturated, dark, cold, clinical"
+)
+_LEO_HEADERS  = {
+    "accept": "application/json",
+    "content-type": "application/json",
+    "authorization": f"Bearer {_LEO_KEY}",
+}
+
+def download_section_image(prompt, article_slug, index, retries=2):
+    """Download a section image via Leonardo.ai Phoenix 1.0 and save as WebP."""
+    strict = "Photorealistic wellness lifestyle, warm natural tones, no text, no logos, no watermarks, 4K quality."
+    full_prompt = f"{prompt}. {strict}"
+    filename = f"{article_slug}-sec{index}.webp"
+    out_path = os.path.join(IMAGES_DIR, filename)
+
+    for attempt in range(1, retries + 1):
+        try:
+            print(f"  Section image {index} (Leonardo attempt {attempt})...")
+            body = {
+                "modelId": _LEO_MODEL,
+                "prompt": full_prompt,
+                "negative_prompt": _LEO_NEGATIVE,
+                "width": 1360,
+                "height": 768,
+                "num_images": 1,
+                "alchemy": False,
+                "presetStyle": "CINEMATIC",
+                "public": False,
+            }
+            r = requests.post(
+                "https://cloud.leonardo.ai/api/rest/v1/generations",
+                json=body, headers=_LEO_HEADERS, timeout=30
+            )
+            if r.status_code != 200:
+                print(f"  Create failed: {r.status_code} {r.text[:150]}")
+                time.sleep(5)
+                continue
+
+            gen_id = r.json()["sdGenerationJob"]["generationId"]
+
+            for _ in range(20):
+                time.sleep(6)
+                poll = requests.get(
+                    f"https://cloud.leonardo.ai/api/rest/v1/generations/{gen_id}",
+                    headers=_LEO_HEADERS, timeout=20
+                )
+                if poll.status_code != 200:
+                    break
+                gen = poll.json().get("generations_by_pk", {})
+                status = gen.get("status", "")
+                if status == "COMPLETE":
+                    images = gen.get("generated_images", [])
+                    if images:
+                        img_resp = requests.get(images[0]["url"], timeout=60)
+                        if img_resp.status_code == 200:
+                            img = Image.open(io.BytesIO(img_resp.content)).convert('RGB')
+                            img = img.resize((1920, 1080), Image.LANCZOS)
+                            chosen_buf = None
+                            for quality in range(92, 10, -5):
+                                buf = io.BytesIO()
+                                img.save(buf, format='WEBP', quality=quality, method=4)
+                                chosen_buf = buf
+                                if buf.tell() / 1024 <= 500:
+                                    break
+                            with open(out_path, 'wb') as f:
+                                f.write(chosen_buf.getvalue())
+                            size_kb = os.path.getsize(out_path) / 1024
+                            print(f"  Saved: {filename} ({size_kb:.1f} KB)")
+                            return filename
+                    break
+                if status == "FAILED":
+                    print("  Generation FAILED")
+                    break
+
+        except Exception as e:
+            print(f"  Error: {e}")
+            if attempt < retries:
+                time.sleep(5)
+
+    print(f"  Section image {index} failed — skipping")
+    return None
+
+
 # ── ARTICLE HTML TEMPLATE ─────────────────────────────────────────────────
-def build_html(data, keyword_day, cover_filename):
+def build_html(data, keyword_day, cover_filename, section_images=None):
     title        = data["title"]
     meta_desc    = data["meta_description"]
     category     = data["category"]
@@ -186,6 +299,15 @@ def build_html(data, keyword_day, cover_filename):
     for i, sec in enumerate(sections):
         body = sec.get('content') or sec.get('body') or sec.get('text') or sec.get('html') or ''
         sections_html += f"\n      <h2>{sec['h2']}</h2>\n      {body}\n"
+        # Insert section image after sections 0, 2, 4
+        if section_images and i in section_images:
+            img_info = section_images[i]
+            sections_html += (
+                f'\n      <img src="../images/{img_info["filename"]}" '
+                f'alt="{img_info["alt_text"]}" '
+                f'style="width:100%;border-radius:10px;margin:28px 0 20px;display:block;object-fit:cover;" '
+                f'loading="lazy">\n'
+            )
         # Insert ad slot after section 2
         if i == 1:
             sections_html += '\n      <div class="ad-slot ad-slot-banner">Advertisement</div>\n'
@@ -367,9 +489,11 @@ def build_html(data, keyword_day, cover_filename):
     <div class="sidebar-box" style="background:var(--dark);">
       <h4 style="color:rgba(255,255,255,0.5);">Weekly Wellness</h4>
       <p style="font-size:0.85rem;color:rgba(255,255,255,0.65);margin-bottom:14px;line-height:1.6;">One actionable guide per week. Free forever.</p>
-      <form onsubmit="return false;" style="display:flex;flex-direction:column;gap:8px;">
-        <input type="email" placeholder="Your email" style="padding:10px 14px;border-radius:6px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.08);color:white;font-family:Poppins,sans-serif;font-size:0.85rem;outline:none;">
+      <form id="sib-form" method="POST" data-type="subscription" action="https://1781df94.sibforms.com/serve/MUIFABtXrzMaI8A88PrzI10oMtw0B5ws-upYzYmZO7mYWfFa3ki3u-R9G0EdOr2E8lBWrGokcORpm15ZoeY3ZgiPdDVxO7NP7gze8Vi4tNHj7sAoz9PPm5-CheMlX0WFrJvDfzjmJCsSC9VqD-FYS8VIoox3qF8Dt0dP65ZgXg9rieMCtzx0jlj-88s6ug_y_LtpGFntWQ_VHbDufw==" style="display:flex;flex-direction:column;gap:8px;">
+        <input type="email" name="EMAIL" placeholder="Your email" required style="padding:10px 14px;border-radius:6px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.08);color:white;font-family:Poppins,sans-serif;font-size:0.85rem;outline:none;">
         <button class="btn btn-sm" type="submit" style="width:100%;">Subscribe Free</button>
+        <input type="text" name="email_address_check" value="" style="display:none;">
+        <input type="hidden" name="locale" value="en">
       </form>
     </div>
   </aside>
@@ -496,9 +620,22 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category):
     generate_cover(data["title"], category, cover_path, custom_prompt=cover_prompt)
     print(f"Cover saved: {cover_filename}")
 
+    # Generate section images (WebP, contextual per section)
+    section_images = {}
+    for img_data in data.get("section_image_prompts", []):
+        sec_idx = img_data.get("section_index", 0)
+        prompt  = img_data.get("prompt", "")
+        alt     = img_data.get("alt_text", data["title"])
+        if prompt:
+            filename = download_section_image(prompt, article_slug, sec_idx + 1)
+            if filename:
+                section_images[sec_idx] = {"filename": filename, "alt_text": alt}
+    if section_images:
+        print(f"  {len(section_images)} section image(s) generated")
+
     # Build and save HTML
     print("Building HTML...")
-    html = build_html(data, primary_kw, cover_filename)
+    html = build_html(data, primary_kw, cover_filename, section_images)
     out_path = os.path.join(OUT_DIR, f"{article_slug}.html")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html)
