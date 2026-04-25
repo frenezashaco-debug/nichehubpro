@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-feel-happy-again",
+    "title": "7 Ways to Feel Happy Again: Reclaim Your Joy Starting Today",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Happiness feels like it's slipped away, and you don't know how to get it back. If you've been asking yourself why do I feel unhappy for no reason, you're n",
+    "image": "images/how-to-feel-happy-again.jpg",
+    "alt": "Woman sitting peacefully by sunny window feeling happy again",
+    "pins": [
+      {
+        "title": "7 Ways to Feel Happy Again: Rebuild Your Joy in 21 Days",
+        "description": "Feeling unhappy for no reason? These 7 science-backed happiness habits will rewire your brain's emotional baseline. Start with movement, sunlight, and connection. Real results in 3 weeks. Read our complete guide to lasting happiness."
+      },
+      {
+        "title": "Stop Feeling Unhappy for No Reason: What Your Brain Needs",
+        "description": "That persistent sadness isn't a character flaw—it's your nervous system running on empty. Discover why you feel unhappy and the exact daily habits that rebuild genuine happiness. Simple, evidence-based, actually works."
+      },
+      {
+        "title": "Try This: 10-Minute Morning Routine to Feel Happy Again",
+        "description": "One small habit changed everything. This morning routine combines movement, sunlight, and intention to reset your mood baseline. Takes just 10 minutes but creates measurable happiness shifts within days. Your happiness starts here."
+      }
+    ]
+  },
+  {
     "slug": "how-to-feel-calm-instantly",
     "title": "5 Ways to Feel Calm Instantly: Stop Stress Before It Stops You",
     "category": "Mental Wellness",
