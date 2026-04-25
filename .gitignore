@@ -9,6 +9,7 @@ __pycache__/
 !publisher_v2.py
 !generate_cover.py
 !pinterest_publisher.py
+!auto_fix_covers.py
 
 # Tracking and log files
 *.txt

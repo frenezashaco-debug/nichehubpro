@@ -176,22 +176,26 @@ REQUIREMENTS:
 Return ONLY the JSON. No em dashes anywhere."""
 
 # ── SECTION IMAGE DOWNLOADER — Leonardo.ai Phoenix 1.0 ───────────────────
-try:
-    from config import LEONARDO_API_KEY as _LEO_KEY
-except ImportError:
-    _LEO_KEY = os.environ.get("LEONARDO_API_KEY", "")
-
 _LEO_MODEL    = "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3"
 _LEO_NEGATIVE = (
-    "man, male, boy, masculine, text, watermark, logo, words, letters, "
-    "number, AI look, stock photo, fake smile, arms crossed, illustration, "
+    "man, male, boy, masculine, beard, text, watermark, logo, words, letters, "
+    "number, AI look, plastic skin, stock photo, fake smile, arms crossed, illustration, "
     "cartoon, digital art, painting, oversaturated, dark, cold, clinical"
 )
-_LEO_HEADERS  = {
-    "accept": "application/json",
-    "content-type": "application/json",
-    "authorization": f"Bearer {_LEO_KEY}",
-}
+
+def _get_leo_headers():
+    """Build Leonardo headers at call time so the key is always fresh."""
+    try:
+        from config import LEONARDO_API_KEY as key
+    except Exception:
+        key = os.environ.get("LEONARDO_API_KEY", "")
+    if not key:
+        raise RuntimeError("LEONARDO_API_KEY is missing — cannot generate images")
+    return {
+        "accept": "application/json",
+        "content-type": "application/json",
+        "authorization": f"Bearer {key}",
+    }
 
 def download_section_image(prompt, article_slug, index, retries=2):
     """Download a section image via Leonardo.ai Phoenix 1.0 and save as WebP."""
@@ -202,6 +206,7 @@ def download_section_image(prompt, article_slug, index, retries=2):
 
     for attempt in range(1, retries + 1):
         try:
+            headers = _get_leo_headers()
             print(f"  Section image {index} (Leonardo attempt {attempt})...")
             body = {
                 "modelId": _LEO_MODEL,
@@ -216,7 +221,7 @@ def download_section_image(prompt, article_slug, index, retries=2):
             }
             r = requests.post(
                 "https://cloud.leonardo.ai/api/rest/v1/generations",
-                json=body, headers=_LEO_HEADERS, timeout=30
+                json=body, headers=headers, timeout=30
             )
             if r.status_code != 200:
                 print(f"  Create failed: {r.status_code} {r.text[:150]}")
@@ -225,11 +230,11 @@ def download_section_image(prompt, article_slug, index, retries=2):
 
             gen_id = r.json()["sdGenerationJob"]["generationId"]
 
-            for _ in range(20):
-                time.sleep(6)
+            for _ in range(25):
+                time.sleep(8)
                 poll = requests.get(
                     f"https://cloud.leonardo.ai/api/rest/v1/generations/{gen_id}",
-                    headers=_LEO_HEADERS, timeout=20
+                    headers=headers, timeout=20
                 )
                 if poll.status_code != 200:
                     break

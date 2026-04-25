@@ -127,14 +127,21 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=2):
     """Generate image via Leonardo.ai Phoenix 1.0."""
     prompt = build_image_prompt(topic, category, custom_prompt)
 
-    headers = {
-        "accept": "application/json",
-        "content-type": "application/json",
-        "authorization": f"Bearer {LEONARDO_API_KEY}",
-    }
-
     for attempt in range(1, retries + 1):
         try:
+            # Read key fresh every attempt — works in CCR where config.py is written just before
+            try:
+                from config import LEONARDO_API_KEY as _key
+            except Exception:
+                _key = os.environ.get("LEONARDO_API_KEY", "")
+            if not _key:
+                print("  ERROR: LEONARDO_API_KEY is missing — aborting image generation")
+                break
+            headers = {
+                "accept": "application/json",
+                "content-type": "application/json",
+                "authorization": f"Bearer {_key}",
+            }
             print(f"  Calling Leonardo Phoenix 1.0 (attempt {attempt})...")
             body = {
                 "modelId": LEONARDO_MODEL,
@@ -158,9 +165,9 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=2):
 
             gen_id = r.json()["sdGenerationJob"]["generationId"]
 
-            # Poll until complete (max 120s)
-            for _ in range(20):
-                time.sleep(6)
+            # Poll until complete (max 200s)
+            for _ in range(25):
+                time.sleep(8)
                 poll = requests.get(
                     f"https://cloud.leonardo.ai/api/rest/v1/generations/{gen_id}",
                     headers=headers, timeout=20
