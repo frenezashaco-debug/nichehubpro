@@ -2,6 +2,56 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "morning-routine-for-mental-health",
+    "title": "5 Morning Routine For Mental Health Habits That Actually Stick",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Your morning routine for mental health sets the tone for everything that follows. Most people wake up, check their phone, and immediately feel the anxiety ",
+    "image": "images/morning-routine-for-mental-health.jpg",
+    "alt": "Young woman sipping herbal tea by window at sunrise during morning routine",
+    "pins": [
+      {
+        "title": "5 Morning Routine Habits for Better Mental Health Starting Today",
+        "description": "Build a morning routine for mental health that reduces anxiety and stress in just 30 minutes. These science-backed habits work for anyone, regardless of schedule. Learn the exact sequence that calms your nervous system before your day even starts. Start with one small change this week."
+      },
+      {
+        "title": "Stop Waking Up Anxious: The Morning Routine That Actually Works",
+        "description": "Tired of waking up stressed? Your morning routine shapes your entire day's mental health. Discover why the first hour matters and the specific habits that regulate your nervous system. From hydration to movement to meditation, we break down exactly what your mornings need."
+      },
+      {
+        "title": "Try This 20-Minute Morning Routine For Anxiety Relief",
+        "description": "A simple morning routine for mental health can lower anxiety by 23% throughout your day. This guide shows you how to build one without adding more stress. Includes water, movement, breathing, and food strategies that stick. Transform your mornings, transform your mental health."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-stop-overthinking-at-work",
+    "title": "5 Ways to Stop Overthinking at Work: Reclaim Your Focus and Peace",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to stop overthinking at work is the question thousands of professionals ask themselves every Monday morning. Your mind replays conversations, second-gu",
+    "image": "images/how-to-stop-overthinking-at-work.jpg",
+    "alt": "Woman pausing at desk with hand to temple showing overthinking.",
+    "pins": [
+      {
+        "title": "5 Ways to Stop Overthinking at Work: Take Back Your Focus Today",
+        "description": "Stop replaying conversations and spiraling into worst-case scenarios. These 5 science-backed strategies help you interrupt overthinking at work, reduce stress, and reclaim your mental peace. Learn the 5-Minute Reset, time-boxing decisions, brain dumps, and grounding techniques that actually work. Start with one today and watch your focus improve within days."
+      },
+      {
+        "title": "Stop the Mental Spiral: How to End Workplace Overthinking Now",
+        "description": "Overthinking at work is stealing your peace and productivity. Discover why your brain gets stuck analyzing (it's a stress response, not a flaw) and the exact strategies to break free. From the worry window to grounding anchors, learn daily habits that prevent overthinking before it starts. Your calm workday is possible."
+      },
+      {
+        "title": "End Workplace Stress with These 5 Overthinking Fixes",
+        "description": "If you're stuck replaying meetings, perfecting emails, or paralyzed by decisions at work, this is for you. Learn the brain dump ritual, time-boxing technique, and the 5-Minute Reset that interrupt overthinking in real time. Build daily habits that regulate your nervous system and help you stay focused. Transform how you experience your workday."
+      }
+    ]
+  },
+  {
     "slug": "how-to-feel-happy-again",
     "title": "7 Ways to Feel Happy Again: Reclaim Your Joy Starting Today",
     "category": "Mental Wellness",
