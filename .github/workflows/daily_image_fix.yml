@@ -1,0 +1,53 @@
+name: Daily Image Fix
+
+on:
+  schedule:
+    - cron: '30 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix-images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - run: git pull --rebase origin main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install pillow requests
+
+      - name: Write config.py
+        env:
+          LEONARDO_API_KEY: ${{ secrets.LEONARDO_API_KEY }}
+        run: |
+          python3 -c "
+          import os
+          key = os.environ.get('LEONARDO_API_KEY', '')
+          with open('config.py', 'w') as f:
+              f.write(f'LEONARDO_API_KEY = \"{key}\"\n')
+              f.write('ANTHROPIC_API_KEY = \"\"\n')
+              f.write('PINTEREST_ACCESS_TOKEN = \"\"\n')
+          print('Key:', key[:8] + '...' if key else 'MISSING')
+          "
+
+      - run: python auto_fix_covers.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "NicheHubPro Bot"
+          git config user.email "action@github.com"
+          git add images/ articles/
+          git diff --staged --quiet && echo "Nothing to fix." && exit 0
+          git commit -m "Auto-fix covers: $(date +%Y-%m-%d)"
+          git pull --rebase origin main
+          git push origin main
