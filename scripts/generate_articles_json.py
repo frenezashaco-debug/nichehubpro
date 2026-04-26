@@ -7,85 +7,57 @@ try:
 except ImportError:
     HAS_BS4 = False
 
-SKIP = {'api', 'articles', 'about', 'all-articles', 'assets', 'css', 'js',
-        'images', 'scripts', '.github', '_site', 'contact', 'contact-us',
-        'privacy', 'privacy-policy', 'terms', 'terms-of-service', 'sitemap',
-        'search', 'tag', 'category', 'author', 'page', '404', 'error',
-        'start-here', 'newsletter', 'advertise', 'disclaimer'}
-
-INVALID_TITLES = {'redirecting...', 'redirecting', '404', 'not found', '',
-                  'page not found', 'error', 'contact us', 'contact',
-                  'about us', 'about', 'privacy policy', 'terms of service'}
-
-def get_category(slug):
-    s = slug.lower()
+def get_category(slug, title=''):
+    s = (slug + ' ' + title).lower()
     if any(k in s for k in ['productivity', 'focus', 'phone', 'routine',
                               'review', 'work', 'distraction', 'habit',
-                              'journal', 'morning', 'weekly']):
+                              'journal', 'morning', 'weekly', 'overthink',
+                              'procrastin']):
         return 'productivity'
     if any(k in s for k in ['food', 'eating', 'diet', 'nutrition', 'walking',
                               'exercise', 'fitness', 'strength', 'training',
                               'lemon', 'water', 'magnesium', 'probiotic',
                               'anti-aging', 'aging', 'lifestyle', 'sleep',
-                              'healthy', 'anti', 'vitamin', 'weight']):
+                              'healthy', 'anti', 'vitamin', 'weight', 'calm',
+                              'relax', 'breathe', 'breath']):
         return 'healthy_lifestyle'
     return 'mental_wellness'
 
-def parse_article(folder_path, slug):
-    index_file = os.path.join(folder_path, 'index.html')
-    if not os.path.exists(index_file):
-        return None
-
-    with open(index_file, 'r', encoding='utf-8', errors='ignore') as f:
+def parse_article(file_path, slug):
+    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
         content = f.read()
-
-    # Skip redirect pages
-    if 'window.location' in content or 'http-equiv="refresh"' in content.lower():
-        return None
 
     title = description = date = None
 
-    if HAS_BS4:
-        soup = BeautifulSoup(content, 'html.parser')
-        h1 = soup.find('h1')
-        if h1:
-            title = h1.get_text().strip()
-        if not title:
+    # Extract from JSON-LD (most reliable)
+    ld_match = re.search(r'<script type="application/ld\+json">(.*?)</script>', content, re.S)
+    if ld_match:
+        try:
+            ld = json.loads(ld_match.group(1))
+            title = ld.get('headline') or ld.get('name')
+            description = ld.get('description')
+            date = (ld.get('datePublished') or ld.get('dateModified') or '')[:10]
+        except Exception:
+            pass
+
+    # Fallback to meta tags
+    if not title:
+        if HAS_BS4:
+            soup = BeautifulSoup(content, 'html.parser')
             t = soup.find('title')
             if t:
-                title = t.get_text().split('|')[0].split(chr(8211))[0].strip()
-        meta_d = soup.find('meta', attrs={'name': 'description'})
-        if meta_d:
-            description = meta_d.get('content', '').strip()
-        meta_date = soup.find('meta', attrs={'property': 'article:published_time'})
-        if meta_date:
-            date = meta_date.get('content', '')[:10]
-        if not date:
-            time_tag = soup.find('time')
-            if time_tag:
-                date = (time_tag.get('datetime') or time_tag.get_text())[:10]
-    else:
-        m = re.search(r'<h1[^>]*>(.*?)</h1>', content, re.I | re.S)
-        if m:
-            title = re.sub(r'<[^>]+>', '', m.group(1)).strip()
+                title = t.get_text().split('|')[0].strip()
+        else:
+            m = re.search(r'<title>(.*?)</title>', content, re.I | re.S)
+            if m:
+                title = re.sub(r'<[^>]+>', '', m.group(1)).split('|')[0].strip()
+
+    if not description:
         m = re.search(r'name=["\']description["\'][^>]*content=["\']([^"\']+)', content, re.I)
         if m:
             description = m.group(1).strip()
-        m = re.search(r'article:published_time[^>]*content=["\'](\d{4}-\d{2}-\d{2})', content, re.I)
-        if m:
-            date = m.group(1)
 
-    # Must have a real published date — skip pages without one
-    if not date:
-        return None
-
-    if not title:
-        title = slug.replace('-', ' ').title()
-
-    # Skip invalid/non-article pages
-    if title.lower().strip() in INVALID_TITLES:
-        return None
-    if any(w in title.lower() for w in ['redirect', 'contact us', 'get in touch']):
+    if not title or not date:
         return None
 
     if not description or len(description) < 20:
@@ -95,22 +67,22 @@ def parse_article(folder_path, slug):
         'id': slug,
         'title': title,
         'shortText': description[:160],
-        'category': get_category(slug),
-        'url': 'https://nichehubpro.com/' + slug + '/',
+        'category': get_category(slug, title),
+        'url': 'https://nichehubpro.com/articles/' + slug + '.html',
         'date': date
     }
 
 def main():
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    articles_dir = os.path.join(root, 'articles')
     articles = []
 
-    for item in sorted(os.listdir(root)):
-        if item.startswith('.') or item in SKIP:
+    for filename in os.listdir(articles_dir):
+        if not filename.endswith('.html'):
             continue
-        folder = os.path.join(root, item)
-        if not os.path.isdir(folder):
-            continue
-        article = parse_article(folder, item)
+        slug = filename[:-5]  # remove .html
+        file_path = os.path.join(articles_dir, filename)
+        article = parse_article(file_path, slug)
         if article:
             articles.append(article)
 
@@ -121,7 +93,7 @@ def main():
     with open(out, 'w', encoding='utf-8') as f:
         json.dump(articles, f, indent=2, ensure_ascii=False)
 
-    print('Done - ' + str(len(articles)) + ' real articles written to api/articles.json')
+    print('Done - ' + str(len(articles)) + ' articles written to api/articles.json')
 
 if __name__ == '__main__':
     main()
