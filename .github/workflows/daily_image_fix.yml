@@ -1,8 +1,10 @@
 name: Daily Image Fix
 
 on:
-  schedule:
-    - cron: '30 9 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'articles/*.html'   # only fires when a new article is pushed
   workflow_dispatch:
 
 permissions:
