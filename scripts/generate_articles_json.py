@@ -8,10 +8,14 @@ except ImportError:
     HAS_BS4 = False
 
 SKIP = {'api', 'articles', 'about', 'all-articles', 'assets', 'css', 'js',
-        'images', 'scripts', '.github', '_site'}
+        'images', 'scripts', '.github', '_site', 'contact', 'contact-us',
+        'privacy', 'privacy-policy', 'terms', 'terms-of-service', 'sitemap',
+        'search', 'tag', 'category', 'author', 'page', '404', 'error',
+        'start-here', 'newsletter', 'advertise', 'disclaimer'}
 
 INVALID_TITLES = {'redirecting...', 'redirecting', '404', 'not found', '',
-                  'page not found', 'error'}
+                  'page not found', 'error', 'contact us', 'contact',
+                  'about us', 'about', 'privacy policy', 'terms of service'}
 
 def get_category(slug):
     s = slug.lower()
@@ -61,8 +65,6 @@ def parse_article(folder_path, slug):
             if time_tag:
                 date = (time_tag.get('datetime') or time_tag.get_text())[:10]
     else:
-        if 'window.location' in content:
-            return None
         m = re.search(r'<h1[^>]*>(.*?)</h1>', content, re.I | re.S)
         if m:
             title = re.sub(r'<[^>]+>', '', m.group(1)).strip()
@@ -73,19 +75,21 @@ def parse_article(folder_path, slug):
         if m:
             date = m.group(1)
 
+    # Must have a real published date — skip pages without one
+    if not date:
+        return None
+
     if not title:
         title = slug.replace('-', ' ').title()
 
-    # Skip redirect/invalid pages
+    # Skip invalid/non-article pages
     if title.lower().strip() in INVALID_TITLES:
         return None
-    if 'redirect' in title.lower():
+    if any(w in title.lower() for w in ['redirect', 'contact us', 'get in touch']):
         return None
 
     if not description or len(description) < 20:
         description = 'Read about ' + title.lower() + ' on NicheHubPro.'
-    if not date:
-        date = datetime.now().strftime('%Y-%m-%d')
 
     return {
         'id': slug,
@@ -117,7 +121,7 @@ def main():
     with open(out, 'w', encoding='utf-8') as f:
         json.dump(articles, f, indent=2, ensure_ascii=False)
 
-    print('Done - ' + str(len(articles)) + ' articles written to api/articles.json')
+    print('Done - ' + str(len(articles)) + ' real articles written to api/articles.json')
 
 if __name__ == '__main__':
     main()
