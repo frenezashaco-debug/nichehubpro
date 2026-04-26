@@ -2,6 +2,56 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-sleep-better-naturally",
+    "title": "7 Ways to Sleep Better Naturally: The Science-Backed Method That Actually Works",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to sleep better naturally is the question keeping millions awake at night. Most people think they're stuck with insomnia, but the truth is simpler: you",
+    "image": "images/how-to-sleep-better-naturally.jpg",
+    "alt": "Woman sleeping peacefully in cool dark bedroom for better sleep quality",
+    "pins": [
+      {
+        "title": "7 Ways to Sleep Better Naturally: The Complete Sleep Guide",
+        "description": "Stop tossing and turning all night. Learn how to sleep better naturally with science-backed methods including temperature control, light management, and sleep timing. These proven techniques help you fall asleep faster and wake up refreshed without medication. Start tonight and notice the difference within days."
+      },
+      {
+        "title": "Stop Waking at 3am: Natural Sleep Solutions That Work",
+        "description": "If you're waking in the middle of the night and can't fall back asleep, it's not your fault. Your bedroom temperature, caffeine timing, and light exposure are likely the culprits. Discover how to improve sleep quality naturally by fixing these three factors. Real results in one week."
+      },
+      {
+        "title": "How to Fall Asleep Faster Naturally: Try This Tonight",
+        "description": "Forget counting sheep. The fastest way to fall asleep naturally combines a cool dark room, consistent bedtime routine, and strategic wind-down activities. These science-backed habits tell your body it's time to sleep. Implement one tonight and watch your sleep transform in just 21 days."
+      }
+    ]
+  },
+  {
+    "slug": "anxiety-before-sleep",
+    "title": "5 Ways to Stop Anxiety Before Sleep: Reclaim Your Peaceful Nights",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Anxiety before sleep ruins more nights than almost anything else. Your mind spins with worries the moment your head hits the pillow, and you're left starin",
+    "image": "images/anxiety-before-sleep.jpg",
+    "alt": "Young woman sleeping peacefully in bed with anxiety relief",
+    "pins": [
+      {
+        "title": "How to Stop Anxiety Before Sleep: 5 Science-Backed Methods",
+        "description": "Tired of racing thoughts ruining your sleep? Learn the exact techniques that help you fall asleep calm in under 20 minutes. From breathing exercises to body scans, these science-backed methods for anxiety before sleep actually work. Start tonight and sleep better."
+      },
+      {
+        "title": "Stop Racing Thoughts at Night: Proven Techniques That Work",
+        "description": "Racing thoughts at night steal your sleep and leave you exhausted. Discover why this happens and the exact 4-7-8 breathing technique, journaling method, and daily habits that eliminate bedtime anxiety. Real solutions for real people who are tired of staring at the ceiling."
+      },
+      {
+        "title": "5 Daily Habits to Prevent Anxiety Before Sleep Naturally",
+        "description": "Want to wake up refreshed instead of exhausted? These five simple daily habits rewire your nervous system so anxiety before sleep stops happening. Morning sunlight, afternoon walks, screen cutoff, and more. Build your anxiety-free bedtime starting today."
+      }
+    ]
+  },
+  {
     "slug": "morning-routine-for-mental-health",
     "title": "5 Morning Routine For Mental Health Habits That Actually Stick",
     "category": "Healthy Lifestyle",
