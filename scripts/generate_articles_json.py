@@ -10,6 +10,9 @@ except ImportError:
 SKIP = {'api', 'articles', 'about', 'all-articles', 'assets', 'css', 'js',
         'images', 'scripts', '.github', '_site'}
 
+INVALID_TITLES = {'redirecting...', 'redirecting', '404', 'not found', '',
+                  'page not found', 'error'}
+
 def get_category(slug):
     s = slug.lower()
     if any(k in s for k in ['productivity', 'focus', 'phone', 'routine',
@@ -20,7 +23,7 @@ def get_category(slug):
                               'exercise', 'fitness', 'strength', 'training',
                               'lemon', 'water', 'magnesium', 'probiotic',
                               'anti-aging', 'aging', 'lifestyle', 'sleep',
-                              'healthy', 'anti']):
+                              'healthy', 'anti', 'vitamin', 'weight']):
         return 'healthy_lifestyle'
     return 'mental_wellness'
 
@@ -31,6 +34,10 @@ def parse_article(folder_path, slug):
 
     with open(index_file, 'r', encoding='utf-8', errors='ignore') as f:
         content = f.read()
+
+    # Skip redirect pages
+    if 'window.location' in content or 'http-equiv="refresh"' in content.lower():
+        return None
 
     title = description = date = None
 
@@ -54,6 +61,8 @@ def parse_article(folder_path, slug):
             if time_tag:
                 date = (time_tag.get('datetime') or time_tag.get_text())[:10]
     else:
+        if 'window.location' in content:
+            return None
         m = re.search(r'<h1[^>]*>(.*?)</h1>', content, re.I | re.S)
         if m:
             title = re.sub(r'<[^>]+>', '', m.group(1)).strip()
@@ -66,7 +75,14 @@ def parse_article(folder_path, slug):
 
     if not title:
         title = slug.replace('-', ' ').title()
-    if not description:
+
+    # Skip redirect/invalid pages
+    if title.lower().strip() in INVALID_TITLES:
+        return None
+    if 'redirect' in title.lower():
+        return None
+
+    if not description or len(description) < 20:
         description = 'Read about ' + title.lower() + ' on NicheHubPro.'
     if not date:
         date = datetime.now().strftime('%Y-%m-%d')
