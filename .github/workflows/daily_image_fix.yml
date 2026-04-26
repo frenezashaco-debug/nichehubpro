@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'articles/*.html'   # only fires when a new article is pushed
+      - 'articles/*.html'
   workflow_dispatch:
 
 permissions:
