@@ -2,6 +2,56 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "foods-that-reduce-anxiety",
+    "title": "7 Foods That Reduce Anxiety: Your Brain's Natural Pharmacy Starts Here",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Foods that reduce anxiety aren't just a wellness trend; they're backed by neuroscience and thousands of people's real success stories. Your gut and brain a",
+    "image": "images/foods-that-reduce-anxiety.jpg",
+    "alt": "Woman holding bowl of blueberries in kitchen, foods that reduce anxiety",
+    "pins": [
+      {
+        "title": "7 Foods That Reduce Anxiety: Your Brain's Natural Pharmacy",
+        "description": "Discover the science-backed foods that actually calm your nervous system. From magnesium-rich spinach to omega-3 salmon, these seven foods reduce anxiety naturally and work within 2-3 weeks. Start with just one tomorrow and feel the difference. Your anxiety doesn't have to run your life."
+      },
+      {
+        "title": "Stop Anxiety With These 7 Powerful Foods Starting Today",
+        "description": "Tired of feeling anxious and jittery? Your diet might be the missing piece. Learn which foods reduce anxiety by supporting neurotransmitter production and gut health. Most people see results within 14 days of simple dietary changes. Read the science-backed guide now."
+      },
+      {
+        "title": "Try This: Foods That Reduce Anxiety in 30 Days",
+        "description": "A practical 30-day guide to eating for calm. These seven anxiety-reducing foods are affordable, accessible, and actually taste good. No extreme diets needed, just real whole foods that feed your brain what it needs to stay calm and focused. Start your transformation today."
+      }
+    ]
+  },
+  {
+    "slug": "fear-of-failure-anxiety",
+    "title": "5 Ways to Overcome Fear of Failure Anxiety Before It Stops You",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Fear of failure anxiety is one of the most paralyzing emotions you can experience, and it hits harder than most people admit. Studies show that 72% of peop",
+    "image": "images/fear-of-failure-anxiety.jpg",
+    "alt": "Woman sitting at desk contemplating fear of failure anxiety",
+    "pins": [
+      {
+        "title": "How to Overcome Fear of Failure Anxiety in 5 Real Steps",
+        "description": "Stop letting performance anxiety control your decisions. Learn the 5 proven strategies to rewire your brain, separate your worth from your performance, and take action despite your fear. Real science-backed methods that actually work. Start your transformation today."
+      },
+      {
+        "title": "Stop Fear of Failure Anxiety Before It Stops Your Dreams",
+        "description": "Does performance anxiety keep you from applying for that job, taking that risk, or being yourself? You're not broken. Your brain is just trying to protect you. Discover why fear of failure anxiety happens and exactly how to quiet that anxious voice so you can move forward."
+      },
+      {
+        "title": "Try This Daily Ritual to Beat Fear of Failure Anxiety",
+        "description": "A simple 10-minute daily routine that actually rewires your nervous system response to fear of failure anxiety. Includes grounding breath work, affirmations, and movement techniques used by elite performers. Build resilience in just 21 days with these actionable habits."
+      }
+    ]
+  },
+  {
     "slug": "how-to-sleep-better-naturally",
     "title": "7 Ways to Sleep Better Naturally: The Science-Backed Method That Actually Works",
     "category": "Healthy Lifestyle",
