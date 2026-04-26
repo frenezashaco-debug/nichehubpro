@@ -2,8 +2,8 @@ name: Daily Image Fix
 
 on:
   schedule:
-    - cron: '30 9 * * *'  # 9:30am UTC — 90 min after CCR agent publishes at 8am UTC
-  workflow_dispatch:       # allow manual trigger from GitHub UI
+    - cron: '30 9 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -12,24 +12,19 @@ jobs:
   fix-images:
     runs-on: ubuntu-latest
     timeout-minutes: 60
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      - name: Pull latest (CCR may have pushed after us)
-        run: git pull --rebase origin main
+      - run: git pull --rebase origin main
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: pip install pillow requests
+      - run: pip install pillow requests
 
       - name: Write config.py
         env:
@@ -42,18 +37,17 @@ jobs:
               f.write(f'LEONARDO_API_KEY = \"{key}\"\n')
               f.write('ANTHROPIC_API_KEY = \"\"\n')
               f.write('PINTEREST_ACCESS_TOKEN = \"\"\n')
-          print('config.py written — key:', key[:8] + '...' if key else 'MISSING')
+          print('Key:', key[:8] + '...' if key else 'MISSING')
           "
 
-      - name: Run auto_fix_covers.py
-        run: python auto_fix_covers.py
+      - run: python auto_fix_covers.py
 
-      - name: Commit and push fixes
+      - name: Commit and push
         run: |
           git config user.name "NicheHubPro Bot"
           git config user.email "action@github.com"
           git add images/ articles/
-          git diff --staged --quiet && echo "Nothing to fix today." && exit 0
+          git diff --staged --quiet && echo "Nothing to fix." && exit 0
           git commit -m "Auto-fix covers: $(date +%Y-%m-%d)"
           git pull --rebase origin main
           git push origin main
