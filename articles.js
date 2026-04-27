@@ -2,6 +2,56 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-increase-energy-naturally",
+    "title": "5 Ways to Increase Energy Naturally: Skip the Caffeine Crash Forever",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to increase energy naturally is the question millions ask when 3pm fatigue hits hard. You're exhausted, reaching for that third coffee, and nothing see",
+    "image": "images/how-to-increase-energy-naturally.jpg",
+    "alt": "Woman in morning sunlight holding tea, natural energy boost routine",
+    "pins": [
+      {
+        "title": "How to Increase Energy Naturally in 5 Days (Without Caffeine)",
+        "description": "Stop the energy crash cycle. These five science-backed natural energy boosters address the real reasons you're tired all the time. Fix your sleep schedule, eat protein for breakfast, get morning sunlight, and stay hydrated. Feel the difference in 5 days or less. Your body is waiting for you to give it what it actually needs."
+      },
+      {
+        "title": "Why You Feel Tired All the Time (And How to Fix It)",
+        "description": "Constant fatigue isn't laziness or a medical mystery. It's usually one of five fixable habits: inconsistent sleep, skipped breakfast, no morning light, dehydration, or lack of movement. Most people see energy improvement within 3-5 days of changing even one habit. Start with the one that feels easiest for your life."
+      },
+      {
+        "title": "5 Natural Energy Boosters That Actually Work (Tested and Real)",
+        "description": "Forget supplements and energy drinks. Your body has natural energy production systems. Morning sunlight, hydration, protein-rich meals, cold water exposure, and movement after eating create genuine, lasting energy without crashes. These aren't tricks, they're biology. Start with just one today and notice the shift."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-break-negative-thinking",
+    "title": "5 Ways to Break Negative Thinking Before It Controls Your Life",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to break negative thinking starts with recognizing the pattern, not fighting it. Most people spend 70% of their thoughts replaying the past or worrying",
+    "image": "images/how-to-break-negative-thinking.jpg",
+    "alt": "Woman journaling and breaking negative thinking patterns at desk",
+    "pins": [
+      {
+        "title": "How to Break Negative Thinking in 5 Practical Steps",
+        "description": "Stop self-doubt before it controls your day. Learn the cognitive techniques that rewire your brain in 2-3 weeks, not months. This article breaks down exactly how to recognize negative thinking patterns, question them with evidence, and build daily habits that stick. Includes the 5-sense grounding technique that works instantly."
+      },
+      {
+        "title": "Stop Self-Doubt Now: The Evidence-Based Method That Works",
+        "description": "Negative thoughts feel true because your brain treats them like memories. Break the cycle by gathering evidence instead of fighting your thoughts. Discover why positive thinking fails and what actually works to rewire your brain's default setting. Includes the exact questions to ask yourself when doubt hits."
+      },
+      {
+        "title": "5 Daily Habits to Stop Negative Thinking For Good",
+        "description": "Small daily practices beat intense willpower every time. Learn the morning thought audit, evening evidence list, and the scheduled worry technique that prevents negative thinking from consuming your whole day. These are the habits that actually stick and create lasting change in your mental patterns."
+      }
+    ]
+  },
+  {
     "slug": "foods-that-reduce-anxiety",
     "title": "7 Foods That Reduce Anxiety: Your Brain's Natural Pharmacy Starts Here",
     "category": "Healthy Lifestyle",
