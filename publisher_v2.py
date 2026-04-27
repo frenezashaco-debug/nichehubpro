@@ -175,6 +175,17 @@ REQUIREMENTS:
 
 Return ONLY the JSON. No em dashes anywhere."""
 
+# ── REAL PHOTO RULES — appended to every DALL-E 3 prompt ─────────────────
+_REAL_PHOTO_RULES = (
+    "IMPORTANT: This must look like a real photograph taken by a human photographer, not AI-generated art. "
+    "Real skin texture with natural pores, subtle imperfections, no plastic or airbrushed look. "
+    "Natural ambient light only — no studio lighting, no artificial rim light, no glowing backgrounds. "
+    "Ordinary real-world setting, not a dramatic or fantasy landscape. "
+    "Candid unposed body language — no model poses, no perfect symmetry, no forced expressions. "
+    "No oversaturated colors, no HDR effect, no cinematic color grading. "
+    "The photo must be indistinguishable from a real lifestyle photo shot by a real person."
+)
+
 # ── SECTION IMAGE DOWNLOADER — OpenAI DALL-E 3 ───────────────────────────
 def _get_dalle_headers():
     """Build DALL-E 3 headers at call time so the key is always fresh."""
@@ -192,7 +203,7 @@ def _get_dalle_headers():
 def download_section_image(prompt, article_slug, index, retries=2):
     """Download a section image via DALL-E 3 and save as WebP."""
     strict = "Photorealistic wellness lifestyle, warm natural tones, no text, no logos, no watermarks, 4K quality."
-    full_prompt = f"{prompt}. {strict}"
+    full_prompt = f"{prompt}. {strict} {_REAL_PHOTO_RULES}"
     filename = f"{article_slug}-sec{index}.webp"
     out_path = os.path.join(IMAGES_DIR, filename)
 

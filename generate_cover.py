@@ -13,6 +13,16 @@ sys.stdout.reconfigure(encoding='utf-8')
 from PIL import Image, ImageDraw, ImageFont
 
 OUT_DIR   = os.path.join(os.path.dirname(os.path.abspath(__file__)), "images")
+
+REAL_PHOTO_RULES = (
+    "IMPORTANT: This must look like a real photograph taken by a human photographer, not AI-generated art. "
+    "Real skin texture with natural pores, subtle imperfections, no plastic or airbrushed look. "
+    "Natural ambient light only — no studio lighting, no artificial rim light, no glowing backgrounds. "
+    "Ordinary real-world setting, not a dramatic or fantasy landscape. "
+    "Candid unposed body language — no model poses, no perfect symmetry, no forced expressions. "
+    "No oversaturated colors, no HDR effect, no cinematic color grading. "
+    "The photo must be indistinguishable from a real lifestyle photo shot by a real person."
+)
 # Font paths — Windows first, Linux fallback
 def _find_font(win_path, linux_names):
     if os.path.exists(win_path):
@@ -75,7 +85,6 @@ def build_image_prompt(topic, category, custom_prompt=None):
     )
 
     if custom_prompt and len(custom_prompt) > 30:
-        # Claude generated a unique topic-specific prompt — append strict rules
         prompt = f"{custom_prompt}. {strict_rules}"
     else:
         scene = CATEGORY_SCENES.get(category, CATEGORY_SCENES["Mental Wellness"])
@@ -92,7 +101,7 @@ def build_image_prompt(topic, category, custom_prompt=None):
             f"Composition: subject slightly off-center, focus on emotion not perfection. "
             f"{strict_rules}"
         )
-    return prompt
+    return f"{prompt} {REAL_PHOTO_RULES}"
 
 # ── COMPRESS IMAGE ────────────────────────────────────────────────────────
 def compress_to_limit(img, max_kb=MAX_KB):

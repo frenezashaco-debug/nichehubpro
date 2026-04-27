@@ -16,6 +16,16 @@ IMAGES_DIR   = os.path.join(BASE_DIR, "images")
 ARTICLES_DIR = os.path.join(BASE_DIR, "articles")
 PILLOW_KB = 100  # covers below this size are Pillow fallbacks
 
+REAL_PHOTO_RULES = (
+    "IMPORTANT: This must look like a real photograph taken by a human photographer, not AI-generated art. "
+    "Real skin texture with natural pores, subtle imperfections, no plastic or airbrushed look. "
+    "Natural ambient light only — no studio lighting, no artificial rim light, no glowing backgrounds. "
+    "Ordinary real-world setting, not a dramatic or fantasy landscape. "
+    "Candid unposed body language — no model poses, no perfect symmetry, no forced expressions. "
+    "No oversaturated colors, no HDR effect, no cinematic color grading. "
+    "The photo must be indistinguishable from a real lifestyle photo shot by a real person."
+)
+
 
 def _openai_key():
     """Read OpenAI key fresh every call."""
@@ -97,9 +107,10 @@ SECTION_PROMPTS = {
 
 def generate_image(prompt, filename, fmt, max_kb):
     """Generate image via DALL-E 3 (synchronous — no polling needed)."""
+    full_prompt = f"{prompt} {REAL_PHOTO_RULES}"
     body = {
         "model": "dall-e-3",
-        "prompt": prompt,
+        "prompt": full_prompt,
         "size": "1792x1024",
         "quality": "standard",
         "style": "natural",
