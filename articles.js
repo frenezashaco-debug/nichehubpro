@@ -2,6 +2,56 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "benefits-of-walking-daily",
+    "title": "7 Benefits of Walking Daily That Transform Your Mental Health Fast",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Walking daily isn't just good exercise, it's one of the most powerful mental health tools available to you right now. Most people don't realize that 30 min",
+    "image": "images/benefits-of-walking-daily.jpg",
+    "alt": "Woman walking peacefully on nature path during golden hour light",
+    "pins": [
+      {
+        "title": "7 Benefits of Walking Daily: Proven Mental Health Changes in 7 Days",
+        "description": "Discover how walking daily transforms your anxiety, stress, and mood naturally. Real science-backed benefits you'll notice within one week. Start your walking habit today with this simple guide. Perfect for anyone struggling with stress and overthinking. No gym required, just you and 20 minutes."
+      },
+      {
+        "title": "Stop Anxiety Fast: Why Walking Works Better Than You Think",
+        "description": "Walking is the most underrated anxiety treatment available. Learn why 20 minutes of daily walking reduces panic and stress as effectively as some medications. Real strategies from therapists and neuroscience research. Transform your mental health without expensive treatments."
+      },
+      {
+        "title": "Try This: Simple Daily Walking Habits That Multiply Mental Health Benefits",
+        "description": "These specific walking habits compound your stress relief and mental clarity over time. From outdoor grounding to phone-free walks, discover the habits that actually stick. Build consistency over intensity and watch your anxiety drop permanently within 2-3 weeks."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-feel-in-control-of-your-mind",
+    "title": "3 Ways to Feel in Control of Your Mind: The Mental Discipline Blueprint",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to feel in control of your mind is the question keeping millions awake at night. Your thoughts race, your worries spiral, and you feel like a passenger",
+    "image": "images/how-to-feel-in-control-of-your-mind.jpg",
+    "alt": "Young woman with thoughtful expression holding tea at morning window for mental control",
+    "pins": [
+      {
+        "title": "How to Feel in Control of Your Mind: 5 Proven Techniques That Work Fast",
+        "description": "Stop feeling like a passenger in your own head. Learn the practical mental discipline techniques neuroscience proves work for anxiety, overthinking, and racing thoughts. Start with just one technique, five minutes daily. Your mind is more trainable than you think. Discover how to build real mental control today."
+      },
+      {
+        "title": "Stop Your Mind From Spiraling: The Mental Discipline Methods That Actually Stick",
+        "description": "Tired of your thoughts running the show? Mental discipline isn't about suppression or toxic positivity. It's about building awareness and skill. Learn the five core techniques used by therapists and coaches to help people regain control of their mind. Small daily habits. Big results. Start one habit tomorrow."
+      },
+      {
+        "title": "Try This: The 5-Minute Daily Habit That Changes Your Mental Control Forever",
+        "description": "One micro-habit is all it takes to start training your mind. Research shows that five minutes of intentional mental practice daily creates measurable improvements in focus, anxiety, and emotional regulation within 21 days. No complicated system. No meditation guilt. Just one technique, done daily. Your mind is waiting to be trained."
+      }
+    ]
+  },
+  {
     "slug": "how-to-increase-energy-naturally",
     "title": "5 Ways to Increase Energy Naturally: Skip the Caffeine Crash Forever",
     "category": "Healthy Lifestyle",
