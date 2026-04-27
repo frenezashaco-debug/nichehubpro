@@ -244,6 +244,8 @@ def main():
 
         if ok:
             fixed += 1
+            if needs_fix.index((slug, html_file, bad_cover, no_secs, cover_kb)) < len(needs_fix) - 1:
+                time.sleep(15)  # avoid Leonardo rate limit between articles
 
     print(f"\nauto_fix_covers: {fixed}/{len(needs_fix)} articles fixed.")
 
