@@ -30,13 +30,14 @@ jobs:
 
       - name: Write config.py
         env:
-          LEONARDO_API_KEY: ${{ secrets.LEONARDO_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python3 -c "
           import os
-          key = os.environ.get('LEONARDO_API_KEY', '')
+          key = os.environ.get('OPENAI_API_KEY', '')
           with open('config.py', 'w') as f:
-              f.write(f'LEONARDO_API_KEY = \"{key}\"\n')
+              f.write(f'OPENAI_API_KEY = \"{key}\"\n')
+              f.write('LEONARDO_API_KEY = \"\"\n')
               f.write('ANTHROPIC_API_KEY = \"\"\n')
               f.write('PINTEREST_ACCESS_TOKEN = \"\"\n')
           print('Key:', key[:8] + '...' if key else 'MISSING')

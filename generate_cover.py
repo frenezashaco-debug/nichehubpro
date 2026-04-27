@@ -1,6 +1,6 @@
 """
 NicheHubPro — Cover Image Generator
-Uses Leonardo.ai (Phoenix 1.0, paid) as primary.
+Uses OpenAI DALL-E 3 as primary.
 Falls back to branded Pillow cover on error.
 
 Usage:
@@ -11,20 +11,6 @@ Usage:
 import sys, os, re, io, time, requests
 sys.stdout.reconfigure(encoding='utf-8')
 from PIL import Image, ImageDraw, ImageFont
-
-# ── CONFIG ────────────────────────────────────────────────────────────────
-try:
-    from config import LEONARDO_API_KEY
-except ImportError:
-    LEONARDO_API_KEY = os.environ.get("LEONARDO_API_KEY", "")
-
-LEONARDO_MODEL  = "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3"  # Phoenix 1.0
-LEONARDO_W, LEONARDO_H = 1360, 768  # native Phoenix ratio, upscaled to 1920x1080
-LEONARDO_NEGATIVE = (
-    "man, male, boy, masculine, text, watermark, logo, words, letters, "
-    "number, AI look, stock photo, fake smile, arms crossed, illustration, "
-    "cartoon, digital art, painting, oversaturated, dark, cold, clinical"
-)
 
 OUT_DIR   = os.path.join(os.path.dirname(os.path.abspath(__file__)), "images")
 # Font paths — Windows first, Linux fallback
@@ -122,75 +108,50 @@ def compress_to_limit(img, max_kb=MAX_KB):
     img.convert('RGB').save(buf, format='JPEG', quality=20, optimize=True)
     return buf.getvalue(), 20, buf.tell() / 1024
 
-# ── AI IMAGE GENERATION — Leonardo.ai Phoenix 1.0 ────────────────────────
+# ── AI IMAGE GENERATION — OpenAI DALL-E 3 ────────────────────────────────
 def generate_with_ai(topic, category, custom_prompt=None, retries=2):
-    """Generate image via Leonardo.ai Phoenix 1.0."""
+    """Generate image via DALL-E 3 (synchronous — no polling)."""
     prompt = build_image_prompt(topic, category, custom_prompt)
 
     for attempt in range(1, retries + 1):
         try:
-            # Read key fresh every attempt — works in CCR where config.py is written just before
             try:
-                from config import LEONARDO_API_KEY as _key
+                from config import OPENAI_API_KEY as _key
             except Exception:
-                _key = os.environ.get("LEONARDO_API_KEY", "")
+                _key = os.environ.get("OPENAI_API_KEY", "")
             if not _key:
-                print("  ERROR: LEONARDO_API_KEY is missing — aborting image generation")
+                print("  ERROR: OPENAI_API_KEY is missing — aborting image generation")
                 break
             headers = {
-                "accept": "application/json",
-                "content-type": "application/json",
-                "authorization": f"Bearer {_key}",
+                "Authorization": f"Bearer {_key}",
+                "Content-Type": "application/json",
             }
-            print(f"  Calling Leonardo Phoenix 1.0 (attempt {attempt})...")
+            print(f"  Calling DALL-E 3 (attempt {attempt})...")
             body = {
-                "modelId": LEONARDO_MODEL,
+                "model": "dall-e-3",
                 "prompt": prompt,
-                "negative_prompt": LEONARDO_NEGATIVE,
-                "width": LEONARDO_W,
-                "height": LEONARDO_H,
-                "num_images": 1,
-                "alchemy": False,
-                "presetStyle": "CINEMATIC",
-                "public": False,
+                "size": "1792x1024",
+                "quality": "standard",
+                "style": "natural",
+                "n": 1,
             }
             r = requests.post(
-                "https://cloud.leonardo.ai/api/rest/v1/generations",
-                json=body, headers=headers, timeout=30
+                "https://api.openai.com/v1/images/generations",
+                json=body, headers=headers, timeout=120
             )
             if r.status_code != 200:
                 print(f"  Create failed: {r.status_code} {r.text[:200]}")
                 time.sleep(5)
                 continue
 
-            gen_id = r.json()["sdGenerationJob"]["generationId"]
+            img_url = r.json()["data"][0]["url"]
+            img_resp = requests.get(img_url, timeout=60)
+            if img_resp.status_code == 200:
+                img = Image.open(io.BytesIO(img_resp.content))
+                img = img.resize((W, H), Image.LANCZOS)
+                return img
 
-            # Poll until complete (max 200s)
-            for _ in range(25):
-                time.sleep(8)
-                poll = requests.get(
-                    f"https://cloud.leonardo.ai/api/rest/v1/generations/{gen_id}",
-                    headers=headers, timeout=20
-                )
-                if poll.status_code != 200:
-                    break
-                gen = poll.json().get("generations_by_pk", {})
-                status = gen.get("status", "")
-                if status == "COMPLETE":
-                    images = gen.get("generated_images", [])
-                    if images:
-                        img_url = images[0]["url"]
-                        img_resp = requests.get(img_url, timeout=60)
-                        if img_resp.status_code == 200:
-                            img = Image.open(io.BytesIO(img_resp.content))
-                            img = img.resize((W, H), Image.LANCZOS)
-                            return img
-                    break
-                if status == "FAILED":
-                    print("  Generation FAILED")
-                    break
-
-            print(f"  Attempt {attempt} did not return image")
+            print(f"  Attempt {attempt}: image download failed")
         except Exception as e:
             print(f"  Error: {e}")
             if attempt < retries:

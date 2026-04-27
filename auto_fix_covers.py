@@ -2,7 +2,7 @@
 auto_fix_covers.py — Post-publish safety net.
 
 Scans all articles for:
-  1. Pillow fallback covers (< 100 KB) → regenerates with Leonardo
+  1. Pillow fallback covers (< 100 KB) → regenerates with DALL-E 3
   2. Missing section images → generates + injects into HTML
 
 Run after batch_30days.py in the CCR agent, and locally whenever needed.
@@ -11,36 +11,27 @@ import sys, os, io, time, requests, re
 sys.stdout.reconfigure(encoding='utf-8')
 from PIL import Image
 
-try:
-    from config import LEONARDO_API_KEY
-except Exception:
-    LEONARDO_API_KEY = os.environ.get("LEONARDO_API_KEY", "")
-
 BASE_DIR     = os.path.dirname(os.path.abspath(__file__))
 IMAGES_DIR   = os.path.join(BASE_DIR, "images")
 ARTICLES_DIR = os.path.join(BASE_DIR, "articles")
-MODEL        = "de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3"
-NEGATIVE     = (
-    "man, male, boy, masculine, beard, text, watermark, logo, words, letters, "
-    "AI look, plastic skin, overly smooth skin, stock photo, fake smile, "
-    "arms crossed, illustration, cartoon, digital art, painting, oversaturated, "
-    "dark, cold, clinical, perfect lighting, studio backdrop"
-)
 PILLOW_KB = 100  # covers below this size are Pillow fallbacks
 
 
-def _headers():
-    """Always read the key fresh — safe for CCR and local use."""
+def _openai_key():
+    """Read OpenAI key fresh every call."""
     try:
-        from config import LEONARDO_API_KEY as key
+        from config import OPENAI_API_KEY as key
     except Exception:
-        key = os.environ.get("LEONARDO_API_KEY", "")
+        key = os.environ.get("OPENAI_API_KEY", "")
     if not key:
-        raise RuntimeError("LEONARDO_API_KEY missing — cannot generate images")
+        raise RuntimeError("OPENAI_API_KEY missing — cannot generate images")
+    return key
+
+
+def _openai_headers():
     return {
-        "accept": "application/json",
-        "content-type": "application/json",
-        "authorization": f"Bearer {key}",
+        "Authorization": f"Bearer {_openai_key()}",
+        "Content-Type": "application/json",
     }
 
 
@@ -105,59 +96,49 @@ SECTION_PROMPTS = {
 
 
 def generate_image(prompt, filename, fmt, max_kb):
-    headers = _headers()
+    """Generate image via DALL-E 3 (synchronous — no polling needed)."""
     body = {
-        "modelId": MODEL, "prompt": prompt, "negative_prompt": NEGATIVE,
-        "width": 1360, "height": 768, "num_images": 1,
-        "alchemy": False, "presetStyle": "CINEMATIC", "public": False,
+        "model": "dall-e-3",
+        "prompt": prompt,
+        "size": "1792x1024",
+        "quality": "standard",
+        "style": "natural",
+        "n": 1,
     }
-    r = requests.post(
-        "https://cloud.leonardo.ai/api/rest/v1/generations",
-        json=body, headers=headers, timeout=30
-    )
-    if r.status_code != 200:
-        print(f"    API error {r.status_code}: {r.text[:150]}")
-        return False
-    gen_id = r.json()["sdGenerationJob"]["generationId"]
-    for tick in range(25):
-        time.sleep(8)
-        poll = requests.get(
-            f"https://cloud.leonardo.ai/api/rest/v1/generations/{gen_id}",
-            headers=headers, timeout=20
+    try:
+        r = requests.post(
+            "https://api.openai.com/v1/images/generations",
+            json=body, headers=_openai_headers(), timeout=120
         )
-        if poll.status_code != 200:
-            return False
-        gen    = poll.json().get("generations_by_pk", {})
-        status = gen.get("status", "")
-        if status == "COMPLETE":
-            imgs = gen.get("generated_images", [])
-            if not imgs:
-                return False
-            img_resp = requests.get(imgs[0]["url"], timeout=60)
-            if img_resp.status_code != 200:
-                return False
-            img = Image.open(io.BytesIO(img_resp.content)).convert("RGB")
-            img = img.resize((1920, 1080), Image.LANCZOS)
-            out_path = os.path.join(IMAGES_DIR, filename)
-            if fmt == "JPEG":
-                for q in range(88, 15, -4):
-                    buf = io.BytesIO()
-                    img.save(buf, format="JPEG", quality=q, optimize=True)
-                    if buf.tell() / 1024 <= max_kb:
-                        break
-            else:
-                for q in range(92, 10, -5):
-                    buf = io.BytesIO()
-                    img.save(buf, format="WEBP", quality=q, method=4)
-                    if buf.tell() / 1024 <= max_kb:
-                        break
-            with open(out_path, "wb") as f:
-                f.write(buf.getvalue())
-            print(f"    Saved {filename} ({os.path.getsize(out_path)//1024}KB)")
-            return True
-        if status == "FAILED":
-            print("    Leonardo FAILED"); return False
-    print("    Timed out"); return False
+    except Exception as e:
+        print(f"    Request error: {e}")
+        return False
+    if r.status_code != 200:
+        print(f"    API error {r.status_code}: {r.text[:200]}")
+        return False
+    image_url = r.json()["data"][0]["url"]
+    img_resp = requests.get(image_url, timeout=60)
+    if img_resp.status_code != 200:
+        return False
+    img = Image.open(io.BytesIO(img_resp.content)).convert("RGB")
+    img = img.resize((1920, 1080), Image.LANCZOS)
+    out_path = os.path.join(IMAGES_DIR, filename)
+    if fmt == "JPEG":
+        for q in range(88, 15, -4):
+            buf = io.BytesIO()
+            img.save(buf, format="JPEG", quality=q, optimize=True)
+            if buf.tell() / 1024 <= max_kb:
+                break
+    else:
+        for q in range(92, 10, -5):
+            buf = io.BytesIO()
+            img.save(buf, format="WEBP", quality=q, method=4)
+            if buf.tell() / 1024 <= max_kb:
+                break
+    with open(out_path, "wb") as f:
+        f.write(buf.getvalue())
+    print(f"    Saved {filename} ({os.path.getsize(out_path)//1024}KB)")
+    return True
 
 
 def inject_sections(slug, html_path):
