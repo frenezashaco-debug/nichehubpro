@@ -170,6 +170,10 @@ document.addEventListener('DOMContentLoaded', function () {
       return '';
     }
 
+    function escHtml(s) {
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
     function doSearch(q) {
       var articles = (typeof ARTICLES !== 'undefined') ? ARTICLES : [];
       if (!q.trim()) {
@@ -184,15 +188,15 @@ document.addEventListener('DOMContentLoaded', function () {
       }).slice(0, 8);
 
       if (!hits.length) {
-        sResults.innerHTML = '<div class="search-no-results">No results for &ldquo;' + q + '&rdquo;</div>';
+        sResults.innerHTML = '<div class="search-no-results">No results for &ldquo;' + escHtml(q) + '&rdquo;</div>';
         return;
       }
       sResults.innerHTML = hits.map(function(a) {
         var root = (window.location.pathname.startsWith('/articles/')) ? '../' : '/';
-        return '<a class="search-result-item" href="' + root + 'articles/' + a.slug + '.html">' +
+        return '<a class="search-result-item" href="' + root + 'articles/' + escHtml(a.slug) + '.html">' +
           '<div>' +
-            '<div class="search-result-cat ' + catClass(a.category) + '">' + (a.category || '') + '</div>' +
-            '<div class="search-result-title">' + a.title + '</div>' +
+            '<div class="search-result-cat ' + catClass(a.category) + '">' + escHtml(a.category || '') + '</div>' +
+            '<div class="search-result-title">' + escHtml(a.title) + '</div>' +
           '</div>' +
         '</a>';
       }).join('');
