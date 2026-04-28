@@ -2,6 +2,56 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-detox-your-mind",
+    "title": "5 Ways to Detox Your Mind From Negative Thoughts and Reclaim Your Peace",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Your mind is drowning in negative thoughts, and you know it. Toxic thinking patterns have become background noise, but they're draining your energy, steali",
+    "image": "images/how-to-detox-your-mind.jpg",
+    "alt": "Woman writing in notebook during mental detox and clearing thoughts practice",
+    "pins": [
+      {
+        "title": "How to Detox Your Mind in 5 Days: Clear Negative Thoughts Fast",
+        "description": "Stop letting toxic thoughts control your mind. These 5 proven mental detox techniques actually work for clearing anxiety, worry, and negative thinking patterns. Learn the brain dump method, thought naming, and more strategies to reclaim your peace. Start your mental detox today with daily practices that take just minutes."
+      },
+      {
+        "title": "Stop Mental Clutter: 5 Ways to Clear Your Mind From Negative Thoughts",
+        "description": "Is your mind drowning in worry, overthinking, and self-doubt? A mental detox clears the toxic thoughts keeping you stuck. This guide shows exactly how to process negativity instead of ignoring it. Real techniques from cognitive behavioral therapy that reduce anxiety in days, not months."
+      },
+      {
+        "title": "Try This: Daily Mental Detox Habit That Takes 10 Minutes",
+        "description": "Your mind deserves a detox just like your body. Start with this simple daily practice: write down every worry for 10 minutes, then release it. This brain dump method rewires your brain's default negativity and creates mental clarity. Thousands have used this to break free from anxiety and overthinking."
+      }
+    ]
+  },
+  {
+    "slug": "emotional-burnout-recovery",
+    "title": "5 Steps to Emotional Burnout Recovery: Rebuild Your Inner Strength Today",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Emotional burnout recovery starts with understanding you're not broken, you're depleted. Your nervous system has been running on empty, and that exhaustion",
+    "image": "images/emotional-burnout-recovery.jpg",
+    "alt": "Woman holding tea by window during emotional burnout recovery moment",
+    "pins": [
+      {
+        "title": "How to Recover from Emotional Burnout Fast: 5 Steps That Work",
+        "description": "Emotional burnout recovery doesn't require quitting your life. Learn the 5-step framework that rebuilds your energy in weeks, not months. From nervous system resets to boundary-setting, these proven strategies help you reclaim your peace. Start your recovery today with small, consistent actions that actually stick."
+      },
+      {
+        "title": "Stop the Emotional Burnout Spiral: Start Here Today",
+        "description": "You're not broken, you're depleted. Recognize the signs of emotional burnout recovery before it gets worse. Chronic fatigue, brain fog, and emotional numbness are your body's wake-up call. Discover how to respond with boundaries instead of guilt, and rebuild your mental energy starting this week."
+      },
+      {
+        "title": "Your Daily Emotional Burnout Recovery Routine (5 Min Plan)",
+        "description": "Emotional burnout recovery happens in small moments, not big overhauls. Learn a 5-minute daily reset that rewires your nervous system to feel safe again. From morning breathing to evening journaling, these simple practices compound into real transformation. Consistency beats perfection every time."
+      }
+    ]
+  },
+  {
     "slug": "benefits-of-walking-daily",
     "title": "7 Benefits of Walking Daily That Transform Your Mental Health Fast",
     "category": "Healthy Lifestyle",
