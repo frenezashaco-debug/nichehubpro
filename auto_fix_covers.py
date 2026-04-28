@@ -215,9 +215,16 @@ def main():
         print(f"  {slug} — {', '.join(issues)}")
 
         ok = True
+        img_count = 0  # track how many images we've generated this run
+
         if bad_cover:
             prompt = COVER_PROMPTS.get(category, COVER_PROMPTS["Mental Wellness"])
-            if not generate_image(prompt, f"{slug}.jpg", "JPEG", 250):
+            if img_count > 0:
+                print(f"    Waiting 65s (rate limit)...")
+                time.sleep(65)
+            if generate_image(prompt, f"{slug}.jpg", "JPEG", 250):
+                img_count += 1
+            else:
                 print(f"    Cover generation failed — skipping")
                 ok = False
 
@@ -226,8 +233,12 @@ def main():
             sec_ok = 0
             for i, prompt in enumerate(sec_prompts):
                 idx = [1, 3, 5][i]
+                if img_count > 0:
+                    print(f"    Waiting 65s (rate limit)...")
+                    time.sleep(65)
                 if generate_image(prompt, f"{slug}-sec{idx}.webp", "WEBP", 500):
                     sec_ok += 1
+                    img_count += 1
             if sec_ok == 3:
                 inject_sections(slug, html_path)
             else:
@@ -236,8 +247,6 @@ def main():
 
         if ok:
             fixed += 1
-            if needs_fix.index((slug, html_file, bad_cover, no_secs, cover_kb)) < len(needs_fix) - 1:
-                time.sleep(15)  # avoid Leonardo rate limit between articles
 
     print(f"\nauto_fix_covers: {fixed}/{len(needs_fix)} articles fixed.")
 
