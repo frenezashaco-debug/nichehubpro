@@ -45,6 +45,229 @@ def _openai_headers():
     }
 
 
+# ── ARTICLE-SPECIFIC PROMPTS (cover, [sec1, sec3, sec5]) ─────────────────
+# Keyed by slug. Used before falling back to generic COVER_PROMPTS.
+# Prompts describe scenes — no sensitive keywords that trigger content filters.
+SLUG_PROMPTS = {
+    "how-to-stay-calm-under-pressure": (
+        "Candid lifestyle photo: a young woman, late 20s, sitting at a tidy home desk, eyes closed for a brief moment, taking a slow breath before continuing work. Papers and a laptop in front of her. Soft afternoon window light. Simple, calm. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, at a desk staring at a laptop screen with a tense, overwhelmed expression, jaw slightly tight. Afternoon light. Shot on 50mm f/2.0. Photorealistic candid lifestyle. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, pausing at her desk with eyes closed and shoulders relaxed, hands flat on the desk, deliberate breathing pause. Warm window light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, closing her laptop at end of day with a calm, composed expression. A glass of water beside her. Warm late-afternoon light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "healthy-daily-habits": (
+        "Candid lifestyle photo: a young woman, late 20s, in a bright kitchen making morning tea, calm and unhurried. She wears a soft cream top. Warm morning sunlight. Simple countertop. Shot on 85mm f/1.8, shallow depth of field. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, sitting on the edge of her bed just woken up, stretching arms above her head. Morning light through thin curtains. Simple bedroom. Shot on 50mm f/2.0. Photorealistic candid lifestyle. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, eating a simple lunch at a kitchen table — bowl of salad and water glass. Relaxed, unhurried. Natural daylight. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, sitting in bed in the evening writing in a journal by a small lamp. Relaxed expression. Cosy bedroom. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "signs-of-anxiety-disorder": (
+        "Candid lifestyle photo: a young woman, late 20s, sitting on a sofa with her legs pulled up slightly, looking into the distance with a quiet, unsettled expression. Soft living room light. Simple setting. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, at a desk staring at her screen unfocused, one hand on her forehead, mind elsewhere. Soft afternoon light. Shot on 50mm f/2.0. Photorealistic candid lifestyle. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, sitting across a table from a friend, listening attentively with a thoughtful expression. Cafe setting, natural light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, writing in a journal at a kitchen table, calm and reflective. Morning light, a mug nearby. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "how-to-focus-without-distractions": (
+        "Candid lifestyle photo: a young woman, late 20s, at a clean minimal desk working on a laptop, deeply focused, earbuds in. Morning light from a window. Simple background. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, at a desk glancing at her phone while a laptop is open, distracted expression. Afternoon light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, writing a to-do list in a notebook at her desk, phone face-down beside her. Focused and intentional. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, working at a laptop with full concentration, slight forward lean, calm expression. Clean desk, warm light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "simple-morning-habits": (
+        "Candid lifestyle photo: a young woman, late 20s, standing by a kitchen window holding a warm mug, looking outside in the early morning light. Soft golden tones, relaxed posture. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, stretching her arms overhead in her bedroom just after waking, morning light through curtains. Simple bedroom. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, making a simple breakfast — scrambled eggs on a plate, kettle in background. Warm kitchen light. Unhurried. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, sitting at a kitchen table with a journal and mug, writing with a calm focused expression. Morning sunlight. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "how-to-stop-panic-attacks": (
+        "Candid lifestyle photo: a young woman, late 20s, sitting in a quiet corner of a room, eyes closed, one hand on her chest, breathing slowly and deliberately. Soft natural light. Calm and grounded. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, sitting against a wall, knees pulled up slightly, catching her breath with a overwhelmed expression. Soft indoor light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, sitting cross-legged on a yoga mat doing slow deliberate breathing, eyes closed, hands open on knees. Natural light. Shot on 85mm f/1.8. Photorealistic wellness. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, sitting outside on a step, face turned up slightly to fresh air, calm relieved expression. Overcast daylight. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+        ]
+    ),
+    "how-to-stop-procrastination": (
+        "Candid lifestyle photo: a young woman, late 20s, sitting down at her desk and opening her laptop with a determined, ready expression. Clean organized desk. Morning light. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, sitting at a desk staring blankly at an open laptop, avoiding starting work, elbow on desk, chin resting on hand. Afternoon light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, writing a task list in a notebook with a pen, organized and intentional. Clean desk, morning light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, at her desk working through a checklist, pen in hand, focused and making progress. Warm afternoon light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "sleep-routine-tips": (
+        "Candid lifestyle photo: a young woman, late 20s, in a soft robe sitting on the edge of her bed at night, lamp light glowing warm, winding down for sleep. Calm and relaxed. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, lying in bed scrolling on her phone late at night, tired eyes, blue screen light. Dark room with a small lamp. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, doing a gentle forward fold stretch beside her bed in the evening. Soft lamp light, tidy bedroom. Shot on 85mm f/1.8. Photorealistic candid wellness. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, asleep in a tidy bed, peaceful expression, soft morning light just starting. Cosy bedroom. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "how-to-build-confidence": (
+        "Candid lifestyle photo: a young woman, late 20s, standing in front of a mirror in a simple bedroom with a calm, steady expression — not smiling for the camera, just looking at herself with quiet assurance. Natural light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, sitting at a desk hesitating before clicking send on an email, uncertain expression. Soft indoor light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, speaking in a small group setting — gesturing with her hands, engaged and present. Natural indoor light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, walking on a footpath with upright posture and a relaxed, easy expression. Dappled daylight. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "how-to-stay-motivated": (
+        "Candid lifestyle photo: a young woman, late 20s, at her desk with a notebook open and a focused energized expression, pen in hand ready to work. Morning light. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, sitting at her desk staring at her laptop looking flat and uninspired, chin in hand. Grey afternoon light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, reviewing a goal list in a notebook, circling something with a pen, focused and purposeful. Warm desk light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, working at her laptop with good posture and a pleased, productive expression. Clean desk, afternoon light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "healthy-lifestyle-tips": (
+        "Candid lifestyle photo: a young woman, late 20s, in a bright kitchen slicing vegetables for a meal, relaxed and unhurried. Morning light, simple countertop. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, in a supermarket aisle holding two food items and reading one label thoughtfully. Natural store light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, walking at a steady pace on a quiet residential footpath, relaxed expression. Overcast daylight. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, doing a gentle yoga pose on a mat in her living room. Simple room, natural daylight. Shot on 85mm f/1.8. Photorealistic wellness lifestyle. No text, no logos.",
+        ]
+    ),
+    "how-to-stop-worrying-about-the-future": (
+        "Candid lifestyle photo: a young woman, late 20s, sitting by a window looking outside with a thoughtful, contemplative expression. Soft afternoon light. Simple room. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, sitting at a table with a notepad, writing down a list of concerns, slightly furrowed brow. Soft indoor light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, sitting cross-legged on a yoga mat with eyes closed and a calm expression, meditating. Natural window light. Shot on 85mm f/1.8. Photorealistic wellness. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, sitting on a park bench looking ahead with a relaxed and present expression. Dappled daylight. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+        ]
+    ),
+    "time-management-tips": (
+        "Candid lifestyle photo: a young woman, late 20s, at an organized desk with a planner open and a pen in hand, reviewing her schedule with a calm focused expression. Morning light. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, at a cluttered desk with multiple tasks open, looking slightly overwhelmed, post-it notes around her laptop. Afternoon light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, blocking out her week in a planner with different coloured pens, organized and methodical. Clean desk, morning light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, closing her laptop at a reasonable hour with a satisfied, done-for-the-day expression. Warm late afternoon light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "daily-wellness-habits": (
+        "Candid lifestyle photo: a young woman, late 20s, in a sunlit kitchen making morning tea, unhurried and calm. She wears a simple linen top. Warm morning light. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, doing a simple morning stretch beside an open window. Natural light, simple bedroom. Shot on 50mm f/2.0. Photorealistic candid wellness. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, eating a balanced lunch at an outdoor table, relaxed and present. Natural daylight. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, reading a paperback book on the sofa in the evening, soft lamp light. Cosy and unwinding. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "deep-work-techniques": (
+        "Candid lifestyle photo: a young woman, late 20s, in a deep state of focus at a clean desk — leaning slightly forward, eyes on laptop screen, noise-cancelling headphones on. Morning light. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, at her desk glancing at buzzing phone notifications while trying to work, distracted expression. Afternoon light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, placing her phone face-down on the desk and putting on headphones, deliberate and intentional. Clean workspace. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, leaning back and stretching after a long focused work session, relieved and accomplished expression. Warm afternoon light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "natural-energy-boosters": (
+        "Candid lifestyle photo: a young woman, late 20s, stepping outside her front door in the early morning, arms slightly raised, eyes closed, face turned up to fresh air and sunlight. She wears a light jacket. Warm morning light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, sitting at her desk mid-morning looking tired, holding a coffee cup with heavy eyes. Natural office light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, at a kitchen counter filling a glass of water, a small bowl of fruit beside her. Bright morning light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, walking briskly on a residential pavement in the morning, earbuds in, light jacket. Overcast daylight. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        ]
+    ),
+    "how-to-build-discipline": (
+        "Candid lifestyle photo: a young woman, late 20s, sitting at her desk at the same time each morning, notebook open, mug beside her — clear daily routine visible. Consistent warm morning light. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, alarm going off, looking at it with resistance, tempted to stay in bed. Dim morning bedroom light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, reviewing a habit tracker in a notebook, ticking off completed habits with a pen. Desk, morning light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, at her desk in a clear consistent work routine, calm and steady. Clean workspace, warm light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "daily-self-care-routine": (
+        "Candid lifestyle photo: a young woman, late 20s, in a simple bathroom applying moisturiser in front of a mirror, calm morning routine. Natural bathroom light. She wears a soft robe. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, rushing through a morning — grabbing keys and bag in a hurry, slightly stressed. Morning light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, sitting in a warm bath with eyes closed, calm and restorative. Soft bathroom light, no clutter. Shot on 85mm f/1.8. Photorealistic candid wellness. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, in her bedroom at night — journal open, lamp on, doing a calm evening wind-down routine. Cosy light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "how-to-reset-your-life": (
+        "Candid lifestyle photo: a young woman, late 20s, sitting cross-legged on a clean floor surrounded by neatly sorted items, a fresh notebook open in her lap, looking forward with a calm determined expression. Natural light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, sitting at a messy overwhelmed desk, staring at it with a heavy expression. Flat afternoon light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, sorting through items and placing them in a box, decluttering her space. Natural light, simple room. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, sitting at a newly clean and organized desk with a fresh notebook open, ready to start. Morning light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "productivity-system": (
+        "Candid lifestyle photo: a young woman, late 20s, at an organized desk with a planner, colour-coded tabs, and a laptop — calm and clearly in command of her workflow. Morning light. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, looking at three browser tabs open at once on her laptop, overwhelmed and unfocused. Afternoon light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, setting up a weekly system in a notebook — drawing columns and writing headings with a pen. Clean desk, morning light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, working methodically through her task list at a desk, crossing items off with focus. Warm afternoon light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "life-balance-habits": (
+        "Candid lifestyle photo: a young woman, late 20s, sitting on a park bench in the middle of the day — shoes off, relaxed, eyes closed, face in the sun. Ordinary park, natural daylight. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, getting home from work exhausted — dropping her bag by the door, shoulders heavy. Dim hallway light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, cooking a simple meal at home in the evening, phone away, relaxed and present. Warm kitchen light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, reading a book on the sofa on a weekend afternoon, completely at ease. Soft natural light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "how-to-change-your-mindset": (
+        "Candid lifestyle photo: a young woman, late 20s, standing at a window looking out with a quiet, forward-looking expression — thoughtful and determined, not posed. Natural light. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, sitting with her head slightly down, staring at nothing, a look of being stuck in repetitive thoughts. Dim indoor light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, writing in a journal at a table, pausing to think and then continuing to write — reframing something on the page. Warm desk light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, walking forward on a footpath with relaxed posture and an easy, light expression. Natural daylight. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "habit-building-system": (
+        "Candid lifestyle photo: a young woman, late 20s, at a desk marking a habit tracker in a notebook with a pen, small satisfied expression as she checks off another day. Morning light. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, looking at a blank new notebook on her desk, unsure where to start, hesitant expression. Soft indoor light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, drawing up a simple habit tracker grid in a notebook, organized and methodical. Clean desk, morning light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, completing her morning routine — making tea, journal open beside her, consistent and unhurried. Warm morning light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "improve-daily-routine": (
+        "Candid lifestyle photo: a young woman, late 20s, at a well-organized kitchen table — journal, mug, and planner laid out for a calm intentional morning. Soft morning light. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, rushing chaotically through her morning — searching for keys, bag open, slightly frantic. Bright morning light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, sitting with a planner and a warm drink, thoughtfully planning her ideal day. Clean table, morning light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, moving through her morning routine calmly and in order — making tea, then sitting to write, unhurried. Warm morning light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "how-to-improve-your-life": (
+        "Candid lifestyle photo: a young woman, late 20s, standing outside on a quiet street looking ahead with a calm, open expression — not posed, just present and forward-looking. Soft daylight. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, sitting at her desk looking stuck and flat, staring at a blank screen with no energy. Grey afternoon light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, writing goals in a notebook at a table, circling the most important one, intentional. Morning light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, walking briskly and looking energized, carrying a reusable bag, early morning light. Residential street. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "success-habits": (
+        "Candid lifestyle photo: a young woman, late 20s, at her desk early in the morning — lamp on, notebook open, mug of tea, working before the day gets busy. Dim warm light. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, lying in bed past her alarm, phone in hand, still scrolling — missing her morning routine. Dim bedroom. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, reviewing her weekly goals notebook, ticking off completed tasks with focus. Clean desk, morning light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, finishing a piece of meaningful work at her desk and leaning back with a quiet satisfied expression. Warm afternoon light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "healthy-living-tips": (
+        "Candid lifestyle photo: a young woman, late 20s, in a bright kitchen arranging fresh vegetables on a chopping board, relaxed and unhurried. Morning light. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, at a petrol station convenience store looking tired, picking up a packaged snack — not her best choice. Flat indoor light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, jogging at an easy pace on a quiet residential path, light jacket, earbuds in. Overcast morning. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, in bed at a reasonable hour, lamp off, peaceful and settled in for sleep. Soft dim light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+}
+
+# ── GENERIC FALLBACK PROMPTS (by category) ────────────────────────────────
 COVER_PROMPTS = {
     "Mental Wellness": (
         "Candid lifestyle photo: a young woman, late 20s, in a quiet home setting — "
@@ -217,19 +440,25 @@ def main():
         ok = True
         img_count = 0  # track how many images we've generated this run
 
+        # Use article-specific prompts when available, fall back to category defaults
+        if slug in SLUG_PROMPTS:
+            cover_prompt = SLUG_PROMPTS[slug][0]
+            sec_prompts  = SLUG_PROMPTS[slug][1]
+        else:
+            cover_prompt = COVER_PROMPTS.get(category, COVER_PROMPTS["Mental Wellness"])
+            sec_prompts  = SECTION_PROMPTS.get(category, SECTION_PROMPTS["Mental Wellness"])
+
         if bad_cover:
-            prompt = COVER_PROMPTS.get(category, COVER_PROMPTS["Mental Wellness"])
             if img_count > 0:
                 print(f"    Waiting 65s (rate limit)...")
                 time.sleep(65)
-            if generate_image(prompt, f"{slug}.jpg", "JPEG", 250):
+            if generate_image(cover_prompt, f"{slug}.jpg", "JPEG", 250):
                 img_count += 1
             else:
                 print(f"    Cover generation failed — skipping")
                 ok = False
 
         if no_secs and ok:
-            sec_prompts = SECTION_PROMPTS.get(category, SECTION_PROMPTS["Mental Wellness"])
             sec_ok = 0
             for i, prompt in enumerate(sec_prompts):
                 idx = [1, 3, 5][i]
