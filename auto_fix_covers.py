@@ -314,10 +314,18 @@ SECTION_PROMPTS = {
 }
 
 
+
+# Short rules appended to every pollinations.ai prompt — keeps URL under 1500 chars
+_FLUX_RULES = (
+    "candid phone photo, NOT AI art, real imperfect skin, plain ordinary clothing, "
+    "natural window light only, no chest visible, head and shoulders framing only, "
+    "no posed smile, no studio lighting, no stock photo look, no text, no logos"
+)
+
 def generate_image(prompt, filename, fmt, max_kb):
     """Generate image via pollinations.ai FLUX — free, no API key needed."""
     import urllib.parse, random
-    full_prompt = f"{prompt} {REAL_PHOTO_RULES}"
+    full_prompt = f"{prompt} {_FLUX_RULES}"
     encoded = urllib.parse.quote(full_prompt)
     seed = random.randint(1, 99999)
     image_url = (
@@ -328,6 +336,9 @@ def generate_image(prompt, filename, fmt, max_kb):
         img_resp = requests.get(image_url, timeout=120)
     except Exception as e:
         print(f"    Request error: {e}")
+        return False
+    if img_resp.status_code == 429:
+        print(f"    Rate limited (429) — IP temporarily blocked, try again in 30 min")
         return False
     if img_resp.status_code != 200:
         print(f"    API error {img_resp.status_code}")
