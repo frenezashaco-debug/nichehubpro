@@ -28,7 +28,7 @@ jobs:
 
       - run: pip install pillow requests
 
-      - name: Write config.py          ← 6 spaces (correct)
+      - name: Write config.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
