@@ -56,7 +56,7 @@ SLUG_PROMPTS = {
         "Candid lifestyle photo: a young woman, late 20s, at a tidy home desk with a laptop open, pausing from work and looking out the window with a calm, collected expression. Papers beside her. Soft afternoon light. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
         [
             "Candid photo: a young woman, early 30s, at a desk staring at a laptop screen with a tense, overwhelmed expression, jaw slightly tight. Afternoon light. Shot on 50mm f/2.0. Photorealistic candid lifestyle. No text, no logos.",
-            "Lifestyle photo: a young woman, late 20s, leaning back slightly from her desk and looking out the window, hands resting on the armrests, composing herself before continuing. Warm window light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, at her desk writing notes in a notebook with a pen, glancing at her laptop screen, focused and composed. Warm window light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
             "Candid photo: a young woman, mid-20s, closing her laptop at end of day with a calm, composed expression. A glass of water beside her. Warm late-afternoon light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
         ]
     ),
