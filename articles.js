@@ -2,6 +2,81 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "simple-morning-habits",
+    "title": "5 Simple Morning Habits That Transform Your Entire Day (Science-Backed)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Simple morning habits are the foundation of everything you want in life, whether that's more energy, less stress, or better mental clarity.",
+    "image": "images/simple-morning-habits.jpg",
+    "alt": "Young woman drinking water in morning light, establishing simple morning habits",
+    "pins": [
+      {
+        "title": "5 Simple Morning Habits That End Anxiety Before Noon",
+        "description": "Discover the exact simple morning habits that calm your nervous system and boost focus. These science-backed routines take just 30 minutes and work even on your worst mornings. Start with one habit today."
+      },
+      {
+        "title": "Stop Waking Up Stressed: The Morning Routine That Actually Works",
+        "description": "Most people start their day in fight-or-flight mode. Learn the simple morning habits that interrupt anxiety before it starts. Includes hydration, movement, and journaling techniques that work fast."
+      },
+      {
+        "title": "Try These 5 Simple Morning Habits for Energy All Day Long",
+        "description": "Skip the caffeine crash and build sustained energy with simple morning habits that support your nervous system. Real people report feeling calmer and more focused within one week. Easy to start, impossible to stop."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-focus-without-distractions",
+    "title": "5 Ways to Focus Without Distractions: Reclaim Your Deep Work Today",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Learning how to focus without distractions is the single most valuable skill you can build right now. Studies show the average person loses 23 minutes of f",
+    "image": "images/how-to-focus-without-distractions.jpg",
+    "alt": "Woman focused on laptop at home desk without phone distraction",
+    "pins": [
+      {
+        "title": "How to Focus Without Distractions: 5 Science-Backed Strategies",
+        "description": "Stop losing 2 hours a day to distractions. Learn how to focus without distractions at home using proven Pomodoro techniques, environmental design, and daily rituals. Build laser-sharp concentration in just one week. Discover the exact setup that works."
+      },
+      {
+        "title": "Stop Checking Your Phone: Reclaim 3 Hours Daily of Deep Work",
+        "description": "Your phone costs you 25 minutes of focus per interruption. This is how to improve focus fast by removing the biggest distraction. Real strategies for real people who are tired of feeling productive but accomplishing nothing. Start today."
+      },
+      {
+        "title": "Try This 7-Day Focus Rebuild Plan: Notice Results Immediately",
+        "description": "Reset your attention span in one week using this simple plan. How to focus without distractions starts with removing one thing, then building from there. Each day has one specific action. Your productivity will improve by 40% by day 5."
+      }
+    ]
+  },
+  {
+    "slug": "signs-of-anxiety-disorder",
+    "title": "7 Signs of Anxiety Disorder You're Probably Ignoring (And How to Take Control Back)",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Signs of anxiety disorder often hide in plain sight, disguised as normal stress or fatigue. You might feel your heart racing during a meeting, or wake up a",
+    "image": "images/signs-of-anxiety-disorder.jpg",
+    "alt": "Woman practicing breathing exercise for anxiety disorder relief",
+    "pins": [
+      {
+        "title": "7 Signs of Anxiety Disorder You're Missing: Take Control Back Today",
+        "description": "Recognize the real signs of anxiety disorder before it controls more of your life. Racing heart, avoidance, sleep problems, and intrusive thoughts are signals you can address. Learn what doctors say about these anxiety symptoms and what to do starting today."
+      },
+      {
+        "title": "Stop Ignoring These Anxiety Disorder Signs: Your Body Is Talking",
+        "description": "Your racing heart, muscle tension, and constant worry aren't normal stress. These physical and behavioral signs of anxiety disorder need attention. Discover why avoidance makes it worse and what actually works to break the cycle."
+      },
+      {
+        "title": "What Are Real Signs of Anxiety Disorder? The Complete Symptom Guide",
+        "description": "Confused about whether you have anxiety disorder or just stress? This guide shows the exact signs doctors look for. From sleep disruption to avoidance behaviors, learn what each symptom means and how to start feeling better this week."
+      }
+    ]
+  },
+  {
     "slug": "healthy-daily-habits",
     "title": "7 Healthy Daily Habits That Transform Your Life in 30 Days",
     "category": "Healthy Lifestyle",
