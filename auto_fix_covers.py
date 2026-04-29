@@ -30,23 +30,6 @@ REAL_PHOTO_RULES = (
 )
 
 
-def _openai_key():
-    """Read OpenAI key fresh every call."""
-    try:
-        from config import OPENAI_API_KEY as key
-    except Exception:
-        key = os.environ.get("OPENAI_API_KEY", "")
-    if not key:
-        raise RuntimeError("OPENAI_API_KEY missing — cannot generate images")
-    return key
-
-
-def _openai_headers():
-    return {
-        "Authorization": f"Bearer {_openai_key()}",
-        "Content-Type": "application/json",
-    }
-
 
 # ── ARTICLE-SPECIFIC PROMPTS (cover, [sec1, sec3, sec5]) ─────────────────
 # Keyed by slug. Used before falling back to generic COVER_PROMPTS.
@@ -332,30 +315,22 @@ SECTION_PROMPTS = {
 
 
 def generate_image(prompt, filename, fmt, max_kb):
-    """Generate image via DALL-E 3 (synchronous — no polling needed)."""
+    """Generate image via pollinations.ai FLUX — free, no API key needed."""
+    import urllib.parse, random
     full_prompt = f"{prompt} {REAL_PHOTO_RULES}"
-    body = {
-        "model": "dall-e-3",
-        "prompt": full_prompt,
-        "size": "1792x1024",
-        "quality": "standard",
-        "style": "natural",
-        "n": 1,
-    }
+    encoded = urllib.parse.quote(full_prompt)
+    seed = random.randint(1, 99999)
+    image_url = (
+        f"https://image.pollinations.ai/prompt/{encoded}"
+        f"?model=flux&width=1920&height=1080&seed={seed}&nologo=true&enhance=false"
+    )
     try:
-        r = requests.post(
-            "https://api.openai.com/v1/images/generations",
-            json=body, headers=_openai_headers(), timeout=120
-        )
+        img_resp = requests.get(image_url, timeout=120)
     except Exception as e:
         print(f"    Request error: {e}")
         return False
-    if r.status_code != 200:
-        print(f"    API error {r.status_code}: {r.text[:200]}")
-        return False
-    image_url = r.json()["data"][0]["url"]
-    img_resp = requests.get(image_url, timeout=60)
     if img_resp.status_code != 200:
+        print(f"    API error {img_resp.status_code}")
         return False
     img = Image.open(io.BytesIO(img_resp.content)).convert("RGB")
     img = img.resize((1920, 1080), Image.LANCZOS)

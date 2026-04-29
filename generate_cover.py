@@ -1,6 +1,6 @@
 """
 NicheHubPro — Cover Image Generator
-Uses OpenAI DALL-E 3 as primary.
+Uses pollinations.ai FLUX — free, no API key needed.
 Falls back to branded Pillow cover on error.
 
 Usage:
@@ -120,50 +120,28 @@ def compress_to_limit(img, max_kb=MAX_KB):
     img.convert('RGB').save(buf, format='JPEG', quality=20, optimize=True)
     return buf.getvalue(), 20, buf.tell() / 1024
 
-# ── AI IMAGE GENERATION — OpenAI DALL-E 3 ────────────────────────────────
+# ── AI IMAGE GENERATION — pollinations.ai FLUX (free) ────────────────────
 def generate_with_ai(topic, category, custom_prompt=None, retries=2):
-    """Generate image via DALL-E 3 (synchronous — no polling)."""
+    """Generate image via pollinations.ai FLUX — free, no API key needed."""
+    import urllib.parse, random
     prompt = build_image_prompt(topic, category, custom_prompt)
+    encoded = urllib.parse.quote(prompt)
 
     for attempt in range(1, retries + 1):
         try:
-            try:
-                from config import OPENAI_API_KEY as _key
-            except Exception:
-                _key = os.environ.get("OPENAI_API_KEY", "")
-            if not _key:
-                print("  ERROR: OPENAI_API_KEY is missing — aborting image generation")
-                break
-            headers = {
-                "Authorization": f"Bearer {_key}",
-                "Content-Type": "application/json",
-            }
-            print(f"  Calling DALL-E 3 (attempt {attempt})...")
-            body = {
-                "model": "dall-e-3",
-                "prompt": prompt,
-                "size": "1792x1024",
-                "quality": "standard",
-                "style": "natural",
-                "n": 1,
-            }
-            r = requests.post(
-                "https://api.openai.com/v1/images/generations",
-                json=body, headers=headers, timeout=120
+            seed = random.randint(1, 99999)
+            url = (
+                f"https://image.pollinations.ai/prompt/{encoded}"
+                f"?model=flux&width=1920&height=1080&seed={seed}&nologo=true&enhance=false"
             )
-            if r.status_code != 200:
-                print(f"  Create failed: {r.status_code} {r.text[:200]}")
-                time.sleep(5)
-                continue
-
-            img_url = r.json()["data"][0]["url"]
-            img_resp = requests.get(img_url, timeout=60)
-            if img_resp.status_code == 200:
-                img = Image.open(io.BytesIO(img_resp.content))
+            print(f"  Calling pollinations.ai FLUX (attempt {attempt})...")
+            r = requests.get(url, timeout=120)
+            if r.status_code == 200:
+                img = Image.open(io.BytesIO(r.content))
                 img = img.resize((W, H), Image.LANCZOS)
                 return img
-
-            print(f"  Attempt {attempt}: image download failed")
+            print(f"  Attempt {attempt} failed: {r.status_code}")
+            time.sleep(5)
         except Exception as e:
             print(f"  Error: {e}")
             if attempt < retries:

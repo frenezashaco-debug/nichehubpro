@@ -189,54 +189,28 @@ _REAL_PHOTO_RULES = (
     "If it looks like a stock photo or AI image, it is wrong. It must look like a real unedited snapshot."
 )
 
-# ── SECTION IMAGE DOWNLOADER — OpenAI DALL-E 3 ───────────────────────────
-def _get_dalle_headers():
-    """Build DALL-E 3 headers at call time so the key is always fresh."""
-    try:
-        from config import OPENAI_API_KEY as key
-    except Exception:
-        key = os.environ.get("OPENAI_API_KEY", "")
-    if not key:
-        raise RuntimeError("OPENAI_API_KEY is missing — cannot generate images")
-    return {
-        "Authorization": f"Bearer {key}",
-        "Content-Type": "application/json",
-    }
-
+# ── SECTION IMAGE DOWNLOADER — pollinations.ai FLUX (free) ───────────────
 def download_section_image(prompt, article_slug, index, retries=2):
-    """Download a section image via DALL-E 3 and save as WebP."""
-    strict = "Photorealistic wellness lifestyle, warm natural tones, no text, no logos, no watermarks, 4K quality."
+    """Download a section image via pollinations.ai FLUX — free, no API key."""
+    import urllib.parse, random
+    strict = "Photorealistic wellness lifestyle, warm natural tones, no text, no logos, no watermarks."
     full_prompt = f"{prompt}. {strict} {_REAL_PHOTO_RULES}"
+    encoded = urllib.parse.quote(full_prompt)
     filename = f"{article_slug}-sec{index}.webp"
     out_path = os.path.join(IMAGES_DIR, filename)
 
     for attempt in range(1, retries + 1):
         try:
-            headers = _get_dalle_headers()
-            print(f"  Section image {index} (DALL-E 3 attempt {attempt})...")
-            body = {
-                "model": "dall-e-3",
-                "prompt": full_prompt,
-                "size": "1792x1024",
-                "quality": "standard",
-                "style": "natural",
-                "n": 1,
-            }
-            r = requests.post(
-                "https://api.openai.com/v1/images/generations",
-                json=body, headers=headers, timeout=120
+            seed = random.randint(1, 99999)
+            url = (
+                f"https://image.pollinations.ai/prompt/{encoded}"
+                f"?model=flux&width=1920&height=1080&seed={seed}&nologo=true&enhance=false"
             )
-            if r.status_code != 200:
-                print(f"  Create failed: {r.status_code} {r.text[:150]}")
-                time.sleep(5)
-                continue
-
-            img_url = r.json()["data"][0]["url"]
-            img_resp = requests.get(img_url, timeout=60)
-            if img_resp.status_code == 200:
-                img = Image.open(io.BytesIO(img_resp.content)).convert('RGB')
+            print(f"  Section image {index} (pollinations.ai attempt {attempt})...")
+            r = requests.get(url, timeout=120)
+            if r.status_code == 200:
+                img = Image.open(io.BytesIO(r.content)).convert('RGB')
                 img = img.resize((1920, 1080), Image.LANCZOS)
-                # compress
                 chosen_buf = None
                 for quality in range(92, 10, -5):
                     buf = io.BytesIO()
@@ -249,9 +223,8 @@ def download_section_image(prompt, article_slug, index, retries=2):
                 size_kb = os.path.getsize(out_path) / 1024
                 print(f"  Saved: {filename} ({size_kb:.1f} KB)")
                 return filename
-
-            print(f"  Attempt {attempt}: image download failed")
-
+            print(f"  Attempt {attempt} failed: {r.status_code}")
+            time.sleep(5)
         except Exception as e:
             print(f"  Error: {e}")
             if attempt < retries:
