@@ -2,6 +2,56 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "healthy-daily-habits",
+    "title": "7 Healthy Daily Habits That Transform Your Life in 30 Days",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Building healthy daily habits is the foundation of a stress-free, energized life. Research shows that 66 days is the average time needed to form a new habi",
+    "image": "images/healthy-daily-habits.jpg",
+    "alt": "woman drinking water morning healthy daily habit",
+    "pins": [
+      {
+        "title": "7 Healthy Daily Habits That Actually Stick (Not Motivation Required)",
+        "description": "Forget perfection. These seven healthy daily habits take 5-30 minutes and transform your energy, mood, and anxiety in just 30 days. Start with one habit, not all seven. Learn the science-backed routine that rewires your brain and nervous system automatically. Simple habits, real results."
+      },
+      {
+        "title": "Stop Waking Up Exhausted: The Daily Habits You're Missing",
+        "description": "Constant fatigue, afternoon crashes, and brain fog are signs your daily habits need an upgrade. Discover the seven non-negotiable habits that regulate your nervous system and naturally boost energy without coffee. Backed by neuroscience. Easy to start today."
+      },
+      {
+        "title": "Try This 7-Day Healthy Habit Challenge (Anxiety Edition)",
+        "description": "One habit per day for seven days. No overwhelm, no guilt, just simple additions to your routine that reduce anxiety and build momentum. Perfect for anyone who's tried everything and felt like they failed. You haven't. You just needed the right approach."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-stay-calm-under-pressure",
+    "title": "5 Ways to Stay Calm Under Pressure: Master Your Mind Before Stress Wins",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to stay calm under pressure starts with understanding that your nervous system responds to threat before your brain even recognizes it. Most people wai",
+    "image": "images/how-to-stay-calm-under-pressure.jpg",
+    "alt": "woman practicing calm breathing techniques at her desk under pressure",
+    "pins": [
+      {
+        "title": "How to Stay Calm Under Pressure: 5 Proven Stress Control Techniques That Work",
+        "description": "Learn the exact techniques Navy SEALs use to stay calm under pressure. From box breathing to grounding methods, these five stress control techniques actually work when deadlines hit and anxiety rises. Master your nervous system's response and perform better under pressure. Start with box breathing today."
+      },
+      {
+        "title": "Stop Panic Before It Starts: Stay Calm Under Pressure Daily",
+        "description": "Most people wait until they're panicking to try calming down. Big mistake. Build pressure resilience with daily habits that strengthen your nervous system before crisis hits. Discover why 75% of stress-related mistakes happen when you ignore your body's early warning signs and how to prevent it."
+      },
+      {
+        "title": "5-4-3-2-1 Grounding Technique: Your Instant Calm Hack for High Pressure Situations",
+        "description": "When your mind spirals into catastrophizing, the 5-4-3-2-1 grounding method snaps you back to the present moment in under three minutes. This sensory technique works because panic can't survive in what's actually happening right now. Perfect for work stress, family conflict, or any overwhelming moment."
+      }
+    ]
+  },
+  {
     "slug": "how-to-detox-your-mind",
     "title": "5 Ways to Detox Your Mind From Negative Thoughts and Reclaim Your Peace",
     "category": "Mental Wellness",
