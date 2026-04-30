@@ -332,7 +332,7 @@ def generate_image(prompt, filename, fmt, max_kb):
     seed = random.randint(1, 99999)
     image_url = (
         f"https://image.pollinations.ai/prompt/{encoded}"
-        f"?model=flux&width=1920&height=1080&seed={seed}&nologo=true&enhance=false"
+        f"?model=flux-realism&width=1920&height=1080&seed={seed}&nologo=true&enhance=true"
     )
     try:
         img_resp = requests.get(image_url, timeout=120)

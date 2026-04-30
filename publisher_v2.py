@@ -204,7 +204,7 @@ def download_section_image(prompt, article_slug, index, retries=2):
             seed = random.randint(1, 99999)
             url = (
                 f"https://image.pollinations.ai/prompt/{encoded}"
-                f"?model=flux&width=1920&height=1080&seed={seed}&nologo=true&enhance=false"
+                f"?model=flux-realism&width=1920&height=1080&seed={seed}&nologo=true&enhance=true"
             )
             print(f"  Section image {index} (pollinations.ai attempt {attempt})...")
             r = requests.get(url, timeout=120)

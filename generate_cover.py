@@ -132,7 +132,7 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=2):
             seed = random.randint(1, 99999)
             url = (
                 f"https://image.pollinations.ai/prompt/{encoded}"
-                f"?model=flux&width=1920&height=1080&seed={seed}&nologo=true&enhance=false"
+                f"?model=flux-realism&width=1920&height=1080&seed={seed}&nologo=true&enhance=true"
             )
             print(f"  Calling pollinations.ai FLUX (attempt {attempt})...")
             r = requests.get(url, timeout=120)
