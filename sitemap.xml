@@ -47,6 +47,21 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://nichehubpro.com/articles/healthy-lifestyle-tips.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nichehubpro.com/articles/how-to-stay-motivated.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nichehubpro.com/articles/how-to-build-confidence.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nichehubpro.com/articles/sleep-routine-tips.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -2,6 +2,81 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "healthy-lifestyle-tips",
+    "title": "7 Healthy Lifestyle Tips That Transform Your Life (Without the Guilt)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Healthy lifestyle tips don't have to mean perfection, restriction, or hours at the gym. Most of us start with big goals but crash because we change everyth",
+    "image": "images/healthy-lifestyle-tips.jpg",
+    "alt": "Woman sipping tea by window, practicing healthy lifestyle tips",
+    "pins": [
+      {
+        "title": "7 Healthy Lifestyle Tips That Actually Work (No Perfection Required)",
+        "description": "Stop overthinking wellness. These 7 proven healthy lifestyle tips are backed by science and designed for real life. Start with one micro-habit today and watch your energy, mood, and confidence transform. The secret? Small consistency beats big intensity every time. Your best self is waiting."
+      },
+      {
+        "title": "Stop Fighting Your Body: 7 Healthy Lifestyle Tips That Stick",
+        "description": "Tired of failed diets and abandoned gym memberships? These healthy lifestyle tips work WITH your body, not against it. Discover the 7 pillars that create sustainable wellness. One habit change per week. Real results. No deprivation. Start your transformation now."
+      },
+      {
+        "title": "The 7-Habit System: Healthy Lifestyle Tips That Change Everything",
+        "description": "What if wellness was simple? These 7 healthy lifestyle tips create results faster when you sequence them right. Energy returns in days. Mood improves in weeks. Your life shifts in months. Stop waiting for the perfect time; start building habits today. Click for your complete system."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-stay-motivated",
+    "title": "7 Ways to Stay Motivated Every Single Day: Your Brain's Hidden Cheat Code",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to stay motivated starts with understanding why your brain loses steam after day three. Most people think motivation is something you either have or do",
+    "image": "images/how-to-stay-motivated.jpg",
+    "alt": "Woman writing in notebook with coffee, motivated morning routine",
+    "pins": [
+      {
+        "title": "How to Stay Motivated Every Day: 7 Proven Methods (Not Hype)",
+        "description": "Motivation crashes are normal, not personal failure. Learn the exact daily habits that reset your dopamine system and keep you pushing toward your goals even when inspiration disappears. These science-backed strategies work for anyone, regardless of your starting point. Read the full guide to build sustainable motivation today."
+      },
+      {
+        "title": "Stop Losing Motivation After Week 2: Real Solutions Inside",
+        "description": "Why does motivation always crash by week three? It's not you. It's your brain's dopamine adaptation system. Discover the specific warning signs to watch for, the habits that prevent crashes, and how to restart in just 48 hours if you've already quit. Your brain is ready. Are you?"
+      },
+      {
+        "title": "The 13-Minute Daily Motivation System That Actually Works",
+        "description": "Forget inspiration. Here are five tiny daily habits that keep motivation alive without burning you out. From your morning ritual to your evening wind-down, these practices cost almost no time and create disproportionate results. Start with just two habits this week and watch your consistency double."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-build-confidence",
+    "title": "5 Ways to Build Confidence Fast: Your Mental Breakthrough Starts Today",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to build confidence doesn't require years of therapy or major life changes. Real confidence grows when you start small, practice daily, and stop waitin",
+    "image": "images/how-to-build-confidence.jpg",
+    "alt": "woman holding coffee in morning light with confident expression building self-confidence",
+    "pins": [
+      {
+        "title": "How to Build Confidence Fast: 5 Science-Backed Methods That Work",
+        "description": "Stop waiting to feel confident. These five proven methods help you build self-confidence in weeks, not years. From small wins to power posing, discover how to overcome self-doubt and start taking action today. Learn the confidence building tips that actually work."
+      },
+      {
+        "title": "Stop Letting Self-Doubt Control You: Build Real Confidence Daily",
+        "description": "Self-doubt is sabotaging your potential. Here's how to build confidence through daily action, not just positive thinking. These practical confidence building tips rewire your brain and help you take action despite fear. Your breakthrough is one small win away."
+      },
+      {
+        "title": "5 Daily Habits to Build Self-Confidence That Actually Stick",
+        "description": "Transform your confidence in 30 days with these five daily habits that compound over time. Stop relying on motivation and start building sustainable confidence through proven methods. Small daily actions create permanent identity shifts. Start today."
+      }
+    ]
+  },
+  {
     "slug": "sleep-routine-tips",
     "title": "7 Sleep Routine Tips That End Your Sleepless Nights Forever",
     "category": "Healthy Lifestyle",
