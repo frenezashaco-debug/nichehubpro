@@ -589,6 +589,15 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category):
     # Register article in articles.js
     register_article(data, cover_filename)
 
+    # Send to Make.com → Pinterest automation
+    send_pinterest_webhook(
+        article_slug,
+        data["title"],
+        data.get("category", category),
+        cover_filename,
+        data.get("pinterest_pins", [])
+    )
+
     # Reverse linking — inject this article into existing same-category articles
     backlink_existing_articles(article_slug, data["title"], category)
 
@@ -745,6 +754,41 @@ def backlink_existing_articles(new_slug, new_title, category):
 
     if updated:
         print(f"  Backlinked into {updated} existing article(s) in [{category}]")
+
+
+def send_pinterest_webhook(article_slug, title, category, cover_filename, pins):
+    """Send article data to Make.com webhook — triggers 3 Pinterest pins."""
+    try:
+        from config import MAKE_PINTEREST_WEBHOOK
+    except ImportError:
+        return
+    if not MAKE_PINTEREST_WEBHOOK:
+        return
+
+    board_ids = {
+        "Mental Wellness":   "1135118349771004496",
+        "Productivity":      "1135118349771004499",
+        "Healthy Lifestyle": "1135118349771004501",
+    }
+
+    payload = {
+        "slug":        article_slug,
+        "title":       title,
+        "category":    category,
+        "board_id":    board_ids.get(category, ""),
+        "image_url":   f"{SITE_URL}/images/{cover_filename}",
+        "article_url": f"{SITE_URL}/articles/{article_slug}.html",
+        "pins":        pins[:3]
+    }
+
+    try:
+        r = requests.post(MAKE_PINTEREST_WEBHOOK, json=payload, timeout=15)
+        if r.status_code in (200, 204):
+            print(f"  Pinterest webhook sent to Make.com ({len(pins)} pins queued)")
+        else:
+            print(f"  Pinterest webhook failed: {r.status_code}")
+    except Exception as e:
+        print(f"  Pinterest webhook error: {e}")
 
 
 def ping_google():
