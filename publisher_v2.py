@@ -175,58 +175,45 @@ REQUIREMENTS:
 
 Return ONLY the JSON. No em dashes anywhere."""
 
-# ── REAL PHOTO RULES — appended to every DALL-E 3 prompt ─────────────────
-_REAL_PHOTO_RULES = (
-    "CRITICAL RULES — strictly follow all of these: "
-    "Frame the shot from the shoulders or collarbone UP only — never show the chest, bust, or body below the shoulders. Head-and-shoulders or face-and-hands-on-desk framing only. "
-    "This must look like a real candid photo taken by a friend on a phone, NOT professional photography and NOT AI art. "
-    "The person must look like a real ordinary human: slightly imperfect skin, natural pores, mild under-eye shadows, real hair texture with flyaways, no flawless symmetry. "
-    "Clothing must be plain and ordinary: faded t-shirt, old hoodie, basic linen top — never stylish, never fitted, never flattering. "
-    "Natural window light only — no studio lighting, no rim light, no beauty lighting, no glowing skin. "
-    "Expression must be genuinely candid — slightly awkward, distracted, or absorbed — never a posed smile or model expression. "
-    "Background must be messy or ordinary: cluttered desk, plain wall, basic kitchen — no magazine-style staging. "
-    "No oversaturated colors, no HDR, no cinematic grading, no smooth AI skin, no perfect composition. "
-    "If it looks like a stock photo or AI image, it is wrong. It must look like a real unedited snapshot."
+# ── HF FLUX rules appended to every image prompt ─────────────────────────
+_HF_RULES = (
+    "Head-and-shoulders crop only, chest not visible. "
+    "Real human skin: visible pores, natural imperfections, genuine hair texture, not AI-smooth. "
+    "Authentic non-posed expression. Plain everyday clothing. Sharp focus, 4K photorealistic. "
+    "Single photograph, not a diptych. No text, no logos, no watermarks."
 )
 
-# ── SECTION IMAGE DOWNLOADER — pollinations.ai FLUX (free) ───────────────
+# ── SECTION IMAGE DOWNLOADER — HF FLUX.1-schnell ─────────────────────────
 def download_section_image(prompt, article_slug, index, retries=2):
-    """Download a section image via pollinations.ai FLUX — free, no API key."""
-    import urllib.parse, random
-    strict = "Photorealistic wellness lifestyle, warm natural tones, no text, no logos, no watermarks."
-    full_prompt = f"{prompt}. {strict} {_REAL_PHOTO_RULES}"
-    encoded = urllib.parse.quote(full_prompt)
+    """Download a section image via HF FLUX.1-schnell."""
+    from huggingface_hub import InferenceClient as HFClient
+    try:
+        from config import HF_API_KEY
+    except ImportError:
+        HF_API_KEY = os.environ.get("HF_API_KEY", "")
+
     filename = f"{article_slug}-sec{index}.webp"
     out_path = os.path.join(IMAGES_DIR, filename)
+    full_prompt = f"{prompt} {_HF_RULES}"
+    hf = HFClient(token=HF_API_KEY)
 
     for attempt in range(1, retries + 1):
         try:
-            seed = random.randint(1, 99999)
-            url = (
-                f"https://image.pollinations.ai/prompt/{encoded}"
-                f"?model=flux-realism&width=1920&height=1080&seed={seed}&nologo=true&enhance=true"
-            )
-            print(f"  Section image {index} (pollinations.ai attempt {attempt})...")
-            r = requests.get(url, timeout=120)
-            if r.status_code == 200:
-                img = Image.open(io.BytesIO(r.content)).convert('RGB')
-                img = img.resize((1920, 1080), Image.LANCZOS)
-                chosen_buf = None
-                for quality in range(92, 10, -5):
-                    buf = io.BytesIO()
-                    img.save(buf, format='WEBP', quality=quality, method=4)
-                    chosen_buf = buf
-                    if buf.tell() / 1024 <= 500:
-                        break
-                with open(out_path, 'wb') as f:
-                    f.write(chosen_buf.getvalue())
-                size_kb = os.path.getsize(out_path) / 1024
-                print(f"  Saved: {filename} ({size_kb:.1f} KB)")
-                return filename
-            print(f"  Attempt {attempt} failed: {r.status_code}")
-            time.sleep(5)
+            print(f"  Section image {index} (HF FLUX attempt {attempt})...")
+            img = hf.text_to_image(full_prompt, model="black-forest-labs/FLUX.1-schnell", width=1280, height=720)
+            img = img.resize((1920, 1080), Image.LANCZOS)
+            for quality in range(92, 10, -5):
+                buf = io.BytesIO()
+                img.convert('RGB').save(buf, format='WEBP', quality=quality, method=4)
+                if buf.tell() / 1024 <= 500:
+                    break
+            with open(out_path, 'wb') as f:
+                f.write(buf.getvalue())
+            size_kb = os.path.getsize(out_path) / 1024
+            print(f"  Saved: {filename} ({size_kb:.1f} KB)")
+            return filename
         except Exception as e:
-            print(f"  Error: {e}")
+            print(f"  Attempt {attempt} failed: {e}")
             if attempt < retries:
                 time.sleep(5)
 

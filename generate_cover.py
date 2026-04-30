@@ -120,28 +120,31 @@ def compress_to_limit(img, max_kb=MAX_KB):
     img.convert('RGB').save(buf, format='JPEG', quality=20, optimize=True)
     return buf.getvalue(), 20, buf.tell() / 1024
 
-# ── AI IMAGE GENERATION — pollinations.ai FLUX (free) ────────────────────
+# ── AI IMAGE GENERATION — HF FLUX.1-schnell ──────────────────────────────
 def generate_with_ai(topic, category, custom_prompt=None, retries=2):
-    """Generate image via pollinations.ai FLUX — free, no API key needed."""
-    import urllib.parse, random
+    """Generate cover image via HF FLUX.1-schnell."""
+    from huggingface_hub import InferenceClient
+    try:
+        from config import HF_API_KEY
+    except ImportError:
+        HF_API_KEY = os.environ.get("HF_API_KEY", "")
+
+    rules = (
+        "Head-and-shoulders crop only, chest not visible. "
+        "Real human skin: visible pores, natural imperfections, genuine hair texture, not AI-smooth. "
+        "Authentic non-posed expression. Plain everyday clothing. Sharp focus, 4K photorealistic. "
+        "Single photograph, not a diptych. No text, no logos, no watermarks."
+    )
     prompt = build_image_prompt(topic, category, custom_prompt)
-    encoded = urllib.parse.quote(prompt)
+    full_prompt = f"{prompt} {rules}"
+    client = InferenceClient(token=HF_API_KEY)
 
     for attempt in range(1, retries + 1):
         try:
-            seed = random.randint(1, 99999)
-            url = (
-                f"https://image.pollinations.ai/prompt/{encoded}"
-                f"?model=flux-realism&width=1920&height=1080&seed={seed}&nologo=true&enhance=true"
-            )
-            print(f"  Calling pollinations.ai FLUX (attempt {attempt})...")
-            r = requests.get(url, timeout=120)
-            if r.status_code == 200:
-                img = Image.open(io.BytesIO(r.content))
-                img = img.resize((W, H), Image.LANCZOS)
-                return img
-            print(f"  Attempt {attempt} failed: {r.status_code}")
-            time.sleep(5)
+            print(f"  Calling HF FLUX.1-schnell (attempt {attempt})...")
+            img = client.text_to_image(full_prompt, model="black-forest-labs/FLUX.1-schnell", width=1280, height=720)
+            img = img.resize((W, H), Image.LANCZOS)
+            return img
         except Exception as e:
             print(f"  Error: {e}")
             if attempt < retries:
