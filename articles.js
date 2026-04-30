@@ -2,6 +2,81 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "sleep-routine-tips",
+    "title": "7 Sleep Routine Tips That End Your Sleepless Nights Forever",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Sleep routine tips are not luxuries, they're survival tools for your brain and body. Most people treat sleep like an afterthought, cramming it in whenever ",
+    "image": "images/sleep-routine-tips.jpg",
+    "alt": "Woman reading in bed during evening sleep routine ritual",
+    "pins": [
+      {
+        "title": "7 Sleep Routine Tips That Transform Your Sleep Tonight",
+        "description": "Stop fighting sleep. These science-backed sleep routine tips rewire your nervous system for natural, deep rest. Learn the exact 30-minute routine that works in just 3 days. Includes daily habits that amplify results. No pills, no gimmicks, just biology."
+      },
+      {
+        "title": "Stop Waking at 3am: The Sleep Routine Fix That Works",
+        "description": "If you're waking multiple times or can't fall asleep, your routine is broken, not your brain. Discover why sleep routine tips matter more than sleep duration. Real solutions for insomnia that actually stick within two weeks."
+      },
+      {
+        "title": "Try This 30-Minute Sleep Routine Starting Tonight",
+        "description": "A simple, proven sleep routine tips framework you can start immediately. No equipment needed, no lifestyle overhaul required. Just structured pre-sleep habits that tell your body it's time to rest. See results by tomorrow morning."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-stop-procrastination",
+    "title": "5 Ways to Stop Procrastination Today: Finally Break Free From Endless Delay",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to stop procrastination starts with understanding your own delay patterns and what triggers them. You're not lazy, and you're not broken. Research show",
+    "image": "images/how-to-stop-procrastination.jpg",
+    "alt": "Woman taking a breath before starting work at her desk with focus",
+    "pins": [
+      {
+        "title": "How to Stop Procrastination in 2 Minutes: The Trick That Actually Works",
+        "description": "The 2-minute rule is the most powerful way to stop procrastination before it starts. Instead of forcing yourself to work for hours, commit to just two minutes. Your brain will keep going once the resistance barrier breaks. Learn the five proven strategies that beat procrastination for real. Click to discover how to finally finish what you start."
+      },
+      {
+        "title": "Stop Procrastinating: 5 Strategies That Work When Willpower Fails",
+        "description": "Procrastination isn't about laziness. It's your nervous system trying to escape emotional discomfort. Discover why you procrastinate so much and the five concrete techniques that actually work. From environment design to trigger identification, these strategies reshape your brain's response to difficult tasks. Read now for lasting change."
+      },
+      {
+        "title": "Break Free From Procrastination With This Daily Habit Framework",
+        "description": "Stop procrastination by building tiny daily habits that make action easier than avoidance. Learn the exact framework used by people who beat chronic procrastination for good. No more shame spirals. No more 'tomorrow.' Just practical, doable changes that work with your brain, not against it. Start today."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-stop-panic-attacks",
+    "title": "5 Ways to Stop Panic Attacks: Take Back Control Right Now",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Panic attacks feel like your body is betraying you. Your heart races, your chest tightens, and your mind spins with worst-case scenarios. But here's the tr",
+    "image": "images/how-to-stop-panic-attacks.jpg",
+    "alt": "Young woman meditating calmly during a peaceful morning at home",
+    "pins": [
+      {
+        "title": "5 Ways to Stop Panic Attacks Instantly: The Grounding Technique That Works",
+        "description": "Learn the exact 5-4-3-2-1 grounding method that calms panic in minutes. Discover how to stop panic attacks using sensory awareness, box breathing, and proven panic attack control techniques that work when anxiety hits hardest. Real science-backed solutions for panic relief."
+      },
+      {
+        "title": "Stop Panic Attacks Before They Start: 6 Daily Prevention Habits That Work",
+        "description": "Tired of unexpected panic attacks? These 6 daily habits prevent panic episodes before they happen, including sleep optimization, nervous system regulation, and exercise routines. Build real resilience instead of just managing panic when it strikes. Your panic-free future starts today."
+      },
+      {
+        "title": "What to Do During a Panic Attack: 5 Emergency Techniques for Instant Relief",
+        "description": "Panic attack hitting right now? Use one of these 5 proven emergency techniques: cold water exposure, box breathing, PMR, or grounding. Each method interrupts your nervous system's false alarm in minutes. Save this guide for when anxiety tries to take over."
+      }
+    ]
+  },
+  {
     "slug": "simple-morning-habits",
     "title": "5 Simple Morning Habits That Transform Your Entire Day (Science-Backed)",
     "category": "Healthy Lifestyle",
