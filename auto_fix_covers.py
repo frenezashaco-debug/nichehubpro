@@ -44,11 +44,11 @@ SLUG_PROMPTS = {
         ]
     ),
     "healthy-daily-habits": (
-        "Candid lifestyle photo: a young woman, late 20s, in a bright kitchen making morning tea, calm and unhurried. She wears a soft cream top. Warm morning sunlight. Simple countertop. Shot on 85mm f/1.8, shallow depth of field. Photorealistic candid lifestyle. No text, no logos.",
+        "Candid photo: a young woman, late 20s, standing at a kitchen counter pouring hot water from a kettle into a mug. She wears a plain grey t-shirt. Soft diffused daylight from a window. Simple kitchen, slightly cluttered counter. Head and shoulders only. Shot on 50mm f/2.0. No text, no logos.",
         [
-            "Candid photo: a young woman, early 30s, standing in a kitchen in early morning holding a mug of tea with both hands, still waking up, soft and unhurried. Warm morning light. Simple kitchen. Shot on 50mm f/2.0. Photorealistic candid lifestyle. No text, no logos.",
-            "Lifestyle photo: a young woman, late 20s, eating a simple lunch at a kitchen table — bowl of salad and water glass. Relaxed, unhurried. Natural daylight. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
-            "Candid photo: a young woman, mid-20s, sitting on a sofa in the evening writing in a journal by a small lamp, legs crossed, unhurried. Warm living room light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+            "Candid photo: a young woman, early 30s, sitting at a plain kitchen table with a mug in front of her, looking quietly to the side. Overcast window light. Plain t-shirt. Head and shoulders framing. Shot on 50mm f/2.0. No text, no logos.",
+            "Candid photo: a young woman, late 20s, eating a simple bowl of food at a kitchen table, fork in hand, looking down at the bowl. Diffused daylight. Plain clothing. Head and shoulders. Shot on 50mm f/2.0. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, sitting at a desk in the evening writing in a notebook, pen in hand, small lamp nearby. Dim warm lamp light. Plain hoodie. Head and shoulders only. Shot on 50mm f/2.0. No text, no logos.",
         ]
     ),
     "signs-of-anxiety-disorder": (
@@ -317,9 +317,11 @@ SECTION_PROMPTS = {
 
 # Short rules appended to every pollinations.ai prompt — keeps URL under 1500 chars
 _FLUX_RULES = (
-    "candid phone photo, NOT AI art, real imperfect skin, plain ordinary clothing, "
-    "natural window light only, no chest visible, head and shoulders framing only, "
-    "no posed smile, no studio lighting, no stock photo look, no text, no logos"
+    "single photograph only, NOT a diptych, NOT split panels, NOT side by side, ONE image. "
+    "Overcast or diffused indoor window light only, NO golden hour, NO warm glow, NO cinematic lighting. "
+    "Head and shoulders framing only, chest not visible. "
+    "Real imperfect skin, plain unglamorous clothing, no posed smile, no stock photo look, "
+    "looks like a real unedited phone photo, no text, no logos"
 )
 
 def generate_image(prompt, filename, fmt, max_kb):
