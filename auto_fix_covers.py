@@ -36,43 +36,43 @@ REAL_PHOTO_RULES = (
 # Prompts describe scenes — no sensitive keywords that trigger content filters.
 SLUG_PROMPTS = {
     "how-to-stay-calm-under-pressure": (
-        "Candid lifestyle photo: a young woman, late 20s, at a tidy home desk with a laptop open, pausing from work and looking out the window with a calm, collected expression. Papers beside her. Soft afternoon light. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        "Lifestyle editorial photograph: woman late 20s, dark brown hair slightly messy, at a plain wooden home desk with laptop open, pausing from work, hands resting on desk, gazing toward window with quiet composed expression. Plain navy t-shirt. Soft diffused left-side window light. Pen, notepad, water glass on desk. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
         [
-            "Candid photo: a young woman, early 30s, at a desk staring at a laptop screen with a tense, overwhelmed expression, jaw slightly tight. Afternoon light. Shot on 50mm f/2.0. Photorealistic candid lifestyle. No text, no logos.",
-            "Lifestyle photo: a young woman, late 20s, at her desk writing notes in a notebook with a pen, glancing at her laptop screen, focused and composed. Warm window light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
-            "Candid photo: a young woman, mid-20s, closing her laptop at end of day with a calm, composed expression. A glass of water beside her. Warm late-afternoon light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+            "Editorial photograph: woman early 30s at desk staring at laptop with tense overwhelmed expression, jaw slightly tight, shoulders slightly raised. Afternoon side light. Plain grey hoodie. Laptop and scattered papers. Sony A7IV 50mm f/2.0. Sharp focus, 4K.",
+            "Editorial photograph: woman late 20s at desk writing notes in open notebook with a pen, glancing toward laptop, focused composed expression. Plain t-shirt. Soft warm right-side window light. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
+            "Editorial photograph: woman mid-20s closing laptop lid at home desk, calm composed expression, subtle relief. Water glass beside her. Warm late-afternoon side light. Plain linen shirt. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
         ]
     ),
     "healthy-daily-habits": (
-        "Candid photo: a young woman, late 20s, standing at a kitchen counter pouring hot water from a kettle into a mug. She wears a plain grey t-shirt. Soft diffused daylight from a window. Simple kitchen, slightly cluttered counter. Head and shoulders only. Shot on 50mm f/2.0. No text, no logos.",
+        "Lifestyle editorial photograph: woman late 20s in simple kitchen, standing at counter pouring hot water from a kettle into a white mug. Plain grey t-shirt. Soft diffused left-side window daylight. Slightly cluttered counter: cutting board, small bowl, glass jars in background. Sony A7IV 50mm f/2.0. Sharp focus, 4K.",
         [
-            "Candid photo: a young woman, early 30s, sitting at a plain kitchen table with a mug in front of her, looking quietly to the side. Overcast window light. Plain t-shirt. Head and shoulders framing. Shot on 50mm f/2.0. No text, no logos.",
-            "Candid photo: a young woman, late 20s, eating a simple bowl of food at a kitchen table, fork in hand, looking down at the bowl. Diffused daylight. Plain clothing. Head and shoulders. Shot on 50mm f/2.0. No text, no logos.",
-            "Candid photo: a young woman, mid-20s, sitting at a desk in the evening writing in a notebook, pen in hand, small lamp nearby. Dim warm lamp light. Plain hoodie. Head and shoulders only. Shot on 50mm f/2.0. No text, no logos.",
+            "Editorial photograph: woman early 30s sitting at plain kitchen table, white ceramic mug in front of her, looking quietly sideways with a still resting expression. Overcast window light. Plain t-shirt. Sony A7IV 50mm f/2.0. Sharp focus, 4K.",
+            "Editorial photograph: woman late 20s eating from a simple ceramic bowl at kitchen table, fork in hand, looking down at food with relaxed attention. Diffused daylight. Plain t-shirt. Sony A7IV 50mm f/2.0. Sharp focus, 4K.",
+            "Editorial photograph: woman mid-20s sitting at wooden desk in evening, writing in open notebook with pen, small reading lamp nearby. Dim warm lamp light. Plain grey hoodie. Sony A7IV 50mm f/2.0. Sharp focus, 4K.",
         ]
     ),
     "signs-of-anxiety-disorder": (
-        "Candid lifestyle photo: a young woman, late 20s, sitting on a sofa holding a mug of tea with both hands, looking out the window with a thoughtful and reflective expression. Soft living room light. Simple setting. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        "Lifestyle editorial photograph: woman late 20s on a plain sofa, holding a warm mug with both hands, looking out window with a quiet thoughtful reflective expression, no smile. Plain knit sweater. Soft diffused living room light. Simple couch and plain wall in background. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
         [
-            "Candid photo: a young woman, early 30s, at a desk staring at her screen unfocused, one hand on her forehead, mind elsewhere. Soft afternoon light. Shot on 50mm f/2.0. Photorealistic candid lifestyle. No text, no logos.",
-            "Lifestyle photo: a young woman, late 20s, sitting across a table from a friend, listening attentively with a thoughtful expression. Cafe setting, natural light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
-            "Candid photo: a young woman, mid-20s, writing in a journal at a kitchen table, calm and reflective. Morning light, a mug nearby. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+            "Editorial photograph: woman early 30s at desk staring at laptop screen with unfocused distant gaze, one hand pressed lightly to forehead, overwhelmed look. Plain t-shirt. Soft afternoon side light. Sony A7IV 50mm f/2.0. Sharp focus, 4K.",
+            "Editorial photograph: woman late 20s listening attentively across a table, thoughtful engaged expression, leaning slightly forward. Natural indoor cafe light. Coffee cups on table. Plain top. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
+            "Editorial photograph: woman mid-20s sitting at kitchen table writing in open journal with pen, calm reflective expression. Morning light from window. Mug nearby. Plain t-shirt. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
         ]
     ),
     "how-to-focus-without-distractions": (
-        "Candid lifestyle photo: a young woman, late 20s, at a clean minimal desk working on a laptop, deeply focused, earbuds in. Morning light from a window. Simple background. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        "Lifestyle editorial photograph: woman late 20s at clean minimal wooden desk, deeply focused on laptop screen, earbuds in, slight forward lean, concentrated expression. Morning light from left window. Plain light blue t-shirt. Tidy desk. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
         [
-            "Candid photo: a young woman, early 30s, at a desk glancing at her phone while a laptop is open, distracted expression. Afternoon light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
-            "Lifestyle photo: a young woman, late 20s, writing a to-do list in a notebook at her desk, phone face-down beside her. Focused and intentional. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
-            "Candid photo: a young woman, mid-20s, working at a laptop with full concentration, slight forward lean, calm expression. Clean desk, warm light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+            "Editorial photograph: woman early 30s at desk, phone in hand, laptop open beside her, distracted unfocused expression, eyes on phone. Plain hoodie. Afternoon light. Sony A7IV 50mm f/2.0. Sharp focus, 4K.",
+            "Editorial photograph: woman late 20s writing a task list in notebook at desk, phone placed face-down beside her, focused deliberate expression. Morning light. Plain t-shirt. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
+            "Editorial photograph: woman mid-20s at desk working on laptop, full calm concentration, slight forward lean, composed expression. Soft warm light. Clean desk. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
         ]
     ),
     "simple-morning-habits": (
-        "Candid lifestyle photo: a young woman, late 20s, standing by a kitchen window holding a warm mug, looking outside in the early morning light. Soft golden tones, relaxed posture. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        "Lifestyle editorial photograph: woman late 20s standing by kitchen window, holding a warm mug with both hands, looking outside with quiet rested expression. Plain soft robe or linen top. Early morning diffused light. Simple kitchen background, no clutter. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
         [
-            "Candid photo: a young woman, early 30s, in a kitchen filling a glass of water at the sink in early morning, still waking up, quiet and slow. Warm morning light. Shot on 50mm f/2.0. Photorealistic candid lifestyle. No text, no logos.",
-            "Lifestyle photo: a young woman, late 20s, making a simple breakfast — scrambled eggs on a plate, kettle in background. Warm kitchen light. Unhurried. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
-            "Candid photo: a young woman, mid-20s, sitting at a kitchen table with a journal and mug, writing with a calm focused expression. Morning sunlight. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+            "Editorial photograph: woman early 30s at kitchen sink filling a clear glass with water, early morning, still half-awake, slow unhurried movement. Soft grey morning light. Plain t-shirt. Sony A7IV 50mm f/2.0. Sharp focus, 4K.",
+            "Editorial photograph: woman late 20s at kitchen counter making simple breakfast, eggs in a small pan, kettle in background, relaxed unhurried expression. Warm kitchen light. Plain t-shirt. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
+            "Editorial photograph: woman mid-20s sitting at kitchen table, open journal and warm mug in front of her, writing with a calm focused expression. Morning sunlight from window. Plain t-shirt. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
         ]
     ),
     "how-to-stop-panic-attacks": (
@@ -317,11 +317,10 @@ SECTION_PROMPTS = {
 
 # Short rules appended to every pollinations.ai prompt — keeps URL under 1500 chars
 _FLUX_RULES = (
-    "single photograph only, NOT a diptych, NOT split panels, NOT side by side, ONE image. "
-    "Overcast or diffused indoor window light only, NO golden hour, NO warm glow, NO cinematic lighting. "
-    "Head and shoulders framing only, chest not visible. "
-    "Real imperfect skin, plain unglamorous clothing, no posed smile, no stock photo look, "
-    "looks like a real unedited phone photo, no text, no logos"
+    "ONE photograph only, not a diptych, not split-panel. "
+    "Head-and-shoulders crop only, chest not visible. "
+    "Real human face: visible skin pores, natural imperfections, genuine hair texture, authentic non-posed expression — not a model, not AI-smooth. "
+    "Plain everyday clothing. Sharp focus, 4K photorealistic quality. No text, no logos, no watermarks."
 )
 
 def generate_image(prompt, filename, fmt, max_kb):
