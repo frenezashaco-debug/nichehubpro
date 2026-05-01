@@ -768,7 +768,7 @@ def backlink_existing_articles(new_slug, new_title, category):
 
 
 def send_pinterest_webhook(article_slug, title, category, cover_filename, pins):
-    """Send article data to Make.com webhook — triggers 3 Pinterest pins."""
+    """Send article data to Make.com webhook — triggers 3 Pinterest pins, each with a unique image."""
     try:
         from config import MAKE_PINTEREST_WEBHOOK
     except ImportError:
@@ -782,20 +782,34 @@ def send_pinterest_webhook(article_slug, title, category, cover_filename, pins):
         "Healthy Lifestyle": "1135118349771004501",
     }
 
+    # Each pin gets its own image: cover, sec1, sec3
+    pin_images = [
+        f"{SITE_URL}/images/{cover_filename}",
+        f"{SITE_URL}/images/{article_slug}-sec1.webp",
+        f"{SITE_URL}/images/{article_slug}-sec3.webp",
+    ]
+
+    enriched_pins = []
+    for i, pin in enumerate(pins[:3]):
+        enriched_pins.append({
+            "title":       pin.get("title", title),
+            "description": pin.get("description", ""),
+            "image_url":   pin_images[i],
+        })
+
     payload = {
         "slug":        article_slug,
         "title":       title,
         "category":    category,
         "board_id":    board_ids.get(category, ""),
-        "image_url":   f"{SITE_URL}/images/{cover_filename}",
         "article_url": f"{SITE_URL}/articles/{article_slug}.html",
-        "pins":        pins[:3]
+        "pins":        enriched_pins,
     }
 
     try:
         r = requests.post(MAKE_PINTEREST_WEBHOOK, json=payload, timeout=15)
         if r.status_code in (200, 204):
-            print(f"  Pinterest webhook sent to Make.com ({len(pins)} pins queued)")
+            print(f"  Pinterest webhook sent to Make.com (3 pins, 3 unique images)")
         else:
             print(f"  Pinterest webhook failed: {r.status_code}")
     except Exception as e:
