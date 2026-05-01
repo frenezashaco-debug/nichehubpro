@@ -2,6 +2,81 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "daily-wellness-habits",
+    "title": "5 Daily Wellness Habits That Transform Your Life in Just 30 Days",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Daily wellness habits are the foundation of a healthier, calmer, more energized version of yourself. You don't need a gym membership, expensive supplements",
+    "image": "images/daily-wellness-habits.jpg",
+    "alt": "Woman drinking water at kitchen table during morning wellness routine",
+    "pins": [
+      {
+        "title": "5 Daily Wellness Habits That Change Your Life in 30 Days (Simple)",
+        "description": "These science-backed daily wellness habits reduce stress, boost energy, and improve mental clarity without expensive gyms or supplements. Start with just one habit, master it for a week, then add another. Real transformation happens when you stack small wins together. Pin this for your wellness journey."
+      },
+      {
+        "title": "Stop Failing at Wellness: The One Habit Rule That Actually Works",
+        "description": "You don't need five new daily wellness habits to transform your life. Research shows that changing one habit at a time has an 80% success rate versus 5% when trying too many at once. Pick one, stick with it for 30 days, watch the magic happen. This is the secret nobody talks about."
+      },
+      {
+        "title": "Try These 5 Daily Wellness Habits Starting Tomorrow Morning",
+        "description": "From morning hydration to intentional breathing to better sleep, these five daily wellness habits are backed by science and tested by thousands. Each one takes minutes but delivers real results. Start with the one that addresses your biggest struggle right now. Your future self will thank you."
+      }
+    ]
+  },
+  {
+    "slug": "time-management-tips",
+    "title": "5 Time Management Tips That Actually Work: Stop Wasting Hours Every Day",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Time management tips can feel like empty promises when you're drowning in tasks and deadlines. Most people waste 2-3 hours daily on low-value work, email c",
+    "image": "images/time-management-tips.jpg",
+    "alt": "Woman writing morning priorities in notebook with coffee and natural light",
+    "pins": [
+      {
+        "title": "5 Time Management Tips That Actually Stick (Not Just Theory)",
+        "description": "Stop wasting hours each day with ineffective strategies. These 5 time management tips work because they align with how your brain actually functions. Learn the Big Three priority system, time blocking, and 90-minute sprints that busy professionals use to reclaim 10+ hours weekly. Real methods for real results. Read the full guide today."
+      },
+      {
+        "title": "Stop Struggling With Time: Master These 5 Management Tips Today",
+        "description": "Tired of feeling busy but unaccountable? These proven time management tips transform how you work without requiring complicated systems or apps. From identifying your top three priorities to protecting deep focus time, discover the exact strategies successful people use daily. Your best day starts with better time management."
+      },
+      {
+        "title": "How to Manage Time Better Every Day: Proven Daily Habits",
+        "description": "Small daily habits create massive results. Learn how to manage time better by implementing one micro-habit at a time. Time blocking, priority batching, and weekly reviews help you accomplish more while feeling less stressed. Start with just five minutes tomorrow morning and watch your productivity transform."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-stop-worrying-about-the-future",
+    "title": "7 Ways to Stop Worrying About the Future: Take Back Control Today",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Learning how to stop worrying about the future is one of the most valuable skills you can develop for your mental health. Right now, millions of people spe",
+    "image": "images/how-to-stop-worrying-about-the-future.jpg",
+    "alt": "Woman peacefully looking out window, releasing future worry",
+    "pins": [
+      {
+        "title": "7 Ways to Stop Worrying About the Future and Reclaim Your Peace",
+        "description": "Learn how to stop worrying about the future with proven techniques backed by neuroscience. Discover the 5-1-4-3-2 grounding method, reality testing, and daily habits that interrupt anxiety spirals. Break free from endless what-ifs and start living calmly today. Ready to take back control? Read our complete guide."
+      },
+      {
+        "title": "Stop Future Worry Before It Controls Your Life: 7 Expert Methods",
+        "description": "Tired of waking up at 3 a.m. worried about things that might never happen? You're not alone. Most people struggle with future anxiety, but the solution is simpler than you think. Learn the science behind why your brain creates worst-case scenarios and exactly how to interrupt the cycle. Your calm day starts here."
+      },
+      {
+        "title": "How to Stop Worrying About Things You Cannot Control: Proven Habits",
+        "description": "The secret to reducing future worry is knowing what to focus on and what to release. Discover the two-column technique that separates controllable from uncontrollable worries. Plus, learn the 10-minute worry timer and three other daily practices that transform anxiety into action. Start your anxiety-free week now."
+      }
+    ]
+  },
+  {
     "slug": "healthy-lifestyle-tips",
     "title": "7 Healthy Lifestyle Tips That Transform Your Life (Without the Guilt)",
     "category": "Healthy Lifestyle",
