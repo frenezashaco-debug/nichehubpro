@@ -177,14 +177,19 @@ Return ONLY the JSON. No em dashes anywhere."""
 
 # ── HF FLUX rules appended to every image prompt ─────────────────────────
 _HF_RULES = (
+    "Editorial photograph. "
     "Head-and-shoulders crop only, chest not visible. "
-    "Real human skin: visible pores, natural imperfections, genuine hair texture, not AI-smooth. "
-    "Authentic non-posed expression. Plain everyday clothing. Sharp focus, 4K photorealistic. "
-    "Single photograph, not a diptych. No text, no logos, no watermarks."
+    "Real human face and skin: visible pores, natural imperfections, genuine hair texture, authentic non-posed expression — not AI-smooth, not a model. "
+    "Plain everyday clothing. "
+    "Shot on Sony A7IV 85mm f/1.8, shallow depth of field, slightly blurred background. "
+    "Sharp focus, 4K photorealistic. "
+    "Single photograph only, not a diptych or collage. No text, no logos, no watermarks."
 )
 
+_HF_DELAY = 12  # seconds between HF calls to avoid rate limits
+
 # ── SECTION IMAGE DOWNLOADER — HF FLUX.1-schnell ─────────────────────────
-def download_section_image(prompt, article_slug, index, retries=2):
+def download_section_image(prompt, article_slug, index, retries=2, delay=0):
     """Download a section image via HF FLUX.1-schnell."""
     from huggingface_hub import InferenceClient as HFClient
     try:
@@ -196,6 +201,10 @@ def download_section_image(prompt, article_slug, index, retries=2):
     out_path = os.path.join(IMAGES_DIR, filename)
     full_prompt = f"{prompt} {_HF_RULES}"
     hf = HFClient(token=HF_API_KEY)
+
+    if delay > 0:
+        print(f"  Waiting {delay}s before section image {index}...")
+        time.sleep(delay)
 
     for attempt in range(1, retries + 1):
         try:
@@ -215,7 +224,7 @@ def download_section_image(prompt, article_slug, index, retries=2):
         except Exception as e:
             print(f"  Attempt {attempt} failed: {e}")
             if attempt < retries:
-                time.sleep(5)
+                time.sleep(10)
 
     print(f"  Section image {index} failed — skipping")
     return None
@@ -564,14 +573,16 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category):
     generate_cover(data["title"], category, cover_path, custom_prompt=cover_prompt)
     print(f"Cover saved: {cover_filename}")
 
-    # Generate section images (WebP, contextual per section)
+    # Generate section images (WebP, contextual per section) — delay between calls
     section_images = {}
-    for img_data in data.get("section_image_prompts", []):
+    for call_num, img_data in enumerate(data.get("section_image_prompts", [])):
         sec_idx = img_data.get("section_index", 0)
         prompt  = img_data.get("prompt", "")
         alt     = img_data.get("alt_text", data["title"])
         if prompt:
-            filename = download_section_image(prompt, article_slug, sec_idx + 1)
+            filename = download_section_image(
+                prompt, article_slug, sec_idx + 1, delay=_HF_DELAY
+            )
             if filename:
                 section_images[sec_idx] = {"filename": filename, "alt_text": alt}
     if section_images:

@@ -1,6 +1,6 @@
 """
 NicheHubPro — Cover Image Generator
-Uses pollinations.ai FLUX — free, no API key needed.
+Uses HF FLUX.1-schnell for all image generation.
 Falls back to branded Pillow cover on error.
 
 Usage:
@@ -130,10 +130,13 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=2):
         HF_API_KEY = os.environ.get("HF_API_KEY", "")
 
     rules = (
+        "Editorial photograph. "
         "Head-and-shoulders crop only, chest not visible. "
-        "Real human skin: visible pores, natural imperfections, genuine hair texture, not AI-smooth. "
-        "Authentic non-posed expression. Plain everyday clothing. Sharp focus, 4K photorealistic. "
-        "Single photograph, not a diptych. No text, no logos, no watermarks."
+        "Real human face and skin: visible pores, natural imperfections, genuine hair texture, authentic non-posed expression — not AI-smooth, not a model. "
+        "Plain everyday clothing. "
+        "Shot on Sony A7IV 85mm f/1.8, shallow depth of field, slightly blurred background. "
+        "Sharp focus, 4K photorealistic. "
+        "Single photograph only, not a diptych or collage. No text, no logos, no watermarks."
     )
     prompt = build_image_prompt(topic, category, custom_prompt)
     full_prompt = f"{prompt} {rules}"

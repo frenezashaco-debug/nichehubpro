@@ -315,48 +315,42 @@ SECTION_PROMPTS = {
 
 
 
-# Short rules appended to every pollinations.ai prompt — keeps URL under 1500 chars
 _FLUX_RULES = (
-    "ONE photograph only, not a diptych, not split-panel. "
+    "Editorial photograph. "
     "Head-and-shoulders crop only, chest not visible. "
-    "Real human face: visible skin pores, natural imperfections, genuine hair texture, authentic non-posed expression — not a model, not AI-smooth. "
-    "Plain everyday clothing. Sharp focus, 4K photorealistic quality. No text, no logos, no watermarks."
+    "Real human face and skin: visible pores, natural imperfections, genuine hair texture, authentic non-posed expression — not AI-smooth, not a model. "
+    "Plain everyday clothing. "
+    "Shot on Sony A7IV 85mm f/1.8, shallow depth of field, slightly blurred background. "
+    "Sharp focus, 4K photorealistic. "
+    "Single photograph only, not a diptych. No text, no logos, no watermarks."
 )
 
 def generate_image(prompt, filename, fmt, max_kb):
-    """Generate image via pollinations.ai FLUX — free, no API key needed."""
-    import urllib.parse, random
-    full_prompt = f"{prompt} {_FLUX_RULES}"
-    encoded = urllib.parse.quote(full_prompt)
-    seed = random.randint(1, 99999)
-    image_url = (
-        f"https://image.pollinations.ai/prompt/{encoded}"
-        f"?model=flux-realism&width=1920&height=1080&seed={seed}&nologo=true&enhance=true"
-    )
+    """Generate image via HF FLUX.1-schnell."""
+    from huggingface_hub import InferenceClient
     try:
-        img_resp = requests.get(image_url, timeout=120)
+        from config import HF_API_KEY
+    except ImportError:
+        HF_API_KEY = os.environ.get("HF_API_KEY", "")
+    full_prompt = f"{prompt} {_FLUX_RULES}"
+    client = InferenceClient(token=HF_API_KEY)
+    try:
+        img = client.text_to_image(full_prompt, model="black-forest-labs/FLUX.1-schnell", width=1280, height=720)
+        img = img.resize((1920, 1080), Image.LANCZOS)
     except Exception as e:
-        print(f"    Request error: {e}")
+        print(f"    HF error: {e}")
         return False
-    if img_resp.status_code == 429:
-        print(f"    Rate limited (429) — IP temporarily blocked, try again in 30 min")
-        return False
-    if img_resp.status_code != 200:
-        print(f"    API error {img_resp.status_code}")
-        return False
-    img = Image.open(io.BytesIO(img_resp.content)).convert("RGB")
-    img = img.resize((1920, 1080), Image.LANCZOS)
     out_path = os.path.join(IMAGES_DIR, filename)
     if fmt == "JPEG":
         for q in range(88, 15, -4):
             buf = io.BytesIO()
-            img.save(buf, format="JPEG", quality=q, optimize=True)
+            img.convert("RGB").save(buf, format="JPEG", quality=q, optimize=True)
             if buf.tell() / 1024 <= max_kb:
                 break
     else:
         for q in range(92, 10, -5):
             buf = io.BytesIO()
-            img.save(buf, format="WEBP", quality=q, method=4)
+            img.convert("RGB").save(buf, format="WEBP", quality=q, method=4)
             if buf.tell() / 1024 <= max_kb:
                 break
     with open(out_path, "wb") as f:
