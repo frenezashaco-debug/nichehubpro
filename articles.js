@@ -2,6 +2,81 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "natural-energy-boosters",
+    "title": "7 Natural Energy Boosters That Actually Work (No Coffee Crash)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Natural energy boosters exist within your daily habits, not in a coffee cup. Most people reach for caffeine when fatigue hits, but that leads to crashes, a",
+    "image": "images/natural-energy-boosters.jpg",
+    "alt": "Woman holding water glass in morning sunlight for natural energy",
+    "pins": [
+      {
+        "title": "7 Natural Energy Boosters That Beat Caffeine Every Time",
+        "description": "Tired of the coffee crash? Discover 7 science-backed natural energy boosters that work without caffeine. These methods increase energy naturally by addressing the real causes of fatigue. Start with hydration and movement for immediate results. Say goodbye to exhaustion and hello to sustained energy all day long."
+      },
+      {
+        "title": "Stop the 3pm Energy Crash With These Natural Methods",
+        "description": "That afternoon energy dip is predictable and preventable. Learn how to increase energy naturally using the 90-minute reset, protein timing, and strategic movement breaks. These natural energy boosters work within hours, not weeks. Your best energy is just ahead."
+      },
+      {
+        "title": "Try This Energy Stack for 7 Days (No Supplements Needed)",
+        "description": "Water + movement + protein + sunlight equals sustained natural energy. This simple energy stacking system uses natural energy boosters you already have access to. Track your results for 7 days and watch your fatigue disappear. The best part? It's completely free."
+      }
+    ]
+  },
+  {
+    "slug": "deep-work-techniques",
+    "title": "5 Deep Work Techniques That Actually Rewire Your Brain for Focus",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Deep work techniques are the antidote to endless distraction and shallow productivity that leaves you exhausted but empty.",
+    "image": "images/deep-work-techniques.jpg",
+    "alt": "Woman focused on deep work at desk with coffee during morning hours",
+    "pins": [
+      {
+        "title": "5 Deep Work Techniques That Double Your Productivity in 30 Days",
+        "description": "Stop wasting 8 hours feeling busy but accomplishing nothing. These proven deep work techniques train your brain to focus for hours, eliminate distractions, and actually finish meaningful projects. Learn the science behind focus and the exact steps to build deep work into your daily routine. Start tomorrow."
+      },
+      {
+        "title": "Stop Context-Switching: The Real Reason You Can't Focus",
+        "description": "Your willpower isn't broken, your system is. Deep work techniques work by designing your environment and time blocks BEFORE you try to focus. Discover why your phone proximity alone kills productivity and the one habit that reverses it in 72 hours."
+      },
+      {
+        "title": "Try This: The 90-Minute Deep Work Habit That Actually Sticks",
+        "description": "Forget all-day focus marathons. Your brain can only do genuine deep work in 90-120 minute blocks. Learn how to stack these sessions, protect your peak energy hours, and accomplish more in two weeks than you normally do in two months. Real techniques for real brains."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-improve-mental-clarity",
+    "title": "5 Ways to Improve Mental Clarity and Focus Fast (Brain Fog Gone)",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to improve mental clarity is the question millions of us are asking right now. Brain fog feels like walking through clouds, and it kills your productiv",
+    "image": "images/how-to-improve-mental-clarity.jpg",
+    "alt": "Young woman improving mental clarity with morning coffee ritual peacefully focused",
+    "pins": [
+      {
+        "title": "How to Improve Mental Clarity in 24 Hours: 5 Brain Fog Fixes",
+        "description": "Stop the mental fog and reclaim your focus. Learn 5 science-backed methods to improve mental clarity and eliminate brain fog fast. From sleep optimization to nervous system regulation, these strategies work within hours. Start with just one today and notice the difference in your thinking power tomorrow."
+      },
+      {
+        "title": "Stop Brain Fog Now: Why Your Mind Feels Cloudy and How to Fix It",
+        "description": "Tired of feeling mentally foggy and exhausted? Brain fog comes from stress, poor sleep, and digital overload, not stupidity. Discover the root causes of brain fog and the exact habits that restore sharp focus and mental clarity. Clear your head and reclaim your productivity."
+      },
+      {
+        "title": "Try This: 4-7-8 Breathing to Clear Brain Fog Instantly (60 Seconds)",
+        "description": "One simple breathing technique to calm your nervous system and restore mental clarity in just 60 seconds. This nervous system reset works better than caffeine and actually helps your brain think clearly. Try it when afternoon brain fog hits and watch your focus return."
+      }
+    ]
+  },
+  {
     "slug": "daily-wellness-habits",
     "title": "5 Daily Wellness Habits That Transform Your Life in Just 30 Days",
     "category": "Healthy Lifestyle",
@@ -698,31 +773,6 @@ const ARTICLES = [
       {
         "title": "Calm Your Nervous System in Stressful Situations: This Trick Works",
         "description": "The fastest way to relax in stressful situations is activating your parasympathetic nervous system. This simple guide shows you how to hijack your stress response in 60 seconds or less. Box breathing, muscle relaxation, and vagal maneuvers explained clearly. Transform your stress response today."
-      }
-    ]
-  },
-  {
-    "slug": "how-to-improve-mental-clarity",
-    "title": "5 Ways to Improve Mental Clarity: Stop Brain Fog and Think Sharp Again",
-    "category": "Mental Wellness",
-    "cat_slug": "mental-wellness",
-    "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to improve mental clarity starts with understanding what's blocking your brain right now. Brain fog feels like you're thinking through mud, and it's on",
-    "image": "images/how-to-improve-mental-clarity.jpg",
-    "alt": "Young woman drinking water at desk, improving mental clarity in morning light",
-    "pins": [
-      {
-        "title": "How to Improve Mental Clarity in 7 Days: 5 Brain Fog Solutions That Work",
-        "description": "Stop struggling with brain fog and fuzzy thinking. These 5 science-backed strategies improve mental clarity fast, including hydration tricks, sleep timing, and nutrition hacks. Clear your mind and boost focus by the end of the week. Try the morning clarity ritual today."
-      },
-      {
-        "title": "Stop Brain Fog Now: Why You Can't Think Clearly and How to Fix It",
-        "description": "Brain fog is ruining your productivity and confidence, but it's not permanent. Learn the real causes of mental fog like dehydration, blood sugar crashes, and information overload, then apply the solutions that work in 24 to 48 hours. Your clarity is waiting."
-      },
-      {
-        "title": "5 Daily Habits for Sharp Mental Clarity: Your Brain Deserves Better",
-        "description": "Build mental clarity that lasts with these five simple daily habits. From morning rituals to nutrition tweaks to evening wind-down routines, these practices rewire your brain for focus and sharpness. Start the morning clarity ritual tomorrow and feel the difference instantly."
       }
     ]
   },

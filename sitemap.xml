@@ -47,6 +47,21 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://nichehubpro.com/articles/natural-energy-boosters.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nichehubpro.com/articles/deep-work-techniques.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nichehubpro.com/articles/how-to-improve-mental-clarity.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nichehubpro.com/articles/daily-wellness-habits.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -183,11 +198,6 @@
   </url>
   <url>
     <loc>https://nichehubpro.com/articles/how-to-feel-calm-instantly.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nichehubpro.com/articles/how-to-improve-mental-clarity.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
