@@ -268,7 +268,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
                 f'\n      <img src="../images/{img_info["filename"]}" '
                 f'alt="{img_info["alt_text"]}" '
                 f'style="width:100%;border-radius:10px;margin:28px 0 20px;display:block;object-fit:cover;" '
-                f'loading="lazy">\n'
+                f'width="1920" height="1080" loading="lazy">\n'
             )
         # Insert ad slot after section 2
         if i == 1:
@@ -325,6 +325,8 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
   <title>{title} — NicheHubPro</title>
   <meta name="description" content="{meta_desc}">
   <link rel="canonical" href="{SITE_URL}/articles/{article_slug}.html">
+  <link rel="preconnect" href="https://sibforms.com">
+  <link rel="preload" as="image" href="../images/{cover_filename}">
   <link rel="stylesheet" href="../style.css">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{meta_desc}">
@@ -403,7 +405,8 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
     <img src="../images/{cover_filename}"
          alt="{cover_alt}"
          style="width:100%;border-radius:12px;margin-bottom:28px;display:block;"
-         loading="lazy">
+         width="1920" height="1080"
+         loading="eager" fetchpriority="high">
 
     <article class="article-content" id="article-body">
 
