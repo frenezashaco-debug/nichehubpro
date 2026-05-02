@@ -26,22 +26,17 @@ jobs:
         with:
           python-version: '3.11'
 
-      - run: pip install pillow requests
+      - run: pip install pillow requests huggingface_hub
 
       - name: Write config.py
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          python3 -c "
-          import os
-          key = os.environ.get('OPENAI_API_KEY', '')
-          with open('config.py', 'w') as f:
-              f.write(f'OPENAI_API_KEY = \"{key}\"\n')
-              f.write('LEONARDO_API_KEY = \"\"\n')
-              f.write('ANTHROPIC_API_KEY = \"\"\n')
-              f.write('PINTEREST_ACCESS_TOKEN = \"\"\n')
-          print('Key:', key[:8] + '...' if key else 'MISSING')
-          "
+          cat > config.py << 'EOF'
+          ANTHROPIC_API_KEY = "${{ secrets.ANTHROPIC_API_KEY }}"
+          HF_API_KEY = "${{ secrets.HF_API_KEY }}"
+          PINTEREST_ACCESS_TOKEN = "${{ secrets.PINTEREST_ACCESS_TOKEN }}"
+          MAKE_PINTEREST_WEBHOOK = "${{ secrets.MAKE_PINTEREST_WEBHOOK }}"
+          OPENAI_API_KEY = ""
+          EOF
 
 
       - run: python auto_fix_covers.py
