@@ -24,7 +24,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install anthropic json_repair Pillow requests
+        run: pip install anthropic json_repair Pillow requests huggingface_hub
 
       - name: Verify API key is set
         run: |
