@@ -47,6 +47,21 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://nichehubpro.com/articles/daily-self-care-routine.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nichehubpro.com/articles/how-to-build-discipline.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nichehubpro.com/articles/how-to-feel-happy-again.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nichehubpro.com/articles/natural-energy-boosters.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -188,11 +203,6 @@
   </url>
   <url>
     <loc>https://nichehubpro.com/articles/how-to-stop-overthinking-at-work.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nichehubpro.com/articles/how-to-feel-happy-again.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

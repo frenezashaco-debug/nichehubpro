@@ -2,6 +2,81 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "daily-self-care-routine",
+    "title": "5 Daily Self-Care Routine Habits That Actually Stick (Without Feeling Forced)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "A daily self-care routine isn't about bubble baths and face masks, though those are nice. It's about small, intentional actions that lower your stress, sta",
+    "image": "images/daily-self-care-routine.jpg",
+    "alt": "Woman drinking water mindfully at kitchen table with morning light, daily self-care routine",
+    "pins": [
+      {
+        "title": "How to Start a Daily Self-Care Routine in 5 Minutes (Real Life Works)",
+        "description": "Stop waiting for the perfect moment. A daily self-care routine doesn't require hours or special products. Start with water, movement, quiet time, intentional eating, and sleep protection. These five habits lower stress, boost focus, and help you feel like yourself again. Build one habit per week and watch the shift happen."
+      },
+      {
+        "title": "Stop Skipping Self-Care (Your Nervous System is Begging You)",
+        "description": "You're exhausted, irritable, and getting sick constantly because you're skipping daily self-care. Your body is sending clear signals. A consistent daily self-care routine rebuilds your resilience in just 2-3 weeks. Learn the five non-negotiable habits successful people protect daily, and why consistency beats perfection every single time."
+      },
+      {
+        "title": "Try This: The 5-Habit Daily Self-Care Routine That Actually Sticks",
+        "description": "Forget complicated wellness plans. This daily self-care routine stacks onto habits you already do: water after waking, movement before lunch, quiet time in afternoon, mindful eating once daily, phone-free bedtime. Small, repeatable, powerful. Women report lower anxiety, better sleep, and stable energy within weeks of starting this routine."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-build-discipline",
+    "title": "5 Ways to Build Discipline That Actually Stick (Without Willpower Burnout)",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to build discipline starts with one simple shift: stop fighting yourself.",
+    "image": "images/how-to-build-discipline.jpg",
+    "alt": "Woman journaling at desk, building daily discipline habit routine",
+    "pins": [
+      {
+        "title": "5 Ways to Build Discipline Without Relying on Willpower",
+        "description": "Stop fighting yourself. Learn how to build discipline by designing your environment instead of forcing willpower. Small systems that compound into real results. Start with one tiny habit today and watch the chain grow. Discipline isn't motivation. It's smart systems."
+      },
+      {
+        "title": "Stop Trying to Build Discipline (Do This Instead)",
+        "description": "Most people fail at discipline because they're fighting their brain's natural defaults. Remove friction, automate decisions, and make good choices easy. This practical guide shows exactly how to build self discipline habits every day without burnout. Transform your life through environment design."
+      },
+      {
+        "title": "The Two-Day Rule: Build Unstoppable Discipline Starting Today",
+        "description": "Never miss a habit twice in a row. This one rule is the secret to building discipline that actually sticks. Learn the five proven methods successful people use to stay consistent. Small daily progress beats perfection every single time. Your chain starts today."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-feel-happy-again",
+    "title": "7 Ways to Feel Happy Again: Your Breakthrough Guide to Joy",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to feel happy again when life feels heavy and empty is one of the most honest questions you can ask yourself. You're not broken for struggling with hap",
+    "image": "images/how-to-feel-happy-again.jpg",
+    "alt": "Young woman finding peace and happiness in quiet morning moment by window",
+    "pins": [
+      {
+        "title": "7 Ways to Feel Happy Again When Sadness Won't Leave",
+        "description": "Learn the exact science-backed methods to rebuild happiness after depression. These simple daily habits work because they address root causes, not just symptoms. Starting with just one action can shift everything. Your joy is closer than you think. Read the full guide now."
+      },
+      {
+        "title": "Stop Sadness: The Hidden Reason You Can't Feel Happy Again",
+        "description": "Most people approach happiness wrong. They wait for it to return naturally. But that's not how your brain works. Discover why your sadness lingers and the specific actions that actually rewire your thinking toward lasting joy and contentment."
+      },
+      {
+        "title": "Try This: 7 Daily Habits to Feel Happy Again Starting Today",
+        "description": "Forget complicated self-help tactics. These seven proven happiness tips are simple enough to start today, powerful enough to change everything. From movement to connection to sleep boundaries, learn how small daily actions rebuild your baseline joy."
+      }
+    ]
+  },
+  {
     "slug": "natural-energy-boosters",
     "title": "7 Natural Energy Boosters That Actually Work (No Coffee Crash)",
     "category": "Healthy Lifestyle",
@@ -723,31 +798,6 @@ const ARTICLES = [
       {
         "title": "End Workplace Stress with These 5 Overthinking Fixes",
         "description": "If you're stuck replaying meetings, perfecting emails, or paralyzed by decisions at work, this is for you. Learn the brain dump ritual, time-boxing technique, and the 5-Minute Reset that interrupt overthinking in real time. Build daily habits that regulate your nervous system and help you stay focused. Transform how you experience your workday."
-      }
-    ]
-  },
-  {
-    "slug": "how-to-feel-happy-again",
-    "title": "7 Ways to Feel Happy Again: Reclaim Your Joy Starting Today",
-    "category": "Mental Wellness",
-    "cat_slug": "mental-wellness",
-    "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Happiness feels like it's slipped away, and you don't know how to get it back. If you've been asking yourself why do I feel unhappy for no reason, you're n",
-    "image": "images/how-to-feel-happy-again.jpg",
-    "alt": "Woman sitting peacefully by sunny window feeling happy again",
-    "pins": [
-      {
-        "title": "7 Ways to Feel Happy Again: Rebuild Your Joy in 21 Days",
-        "description": "Feeling unhappy for no reason? These 7 science-backed happiness habits will rewire your brain's emotional baseline. Start with movement, sunlight, and connection. Real results in 3 weeks. Read our complete guide to lasting happiness."
-      },
-      {
-        "title": "Stop Feeling Unhappy for No Reason: What Your Brain Needs",
-        "description": "That persistent sadness isn't a character flaw—it's your nervous system running on empty. Discover why you feel unhappy and the exact daily habits that rebuild genuine happiness. Simple, evidence-based, actually works."
-      },
-      {
-        "title": "Try This: 10-Minute Morning Routine to Feel Happy Again",
-        "description": "One small habit changed everything. This morning routine combines movement, sunlight, and intention to reset your mood baseline. Takes just 10 minutes but creates measurable happiness shifts within days. Your happiness starts here."
       }
     ]
   },
