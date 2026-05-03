@@ -267,7 +267,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
             sections_html += (
                 f'\n      <img src="../images/{img_info["filename"]}" '
                 f'alt="{img_info["alt_text"]}" '
-                f'style="width:100%;border-radius:10px;margin:28px 0 20px;display:block;object-fit:cover;" '
+                f'style="width:100%;max-height:480px;object-fit:cover;border-radius:10px;margin:28px 0 20px;display:block;" '
                 f'width="1920" height="1080" loading="lazy">\n'
             )
         # Insert ad slot after section 2
