@@ -10,6 +10,8 @@ __pycache__/
 !generate_cover.py
 !pinterest_publisher.py
 !auto_fix_covers.py
+!ping_removal.py
+!ping_indexing.py
 
 # Tracking and log files
 *.txt

@@ -404,6 +404,13 @@ def main():
         cover_kb  = os.path.getsize(cover) / 1024
         bad_cover = cover_kb < PILLOW_KB
         no_secs   = not os.path.exists(sec1)
+        # Also catch: section images exist on disk but were never injected into HTML
+        if not no_secs:
+            html_path = os.path.join(ARTICLES_DIR, html_file)
+            with open(html_path, encoding="utf-8") as f:
+                html_content = f.read()
+            if f"{slug}-sec1.webp" not in html_content:
+                no_secs = True  # images exist but not injected — treat as missing
         if bad_cover or no_secs:
             needs_fix.append((slug, html_file, bad_cover, no_secs, cover_kb))
 
@@ -418,7 +425,9 @@ def main():
         category  = get_category(html_path)
         issues    = []
         if bad_cover: issues.append(f"Pillow cover ({cover_kb:.0f}KB)")
-        if no_secs:   issues.append("missing section images")
+        if no_secs:
+            sec1_exists = os.path.exists(os.path.join(IMAGES_DIR, f"{slug}-sec1.webp"))
+            issues.append("section images not injected into HTML" if sec1_exists else "missing section images")
         print(f"  {slug} — {', '.join(issues)}")
 
         ok = True
