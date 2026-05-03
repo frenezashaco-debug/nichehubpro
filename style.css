@@ -673,6 +673,9 @@ a:hover { color: var(--green-dk); }
   align-items: start;
 }
 .article-header { margin-bottom: 32px; }
+/* Cover image — cap height so it never fills the whole viewport */
+.article-layout > div > img:first-of-type,
+img[fetchpriority="high"] { max-height: 480px; object-fit: cover; }
 .article-tag {
   display: inline-block;
   font-size: 0.72rem;
