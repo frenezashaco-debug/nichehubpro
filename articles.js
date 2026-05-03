@@ -2,6 +2,81 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "life-balance-habits",
+    "title": "7 Life Balance Habits That Actually Stick (Without Sacrificing Your Career)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Life balance habits are not luxuries—they're survival skills for people drowning in work, family, and endless to-do lists.",
+    "image": "images/life-balance-habits.jpg",
+    "alt": "Woman closing laptop to protect life balance habits boundaries",
+    "pins": [
+      {
+        "title": "7 Life Balance Habits That Reduce Burnout Fast (No Guilt)",
+        "description": "Tired of working late and sacrificing sleep? These 7 life balance habits help you reclaim your evenings and weekends without feeling selfish. Learn how to balance work and personal life with real strategies that actually work. Save this pin for concrete habits you can start today."
+      },
+      {
+        "title": "Stop Sacrificing Your Personal Life for Work (Try This Instead)",
+        "description": "Your personal life is disappearing into work time. It doesn't have to be this way. These life balance habits help you protect your evenings, relationships, and health without compromising your career. Real, actionable strategies for managing work-life balance."
+      },
+      {
+        "title": "5 Daily Life Balance Habits That Transform Your Week",
+        "description": "Small daily habits create massive changes in how you experience work and life. These five life balance habits take less than 30 minutes total but completely reshape your schedule and energy. Learn which ones work best for your life."
+      }
+    ]
+  },
+  {
+    "slug": "productivity-system",
+    "title": "5 Productivity System Strategies That Actually Work Without Burning Out",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "A productivity system isn't about working harder, it's about working smarter. Most people fail because they chase whatever trendy method they find on socia",
+    "image": "images/productivity-system.jpg",
+    "alt": "Woman writing daily priorities in notebook at calm morning desk",
+    "pins": [
+      {
+        "title": "5 Productivity System Strategies That Actually Work (No Burnout)",
+        "description": "Stop chasing trendy productivity methods that fail after two weeks. Discover a tested framework that matches your real brain, energy patterns, and life chaos. Simple, sustainable, and actually sticks. Learn the system thousands are using to reclaim their time and focus."
+      },
+      {
+        "title": "Stop Wasting Time With Broken Productivity Systems",
+        "description": "Your productivity system isn't working because it's too complicated and fights against your natural rhythm. Most people abandon new methods within 14 days because they demand too much willpower. Here's the one-page framework that actually works. Real simplicity, real results."
+      },
+      {
+        "title": "Try This Simple 5-Minute Daily Habit for Better Productivity",
+        "description": "The best productivity systems aren't about working harder; they're about working smarter. Start with just one tiny habit tomorrow and watch everything change. No complex apps, no perfectionism, no burnout. Small consistency beats big plans every single time."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-reset-your-life",
+    "title": "5 Ways to Reset Your Life and Start Fresh Today",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to reset your life starts with one honest decision: you're ready for change. Most people feel stuck because they're carrying old patterns, failed expec",
+    "image": "images/how-to-reset-your-life.jpg",
+    "alt": "Woman journaling by window for life reset planning",
+    "pins": [
+      {
+        "title": "How to Reset Your Life in 30 Days: Start With This One Habit",
+        "description": "Feeling stuck or burned out? A life reset plan doesn't require a dramatic overhaul. Learn the 5-step method to identify what's not working, release it, and build one powerful new habit that changes everything. Start today with clarity, not chaos."
+      },
+      {
+        "title": "Stop Feeling Stuck: The Life Reset Framework That Actually Works",
+        "description": "Tired of starting over without real results? This practical life reset plan shows you exactly how to audit your current life, align with your values, and build daily habits that stick. Real change comes from consistency, not perfection. Here's how to finally do it right."
+      },
+      {
+        "title": "Reset Your Life Today: 5 Ways to Break Free From Old Patterns",
+        "description": "Want to start fresh but don't know where to begin? Discover the most effective life reset strategies that address your thoughts, habits, and environment. Break free from what's holding you back and intentionally design the life you actually want. Small actions, big results."
+      }
+    ]
+  },
+  {
     "slug": "daily-self-care-routine",
     "title": "5 Daily Self-Care Routine Habits That Actually Stick (Without Feeling Forced)",
     "category": "Healthy Lifestyle",
