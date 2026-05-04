@@ -2,6 +2,81 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "healthy-living-tips",
+    "title": "7 Healthy Living Tips That Transform Your Daily Habits (Science-Backed Changes)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Healthy living tips work best when they fit your real life, not some perfect Instagram version. Most people struggle because they try to change everything ",
+    "image": "images/healthy-living-tips.jpg",
+    "alt": "Woman holding tea with peaceful expression in bright morning kitchen",
+    "pins": [
+      {
+        "title": "7 Healthy Living Tips That Actually Work (Start Today)",
+        "description": "Transform your health with 7 proven healthy living tips you can implement immediately. Science-backed strategies for better sleep, more energy, and lasting wellness. No extreme diets or complicated rules. Simple daily habits that compound into major life changes. Ready to feel better? Start with just one."
+      },
+      {
+        "title": "Stop Struggling: The Real Secret to Healthy Living Tips",
+        "description": "Most healthy living tips fail because people try to change everything at once. Learn why small, consistent habits work better than extreme overhauls. Discover the exact system that lets you build lasting health without burnout or perfection. Real results from real people."
+      },
+      {
+        "title": "Try This: Your 30-Day Healthy Living Tips Challenge",
+        "description": "Pick one healthy living tip and commit for 30 days. See measurable improvements in sleep, energy, mood, and mental clarity. This actionable guide walks you through which habits to start with and how to make them stick when life gets chaotic. Transformation starts small."
+      }
+    ]
+  },
+  {
+    "slug": "success-habits",
+    "title": "7 Success Habits of Highly Successful People That You Can Start Today",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Success habits are not magical. The habits of successful people are built on simple, repeatable actions done consistently over time. Most people think achi",
+    "image": "images/success-habits.jpg",
+    "alt": "Woman journaling with coffee during quiet morning success habits routine",
+    "pins": [
+      {
+        "title": "7 Success Habits of Highly Successful People (Start Today)",
+        "description": "Discover the exact daily habits that separate high achievers from everyone else. These aren't complicated. They're just done consistently. Learn the 7 core success habits you can implement this week, from morning routines to deep work blocks. Start building your success habit system today."
+      },
+      {
+        "title": "Stop Chasing Success. Build These Daily Habits Instead.",
+        "description": "Most people fail because they lack the right daily habits, not because they lack talent. The success habits of highly successful people are simple but powerful. Early mornings, deep work, reading, movement, reflection. See which habit fits your life and start tomorrow. Your future self will thank you."
+      },
+      {
+        "title": "The 1 Success Habit That Changes Everything (Proven)",
+        "description": "If you could build only one habit to transform your life, research shows it should be early mornings. This single success habit creates a cascade of positive habits. Quiet focus time. Better decisions. More energy. Learn how to start waking earlier and why successful people swear by it."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-improve-your-life",
+    "title": "7 Ways to Improve Your Life Starting Today: Your Personal Breakthrough Awaits",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Learning how to improve your life doesn't require a complete overhaul or years of therapy. Most people feel stuck because they're waiting for the perfect m",
+    "image": "images/how-to-improve-your-life.jpg",
+    "alt": "Young woman holding tea, reflecting thoughtfully on personal improvement journey",
+    "pins": [
+      {
+        "title": "7 Ways to Improve Your Life in 30 Days (Actually Works)",
+        "description": "Stop waiting for the perfect moment. These 7 proven self-improvement tips create real change in your life, starting today. Build one tiny habit, track your progress, and watch your mental health, focus, and confidence transform. Learn the science behind sustainable improvement and the exact system that works."
+      },
+      {
+        "title": "Stop Trying to Change Everything (Do This Instead)",
+        "description": "Your self-improvement fails because you're trying to do too much at once. Here's why one small habit beats massive overhauls, plus the exact 21-day system to build it. Mental wellness starts with small, consistent actions, not perfection. Transform your life without the burnout."
+      },
+      {
+        "title": "How to Improve Yourself Daily (15-Minute Ritual)",
+        "description": "Daily improvement doesn't require hours at the gym or intense meditation. This simple 15-minute ritual covers reflection, habit-building, mental clarity practice, and recovery. Stick with it for 30 days and see how your mental health, stress levels, and sense of control completely shift."
+      }
+    ]
+  },
+  {
     "slug": "improve-daily-routine",
     "title": "5 Ways to Improve Daily Routine and Finally Feel Like Yourself Again",
     "category": "Healthy Lifestyle",
