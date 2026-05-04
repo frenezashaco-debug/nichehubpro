@@ -55,6 +55,7 @@
   <div class="container">
     <div class="grid grid-3" id="article-grid"></div>
     <div id="empty-state" style="display:none;text-align:center;padding:60px 20px;">
+    <div id="pagination" class="pagination"></div>
       <p style="font-size:1.1rem;color:var(--gray);">No articles yet. Check back soon.</p>
     </div>
     <div class="ad-slot ad-slot-banner" style="margin-top:40px;">Advertisement</div>
@@ -103,13 +104,16 @@
     tab.addEventListener('click', function() { window.location.href = this.dataset.url; });
   });
   document.addEventListener('DOMContentLoaded', function() {
-    const filtered = ARTICLES.filter(a => a.cat_slug === 'mental-wellness');
-    const grid = document.getElementById('article-grid');
+    const PER_PAGE = 12;
+    const articles = ARTICLES.filter(a => a.cat_slug === 'mental-wellness');
+    const grid  = document.getElementById('article-grid');
     const empty = document.getElementById('empty-state');
-    if (!filtered.length) { grid.style.display='none'; empty.style.display='block'; return; }
-    grid.innerHTML = filtered.map(a => `
-      <div class="card">
-        <img src="../${a.image}" alt="${a.title}" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;" loading="lazy">
+    const pgEl  = document.getElementById('pagination');
+    if (!articles.length) { grid.style.display='none'; empty.style.display='block'; return; }
+
+    function cardHTML(a) {
+      return `<div class="card">
+        <img src="../${a.image}" alt="${a.alt || a.title}" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;" loading="lazy">
         <div class="card-body">
           <span class="card-tag">${a.category}</span>
           <h3><a href="../articles/${a.slug}.html">${a.title}</a></h3>
@@ -117,7 +121,30 @@
           <div class="card-meta"><span>📅 ${a.date}</span><span>⏱ ${a.read_time} min read</span></div>
           <a href="../articles/${a.slug}.html" class="read-more">Read article &rarr;</a>
         </div>
-      </div>`).join('');
+      </div>`;
+    }
+
+    function render(page) {
+      const total = articles.length;
+      const pages = Math.ceil(total / PER_PAGE);
+      const start = (page - 1) * PER_PAGE;
+      grid.innerHTML = articles.slice(start, start + PER_PAGE).map(cardHTML).join('');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      let html = `<button ${page===1?'disabled':''} onclick="renderPage(${page-1})">&laquo; Prev</button>`;
+      for (let i = 1; i <= pages; i++) {
+        if (pages > 7 && Math.abs(i - page) > 2 && i !== 1 && i !== pages) {
+          if (i === page - 3 || i === page + 3) html += `<span class="pg-info">…</span>`;
+          continue;
+        }
+        html += `<button class="${i===page?'active':''}" onclick="renderPage(${i})">${i}</button>`;
+      }
+      html += `<button ${page===pages?'disabled':''} onclick="renderPage(${page+1})">Next &raquo;</button>`;
+      html += `<span class="pg-info">Page ${page} of ${pages} &mdash; ${total} articles</span>`;
+      pgEl.innerHTML = html;
+    }
+
+    window.renderPage = render;
+    render(1);
   });
 </script>
 </body>
