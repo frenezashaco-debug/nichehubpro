@@ -6,6 +6,7 @@ __pycache__/
 # Python — exclude all except the publisher pipeline
 *.py
 !batch_30days.py
+!batch_12weeks.py
 !publisher_v2.py
 !generate_cover.py
 !pinterest_publisher.py

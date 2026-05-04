@@ -2,7 +2,7 @@ name: Daily Article Publisher
 
 on:
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '0 8 * * 1-6'
   workflow_dispatch:
 
 permissions:
@@ -47,10 +47,10 @@ jobs:
           EOF
 
       - name: Show current publish status
-        run: python batch_30days.py --status
+        run: python batch_12weeks.py --status
 
       - name: Run batch publisher
-        run: python batch_30days.py
+        run: python batch_12weeks.py
 
       - name: Commit and push
         run: |
