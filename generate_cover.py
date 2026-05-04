@@ -16,15 +16,17 @@ OUT_DIR   = os.path.join(os.path.dirname(os.path.abspath(__file__)), "images")
 
 REAL_PHOTO_RULES = (
     "CRITICAL RULES — strictly follow all of these: "
-    "Frame the shot from the shoulders or collarbone UP only — never show the chest, bust, or body below the shoulders. Head-and-shoulders or face-and-hands-on-desk framing only. "
-    "This must look like a real candid photo taken by a friend on a phone, NOT professional photography and NOT AI art. "
-    "The person must look like a real ordinary human: slightly imperfect skin, natural pores, mild under-eye shadows, real hair texture with flyaways, no flawless symmetry. "
-    "Clothing must be plain and ordinary: faded t-shirt, old hoodie, basic linen top — never stylish, never fitted, never flattering. "
-    "Natural window light only — no studio lighting, no rim light, no beauty lighting, no glowing skin. "
-    "Expression must be genuinely candid — slightly awkward, distracted, or absorbed — never a posed smile or model expression. "
-    "Background must be messy or ordinary: cluttered desk, plain wall, basic kitchen — no magazine-style staging. "
-    "No oversaturated colors, no HDR, no cinematic grading, no smooth AI skin, no perfect composition. "
-    "If it looks like a stock photo or AI image, it is wrong. It must look like a real unedited snapshot."
+    "Frame the shot from the shoulders or collarbone UP only — never show chest or body below shoulders. "
+    "MUST look like a real unedited photo taken on a phone by a friend — NOT AI art, NOT a stock photo, NOT professional photography. "
+    "Skin: visible pores, mild under-eye shadows, natural redness, slight skin texture unevenness — absolutely NO smooth AI skin, NO glowing skin, NO perfect complexion. "
+    "Hair: real texture with flyaways, frizz, or baby hairs — NOT perfectly styled or shiny. "
+    "Face: genuine candid expression — slightly distracted, absorbed, or tired — NEVER a posed smile, NEVER a model expression, NEVER direct eye contact with camera. "
+    "Clothing: visibly faded, slightly wrinkled, ordinary — old hoodie, plain t-shirt, basic sweatshirt — NEVER stylish, fitted, or flattering. "
+    "Lighting: flat natural window light or overcast daylight — NO studio lights, NO rim light, NO beauty dish, NO glowing halo around subject. "
+    "Background: ordinary and slightly messy — cluttered desk, plain wall, basic kitchen — NO magazine staging, NO aesthetic props. "
+    "Composition: slightly off-center, imperfect framing, as if handheld — NOT perfectly centered, NOT symmetrical. "
+    "NO oversaturation, NO HDR, NO cinematic color grading, NO vignette. "
+    "If the result looks like a stock photo, AI image, or beauty campaign — it is WRONG. Regenerate with more imperfections."
 )
 # Font paths — Windows first, Linux fallback
 def _find_font(win_path, linux_names):
@@ -121,8 +123,14 @@ def compress_to_limit(img, max_kb=MAX_KB):
     return buf.getvalue(), 20, buf.tell() / 1024
 
 # ── AI IMAGE GENERATION — HF FLUX.1-schnell ──────────────────────────────
-def generate_with_ai(topic, category, custom_prompt=None, retries=2):
-    """Generate cover image via HF FLUX.1-schnell."""
+MIN_QUALITY_KB = 100  # Images under this size are likely flat/AI-looking — reject and retry
+
+def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=2):
+    """
+    Generate cover image via HF FLUX.1-schnell.
+    Generates `candidates` versions, keeps the largest (most detail = least AI-looking).
+    Retries automatically if image is under MIN_QUALITY_KB.
+    """
     from huggingface_hub import InferenceClient
     try:
         from config import HF_API_KEY
@@ -132,7 +140,8 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=2):
     rules = (
         "Editorial photograph. "
         "Head-and-shoulders crop only, chest not visible. "
-        "Real human face and skin: visible pores, natural imperfections, genuine hair texture, authentic non-posed expression — not AI-smooth, not a model. "
+        "Real human face and skin: visible pores, natural imperfections, genuine hair texture, "
+        "authentic non-posed expression — not AI-smooth, not a model. "
         "Plain everyday clothing. "
         "Shot on Sony A7IV 85mm f/1.8, shallow depth of field, slightly blurred background. "
         "Sharp focus, 4K photorealistic. "
@@ -140,20 +149,54 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=2):
     )
     prompt = build_image_prompt(topic, category, custom_prompt)
     full_prompt = f"{prompt} {rules}"
-    client = InferenceClient(token=HF_API_KEY)
+    client = InferenceClient(provider="hf-inference", api_key=HF_API_KEY)
+
+    best_img  = None
+    best_size = 0
 
     for attempt in range(1, retries + 1):
         try:
-            print(f"  Calling HF FLUX.1-schnell (attempt {attempt})...")
-            img = client.text_to_image(full_prompt, model="black-forest-labs/FLUX.1-schnell", width=1280, height=720)
+            print(f"  HF FLUX attempt {attempt}/{retries}...")
+            result = client.text_to_image(
+                model="black-forest-labs/FLUX.1-schnell",
+                prompt=full_prompt,
+                width=1280, height=720,
+            )
+            img = result if isinstance(result, Image.Image) else Image.open(io.BytesIO(result))
             img = img.resize((W, H), Image.LANCZOS)
-            return img
+
+            # Measure size in memory to assess quality
+            buf = io.BytesIO()
+            img.convert("RGB").save(buf, format="JPEG", quality=85)
+            size_kb = buf.tell() / 1024
+
+            print(f"    Candidate {attempt}: {size_kb:.0f}KB", end="")
+
+            if size_kb < MIN_QUALITY_KB:
+                print(f" — too small (likely flat/AI), retrying...")
+                time.sleep(8)
+                continue
+
+            print(f" — {'best so far' if size_kb > best_size else 'keeping previous'}")
+            if size_kb > best_size:
+                best_img  = img
+                best_size = size_kb
+
+            # If we have enough good candidates, stop early
+            if attempt >= candidates and best_img is not None:
+                break
+
+            if attempt < retries:
+                time.sleep(8)
+
         except Exception as e:
             print(f"  Error: {e}")
             if attempt < retries:
-                time.sleep(5)
+                time.sleep(8)
 
-    return None
+    if best_img:
+        print(f"  Selected best candidate: {best_size:.0f}KB")
+    return best_img
 
 # ── PILLOW FALLBACK ───────────────────────────────────────────────────────
 def generate_pillow_cover(title, category):
