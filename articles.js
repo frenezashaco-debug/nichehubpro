@@ -2,6 +2,81 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "improve-daily-routine",
+    "title": "5 Ways to Improve Daily Routine and Finally Feel Like Yourself Again",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "You want to improve daily routine but keep hitting the same wall every single day. Your mornings are chaotic, your energy crashes by 3pm, and you feel like",
+    "image": "images/improve-daily-routine.jpg",
+    "alt": "Woman in cozy sweater sipping tea while planning improve daily routine",
+    "pins": [
+      {
+        "title": "5 Ways to Improve Daily Routine and Finally Stick With It",
+        "description": "Stop struggling with routines that don't work for YOU. These five science-backed strategies show you how to improve daily routine in just 2-3 weeks by anchoring habits to what you already do. Build the routine that actually fits your life. Start here."
+      },
+      {
+        "title": "Stop Fighting Your Routine. Design One That Works Instead.",
+        "description": "Most daily routines fail because people don't account for their actual personality and schedule. Learn the real reason your routines crash within two weeks and discover the system top performers use to improve daily routine permanently. Your better life is closer than you think."
+      },
+      {
+        "title": "The 2-Minute Method to Improve Daily Routine This Week",
+        "description": "Forget 30-minute commitments and perfect systems. Use this proven 2-minute habit trick to improve daily routine and actually follow through. Starts small, compounds fast, lasts forever. See how to stack your first habit today."
+      }
+    ]
+  },
+  {
+    "slug": "habit-building-system",
+    "title": "5 Habit Building System Strategies That Actually Stick (Without the Guilt)",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "A habit building system is the difference between goals that fade in February and changes that reshape your life. Most people fail because they rely on wil",
+    "image": "images/habit-building-system.jpg",
+    "alt": "Woman writing in journal at desk with habit building system notebook",
+    "pins": [
+      {
+        "title": "5 Habit Building System Strategies That Actually Stick (Tested & Proven)",
+        "description": "Most habit building systems fail because they ignore how your brain actually works. Learn the 5 strategies that elite performers use to make habits automatic, not just motivated. Stop restarting the same habits every month. Click to discover the system that finally works."
+      },
+      {
+        "title": "Stop Failing at Habits: The System That Fixes Everything",
+        "description": "Your willpower isn't broken. Your habit building system is. Discover why 92% of people fail at habits by mid-January and how a proper system removes the willpower equation entirely. Real habits, real results, no motivation required."
+      },
+      {
+        "title": "Try This Habit Building System Before Next Week",
+        "description": "One tiny habit stacked to your morning routine plus visible tracking equals lasting change. Learn the exact 5-step habit building system used by athletes and CEOs to rewire behavior permanently. Start your 66-day journey to automatic habits today."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-change-your-mindset",
+    "title": "5 Ways to Change Your Mindset and Transform Your Life Today",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to change your mindset starts with understanding that your thoughts shape your reality. Your brain is plastic and rewiring is possible at any age, but ",
+    "image": "images/how-to-change-your-mindset.jpg",
+    "alt": "Young woman journaling at desk during mindset change reflection",
+    "pins": [
+      {
+        "title": "How to Change Your Mindset in 5 Steps: Transform Your Thinking Today",
+        "description": "Ready to stop limiting yourself? Learn the 5 proven techniques to change your mindset and rewire your brain for success. Discover how to replace negative self-talk, use visualization, and build daily habits that stick. Your breakthrough starts here. Read the complete guide now."
+      },
+      {
+        "title": "Stop These 5 Mindset Blocks Before They Stop You",
+        "description": "Fixed mindset, imposter syndrome, and self-sabotage are stealing your potential. Learn the red flags that signal you need a mindset change and the exact steps to rewire your brain. This is the honest guide to real transformation. Join thousands who've already shifted their mindset."
+      },
+      {
+        "title": "The Mindset Change Habits You Need (Only 10 Minutes Daily)",
+        "description": "You don't need hours to change your mindset. Learn the three simple daily habits that rewire your brain and build lasting confidence. These science-backed practices take just 10 minutes but deliver real results. Start your transformation today with actionable steps."
+      }
+    ]
+  },
+  {
     "slug": "life-balance-habits",
     "title": "7 Life Balance Habits That Actually Stick (Without Sacrificing Your Career)",
     "category": "Healthy Lifestyle",

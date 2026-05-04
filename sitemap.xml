@@ -47,6 +47,21 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://nichehubpro.com/articles/improve-daily-routine.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nichehubpro.com/articles/habit-building-system.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nichehubpro.com/articles/how-to-change-your-mindset.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nichehubpro.com/articles/life-balance-habits.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
