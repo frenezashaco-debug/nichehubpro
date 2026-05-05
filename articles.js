@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-stop-overthinking-everything",
+    "title": "5 Ways to Stop Overthinking Everything: Break Free From the Mental Loop",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to stop overthinking everything starts with understanding why your brain won't quit. Your mind is trying to protect you by analyzing every detail, but ",
+    "image": "images/how-to-stop-overthinking-everything.jpg",
+    "alt": "Woman pausing at desk to manage overthinking spiral early morning.",
+    "pins": [
+      {
+        "title": "How to Stop Overthinking Everything: 5 Proven Methods That Actually Work",
+        "description": "Stop the mental spiral today. Learn the 5-4-3-2-1 grounding technique, time-boxing, and other science-backed ways to stop overthinking everything. Break free from anxiety and regain mental peace. Your breakthrough starts here."
+      },
+      {
+        "title": "Stop Overthinking Every Decision: The Simple Framework That Works",
+        "description": "Tired of replaying conversations and imagining worst-case scenarios? Stop overthinking everything with this decision-making framework that takes the pressure off. Practical, proven, and fast. Try it today and reclaim your peace."
+      },
+      {
+        "title": "Why You Overthink Everything and How to Break the Pattern Now",
+        "description": "Understanding why you overthink everything is the first step to stopping it. Discover the triggers, recognize the warning signs, and use five daily habits to rewire your brain in just two weeks. Your mental peace is waiting."
+      }
+    ]
+  },
+  {
     "slug": "healthy-living-tips",
     "title": "7 Healthy Living Tips That Transform Your Daily Habits (Science-Backed Changes)",
     "category": "Healthy Lifestyle",
