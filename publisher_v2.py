@@ -327,6 +327,9 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
   <title>{title} — NicheHubPro</title>
   <meta name="description" content="{meta_desc}">
   <link rel="canonical" href="{SITE_URL}/articles/{article_slug}.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
   <link rel="preconnect" href="https://sibforms.com">
   <link rel="preload" as="image" href="../images/{cover_filename}">
   <link rel="stylesheet" href="../style.css">
