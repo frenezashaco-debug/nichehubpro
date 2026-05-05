@@ -58,3 +58,8 @@ jobs:
           git config user.email "bot@nichehubpro.com"
           git add articles/ images/ articles.js sitemap.xml
           git diff --staged --quiet && echo "Nothing new to commit" || (git commit -m "Auto-publish: daily article $(date +'%Y-%m-%d')" && git push)
+
+      - name: Push Pinterest pins (after images are live)
+        run: |
+          sleep 30
+          python auto_pins.py
