@@ -8,6 +8,7 @@ Usage:
 """
 
 import sys, os, re, json, textwrap, io, time
+from datetime import date
 sys.stdout.reconfigure(encoding='utf-8')
 import anthropic
 import requests
@@ -246,6 +247,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
     faq_items    = data["faq"]
     conclusion   = data["conclusion"]
     cat_url      = CATEGORY_URLS.get(category, "../category.html")
+    today_iso    = date.today().strftime("%Y-%m-%d")
 
     # Build FAQ schema
     faq_schema_items = ",\n".join([
@@ -341,8 +343,8 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
     "headline": {json.dumps(title)},
     "description": {json.dumps(meta_desc)},
     "image": "{SITE_URL}/images/{cover_filename}",
-    "datePublished": "2026-04-12",
-    "dateModified": "2026-04-12",
+    "datePublished": "{today_iso}",
+    "dateModified": "{today_iso}",
     "author": {{ "@type": "Organization", "name": "NicheHubPro" }},
     "publisher": {{ "@type": "Organization", "name": "NicheHubPro", "url": "{SITE_URL}" }}
   }}
@@ -649,7 +651,7 @@ def register_article(data, cover_filename):
         "title":    data["title"],
         "category": data.get("category", "Mental Wellness"),
         "cat_slug": cat_slug,
-        "date":     "Apr 2026",
+        "date":     date.today().strftime("%b %Y"),
         "read_time": "8",
         "excerpt":  excerpt,
         "image":    f"images/{cover_filename}",
