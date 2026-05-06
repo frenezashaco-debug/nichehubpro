@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "signs-of-mental-burnout-and-how-to-recover",
+    "title": "7 Signs of Mental Burnout and How to Recover: Your Reset Guide",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Mental burnout sneaks up on you quietly, turning your passion into exhaustion before you realize what's happening. You might feel drained after sleep, stru",
+    "image": "images/signs-of-mental-burnout-and-how-to-recover.jpg",
+    "alt": "Tired young woman looking out window holding coffee during burnout recovery",
+    "pins": [
+      {
+        "title": "7 Signs of Mental Burnout You're Probably Ignoring (And How to Fix It)",
+        "description": "Burnout isn't just exhaustion. Learn the 7 warning signs of mental burnout and practical recovery strategies you can start today. If you're constantly tired, cynical about work, or feel emotionally empty, you might be experiencing burnout. This guide shows you how to recognize it early and rebuild your energy with sustainable habits that actually work. Your recovery starts here."
+      },
+      {
+        "title": "Stop Mental Burnout Before It Takes Over: 7 Recovery Steps",
+        "description": "Mental burnout creeps up quietly, stealing your motivation, focus, and joy. Most people don't realize they're burned out until they're completely depleted. This article breaks down exactly what burnout feels like, why it happens, and the most effective recovery strategies. Discover how to reset your nervous system, set protective boundaries, and rebuild your life with intention and self-compassion."
+      },
+      {
+        "title": "Try This: The 5-Minute Daily Habit That Reverses Mental Burnout",
+        "description": "Recovery from burnout doesn't require dramatic changes. Small daily habits compound into complete transformation. Learn the specific habits that restore energy, protect your peace, and prevent burnout from returning. From morning nervous system resets to end-of-day rituals, these evidence-based practices help you rebuild resilience while working toward lasting healing and sustainable happiness."
+      }
+    ]
+  },
+  {
     "slug": "how-to-stop-overthinking-everything",
     "title": "5 Ways to Stop Overthinking Everything: Break Free From the Mental Loop",
     "category": "Mental Wellness",
