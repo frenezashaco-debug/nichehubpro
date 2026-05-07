@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-stop-procrastinating-immediately",
+    "title": "5 Ways to Stop Procrastinating Immediately: Break Free From the Delay Trap Today",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "You know exactly what you need to do, but you can't seem to start. How to stop procrastinating immediately is the question keeping you stuck, refreshing so",
+    "image": "images/how-to-stop-procrastinating-immediately.jpg",
+    "alt": "Woman pausing at desk before starting work task",
+    "pins": [
+      {
+        "title": "How to Stop Procrastinating Immediately: 5 Proven Techniques That Work Now",
+        "description": "Stop procrastinating today with these 5 science-backed techniques that address the real emotion behind delay. Learn the two-minute rule, how to reframe tasks, and why willpower alone never works. Beat procrastination fast with strategies you can use right now. Read the full guide and take back your productivity today."
+      },
+      {
+        "title": "Stop Procrastinating on Things You Actually Want to Do: Here's Why",
+        "description": "Wondering why you procrastinate even when motivated? The truth: procrastination is emotion regulation, not laziness. Discover why you avoid tasks emotionally, the warning signs your body gives before you delay, and how to interrupt the pattern before it steals your day. Transform your relationship with productivity."
+      },
+      {
+        "title": "Try This: The Two-Minute Rule to Break Your Procrastination Habit Today",
+        "description": "The fastest way to stop procrastinating? Commit to just two minutes. This tiny shift bypasses your brain's resistance and gets you started. Learn why the two-minute rule works, how to pair it with your environment, and how to build daily habits that prevent procrastination from returning. Your productivity game is about to change."
+      }
+    ]
+  },
+  {
     "slug": "signs-of-mental-burnout-and-how-to-recover",
     "title": "7 Signs of Mental Burnout and How to Recover: Your Reset Guide",
     "category": "Mental Wellness",
