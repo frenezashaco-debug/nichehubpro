@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "why-you-feel-tired-all-the-time",
+    "title": "5 Reasons Why You Feel Tired All the Time (And How to Finally Get Your Energy Back)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Why you feel tired all the time might have nothing to do with how long you sleep. Constant fatigue affects over 1.5 million Americans annually, and most ne",
+    "image": "images/why-you-feel-tired-all-the-time.jpg",
+    "alt": "Young woman with tea feeling tired in morning light",
+    "pins": [
+      {
+        "title": "Why You Feel Tired All the Time: 5 Hidden Energy Drains",
+        "description": "Discover why constant fatigue happens even after 8 hours of sleep. Learn the nutrient deficiencies, sleep mistakes, and daily habits that drain your energy, plus proven fixes to reclaim your vitality in 2 weeks."
+      },
+      {
+        "title": "Stop Being Tired All the Time: Science-Backed Energy Fixes",
+        "description": "Exhausted no matter how much you sleep? The problem isn't rest, it's what you're doing during the day. Uncover the real causes of constant fatigue and the 5 daily changes that actually work."
+      },
+      {
+        "title": "Try These 7 Daily Habits to End Constant Fatigue for Good",
+        "description": "Break free from persistent tiredness with small, sustainable habits that boost natural energy. From morning sunlight to nutrition timing, these changes create lasting transformation without caffeine crashes."
+      }
+    ]
+  },
+  {
     "slug": "pomodoro-technique-explained-for-beginners",
     "title": "5 Pomodoro Technique Explained for Beginners: Finally Work Without Burning Out",
     "category": "Productivity",
