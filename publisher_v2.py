@@ -238,6 +238,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
     category     = data["category"]
     article_slug = data["slug"]
     cover_alt    = data.get("cover_alt_text", title)
+    cover_webp   = cover_filename.replace(".jpg", ".webp")
     intro        = data["intro"]
     tldr         = data["tldr"]
     sections     = data["sections"]
@@ -332,7 +333,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="preconnect" href="https://sibforms.com">
-  <link rel="preload" as="image" href="../images/{cover_filename}">
+  <link rel="preload" as="image" href="../images/{cover_webp}" type="image/webp">
   <link rel="stylesheet" href="../style.css">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{meta_desc}">
@@ -408,11 +409,14 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
     </div>
 
     <!-- COVER IMAGE -->
-    <img src="../images/{cover_filename}"
-         alt="{cover_alt}"
-         style="width:100%;max-height:480px;object-fit:cover;border-radius:12px;margin-bottom:28px;display:block;"
-         width="1920" height="1080"
-         loading="eager" fetchpriority="high">
+    <picture>
+      <source srcset="../images/{cover_webp}" type="image/webp">
+      <img src="../images/{cover_filename}"
+           alt="{cover_alt}"
+           style="width:100%;max-height:480px;object-fit:cover;border-radius:12px;margin-bottom:28px;display:block;"
+           width="1920" height="1080"
+           loading="eager" fetchpriority="high">
+    </picture>
 
     <article class="article-content" id="article-body">
 
