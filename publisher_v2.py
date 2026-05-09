@@ -604,6 +604,7 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category):
     # Build and save HTML
     print("Building HTML...")
     html = build_html(data, primary_kw, cover_filename, section_images)
+    html = html.replace(' — ', ' - ').replace('—', ' - ')
     out_path = os.path.join(OUT_DIR, f"{article_slug}.html")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html)
