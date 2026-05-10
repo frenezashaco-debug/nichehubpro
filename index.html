@@ -33,9 +33,9 @@
       <a href="/healthy-lifestyle/">Healthy Lifestyle</a>
       <a href="/about/" class="nav-cta">Start Here</a>
     </div>
-    <div class="nav-burger" id="burger" aria-label="Menu">
+    <button class="nav-burger" id="burger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-mobile" type="button">
       <span></span><span></span><span></span>
-    </div>
+    </button>
   </div>
   <div class="nav-mobile" id="nav-mobile">
     <a href="/mental-wellness/">Mental Wellness</a>
@@ -45,6 +45,7 @@
   </div>
 </nav>
 
+<main>
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
@@ -168,6 +169,7 @@
 </section>
 
 <!-- FOOTER -->
+</main>
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-links">
@@ -203,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (grid && ARTICLES.length > 0) {
     grid.innerHTML = ARTICLES.slice(0, 6).map(a => `
       <div class="card card-featured">
-        <img src="${a.image}" alt="${a.alt || a.title}" class="card-featured-img" loading="lazy">
+        <picture><source srcset="${a.image.replace(".jpg",".webp")}" type="image/webp"><img src="${a.image}" alt="${a.alt || a.title}" class="card-featured-img" loading="lazy"></picture>
         <div class="card-body">
           <span class="card-tag">${a.category}</span>
           <h3 style="font-size:1.2rem;line-height:1.35;"><a href="articles/${a.slug}.html">${a.title}</a></h3>

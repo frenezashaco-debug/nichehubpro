@@ -117,7 +117,7 @@
 
     function cardHTML(a) {
       return `<div class="card">
-        <img src="../${a.image}" alt="${a.alt || a.title}" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;" loading="lazy">
+        <picture><source srcset="../${a.image.replace(".jpg",".webp")}" type="image/webp"><img src="../${a.image}" alt="${a.alt || a.title}" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;" loading="lazy"></picture>
         <div class="card-body">
           <span class="card-tag">${a.category}</span>
           <h3><a href="../articles/${a.slug}.html">${a.title}</a></h3>
