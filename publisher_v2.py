@@ -11,7 +11,8 @@ import sys, os, re, json, textwrap, io, time
 from datetime import date
 sys.stdout.reconfigure(encoding='utf-8')
 import anthropic
-import requests
+import requests, urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 from PIL import Image
 try:
     import json_repair
@@ -178,21 +179,37 @@ Return ONLY the JSON. No em dashes anywhere."""
 
 # ── HF FLUX rules appended to every image prompt ─────────────────────────
 _HF_RULES = (
-    "Editorial photograph. "
-    "Head-and-shoulders crop only, chest not visible. "
-    "Real human face and skin: visible pores, natural imperfections, genuine hair texture, authentic non-posed expression — not AI-smooth, not a model. "
-    "Plain everyday clothing. "
-    "Shot on Sony A7IV 85mm f/1.8, shallow depth of field, slightly blurred background. "
-    "Sharp focus, 4K photorealistic. "
+    "HUMANIZATION RULES — apply every single one: "
+    "This must look like a real unedited snapshot taken on a smartphone by a friend — NOT AI art, NOT stock photo, NOT professional shoot. "
+    "Skin: visible pores, subtle blemishes, natural redness on cheeks or nose, slight unevenness in skin tone — ZERO smooth AI skin, ZERO glowing or poreless complexion. "
+    "Eyes: asymmetric, slightly tired or watery, natural catchlights only — NOT perfectly symmetrical, NOT AI-sharp. "
+    "Hair: messy real texture with flyaways, frizz, split ends, baby hairs — NOT perfectly styled, NOT shiny or glossy. "
+    "Face: candid, absorbed, or slightly tired expression — NOT a posed smile, NOT a model face, NOT direct eye contact with camera. "
+    "A small real-life imperfection is required: a small blemish, under-eye shadow, slight asymmetry, or redness. "
+    "Clothing: visibly faded, slightly wrinkled, ordinary everyday fabric — NEVER stylish or tailored. "
+    "Frame: shoulders or collarbone up only — never show chest or body below. "
+    "Lighting: flat natural window light or overcast daylight — NO studio rim light, NO beauty dish. "
+    "Background: plain and slightly cluttered — NO styled props. "
+    "Composition: slightly off-center, imperfect handheld framing — NOT centered, NOT symmetrical. "
+    "NO oversaturation, NO HDR, NO color grading, NO filters. "
+    "Photographic grain is acceptable and preferred over AI-smooth output. "
     "Single photograph only, not a diptych or collage. No text, no logos, no watermarks."
 )
 
+_HF_NEGATIVE = (
+    "artificial skin, plastic skin, porcelain skin, glowing skin, perfect skin, doll face, "
+    "AI generated look, digital art, illustration, painting, CGI render, stock photo, "
+    "model pose, beauty campaign, symmetrical face, flawless complexion, "
+    "studio lighting, rim lighting, smooth skin, airbrushed, retouched, "
+    "watermark, text, logo, anime, cartoon"
+)
+
+_HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell"
 _HF_DELAY = 12  # seconds between HF calls to avoid rate limits
 
 # ── SECTION IMAGE DOWNLOADER — HF FLUX.1-schnell ─────────────────────────
 def download_section_image(prompt, article_slug, index, retries=2, delay=0):
-    """Download a section image via HF FLUX.1-schnell."""
-    from huggingface_hub import InferenceClient as HFClient
+    """Download a section image via HF FLUX.1-schnell (uses requests to bypass SSL issues)."""
     try:
         from config import HF_API_KEY
     except ImportError:
@@ -201,7 +218,6 @@ def download_section_image(prompt, article_slug, index, retries=2, delay=0):
     filename = f"{article_slug}-sec{index}.webp"
     out_path = os.path.join(IMAGES_DIR, filename)
     full_prompt = f"{prompt} {_HF_RULES}"
-    hf = HFClient(token=HF_API_KEY)
 
     if delay > 0:
         print(f"  Waiting {delay}s before section image {index}...")
@@ -210,7 +226,22 @@ def download_section_image(prompt, article_slug, index, retries=2, delay=0):
     for attempt in range(1, retries + 1):
         try:
             print(f"  Section image {index} (HF FLUX attempt {attempt})...")
-            img = hf.text_to_image(full_prompt, model="black-forest-labs/FLUX.1-schnell", width=1280, height=720)
+            resp = requests.post(
+                _HF_API_URL,
+                headers={"Authorization": f"Bearer {HF_API_KEY}"},
+                json={
+                    "inputs": full_prompt,
+                    "parameters": {
+                        "width": 1280,
+                        "height": 720,
+                        "negative_prompt": _HF_NEGATIVE,
+                    },
+                },
+                verify=False,
+                timeout=120,
+            )
+            resp.raise_for_status()
+            img = Image.open(io.BytesIO(resp.content))
             img = img.resize((1920, 1080), Image.LANCZOS)
             for quality in range(92, 10, -5):
                 buf = io.BytesIO()

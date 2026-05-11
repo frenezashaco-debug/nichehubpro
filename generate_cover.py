@@ -8,25 +8,36 @@ Usage:
   python generate_cover.py --batch
 """
 
-import sys, os, re, io, time, requests
+import sys, os, re, io, time, requests, urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 sys.stdout.reconfigure(encoding='utf-8')
 from PIL import Image, ImageDraw, ImageFont
 
 OUT_DIR   = os.path.join(os.path.dirname(os.path.abspath(__file__)), "images")
 
 REAL_PHOTO_RULES = (
-    "CRITICAL RULES — strictly follow all of these: "
-    "Frame the shot from the shoulders or collarbone UP only — never show chest or body below shoulders. "
-    "MUST look like a real unedited photo taken on a phone by a friend — NOT AI art, NOT a stock photo, NOT professional photography. "
-    "Skin: visible pores, mild under-eye shadows, natural redness, slight skin texture unevenness — absolutely NO smooth AI skin, NO glowing skin, NO perfect complexion. "
-    "Hair: real texture with flyaways, frizz, or baby hairs — NOT perfectly styled or shiny. "
-    "Face: genuine candid expression — slightly distracted, absorbed, or tired — NEVER a posed smile, NEVER a model expression, NEVER direct eye contact with camera. "
-    "Clothing: visibly faded, slightly wrinkled, ordinary — old hoodie, plain t-shirt, basic sweatshirt — NEVER stylish, fitted, or flattering. "
-    "Lighting: flat natural window light or overcast daylight — NO studio lights, NO rim light, NO beauty dish, NO glowing halo around subject. "
-    "Background: ordinary and slightly messy — cluttered desk, plain wall, basic kitchen — NO magazine staging, NO aesthetic props. "
-    "Composition: slightly off-center, imperfect framing, as if handheld — NOT perfectly centered, NOT symmetrical. "
-    "NO oversaturation, NO HDR, NO cinematic color grading, NO vignette. "
-    "If the result looks like a stock photo, AI image, or beauty campaign — it is WRONG. Regenerate with more imperfections."
+    "HUMANIZATION RULES — apply every single one: "
+    "This must look like a real unedited snapshot taken on a smartphone by a friend — NOT AI art, NOT stock photo, NOT professional shoot. "
+    "Skin: visible pores, subtle blemishes, natural redness on cheeks or nose, slight unevenness in skin tone — ZERO smooth AI skin, ZERO glowing or poreless complexion. "
+    "Eyes: asymmetric, slightly tired or watery, natural catchlights only — NOT perfectly symmetrical, NOT AI-sharp. "
+    "Hair: messy real texture with flyaways, frizz, split ends, baby hairs — NOT perfectly styled, NOT shiny or glossy. "
+    "Face: candid, absorbed, or slightly tired expression — NOT a posed smile, NOT a model face, NOT direct eye contact with camera. "
+    "A small real-life imperfection is required: a small blemish, under-eye shadow, slight asymmetry, or redness — NEVER a perfect face. "
+    "Clothing: visibly faded, slightly wrinkled, ordinary everyday fabric — old hoodie, plain t-shirt, basic knit — NEVER stylish, tailored, or flattering. "
+    "Frame: shoulders or collarbone up only — never show chest or body below. "
+    "Lighting: flat natural window light or overcast daylight — NO studio rim light, NO beauty dish, NO glowing halo. "
+    "Background: plain and slightly cluttered — bare wall, basic kitchen, ordinary desk — NO styled props, NO magazines staging. "
+    "Composition: slightly off-center, imperfect handheld framing — NOT centered, NOT symmetrical. "
+    "NO oversaturation, NO HDR, NO color grading, NO vignette, NO filters. "
+    "Photographic grain is acceptable and preferred over AI-smooth output."
+)
+
+NEGATIVE_PROMPT = (
+    "artificial skin, plastic skin, porcelain skin, glowing skin, perfect skin, doll face, "
+    "AI generated look, digital art, illustration, painting, CGI render, stock photo, "
+    "model pose, beauty campaign, magazine cover, symmetrical face, flawless complexion, "
+    "studio lighting, rim lighting, beauty dish, smooth skin, airbrushed, retouched, "
+    "watermark, text, logo, signature, blurry face, anime, cartoon, drawing"
 )
 # Font paths — Windows first, Linux fallback
 def _find_font(win_path, linux_names):
@@ -123,33 +134,22 @@ def compress_to_limit(img, max_kb=MAX_KB):
     return buf.getvalue(), 20, buf.tell() / 1024
 
 # ── AI IMAGE GENERATION — HF FLUX.1-schnell ──────────────────────────────
+_HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell"
 MIN_QUALITY_KB = 100  # Images under this size are likely flat/AI-looking — reject and retry
 
-def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=2):
+def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=3):
     """
     Generate cover image via HF FLUX.1-schnell.
     Generates `candidates` versions, keeps the largest (most detail = least AI-looking).
-    Retries automatically if image is under MIN_QUALITY_KB.
+    Uses requests directly (avoids SSL cert issues with huggingface_hub client).
     """
-    from huggingface_hub import InferenceClient
     try:
         from config import HF_API_KEY
     except ImportError:
         HF_API_KEY = os.environ.get("HF_API_KEY", "")
 
-    rules = (
-        "Editorial photograph. "
-        "Head-and-shoulders crop only, chest not visible. "
-        "Real human face and skin: visible pores, natural imperfections, genuine hair texture, "
-        "authentic non-posed expression — not AI-smooth, not a model. "
-        "Plain everyday clothing. "
-        "Shot on Sony A7IV 85mm f/1.8, shallow depth of field, slightly blurred background. "
-        "Sharp focus, 4K photorealistic. "
-        "Single photograph only, not a diptych or collage. No text, no logos, no watermarks."
-    )
     prompt = build_image_prompt(topic, category, custom_prompt)
-    full_prompt = f"{prompt} {rules}"
-    client = InferenceClient(provider="hf-inference", api_key=HF_API_KEY)
+    full_prompt = f"{prompt} {REAL_PHOTO_RULES}"
 
     best_img  = None
     best_size = 0
@@ -157,12 +157,22 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=
     for attempt in range(1, retries + 1):
         try:
             print(f"  HF FLUX attempt {attempt}/{retries}...")
-            result = client.text_to_image(
-                model="black-forest-labs/FLUX.1-schnell",
-                prompt=full_prompt,
-                width=1280, height=720,
+            resp = requests.post(
+                _HF_API_URL,
+                headers={"Authorization": f"Bearer {HF_API_KEY}"},
+                json={
+                    "inputs": full_prompt,
+                    "parameters": {
+                        "width": 1280,
+                        "height": 720,
+                        "negative_prompt": NEGATIVE_PROMPT,
+                    },
+                },
+                verify=False,
+                timeout=120,
             )
-            img = result if isinstance(result, Image.Image) else Image.open(io.BytesIO(result))
+            resp.raise_for_status()
+            img = Image.open(io.BytesIO(resp.content))
             img = img.resize((W, H), Image.LANCZOS)
 
             # Measure size in memory to assess quality
@@ -174,7 +184,7 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=
 
             if size_kb < MIN_QUALITY_KB:
                 print(f" — too small (likely flat/AI), retrying...")
-                time.sleep(8)
+                time.sleep(10)
                 continue
 
             print(f" — {'best so far' if size_kb > best_size else 'keeping previous'}")
@@ -182,17 +192,17 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=
                 best_img  = img
                 best_size = size_kb
 
-            # If we have enough good candidates, stop early
+            # Collect up to `candidates` good results, then return best
             if attempt >= candidates and best_img is not None:
                 break
 
             if attempt < retries:
-                time.sleep(8)
+                time.sleep(10)
 
         except Exception as e:
             print(f"  Error: {e}")
             if attempt < retries:
-                time.sleep(8)
+                time.sleep(10)
 
     if best_img:
         print(f"  Selected best candidate: {best_size:.0f}KB")
