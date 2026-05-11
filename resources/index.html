@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Resources | NicheHubPro — Ebook & App</title>
+  <meta name="description" content="Free tools to support your wellness journey. Download the 30-Day Discipline Reset ebook and get the IdeaFuel habit & focus timer app — both 100% free.">
+  <link rel="canonical" href="https://nichehubpro.com/resources/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .resources-hero {
+      background: var(--dark);
+      padding: 80px 24px 64px;
+      text-align: center;
+    }
+    .resources-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #fff;
+      font-weight: 800;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+    .resources-hero p {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.55);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+    .resource-card {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+    }
+    .resource-card-header {
+      padding: 36px 36px 28px;
+    }
+    .resource-card-body {
+      padding: 0 36px 36px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .resource-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+    .resource-card h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+    .resource-card p {
+      font-size: 0.92rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 28px;
+    }
+    .feature-list li {
+      font-size: 0.85rem;
+      line-height: 1.5;
+      padding: 6px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .feature-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .resource-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 24px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: opacity 0.2s;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .resource-btn:hover { opacity: 0.88; }
+    .resource-btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 24px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-decoration: none;
+      transition: opacity 0.2s;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 10px;
+    }
+    .resource-btn-secondary:hover { opacity: 0.75; }
+
+    /* Ebook card — dark */
+    .card-ebook { background: #080C18; }
+    .card-ebook .resource-tag { background: rgba(0,230,118,0.1); color: #00E676; }
+    .card-ebook h2 { color: #fff; }
+    .card-ebook p { color: rgba(255,255,255,0.55); }
+    .card-ebook .feature-list li { color: rgba(255,255,255,0.7); }
+    .card-ebook .feature-dot { background: #00E676; }
+    .card-ebook .resource-btn { background: #00E676; color: #030508; }
+    .card-ebook .resource-btn-secondary { border: 1px solid rgba(0,230,118,0.2); color: #00E676; }
+
+    /* App card — light */
+    .card-app { background: #fff; border: 1px solid #E5E7EB; }
+    .card-app .resource-tag { background: rgba(107,175,146,0.1); color: var(--green); }
+    .card-app h2 { color: var(--dark); }
+    .card-app p { color: var(--gray); }
+    .card-app .feature-list li { color: #374151; }
+    .card-app .feature-dot { background: var(--green); }
+    .card-app .resource-btn { background: var(--dark); color: #fff; }
+
+    .badge-free {
+      display: inline-block;
+      background: rgba(0,230,118,0.12);
+      color: #00E676;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .card-app .badge-free { background: rgba(107,175,146,0.12); color: var(--green); }
+  </style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">NicheHub<span>Pro</span></a>
+    <div class="nav-links">
+      <a href="/mental-wellness/">Mental Wellness</a>
+      <a href="/productivity/">Productivity</a>
+      <a href="/healthy-lifestyle/">Healthy Lifestyle</a>
+      <a href="/resources/" class="active">Resources</a>
+      <a href="/about/" class="nav-cta">Start Here</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-mobile" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="/mental-wellness/">Mental Wellness</a>
+    <a href="/productivity/">Productivity</a>
+    <a href="/healthy-lifestyle/">Healthy Lifestyle</a>
+    <a href="/resources/">Resources</a>
+    <a href="/about/">About</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<div class="resources-hero">
+  <div class="hero-badge" style="margin-bottom:20px;">100% Free &middot; No Signup Required</div>
+  <h1>Free Tools for Your<br>Wellness Journey</h1>
+  <p>An interactive ebook and a habit tracking app — both free, both built around the same goal: helping you build lasting discipline.</p>
+</div>
+
+<!-- RESOURCE CARDS -->
+<div class="resources-grid">
+
+  <!-- EBOOK CARD -->
+  <div class="resource-card card-ebook">
+    <div class="resource-card-header">
+      <span class="resource-tag">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Free Ebook
+      </span>
+      <div style="font-size:2.2rem;margin-bottom:12px;">📖</div>
+      <h2>30-Day Discipline Reset<span class="badge-free">Free</span></h2>
+    </div>
+    <div class="resource-card-body">
+      <p>A structured guide to closing the gap between knowing and doing. Identity, environment, and momentum — the three foundations of lasting change.</p>
+      <ul class="feature-list">
+        <li><span class="feature-dot"></span>20 interactive pages with exercises</li>
+        <li><span class="feature-dot"></span>Reflection prompts & 30-day tracker</li>
+        <li><span class="feature-dot"></span>Read in browser or export as PDF</li>
+        <li><span class="feature-dot"></span>No email required</li>
+      </ul>
+      <a href="/ebook/" class="resource-btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 2v14M5 9l7 7 7-7"/><path d="M3 21h18"/></svg>
+        Read the Ebook Free
+      </a>
+      <a href="/ebook/" class="resource-btn-secondary">Open in browser &rarr;</a>
+    </div>
+  </div>
+
+  <!-- APP CARD -->
+  <div class="resource-card card-app">
+    <div class="resource-card-header">
+      <span class="resource-tag">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-5h2v2h-2zm0-8h2v6h-2z"/></svg>
+        Android App
+      </span>
+      <div style="font-size:2.2rem;margin-bottom:12px;">⚡</div>
+      <h2>IdeaFuel: Habit & Focus Timer<span class="badge-free" style="background:rgba(107,175,146,0.12);color:var(--green);">Free</span></h2>
+    </div>
+    <div class="resource-card-body">
+      <p>Track your daily habits, run Pomodoro focus sessions, and build streaks that stick. The companion app to the 30-Day Discipline Reset.</p>
+      <ul class="feature-list">
+        <li><span class="feature-dot"></span>Pomodoro timer with custom intervals</li>
+        <li><span class="feature-dot"></span>Daily habit tracker with streaks</li>
+        <li><span class="feature-dot"></span>Progress dashboard</li>
+        <li><span class="feature-dot"></span>Free on Android</li>
+      </ul>
+      <a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener noreferrer" class="resource-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.006A1 1 0 0118.5 12a1 1 0 01-.802.993l-1.497.866-2.302-2.302 2.302-2.302 1.497.866zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.634z"/></svg>
+        Get it on Google Play
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- BOTTOM CTA -->
+<section class="section section-green" style="padding:56px 24px;">
+  <div class="container" style="max-width:580px;text-align:center;">
+    <h2 style="font-size:1.6rem;font-weight:800;color:var(--dark);margin-bottom:12px;">Start your reset today.</h2>
+    <p style="font-size:0.98rem;color:var(--green-dk);line-height:1.8;margin-bottom:28px;">Read the ebook, track your habits in the app. Both free, both built to help you follow through.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="/ebook/" class="btn">Read the Ebook &rarr;</a>
+      <a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Download the App</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="/about/">About</a>
+      <span class="sep">|</span>
+      <a href="/contact/">Contact</a>
+      <span class="sep">|</span>
+      <a href="/privacy/">Privacy Policy</a>
+      <span class="sep">|</span>
+      <a href="/disclaimer/">Disclaimer</a>
+      <span class="sep">|</span>
+      <a href="/terms/">Terms of Service</a>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 NicheHubPro. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script defer src="../script.js"></script>
+</body>
+</html>
