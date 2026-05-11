@@ -13,7 +13,8 @@ except ImportError:
 if not MAKE_PINTEREST_WEBHOOK:
     print("MAKE_PINTEREST_WEBHOOK not configured — skipping."); sys.exit(0)
 
-SITE_URL = "https://nichehubpro.com"
+SITE_URL    = "https://nichehubpro.com"
+RAW_URL     = "https://raw.githubusercontent.com/frenezashaco-debug/nichehubpro/main"
 BOARD_IDS = {
     "Mental Wellness":   "1135118349771004496",
     "Productivity":      "1135118349771004499",
@@ -46,9 +47,9 @@ if not pins:
 
 # ── Build payload ──────────────────────────────────────────────────────────────
 pin_images = [
-    f"{SITE_URL}/images/{slug}.jpg",
-    f"{SITE_URL}/images/{slug}-sec1.webp",
-    f"{SITE_URL}/images/{slug}-sec3.webp",
+    f"{RAW_URL}/images/{slug}.jpg",
+    f"{RAW_URL}/images/{slug}-sec1.webp",
+    f"{RAW_URL}/images/{slug}-sec3.webp",
 ]
 
 enriched_pins = []
