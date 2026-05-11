@@ -193,7 +193,28 @@
 
 <script defer src="articles.js"></script>
 <script defer src="script.js"></script>
-<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<script>
+(function(){
+  var loaded = false;
+  function loadSib(){
+    if(loaded) return; loaded = true;
+    var s = document.createElement('script');
+    s.src = 'https://sibforms.com/forms/end-form/build/main.js';
+    document.body.appendChild(s);
+  }
+  // Load on interaction with the form
+  document.addEventListener('DOMContentLoaded', function(){
+    var input = document.querySelector('#sib-form input[type="email"]');
+    if(input){ input.addEventListener('focus', loadSib, {once:true}); }
+    // Also load when newsletter section scrolls into view
+    var section = document.querySelector('.newsletter');
+    if(section && 'IntersectionObserver' in window){
+      new IntersectionObserver(function(e,o){ if(e[0].isIntersecting){ loadSib(); o.disconnect(); }},
+        {rootMargin:'300px'}).observe(section);
+    }
+  });
+})();
+</script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Update article count in stats bar
@@ -203,9 +224,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // Render all articles as consistent horizontal featured cards
   const grid = document.getElementById('latest-grid');
   if (grid && ARTICLES.length > 0) {
-    grid.innerHTML = ARTICLES.slice(0, 6).map(a => `
+    grid.innerHTML = ARTICLES.slice(0, 6).map((a, i) => `
       <div class="card card-featured">
-        <picture><source srcset="${a.image.replace(".jpg",".webp")}" type="image/webp"><img src="${a.image}" alt="${a.alt || a.title}" class="card-featured-img" loading="lazy"></picture>
+        <picture><source srcset="${a.image.replace(".jpg",".webp")}" type="image/webp"><img src="${a.image}" alt="${a.alt || a.title}" class="card-featured-img" ${i === 0 ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"'}></picture>
         <div class="card-body">
           <span class="card-tag">${a.category}</span>
           <h3 style="font-size:1.2rem;line-height:1.35;"><a href="articles/${a.slug}.html">${a.title}</a></h3>
