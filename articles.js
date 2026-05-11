@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-reduce-anxiety-naturally",
+    "title": "5 Ways to Reduce Anxiety Naturally: Your Breakthrough to Mental Peace",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Anxiety doesn't have to control your life, and you don't need pills to find relief. Real people are discovering how to reduce anxiety naturally by making s",
+    "image": "images/how-to-reduce-anxiety-naturally.jpg",
+    "alt": "Woman meditating peacefully on yoga mat to reduce anxiety naturally",
+    "pins": [
+      {
+        "title": "5 Ways to Reduce Anxiety Naturally Without Medication",
+        "description": "Discover science-backed methods to reduce anxiety naturally, including breathing techniques, movement, sleep optimization, and grounding exercises. Build daily habits that calm your nervous system and keep anxiety from returning. Start with one small change today."
+      },
+      {
+        "title": "Stop Anxiety Before It Spirals: Natural Relief Techniques That Actually Work",
+        "description": "Your anxiety doesn't need medication to improve. Learn the 4-7-8 breathing method, grounding techniques, and daily habits that reduce anxiety by up to 40% in just 4-8 weeks. Real people are finding natural anxiety relief through these proven practices."
+      },
+      {
+        "title": "Daily Habits That Reduce Anxiety Naturally and Keep It From Returning",
+        "description": "Stop managing anxiety after it hits. Start preventing it with daily habits that regulate your nervous system: sleep optimization, movement, breathwork, and nutrition changes. Build your foundation for natural anxiety relief that lasts."
+      }
+    ]
+  },
+  {
     "slug": "best-morning-habits-for-more-energy",
     "title": "7 Best Morning Habits for More Energy That Actually Stick (No Willpower Required)",
     "category": "Healthy Lifestyle",
