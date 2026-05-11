@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "emotional-exhaustion-vs-burnout",
+    "title": "3 Key Differences: Emotional Exhaustion vs Burnout and Why It Matters",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Emotional exhaustion vs burnout are two terms people often use interchangeably, but they're not the same thing. Understanding the difference could be the k",
+    "image": "images/emotional-exhaustion-vs-burnout.jpg",
+    "alt": "Woman resting head exhausted at desk with emotional exhaustion symptoms",
+    "pins": [
+      {
+        "title": "Emotional Exhaustion vs Burnout: Know the Difference to Recover",
+        "description": "Emotional exhaustion and burnout aren't the same thing, and knowing the difference changes everything about your recovery. Learn the three critical distinctions, spot the early warning signs, and discover the daily habits that prevent burnout before it takes over your life. Your comeback starts here."
+      },
+      {
+        "title": "Stop Confusing Emotional Exhaustion With Just Being Tired",
+        "description": "That persistent exhaustion isn't fixed by a good night's sleep. Learn what emotional exhaustion really is, how it differs from burnout, and why recognizing the difference now could save you months of struggling. Practical recovery strategies that actually work included."
+      },
+      {
+        "title": "Emotional Exhaustion Recovery: 5 Daily Habits That Work",
+        "description": "Tired of feeling drained no matter how much you rest? Emotional exhaustion requires daily restoration habits, not just occasional breaks. Discover the five science-backed daily practices that rebuild your emotional reserves and prevent burnout from taking root. Start this week."
+      }
+    ]
+  },
+  {
     "slug": "how-to-reduce-anxiety-naturally",
     "title": "5 Ways to Reduce Anxiety Naturally: Your Breakthrough to Mental Peace",
     "category": "Mental Wellness",
