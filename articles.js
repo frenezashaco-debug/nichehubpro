@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "time-blocking-for-beginners",
+    "title": "5 Time Blocking for Beginners: The Simple Productivity System That Finally Works",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Time blocking for beginners transforms how you work by dividing your day into dedicated chunks of focused time. Studies show that workers who use time bloc",
+    "image": "images/time-blocking-for-beginners.jpg",
+    "alt": "Young woman writing time blocking schedule in planner at desk",
+    "pins": [
+      {
+        "title": "How to Use Time Blocking for Beginners: Complete Daily Schedule Template",
+        "description": "Learn the exact time blocking schedule system that helped thousands of professionals get more done in less time. Start with just 90 minutes tomorrow and watch your productivity transform. No complex apps needed. Simple, proven, works immediately."
+      },
+      {
+        "title": "Stop Wasting Hours: Time Blocking for Beginners That Actually Sticks",
+        "description": "Tired of busy days with zero accomplishments? Time blocking divides your day into focused work chunks so your brain can actually concentrate. Discover why this simple method works when everything else fails. Start your first block today."
+      },
+      {
+        "title": "Try This 5-Minute Daily Time Blocking Habit (Productivity Game Changer)",
+        "description": "The secret to maintaining a time blocking schedule isn't willpower, it's a five-minute daily review ritual. Learn exactly what to track, why it matters, and how to adjust your blocks based on real patterns. Build a system that lasts."
+      }
+    ]
+  },
+  {
     "slug": "emotional-exhaustion-vs-burnout",
     "title": "3 Key Differences: Emotional Exhaustion vs Burnout and Why It Matters",
     "category": "Mental Wellness",
