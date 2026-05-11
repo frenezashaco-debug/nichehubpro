@@ -76,5 +76,5 @@ jobs:
           curl -s -X POST "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" \
             -H "Authorization: Bearer ${CF_API_TOKEN}" \
             -H "Content-Type: application/json" \
-            --data '{"files":["https://nichehubpro.com/articles.js","https://nichehubpro.com/sitemap.xml","https://nichehubpro.com/","https://nichehubpro.com/mental-wellness/","https://nichehubpro.com/productivity/","https://nichehubpro.com/healthy-lifestyle/"]}' \
+            --data '{"purge_everything":true}' \
             | python3 -c "import sys,json; r=json.load(sys.stdin); print('Cache purged OK' if r.get('success') else f'Purge failed: {r}')"
