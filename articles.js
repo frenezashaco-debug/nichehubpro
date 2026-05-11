@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "best-morning-habits-for-more-energy",
+    "title": "7 Best Morning Habits for More Energy That Actually Stick (No Willpower Required)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "The best morning habits for more energy aren't complicated, but they do require one thing: starting before you feel ready. Most people wake up depleted, re",
+    "image": "images/best-morning-habits-for-more-energy.jpg",
+    "alt": "Woman drinking water at sunrise in kitchen for morning energy routine",
+    "pins": [
+      {
+        "title": "7 Best Morning Habits for More Energy (Science-Backed Methods)",
+        "description": "Tired all day? These 7 proven morning habits boost your energy from the first hour awake. Water, sunlight, movement, and protein transform your entire day without caffeine crashes. Start with just one habit for 7 days and watch your afternoon energy completely change. Simple routines that actually work."
+      },
+      {
+        "title": "Stop Waking Up Exhausted: The Morning Energy Routine That Works",
+        "description": "Why you feel tired even after 8 hours of sleep (and how to fix it). Your first 60 minutes determine your entire day's energy level. This science-backed morning routine eliminates the 2 PM crash, boosts focus, and makes you feel genuinely alive again. No willpower required, just simple daily habits."
+      },
+      {
+        "title": "Try This Morning Energy Routine for Stable Energy All Day",
+        "description": "Build your morning energy routine step by step in just 10 weeks. Start with water, add sunlight, then movement, then breakfast. These 7 habits work together to rewire your nervous system and create lasting energy. Real people, real results. Transform your mornings and watch your entire life change."
+      }
+    ]
+  },
+  {
     "slug": "why-you-feel-tired-all-the-time",
     "title": "5 Reasons Why You Feel Tired All the Time (And How to Finally Get Your Energy Back)",
     "category": "Healthy Lifestyle",
