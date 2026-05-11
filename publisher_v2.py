@@ -715,9 +715,16 @@ def update_sitemap(articles):
     for loc, freq, pri in static_pages:
         urls.append(f"  <url>\n    <loc>{loc}</loc>\n    <changefreq>{freq}</changefreq>\n    <priority>{pri}</priority>\n  </url>")
 
+    today = __import__('datetime').date.today().isoformat()
     for a in articles:
         loc = f"{SITE}/articles/{a['slug']}.html"
-        urls.append(f"  <url>\n    <loc>{loc}</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>")
+        date = a.get('date', '')
+        try:
+            import datetime
+            lastmod = datetime.datetime.strptime(date, "%B %Y").strftime("%Y-%m") + f"-01"
+        except Exception:
+            lastmod = today
+        urls.append(f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{lastmod}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>")
 
     xml = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
