@@ -586,6 +586,16 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category):
     generate_cover(data["title"], category, cover_path, custom_prompt=cover_prompt)
     print(f"Cover saved: {cover_filename}")
 
+    # Convert cover JPG to WebP so <picture> tag always has both formats
+    try:
+        from PIL import Image as _PIL
+        cover_webp_path = cover_path.replace(".jpg", ".webp")
+        _img = _PIL.open(cover_path)
+        _img.save(cover_webp_path, "WEBP", quality=85, method=6)
+        print(f"Cover WebP saved: {os.path.basename(cover_webp_path)}")
+    except Exception as _e:
+        print(f"WebP conversion skipped: {_e}")
+
     # Generate section images (WebP, contextual per section) — delay between calls
     section_images = {}
     for call_num, img_data in enumerate(data.get("section_image_prompts", [])):
