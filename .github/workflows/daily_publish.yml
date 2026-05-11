@@ -63,3 +63,18 @@ jobs:
         run: |
           sleep 30
           python auto_pins.py
+
+      - name: Purge Cloudflare cache
+        env:
+          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        run: |
+          if [ -z "$CF_ZONE_ID" ] || [ -z "$CF_API_TOKEN" ]; then
+            echo "CF_ZONE_ID or CF_API_TOKEN not set — skipping cache purge."
+            exit 0
+          fi
+          curl -s -X POST "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" \
+            -H "Authorization: Bearer ${CF_API_TOKEN}" \
+            -H "Content-Type: application/json" \
+            --data '{"files":["https://nichehubpro.com/articles.js","https://nichehubpro.com/sitemap.xml","https://nichehubpro.com/","https://nichehubpro.com/mental-wellness/","https://nichehubpro.com/productivity/","https://nichehubpro.com/healthy-lifestyle/"]}' \
+            | python3 -c "import sys,json; r=json.load(sys.stdin); print('Cache purged OK' if r.get('success') else f'Purge failed: {r}')"
