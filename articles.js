@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "why-you-have-no-motivation-anymore",
+    "title": "5 Reasons Why You Have No Motivation Anymore (And How to Get It Back)",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Why you have no motivation anymore might feel like a personal failure, but it's actually a signal your mind and body are sending you.",
+    "image": "images/why-you-have-no-motivation-anymore.jpg",
+    "alt": "Woman looking tired and unmotivated sitting by window with tea",
+    "pins": [
+      {
+        "title": "5 Real Reasons Why You Have No Motivation Anymore (Fix This Today)",
+        "description": "Lost your motivation? You're not lazy. Discover the 5 hidden causes of motivation loss, including burnout, perfectionism, and dopamine depletion. Learn exactly how to rebuild your drive with science-backed strategies. Start today."
+      },
+      {
+        "title": "Stop Ignoring These 5 Signs You've Lost Your Motivation",
+        "description": "Procrastinating on things you love? Feeling empty despite success? These are signs you've lost motivation and need to recover. Understand the warning signals your body sends before motivation completely disappears. Take action now."
+      },
+      {
+        "title": "Try This: 5 Daily Habits to Rebuild Motivation Fast",
+        "description": "Motivation rebuilds through small daily wins, not big pushes. Learn the exact five habits that reset your dopamine system and bring your drive back. Start with just one habit this week and watch your energy return."
+      }
+    ]
+  },
+  {
     "slug": "best-foods-for-focus-and-concentration",
     "title": "7 Best Foods for Focus and Concentration That Actually Boost Brain Power",
     "category": "Healthy Lifestyle",
