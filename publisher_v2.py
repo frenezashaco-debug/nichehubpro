@@ -311,6 +311,16 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
         if i == 1:
             sections_html += '\n      <div class="ad-slot ad-slot-banner">Advertisement</div>\n'
 
+    # Fix any bare-slug internal links the LLM wrote as href="/slug" → href="/articles/slug.html"
+    _TOP_LEVEL = {'mental-wellness','productivity','healthy-lifestyle','resources','about',
+                  'contact','privacy','disclaimer','terms','ebook','all-articles'}
+    def _fix_link(m):
+        slug_val = m.group(1).strip('/')
+        if slug_val.split('/')[0] in _TOP_LEVEL or slug_val.endswith('.html') or slug_val.startswith('articles/'):
+            return m.group(0)
+        return f'href="/articles/{slug_val}.html"'
+    sections_html = re.sub(r'href="/([^"]+)"', _fix_link, sections_html)
+
     # Build FAQ HTML
     faq_html = ""
     for f in faq_items:
