@@ -116,6 +116,22 @@ a:hover { color: var(--green-dk); }
 .nav-mobile a[href*="productivity"] { color: #E8925A; font-weight: 700; }
 .nav-mobile a[href*="healthy-lifestyle"] { color: var(--green); font-weight: 700; }
 
+.nav-links a.nav-resources {
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 0.85rem;
+  border: 1.5px solid var(--border);
+  padding: 5px 13px;
+  border-radius: var(--radius-pill);
+  transition: background var(--trans), border-color var(--trans), color var(--trans);
+}
+.nav-links a.nav-resources:hover {
+  background: var(--dark);
+  border-color: var(--dark);
+  color: var(--white);
+}
+.nav-mobile a[href*="resources"] { font-weight: 600; }
+
 .nav-links a.nav-cta {
   background: var(--green);
   color: var(--white);
