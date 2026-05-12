@@ -37,7 +37,10 @@ NEGATIVE_PROMPT = (
     "AI generated look, digital art, illustration, painting, CGI render, stock photo, "
     "model pose, beauty campaign, magazine cover, symmetrical face, flawless complexion, "
     "studio lighting, rim lighting, beauty dish, smooth skin, airbrushed, retouched, "
-    "watermark, text, logo, signature, blurry face, anime, cartoon, drawing"
+    "watermark, text, logo, signature, blurry face, anime, cartoon, drawing, "
+    "extra fingers, missing fingers, six fingers, four fingers, malformed hands, "
+    "extra hands, three hands, fused fingers, distorted hands, deformed fingers, "
+    "extra limbs, extra arms, floating hands, unnatural hands, bad anatomy"
 )
 # Font paths — Windows first, Linux fallback
 def _find_font(win_path, linux_names):

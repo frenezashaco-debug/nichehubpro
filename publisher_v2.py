@@ -201,7 +201,10 @@ _HF_NEGATIVE = (
     "AI generated look, digital art, illustration, painting, CGI render, stock photo, "
     "model pose, beauty campaign, symmetrical face, flawless complexion, "
     "studio lighting, rim lighting, smooth skin, airbrushed, retouched, "
-    "watermark, text, logo, anime, cartoon"
+    "watermark, text, logo, anime, cartoon, "
+    "extra fingers, missing fingers, six fingers, four fingers, malformed hands, "
+    "extra hands, three hands, fused fingers, distorted hands, deformed fingers, "
+    "extra limbs, extra arms, floating hands, unnatural hands, bad anatomy"
 )
 
 _HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell"
