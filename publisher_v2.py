@@ -446,7 +446,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
       <span class="article-tag">{category}</span>
       <h1>{title}</h1>
       <div class="article-meta">
-        <span>📅 April 2026</span>
+        <span>📅 {today_iso}</span>
         <span>⏱ <span id="read-time">8</span> min read</span>
         <span>✍️ NicheHubPro Editorial</span>
       </div>
@@ -487,6 +487,31 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
       <div class="faq-section">
         <h2>Frequently Asked Questions</h2>
         {faq_html}
+      </div>
+
+      <!-- FREE RESOURCES CTA -->
+      <div style="background:var(--dark);border-radius:16px;padding:28px;margin:40px 0;display:flex;gap:20px;flex-wrap:wrap;align-items:center;justify-content:space-between;">
+        <div style="flex:1;min-width:200px;">
+          <span style="font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#00E676;">Free Resources</span>
+          <h3 style="color:#fff;font-size:1.1rem;font-weight:800;margin:8px 0 6px;line-height:1.3;">Put this into practice today.</h3>
+          <p style="color:rgba(255,255,255,0.5);font-size:0.82rem;line-height:1.65;margin:0;">Our free ebook and habit tracker app were built to help you apply what you just read. No cost, no signup required.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;min-width:210px;">
+          <a href="/ebook/" style="display:flex;align-items:center;gap:10px;background:rgba(0,230,118,0.1);border:1px solid rgba(0,230,118,0.2);border-radius:10px;padding:10px 14px;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(0,230,118,0.18)'" onmouseout="this.style.background='rgba(0,230,118,0.1)'">
+            <span style="font-size:1.4rem;">📖</span>
+            <div>
+              <div style="font-size:0.78rem;font-weight:700;color:#00E676;">Free Ebook</div>
+              <div style="font-size:0.72rem;color:rgba(255,255,255,0.45);">30-Day Discipline Reset</div>
+            </div>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:10px;background:rgba(107,175,146,0.1);border:1px solid rgba(107,175,146,0.2);border-radius:10px;padding:10px 14px;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(107,175,146,0.18)'" onmouseout="this.style.background='rgba(107,175,146,0.1)'">
+            <span style="font-size:1.4rem;">⚡</span>
+            <div>
+              <div style="font-size:0.78rem;font-weight:700;color:var(--green);">Free Android App</div>
+              <div style="font-size:0.72rem;color:rgba(255,255,255,0.45);">IdeaFuel: Habit &amp; Focus Timer</div>
+            </div>
+          </a>
+        </div>
       </div>
 
       <h2>Where to Go From Here</h2>

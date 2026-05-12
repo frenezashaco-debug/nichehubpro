@@ -12,6 +12,17 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="../style.css">
+
+<style>
+.sort-bar { background: var(--bg); border-bottom: 1px solid var(--border); }
+.sort-bar-inner { max-width: 1200px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.sort-label { font-size: 0.78rem; font-weight: 600; color: var(--gray); white-space: nowrap; }
+.sort-btns { display: flex; gap: 6px; }
+.sort-btn { font-family: Poppins, sans-serif; font-size: 0.78rem; font-weight: 600; padding: 5px 14px; border-radius: 100px; border: 1.5px solid var(--border); background: transparent; color: var(--gray); cursor: pointer; transition: all 0.18s; }
+.sort-btn:hover { border-color: var(--green); color: var(--green); }
+.sort-btn.active { background: var(--dark); border-color: var(--dark); color: #fff; }
+.sort-count { font-size: 0.75rem; color: var(--gray); margin-left: auto; }
+</style>
 </head>
 <body>
 
@@ -53,6 +64,18 @@
   </div>
 </div>
 
+
+<div class="sort-bar">
+  <div class="sort-bar-inner">
+    <span class="sort-label">Sort by:</span>
+    <div class="sort-btns">
+      <button class="sort-btn active" data-sort="newest">Newest</button>
+      <button class="sort-btn" data-sort="oldest">Oldest</button>
+      <button class="sort-btn" data-sort="az">A &ndash; Z</button>
+    </div>
+    <span class="sort-count" id="article-count"></span>
+  </div>
+</div>
 <div class="container" style="padding-top:28px;padding-bottom:0;">
   <div class="ad-slot ad-slot-banner">Advertisement</div>
 </div>
@@ -109,13 +132,28 @@
   document.querySelectorAll('.cat-tab').forEach(tab => {
     tab.addEventListener('click', function() { window.location.href = this.dataset.url; });
   });
+  document.querySelectorAll('.sort-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      renderPage(1, this.dataset.sort);
+    });
+  });
   document.addEventListener('DOMContentLoaded', function() {
     const PER_PAGE = 12;
-    const articles = ARTICLES.filter(a => a.cat_slug === 'productivity');
+    const allArticles = ARTICLES.filter(a => a.cat_slug === 'productivity');
     const grid  = document.getElementById('article-grid');
     const empty = document.getElementById('empty-state');
     const pgEl  = document.getElementById('pagination');
-    if (!articles.length) { grid.style.display='none'; empty.style.display='block'; return; }
+    const countEl = document.getElementById('article-count');
+    if (!allArticles.length) { grid.style.display='none'; empty.style.display='block'; return; }
+
+    function sorted(articles, mode) {
+      const arr = articles.slice();
+      if (mode === 'oldest') return arr.reverse();
+      if (mode === 'az') return arr.sort((a,b) => a.title.localeCompare(b.title));
+      return arr; // newest (default, already newest-first in articles.js)
+    }
 
     function cardHTML(a) {
       return `<div class="card">
@@ -130,11 +168,14 @@
       </div>`;
     }
 
-    function render(page) {
+    window.renderPage = function(page, sortMode) {
+      sortMode = sortMode || document.querySelector('.sort-btn.active')?.dataset.sort || 'newest';
+      const articles = sorted(allArticles, sortMode);
       const total = articles.length;
       const pages = Math.ceil(total / PER_PAGE);
       const start = (page - 1) * PER_PAGE;
       grid.innerHTML = articles.slice(start, start + PER_PAGE).map(cardHTML).join('');
+      if (countEl) countEl.textContent = total + ' article' + (total !== 1 ? 's' : '');
       window.scrollTo({ top: 0, behavior: 'smooth' });
       let html = `<button ${page===1?'disabled':''} onclick="renderPage(${page-1})">&laquo; Prev</button>`;
       for (let i = 1; i <= pages; i++) {
@@ -145,12 +186,10 @@
         html += `<button class="${i===page?'active':''}" onclick="renderPage(${i})">${i}</button>`;
       }
       html += `<button ${page===pages?'disabled':''} onclick="renderPage(${page+1})">Next &raquo;</button>`;
-      html += `<span class="pg-info">Page ${page} of ${pages} &mdash; ${total} articles</span>`;
+      html += `<span class="pg-info">Page ${page} of ${pages}</span>`;
       pgEl.innerHTML = html;
-    }
-
-    window.renderPage = render;
-    render(1);
+    };
+    renderPage(1);
   });
 </script>
 </body>
