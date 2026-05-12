@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "healthy-sleep-habits-that-improve-energy",
+    "title": "5 Healthy Sleep Habits That Improve Energy and Transform Your Days",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Healthy sleep habits that improve energy are the foundation of a life that actually feels good. You already know sleep matters, but what if I told you that",
+    "image": "images/healthy-sleep-habits-that-improve-energy.jpg",
+    "alt": "Woman peacefully sleeping in bed with healthy sleep habits improvement",
+    "pins": [
+      {
+        "title": "5 Sleep Habits That Boost Daytime Energy (No Coffee Needed)",
+        "description": "Discover healthy sleep habits that improve energy and transform your afternoons. Science-backed tips to fix exhaustion, sleep deeper, and wake genuinely refreshed. Stop hitting that 3 p.m. wall and start living with sustained energy. Read the full guide on our wellness blog."
+      },
+      {
+        "title": "Stop Exhaustion: The Sleep Habits Energy Crisis Solution",
+        "description": "Tired of feeling drained all day? Your poor sleep habits are stealing your energy. Learn the five game-changing techniques that restored energy to thousands of readers. A consistent sleep schedule, the right bedroom temperature, and smart timing changes create lasting results. Discover what actually works."
+      },
+      {
+        "title": "Better Sleep Tips That Give You Afternoon Energy Back",
+        "description": "Healthy sleep habits that improve energy are simpler than you think. No supplements. No expensive gadgets. Just five proven routines that work within 7 days. Transform your sleep quality and feel the energy difference during your day. Start tonight with one small habit."
+      }
+    ]
+  },
+  {
     "slug": "deep-work-vs-multitasking",
     "title": "3 Reasons Deep Work vs Multitasking Will Transform Your Focus Forever",
     "category": "Productivity",
