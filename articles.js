@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-improve-emotional-resilience",
+    "title": "5 Ways to Improve Emotional Resilience After Hard Times (Rebuild Your Strength)",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "How to improve emotional resilience is the question nobody asks until life breaks them down.",
+    "image": "images/how-to-improve-emotional-resilience.jpg",
+    "alt": "Young woman holding tea, reflective moment building emotional resilience",
+    "pins": [
+      {
+        "title": "5 Ways to Improve Emotional Resilience Fast (Proven Methods)",
+        "description": "Learn how to improve emotional resilience with science-backed strategies. Build mental strength after hard times through acceptance, self-compassion, boundaries, and daily habits. Your breakthrough starts with one small practice today. Build unstoppable emotional strength."
+      },
+      {
+        "title": "Stop Letting Setbacks Destroy Your Emotional Resilience",
+        "description": "Struggling to bounce back from hard times? Discover why your emotional resilience collapses under pressure and exactly how to rebuild it. Real resilience means feeling your emotions fully while staying grounded. Master these five practices and watch your recovery time drop dramatically."
+      },
+      {
+        "title": "Try This Daily Habit to Build Emotional Resilience (5-Minute Practice)",
+        "description": "Build emotional resilience in just five minutes daily. This proven practice rewires your nervous system to handle stress better and bounce back faster. Small daily habits create permanent nervous system change. Start your resilience journey today with one tiny action."
+      }
+    ]
+  },
+  {
     "slug": "why-you-have-no-motivation-anymore",
     "title": "5 Reasons Why You Have No Motivation Anymore (And How to Get It Back)",
     "category": "Mental Wellness",
