@@ -118,19 +118,20 @@ a:hover { color: var(--green-dk); }
 
 .nav-links a.nav-resources {
   color: var(--dark);
-  font-weight: 600;
-  font-size: 0.85rem;
-  border: 1.5px solid var(--border);
-  padding: 5px 13px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  border: 1.5px solid rgba(30,42,47,0.25);
+  padding: 5px 14px;
   border-radius: var(--radius-pill);
   transition: background var(--trans), border-color var(--trans), color var(--trans);
 }
-.nav-links a.nav-resources:hover {
+.nav-links a.nav-resources:hover,
+.nav-links a.nav-resources.active {
   background: var(--dark);
   border-color: var(--dark);
-  color: var(--white);
+  color: #fff;
 }
-.nav-mobile a[href*="resources"] { font-weight: 600; }
+.nav-mobile a[href*="resources"] { font-weight: 700; color: var(--dark); }
 
 .nav-links a.nav-cta {
   background: var(--green);
