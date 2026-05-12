@@ -47,6 +47,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://nichehubpro.com/articles/best-foods-for-focus-and-concentration.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nichehubpro.com/articles/healthy-sleep-habits-that-improve-energy.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -437,10 +443,4 @@
     <priority>0.8</priority>
   </url>
 
-  <url>
-    <loc>https://nichehubpro.com/resources/</loc>
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
 </urlset>

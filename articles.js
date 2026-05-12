@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "best-foods-for-focus-and-concentration",
+    "title": "7 Best Foods for Focus and Concentration That Actually Boost Brain Power",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Your brain is hungry, and what you feed it matters more than you think. The best foods for focus and concentration can transform your ability to work, stud",
+    "image": "images/best-foods-for-focus-and-concentration.jpg",
+    "alt": "Woman holding bowl of blueberries and almonds at desk focusing on breakfast",
+    "pins": [
+      {
+        "title": "7 Best Foods for Focus That Boost Brain Power (Science-Backed)",
+        "description": "Tired of afternoon brain fog and scattered thoughts? These 7 best foods for focus and concentration actually work. Salmon, blueberries, almonds, and green tea stabilize your focus for hours without the crash. Learn which combinations keep your brain sharp all day and why they work faster than you think."
+      },
+      {
+        "title": "Stop Brain Fog Fast: Foods That Help You Concentrate Better",
+        "description": "Brain fog isn't laziness, it's malnutrition. Discover what foods help you concentrate when you need it most. From eggs to dark chocolate, these brain foods trigger focus within 30 minutes. Real solutions for real focus problems, backed by neuroscience."
+      },
+      {
+        "title": "Try This: Best Brain Foods for Instant Mental Clarity Today",
+        "description": "Ready to upgrade your focus? These best foods for focus and concentration are simple, delicious, and scientifically proven to work. No supplements, no hacks, just real nutrition that transforms your ability to concentrate. Start with one meal and notice the difference by 10am."
+      }
+    ]
+  },
+  {
     "slug": "healthy-sleep-habits-that-improve-energy",
     "title": "5 Healthy Sleep Habits That Improve Energy and Transform Your Days",
     "category": "Healthy Lifestyle",
