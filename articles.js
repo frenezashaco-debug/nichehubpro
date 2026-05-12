@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "deep-work-vs-multitasking",
+    "title": "3 Reasons Deep Work vs Multitasking Will Transform Your Focus Forever",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Deep work vs multitasking is not a choice between two equal options. When you multitask, your brain loses 40% of its productivity, according to research fr",
+    "image": "images/deep-work-vs-multitasking.jpg",
+    "alt": "Woman focusing deeply at desk during deep work session",
+    "pins": [
+      {
+        "title": "How to Stop Multitasking and Reclaim 10+ Hours Weekly",
+        "description": "Most people waste 40% of their productivity switching between tasks constantly. Discover why deep work beats multitasking every single time and how to build a sustainable single tasking habit in just 30 days. Science-backed strategies inside."
+      },
+      {
+        "title": "Stop Multitasking Now: The Single Tasking Benefits That Transform Your Brain",
+        "description": "Your brain cannot truly multitask no matter how good you think you are at it. Learn the neuroscience behind deep work vs multitasking and practical daily habits that boost focus, reduce stress, and triple your meaningful output."
+      },
+      {
+        "title": "Try This 45-Minute Deep Work Habit That Rewires Your Brain Forever",
+        "description": "Tired of feeling busy but unproductive? Single tasking benefits emerge within one week of consistent practice. Start with just one focused work block daily and watch your clarity, creativity, and accomplishment skyrocket. Habit-building framework included."
+      }
+    ]
+  },
+  {
     "slug": "time-blocking-for-beginners",
     "title": "5 Time Blocking for Beginners: The Simple Productivity System That Finally Works",
     "category": "Productivity",
