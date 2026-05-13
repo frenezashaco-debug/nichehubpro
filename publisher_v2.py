@@ -90,22 +90,22 @@ JSON STRUCTURE:
     {"question": "real Google question 5?", "answer": "short clear useful answer"}
   ],
   "conclusion": "string — 3 short paragraphs. Motivational. Encourages one small action today. Human and warm.",
-  "cover_image_prompt": "string — UNIQUE humanized photo prompt for THIS article. RULES: (1) Subject MUST be a young woman 25-35, OR close-up of hands only, OR environment with no person — NEVER a man. (2) Use candid documentary photography language. (3) Include specific details: hair color/style, exact clothing item, specific object she holds or touches. (4) Include camera style: 'shot on 85mm f/1.8, shallow depth of field, slightly blurred background'. (5) Include 'real skin texture, natural imperfections, no plastic look'. STRUCTURE: 'Candid lifestyle photo: a young woman, [age], [specific location and time of day]. [Hair and clothing details]. [Exact action and emotional expression]. [One specific prop or environmental detail]. [Lighting details]. Shot on 85mm f/1.8, shallow depth of field. Real skin texture, natural imperfections. Photorealistic documentary photography. No text, no logos, no watermarks, no AI look, no man.' FORBIDDEN: man, male, arms crossed, fake smile, stock photo pose, studio lighting, perfect symmetry.",
+  "cover_image_prompt": "string — UNIQUE humanized photo prompt for THIS article. RULES: (1) Subject MUST be a young woman 25-35 shown from shoulders or collarbone up ONLY — NEVER show hands, arms, or any object being held. NEVER a man. (2) Use candid documentary photography language. (3) Include specific details: hair color/style, exact clothing item, emotional expression on her face. (4) Include camera style: 'shot on 85mm f/1.8, shallow depth of field, slightly blurred background'. (5) Include 'real skin texture, natural imperfections, no plastic look'. STRUCTURE: 'Candid lifestyle photo: a young woman, [age], [specific location and time of day]. [Hair and clothing details]. [Exact emotional expression on her face]. [Lighting details]. Shot on 85mm f/1.8, shallow depth of field. Real skin texture, natural imperfections. Photorealistic documentary photography. No text, no logos, no watermarks, no AI look, no man.' FORBIDDEN: man, male, hands, arms, mug, cup, pen, notebook, holding anything, arms crossed, fake smile, stock photo pose, studio lighting, perfect symmetry.",
   "cover_alt_text": "string — short SEO alt text. Format: '[woman/hands/scene] [action] in [setting]'. Max 10 words. Include primary keyword.",
   "section_image_prompts": [
     {
       "section_index": 0,
-      "prompt": "string — UNIQUE humanized photo prompt for section 1 image. RULES: young woman OR hands-only OR environment — NEVER a man. Must be completely different scene from cover. Use candid documentary style with specific details: exact setting, exact clothing, specific object, camera style (50mm or 85mm, f/1.8-2.8, shallow DOF), real skin texture. Tied to section 1 topic. No text, no logos, no man.",
+      "prompt": "string — UNIQUE humanized photo prompt for section 1 image. RULES: young woman shown from shoulders/collarbone up ONLY — NO hands, NO arms, NO objects held. NEVER a man. Must be completely different scene from cover. Use candid documentary style with specific details: exact setting, exact clothing, exact facial expression, camera style (50mm or 85mm, f/1.8-2.8, shallow DOF), real skin texture. Tied to section 1 topic. No text, no logos, no man.",
       "alt_text": "string — 8-10 words describing the scene, include primary keyword"
     },
     {
       "section_index": 2,
-      "prompt": "string — UNIQUE humanized photo prompt for section 3 image. RULES: young woman OR hands-only close-up OR outdoor/indoor environment — NEVER a man. Completely different from cover and section 1. Specific candid moment with exact details. Solution or progress-focused scene. Camera style included. No text, no logos, no man.",
+      "prompt": "string — UNIQUE humanized photo prompt for section 3 image. RULES: young woman shown from shoulders/collarbone up ONLY — NO hands, NO arms, NO objects held. NEVER a man. Completely different from cover and section 1. Specific candid moment with exact facial expression and setting details. Solution or progress-focused scene. Camera style included. No text, no logos, no man.",
       "alt_text": "string — 8-10 words describing the scene, include primary keyword"
     },
     {
       "section_index": 4,
-      "prompt": "string — UNIQUE humanized photo prompt for section 5 image. RULES: young woman OR hands-only OR calm environment — NEVER a man. Different from all above images. Calming, hopeful, empowering candid moment. Specific props, lighting, clothing. Camera style included. No text, no logos, no man.",
+      "prompt": "string — UNIQUE humanized photo prompt for section 5 image. RULES: young woman shown from shoulders/collarbone up ONLY — NO hands, NO arms, NO objects held. NEVER a man. Different from all above images. Calming, hopeful, empowering facial expression. Specific lighting, clothing, background. Camera style included. No text, no logos, no man.",
       "alt_text": "string — 8-10 words describing the scene naturally, include primary keyword"
     }
   ],
@@ -187,7 +187,7 @@ _HF_RULES = (
     "Face: candid, absorbed, or slightly tired expression — NOT a posed smile, NOT a model face, NOT direct eye contact with camera. "
     "A small real-life imperfection is required: a small blemish, under-eye shadow, slight asymmetry, or redness. "
     "Clothing: visibly faded, slightly wrinkled, ordinary everyday fabric — NEVER stylish or tailored. "
-    "Frame: shoulders or collarbone up only — never show chest or body below. "
+    "Frame: shoulders or collarbone up only — never show chest, body below, hands, or arms. NO hands in frame under any circumstance. NO objects being held or touched. "
     "Lighting: flat natural window light or overcast daylight — NO studio rim light, NO beauty dish. "
     "Background: plain and slightly cluttered — NO styled props. "
     "Composition: slightly off-center, imperfect handheld framing — NOT centered, NOT symmetrical. "
@@ -197,6 +197,8 @@ _HF_RULES = (
 )
 
 _HF_NEGATIVE = (
+    "hands, arms, fingers, wrist, palm, fist, holding, mug, cup, coffee, pen, pencil, "
+    "notebook, journal, book, phone, writing, typing, "
     "artificial skin, plastic skin, porcelain skin, glowing skin, perfect skin, doll face, "
     "AI generated look, digital art, illustration, painting, CGI render, stock photo, "
     "model pose, beauty campaign, symmetrical face, flawless complexion, "
