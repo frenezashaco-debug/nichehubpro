@@ -506,8 +506,8 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
               <div style="font-size:0.72rem;color:rgba(255,255,255,0.45);">30-Day Discipline Reset</div>
             </div>
           </a>
-          <a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:10px;background:rgba(107,175,146,0.1);border:1px solid rgba(107,175,146,0.2);border-radius:10px;padding:10px 14px;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(107,175,146,0.18)'" onmouseout="this.style.background='rgba(107,175,146,0.1)'">
-            <span style="font-size:1.4rem;">⚡</span>
+          <a href="/ideafuel/" style="display:flex;align-items:center;gap:10px;background:rgba(107,175,146,0.1);border:1px solid rgba(107,175,146,0.2);border-radius:10px;padding:10px 14px;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(107,175,146,0.18)'" onmouseout="this.style.background='rgba(107,175,146,0.1)'">
+            <span style="font-size:1.4rem;">&#9889;</span>
             <div>
               <div style="font-size:0.78rem;font-weight:700;color:var(--green);">Free Android App</div>
               <div style="font-size:0.72rem;color:rgba(255,255,255,0.45);">IdeaFuel: Habit &amp; Focus Timer</div>
@@ -541,6 +541,24 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
         <input type="text" name="email_address_check" value="" style="display:none;">
         <input type="hidden" name="locale" value="en">
       </form>
+    </div>
+    <div class="sidebar-box" style="background:linear-gradient(135deg,#0d1f18,#0a1628);border:1px solid rgba(107,175,146,0.15);">
+      <h4 style="color:#fff;margin-bottom:4px;">Free Resources</h4>
+      <p style="font-size:0.78rem;color:rgba(255,255,255,0.4);margin-bottom:14px;line-height:1.5;">Built to help you actually follow through.</p>
+      <a href="/ebook/" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(0,230,118,0.08);border:1px solid rgba(0,230,118,0.2);border-radius:8px;text-decoration:none;margin-bottom:8px;transition:all 0.2s;" onmouseover="this.style.background=\'rgba(0,230,118,0.14)\'" onmouseout="this.style.background=\'rgba(0,230,118,0.08)\'">
+        <span style="font-size:1.4rem;flex-shrink:0;">&#128218;</span>
+        <div>
+          <div style="font-size:0.78rem;font-weight:700;color:#00E676;line-height:1.3;">Free Ebook</div>
+          <div style="font-size:0.72rem;color:rgba(255,255,255,0.5);line-height:1.4;">30-Day Discipline Reset</div>
+        </div>
+      </a>
+      <a href="/ideafuel/" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(107,175,146,0.08);border:1px solid rgba(107,175,146,0.2);border-radius:8px;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background=\'rgba(107,175,146,0.14)\'" onmouseout="this.style.background=\'rgba(107,175,146,0.08)\'">
+        <span style="font-size:1.4rem;flex-shrink:0;">&#9889;</span>
+        <div>
+          <div style="font-size:0.78rem;font-weight:700;color:#6BAF92;line-height:1.3;">Free Android App</div>
+          <div style="font-size:0.72rem;color:rgba(255,255,255,0.5);line-height:1.4;">IdeaFuel: Habit + Focus Timer</div>
+        </div>
+      </a>
     </div>
   </aside>
 </div>
