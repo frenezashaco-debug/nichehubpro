@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-build-habits-that-actually-stick",
+    "title": "5 Ways to Build Habits That Actually Stick: Stop the Cycle of Failed Resolutions",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "How to build habits that actually stick starts with understanding why most people fail. Research shows 80% of New Year's resolutions fail by February, but ",
+    "image": "images/how-to-build-habits-that-actually-stick.jpg",
+    "alt": "Young woman drinking coffee while journaling near window during morning routine",
+    "pins": [
+      {
+        "title": "How to Build Habits That Actually Stick (Without Willpower)",
+        "description": "Tired of failed resolutions? The science is clear: habits stick through environmental design and neural stacking, not motivation. Learn the five-step framework 78% of people use to build lasting behaviors in just 12 weeks. Start with one tiny habit tomorrow. Your brain will do the rest."
+      },
+      {
+        "title": "Stop Failing at Habits: The Real Reasons Your Habits Never Stick",
+        "description": "You're not broken. You're just building habits wrong. 62% of habit failures come from poor environmental setup, not low discipline. Discover why your brain fights your habits and the exact system to make them automatic. The answer might surprise you."
+      },
+      {
+        "title": "Try This: The Habit Stacking Method That Rewires Your Brain Fast",
+        "description": "Forget willpower. Habit stacking borrows neural pathways from behaviors you already do daily. Do 10 push-ups after your morning coffee. Meditate right after brushing your teeth. This simple technique cuts habit formation time in half. Here's how to start today."
+      }
+    ]
+  },
+  {
     "slug": "how-to-improve-emotional-resilience",
     "title": "5 Ways to Improve Emotional Resilience After Hard Times (Rebuild Your Strength)",
     "category": "Mental Wellness",
