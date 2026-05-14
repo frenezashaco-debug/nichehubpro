@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "best-morning-habits-for-more-energy",
+    "title": "5 Best Morning Habits for More Energy That Actually Stick",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Best morning habits for more energy start the night before, not when your alarm goes off. Most people waste their most powerful hours scrolling, rushing, a",
+    "image": "images/best-morning-habits-for-more-energy.jpg",
+    "alt": "Woman standing in morning sunlight radiating natural energy",
+    "pins": [
+      {
+        "title": "5 Best Morning Habits for More Energy (Backed by Science)",
+        "description": "Stop feeling exhausted by 10am. These 5 best morning habits for more energy work because they align with your body's natural circadian rhythm. No coffee crash, no afternoon slump. Start with just one habit this week and watch your entire day transform. Simple, science-backed, and actually sustainable."
+      },
+      {
+        "title": "Stop Wasting Your Morning Energy (Do This Instead)",
+        "description": "Most people sabotage their energy before 7am by scrolling, skipping breakfast, and avoiding sunlight. Your best morning habits for more energy take just 30 minutes total. Discover the exact sequence that transforms your focus, mood, and productivity for the entire day. No complicated routines required."
+      },
+      {
+        "title": "Try This 30-Day Morning Energy Challenge (Results in Days)",
+        "description": "Real energy comes from honoring your body's biology, not grinding harder. These best morning habits for more energy show results by day 3 and transform your entire life by day 30. Learn which habit to start with first, how to build momentum, and how to make it stick forever."
+      }
+    ]
+  },
+  {
     "slug": "why-you-feel-tired-all-the-time",
     "title": "5 Reasons Why You Feel Tired All the Time (And How to Finally Get Your Energy Back)",
     "category": "Healthy Lifestyle",
