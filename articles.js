@@ -2,281 +2,6 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
-    "slug": "best-productivity-systems-explained",
-    "title": "5 Best Productivity Systems Explained: Which One Actually Fits Your Life",
-    "category": "Productivity",
-    "cat_slug": "productivity",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "The best productivity systems explained aren't about doing more, they're about doing what matters. You've probably tried a dozen apps, planners, and framew",
-    "image": "images/best-productivity-systems-explained.jpg",
-    "alt": "Woman focused at desk planning with best productivity systems",
-    "pins": [
-      {
-        "title": "5 Best Productivity Systems Explained: Find One That Actually Works",
-        "description": "Stop forcing yourself into productivity systems that don't fit. Discover the 5 best productivity systems explained including GTD, Pomodoro, and time blocking. Find which framework matches your brain and your actual life. Test-driven approach included."
-      },
-      {
-        "title": "Stop Switching Productivity Apps: Pick One System and Stick",
-        "description": "Tired of jumping between productivity apps that never stick? Learn why some productivity systems work and others fail. The secret isn't finding a perfect system, it's finding one that matches your work style. Real examples included."
-      },
-      {
-        "title": "Try These Daily Habits to Make Your Productivity System Actually Work",
-        "description": "Your productivity system will fail without the right daily habits supporting it. Learn the 5 foundation habits that make any productivity framework stick: morning reviews, evening brain dumps, and protected deep work. Start with just two habits tomorrow."
-      }
-    ]
-  },
-  {
-    "slug": "how-to-build-habits-that-actually-stick",
-    "title": "5 Ways to Build Habits That Actually Stick: Stop the Cycle of Failed Resolutions",
-    "category": "Productivity",
-    "cat_slug": "productivity",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "How to build habits that actually stick starts with understanding why most people fail. Research shows 80% of New Year's resolutions fail by February, but ",
-    "image": "images/how-to-build-habits-that-actually-stick.jpg",
-    "alt": "Young woman drinking coffee while journaling near window during morning routine",
-    "pins": [
-      {
-        "title": "How to Build Habits That Actually Stick (Without Willpower)",
-        "description": "Tired of failed resolutions? The science is clear: habits stick through environmental design and neural stacking, not motivation. Learn the five-step framework 78% of people use to build lasting behaviors in just 12 weeks. Start with one tiny habit tomorrow. Your brain will do the rest."
-      },
-      {
-        "title": "Stop Failing at Habits: The Real Reasons Your Habits Never Stick",
-        "description": "You're not broken. You're just building habits wrong. 62% of habit failures come from poor environmental setup, not low discipline. Discover why your brain fights your habits and the exact system to make them automatic. The answer might surprise you."
-      },
-      {
-        "title": "Try This: The Habit Stacking Method That Rewires Your Brain Fast",
-        "description": "Forget willpower. Habit stacking borrows neural pathways from behaviors you already do daily. Do 10 push-ups after your morning coffee. Meditate right after brushing your teeth. This simple technique cuts habit formation time in half. Here's how to start today."
-      }
-    ]
-  },
-  {
-    "slug": "how-to-improve-emotional-resilience",
-    "title": "5 Ways to Improve Emotional Resilience After Hard Times (Rebuild Your Strength)",
-    "category": "Mental Wellness",
-    "cat_slug": "mental-wellness",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "How to improve emotional resilience is the question nobody asks until life breaks them down.",
-    "image": "images/how-to-improve-emotional-resilience.jpg",
-    "alt": "Young woman holding tea, reflective moment building emotional resilience",
-    "pins": [
-      {
-        "title": "5 Ways to Improve Emotional Resilience Fast (Proven Methods)",
-        "description": "Learn how to improve emotional resilience with science-backed strategies. Build mental strength after hard times through acceptance, self-compassion, boundaries, and daily habits. Your breakthrough starts with one small practice today. Build unstoppable emotional strength."
-      },
-      {
-        "title": "Stop Letting Setbacks Destroy Your Emotional Resilience",
-        "description": "Struggling to bounce back from hard times? Discover why your emotional resilience collapses under pressure and exactly how to rebuild it. Real resilience means feeling your emotions fully while staying grounded. Master these five practices and watch your recovery time drop dramatically."
-      },
-      {
-        "title": "Try This Daily Habit to Build Emotional Resilience (5-Minute Practice)",
-        "description": "Build emotional resilience in just five minutes daily. This proven practice rewires your nervous system to handle stress better and bounce back faster. Small daily habits create permanent nervous system change. Start your resilience journey today with one tiny action."
-      }
-    ]
-  },
-  {
-    "slug": "why-you-have-no-motivation-anymore",
-    "title": "5 Reasons Why You Have No Motivation Anymore (And How to Get It Back)",
-    "category": "Mental Wellness",
-    "cat_slug": "mental-wellness",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Why you have no motivation anymore might feel like a personal failure, but it's actually a signal your mind and body are sending you.",
-    "image": "images/why-you-have-no-motivation-anymore.jpg",
-    "alt": "Woman looking tired and unmotivated sitting by window with tea",
-    "pins": [
-      {
-        "title": "5 Real Reasons Why You Have No Motivation Anymore (Fix This Today)",
-        "description": "Lost your motivation? You're not lazy. Discover the 5 hidden causes of motivation loss, including burnout, perfectionism, and dopamine depletion. Learn exactly how to rebuild your drive with science-backed strategies. Start today."
-      },
-      {
-        "title": "Stop Ignoring These 5 Signs You've Lost Your Motivation",
-        "description": "Procrastinating on things you love? Feeling empty despite success? These are signs you've lost motivation and need to recover. Understand the warning signals your body sends before motivation completely disappears. Take action now."
-      },
-      {
-        "title": "Try This: 5 Daily Habits to Rebuild Motivation Fast",
-        "description": "Motivation rebuilds through small daily wins, not big pushes. Learn the exact five habits that reset your dopamine system and bring your drive back. Start with just one habit this week and watch your energy return."
-      }
-    ]
-  },
-  {
-    "slug": "best-foods-for-focus-and-concentration",
-    "title": "7 Best Foods for Focus and Concentration That Actually Boost Brain Power",
-    "category": "Healthy Lifestyle",
-    "cat_slug": "healthy-lifestyle",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Your brain is hungry, and what you feed it matters more than you think. The best foods for focus and concentration can transform your ability to work, stud",
-    "image": "images/best-foods-for-focus-and-concentration.jpg",
-    "alt": "Woman holding bowl of blueberries and almonds at desk focusing on breakfast",
-    "pins": [
-      {
-        "title": "7 Best Foods for Focus That Boost Brain Power (Science-Backed)",
-        "description": "Tired of afternoon brain fog and scattered thoughts? These 7 best foods for focus and concentration actually work. Salmon, blueberries, almonds, and green tea stabilize your focus for hours without the crash. Learn which combinations keep your brain sharp all day and why they work faster than you think."
-      },
-      {
-        "title": "Stop Brain Fog Fast: Foods That Help You Concentrate Better",
-        "description": "Brain fog isn't laziness, it's malnutrition. Discover what foods help you concentrate when you need it most. From eggs to dark chocolate, these brain foods trigger focus within 30 minutes. Real solutions for real focus problems, backed by neuroscience."
-      },
-      {
-        "title": "Try This: Best Brain Foods for Instant Mental Clarity Today",
-        "description": "Ready to upgrade your focus? These best foods for focus and concentration are simple, delicious, and scientifically proven to work. No supplements, no hacks, just real nutrition that transforms your ability to concentrate. Start with one meal and notice the difference by 10am."
-      }
-    ]
-  },
-  {
-    "slug": "healthy-sleep-habits-that-improve-energy",
-    "title": "5 Healthy Sleep Habits That Improve Energy and Transform Your Days",
-    "category": "Healthy Lifestyle",
-    "cat_slug": "healthy-lifestyle",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Healthy sleep habits that improve energy are the foundation of a life that actually feels good. You already know sleep matters, but what if I told you that",
-    "image": "images/healthy-sleep-habits-that-improve-energy.jpg",
-    "alt": "Woman peacefully sleeping in bed with healthy sleep habits improvement",
-    "pins": [
-      {
-        "title": "5 Sleep Habits That Boost Daytime Energy (No Coffee Needed)",
-        "description": "Discover healthy sleep habits that improve energy and transform your afternoons. Science-backed tips to fix exhaustion, sleep deeper, and wake genuinely refreshed. Stop hitting that 3 p.m. wall and start living with sustained energy. Read the full guide on our wellness blog."
-      },
-      {
-        "title": "Stop Exhaustion: The Sleep Habits Energy Crisis Solution",
-        "description": "Tired of feeling drained all day? Your poor sleep habits are stealing your energy. Learn the five game-changing techniques that restored energy to thousands of readers. A consistent sleep schedule, the right bedroom temperature, and smart timing changes create lasting results. Discover what actually works."
-      },
-      {
-        "title": "Better Sleep Tips That Give You Afternoon Energy Back",
-        "description": "Healthy sleep habits that improve energy are simpler than you think. No supplements. No expensive gadgets. Just five proven routines that work within 7 days. Transform your sleep quality and feel the energy difference during your day. Start tonight with one small habit."
-      }
-    ]
-  },
-  {
-    "slug": "deep-work-vs-multitasking",
-    "title": "3 Reasons Deep Work vs Multitasking Will Transform Your Focus Forever",
-    "category": "Productivity",
-    "cat_slug": "productivity",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Deep work vs multitasking is not a choice between two equal options. When you multitask, your brain loses 40% of its productivity, according to research fr",
-    "image": "images/deep-work-vs-multitasking.jpg",
-    "alt": "Woman focusing deeply at desk during deep work session",
-    "pins": [
-      {
-        "title": "How to Stop Multitasking and Reclaim 10+ Hours Weekly",
-        "description": "Most people waste 40% of their productivity switching between tasks constantly. Discover why deep work beats multitasking every single time and how to build a sustainable single tasking habit in just 30 days. Science-backed strategies inside."
-      },
-      {
-        "title": "Stop Multitasking Now: The Single Tasking Benefits That Transform Your Brain",
-        "description": "Your brain cannot truly multitask no matter how good you think you are at it. Learn the neuroscience behind deep work vs multitasking and practical daily habits that boost focus, reduce stress, and triple your meaningful output."
-      },
-      {
-        "title": "Try This 45-Minute Deep Work Habit That Rewires Your Brain Forever",
-        "description": "Tired of feeling busy but unproductive? Single tasking benefits emerge within one week of consistent practice. Start with just one focused work block daily and watch your clarity, creativity, and accomplishment skyrocket. Habit-building framework included."
-      }
-    ]
-  },
-  {
-    "slug": "time-blocking-for-beginners",
-    "title": "5 Time Blocking for Beginners: The Simple Productivity System That Finally Works",
-    "category": "Productivity",
-    "cat_slug": "productivity",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Time blocking for beginners transforms how you work by dividing your day into dedicated chunks of focused time. Studies show that workers who use time bloc",
-    "image": "images/time-blocking-for-beginners.jpg",
-    "alt": "Young woman writing time blocking schedule in planner at desk",
-    "pins": [
-      {
-        "title": "How to Use Time Blocking for Beginners: Complete Daily Schedule Template",
-        "description": "Learn the exact time blocking schedule system that helped thousands of professionals get more done in less time. Start with just 90 minutes tomorrow and watch your productivity transform. No complex apps needed. Simple, proven, works immediately."
-      },
-      {
-        "title": "Stop Wasting Hours: Time Blocking for Beginners That Actually Sticks",
-        "description": "Tired of busy days with zero accomplishments? Time blocking divides your day into focused work chunks so your brain can actually concentrate. Discover why this simple method works when everything else fails. Start your first block today."
-      },
-      {
-        "title": "Try This 5-Minute Daily Time Blocking Habit (Productivity Game Changer)",
-        "description": "The secret to maintaining a time blocking schedule isn't willpower, it's a five-minute daily review ritual. Learn exactly what to track, why it matters, and how to adjust your blocks based on real patterns. Build a system that lasts."
-      }
-    ]
-  },
-  {
-    "slug": "emotional-exhaustion-vs-burnout",
-    "title": "3 Key Differences: Emotional Exhaustion vs Burnout and Why It Matters",
-    "category": "Mental Wellness",
-    "cat_slug": "mental-wellness",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Emotional exhaustion vs burnout are two terms people often use interchangeably, but they're not the same thing. Understanding the difference could be the k",
-    "image": "images/emotional-exhaustion-vs-burnout.jpg",
-    "alt": "Woman resting head exhausted at desk with emotional exhaustion symptoms",
-    "pins": [
-      {
-        "title": "Emotional Exhaustion vs Burnout: Know the Difference to Recover",
-        "description": "Emotional exhaustion and burnout aren't the same thing, and knowing the difference changes everything about your recovery. Learn the three critical distinctions, spot the early warning signs, and discover the daily habits that prevent burnout before it takes over your life. Your comeback starts here."
-      },
-      {
-        "title": "Stop Confusing Emotional Exhaustion With Just Being Tired",
-        "description": "That persistent exhaustion isn't fixed by a good night's sleep. Learn what emotional exhaustion really is, how it differs from burnout, and why recognizing the difference now could save you months of struggling. Practical recovery strategies that actually work included."
-      },
-      {
-        "title": "Emotional Exhaustion Recovery: 5 Daily Habits That Work",
-        "description": "Tired of feeling drained no matter how much you rest? Emotional exhaustion requires daily restoration habits, not just occasional breaks. Discover the five science-backed daily practices that rebuild your emotional reserves and prevent burnout from taking root. Start this week."
-      }
-    ]
-  },
-  {
-    "slug": "how-to-reduce-anxiety-naturally",
-    "title": "5 Ways to Reduce Anxiety Naturally: Your Breakthrough to Mental Peace",
-    "category": "Mental Wellness",
-    "cat_slug": "mental-wellness",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Anxiety doesn't have to control your life, and you don't need pills to find relief. Real people are discovering how to reduce anxiety naturally by making s",
-    "image": "images/how-to-reduce-anxiety-naturally.jpg",
-    "alt": "Woman meditating peacefully on yoga mat to reduce anxiety naturally",
-    "pins": [
-      {
-        "title": "5 Ways to Reduce Anxiety Naturally Without Medication",
-        "description": "Discover science-backed methods to reduce anxiety naturally, including breathing techniques, movement, sleep optimization, and grounding exercises. Build daily habits that calm your nervous system and keep anxiety from returning. Start with one small change today."
-      },
-      {
-        "title": "Stop Anxiety Before It Spirals: Natural Relief Techniques That Actually Work",
-        "description": "Your anxiety doesn't need medication to improve. Learn the 4-7-8 breathing method, grounding techniques, and daily habits that reduce anxiety by up to 40% in just 4-8 weeks. Real people are finding natural anxiety relief through these proven practices."
-      },
-      {
-        "title": "Daily Habits That Reduce Anxiety Naturally and Keep It From Returning",
-        "description": "Stop managing anxiety after it hits. Start preventing it with daily habits that regulate your nervous system: sleep optimization, movement, breathwork, and nutrition changes. Build your foundation for natural anxiety relief that lasts."
-      }
-    ]
-  },
-  {
-    "slug": "best-morning-habits-for-more-energy",
-    "title": "7 Best Morning Habits for More Energy That Actually Stick (No Willpower Required)",
-    "category": "Healthy Lifestyle",
-    "cat_slug": "healthy-lifestyle",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "The best morning habits for more energy aren't complicated, but they do require one thing: starting before you feel ready. Most people wake up depleted, re",
-    "image": "images/best-morning-habits-for-more-energy.jpg",
-    "alt": "Woman drinking water at sunrise in kitchen for morning energy routine",
-    "pins": [
-      {
-        "title": "7 Best Morning Habits for More Energy (Science-Backed Methods)",
-        "description": "Tired all day? These 7 proven morning habits boost your energy from the first hour awake. Water, sunlight, movement, and protein transform your entire day without caffeine crashes. Start with just one habit for 7 days and watch your afternoon energy completely change. Simple routines that actually work."
-      },
-      {
-        "title": "Stop Waking Up Exhausted: The Morning Energy Routine That Works",
-        "description": "Why you feel tired even after 8 hours of sleep (and how to fix it). Your first 60 minutes determine your entire day's energy level. This science-backed morning routine eliminates the 2 PM crash, boosts focus, and makes you feel genuinely alive again. No willpower required, just simple daily habits."
-      },
-      {
-        "title": "Try This Morning Energy Routine for Stable Energy All Day",
-        "description": "Build your morning energy routine step by step in just 10 weeks. Start with water, add sunlight, then movement, then breakfast. These 7 habits work together to rewire your nervous system and create lasting energy. Real people, real results. Transform your mornings and watch your entire life change."
-      }
-    ]
-  },
-  {
     "slug": "why-you-feel-tired-all-the-time",
     "title": "5 Reasons Why You Feel Tired All the Time (And How to Finally Get Your Energy Back)",
     "category": "Healthy Lifestyle",
@@ -1748,6 +1473,31 @@ const ARTICLES = [
       {
         "title": "Try This Bedtime Routine to Stop Overthinking and Sleep Better Tonight",
         "description": "A simple 10-minute wind-down routine can completely change how quickly you fall asleep. These research-backed steps reduce cortisol, quiet mental chatter, and prepare your brain for deep rest. Start tonight. Read more: https://nichehubpro.com/articles/how-to-stop-overthinking-at-night.html"
+      }
+    ]
+  },
+  {
+    "slug": "how-to-set-healthy-boundaries",
+    "title": "5 Ways to Set Healthy Boundaries Without Guilt (Your Permission Slip Starts Here)",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "How to set healthy boundaries is the single most important skill for protecting your mental peace. If you're exhausted from saying yes to everything, taking",
+    "image": "images/how-to-set-healthy-boundaries.jpg",
+    "alt": "Woman at window showing calm confidence and peaceful resolve",
+    "pins": [
+      {
+        "title": "5 Ways to Set Healthy Boundaries Without Guilt (Start Today)",
+        "description": "Learn how to set healthy boundaries without feeling guilty. Protect your mental peace, strengthen relationships, and finally say no without over-explaining. These 5 practical strategies work immediately. Your permission to prioritize yourself starts here."
+      },
+      {
+        "title": "Stop Feeling Guilty for Setting Boundaries (This Is Why It Happens)",
+        "description": "Boundary guilt is learned, not permanent. Discover why setting limits feels selfish (it's not) and the exact scripts to use when someone pushes back. Thousands have used these techniques to reclaim their energy and relationships. Your peace is worth protecting."
+      },
+      {
+        "title": "Try This: Daily Boundary Practice That Rewires Your Guilt Response",
+        "description": "One boundary per day for 30 days completely rewires how your brain responds to requests. This simple daily practice builds confidence, reduces anxiety, and transforms your relationships. Start with one small no today and watch everything shift."
       }
     ]
   }
