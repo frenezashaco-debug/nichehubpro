@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-deal-with-toxic-people",
+    "title": "5 Ways to Deal with Toxic People Without Losing Your Peace",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "How to deal with toxic people is one of the most practical skills for protecting your mental health. Whether it's a draining coworker, a critical family me",
+    "image": "images/how-to-deal-with-toxic-people.jpg",
+    "alt": "Young woman sitting peacefully at kitchen table in morning light",
+    "pins": [
+      {
+        "title": "How to Deal with Toxic People Without Losing Your Peace",
+        "description": "Learn the 5 proven strategies to protect your energy from toxic people, set firm boundaries, and reclaim your mental peace. Stop trying to fix them, start protecting yourself. Your nervous system will thank you."
+      },
+      {
+        "title": "Stop Accepting Toxic Behavior: 5 Warning Signs You Need to Know",
+        "description": "Recognizing toxic relationship signs early changes everything. If someone makes you feel worse about yourself, manipulates you with guilt, or dismisses your feelings, it's time to set boundaries. Learn how to identify toxic people before deep damage occurs."
+      },
+      {
+        "title": "Protect Your Energy Daily: The Boundary-Building Plan That Actually Works",
+        "description": "Managing toxic people is a daily practice, not a one-time conversation. This realistic action plan shows you how to set boundaries, manage guilt, and rebuild your own mental clarity. Start protecting your peace today."
+      }
+    ]
+  },
+  {
     "slug": "best-morning-habits-for-more-energy",
     "title": "5 Best Morning Habits for More Energy That Actually Stick",
     "category": "Healthy Lifestyle",
