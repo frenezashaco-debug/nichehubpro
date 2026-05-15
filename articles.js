@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "emotional-exhaustion-vs-burnout",
+    "title": "5 Key Differences: Emotional Exhaustion vs Burnout (And Why It Matters)",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Emotional exhaustion vs burnout might sound like the same thing, but they're actually different struggles that need different solutions.",
+    "image": "images/emotional-exhaustion-vs-burnout.jpg",
+    "alt": "Woman experiencing emotional exhaustion looking tired at window",
+    "pins": [
+      {
+        "title": "Emotional Exhaustion vs Burnout: Know the Difference (Recovery Guide)",
+        "description": "Confused about emotional exhaustion vs burnout? They're different struggles that need different solutions. Learn the key differences, warning signs, and exactly how to recover. Your emotional health matters. Start your recovery today with our complete guide to understanding burnout vs exhaustion."
+      },
+      {
+        "title": "Stop Confusing Emotional Exhaustion With Burnout: Here's Why It Matters",
+        "description": "Think emotional exhaustion and burnout are the same? They're not. Discover why understanding the difference changes everything about how you recover. We break down the science, the symptoms, and the recovery strategies that actually work. Don't spend another day drained and confused."
+      },
+      {
+        "title": "5 Daily Habits to Prevent Emotional Exhaustion and Burnout Starting Today",
+        "description": "Stop waiting for recovery to happen. These five daily habits prevent emotional exhaustion and burnout before they take over your life. Small consistent actions create powerful protection for your mental health. Start with one habit this week and watch your energy return."
+      }
+    ]
+  },
+  {
     "slug": "how-to-reduce-anxiety-naturally",
     "title": "7 Ways to Reduce Anxiety Naturally: Reclaim Your Peace Without Pills",
     "category": "Mental Wellness",
