@@ -1304,6 +1304,8 @@ img[fetchpriority="high"] { max-height: 520px; object-fit: cover; border-radius:
   font-size: 0.97rem; color: var(--text);
   line-height: 1.85; margin-bottom: 15px;
 }
+.section-dark .two-col h2 { color: var(--white); }
+.section-dark .two-col p { color: rgba(255,255,255,0.6); }
 
 /* ── VALUES / PROMISE CARDS ──────────────────────────────────── */
 .value-card {
@@ -1602,23 +1604,66 @@ img[fetchpriority="high"] { max-height: 520px; object-fit: cover; border-radius:
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .nav-burger { display: flex; }
-  .hero { padding: 80px 20px 72px; }
-  .hero h1 { font-size: 2.2rem; }
-  .hero p { font-size: 1rem; }
+  /* Hero */
+  .hero { padding: 68px 20px 56px; }
+  .hero h1 { font-size: 2.1rem; }
+  .hero p { font-size: 0.97rem; }
+  .hero-trust { gap: 12px; margin-top: 32px; }
+  .hero-trust-item { font-size: 0.74rem; }
+  /* About + Category headers */
+  .about-hero { padding: 60px 20px 48px; }
+  .about-hero h1 { font-size: 1.95rem; }
+  .cat-header { padding: 52px 20px 40px; }
+  .cat-header h1 { font-size: 1.85rem; }
+  .cat-header p { font-size: 0.93rem; }
+  /* Grids */
   .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  .articles-grid { grid-template-columns: 1fr; }
+  .related-cats { grid-template-columns: 1fr; }
   .stats-bar-inner { flex-wrap: wrap; }
   .stat { flex: 1 1 50%; border-right: none; border-bottom: 1px solid var(--border); }
-  .section { padding: 64px 20px; }
+  /* Sections */
+  .section { padding: 56px 20px; }
   .section-title { font-size: 1.6rem; }
-  .cat-header h1 { font-size: 1.9rem; }
-  .article-header h1 { font-size: 1.7rem; }
-  .about-hero h1 { font-size: 2rem; }
+  /* Article */
+  .article-header h1 { font-size: 1.65rem; }
+  /* Footer */
+  .footer { padding: 48px 20px 28px; }
   .footer-top { grid-template-columns: 1fr; gap: 28px; }
-  .related-cats { grid-template-columns: 1fr; }
+  /* Newsletter */
+  .newsletter { padding: 60px 20px; }
+  /* Contact / Legal */
+  .contact-layout { padding: 48px 20px 56px; }
+  .contact-layout h1 { font-size: 1.9rem; }
+  .legal-layout { padding: 48px 20px 56px; }
+  .legal-layout h1 { font-size: 1.9rem; }
+  /* Promo banner: stack button below text */
+  .promo-banner { padding: 20px; }
+  .promo-banner .btn { width: 100%; justify-content: center; text-align: center; }
 }
 @media (max-width: 480px) {
+  /* Hero buttons stack */
   .hero-btns { flex-direction: column; align-items: stretch; }
-  .hero-btns .btn { text-align: center; }
+  .hero-btns .btn { text-align: center; justify-content: center; }
+  /* Tighter font sizes on small phones */
+  .hero h1 { font-size: 1.85rem; }
+  .about-hero { padding: 48px 20px 36px; }
+  .about-hero h1 { font-size: 1.7rem; }
+  .cat-header { padding: 44px 20px 32px; }
+  .cat-header h1 { font-size: 1.6rem; }
+  .section { padding: 44px 20px; }
+  .section-title { font-size: 1.45rem; }
+  /* Stats */
   .stats-grid { grid-template-columns: 1fr 1fr; }
+  .stat-card-num { font-size: 1.8rem; }
+  /* Footer bottom row stacks */
   .footer-bottom-row { flex-direction: column; align-items: center; text-align: center; }
+  /* Buttons inside topic CTA wrap cleanly */
+  .btn { padding: 11px 20px; font-size: 0.88rem; }
+  /* Featured article stacks */
+  .featured-article { grid-template-columns: 1fr; }
+  .featured-article img { min-height: 200px; }
+  .featured-article-body { padding: 22px; }
+  /* Contact / Legal */
+  .contact-layout h1, .legal-layout h1 { font-size: 1.7rem; }
 }
