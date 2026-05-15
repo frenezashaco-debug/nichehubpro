@@ -295,11 +295,23 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
       }}''' for f in faq_items
     ])
 
+    # Build TOC from section headings
+    toc_items = ""
+    for i, sec in enumerate(sections):
+        toc_items += f'<li><a href="#sec-{i+1}">{sec["h2"]}</a></li>\n        '
+    toc_items += '<li><a href="#faq">Frequently Asked Questions</a></li>'
+    toc_html = f"""<nav class="toc" aria-label="Table of contents">
+      <div class="toc-title">In this article</div>
+      <ol>
+        {toc_items}
+      </ol>
+    </nav>"""
+
     # Build sections HTML
     sections_html = ""
     for i, sec in enumerate(sections):
         body = sec.get('content') or sec.get('body') or sec.get('text') or sec.get('html') or ''
-        sections_html += f"\n      <h2>{sec['h2']}</h2>\n      {body}\n"
+        sections_html += f"\n      <h2 id=\"sec-{i+1}\">{sec['h2']}</h2>\n      {body}\n"
         # Insert section image after sections 0, 2, 4
         if section_images and i in section_images:
             img_info = section_images[i]
@@ -309,9 +321,17 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
                 f'style="width:100%;max-height:480px;object-fit:cover;border-radius:10px;margin:28px 0 20px;display:block;" '
                 f'width="1920" height="1080" loading="lazy">\n'
             )
-        # Insert ad slot after section 2
+        # Inline ebook promo after section 2 (replaces ad slot)
         if i == 1:
-            sections_html += '\n      <div class="ad-slot ad-slot-banner">Advertisement</div>\n'
+            sections_html += '''
+      <div class="inline-promo">
+        <div class="inline-promo-icon">&#128218;</div>
+        <div class="inline-promo-body">
+          <strong>Free: 30-Day Discipline Reset</strong>
+          <span>Our free ebook with 20 exercises to rebuild focus and healthy habits.</span>
+        </div>
+        <a href="/ebook/" class="btn btn-sm">Get Free Ebook</a>
+      </div>\n'''
 
     # Fix any bare-slug internal links the LLM wrote as href="/slug" → href="../articles/slug.html"
     _TOP_LEVEL = {'mental-wellness','productivity','healthy-lifestyle','resources','about',
@@ -476,6 +496,8 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
 
       {intro_paragraphs}
 
+      {toc_html}
+
       <div class="tldr">
         <p>{tldr}</p>
       </div>
@@ -485,7 +507,14 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
       <h2>What Does This Look Like in Real Life?</h2>
       {"".join(f"<p>{p.strip()}</p>" for p in real_example.split(chr(10)) if p.strip())}
 
-      <div class="ad-slot ad-slot-banner">Advertisement</div>
+      <div class="author-block">
+        <div class="author-avatar">NHP</div>
+        <div class="author-info">
+          <div class="author-name">NicheHubPro Editorial</div>
+          <div class="author-title">Wellness &amp; Productivity Writers</div>
+          <p class="author-bio">Our editorial team writes practical, research-backed guides on mental health, productivity, and healthy living. Every article is reviewed for accuracy and real-world usefulness before publishing.</p>
+        </div>
+      </div>
 
       <div style="background:var(--green-pale);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px 24px;margin:32px 0;">
         <p style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--gray);margin-bottom:12px;">Related Articles</p>
@@ -494,7 +523,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
         </ul>
       </div>
 
-      <div class="faq-section">
+      <div class="faq-section" id="faq">
         <h2>Frequently Asked Questions</h2>
         {faq_html}
       </div>
@@ -535,7 +564,6 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
   </main>
 
   <aside class="sidebar">
-    <div class="ad-slot ad-slot-sidebar">Advertisement</div>
     <div class="sidebar-box">
       <h4>Related Articles</h4>
       {sidebar_related_html}

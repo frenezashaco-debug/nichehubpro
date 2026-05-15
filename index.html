@@ -65,20 +65,20 @@
 <div class="stats-bar">
   <div class="stats-bar-inner">
     <div class="stat">
-      <span class="stat-num">1</span>
-      <span class="stat-label">Research-backed articles</span>
+      <span class="stat-num" id="stat-articles">60+</span>
+      <span class="stat-label">Free articles published</span>
     </div>
     <div class="stat">
       <span class="stat-num">3</span>
-      <span class="stat-label">Focused topic pillars</span>
+      <span class="stat-label">Expert topic pillars</span>
     </div>
     <div class="stat">
       <span class="stat-num">100%</span>
-      <span class="stat-label">Free, no paywall</span>
+      <span class="stat-label">Free, no paywall ever</span>
     </div>
     <div class="stat">
       <span class="stat-num">0</span>
-      <span class="stat-label">Clickbait articles</span>
+      <span class="stat-label">Clickbait or fluff</span>
     </div>
   </div>
 </div>
@@ -90,9 +90,16 @@
   </div>
 </div>
 
-<!-- AD SLOT, BANNER -->
+<!-- START HERE STRIP -->
 <div class="container" style="padding-top:32px;padding-bottom:0;">
-  <div class="ad-slot ad-slot-banner">Advertisement</div>
+  <div style="background:var(--green-lt);border:1px solid var(--border);border-radius:var(--radius);padding:16px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+    <span style="font-size:1.4rem;">👋</span>
+    <div style="flex:1;min-width:200px;">
+      <strong style="font-size:0.9rem;color:var(--dark);">New here?</strong>
+      <span style="font-size:0.88rem;color:var(--gray);margin-left:8px;">Start with our most-read guides below or browse by topic above.</span>
+    </div>
+    <a href="/all-articles/" class="btn btn-sm btn-outline">Browse All Articles &rarr;</a>
+  </div>
 </div>
 
 <!-- CATEGORIES -->
@@ -187,9 +194,18 @@
   </div>
 </section>
 
-<!-- AD SLOT -->
-<div class="container">
-  <div class="ad-slot ad-slot-banner">Advertisement</div>
+<!-- EBOOK + APP CTA STRIP -->
+<div class="container" style="padding-bottom:0;">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+    <a href="/ebook/" style="display:flex;align-items:center;gap:14px;background:var(--dark);border-radius:var(--radius);padding:18px 22px;text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='.88'" onmouseout="this.style.opacity='1'">
+      <span style="font-size:1.8rem;flex-shrink:0;">📖</span>
+      <div><div style="font-size:0.62rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#00E676;margin-bottom:3px;">Free Ebook</div><div style="font-size:0.92rem;font-weight:700;color:#fff;">30-Day Discipline Reset</div><div style="font-size:0.72rem;color:rgba(255,255,255,0.4);margin-top:2px;">20 exercises &middot; No email needed</div></div>
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:14px;background:var(--dark);border-radius:var(--radius);padding:18px 22px;text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='.88'" onmouseout="this.style.opacity='1'">
+      <span style="font-size:1.8rem;flex-shrink:0;">⚡</span>
+      <div><div style="font-size:0.62rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#6BAF92;margin-bottom:3px;">Free Android App</div><div style="font-size:0.92rem;font-weight:700;color:#fff;">IdeaFuel: Habit &amp; Focus Timer</div><div style="font-size:0.72rem;color:rgba(255,255,255,0.4);margin-top:2px;">Pomodoro &middot; Habit streaks &middot; Free</div></div>
+    </a>
+  </div>
 </div>
 
 <!-- STRONG CTA -->
@@ -266,13 +282,13 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Update article count in stats bar
-  const statNum = document.querySelector('.stat-num');
-  if (statNum) statNum.textContent = ARTICLES.length;
+  var statEl = document.getElementById('stat-articles');
+  if (statEl && typeof ARTICLES !== 'undefined') statEl.textContent = ARTICLES.length + '+';
 
-  // Render all articles as consistent horizontal featured cards
+  // Render latest 9 articles
   const grid = document.getElementById('latest-grid');
-  if (grid && ARTICLES.length > 0) {
-    grid.innerHTML = ARTICLES.slice(0, 6).map((a, i) => `
+  if (grid && typeof ARTICLES !== 'undefined' && ARTICLES.length > 0) {
+    grid.innerHTML = ARTICLES.slice(0, 9).map((a, i) => `
       <div class="card card-featured">
         <picture><source srcset="${a.image.replace(".jpg",".webp")}" type="image/webp"><img src="${a.image}" alt="${a.alt || a.title}" class="card-featured-img" ${i === 0 ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"'}></picture>
         <div class="card-body">

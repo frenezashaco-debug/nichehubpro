@@ -5,29 +5,16 @@
   <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All Articles | NicheHubPro</title>
-  <meta name="description" content="Browse all free science-backed articles on mental wellness, productivity, and healthy lifestyle. New guides published every day.">
+  <meta name="description" content="Browse all free science-backed articles on mental wellness, productivity, and healthy lifestyle. Search, filter, and find what you need.">
   <link rel="canonical" href="https://nichehubpro.com/all-articles/">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="../style.css">
-
-<style>
-.sort-bar { background: var(--bg); border-bottom: 1px solid var(--border); }
-.sort-bar-inner { max-width: 1200px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-.sort-label { font-size: 0.78rem; font-weight: 600; color: var(--gray); white-space: nowrap; }
-.sort-btns { display: flex; gap: 6px; }
-.sort-btn { font-family: Poppins, sans-serif; font-size: 0.78rem; font-weight: 600; padding: 5px 14px; border-radius: 100px; border: 1.5px solid var(--border); background: transparent; color: var(--gray); cursor: pointer; transition: all 0.18s; }
-.sort-btn:hover { border-color: var(--green); color: var(--green); }
-.sort-btn.active { background: var(--dark); border-color: var(--dark); color: #fff; }
-.sort-count { font-size: 0.75rem; color: var(--gray); margin-left: auto; }
-</style>
 </head>
 <body>
-
 <div id="progress-bar"></div>
-
 <nav class="nav">
   <div class="nav-inner">
     <a href="../" class="nav-logo">NicheHub<span>Pro</span></a>
@@ -52,42 +39,55 @@
 <div class="cat-header">
   <span class="hero-badge">📚 All Articles</span>
   <h1>All Articles</h1>
-  <p>Every guide we've published, mental wellness, productivity, and healthy lifestyle.</p>
+  <p>Every guide we have published on mental wellness, productivity, and healthy lifestyle. Search or filter to find what you need.</p>
 </div>
 
-<div class="cat-tabs">
-  <div class="cat-tabs-inner">
-    <div class="cat-tab active" data-url="../all-articles/">All</div>
-    <div class="cat-tab" data-url="../mental-wellness/">Mental Wellness</div>
-    <div class="cat-tab" data-url="../productivity/">Productivity</div>
-    <div class="cat-tab" data-url="../healthy-lifestyle/">Healthy Lifestyle</div>
-  </div>
-</div>
-
-
-<div class="sort-bar">
-  <div class="sort-bar-inner">
-    <span class="sort-label">Sort by:</span>
-    <div class="sort-btns">
-      <button class="sort-btn active" data-sort="newest">Newest</button>
-      <button class="sort-btn" data-sort="oldest">Oldest</button>
-      <button class="sort-btn" data-sort="az">A &ndash; Z</button>
+<div class="browse-bar">
+  <div class="browse-bar-inner">
+    <input type="search" id="search-input" class="browse-search-input" placeholder="&#128269; Search articles by title or topic..." autocomplete="off" aria-label="Search articles">
+    <div class="browse-row2">
+      <button class="cat-filter-btn active" data-cat="all">All</button>
+      <button class="cat-filter-btn" data-cat="mental-wellness">🧠 Mental Wellness</button>
+      <button class="cat-filter-btn" data-cat="productivity">⚡ Productivity</button>
+      <button class="cat-filter-btn" data-cat="healthy-lifestyle">🌿 Healthy Lifestyle</button>
+      <div class="browse-sort">
+        <button class="cat-filter-btn active" id="sort-newest" data-sort="newest">Newest</button>
+        <button class="cat-filter-btn" id="sort-oldest" data-sort="oldest">Oldest</button>
+        <button class="cat-filter-btn" id="sort-az" data-sort="az">A &ndash; Z</button>
+      </div>
+      <span class="browse-count" id="article-count"></span>
     </div>
-    <span class="sort-count" id="article-count"></span>
   </div>
 </div>
-<div class="container" style="padding-top:28px;padding-bottom:0;">
-  <div class="ad-slot ad-slot-banner">Advertisement</div>
-</div>
 
-<section class="section">
+<section class="section" style="padding-top:32px;">
   <div class="container">
+    <div class="promo-banner" style="margin-bottom:32px;">
+      <div class="promo-banner-icon">📖</div>
+      <div class="promo-banner-body">
+        <div class="promo-banner-label">Free Resource</div>
+        <div class="promo-banner-title">30-Day Discipline Reset &mdash; Free Ebook</div>
+        <div class="promo-banner-sub">20 practical exercises &middot; No email required &middot; Read instantly</div>
+      </div>
+      <a href="../ebook/" class="btn">Get Free</a>
+    </div>
+
     <div class="grid grid-3" id="article-grid"></div>
     <div id="empty-state" style="display:none;text-align:center;padding:60px 20px;">
-      <p style="font-size:1.1rem;color:var(--gray);">No articles yet. Check back soon.</p>
+      <p style="font-size:1.1rem;color:var(--gray);">No articles match your search. Try different keywords.</p>
+      <button onclick="clearSearch()" class="btn btn-outline" style="margin-top:16px;">Clear Search</button>
     </div>
     <div id="pagination" class="pagination"></div>
-    <div class="ad-slot ad-slot-banner" style="margin-top:40px;">Advertisement</div>
+
+    <div class="promo-banner" style="margin-top:40px;background:linear-gradient(135deg,#1a2f3a 0%,#243b47 100%);">
+      <div class="promo-banner-icon">⚡</div>
+      <div class="promo-banner-body">
+        <div class="promo-banner-label" style="color:#6BAF92;">Free Android App</div>
+        <div class="promo-banner-title">IdeaFuel: Habit &amp; Focus Timer</div>
+        <div class="promo-banner-sub">Turn what you read into real habits &middot; 100% free</div>
+      </div>
+      <a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener" class="btn" style="background:#6BAF92;">Download Free</a>
+    </div>
   </div>
 </section>
 
@@ -108,19 +108,13 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-links">
-      <a href="/about/">About</a>
-      <span class="sep">|</span>
-      <a href="/contact/">Contact</a>
-      <span class="sep">|</span>
-      <a href="/privacy/">Privacy Policy</a>
-      <span class="sep">|</span>
-      <a href="/disclaimer/">Disclaimer</a>
-      <span class="sep">|</span>
+      <a href="/about/">About</a><span class="sep">|</span>
+      <a href="/contact/">Contact</a><span class="sep">|</span>
+      <a href="/privacy/">Privacy Policy</a><span class="sep">|</span>
+      <a href="/disclaimer/">Disclaimer</a><span class="sep">|</span>
       <a href="/terms/">Terms of Service</a>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 NicheHubPro. All rights reserved.</span>
-    </div>
+    <div class="footer-bottom"><span>&copy; 2026 NicheHubPro. All rights reserved.</span></div>
   </div>
 </footer>
 
@@ -129,68 +123,115 @@
 <script src="../script.js"></script>
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 <script>
-  document.querySelectorAll('.cat-tab').forEach(tab => {
-    tab.addEventListener('click', function() { window.location.href = this.dataset.url; });
-  });
-  document.querySelectorAll('.sort-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-      document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
-      this.classList.add('active');
-      renderPage(1, this.dataset.sort);
-    });
-  });
-  document.addEventListener('DOMContentLoaded', function() {
-    const PER_PAGE = 12;
-    const allArticles = ARTICLES.filter(a => true);
-    const grid  = document.getElementById('article-grid');
-    const empty = document.getElementById('empty-state');
-    const pgEl  = document.getElementById('pagination');
-    const countEl = document.getElementById('article-count');
-    if (!allArticles.length) { grid.style.display='none'; empty.style.display='block'; return; }
+(function() {
+  var PER_PAGE = 12;
+  var activeCat = 'all';
+  var sortMode = 'newest';
+  var searchQuery = '';
+  var currentPage = 1;
 
-    function sorted(articles, mode) {
-      const arr = articles.slice();
-      if (mode === 'oldest') return arr.reverse();
-      if (mode === 'az') return arr.sort((a,b) => a.title.localeCompare(b.title));
-      return arr; // newest (default, already newest-first in articles.js)
+  var grid = document.getElementById('article-grid');
+  var pgEl = document.getElementById('pagination');
+  var countEl = document.getElementById('article-count');
+  var empty = document.getElementById('empty-state');
+  var searchInput = document.getElementById('search-input');
+
+  var base = (typeof ARTICLES !== 'undefined') ? ARTICLES : [];
+
+  function getFiltered() {
+    var arts = base.slice();
+    if (activeCat !== 'all') arts = arts.filter(function(a){ return a.cat_slug === activeCat; });
+    if (searchQuery.length >= 2) {
+      var q = searchQuery.toLowerCase();
+      arts = arts.filter(function(a){
+        return a.title.toLowerCase().indexOf(q) !== -1
+          || (a.excerpt||'').toLowerCase().indexOf(q) !== -1
+          || a.category.toLowerCase().indexOf(q) !== -1;
+      });
     }
+    if (sortMode === 'oldest') return arts.reverse();
+    if (sortMode === 'az') return arts.sort(function(a,b){ return a.title.localeCompare(b.title); });
+    return arts;
+  }
 
-    function cardHTML(a) {
-      return `<div class="card">
-        <picture><source srcset="../${a.image.replace(".jpg",".webp")}" type="image/webp"><img src="../${a.image}" alt="${a.alt || a.title}" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;" loading="lazy"></picture>
-        <div class="card-body">
-          <span class="card-tag">${a.category}</span>
-          <h3><a href="../articles/${a.slug}.html">${a.title}</a></h3>
-          <p>${a.excerpt}</p>
-          <div class="card-meta"><span>📅 ${a.date}</span><span>⏱ ${a.read_time} min read</span></div>
-          <a href="../articles/${a.slug}.html" class="read-more">Read article &rarr;</a>
-        </div>
-      </div>`;
+  function cardHTML(a) {
+    return '<div class="card">'
+      + '<picture><source srcset="../' + a.image.replace('.jpg','.webp') + '" type="image/webp">'
+      + '<img src="../' + a.image + '" alt="' + (a.alt||a.title).replace(/"/g,'&quot;') + '" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;" loading="lazy"></picture>'
+      + '<div class="card-body">'
+      + '<span class="card-tag">' + a.category + '</span>'
+      + '<h3><a href="../articles/' + a.slug + '.html">' + a.title + '</a></h3>'
+      + '<p>' + a.excerpt + '</p>'
+      + '<div class="card-meta"><span>&#128197; ' + a.date + '</span><span>&#9203; ' + a.read_time + ' min read</span></div>'
+      + '<a href="../articles/' + a.slug + '.html" class="read-more">Read article &rarr;</a>'
+      + '</div></div>';
+  }
+
+  function render(page) {
+    currentPage = page || 1;
+    var arts = getFiltered();
+    var total = arts.length;
+    var pages = Math.ceil(total / PER_PAGE);
+    var start = (currentPage - 1) * PER_PAGE;
+    if (!total) {
+      grid.innerHTML = '';
+      grid.style.display = 'none';
+      empty.style.display = 'block';
+    } else {
+      grid.style.display = '';
+      empty.style.display = 'none';
+      grid.innerHTML = arts.slice(start, start + PER_PAGE).map(cardHTML).join('');
     }
-
-    window.renderPage = function(page, sortMode) {
-      sortMode = sortMode || document.querySelector('.sort-btn.active')?.dataset.sort || 'newest';
-      const articles = sorted(allArticles, sortMode);
-      const total = articles.length;
-      const pages = Math.ceil(total / PER_PAGE);
-      const start = (page - 1) * PER_PAGE;
-      grid.innerHTML = articles.slice(start, start + PER_PAGE).map(cardHTML).join('');
-      if (countEl) countEl.textContent = total + ' article' + (total !== 1 ? 's' : '');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      let html = `<button ${page===1?'disabled':''} onclick="renderPage(${page-1})">&laquo; Prev</button>`;
-      for (let i = 1; i <= pages; i++) {
-        if (pages > 7 && Math.abs(i - page) > 2 && i !== 1 && i !== pages) {
-          if (i === page - 3 || i === page + 3) html += `<span class="pg-info">…</span>`;
+    if (countEl) countEl.textContent = total + ' article' + (total !== 1 ? 's' : '');
+    if (currentPage > 1) window.scrollTo({top:0,behavior:'smooth'});
+    var html = '';
+    if (pages > 1) {
+      html += '<button ' + (currentPage===1?'disabled':'') + ' onclick="goPage(' + (currentPage-1) + ')">&laquo; Prev</button>';
+      for (var i = 1; i <= pages; i++) {
+        if (pages > 7 && Math.abs(i-currentPage) > 2 && i !== 1 && i !== pages) {
+          if (i === currentPage-3 || i === currentPage+3) html += '<span class="pg-info">&hellip;</span>';
           continue;
         }
-        html += `<button class="${i===page?'active':''}" onclick="renderPage(${i})">${i}</button>`;
+        html += '<button class="' + (i===currentPage?'active':'') + '" onclick="goPage(' + i + ')">' + i + '</button>';
       }
-      html += `<button ${page===pages?'disabled':''} onclick="renderPage(${page+1})">Next &raquo;</button>`;
-      html += `<span class="pg-info">Page ${page} of ${pages}</span>`;
-      pgEl.innerHTML = html;
-    };
-    renderPage(1);
+      html += '<button ' + (currentPage===pages?'disabled':'') + ' onclick="goPage(' + (currentPage+1) + ')">Next &raquo;</button>';
+      html += '<span class="pg-info">Page ' + currentPage + ' of ' + pages + '</span>';
+    }
+    pgEl.innerHTML = html;
+  }
+
+  window.goPage = function(p) { render(p); };
+  window.clearSearch = function() {
+    searchInput.value = '';
+    searchQuery = '';
+    render(1);
+  };
+
+  searchInput.addEventListener('input', function() {
+    searchQuery = this.value.trim();
+    render(1);
   });
+
+  document.querySelectorAll('.cat-filter-btn[data-cat]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.cat-filter-btn[data-cat]').forEach(function(b){ b.classList.remove('active'); });
+      this.classList.add('active');
+      activeCat = this.dataset.cat;
+      render(1);
+    });
+  });
+
+  document.querySelectorAll('.cat-filter-btn[data-sort]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.cat-filter-btn[data-sort]').forEach(function(b){ b.classList.remove('active'); });
+      this.classList.add('active');
+      sortMode = this.dataset.sort;
+      render(1);
+    });
+  });
+
+  render(1);
+})();
 </script>
 </body>
 </html>

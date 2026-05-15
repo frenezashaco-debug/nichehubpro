@@ -5,29 +5,27 @@
   <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Healthy Lifestyle Articles | NicheHubPro</title>
-  <meta name="description" content="Nutrition, sleep, movement, and sustainable habits for a healthier you. Free, science-backed guides.">
+  <meta name="description" content="Evidence-based guides on sleep, nutrition, movement, and daily habits. Small consistent changes that compound into lasting improvements to your health.">
   <link rel="canonical" href="https://nichehubpro.com/healthy-lifestyle/">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="../style.css">
-
-<style>
-.sort-bar { background: var(--bg); border-bottom: 1px solid var(--border); }
-.sort-bar-inner { max-width: 1200px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-.sort-label { font-size: 0.78rem; font-weight: 600; color: var(--gray); white-space: nowrap; }
-.sort-btns { display: flex; gap: 6px; }
-.sort-btn { font-family: Poppins, sans-serif; font-size: 0.78rem; font-weight: 600; padding: 5px 14px; border-radius: 100px; border: 1.5px solid var(--border); background: transparent; color: var(--gray); cursor: pointer; transition: all 0.18s; }
-.sort-btn:hover { border-color: var(--green); color: var(--green); }
-.sort-btn.active { background: var(--dark); border-color: var(--dark); color: #fff; }
-.sort-count { font-size: 0.75rem; color: var(--gray); margin-left: auto; }
-</style>
+  <style>
+  .sort-bar { background: var(--white); border-bottom: 1px solid var(--border); }
+  .sort-bar-inner { max-width: 1200px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .sort-label { font-size: 0.78rem; font-weight: 600; color: var(--gray); white-space: nowrap; }
+  .sort-btns { display: flex; gap: 6px; }
+  .sort-btn { font-family: Poppins, sans-serif; font-size: 0.78rem; font-weight: 600; padding: 5px 14px; border-radius: 100px; border: 1.5px solid var(--border); background: transparent; color: var(--gray); cursor: pointer; transition: all 0.18s; }
+  .sort-btn:hover { border-color: var(--green); color: var(--green); }
+  .sort-btn.active { background: var(--dark); border-color: var(--dark); color: #fff; }
+  .sort-count { font-size: 0.75rem; color: var(--gray); margin-left: auto; }
+  .cat-header p { max-width: 620px; margin: 0 auto; }
+  </style>
 </head>
 <body>
-
 <div id="progress-bar"></div>
-
 <nav class="nav">
   <div class="nav-inner">
     <a href="../" class="nav-logo">NicheHub<span>Pro</span></a>
@@ -52,18 +50,17 @@
 <div class="cat-header">
   <span class="hero-badge">🌿 Healthy Lifestyle</span>
   <h1>Healthy Lifestyle</h1>
-  <p>Nutrition, sleep, movement, and sustainable habits for a healthier you.</p>
+  <p>Evidence-based guides on sleep, nutrition, movement, and daily habits. No extreme diets, no fads. Just small consistent changes that compound into lasting improvements to your health and energy.</p>
 </div>
 
 <div class="cat-tabs">
   <div class="cat-tabs-inner">
-    <div class="cat-tab" data-url="../all-articles/">All</div>
-    <div class="cat-tab" data-url="../mental-wellness/">Mental Wellness</div>
-    <div class="cat-tab" data-url="../productivity/">Productivity</div>
-    <div class="cat-tab active" data-url="../healthy-lifestyle/">Healthy Lifestyle</div>
+    <div class="cat-tab" onclick="window.location='../all-articles/'">All</div>
+    <div class="cat-tab" onclick="window.location='../mental-wellness/'">Mental Wellness</div>
+    <div class="cat-tab" onclick="window.location='../productivity/'">Productivity</div>
+    <div class="cat-tab active">Healthy Lifestyle</div>
   </div>
 </div>
-
 
 <div class="sort-bar">
   <div class="sort-bar-inner">
@@ -76,18 +73,52 @@
     <span class="sort-count" id="article-count"></span>
   </div>
 </div>
-<div class="container" style="padding-top:28px;padding-bottom:0;">
-  <div class="ad-slot ad-slot-banner">Advertisement</div>
-</div>
 
-<section class="section">
+<section class="section" style="padding-top:40px;">
   <div class="container">
+    <div id="featured-wrapper"></div>
+
+    <div class="promo-banner">
+      <div class="promo-banner-icon">📖</div>
+      <div class="promo-banner-body">
+        <div class="promo-banner-label">Free Resource</div>
+        <div class="promo-banner-title">30-Day Discipline Reset &mdash; Free Ebook</div>
+        <div class="promo-banner-sub">20 practical exercises to rebuild your habits &middot; No email required</div>
+      </div>
+      <a href="../ebook/" class="btn">Get Free Ebook</a>
+    </div>
+
     <div class="grid grid-3" id="article-grid"></div>
     <div id="empty-state" style="display:none;text-align:center;padding:60px 20px;">
-      <p style="font-size:1.1rem;color:var(--gray);">No articles yet. Check back soon.</p>
+      <p style="font-size:1.1rem;color:var(--gray);">No articles found. Check back soon.</p>
     </div>
     <div id="pagination" class="pagination"></div>
-    <div class="ad-slot ad-slot-banner" style="margin-top:40px;">Advertisement</div>
+
+    <div class="promo-banner" style="margin-top:40px;background:linear-gradient(135deg,#1a2f3a 0%,#243b47 100%);">
+      <div class="promo-banner-icon">⚡</div>
+      <div class="promo-banner-body">
+        <div class="promo-banner-label" style="color:#6BAF92;">Free Android App</div>
+        <div class="promo-banner-title">IdeaFuel: Habit &amp; Focus Timer</div>
+        <div class="promo-banner-sub">Pomodoro timer &middot; Habit streaks &middot; 100% free</div>
+      </div>
+      <a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener" class="btn" style="background:#6BAF92;">Download Free</a>
+    </div>
+
+    <h2 style="font-size:1.15rem;font-weight:700;color:var(--dark);margin-top:56px;margin-bottom:20px;">Explore Other Topics</h2>
+    <div class="related-cats">
+      <a href="../mental-wellness/" class="related-cat-card">
+        <div class="rcc-icon">🧠</div>
+        <h3>Mental Wellness</h3>
+        <p>Anxiety, burnout, overthinking, and emotional resilience guides.</p>
+        <span class="rcc-link">Browse Mental Wellness &rarr;</span>
+      </a>
+      <a href="../productivity/" class="related-cat-card">
+        <div class="rcc-icon">⚡</div>
+        <h3>Productivity</h3>
+        <p>Focus systems, time management, deep work, and habits that stick.</p>
+        <span class="rcc-link">Browse Productivity &rarr;</span>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -108,19 +139,13 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-links">
-      <a href="/about/">About</a>
-      <span class="sep">|</span>
-      <a href="/contact/">Contact</a>
-      <span class="sep">|</span>
-      <a href="/privacy/">Privacy Policy</a>
-      <span class="sep">|</span>
-      <a href="/disclaimer/">Disclaimer</a>
-      <span class="sep">|</span>
+      <a href="/about/">About</a><span class="sep">|</span>
+      <a href="/contact/">Contact</a><span class="sep">|</span>
+      <a href="/privacy/">Privacy Policy</a><span class="sep">|</span>
+      <a href="/disclaimer/">Disclaimer</a><span class="sep">|</span>
       <a href="/terms/">Terms of Service</a>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 NicheHubPro. All rights reserved.</span>
-    </div>
+    <div class="footer-bottom"><span>&copy; 2026 NicheHubPro. All rights reserved.</span></div>
   </div>
 </footer>
 
@@ -129,68 +154,95 @@
 <script src="../script.js"></script>
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 <script>
-  document.querySelectorAll('.cat-tab').forEach(tab => {
-    tab.addEventListener('click', function() { window.location.href = this.dataset.url; });
-  });
-  document.querySelectorAll('.sort-btn').forEach(btn => {
+(function() {
+  var CAT_SLUG = 'healthy-lifestyle';
+  var PER_PAGE = 12;
+  var sortMode = 'newest';
+  var allArticles = (typeof ARTICLES !== 'undefined') ? ARTICLES.filter(function(a){ return a.cat_slug === CAT_SLUG; }) : [];
+
+  var grid = document.getElementById('article-grid');
+  var pgEl = document.getElementById('pagination');
+  var countEl = document.getElementById('article-count');
+  var featuredWrapper = document.getElementById('featured-wrapper');
+  var empty = document.getElementById('empty-state');
+
+  if (!allArticles.length) {
+    if (grid) grid.style.display = 'none';
+    if (empty) empty.style.display = 'block';
+    return;
+  }
+
+  if (featuredWrapper && allArticles[0]) {
+    var fa = allArticles[0];
+    featuredWrapper.innerHTML = '<div class="featured-article">'
+      + '<picture>'
+      + '<source srcset="../' + fa.image.replace('.jpg','.webp') + '" type="image/webp">'
+      + '<img src="../' + fa.image + '" alt="' + (fa.alt || fa.title).replace(/"/g,'&quot;') + '" loading="eager">'
+      + '</picture>'
+      + '<div class="featured-article-body">'
+      + '<div class="featured-label">&#128205; Featured Guide</div>'
+      + '<h2><a href="../articles/' + fa.slug + '.html" style="color:inherit;text-decoration:none;">' + fa.title + '</a></h2>'
+      + '<p>' + fa.excerpt + '</p>'
+      + '<div class="card-meta" style="margin-bottom:20px;"><span>&#128197; ' + fa.date + '</span><span style="margin-left:12px;">&#9203; ' + fa.read_time + ' min read</span></div>'
+      + '<a href="../articles/' + fa.slug + '.html" class="btn">Read Article &rarr;</a>'
+      + '</div></div>';
+  }
+
+  document.querySelectorAll('.sort-btn').forEach(function(btn) {
     btn.addEventListener('click', function() {
-      document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.sort-btn').forEach(function(b){ b.classList.remove('active'); });
       this.classList.add('active');
-      renderPage(1, this.dataset.sort);
+      sortMode = this.dataset.sort;
+      renderPage(1);
     });
   });
-  document.addEventListener('DOMContentLoaded', function() {
-    const PER_PAGE = 12;
-    const allArticles = ARTICLES.filter(a => a.cat_slug === 'healthy-lifestyle');
-    const grid  = document.getElementById('article-grid');
-    const empty = document.getElementById('empty-state');
-    const pgEl  = document.getElementById('pagination');
-    const countEl = document.getElementById('article-count');
-    if (!allArticles.length) { grid.style.display='none'; empty.style.display='block'; return; }
 
-    function sorted(articles, mode) {
-      const arr = articles.slice();
-      if (mode === 'oldest') return arr.reverse();
-      if (mode === 'az') return arr.sort((a,b) => a.title.localeCompare(b.title));
-      return arr; // newest (default, already newest-first in articles.js)
-    }
+  function getSorted() {
+    var arr = allArticles.slice(1);
+    if (sortMode === 'oldest') return arr.reverse();
+    if (sortMode === 'az') return arr.sort(function(a,b){ return a.title.localeCompare(b.title); });
+    return arr;
+  }
 
-    function cardHTML(a) {
-      return `<div class="card">
-        <picture><source srcset="../${a.image.replace(".jpg",".webp")}" type="image/webp"><img src="../${a.image}" alt="${a.alt || a.title}" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;" loading="lazy"></picture>
-        <div class="card-body">
-          <span class="card-tag">${a.category}</span>
-          <h3><a href="../articles/${a.slug}.html">${a.title}</a></h3>
-          <p>${a.excerpt}</p>
-          <div class="card-meta"><span>📅 ${a.date}</span><span>⏱ ${a.read_time} min read</span></div>
-          <a href="../articles/${a.slug}.html" class="read-more">Read article &rarr;</a>
-        </div>
-      </div>`;
-    }
+  function cardHTML(a) {
+    return '<div class="card">'
+      + '<picture><source srcset="../' + a.image.replace('.jpg','.webp') + '" type="image/webp">'
+      + '<img src="../' + a.image + '" alt="' + (a.alt||a.title).replace(/"/g,'&quot;') + '" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;" loading="lazy"></picture>'
+      + '<div class="card-body">'
+      + '<span class="card-tag">' + a.category + '</span>'
+      + '<h3><a href="../articles/' + a.slug + '.html">' + a.title + '</a></h3>'
+      + '<p>' + a.excerpt + '</p>'
+      + '<div class="card-meta"><span>&#128197; ' + a.date + '</span><span>&#9203; ' + a.read_time + ' min read</span></div>'
+      + '<a href="../articles/' + a.slug + '.html" class="read-more">Read article &rarr;</a>'
+      + '</div></div>';
+  }
 
-    window.renderPage = function(page, sortMode) {
-      sortMode = sortMode || document.querySelector('.sort-btn.active')?.dataset.sort || 'newest';
-      const articles = sorted(allArticles, sortMode);
-      const total = articles.length;
-      const pages = Math.ceil(total / PER_PAGE);
-      const start = (page - 1) * PER_PAGE;
-      grid.innerHTML = articles.slice(start, start + PER_PAGE).map(cardHTML).join('');
-      if (countEl) countEl.textContent = total + ' article' + (total !== 1 ? 's' : '');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      let html = `<button ${page===1?'disabled':''} onclick="renderPage(${page-1})">&laquo; Prev</button>`;
-      for (let i = 1; i <= pages; i++) {
-        if (pages > 7 && Math.abs(i - page) > 2 && i !== 1 && i !== pages) {
-          if (i === page - 3 || i === page + 3) html += `<span class="pg-info">…</span>`;
+  window.renderPage = function(page) {
+    var articles = getSorted();
+    var total = articles.length;
+    var pages = Math.ceil(total / PER_PAGE);
+    var start = (page - 1) * PER_PAGE;
+    grid.innerHTML = articles.slice(start, start + PER_PAGE).map(cardHTML).join('');
+    if (countEl) countEl.textContent = allArticles.length + ' article' + (allArticles.length !== 1 ? 's' : '');
+    if (page > 1) window.scrollTo({top:0,behavior:'smooth'});
+    var html = '';
+    if (pages > 1) {
+      html += '<button ' + (page===1?'disabled':'') + ' onclick="renderPage(' + (page-1) + ')">&laquo; Prev</button>';
+      for (var i = 1; i <= pages; i++) {
+        if (pages > 7 && Math.abs(i-page) > 2 && i !== 1 && i !== pages) {
+          if (i === page-3 || i === page+3) html += '<span class="pg-info">&hellip;</span>';
           continue;
         }
-        html += `<button class="${i===page?'active':''}" onclick="renderPage(${i})">${i}</button>`;
+        html += '<button class="' + (i===page?'active':'') + '" onclick="renderPage(' + i + ')">' + i + '</button>';
       }
-      html += `<button ${page===pages?'disabled':''} onclick="renderPage(${page+1})">Next &raquo;</button>`;
-      html += `<span class="pg-info">Page ${page} of ${pages}</span>`;
-      pgEl.innerHTML = html;
-    };
-    renderPage(1);
-  });
+      html += '<button ' + (page===pages?'disabled':'') + ' onclick="renderPage(' + (page+1) + ')">Next &raquo;</button>';
+      html += '<span class="pg-info">Page ' + page + ' of ' + pages + '</span>';
+    }
+    pgEl.innerHTML = html;
+  };
+
+  renderPage(1);
+})();
 </script>
 </body>
 </html>
