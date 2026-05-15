@@ -363,13 +363,13 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
           <div class="faq-a">{f['answer']}</div>
         </div>"""
 
-    # Build internal links HTML
+    # Build internal links HTML (max 3)
     related_html = "".join([
         f'<li><a href="../articles/{r["slug"]}.html" style="font-size:0.92rem;font-weight:500;color:var(--dark);">→ {r["anchor"] if "anchor" in r else r.get("title","")}</a></li>'
-        for r in internal_links
+        for r in internal_links[:3]
     ])
 
-    # Build related article cards HTML (bottom of article)
+    # Build related article cards HTML (bottom of article, max 3)
     related_cards_html = "".join([
         '<div class="card"><div class="card-body">'
         f'<span class="card-tag">{category}</span>'
@@ -379,13 +379,13 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
         for r in related[:3]
     ])
 
-    # Build sidebar related articles HTML
+    # Build sidebar related articles HTML (max 3)
     sidebar_related_html = "".join([
         '<div class="sidebar-related-item">'
         f'<span class="sidebar-related-num">{i+1}</span>'
         f'<a href="../articles/{r["slug"]}.html">{r.get("anchor") or r.get("title") or r["slug"]}</a>'
         '</div>'
-        for i, r in enumerate(related)
+        for i, r in enumerate(related[:3])
     ])
 
     # Build intro HTML
