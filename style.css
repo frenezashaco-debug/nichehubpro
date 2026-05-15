@@ -505,15 +505,7 @@ ul, ol { list-style: none; }
   color: var(--emerald-dk);
   margin-bottom: 14px;
 }
-.section-eyebrow::before {
-  content: '';
-  display: block;
-  width: 20px; height: 2px;
-  background: var(--emerald);
-  border-radius: 2px;
-}
 .section-dark .section-eyebrow { color: #6EE7B7; }
-.section-dark .section-eyebrow::before { background: #6EE7B7; }
 
 /* Legacy aliases */
 .section-label {
