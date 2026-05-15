@@ -645,11 +645,6 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
     </div>
     <div class="footer-bottom-row">
       <span class="footer-copyright">&copy; 2026 NicheHubPro. All rights reserved.</span>
-      <div class="footer-legal-links">
-        <a href="../privacy/">Privacy</a><span class="sep">|</span>
-        <a href="../disclaimer/">Disclaimer</a><span class="sep">|</span>
-        <a href="../terms/">Terms</a>
-      </div>
     </div>
   </div>
 </footer>
