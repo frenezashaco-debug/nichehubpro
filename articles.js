@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-reduce-anxiety-naturally",
+    "title": "7 Ways to Reduce Anxiety Naturally: Reclaim Your Peace Without Pills",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "How to reduce anxiety naturally starts with understanding that your nervous system is trainable, not broken. Millions of people experience daily anxiety, a",
+    "image": "images/how-to-reduce-anxiety-naturally.jpg",
+    "alt": "Woman breathing peacefully during calm moment at window",
+    "pins": [
+      {
+        "title": "How to Reduce Anxiety Naturally: 7 Science-Backed Methods That Work",
+        "description": "Learn how to reduce anxiety naturally without medication using breathing exercises, meditation, movement, and sleep restoration. These 7 research-validated techniques rewire your nervous system in 2-3 weeks. Start your natural anxiety relief journey today and reclaim your peace. Real results. Real science."
+      },
+      {
+        "title": "Stop Anxiety Before It Starts: Natural Relief Methods That Actually Work",
+        "description": "Stop relying on medication to manage anxiety. Discover how to reduce anxiety naturally using box breathing, cold exposure, caffeine elimination, and daily practices. Your nervous system can be retrained. These natural anxiety relief techniques create lasting calm, not temporary band-aids. Try one today."
+      },
+      {
+        "title": "7-Day Natural Anxiety Relief Challenge: Your Peace Starts Here",
+        "description": "Ready to reduce anxiety without pills? This 7-day challenge shows you exactly how to reduce anxiety naturally using practical, proven methods. From meditation to movement to sleep restoration. Natural anxiety relief is possible. Your calm mind awaits. Start your free challenge now."
+      }
+    ]
+  },
+  {
     "slug": "how-to-deal-with-toxic-people",
     "title": "5 Ways to Deal with Toxic People Without Losing Your Peace",
     "category": "Mental Wellness",
