@@ -2,7 +2,7 @@ name: Daily Article Publisher
 
 on:
   schedule:
-    - cron: '0 8 * * 1-6'
+    - cron: '0 8 * * *'
   workflow_dispatch:
 
 permissions:
@@ -11,12 +11,17 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Pull latest
+        run: git pull --rebase origin main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -24,27 +29,21 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install anthropic json_repair Pillow requests huggingface_hub
+        run: pip install anthropic json-repair Pillow requests urllib3
 
-      - name: Verify API key is set
-        run: |
-          if [ -z "${{ secrets.ANTHROPIC_API_KEY }}" ]; then
-            echo "ERROR: ANTHROPIC_API_KEY secret is not set!"
-            exit 1
-          fi
-          echo "API key is present (length: ${#ANTHROPIC_API_KEY})"
+      - name: Create config.py from secrets
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-
-      - name: Create config.py from secret
+          HF_API_KEY: ${{ secrets.HF_API_KEY }}
+          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+          MAKE_PINTEREST_WEBHOOK: ${{ secrets.MAKE_PINTEREST_WEBHOOK }}
         run: |
-          cat > config.py << 'EOF'
-          ANTHROPIC_API_KEY = "${{ secrets.ANTHROPIC_API_KEY }}"
-          HF_API_KEY = "${{ secrets.HF_API_KEY }}"
-          PINTEREST_ACCESS_TOKEN = "${{ secrets.PINTEREST_ACCESS_TOKEN }}"
-          MAKE_PINTEREST_WEBHOOK = "${{ secrets.MAKE_PINTEREST_WEBHOOK }}"
-          OPENAI_API_KEY = ""
-          EOF
+          printf 'ANTHROPIC_API_KEY = "%s"\n' "$ANTHROPIC_API_KEY" > config.py
+          printf 'HF_API_KEY = "%s"\n' "$HF_API_KEY" >> config.py
+          printf 'PINTEREST_ACCESS_TOKEN = "%s"\n' "$PINTEREST_ACCESS_TOKEN" >> config.py
+          printf 'MAKE_PINTEREST_WEBHOOK = "%s"\n' "$MAKE_PINTEREST_WEBHOOK" >> config.py
+          printf 'OPENAI_API_KEY = ""\n' >> config.py
+          python3 -c "import config; print('HF key OK:', bool(config.HF_API_KEY)); print('Anthropic key OK:', bool(config.ANTHROPIC_API_KEY))"
 
       - name: Show current publish status
         run: python batch_12weeks.py --status
@@ -56,21 +55,23 @@ jobs:
         run: |
           git config user.name "NicheHubPro Bot"
           git config user.email "bot@nichehubpro.com"
-          git add articles/ images/ articles.js sitemap.xml
-          git diff --staged --quiet && echo "Nothing new to commit" || (git commit -m "Auto-publish: daily article $(date +'%Y-%m-%d')" && git push)
+          git add articles/ images/ articles.js api/articles.json sitemap.xml
+          git diff --staged --quiet && echo "Nothing new to commit" || (git commit -m "Auto-publish: daily article $(date +'%Y-%m-%d')" && git pull --rebase origin main && git push)
 
-      - name: Push Pinterest pins (after images are live)
+      - name: Push Pinterest pins
+        continue-on-error: true
         run: |
           sleep 30
           python auto_pins.py
 
       - name: Purge Cloudflare cache
+        continue-on-error: true
         env:
           CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
         run: |
           if [ -z "$CF_ZONE_ID" ] || [ -z "$CF_API_TOKEN" ]; then
-            echo "CF_ZONE_ID or CF_API_TOKEN not set — skipping cache purge."
+            echo "CF secrets not set — skipping cache purge."
             exit 0
           fi
           curl -s -X POST "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" \

@@ -26,18 +26,21 @@ jobs:
         with:
           python-version: '3.11'
 
-      - run: pip install pillow requests huggingface_hub
+      - run: pip install Pillow requests urllib3
 
-      - name: Write config.py
+      - name: Create config.py from secrets
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          HF_API_KEY: ${{ secrets.HF_API_KEY }}
+          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+          MAKE_PINTEREST_WEBHOOK: ${{ secrets.MAKE_PINTEREST_WEBHOOK }}
         run: |
-          cat > config.py << 'EOF'
-          ANTHROPIC_API_KEY = "${{ secrets.ANTHROPIC_API_KEY }}"
-          HF_API_KEY = "${{ secrets.HF_API_KEY }}"
-          PINTEREST_ACCESS_TOKEN = "${{ secrets.PINTEREST_ACCESS_TOKEN }}"
-          MAKE_PINTEREST_WEBHOOK = "${{ secrets.MAKE_PINTEREST_WEBHOOK }}"
-          OPENAI_API_KEY = ""
-          EOF
-
+          printf 'ANTHROPIC_API_KEY = "%s"\n' "$ANTHROPIC_API_KEY" > config.py
+          printf 'HF_API_KEY = "%s"\n' "$HF_API_KEY" >> config.py
+          printf 'PINTEREST_ACCESS_TOKEN = "%s"\n' "$PINTEREST_ACCESS_TOKEN" >> config.py
+          printf 'MAKE_PINTEREST_WEBHOOK = "%s"\n' "$MAKE_PINTEREST_WEBHOOK" >> config.py
+          printf 'OPENAI_API_KEY = ""\n' >> config.py
+          python3 -c "import config; print('HF key OK:', bool(config.HF_API_KEY))"
 
       - run: python auto_fix_covers.py
 
@@ -46,7 +49,4 @@ jobs:
           git config user.name "NicheHubPro Bot"
           git config user.email "action@github.com"
           git add images/ articles/
-          git diff --staged --quiet && echo "Nothing to fix." && exit 0
-          git commit -m "Auto-fix covers: $(date +%Y-%m-%d)"
-          git pull --rebase origin main
-          git push origin main
+          git diff --staged --quiet && echo "Nothing to fix." || (git commit -m "Auto-fix covers: $(date +%Y-%m-%d)" && git pull --rebase origin main && git push origin main)
