@@ -5,27 +5,17 @@
   <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Productivity Articles | NicheHubPro</title>
-  <meta name="description" content="Actionable guides on focus, time management, deep work, and building habits that actually stick. Cut through the noise and start getting more done.">
+  <meta name="description" content="Sustainable guides on focus, time management, deep work, and building habits that stick. Productivity that helps you feel calmer, not more overwhelmed.">
   <link rel="canonical" href="https://nichehubpro.com/productivity/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="../style.css">
   <style>
   .sort-bar { background: var(--white); border-bottom: 1px solid var(--border); }
-  .sort-bar-inner { max-width: 1200px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-  .sort-label { font-size: 0.78rem; font-weight: 600; color: var(--gray); white-space: nowrap; }
-  .sort-btns { display: flex; gap: 6px; }
-  .sort-btn { font-family: Poppins, sans-serif; font-size: 0.78rem; font-weight: 600; padding: 5px 14px; border-radius: 100px; border: 1.5px solid var(--border); background: transparent; color: var(--gray); cursor: pointer; transition: all 0.18s; }
-  .sort-btn:hover { border-color: var(--green); color: var(--green); }
-  .sort-btn.active { background: var(--dark); border-color: var(--dark); color: #fff; }
-  .sort-count { font-size: 0.75rem; color: var(--gray); margin-left: auto; }
-  .cat-header p { max-width: 620px; margin: 0 auto; }
+  .sort-bar-inner { max-width: 1160px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
   </style>
 </head>
 <body>
 <div id="progress-bar"></div>
+
 <nav class="nav">
   <div class="nav-inner">
     <a href="../" class="nav-logo">NicheHub<span>Pro</span></a>
@@ -48,14 +38,14 @@
 </nav>
 
 <div class="cat-header">
-  <span class="hero-badge">⚡ Productivity</span>
+  <div class="hero-badge">&#9889; Productivity</div>
   <h1>Productivity</h1>
-  <p>Actionable guides on focus, time management, deep work, and building habits that actually stick. Cut through the noise, stop overthinking it, and start getting more done.</p>
+  <p>Productivity should make you feel calmer and more focused, not burned out. These guides explore sustainable systems for managing attention, energy, and daily life without sacrificing your wellbeing.</p>
 </div>
 
 <div class="cat-tabs">
   <div class="cat-tabs-inner">
-    <div class="cat-tab" onclick="window.location='../all-articles/'">All</div>
+    <div class="cat-tab" onclick="window.location='../all-articles/'">All Topics</div>
     <div class="cat-tab" onclick="window.location='../mental-wellness/'">Mental Wellness</div>
     <div class="cat-tab active">Productivity</div>
     <div class="cat-tab" onclick="window.location='../healthy-lifestyle/'">Healthy Lifestyle</div>
@@ -74,12 +64,12 @@
   </div>
 </div>
 
-<section class="section" style="padding-top:40px;">
+<section class="section" style="padding-top:48px;">
   <div class="container">
     <div id="featured-wrapper"></div>
 
     <div class="promo-banner">
-      <div class="promo-banner-icon">⚡</div>
+      <div class="promo-banner-icon">&#9889;</div>
       <div class="promo-banner-body">
         <div class="promo-banner-label">Free App</div>
         <div class="promo-banner-title">IdeaFuel: Habit &amp; Focus Timer</div>
@@ -89,13 +79,13 @@
     </div>
 
     <div class="grid grid-3" id="article-grid"></div>
-    <div id="empty-state" style="display:none;text-align:center;padding:60px 20px;">
-      <p style="font-size:1.1rem;color:var(--gray);">No articles found. Check back soon.</p>
+    <div id="empty-state" style="display:none;text-align:center;padding:72px 20px;">
+      <p style="font-size:1.05rem;color:var(--gray);">No articles found. Check back soon.</p>
     </div>
     <div id="pagination" class="pagination"></div>
 
-    <div class="promo-banner" style="margin-top:40px;">
-      <div class="promo-banner-icon">📖</div>
+    <div class="promo-banner" style="margin-top:48px;">
+      <div class="promo-banner-icon">&#128214;</div>
       <div class="promo-banner-body">
         <div class="promo-banner-label">Free Ebook</div>
         <div class="promo-banner-title">30-Day Discipline Reset</div>
@@ -104,18 +94,18 @@
       <a href="../ebook/" class="btn">Get Free Ebook</a>
     </div>
 
-    <h2 style="font-size:1.15rem;font-weight:700;color:var(--dark);margin-top:56px;margin-bottom:20px;">Explore Other Topics</h2>
+    <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:1.2rem;font-weight:800;color:var(--navy);margin-top:64px;margin-bottom:22px;">Explore Other Topics</h2>
     <div class="related-cats">
       <a href="../mental-wellness/" class="related-cat-card">
-        <div class="rcc-icon">🧠</div>
+        <div class="rcc-icon">&#129504;</div>
         <h3>Mental Wellness</h3>
-        <p>Anxiety, burnout, overthinking, and emotional resilience guides.</p>
+        <p>Anxiety, burnout, overthinking, and the emotional side of daily life.</p>
         <span class="rcc-link">Browse Mental Wellness &rarr;</span>
       </a>
       <a href="../healthy-lifestyle/" class="related-cat-card">
-        <div class="rcc-icon">🌿</div>
+        <div class="rcc-icon">&#127807;</div>
         <h3>Healthy Lifestyle</h3>
-        <p>Sleep, nutrition, movement, and sustainable habits that fit real life.</p>
+        <p>Sleep, nutrition, movement, and sustainable habits that support everything else.</p>
         <span class="rcc-link">Browse Healthy Lifestyle &rarr;</span>
       </a>
     </div>
@@ -123,9 +113,9 @@
 </section>
 
 <section class="newsletter">
-  <div class="container">
-    <h2>Weekly Wellness Insights</h2>
-    <p>Get one actionable guide every week. No spam, no fluff.</p>
+  <div class="container" style="max-width:520px;text-align:center;">
+    <h2>One useful guide, every week.</h2>
+    <p>Practical productivity and focus insights delivered weekly. No spam, no filler.</p>
     <form class="nl-form" id="sib-form" method="POST" data-type="subscription" action="https://1781df94.sibforms.com/serve/MUIFABtXrzMaI8A88PrzI10oMtw0B5ws-upYzYmZO7mYWfFa3ki3u-R9G0EdOr2E8lBWrGokcORpm15ZoeY3ZgiPdDVxO7NP7gze8Vi4tNHj7sAoz9PPm5-CheMlX0WFrJvDfzjmJCsSC9VqD-FYS8VIoox3qF8Dt0dP65ZgXg9rieMCtzx0jlj-88s6ug_y_LtpGFntWQ_VHbDufw==">
       <input type="email" name="EMAIL" placeholder="Your email address" required>
       <button class="btn" type="submit">Subscribe Free</button>
@@ -138,18 +128,50 @@
 
 <footer class="footer">
   <div class="footer-inner">
-    <div class="footer-links">
-      <a href="/about/">About</a><span class="sep">|</span>
-      <a href="/contact/">Contact</a><span class="sep">|</span>
-      <a href="/privacy/">Privacy Policy</a><span class="sep">|</span>
-      <a href="/disclaimer/">Disclaimer</a><span class="sep">|</span>
-      <a href="/terms/">Terms of Service</a>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="footer-logo">NicheHub<span>Pro</span></a>
+        <p class="footer-mission">Free wellness and productivity guides for people who want to think clearer and live with more intention.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="../mental-wellness/">Mental Wellness</a></li>
+          <li><a href="../productivity/">Productivity</a></li>
+          <li><a href="../healthy-lifestyle/">Healthy Lifestyle</a></li>
+          <li><a href="../all-articles/">All Articles</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../ebook/">Free Ebook</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener">IdeaFuel App</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../contact/">Contact</a></li>
+          <li><a href="../privacy/">Privacy</a></li>
+          <li><a href="../disclaimer/">Disclaimer</a></li>
+          <li><a href="../terms/">Terms</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-bottom"><span>&copy; 2026 NicheHubPro. All rights reserved.</span></div>
+    <div class="footer-bottom-row">
+      <span class="footer-copyright">&copy; 2026 NicheHubPro. All rights reserved.</span>
+      <div class="footer-legal-links">
+        <a href="../privacy/">Privacy</a><span class="sep">|</span>
+        <a href="../disclaimer/">Disclaimer</a><span class="sep">|</span>
+        <a href="../terms/">Terms</a>
+      </div>
+    </div>
   </div>
 </footer>
 
-<button id="back-to-top" aria-label="Back to top">↑</button>
+<button id="back-to-top" aria-label="Back to top">&#8593;</button>
 <script src="../articles.js"></script>
 <script src="../script.js"></script>
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
@@ -180,11 +202,11 @@
       + '<img src="../' + fa.image + '" alt="' + (fa.alt || fa.title).replace(/"/g,'&quot;') + '" loading="eager">'
       + '</picture>'
       + '<div class="featured-article-body">'
-      + '<div class="featured-label">&#128205; Featured Guide</div>'
+      + '<div class="featured-label">Featured Guide</div>'
       + '<h2><a href="../articles/' + fa.slug + '.html" style="color:inherit;text-decoration:none;">' + fa.title + '</a></h2>'
       + '<p>' + fa.excerpt + '</p>'
-      + '<div class="card-meta" style="margin-bottom:20px;"><span>&#128197; ' + fa.date + '</span><span style="margin-left:12px;">&#9203; ' + fa.read_time + ' min read</span></div>'
-      + '<a href="../articles/' + fa.slug + '.html" class="btn">Read Article &rarr;</a>'
+      + '<div class="card-meta" style="margin-bottom:22px;"><span>&#128197; ' + fa.date + '</span><span style="margin-left:14px;">&#9203; ' + fa.read_time + ' min read</span></div>'
+      + '<a href="../articles/' + fa.slug + '.html" class="btn btn-sm">Read Article &rarr;</a>'
       + '</div></div>';
   }
 
@@ -199,15 +221,15 @@
 
   function getSorted() {
     var arr = allArticles.slice(1);
-    if (sortMode === 'oldest') return arr.reverse();
-    if (sortMode === 'az') return arr.sort(function(a,b){ return a.title.localeCompare(b.title); });
+    if (sortMode === 'oldest') return arr.slice().reverse();
+    if (sortMode === 'az') return arr.slice().sort(function(a,b){ return a.title.localeCompare(b.title); });
     return arr;
   }
 
   function cardHTML(a) {
     return '<div class="card">'
       + '<picture><source srcset="../' + a.image.replace('.jpg','.webp') + '" type="image/webp">'
-      + '<img src="../' + a.image + '" alt="' + (a.alt||a.title).replace(/"/g,'&quot;') + '" style="width:100%;border-radius:8px 8px 0 0;display:block;object-fit:cover;height:200px;" loading="lazy"></picture>'
+      + '<img src="../' + a.image + '" alt="' + (a.alt||a.title).replace(/"/g,'&quot;') + '" class="card-img" loading="lazy"></picture>'
       + '<div class="card-body">'
       + '<span class="card-tag">' + a.category + '</span>'
       + '<h3><a href="../articles/' + a.slug + '.html">' + a.title + '</a></h3>'

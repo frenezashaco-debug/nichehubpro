@@ -398,14 +398,11 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{title} — NicheHubPro</title>
+  <title>{title} | NicheHubPro</title>
   <meta name="description" content="{meta_desc}">
   <link rel="canonical" href="{SITE_URL}/articles/{article_slug}.html">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="preconnect" href="https://sibforms.com">
   <link rel="preload" as="image" href="../images/{cover_webp}" type="image/webp">
   <link rel="stylesheet" href="../style.css">
@@ -424,8 +421,8 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
     "image": "{SITE_URL}/images/{cover_filename}",
     "datePublished": "{today_iso}",
     "dateModified": "{today_iso}",
-    "author": {{ "@type": "Organization", "name": "NicheHubPro" }},
-    "publisher": {{ "@type": "Organization", "name": "NicheHubPro", "url": "{SITE_URL}" }}
+    "author": {{ "@type": "Organization", "name": "NicheHubPro", "url": "{SITE_URL}" }},
+    "publisher": {{ "@type": "Organization", "name": "NicheHubPro", "url": "{SITE_URL}", "logo": {{ "@type": "ImageObject", "url": "{SITE_URL}/favicon.png" }} }}
   }}
   </script>
 
@@ -450,14 +447,16 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
       <a href="../mental-wellness/">Mental Wellness</a>
       <a href="../productivity/">Productivity</a>
       <a href="../healthy-lifestyle/">Healthy Lifestyle</a>
+      <a href="../resources/" class="nav-resources">Resources</a>
       <a href="../about/" class="nav-cta">Start Here</a>
     </div>
-    <div class="nav-burger" id="burger"><span></span><span></span><span></span></div>
+    <button class="nav-burger" id="burger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-mobile" type="button"><span></span><span></span><span></span></button>
   </div>
   <div class="nav-mobile" id="nav-mobile">
     <a href="../mental-wellness/">Mental Wellness</a>
     <a href="../productivity/">Productivity</a>
     <a href="../healthy-lifestyle/">Healthy Lifestyle</a>
+    <a href="../resources/">Resources</a>
     <a href="../about/">About</a>
   </div>
 </nav>
@@ -467,7 +466,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
   <span class="breadcrumb-sep">/</span>
   <a href="{cat_url}">{category}</a>
   <span class="breadcrumb-sep">/</span>
-  <span>{title[:50]}{'...' if len(title) > 50 else ''}</span>
+  <span>{title[:55]}{'...' if len(title) > 55 else ''}</span>
 </div>
 
 <div class="article-layout">
@@ -476,18 +475,17 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
       <span class="article-tag">{category}</span>
       <h1>{title}</h1>
       <div class="article-meta">
-        <span>📅 {today_iso}</span>
-        <span>⏱ <span id="read-time">8</span> min read</span>
-        <span>✍️ NicheHubPro Editorial</span>
+        <span>&#128197; {today_iso}</span>
+        <span>&#9203; <span id="read-time">8</span> min read</span>
+        <span>&#9997;&#65039; NicheHubPro Editorial</span>
       </div>
     </div>
 
-    <!-- COVER IMAGE -->
     <picture>
       <source srcset="../images/{cover_webp}" type="image/webp">
       <img src="../images/{cover_filename}"
            alt="{cover_alt}"
-           style="width:100%;max-height:480px;object-fit:cover;border-radius:12px;margin-bottom:28px;display:block;"
+           style="width:100%;max-height:520px;object-fit:cover;border-radius:var(--radius-lg);margin-bottom:32px;display:block;"
            width="1920" height="1080"
            loading="eager" fetchpriority="high">
     </picture>
@@ -499,12 +497,13 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
       {toc_html}
 
       <div class="tldr">
+        <div class="tldr-label">TL;DR</div>
         <p>{tldr}</p>
       </div>
 
       {sections_html}
 
-      <h2>What Does This Look Like in Real Life?</h2>
+      <h2 id="real-life">What Does This Look Like in Real Life?</h2>
       {"".join(f"<p>{p.strip()}</p>" for p in real_example.split(chr(10)) if p.strip())}
 
       <div class="author-block">
@@ -516,9 +515,9 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
         </div>
       </div>
 
-      <div style="background:var(--green-pale);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px 24px;margin:32px 0;">
-        <p style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--gray);margin-bottom:12px;">Related Articles</p>
-        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
+      <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:22px 26px;margin:36px 0;">
+        <p style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--gray);margin-bottom:14px;">Related Reading</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
           {related_html}
         </ul>
       </div>
@@ -528,26 +527,25 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
         {faq_html}
       </div>
 
-      <!-- FREE RESOURCES CTA -->
-      <div style="background:var(--dark);border-radius:16px;padding:28px;margin:40px 0;display:flex;gap:20px;flex-wrap:wrap;align-items:center;justify-content:space-between;">
+      <div style="background:linear-gradient(135deg,var(--navy) 0%,#0c2820 100%);border-radius:var(--radius-lg);padding:32px;margin:48px 0;display:flex;gap:22px;flex-wrap:wrap;align-items:center;justify-content:space-between;">
         <div style="flex:1;min-width:200px;">
-          <span style="font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#00E676;">Free Resources</span>
-          <h3 style="color:#fff;font-size:1.1rem;font-weight:800;margin:8px 0 6px;line-height:1.3;">Put this into practice today.</h3>
-          <p style="color:rgba(255,255,255,0.5);font-size:0.82rem;line-height:1.65;margin:0;">Our free ebook and habit tracker app were built to help you apply what you just read. No cost, no signup required.</p>
+          <span style="font-size:0.67rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#6EE7B7;">Free Resources</span>
+          <h3 style="color:#fff;font-size:1.1rem;font-weight:700;margin:10px 0 8px;line-height:1.3;">Put this into practice today.</h3>
+          <p style="color:rgba(255,255,255,0.5);font-size:0.85rem;line-height:1.7;margin:0;">Our free ebook and habit tracker app help you apply what you just read. No cost, no signup required.</p>
         </div>
-        <div style="display:flex;flex-direction:column;gap:10px;min-width:210px;">
-          <a href="/ebook/" style="display:flex;align-items:center;gap:10px;background:rgba(0,230,118,0.1);border:1px solid rgba(0,230,118,0.2);border-radius:10px;padding:10px 14px;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(0,230,118,0.18)'" onmouseout="this.style.background='rgba(0,230,118,0.1)'">
-            <span style="font-size:1.4rem;">📖</span>
+        <div style="display:flex;flex-direction:column;gap:10px;min-width:220px;">
+          <a href="/ebook/" style="display:flex;align-items:center;gap:12px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.22);border-radius:10px;padding:12px 16px;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(16,185,129,0.18)'" onmouseout="this.style.background='rgba(16,185,129,0.1)'">
+            <span style="font-size:1.5rem;flex-shrink:0;">&#128214;</span>
             <div>
-              <div style="font-size:0.78rem;font-weight:700;color:#00E676;">Free Ebook</div>
-              <div style="font-size:0.72rem;color:rgba(255,255,255,0.45);">30-Day Discipline Reset</div>
+              <div style="font-size:0.78rem;font-weight:700;color:#6EE7B7;">Free Ebook</div>
+              <div style="font-size:0.72rem;color:rgba(255,255,255,0.42);">30-Day Discipline Reset</div>
             </div>
           </a>
-          <a href="/ideafuel/" style="display:flex;align-items:center;gap:10px;background:rgba(107,175,146,0.1);border:1px solid rgba(107,175,146,0.2);border-radius:10px;padding:10px 14px;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(107,175,146,0.18)'" onmouseout="this.style.background='rgba(107,175,146,0.1)'">
-            <span style="font-size:1.4rem;">&#9889;</span>
+          <a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;background:rgba(20,184,166,0.08);border:1px solid rgba(20,184,166,0.2);border-radius:10px;padding:12px 16px;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(20,184,166,0.16)'" onmouseout="this.style.background='rgba(20,184,166,0.08)'">
+            <span style="font-size:1.5rem;flex-shrink:0;">&#9889;</span>
             <div>
-              <div style="font-size:0.78rem;font-weight:700;color:var(--green);">Free Android App</div>
-              <div style="font-size:0.72rem;color:rgba(255,255,255,0.45);">IdeaFuel: Habit &amp; Focus Timer</div>
+              <div style="font-size:0.78rem;font-weight:700;color:#5EEAD4;">Free Android App</div>
+              <div style="font-size:0.72rem;color:rgba(255,255,255,0.42);">IdeaFuel: Habit &amp; Focus Timer</div>
             </div>
           </a>
         </div>
@@ -556,8 +554,8 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
       <h2>Where to Go From Here</h2>
       {conclusion_paragraphs}
 
-      <div style="margin-top:40px;padding:16px 20px;background:var(--border2);border-radius:var(--radius-sm);font-size:0.78rem;color:var(--gray);line-height:1.6;">
-        <strong>Disclaimer:</strong> This article is for informational purposes only and does not replace professional medical advice. If you are struggling, please consult a qualified healthcare provider.
+      <div style="margin-top:44px;padding:18px 22px;background:var(--bg-2);border-radius:var(--radius-sm);border:1px solid var(--border);font-size:0.82rem;color:var(--gray);line-height:1.7;">
+        <strong style="color:var(--navy);">Medical Disclaimer:</strong> This article is for informational purposes only and does not replace professional medical advice. If you are struggling with your mental or physical health, please consult a qualified healthcare provider.
       </div>
 
     </article>
@@ -568,41 +566,41 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
       <h4>Related Articles</h4>
       {sidebar_related_html}
     </div>
-    <div class="sidebar-box" style="background:var(--dark);">
-      <h4 style="color:rgba(255,255,255,0.5);">Weekly Wellness</h4>
-      <p style="font-size:0.85rem;color:rgba(255,255,255,0.65);margin-bottom:14px;line-height:1.6;">One actionable guide per week. Free forever.</p>
+    <div class="sidebar-box" style="background:var(--navy);">
+      <h4 style="color:rgba(255,255,255,0.45);">Weekly Wellness</h4>
+      <p style="font-size:0.84rem;color:rgba(255,255,255,0.6);margin-bottom:16px;line-height:1.65;">One actionable guide per week. Free forever.</p>
       <form id="sib-form" method="POST" data-type="subscription" action="https://1781df94.sibforms.com/serve/MUIFABtXrzMaI8A88PrzI10oMtw0B5ws-upYzYmZO7mYWfFa3ki3u-R9G0EdOr2E8lBWrGokcORpm15ZoeY3ZgiPdDVxO7NP7gze8Vi4tNHj7sAoz9PPm5-CheMlX0WFrJvDfzjmJCsSC9VqD-FYS8VIoox3qF8Dt0dP65ZgXg9rieMCtzx0jlj-88s6ug_y_LtpGFntWQ_VHbDufw==" style="display:flex;flex-direction:column;gap:8px;">
-        <input type="email" name="EMAIL" placeholder="Your email" required style="padding:10px 14px;border-radius:6px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.08);color:white;font-family:Poppins,sans-serif;font-size:0.85rem;outline:none;">
-        <button class="btn btn-sm" type="submit" style="width:100%;">Subscribe Free</button>
+        <input type="email" name="EMAIL" placeholder="Your email" required style="padding:11px 14px;border-radius:var(--radius-pill);border:1.5px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.07);color:white;font-family:'Poppins',sans-serif;font-size:0.85rem;outline:none;">
+        <button class="btn btn-sm" type="submit" style="width:100%;border-radius:var(--radius-pill);">Subscribe Free</button>
         <input type="text" name="email_address_check" value="" style="display:none;">
         <input type="hidden" name="locale" value="en">
       </form>
     </div>
-    <div class="sidebar-box" style="background:linear-gradient(135deg,#0d1f18,#0a1628);border:1px solid rgba(107,175,146,0.15);">
-      <h4 style="color:#fff;margin-bottom:4px;">Free Resources</h4>
-      <p style="font-size:0.78rem;color:rgba(255,255,255,0.4);margin-bottom:14px;line-height:1.5;">Built to help you actually follow through.</p>
-      <a href="/ebook/" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(0,230,118,0.08);border:1px solid rgba(0,230,118,0.2);border-radius:8px;text-decoration:none;margin-bottom:8px;transition:all 0.2s;" onmouseover="this.style.background=\'rgba(0,230,118,0.14)\'" onmouseout="this.style.background=\'rgba(0,230,118,0.08)\'">
-        <span style="font-size:1.4rem;flex-shrink:0;">&#128218;</span>
+    <div class="sidebar-box" style="background:linear-gradient(135deg,var(--navy) 0%,#0c2820 100%);border:1px solid rgba(16,185,129,0.12);">
+      <h4 style="color:rgba(255,255,255,0.5);">Free Resources</h4>
+      <p style="font-size:0.78rem;color:rgba(255,255,255,0.38);margin-bottom:14px;line-height:1.5;">Built to help you actually follow through.</p>
+      <a href="/ebook/" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.2);border-radius:8px;text-decoration:none;margin-bottom:8px;transition:all 0.2s;" onmouseover="this.style.background=\'rgba(16,185,129,0.16)\'" onmouseout="this.style.background=\'rgba(16,185,129,0.08)\'">
+        <span style="font-size:1.3rem;flex-shrink:0;">&#128214;</span>
         <div>
-          <div style="font-size:0.78rem;font-weight:700;color:#00E676;line-height:1.3;">Free Ebook</div>
-          <div style="font-size:0.72rem;color:rgba(255,255,255,0.5);line-height:1.4;">30-Day Discipline Reset</div>
+          <div style="font-size:0.76rem;font-weight:700;color:#6EE7B7;line-height:1.3;">Free Ebook</div>
+          <div style="font-size:0.7rem;color:rgba(255,255,255,0.4);line-height:1.4;">30-Day Discipline Reset</div>
         </div>
       </a>
-      <a href="/ideafuel/" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(107,175,146,0.08);border:1px solid rgba(107,175,146,0.2);border-radius:8px;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background=\'rgba(107,175,146,0.14)\'" onmouseout="this.style.background=\'rgba(107,175,146,0.08)\'">
-        <span style="font-size:1.4rem;flex-shrink:0;">&#9889;</span>
+      <a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(20,184,166,0.07);border:1px solid rgba(20,184,166,0.18);border-radius:8px;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background=\'rgba(20,184,166,0.14)\'" onmouseout="this.style.background=\'rgba(20,184,166,0.07)\'">
+        <span style="font-size:1.3rem;flex-shrink:0;">&#9889;</span>
         <div>
-          <div style="font-size:0.78rem;font-weight:700;color:#6BAF92;line-height:1.3;">Free Android App</div>
-          <div style="font-size:0.72rem;color:rgba(255,255,255,0.5);line-height:1.4;">IdeaFuel: Habit + Focus Timer</div>
+          <div style="font-size:0.76rem;font-weight:700;color:#5EEAD4;line-height:1.3;">Free Android App</div>
+          <div style="font-size:0.7rem;color:rgba(255,255,255,0.4);line-height:1.4;">IdeaFuel: Habit + Focus Timer</div>
         </div>
       </a>
     </div>
   </aside>
 </div>
 
-<section class="section section-white">
+<section class="section section-soft" style="padding-top:72px;padding-bottom:72px;">
   <div class="container">
     <div class="section-header">
-      <span class="section-label">Keep Reading</span>
+      <div class="section-eyebrow">Keep Reading</div>
       <h2 class="section-title">More on {category}</h2>
     </div>
     <div class="grid grid-3">
@@ -613,24 +611,50 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
 
 <footer class="footer">
   <div class="footer-inner">
-    <div class="footer-links">
-      <a href="/about/">About</a>
-      <span class="sep">|</span>
-      <a href="/contact/">Contact</a>
-      <span class="sep">|</span>
-      <a href="/privacy/">Privacy Policy</a>
-      <span class="sep">|</span>
-      <a href="/disclaimer/">Disclaimer</a>
-      <span class="sep">|</span>
-      <a href="/terms/">Terms of Service</a>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="footer-logo">NicheHub<span>Pro</span></a>
+        <p class="footer-mission">Free, research-backed guides on mental wellness, productivity, and healthy lifestyle. No paywalls, no subscriptions, no fluff.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="../mental-wellness/">Mental Wellness</a></li>
+          <li><a href="../productivity/">Productivity</a></li>
+          <li><a href="../healthy-lifestyle/">Healthy Lifestyle</a></li>
+          <li><a href="../all-articles/">All Articles</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../ebook/">Free Ebook</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener">IdeaFuel App</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../contact/">Contact</a></li>
+          <li><a href="../privacy/">Privacy</a></li>
+          <li><a href="../disclaimer/">Disclaimer</a></li>
+          <li><a href="../terms/">Terms</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 NicheHubPro. All rights reserved.</span>
+    <div class="footer-bottom-row">
+      <span class="footer-copyright">&copy; 2026 NicheHubPro. All rights reserved.</span>
+      <div class="footer-legal-links">
+        <a href="../privacy/">Privacy</a><span class="sep">|</span>
+        <a href="../disclaimer/">Disclaimer</a><span class="sep">|</span>
+        <a href="../terms/">Terms</a>
+      </div>
     </div>
   </div>
 </footer>
 
-<button id="back-to-top" aria-label="Back to top">↑</button>
+<button id="back-to-top" aria-label="Back to top">&#8593;</button>
 <script src="../script.js"></script>
 </body>
 </html>"""
