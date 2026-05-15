@@ -4,174 +4,97 @@
   <meta charset="UTF-8">
   <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free Resources | NicheHubPro — Ebook &amp; App</title>
+  <title>Free Resources | NicheHubPro &mdash; Ebook &amp; App</title>
   <meta name="description" content="Free tools to support your wellness journey. Download the 30-Day Discipline Reset ebook and get the IdeaFuel habit and focus timer app, both 100% free.">
   <link rel="canonical" href="https://nichehubpro.com/resources/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="../style.css">
   <style>
-    .resources-hero {
-      background: var(--dark);
-      padding: 80px 24px 64px;
-      text-align: center;
-    }
-    .resources-hero h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      color: #fff;
-      font-weight: 800;
-      margin-bottom: 16px;
-      line-height: 1.15;
-    }
-    .resources-hero p {
-      font-size: 1.05rem;
-      color: rgba(255,255,255,0.55);
-      max-width: 520px;
-      margin: 0 auto;
-      line-height: 1.75;
-    }
     .resources-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 32px;
+      gap: 28px;
       max-width: 900px;
       margin: 0 auto;
-      padding: 64px 24px;
+      padding: 64px 24px 80px;
     }
     .resource-card {
-      border-radius: 16px;
+      border-radius: var(--radius-lg);
       overflow: hidden;
-      box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+      box-shadow: var(--shadow-md);
       display: flex;
       flex-direction: column;
-      cursor: pointer;
       transition: transform 0.22s ease, box-shadow 0.22s ease;
+      cursor: pointer;
     }
     .resource-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 16px 48px rgba(0,0,0,0.16);
     }
-    .card-ebook:hover { box-shadow: 0 16px 48px rgba(0,230,118,0.18); }
-    .card-app:hover   { box-shadow: 0 16px 48px rgba(107,175,146,0.22); }
-    .resource-card-header {
-      padding: 36px 36px 28px;
-    }
-    .resource-card-body {
-      padding: 0 36px 36px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
+    .card-ebook { background: var(--navy); }
+    .card-ebook:hover { box-shadow: 0 20px 56px rgba(16,185,129,0.2); }
+    .card-app { background: var(--white); border: 1px solid var(--border); }
+    .card-app:hover { box-shadow: var(--shadow-lg); }
+    .resource-card-header { padding: 36px 36px 24px; }
+    .resource-card-body { padding: 0 36px 36px; flex: 1; display: flex; flex-direction: column; }
     .resource-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 4px 10px;
-      border-radius: 100px;
-      margin-bottom: 20px;
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; padding: 5px 12px;
+      border-radius: var(--radius-pill); margin-bottom: 20px;
     }
+    .card-ebook .resource-tag { background: rgba(16,185,129,0.12); color: #6EE7B7; }
+    .card-app .resource-tag { background: var(--emerald-lt); color: var(--emerald-dk); }
     .resource-card h2 {
-      font-size: 1.5rem;
-      font-weight: 800;
-      line-height: 1.25;
-      margin-bottom: 12px;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.5rem; font-weight: 800;
+      line-height: 1.25; margin-bottom: 12px;
     }
-    .resource-card p {
-      font-size: 0.92rem;
-      line-height: 1.7;
-      margin-bottom: 20px;
-      flex: 1;
-    }
-    .feature-list {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 28px;
-    }
+    .card-ebook h2 { color: #fff; }
+    .card-app h2 { color: var(--navy); }
+    .resource-card p { font-size: 0.92rem; line-height: 1.75; margin-bottom: 20px; flex: 1; }
+    .card-ebook p { color: rgba(255,255,255,0.55); }
+    .card-app p { color: var(--gray); }
+    .feature-list { list-style: none; padding: 0; margin: 0 0 28px; }
     .feature-list li {
-      font-size: 0.85rem;
-      line-height: 1.5;
-      padding: 6px 0;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      font-size: 0.87rem; line-height: 1.5;
+      padding: 7px 0; display: flex; align-items: center; gap: 12px;
     }
+    .card-ebook .feature-list li { color: rgba(255,255,255,0.65); }
+    .card-app .feature-list li { color: var(--text); }
     .feature-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      flex-shrink: 0;
+      width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
     }
+    .card-ebook .feature-dot { background: #6EE7B7; }
+    .card-app .feature-dot { background: var(--emerald); }
     .resource-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 14px 24px;
-      border-radius: 10px;
-      font-weight: 700;
-      font-size: 0.9rem;
-      text-decoration: none;
-      transition: opacity 0.2s, transform 0.2s;
-      width: 100%;
-      box-sizing: border-box;
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 14px 24px; border-radius: var(--radius-pill);
+      font-weight: 700; font-size: 0.9rem;
+      text-decoration: none; transition: opacity 0.2s, transform 0.2s;
+      width: 100%; box-sizing: border-box;
     }
     .resource-btn:hover { opacity: 0.88; transform: scale(1.02); }
+    .card-ebook .resource-btn { background: var(--emerald); color: #fff; }
+    .card-app .resource-btn { background: var(--navy); color: #fff; }
     .resource-btn-secondary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 10px 24px;
-      border-radius: 10px;
-      font-weight: 600;
-      font-size: 0.85rem;
-      text-decoration: none;
-      transition: opacity 0.2s;
-      width: 100%;
-      box-sizing: border-box;
-      margin-top: 10px;
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 8px; padding: 11px 24px; border-radius: var(--radius-pill);
+      font-weight: 600; font-size: 0.84rem;
+      text-decoration: none; transition: opacity 0.2s;
+      width: 100%; box-sizing: border-box; margin-top: 10px;
     }
-    .resource-btn-secondary:hover { opacity: 0.75; }
-
-    /* Ebook card */
-    .card-ebook { background: #080C18; }
-    .card-ebook .resource-tag { background: rgba(0,230,118,0.1); color: #00E676; }
-    .card-ebook h2 { color: #fff; }
-    .card-ebook p { color: rgba(255,255,255,0.55); }
-    .card-ebook .feature-list li { color: rgba(255,255,255,0.7); }
-    .card-ebook .feature-dot { background: #00E676; }
-    .card-ebook .resource-btn { background: #00E676; color: #030508; }
-    .card-ebook .resource-btn-secondary { border: 1px solid rgba(0,230,118,0.2); color: #00E676; }
-
-    /* App card */
-    .card-app { background: #fff; border: 1px solid #E5E7EB; }
-    .card-app .resource-tag { background: rgba(107,175,146,0.1); color: var(--green); }
-    .card-app h2 { color: var(--dark); }
-    .card-app p { color: var(--gray); }
-    .card-app .feature-list li { color: #374151; }
-    .card-app .feature-dot { background: var(--green); }
-    .card-app .resource-btn { background: var(--dark); color: #fff; }
-
+    .resource-btn-secondary:hover { opacity: 0.7; }
+    .card-ebook .resource-btn-secondary { border: 1px solid rgba(16,185,129,0.25); color: #6EE7B7; }
     .badge-free {
       display: inline-block;
-      background: rgba(0,230,118,0.12);
-      color: #00E676;
-      font-size: 0.68rem;
-      font-weight: 800;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 3px 8px;
-      border-radius: 4px;
-      margin-left: 8px;
-      vertical-align: middle;
+      background: rgba(16,185,129,0.15); color: #6EE7B7;
+      font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 3px 8px;
+      border-radius: var(--radius-xs); margin-left: 10px; vertical-align: middle;
     }
-    .card-app .badge-free { background: rgba(107,175,146,0.12); color: var(--green); }
+    .card-app .badge-free { background: var(--emerald-lt); color: var(--emerald-dk); }
+    @media (max-width: 700px) {
+      .resource-card-header, .resource-card-body { padding-left: 24px; padding-right: 24px; }
+    }
   </style>
 </head>
 <body>
@@ -201,16 +124,14 @@
   </div>
 </nav>
 
-<main>
-
-<!-- HERO -->
-<div class="resources-hero">
-  <div class="hero-badge" style="margin-bottom:20px;">100% Free &middot; No Signup Required</div>
+<div class="cat-header">
+  <div class="hero-badge">&#127381; Free Resources</div>
   <h1>Free Tools for Your<br>Wellness Journey</h1>
-  <p>An interactive ebook and a habit tracking app, both free, both built around the same goal: helping you build lasting discipline.</p>
+  <p>An interactive ebook and a habit tracking app, both 100% free, both built around the same goal: helping you close the gap between knowing and doing.</p>
 </div>
 
-<!-- RESOURCE CARDS -->
+<main>
+
 <div class="resources-grid">
 
   <!-- EBOOK CARD -->
@@ -220,19 +141,18 @@
         <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
         Free Ebook
       </span>
-      <div style="font-size:2.2rem;margin-bottom:12px;">📖</div>
+      <div style="font-size:2.4rem;margin-bottom:14px;">&#128214;</div>
       <h2>30-Day Discipline Reset<span class="badge-free">Free</span></h2>
     </div>
     <div class="resource-card-body">
-      <p>A structured guide to closing the gap between knowing and doing. Identity, environment, and momentum are the three foundations of lasting change.</p>
+      <p>A structured guide to building lasting discipline. Identity, environment, and momentum are the three foundations. 20 pages of exercises and prompts to work through at your own pace.</p>
       <ul class="feature-list">
-        <li><span class="feature-dot"></span>20 interactive pages with exercises</li>
-        <li><span class="feature-dot"></span>Reflection prompts and 30-day tracker</li>
-        <li><span class="feature-dot"></span>Read in browser or export as PDF</li>
-        <li><span class="feature-dot"></span>No email required</li>
+        <li><span class="feature-dot"></span>20 interactive pages with real exercises</li>
+        <li><span class="feature-dot"></span>Daily reflection prompts and a 30-day tracker</li>
+        <li><span class="feature-dot"></span>Read in your browser or save as PDF</li>
+        <li><span class="feature-dot"></span>No email required, completely free</li>
       </ul>
       <a href="/ebook/" class="resource-btn" onclick="event.stopPropagation()">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 2v14M5 9l7 7 7-7"/><path d="M3 21h18"/></svg>
         Read the Ebook Free
       </a>
       <a href="/ebook/" class="resource-btn-secondary" onclick="event.stopPropagation()">Open in browser &rarr;</a>
@@ -243,22 +163,20 @@
   <div class="resource-card card-app" onclick="window.open('https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel','_blank')">
     <div class="resource-card-header">
       <span class="resource-tag">
-        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.4c1.39.07 2.36.78 3.17.8 1.21-.24 2.37-1.02 3.67-.91 1.57.13 2.75.8 3.52 1.97-3.24 1.94-2.74 6.22.48 7.43-.59 1.67-1.34 3.31-2.84 3.59zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-        Free Android App
+        &#9889; Free Android App
       </span>
-      <div style="font-size:2.2rem;margin-bottom:12px;">⚡</div>
-      <h2>IdeaFuel: Habit &amp; Focus Timer<span class="badge-free" style="background:rgba(107,175,146,0.12);color:var(--green);">Free</span></h2>
+      <div style="font-size:2.4rem;margin-bottom:14px;">&#9889;</div>
+      <h2>IdeaFuel: Habit &amp; Focus Timer<span class="badge-free">Free</span></h2>
     </div>
     <div class="resource-card-body">
-      <p>Track your daily habits, run Pomodoro focus sessions, and build streaks that stick. The companion app to the 30-Day Discipline Reset.</p>
+      <p>Track your daily habits, run Pomodoro focus sessions, and build streaks that stick. The companion app to the 30-Day Discipline Reset. Built for Android, 100% free.</p>
       <ul class="feature-list">
-        <li><span class="feature-dot"></span>Pomodoro timer with custom intervals</li>
-        <li><span class="feature-dot"></span>Daily habit tracker with streaks</li>
-        <li><span class="feature-dot"></span>Progress dashboard</li>
-        <li><span class="feature-dot"></span>Free on Android</li>
+        <li><span class="feature-dot"></span>Pomodoro timer with custom work and break intervals</li>
+        <li><span class="feature-dot"></span>Daily habit tracker with streak tracking</li>
+        <li><span class="feature-dot"></span>Progress dashboard to see your momentum</li>
+        <li><span class="feature-dot"></span>Free on Android, no in-app purchases</li>
       </ul>
       <a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener noreferrer" class="resource-btn" onclick="event.stopPropagation()">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.006A1 1 0 0118.5 12a1 1 0 01-.802.993l-1.497.866-2.302-2.302 2.302-2.302 1.497.866zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.634z"/></svg>
         Get it on Google Play
       </a>
     </div>
@@ -267,13 +185,14 @@
 </div>
 
 <!-- BOTTOM CTA -->
-<section class="section section-green" style="padding:56px 24px;">
+<section class="section section-dark" style="padding:80px 24px;">
   <div class="container" style="max-width:580px;text-align:center;">
-    <h2 style="font-size:1.6rem;font-weight:800;color:var(--dark);margin-bottom:12px;">Start your reset today.</h2>
-    <p style="font-size:0.98rem;color:var(--green-dk);line-height:1.8;margin-bottom:28px;">Read the ebook, track your habits in the app. Both free, both built to help you follow through.</p>
+    <div class="section-eyebrow" style="justify-content:center;">Start Today</div>
+    <h2 class="section-title">Read the ebook. Track your habits.</h2>
+    <p class="section-sub" style="margin-left:auto;margin-right:auto;margin-bottom:32px;">Both free, both built to help you follow through on what you already know you should do.</p>
     <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-      <a href="/ebook/" class="btn">Read the Ebook &rarr;</a>
-      <a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Download the App</a>
+      <a href="/ebook/" class="btn">Read the Ebook Free &rarr;</a>
+      <a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Download the App</a>
     </div>
   </div>
 </section>
@@ -282,24 +201,50 @@
 
 <footer class="footer">
   <div class="footer-inner">
-    <div class="footer-links">
-      <a href="/about/">About</a>
-      <span class="sep">|</span>
-      <a href="/contact/">Contact</a>
-      <span class="sep">|</span>
-      <a href="/privacy/">Privacy Policy</a>
-      <span class="sep">|</span>
-      <a href="/disclaimer/">Disclaimer</a>
-      <span class="sep">|</span>
-      <a href="/terms/">Terms of Service</a>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">NicheHub<span>Pro</span></a>
+        <p class="footer-mission">Free wellness and productivity guides for people who want to think clearer and live with more intention. No paywalls, no subscriptions, no fluff.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="/mental-wellness/">Mental Wellness</a></li>
+          <li><a href="/productivity/">Productivity</a></li>
+          <li><a href="/healthy-lifestyle/">Healthy Lifestyle</a></li>
+          <li><a href="/all-articles/">All Articles</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/ebook/">Free Ebook</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener">IdeaFuel App</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/privacy/">Privacy</a></li>
+          <li><a href="/disclaimer/">Disclaimer</a></li>
+          <li><a href="/terms/">Terms</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 NicheHubPro. All rights reserved.</span>
+    <div class="footer-bottom-row">
+      <span class="footer-copyright">&copy; 2026 NicheHubPro. All rights reserved.</span>
+      <div class="footer-legal-links">
+        <a href="/privacy/">Privacy</a><span class="sep">|</span>
+        <a href="/disclaimer/">Disclaimer</a><span class="sep">|</span>
+        <a href="/terms/">Terms</a>
+      </div>
     </div>
   </div>
 </footer>
 
-<button id="back-to-top" aria-label="Back to top">↑</button>
+<button id="back-to-top" aria-label="Back to top">&#8593;</button>
 <script defer src="../script.js"></script>
 </body>
 </html>
