@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "time-blocking-for-beginners",
+    "title": "5 Time Blocking for Beginners: Stop Feeling Scattered and Reclaim Your Day",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Time blocking for beginners sounds complicated, but it's actually the simplest way to stop feeling scattered and take back control of your day. Instead of ",
+    "image": "images/time-blocking-for-beginners.jpg",
+    "alt": "Woman reviewing her organized time blocking schedule on calendar peacefully",
+    "pins": [
+      {
+        "title": "How to Start Time Blocking for Beginners: 5 Simple Steps Today",
+        "description": "Stop feeling scattered and scattered. Learn exactly how to use time blocking to organize your schedule, protect your focus, and actually finish important work. Time blocking for beginners is simpler than you think - start with just 3 blocks per day and watch your productivity transform this week. Your calendar is your new productivity tool."
+      },
+      {
+        "title": "Stop Wasting Hours: Why Time Blocking Changes Everything",
+        "description": "Tired of busy days with zero accomplishment? Time blocking solves this. Instead of jumping between tasks and losing 40% of your productivity to switching, assign specific time chunks to specific work. See the science behind why time blocking works and why every productive person uses it. Transform your day starting now."
+      },
+      {
+        "title": "Try This Time Blocking Schedule: 5 Templates That Actually Work",
+        "description": "Ready to organize your day? Here are realistic time blocking schedule templates you can steal today. Learn exactly how to block your morning for deep work, protect email time, and schedule breaks that prevent burnout. Time blocking for beginners made simple with real examples you can use immediately."
+      }
+    ]
+  },
+  {
     "slug": "emotional-exhaustion-vs-burnout",
     "title": "5 Key Differences: Emotional Exhaustion vs Burnout (And Why It Matters)",
     "category": "Mental Wellness",
