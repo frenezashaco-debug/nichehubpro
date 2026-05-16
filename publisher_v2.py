@@ -404,6 +404,10 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
   <meta name="description" content="{meta_desc}">
   <link rel="canonical" href="{SITE_URL}/articles/{article_slug}.html">
   <link rel="preconnect" href="https://sibforms.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="preload" as="image" href="../images/{cover_webp}" type="image/webp">
   <link rel="stylesheet" href="../style.css">
   <meta property="og:title" content="{title}">
