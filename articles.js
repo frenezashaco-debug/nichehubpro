@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "deep-work-vs-multitasking",
+    "title": "5 Deep Work vs Multitasking: Why Your Brain Demands Single Tasking Now",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Deep work vs multitasking is the defining battle of modern productivity. Your brain wasn't designed to switch between ten tabs, five apps, and three conver",
+    "image": "images/deep-work-vs-multitasking.jpg",
+    "alt": "Woman focusing intently at desk during deep work session",
+    "pins": [
+      {
+        "title": "Deep Work vs Multitasking: Why Your Brain Needs Single Tasking",
+        "description": "Stop multitasking and start doing deep work. Science shows you lose 40% of your focus with each task switch. Discover how single tasking increases productivity, reduces stress, and lets you accomplish more by doing less. Your brain will thank you for protecting focus time."
+      },
+      {
+        "title": "Stop Multitasking: Why Deep Work Actually Makes You More Productive",
+        "description": "Multitasking is destroying your productivity and your mental health. Learn why deep work vs multitasking matters neurologically and how protecting just 60 minutes of focused time daily transforms your work quality and reduces overwhelming stress."
+      },
+      {
+        "title": "How to Build a Deep Work Habit That Lasts (No Willpower Required)",
+        "description": "Tired of multitasking and feeling scattered all day? These daily habits transform scattered, exhausted workers into focused, productive people. Start with one simple 60-minute focus block and watch how deep work becomes your new normal."
+      }
+    ]
+  },
+  {
     "slug": "time-blocking-for-beginners",
     "title": "5 Time Blocking for Beginners: Stop Feeling Scattered and Reclaim Your Day",
     "category": "Productivity",
