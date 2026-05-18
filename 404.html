@@ -16,6 +16,16 @@
     // Smart redirect: old slug-only URLs → /articles/slug.html
     (function() {
       var path = window.location.pathname;
+      // WordPress feed URLs → homepage
+      if (/\/feed\/?$/.test(path) || /\/feed\/rss2\/?$/.test(path)) {
+        window.location.replace('/');
+        return;
+      }
+      // WordPress search URLs → homepage
+      if (/^\/search\//.test(path) || window.location.search.indexOf('s=') !== -1) {
+        window.location.replace('/');
+        return;
+      }
       // Strip leading/trailing slashes and get slug
       var slug = path.replace(/^\/|\/$/g, '');
       // Skip known real paths
