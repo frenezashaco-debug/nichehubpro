@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "healthy-sleep-habits-that-improve-energy",
+    "title": "7 Healthy Sleep Habits That Improve Energy and Transform Your Entire Day",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Healthy sleep habits that improve energy are the foundation of everything else in your life. When you sleep well, your brain clears toxins, your hormones b",
+    "image": "images/healthy-sleep-habits-that-improve-energy.jpg",
+    "alt": "Woman waking peacefully in morning with healthy sleep habits",
+    "pins": [
+      {
+        "title": "7 Sleep Habits That Give You More Energy All Day Long",
+        "description": "Stop the afternoon energy crashes. These 7 simple sleep habits transform your energy levels within 2 weeks. No supplements needed, just consistent routines that align with your body's natural rhythm. Learn which habit to start with tonight for immediate results."
+      },
+      {
+        "title": "Stop Waking Exhausted: The Sleep Habits You're Missing",
+        "description": "Sleeping 8 hours but still exhausted? The problem isn't how long you sleep, it's your sleep habits. Discover why your energy crashes at 3pm and the 3-minute evening routine that fixes it. Real solutions from sleep science, not guesswork."
+      },
+      {
+        "title": "Try This: One Sleep Habit That Changes Everything About Your Energy",
+        "description": "One consistent change made the biggest difference for thousands of people struggling with daytime fatigue. This specific sleep habit takes zero willpower and compounds into sustained energy within weeks. Start tonight with this surprisingly simple shift."
+      }
+    ]
+  },
+  {
     "slug": "deep-work-vs-multitasking",
     "title": "5 Deep Work vs Multitasking: Why Your Brain Demands Single Tasking Now",
     "category": "Productivity",
