@@ -501,7 +501,6 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
       {toc_html}
 
       <div class="tldr">
-        <div class="tldr-label">TL;DR</div>
         <p>{tldr}</p>
       </div>
 
