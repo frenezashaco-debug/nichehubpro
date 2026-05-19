@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "best-foods-for-focus-and-concentration",
+    "title": "7 Best Foods for Focus and Concentration That Boost Your Brain Power",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "The best foods for focus and concentration can transform your entire workday in ways you've never experienced. Your brain uses 20 percent of your body's en",
+    "image": "images/best-foods-for-focus-and-concentration.jpg",
+    "alt": "woman focused at desk with clear mental concentration",
+    "pins": [
+      {
+        "title": "7 Best Foods for Focus That Actually Sharpen Your Brain",
+        "description": "Stop blaming yourself for afternoon brain fog. These 7 best foods for focus and concentration stabilize your energy, boost dopamine, and keep your mind sharp for hours. Salmon, berries, eggs, nuts, dark chocolate, greens, and whole grains are your brain's real power fuel. Add one to your next meal and notice the difference by tomorrow. Your focus is just waiting for the right nutrition."
+      },
+      {
+        "title": "Stop Brain Fog: The Best Foods for Concentration",
+        "description": "Your 2 PM brain crash isn't laziness. It's malnutrition. Discover which foods eliminate brain fog, improve memory, and keep you mentally sharp all day long. From omega-3 fatty fish to dark chocolate, learn the exact brain foods science proves actually work. Try one today and feel the clarity shift within hours."
+      },
+      {
+        "title": "Try This: 7-Day Brain Food Challenge for Better Focus",
+        "description": "Challenge yourself to eat the best foods for focus and concentration for just 7 days. One salmon meal, daily berries, eggs at breakfast, almonds as snacks. By day 7, notice how your mental clarity improves, your energy stays stable, and your concentration deepens. Your brain knows what it needs. Feed it right."
+      }
+    ]
+  },
+  {
     "slug": "healthy-sleep-habits-that-improve-energy",
     "title": "7 Healthy Sleep Habits That Improve Energy and Transform Your Entire Day",
     "category": "Healthy Lifestyle",
