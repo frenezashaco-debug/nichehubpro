@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "why-you-have-no-motivation-anymore",
+    "title": "5 Reasons Why You Have No Motivation Anymore (And How to Get It Back)",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Why you have no motivation anymore is often a sign that something deeper is happening inside you, not a character flaw. Burnout, anxiety, depression, and c",
+    "image": "images/why-you-have-no-motivation-anymore.jpg",
+    "alt": "Woman staring out window looking unmotivated and tired at home",
+    "pins": [
+      {
+        "title": "Why You Have No Motivation Anymore (5 Proven Fixes That Work)",
+        "description": "Feeling unmotivated? Learn the real reasons why you have no motivation anymore and discover five evidence-based strategies to rebuild your drive. From reconnecting to purpose to setting boundaries, these tactics help you reignite your energy and take action again. Start with one strategy today and watch motivation return naturally."
+      },
+      {
+        "title": "Stop Losing Motivation: The Root Causes No One Talks About",
+        "description": "Your lack of motivation isn't laziness. It's a signal that your nervous system needs something to change. Burnout, toxic environments, unclear purpose, and unprocessed anxiety all kill motivation differently. Discover which one is stealing your drive and how to reclaim it in weeks, not months. Real solutions inside."
+      },
+      {
+        "title": "Get Your Motivation Back in 20 Minutes Daily (Habit Stack Included)",
+        "description": "Forget waiting to feel motivated. This daily habit stack rebuilds your dopamine system and rewires your brain for drive. Morning purpose anchoring, movement resets, boundary checks, and progress tracking take just 20 minutes. Two weeks of consistency creates noticeable shifts. Your motivation recovery starts with one small choice today."
+      }
+    ]
+  },
+  {
     "slug": "best-foods-for-focus-and-concentration",
     "title": "7 Best Foods for Focus and Concentration That Boost Your Brain Power",
     "category": "Healthy Lifestyle",
