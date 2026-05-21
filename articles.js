@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-improve-emotional-resilience",
+    "title": "5 Ways to Improve Emotional Resilience After Hard Times",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "How to improve emotional resilience is the question countless people ask after hitting their breaking point. Emotional resilience isn't something you're bo",
+    "image": "images/how-to-improve-emotional-resilience.jpg",
+    "alt": "Woman gazing peacefully by morning window in mental wellness moment",
+    "pins": [
+      {
+        "title": "How to Improve Emotional Resilience: 5 Daily Habits That Actually Work",
+        "description": "Discover how to improve emotional resilience with science-backed strategies you can practice today. Learn 5 proven daily habits that build inner strength after trauma, loss, or burnout. Start bouncing back faster from life's hardships with practical, actionable steps."
+      },
+      {
+        "title": "Stop Falling Apart: Build Emotional Resilience After Hard Times",
+        "description": "Tired of feeling fragile? Learn how to improve emotional resilience and recover faster from setbacks. This guide reveals why some people bounce back while others stay stuck, plus 5 core strategies to rebuild your inner strength and trust yourself again."
+      },
+      {
+        "title": "Try These 5 Daily Practices to Improve Your Emotional Resilience",
+        "description": "Small daily practices create big emotional strength. Discover how to improve emotional resilience with 3-5 minute habits: grounding exercises, emotion tracking, self-compassion, meaningful connection, and reflection. Build a bulletproof mindset in less than 20 minutes daily."
+      }
+    ]
+  },
+  {
     "slug": "why-you-have-no-motivation-anymore",
     "title": "5 Reasons Why You Have No Motivation Anymore (And How to Get It Back)",
     "category": "Mental Wellness",
