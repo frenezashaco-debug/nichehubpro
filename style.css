@@ -819,7 +819,10 @@ ul, ol { list-style: none; }
 }
 .promo-banner .btn {
   flex-shrink: 0;
-  background: var(--green-fresh); color: var(--navy);
+  background: #22C55E !important;
+  background-color: #22C55E !important;
+  border: none !important;
+  color: var(--navy);
   font-size: 0.82rem; padding: 10px 20px;
   white-space: nowrap;
 }
@@ -840,7 +843,10 @@ ul, ol { list-style: none; }
 }
 .inline-promo-body span { font-size: 0.78rem; color: rgba(255,255,255,0.45); }
 .inline-promo .btn {
-  flex-shrink: 0; background: var(--green-fresh);
+  flex-shrink: 0;
+  background: #22C55E !important;
+  background-color: #22C55E !important;
+  border: none !important;
   color: var(--navy); font-size: 0.8rem; padding: 9px 18px;
   white-space: nowrap;
 }
