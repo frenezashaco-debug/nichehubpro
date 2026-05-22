@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-build-habits-that-actually-stick",
+    "title": "5 Ways to Build Habits That Actually Stick: The Science-Backed Strategy That Finally Works",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "How to build habits that actually stick is the question that keeps you awake at night. You've tried everything: motivation boards, apps, cold showers, acco",
+    "image": "images/how-to-build-habits-that-actually-stick.jpg",
+    "alt": "young woman sitting peacefully building sustainable daily habits today",
+    "pins": [
+      {
+        "title": "5 Ways to Build Habits That Actually Stick (Science Explained)",
+        "description": "Stop relying on willpower and motivation. Learn the habit loop science that explains why you quit after two weeks and the exact system that makes habits automatic. Discover the two-day rule, implementation intentions, and environmental design strategies that work. Start building habits that last today."
+      },
+      {
+        "title": "Stop Restarting Habits Every Monday: The Real Reason They Don't Stick",
+        "description": "Your willpower isn't weak. Your environment and reward system are working against you. This guide reveals why habits never stick and the five science-backed strategies to finally change. Learn how to reduce friction, build identity-based habits, and create lasting change without burnout."
+      },
+      {
+        "title": "How to Build Habits in 66 Days (Not 21): The Complete Science Guide",
+        "description": "The 21-day myth is wrong. Real habit formation takes 18 to 254 days depending on complexity. Learn the exact habit loop framework and daily strategies that actually work. Master habit stacking, dopamine scheduling, and consistency tracking to build habits that genuinely stick for life."
+      }
+    ]
+  },
+  {
     "slug": "how-to-improve-emotional-resilience",
     "title": "5 Ways to Improve Emotional Resilience After Hard Times",
     "category": "Mental Wellness",
