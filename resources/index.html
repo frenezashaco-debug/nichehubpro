@@ -17,7 +17,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 28px;
-      max-width: 900px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 64px 24px 80px;
     }
@@ -138,8 +138,8 @@
 
 <div class="resources-grid">
 
-  <!-- EBOOK CARD -->
-  <div class="resource-card card-ebook" onclick="window.location='/ebook/'">
+  <!-- EBOOK CARD 1: 30-Day Discipline Reset -->
+  <div class="resource-card card-ebook" onclick="window.location='/ebook/30-day-discipline-reset'">
     <div class="resource-card-header">
       <span class="resource-tag">
         <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
@@ -156,10 +156,35 @@
         <li><span class="feature-dot"></span>Read in your browser or save as PDF</li>
         <li><span class="feature-dot"></span>No email required, completely free</li>
       </ul>
-      <a href="/ebook/" class="resource-btn" onclick="event.stopPropagation()">
+      <a href="/ebook/30-day-discipline-reset" class="resource-btn" onclick="event.stopPropagation()">
         Read the Ebook Free
       </a>
-      <a href="/ebook/" class="resource-btn-secondary" onclick="event.stopPropagation()">Open in browser &rarr;</a>
+      <a href="/ebook/30-day-discipline-reset" class="resource-btn-secondary" onclick="event.stopPropagation()">Open in browser &rarr;</a>
+    </div>
+  </div>
+
+  <!-- EBOOK CARD 2: The Calm Focus System -->
+  <div class="resource-card card-ebook" onclick="window.location='/ebook/calm-focus-system'" style="border-top: 3px solid #14B8A6;">
+    <div class="resource-card-header">
+      <span class="resource-tag" style="background:rgba(20,184,166,0.12);color:#5EEAD4;">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Free Ebook
+      </span>
+      <div style="font-size:2.4rem;margin-bottom:14px;">&#129504;</div>
+      <h2 style="color:#fff;">The Calm Focus System<span class="badge-free" style="background:rgba(20,184,166,0.15);color:#5EEAD4;">Free</span></h2>
+    </div>
+    <div class="resource-card-body">
+      <p>A practical framework for protecting your attention, managing mental energy, and building focus that holds up over time. 43 pages covering the full Calm Focus Loop.</p>
+      <ul class="feature-list">
+        <li><span class="feature-dot" style="background:#5EEAD4;"></span>43 pages across 10 chapters</li>
+        <li><span class="feature-dot" style="background:#5EEAD4;"></span>Energy audit, focus architecture, 90/20 method</li>
+        <li><span class="feature-dot" style="background:#5EEAD4;"></span>Weekly reset system and daily checklists</li>
+        <li><span class="feature-dot" style="background:#5EEAD4;"></span>No email required, completely free</li>
+      </ul>
+      <a href="/ebook/calm-focus-system" class="resource-btn" style="background:#14B8A6;" onclick="event.stopPropagation()">
+        Read the Ebook Free
+      </a>
+      <a href="/ebook/calm-focus-system" class="resource-btn-secondary" style="border-color:rgba(20,184,166,0.25);color:#5EEAD4;" onclick="event.stopPropagation()">Open in browser &rarr;</a>
     </div>
   </div>
 
@@ -192,10 +217,11 @@
 <section class="section section-dark" style="padding:80px 24px;">
   <div class="container" style="max-width:580px;text-align:center;">
     <div class="section-eyebrow" style="justify-content:center;">Start Today</div>
-    <h2 class="section-title">Read the ebook. Track your habits.</h2>
-    <p class="section-sub" style="margin-left:auto;margin-right:auto;margin-bottom:32px;">Both free, both built to help you follow through on what you already know you should do.</p>
+    <h2 class="section-title">Two free ebooks. One free app.</h2>
+    <p class="section-sub" style="margin-left:auto;margin-right:auto;margin-bottom:32px;">All three are free, all three are built to help you close the gap between knowing and doing.</p>
     <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-      <a href="/ebook/" class="btn">Read the Ebook Free &rarr;</a>
+      <a href="/ebook/30-day-discipline-reset" class="btn">30-Day Discipline Reset &rarr;</a>
+      <a href="/ebook/calm-focus-system" class="btn" style="background:#14B8A6;">The Calm Focus System &rarr;</a>
       <a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Download the App</a>
     </div>
   </div>
