@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-sleep-affects-mental-health",
+    "title": "5 Ways How Sleep Affects Mental Health: Transform Your Mind Tonight",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "How sleep affects mental health might be the missing puzzle piece in your wellness journey. Poor sleep doesn't just leave you tired, it actively rewires yo",
+    "image": "images/how-sleep-affects-mental-health.jpg",
+    "alt": "Woman sleeping peacefully in bed at sunrise, mental health recovery",
+    "pins": [
+      {
+        "title": "5 Ways Sleep Affects Mental Health: End Anxiety Tonight",
+        "description": "Discover how poor sleep destroys your mental health and learn 5 science-backed strategies to improve sleep quality naturally. Sleep better, feel better mentally. Your brain chemistry depends on it. Read the complete guide to transforming your mood and anxiety through better sleep habits."
+      },
+      {
+        "title": "Stop Anxiety Without Medication: Fix Your Sleep First",
+        "description": "Most people miss the obvious fix for anxiety and depression. Poor sleep is often the real culprit. Learn exactly how sleep affects mental health, why your anxiety spikes after bad nights, and the practical sleep habits that actually work. Mental health starts with sleep."
+      },
+      {
+        "title": "Try This: 7-Hour Sleep Challenge for Mental Health",
+        "description": "Challenge yourself to 7-8 hours of consistent sleep for 21 days and watch your mental health transform. No expensive supplements or therapy needed. Science shows that fixing sleep quality improves mood, reduces anxiety, and stabilizes emotions faster than most treatments. Start tonight."
+      }
+    ]
+  },
+  {
     "slug": "best-productivity-systems-explained",
     "title": "5 Best Productivity Systems Explained: Stop Drowning in Tasks and Actually Win",
     "category": "Productivity",
