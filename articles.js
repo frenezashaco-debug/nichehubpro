@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "healthy-habits-to-start-this-week",
+    "title": "7 Healthy Habits to Start This Week That Actually Stick (No Willpower Required)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Healthy habits to start this week don't require a complete life overhaul or superhuman willpower. You're probably already tired of hearing about extreme tr",
+    "image": "images/healthy-habits-to-start-this-week.jpg",
+    "alt": "young woman in morning sunlight with calm expression and healthy habits",
+    "pins": [
+      {
+        "title": "7 Healthy Habits to Start This Week That Actually Stick",
+        "description": "Stop waiting for Monday. These simple healthy habits are so easy you'll forget they're habits. Drinking water, walking, sleeping better, and eating protein take less than 5 minutes each. Stick with one for 21 days and watch everything change. Your mental health will thank you."
+      },
+      {
+        "title": "Stop Trying To Change Everything: The Easiest Healthy Habits",
+        "description": "You don't need a gym, a diet, or superhuman willpower. The easiest healthy habits are micro-habits: 5-minute walks, extra water, one vegetable, better sleep. Research shows habits this small stick 80% better than big goals. Start one today, not seven."
+      },
+      {
+        "title": "Try This One Habit Stack Method (Healthy Habits That Stick)",
+        "description": "Attach your new healthy habit to something you already do daily. After coffee, drink water. After lunch, walk 5 minutes. This habit stacking method increases success rates by 91%. No willpower needed once you've done it three times. Science-backed and actually doable."
+      }
+    ]
+  },
+  {
     "slug": "how-sleep-affects-mental-health",
     "title": "5 Ways How Sleep Affects Mental Health: Transform Your Mind Tonight",
     "category": "Healthy Lifestyle",
