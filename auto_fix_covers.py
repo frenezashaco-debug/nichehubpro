@@ -346,31 +346,36 @@ _FLUX_RULES = (
 )
 
 def generate_image(prompt, filename, fmt, max_kb):
-    """Generate image via HF FLUX.1-schnell."""
-    from huggingface_hub import InferenceClient
-    try:
-        from config import HF_API_KEY
-    except ImportError:
-        HF_API_KEY = os.environ.get("HF_API_KEY", "")
+    """Generate image via Pollinations.ai flux-realism (free, higher quality than FLUX.1-schnell)."""
+    import urllib.parse, time as _time
     full_prompt = f"{prompt} {_FLUX_RULES}"
-    client = InferenceClient(token=HF_API_KEY)
-    try:
-        img = client.text_to_image(full_prompt, model="black-forest-labs/FLUX.1-schnell", width=800, height=450)
-        img = img.resize((800, 450), Image.LANCZOS)
-    except Exception as e:
-        print(f"    HF error: {e}")
+    encoded = urllib.parse.quote(full_prompt)
+    url = f"https://image.pollinations.ai/prompt/{encoded}?model=flux-realism&width=800&height=450&nologo=true&seed={int(_time.time())}"
+    for attempt in range(1, 4):
+        try:
+            resp = requests.get(url, timeout=120)
+            if resp.status_code == 200 and len(resp.content) > 5000:
+                img = Image.open(io.BytesIO(resp.content)).convert("RGB")
+                img = img.resize((800, 450), Image.LANCZOS)
+                break
+            print(f"    Pollinations attempt {attempt} failed (status {resp.status_code}, {len(resp.content)} bytes)")
+        except Exception as e:
+            print(f"    Pollinations attempt {attempt} error: {e}")
+        if attempt < 3:
+            _time.sleep(10)
+    else:
         return False
     out_path = os.path.join(IMAGES_DIR, filename)
     if fmt == "JPEG":
         for q in range(88, 15, -4):
             buf = io.BytesIO()
-            img.convert("RGB").save(buf, format="JPEG", quality=q, optimize=True)
+            img.save(buf, format="JPEG", quality=q, optimize=True)
             if buf.tell() / 1024 <= max_kb:
                 break
     else:
         for q in range(92, 10, -5):
             buf = io.BytesIO()
-            img.convert("RGB").save(buf, format="WEBP", quality=q, method=4)
+            img.save(buf, format="WEBP", quality=q, method=4)
             if buf.tell() / 1024 <= max_kb:
                 break
     with open(out_path, "wb") as f:

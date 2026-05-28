@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: '3.11'
 
-      - run: pip install Pillow requests urllib3 huggingface_hub
+      - run: pip install Pillow requests urllib3
 
       - name: Create config.py from secrets
         env:
