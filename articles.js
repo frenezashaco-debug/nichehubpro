@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "daily-habits-for-better-mental-health",
+    "title": "7 Daily Habits for Better Mental Health That Actually Stick",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Daily habits for better mental health are not about perfection. They're about small, consistent actions that rewire your brain and reduce anxiety, stress, ",
+    "image": "images/daily-habits-for-better-mental-health.jpg",
+    "alt": "Woman in morning light holding water for daily mental health",
+    "pins": [
+      {
+        "title": "7 Daily Habits for Better Mental Health: The Complete List",
+        "description": "Discover the 7 daily habits for better mental health that actually stick. These science-backed routines reduce anxiety and stress in just 15 minutes daily. Start with one habit today and watch your mental clarity transform in one week. No extreme changes needed, just small consistent actions that compound into real results."
+      },
+      {
+        "title": "Stop Your Anxiety Spiral: 7 Daily Habits That Work",
+        "description": "Tired of waking up stressed and ending your day overwhelmed? These 7 daily habits for better mental health target the root causes of anxiety and rumination. Hydration, movement, journaling, boundaries, and sleep protection work together to build a protective mental health system. Begin with just one habit and add from there."
+      },
+      {
+        "title": "7 Daily Habits for Better Mental Health: Try This First",
+        "description": "The simplest daily habits for better mental health are often the most powerful. Hydrate first thing, move your body, take mindful pauses, journal your worries, set boundaries, sleep well, and take intentional breaks. Each habit takes 2-5 minutes. Together they transform your mental resilience in just four weeks. Start your breakthrough today."
+      }
+    ]
+  },
+  {
     "slug": "how-to-stop-negative-thinking-patterns",
     "title": "5 Ways to Stop Negative Thinking Patterns Before They Control You",
     "category": "Mental Wellness",
