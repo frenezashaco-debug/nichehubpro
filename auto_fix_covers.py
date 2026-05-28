@@ -14,7 +14,7 @@ from PIL import Image
 BASE_DIR     = os.path.dirname(os.path.abspath(__file__))
 IMAGES_DIR   = os.path.join(BASE_DIR, "images")
 ARTICLES_DIR = os.path.join(BASE_DIR, "articles")
-PILLOW_KB = 100  # covers below this size are Pillow fallbacks
+PILLOW_KB = 25  # covers below this size are Pillow fallbacks (AI covers are 30-61KB after resize)
 
 REAL_PHOTO_RULES = (
     "CRITICAL RULES — strictly follow all of these: "
@@ -335,8 +335,8 @@ def generate_image(prompt, filename, fmt, max_kb):
     full_prompt = f"{prompt} {_FLUX_RULES}"
     client = InferenceClient(token=HF_API_KEY)
     try:
-        img = client.text_to_image(full_prompt, model="black-forest-labs/FLUX.1-schnell", width=1280, height=720)
-        img = img.resize((1920, 1080), Image.LANCZOS)
+        img = client.text_to_image(full_prompt, model="black-forest-labs/FLUX.1-schnell", width=800, height=450)
+        img = img.resize((800, 450), Image.LANCZOS)
     except Exception as e:
         print(f"    HF error: {e}")
         return False
