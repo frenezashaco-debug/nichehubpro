@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-stop-negative-thinking-patterns",
+    "title": "5 Ways to Stop Negative Thinking Patterns Before They Control You",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "How to stop negative thinking patterns starts with one simple realization: your thoughts are not facts, they're just visitors in your mind. Most people spe",
+    "image": "images/how-to-stop-negative-thinking-patterns.jpg",
+    "alt": "Woman reflecting peacefully by morning window thinking",
+    "pins": [
+      {
+        "title": "5 Ways to Stop Negative Thinking Patterns Before They Control You",
+        "description": "Learn how to stop negative thinking patterns in their tracks with five proven techniques. From challenging catastrophizing to building daily habits that rewire your brain, discover the tools to break free from mental loops and reclaim your peace. Your breakthrough starts today."
+      },
+      {
+        "title": "Stop Overthinking: Break Negative Thought Cycles in Minutes",
+        "description": "Tired of spiraling thoughts that feel impossible to control? These five techniques interrupt negative thinking patterns instantly through awareness, challenging, replacement, behavioral interruption, and defusion. Master the skill of thought management and watch your anxiety drop within weeks."
+      },
+      {
+        "title": "Daily Habits to Rewire Your Brain and Stop Negative Patterns",
+        "description": "Your negative thinking patterns didn't form overnight, and they won't disappear overnight either. But with these five daily habits practiced for just 30 minutes total, you can literally rewire your neural pathways. Thought audit, grounding, evidence collection, input curation, and movement will transform how your brain processes reality."
+      }
+    ]
+  },
+  {
     "slug": "healthy-habits-to-start-this-week",
     "title": "7 Healthy Habits to Start This Week That Actually Stick (No Willpower Required)",
     "category": "Healthy Lifestyle",
