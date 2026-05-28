@@ -13,8 +13,6 @@
   <meta property="og:description" content="Free, research-backed guides on mental wellness, productivity, and healthy living. No paywalls, ever.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nichehubpro.com/">
-  <link rel="preconnect" href="https://sibforms.com">
-  <link rel="dns-prefetch" href="https://sibforms.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -164,7 +162,17 @@
       </div>
       <a href="/all-articles/" class="btn btn-outline btn-sm">Browse All &rarr;</a>
     </div>
-    <div class="articles-grid" id="latest-grid"></div>
+    <div class="articles-grid" id="latest-grid">
+      <div class="card-skeleton"></div>
+      <div class="card-skeleton"></div>
+      <div class="card-skeleton"></div>
+      <div class="card-skeleton"></div>
+      <div class="card-skeleton"></div>
+      <div class="card-skeleton"></div>
+      <div class="card-skeleton"></div>
+      <div class="card-skeleton"></div>
+      <div class="card-skeleton"></div>
+    </div>
   </div>
 </section>
 
@@ -326,7 +334,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var webpSrc = imgSrc.replace('.jpg', '.webp');
       return '<div class="card card-featured">'
         + '<picture><source srcset="' + webpSrc + '" type="image/webp">'
-        + '<img src="' + imgSrc + '" alt="' + (a.alt || a.title).replace(/"/g,'&quot;') + '" class="card-featured-img" ' + (i === 0 ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"') + '></picture>'
+        + '<img src="' + imgSrc + '" alt="' + (a.alt || a.title).replace(/"/g,'&quot;') + '" class="card-featured-img" width="800" height="200" ' + (i === 0 ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"') + '></picture>'
         + '<div class="card-body">'
         + '<span class="card-tag">' + a.category + '</span>'
         + '<h3><a href="articles/' + a.slug + '.html">' + a.title + '</a></h3>'

@@ -56,7 +56,13 @@ jobs:
           git config user.name "NicheHubPro Bot"
           git config user.email "bot@nichehubpro.com"
           git add articles/ images/ articles.js api/articles.json sitemap.xml
-          git diff --staged --quiet && echo "Nothing new to commit" || (git commit -m "Auto-publish: daily article $(date +'%Y-%m-%d')" && git pull --rebase origin main && git push)
+          git diff --staged --quiet && echo "Nothing new to commit" || (
+            git commit -m "Auto-publish: daily article $(date +'%Y-%m-%d')" &&
+            git pull --rebase origin main &&
+            git push ||
+            (echo "Push failed, retrying in 15s..." && sleep 15 && git pull --rebase origin main && git push) ||
+            (echo "Push failed again, retrying in 30s..." && sleep 30 && git pull --rebase origin main && git push)
+          )
 
       - name: Push Pinterest pins
         continue-on-error: true
