@@ -841,28 +841,6 @@ def register_article(data, cover_filename):
 
     print(f"  Registered in articles.js ({len(existing)} total)")
     update_sitemap(existing)
-    if existing:
-        update_lcp_preload(existing[0].get("image", ""))
-
-
-def update_lcp_preload(image_path):
-    """Keep the LCP preload link in index.html pointing at the newest article image."""
-    if not image_path:
-        return
-    index_path = os.path.join(BASE_DIR, "index.html")
-    if not os.path.exists(index_path):
-        return
-    with open(index_path, "r", encoding="utf-8") as f:
-        content = f.read()
-    new_content = re.sub(
-        r'<link rel="preload" as="image" href="/[^"]*" fetchpriority="high">',
-        f'<link rel="preload" as="image" href="/{image_path}" fetchpriority="high">',
-        content,
-    )
-    if new_content != content:
-        with open(index_path, "w", encoding="utf-8") as f:
-            f.write(new_content)
-        print(f"  LCP preload updated: /{image_path}")
 
 
 def update_sitemap(articles):
