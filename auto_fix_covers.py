@@ -14,7 +14,19 @@ from PIL import Image
 BASE_DIR     = os.path.dirname(os.path.abspath(__file__))
 IMAGES_DIR   = os.path.join(BASE_DIR, "images")
 ARTICLES_DIR = os.path.join(BASE_DIR, "articles")
-PILLOW_KB = 25  # covers below this size are Pillow fallbacks (AI covers are 30-61KB after resize)
+PILLOW_COLOR_THRESHOLD = 2500  # Pillow text cards have <2000 unique colors; real AI photos have 2966+
+
+
+def _is_pillow_fallback(jpg_path):
+    """Return True if the cover image is a Pillow text card, not a real AI photo."""
+    try:
+        img = Image.open(jpg_path).convert("RGB").resize((100, 56))
+        data = img.tobytes()
+        unique = len(set(data[i:i+3] for i in range(0, len(data), 3)))
+        return unique < PILLOW_COLOR_THRESHOLD
+    except Exception:
+        return True
+
 
 REAL_PHOTO_RULES = (
     "CRITICAL RULES — strictly follow all of these: "
@@ -41,6 +53,14 @@ SLUG_PROMPTS = {
             "Editorial photograph: woman early 30s at desk staring at laptop with tense overwhelmed expression, jaw slightly tight, shoulders slightly raised. Afternoon side light. Plain grey hoodie. Laptop and scattered papers. Sony A7IV 50mm f/2.0. Sharp focus, 4K.",
             "Editorial photograph: woman late 20s at desk writing notes in open notebook with a pen, glancing toward laptop, focused composed expression. Plain t-shirt. Soft warm right-side window light. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
             "Editorial photograph: woman mid-20s closing laptop lid at home desk, calm composed expression, subtle relief. Water glass beside her. Warm late-afternoon side light. Plain linen shirt. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
+        ]
+    ),
+    "daily-habits-for-better-mental-health": (
+        "Lifestyle editorial photograph: woman late 20s sitting at a plain wooden kitchen table, both hands wrapped around a white ceramic mug, looking quietly out a window with a calm rested expression. Plain grey linen top. Soft diffused morning light from left window. Simple clutter-free background: one plant on windowsill, plain wall. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
+        [
+            "Editorial photograph: woman early 30s in bedroom, sitting on edge of bed in morning, stretching arms gently upward, eyes half-closed, unhurried and calm. Soft warm morning light from window. Plain t-shirt. Neutral bedding. Sony A7IV 50mm f/2.0. Sharp focus, 4K.",
+            "Editorial photograph: woman late 20s at desk writing in a small notebook with a pen, calm focused expression, mug of tea beside her. Soft daylight from side window. Plain hoodie. Simple desk. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
+            "Editorial photograph: woman mid-20s standing at kitchen counter peeling an orange, relaxed unhurried expression, looking slightly downward at hands. Warm kitchen window light. Plain t-shirt. Sony A7IV 50mm f/2.0. Sharp focus, 4K.",
         ]
     ),
     "healthy-daily-habits": (
@@ -401,8 +421,7 @@ def main():
         sec1  = os.path.join(IMAGES_DIR, f"{slug}-sec1.webp")
         if not os.path.exists(cover):
             continue
-        cover_kb  = os.path.getsize(cover) / 1024
-        bad_cover = cover_kb < PILLOW_KB
+        bad_cover = _is_pillow_fallback(cover)
         no_secs   = not os.path.exists(sec1)
         # Also catch: section images exist on disk but were never injected into HTML
         if not no_secs:
@@ -412,7 +431,7 @@ def main():
             if f"{slug}-sec1.webp" not in html_content:
                 no_secs = True  # images exist but not injected — treat as missing
         if bad_cover or no_secs:
-            needs_fix.append((slug, html_file, bad_cover, no_secs, cover_kb))
+            needs_fix.append((slug, html_file, bad_cover, no_secs))
 
     if not needs_fix:
         print("All articles OK — no Pillow fallbacks detected.")
@@ -420,11 +439,11 @@ def main():
 
     print(f"\n{len(needs_fix)} article(s) need fixing:\n")
     fixed = 0
-    for slug, html_file, bad_cover, no_secs, cover_kb in needs_fix:
+    for slug, html_file, bad_cover, no_secs in needs_fix:
         html_path = os.path.join(ARTICLES_DIR, html_file)
         category  = get_category(html_path)
         issues    = []
-        if bad_cover: issues.append(f"Pillow cover ({cover_kb:.0f}KB)")
+        if bad_cover: issues.append("Pillow cover (text card)")
         if no_secs:
             sec1_exists = os.path.exists(os.path.join(IMAGES_DIR, f"{slug}-sec1.webp"))
             issues.append("section images not injected into HTML" if sec1_exists else "missing section images")
