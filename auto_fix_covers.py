@@ -466,6 +466,18 @@ def main():
                 time.sleep(65)
             if generate_image(cover_prompt, f"{slug}.jpg", "JPEG", 250):
                 img_count += 1
+                # Regenerate the cover WebP from the new JPG
+                jpg_path = os.path.join(IMAGES_DIR, f"{slug}.jpg")
+                webp_path = os.path.join(IMAGES_DIR, f"{slug}.webp")
+                try:
+                    with Image.open(jpg_path) as im:
+                        buf = io.BytesIO()
+                        im.save(buf, "WEBP", quality=78)
+                        with open(webp_path, "wb") as wf:
+                            wf.write(buf.getvalue())
+                    print(f"    Cover WebP regenerated ({os.path.getsize(webp_path)//1024}KB)")
+                except Exception as e:
+                    print(f"    WebP regeneration failed: {e}")
             else:
                 print(f"    Cover generation failed — skipping")
                 ok = False
