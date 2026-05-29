@@ -79,6 +79,14 @@ SLUG_PROMPTS = {
             "Editorial photograph: woman mid-20s sitting at kitchen table writing in open journal with pen, calm reflective expression. Morning light from window. Mug nearby. Plain t-shirt. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
         ]
     ),
+    "best-time-management-techniques-ranked": (
+        "Lifestyle editorial photograph: woman late 20s sitting at a plain wooden desk, looking down at an open weekly planner, pen in hand, calm focused expression. Plain grey hoodie. Soft morning light from left window. Simple desk: planner, small mug, phone face-down. Slightly blurred background. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
+        [
+            "Editorial photograph: woman early 30s at desk staring at laptop with focused deliberate expression, one hand on keyboard, scrolling through a task list. Plain t-shirt. Afternoon side light. Sony A7IV 50mm f/2.0. Sharp focus, 4K.",
+            "Editorial photograph: woman late 20s at desk writing tasks in a notebook with a pen, concentrated expression, checking off items. Plain hoodie. Morning window light. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
+            "Editorial photograph: woman mid-20s closing a planner on her desk, calm satisfied expression, leaning back slightly. Water glass beside her. Warm late-afternoon light. Plain t-shirt. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
+        ]
+    ),
     "how-to-focus-without-distractions": (
         "Lifestyle editorial photograph: woman late 20s at clean minimal wooden desk, deeply focused on laptop screen, earbuds in, slight forward lean, concentrated expression. Morning light from left window. Plain light blue t-shirt. Tidy desk. Sony A7IV 85mm f/1.8. Sharp focus, 4K.",
         [
