@@ -136,33 +136,36 @@ def compress_to_limit(img, max_kb=MAX_KB):
     img.convert('RGB').save(buf, format='JPEG', quality=20, optimize=True)
     return buf.getvalue(), 20, buf.tell() / 1024
 
-# ── AI IMAGE GENERATION — Pollinations flux-realism ──────────────────────
-import urllib.parse as _urlparse
+# ── AI IMAGE GENERATION — HF FLUX.1-dev ──────────────────────────────────
+_HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-dev"
 
 def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=3):
     """
-    Generate cover image via Pollinations flux-realism at 1024x576.
+    Generate cover image via HF FLUX.1-dev at 1024x576.
     Generates `candidates` versions, keeps the one with most unique colors (most photorealistic).
     """
+    try:
+        from config import HF_API_KEY
+    except ImportError:
+        HF_API_KEY = os.environ.get("HF_API_KEY", "")
+
     prompt = build_image_prompt(topic, category, custom_prompt)
     full_prompt = f"{prompt} {REAL_PHOTO_RULES}"
-    encoded = _urlparse.quote(full_prompt)
 
     best_img    = None
     best_unique = 0
 
     for attempt in range(1, candidates + 1):
-        seed = int(time.time()) + attempt * 997
-        url = (f"https://image.pollinations.ai/prompt/{encoded}"
-               f"?model=flux-realism&width=1024&height=576&nologo=true&seed={seed}")
         try:
-            print(f"  Pollinations attempt {attempt}/{candidates}...")
-            resp = requests.get(url, verify=False, timeout=180)
-            if resp.status_code != 200 or len(resp.content) < 10000:
-                print(f"    Failed: status {resp.status_code}, {len(resp.content)} bytes")
-                if attempt < candidates:
-                    time.sleep(10)
-                continue
+            print(f"  HF FLUX.1-dev attempt {attempt}/{candidates}...")
+            resp = requests.post(
+                _HF_API_URL,
+                headers={"Authorization": f"Bearer {HF_API_KEY}"},
+                json={"inputs": full_prompt, "parameters": {"width": 1024, "height": 576}},
+                verify=False,
+                timeout=180,
+            )
+            resp.raise_for_status()
             img = Image.open(io.BytesIO(resp.content)).convert("RGB")
             img = img.resize((W, H), Image.LANCZOS)
 
@@ -170,7 +173,7 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=
             small = img.resize((100, 56))
             data  = small.tobytes()
             unique = len(set(data[i:i+3] for i in range(0, len(data), 3)))
-            print(f"    Candidate {attempt}: {len(resp.content)//1024}KB raw, {unique} unique colors", end="")
+            print(f"    Candidate {attempt}: {len(resp.content)//1024}KB, {unique} unique colors", end="")
 
             if unique > best_unique:
                 best_img    = img
@@ -180,7 +183,7 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=
                 print(" — keeping previous")
 
             if attempt < candidates:
-                time.sleep(8)
+                time.sleep(10)
 
         except Exception as e:
             print(f"    Error: {e}")

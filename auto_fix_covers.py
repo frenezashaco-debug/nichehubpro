@@ -360,39 +360,44 @@ _FLUX_RULES = (
     "Single photograph only, not a diptych. No text, no logos, no watermarks."
 )
 
-def generate_image(prompt, filename, fmt, max_kb, candidates=3):
-    """Generate image via Pollinations flux-realism at 1024x576. Picks best of `candidates`."""
-    import urllib.parse, time as _time
-    full_prompt = f"{prompt} {_FLUX_RULES}"
-    encoded = urllib.parse.quote(full_prompt)
+_HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-dev"
 
+def generate_image(prompt, filename, fmt, max_kb, candidates=3):
+    """Generate image via HF FLUX.1-dev at 1024x576. Picks best of `candidates`."""
+    try:
+        from config import HF_API_KEY
+    except ImportError:
+        HF_API_KEY = os.environ.get("HF_API_KEY", "")
+
+    full_prompt = f"{prompt} {_FLUX_RULES}"
     best_img    = None
     best_unique = 0
 
     for attempt in range(1, candidates + 1):
-        seed = int(_time.time()) + attempt * 997
-        url = (f"https://image.pollinations.ai/prompt/{encoded}"
-               f"?model=flux-realism&width=1024&height=576&nologo=true&seed={seed}")
         try:
-            resp = requests.get(url, timeout=180)
-            if resp.status_code == 200 and len(resp.content) > 10000:
-                img = Image.open(io.BytesIO(resp.content)).convert("RGB").resize((800, 450), Image.LANCZOS)
-                small = img.resize((100, 56))
-                data  = small.tobytes()
-                unique = len(set(data[i:i+3] for i in range(0, len(data), 3)))
-                print(f"    Candidate {attempt}: {len(resp.content)//1024}KB, {unique} colors", end="")
-                if unique > best_unique:
-                    best_img    = img
-                    best_unique = unique
-                    print(" — best so far")
-                else:
-                    print(" — keeping previous")
+            print(f"    HF FLUX.1-dev attempt {attempt}/{candidates}...")
+            resp = requests.post(
+                _HF_API_URL,
+                headers={"Authorization": f"Bearer {HF_API_KEY}"},
+                json={"inputs": full_prompt, "parameters": {"width": 1024, "height": 576}},
+                timeout=180,
+            )
+            resp.raise_for_status()
+            img = Image.open(io.BytesIO(resp.content)).convert("RGB").resize((800, 450), Image.LANCZOS)
+            small = img.resize((100, 56))
+            data  = small.tobytes()
+            unique = len(set(data[i:i+3] for i in range(0, len(data), 3)))
+            print(f"    Candidate {attempt}: {len(resp.content)//1024}KB, {unique} colors", end="")
+            if unique > best_unique:
+                best_img    = img
+                best_unique = unique
+                print(" — best so far")
             else:
-                print(f"    Candidate {attempt} failed (status {resp.status_code})")
+                print(" — keeping previous")
         except Exception as e:
             print(f"    Candidate {attempt} error: {e}")
         if attempt < candidates:
-            _time.sleep(8)
+            time.sleep(10)
 
     if best_img is None:
         return False
