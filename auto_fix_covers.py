@@ -360,7 +360,7 @@ _FLUX_RULES = (
     "Single photograph only, not a diptych. No text, no logos, no watermarks."
 )
 
-_HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-dev"
+_HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell"
 
 def generate_image(prompt, filename, fmt, max_kb, candidates=3):
     """Generate image via HF FLUX.1-dev at 1024x576. Picks best of `candidates`."""
@@ -380,6 +380,7 @@ def generate_image(prompt, filename, fmt, max_kb, candidates=3):
                 _HF_API_URL,
                 headers={"Authorization": f"Bearer {HF_API_KEY}"},
                 json={"inputs": full_prompt, "parameters": {"width": 1024, "height": 576}},
+                verify=False,
                 timeout=180,
             )
             resp.raise_for_status()

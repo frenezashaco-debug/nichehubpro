@@ -209,7 +209,7 @@ _HF_NEGATIVE = (
     "extra limbs, extra arms, floating hands, unnatural hands, bad anatomy"
 )
 
-_HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-dev"
+_HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell"
 _HF_DELAY = 10  # seconds between HF calls
 
 # ── SECTION IMAGE DOWNLOADER — HF FLUX.1-dev ─────────────────────────────
