@@ -209,48 +209,38 @@ _HF_NEGATIVE = (
     "extra limbs, extra arms, floating hands, unnatural hands, bad anatomy"
 )
 
-_HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell"
-_HF_DELAY = 12  # seconds between HF calls to avoid rate limits
+import urllib.parse as _urlparse
+_HF_DELAY = 8  # seconds between Pollinations calls
 
-# ── SECTION IMAGE DOWNLOADER — HF FLUX.1-schnell ─────────────────────────
-def download_section_image(prompt, article_slug, index, retries=2, delay=0):
-    """Download a section image via HF FLUX.1-schnell (uses requests to bypass SSL issues)."""
-    try:
-        from config import HF_API_KEY
-    except ImportError:
-        HF_API_KEY = os.environ.get("HF_API_KEY", "")
-
+# ── SECTION IMAGE DOWNLOADER — Pollinations flux-realism ─────────────────
+def download_section_image(prompt, article_slug, index, retries=3, delay=0):
+    """Download a section image via Pollinations flux-realism at 1024x576."""
     filename = f"{article_slug}-sec{index}.webp"
     out_path = os.path.join(IMAGES_DIR, filename)
     full_prompt = f"{prompt} {_HF_RULES}"
+    encoded = _urlparse.quote(full_prompt)
 
     if delay > 0:
         print(f"  Waiting {delay}s before section image {index}...")
         time.sleep(delay)
 
     for attempt in range(1, retries + 1):
+        seed = int(time.time()) + attempt * 997
+        url = (f"https://image.pollinations.ai/prompt/{encoded}"
+               f"?model=flux-realism&width=1024&height=576&nologo=true&seed={seed}")
         try:
-            print(f"  Section image {index} (HF FLUX attempt {attempt})...")
-            resp = requests.post(
-                _HF_API_URL,
-                headers={"Authorization": f"Bearer {HF_API_KEY}"},
-                json={
-                    "inputs": full_prompt,
-                    "parameters": {
-                        "width": 1280,
-                        "height": 720,
-                        "negative_prompt": _HF_NEGATIVE,
-                    },
-                },
-                verify=False,
-                timeout=120,
-            )
-            resp.raise_for_status()
-            img = Image.open(io.BytesIO(resp.content))
+            print(f"  Section image {index} (Pollinations attempt {attempt})...")
+            resp = requests.get(url, verify=False, timeout=180)
+            if resp.status_code != 200 or len(resp.content) < 10000:
+                print(f"  Attempt {attempt} failed: status {resp.status_code}")
+                if attempt < retries:
+                    time.sleep(10)
+                continue
+            img = Image.open(io.BytesIO(resp.content)).convert("RGB")
             img = img.resize((800, 450), Image.LANCZOS)
             for quality in range(82, 10, -5):
                 buf = io.BytesIO()
-                img.convert('RGB').save(buf, format='WEBP', quality=quality, method=4)
+                img.save(buf, format='WEBP', quality=quality, method=4)
                 if buf.tell() / 1024 <= 80:
                     break
             with open(out_path, 'wb') as f:
