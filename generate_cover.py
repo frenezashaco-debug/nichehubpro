@@ -136,79 +136,59 @@ def compress_to_limit(img, max_kb=MAX_KB):
     img.convert('RGB').save(buf, format='JPEG', quality=20, optimize=True)
     return buf.getvalue(), 20, buf.tell() / 1024
 
-# ── AI IMAGE GENERATION — HF FLUX.1-schnell ──────────────────────────────
-_HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell"
-MIN_QUALITY_KB = 100  # Images under this size are likely flat/AI-looking — reject and retry
+# ── AI IMAGE GENERATION — Pollinations flux-realism ──────────────────────
+import urllib.parse as _urlparse
 
 def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=3):
     """
-    Generate cover image via HF FLUX.1-schnell.
-    Generates `candidates` versions, keeps the largest (most detail = least AI-looking).
-    Uses requests directly (avoids SSL cert issues with huggingface_hub client).
+    Generate cover image via Pollinations flux-realism at 1024x576.
+    Generates `candidates` versions, keeps the one with most unique colors (most photorealistic).
     """
-    try:
-        from config import HF_API_KEY
-    except ImportError:
-        HF_API_KEY = os.environ.get("HF_API_KEY", "")
-
     prompt = build_image_prompt(topic, category, custom_prompt)
     full_prompt = f"{prompt} {REAL_PHOTO_RULES}"
+    encoded = _urlparse.quote(full_prompt)
 
-    best_img  = None
-    best_size = 0
+    best_img    = None
+    best_unique = 0
 
-    for attempt in range(1, retries + 1):
+    for attempt in range(1, candidates + 1):
+        seed = int(time.time()) + attempt * 997
+        url = (f"https://image.pollinations.ai/prompt/{encoded}"
+               f"?model=flux-realism&width=1024&height=576&nologo=true&seed={seed}")
         try:
-            print(f"  HF FLUX attempt {attempt}/{retries}...")
-            resp = requests.post(
-                _HF_API_URL,
-                headers={"Authorization": f"Bearer {HF_API_KEY}"},
-                json={
-                    "inputs": full_prompt,
-                    "parameters": {
-                        "width": 1280,
-                        "height": 720,
-                        "negative_prompt": NEGATIVE_PROMPT,
-                    },
-                },
-                verify=False,
-                timeout=120,
-            )
-            resp.raise_for_status()
-            img = Image.open(io.BytesIO(resp.content))
+            print(f"  Pollinations attempt {attempt}/{candidates}...")
+            resp = requests.get(url, verify=False, timeout=180)
+            if resp.status_code != 200 or len(resp.content) < 10000:
+                print(f"    Failed: status {resp.status_code}, {len(resp.content)} bytes")
+                if attempt < candidates:
+                    time.sleep(10)
+                continue
+            img = Image.open(io.BytesIO(resp.content)).convert("RGB")
             img = img.resize((W, H), Image.LANCZOS)
 
-            # Measure size in memory to assess quality
-            buf = io.BytesIO()
-            img.convert("RGB").save(buf, format="JPEG", quality=85)
-            size_kb = buf.tell() / 1024
+            # Pick candidate with most unique colors — highest = most photorealistic
+            small = img.resize((100, 56))
+            data  = small.tobytes()
+            unique = len(set(data[i:i+3] for i in range(0, len(data), 3)))
+            print(f"    Candidate {attempt}: {len(resp.content)//1024}KB raw, {unique} unique colors", end="")
 
-            print(f"    Candidate {attempt}: {size_kb:.0f}KB", end="")
+            if unique > best_unique:
+                best_img    = img
+                best_unique = unique
+                print(" — best so far")
+            else:
+                print(" — keeping previous")
 
-            if size_kb < MIN_QUALITY_KB:
-                print(f" — too small (likely flat/AI), retrying...")
-                time.sleep(10)
-                continue
-
-            print(f" — {'best so far' if size_kb > best_size else 'keeping previous'}")
-            if size_kb > best_size:
-                best_img  = img
-                best_size = size_kb
-
-            # Collect up to `candidates` good results, then return best
-            if attempt >= candidates and best_img is not None:
-                break
-
-            if attempt < retries:
-                time.sleep(10)
+            if attempt < candidates:
+                time.sleep(8)
 
         except Exception as e:
-            print(f"  Error: {e}")
-            if attempt < retries:
+            print(f"    Error: {e}")
+            if attempt < candidates:
                 time.sleep(10)
 
     if best_img:
-        print(f"  Selected best candidate: {best_size:.0f}KB")
+        print(f"  Selected best candidate: {best_unique} unique colors")
     return best_img
 
 # ── PILLOW FALLBACK ───────────────────────────────────────────────────────

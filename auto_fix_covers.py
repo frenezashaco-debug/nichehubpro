@@ -16,6 +16,13 @@ IMAGES_DIR   = os.path.join(BASE_DIR, "images")
 ARTICLES_DIR = os.path.join(BASE_DIR, "articles")
 PILLOW_COLOR_THRESHOLD = 2500  # Pillow text cards have <2000 unique colors; real AI photos have 2966+
 
+# Slugs to regenerate even if they pass the Pillow detection (used for quality re-dos).
+# Clear this list once the workflow has run and the covers look good.
+FORCE_REGEN = {
+    "daily-habits-for-better-mental-health",
+    "best-time-management-techniques-ranked",
+}
+
 
 def _is_pillow_fallback(jpg_path):
     """Return True if the cover image is a Pillow text card, not a real AI photo."""
@@ -353,43 +360,60 @@ _FLUX_RULES = (
     "Single photograph only, not a diptych. No text, no logos, no watermarks."
 )
 
-def generate_image(prompt, filename, fmt, max_kb):
-    """Generate image via Pollinations.ai flux-realism (free, higher quality than FLUX.1-schnell)."""
+def generate_image(prompt, filename, fmt, max_kb, candidates=3):
+    """Generate image via Pollinations flux-realism at 1024x576. Picks best of `candidates`."""
     import urllib.parse, time as _time
     full_prompt = f"{prompt} {_FLUX_RULES}"
     encoded = urllib.parse.quote(full_prompt)
-    url = f"https://image.pollinations.ai/prompt/{encoded}?model=flux-realism&width=800&height=450&nologo=true&seed={int(_time.time())}"
-    for attempt in range(1, 4):
+
+    best_img    = None
+    best_unique = 0
+
+    for attempt in range(1, candidates + 1):
+        seed = int(_time.time()) + attempt * 997
+        url = (f"https://image.pollinations.ai/prompt/{encoded}"
+               f"?model=flux-realism&width=1024&height=576&nologo=true&seed={seed}")
         try:
-            resp = requests.get(url, timeout=120)
-            if resp.status_code == 200 and len(resp.content) > 5000:
-                img = Image.open(io.BytesIO(resp.content)).convert("RGB")
-                img = img.resize((800, 450), Image.LANCZOS)
-                break
-            print(f"    Pollinations attempt {attempt} failed (status {resp.status_code}, {len(resp.content)} bytes)")
+            resp = requests.get(url, timeout=180)
+            if resp.status_code == 200 and len(resp.content) > 10000:
+                img = Image.open(io.BytesIO(resp.content)).convert("RGB").resize((800, 450), Image.LANCZOS)
+                small = img.resize((100, 56))
+                data  = small.tobytes()
+                unique = len(set(data[i:i+3] for i in range(0, len(data), 3)))
+                print(f"    Candidate {attempt}: {len(resp.content)//1024}KB, {unique} colors", end="")
+                if unique > best_unique:
+                    best_img    = img
+                    best_unique = unique
+                    print(" — best so far")
+                else:
+                    print(" — keeping previous")
+            else:
+                print(f"    Candidate {attempt} failed (status {resp.status_code})")
         except Exception as e:
-            print(f"    Pollinations attempt {attempt} error: {e}")
-        if attempt < 3:
-            _time.sleep(10)
-    else:
+            print(f"    Candidate {attempt} error: {e}")
+        if attempt < candidates:
+            _time.sleep(8)
+
+    if best_img is None:
         return False
+
     out_path = os.path.join(IMAGES_DIR, filename)
     if fmt == "JPEG":
         for q in range(88, 15, -4):
             buf = io.BytesIO()
-            img.save(buf, format="JPEG", quality=q, optimize=True)
+            best_img.save(buf, format="JPEG", quality=q, optimize=True)
             if buf.tell() / 1024 <= max_kb:
                 break
     else:
         for q in range(92, 10, -5):
             buf = io.BytesIO()
-            img.save(buf, format="WEBP", quality=q, method=4)
+            best_img.save(buf, format="WEBP", quality=q, method=4)
             if buf.tell() / 1024 <= max_kb:
                 break
     with open(out_path, "wb") as f:
         f.write(buf.getvalue())
     print(f"    Saved {filename} ({os.path.getsize(out_path)//1024}KB)")
-    return True
+    return best_img
 
 
 def inject_sections(slug, html_path):
@@ -434,7 +458,7 @@ def main():
         sec1  = os.path.join(IMAGES_DIR, f"{slug}-sec1.webp")
         if not os.path.exists(cover):
             continue
-        bad_cover = _is_pillow_fallback(cover)
+        bad_cover = _is_pillow_fallback(cover) or slug in FORCE_REGEN
         no_secs   = not os.path.exists(sec1)
         # Also catch: section images exist on disk but were never injected into HTML
         if not no_secs:
@@ -477,17 +501,16 @@ def main():
             if img_count > 0:
                 print(f"    Waiting 65s (rate limit)...")
                 time.sleep(65)
-            if generate_image(cover_prompt, f"{slug}.jpg", "JPEG", 250):
+            cover_img = generate_image(cover_prompt, f"{slug}.jpg", "JPEG", 250)
+            if cover_img is not False:
                 img_count += 1
-                # Regenerate the cover WebP from the new JPG
-                jpg_path = os.path.join(IMAGES_DIR, f"{slug}.jpg")
+                # Regenerate cover WebP from the same image object
                 webp_path = os.path.join(IMAGES_DIR, f"{slug}.webp")
                 try:
-                    with Image.open(jpg_path) as im:
-                        buf = io.BytesIO()
-                        im.save(buf, "WEBP", quality=78)
-                        with open(webp_path, "wb") as wf:
-                            wf.write(buf.getvalue())
+                    buf = io.BytesIO()
+                    cover_img.save(buf, "WEBP", quality=78)
+                    with open(webp_path, "wb") as wf:
+                        wf.write(buf.getvalue())
                     print(f"    Cover WebP regenerated ({os.path.getsize(webp_path)//1024}KB)")
                 except Exception as e:
                     print(f"    WebP regeneration failed: {e}")
