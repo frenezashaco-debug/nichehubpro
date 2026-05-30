@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-focus-better-at-work",
+    "title": "7 Ways to Focus Better at Work: Stop Getting Distracted and Actually Finish Your Tasks",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "How to focus better at work starts with understanding why your attention keeps slipping away. Your brain gets pulled toward notifications, thoughts, and ta",
+    "image": "images/how-to-focus-better-at-work.jpg",
+    "alt": "Woman focused on work at desk improving focus better",
+    "pins": [
+      {
+        "title": "7 Ways to Focus Better at Work: Stop Distractions Today",
+        "description": "Struggling to stay focused at work? Discover 7 proven strategies to eliminate distractions, protect your deep work time, and actually finish what you start. Learn how to focus better at work using science-backed techniques that work in any environment. Stop battling your brain and start working with it."
+      },
+      {
+        "title": "Stop Losing Focus at Work: Why Your Brain Keeps Wandering",
+        "description": "Your focus breaks aren't your fault. Learn why you can't focus at work, what actually causes attention to slip, and how to fix the real problem. Most people blame willpower, but the solution is environment and strategy. Finally understand how to improve focus at work without exhaustion."
+      },
+      {
+        "title": "How to Build Daily Focus Habits That Actually Stick",
+        "description": "Want to focus better at work without constant effort? Build sustainable focus habits using the daily practice method. See 30 percent improvement in just 2 weeks. Learn the exact progression from day 1 to week 4 that rewires your attention span and makes deep work automatic."
+      }
+    ]
+  },
+  {
     "slug": "best-time-management-techniques-ranked",
     "title": "7 Best Time Management Techniques Ranked: Which Ones Actually Work for Your Brain",
     "category": "Productivity",
