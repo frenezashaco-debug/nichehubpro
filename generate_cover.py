@@ -81,9 +81,9 @@ CATEGORY_SCENES = {
         "action":  "preparing a healthy drink, walking barefoot, or stretching gently"
     },
     "Healthy Lifestyle - Food": {
-        "emotion": "freshness, nourishment and vibrant health",
-        "setting": "bright clean kitchen counter or wooden table with natural window light",
-        "action":  "colorful fresh ingredients arranged naturally — sliced fruits, vegetables, a smoothie bowl, or a healthy meal — no person required, food as the hero"
+        "emotion": "nourishment, calm energy and genuine enjoyment of healthy food",
+        "setting": "bright clean kitchen counter or wooden table with soft natural window light",
+        "action":  "holding a bowl of colorful food or a glass of juice with both hands, taking a bite, chopping vegetables, or preparing a healthy meal — person is always present and central"
     },
 }
 
@@ -127,13 +127,16 @@ def build_image_prompt(topic, category, custom_prompt=None):
         if category == "Healthy Lifestyle" and _is_food_topic(topic):
             scene = CATEGORY_SCENES["Healthy Lifestyle - Food"]
             prompt = (
-                f"Photorealistic food and nutrition lifestyle photo for an article about: {topic}. "
-                f"Scene: {scene['setting']}. "
-                f"Focus: {scene['action']}. "
-                f"Mood: {scene['emotion']}. "
-                f"Styling: editorial food photography, natural overhead or 45-degree angle, "
-                f"soft warm natural light, wooden or marble surface, no artificial props. "
-                f"Style: photorealistic, slightly blurred background, shot like a real camera, not AI look. "
+                f"Candid lifestyle photo for an article about: {topic}. "
+                f"Subject: a real young woman (25-35), {scene['action']}. "
+                f"Setting: {scene['setting']}. "
+                f"Emotion: {scene['emotion']} — genuine candid expression, not posed. "
+                f"Skin: real skin texture, visible pores, natural imperfections — absolutely no AI-smooth skin. "
+                f"Hair: slightly messy, real texture with flyaways. "
+                f"Clothing: plain everyday fabric — t-shirt, linen top, basic knit — never stylish or fitted. "
+                f"Lighting: soft natural window light, warm tones, no studio lighting. "
+                f"Style: photorealistic, shallow depth of field, slightly blurred background, shot like a real camera. "
+                f"Composition: slightly off-center, human and relatable, not a stock photo. "
                 f"{strict_rules}"
             )
         else:
