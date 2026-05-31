@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "morning-routine-for-a-healthy-lifestyle",
+    "title": "7 Morning Routine for a Healthy Lifestyle That Changes Everything",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "A morning routine for a healthy lifestyle is the single most powerful investment you can make in yourself right now. Most people wake up reactive, checking",
+    "image": "images/morning-routine-for-a-healthy-lifestyle.jpg",
+    "alt": "Young woman gazing at morning light by window, establishing calm routine",
+    "pins": [
+      {
+        "title": "7 Morning Routine Habits That Transform Your Entire Day",
+        "description": "Build a morning routine for a healthy lifestyle that actually sticks. Start with hydration and sunlight, add protein breakfast, then intention-setting. 30-day progression that works. Stop waking up stressed. Start your day with clarity and calm."
+      },
+      {
+        "title": "Stop Checking Your Phone First Thing (Do This Instead)",
+        "description": "Your morning routine for a healthy lifestyle begins with one choice: water before your phone. Discover why this single habit reduces anxiety by 30% and transforms your entire day. Simple, science-backed, and actually doable."
+      },
+      {
+        "title": "5-Minute Morning Routine for Better Energy All Day",
+        "description": "A morning routine for a healthy lifestyle doesn't require hours. Learn the four essential habits to master first, the exact order to add them, and why protein breakfast changes everything. Energy that lasts until bedtime."
+      }
+    ]
+  },
+  {
     "slug": "how-to-focus-better-at-work",
     "title": "7 Ways to Focus Better at Work: Stop Getting Distracted and Actually Finish Your Tasks",
     "category": "Productivity",
