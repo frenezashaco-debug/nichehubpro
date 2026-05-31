@@ -80,7 +80,24 @@ CATEGORY_SCENES = {
         "setting": "bright morning kitchen, outdoor nature path, or yoga space",
         "action":  "preparing a healthy drink, walking barefoot, or stretching gently"
     },
+    "Healthy Lifestyle - Food": {
+        "emotion": "freshness, nourishment and vibrant health",
+        "setting": "bright clean kitchen counter or wooden table with natural window light",
+        "action":  "colorful fresh ingredients arranged naturally — sliced fruits, vegetables, a smoothie bowl, or a healthy meal — no person required, food as the hero"
+    },
 }
+
+_FOOD_KEYWORDS = [
+    'food', 'eat', 'eating', 'meal', 'diet', 'nutrition', 'snack', 'breakfast',
+    'protein', 'vegetable', 'fruit', 'water', 'drink', 'juice', 'smoothie',
+    'recipe', 'cook', 'sugar', 'vitamin', 'supplement', 'anti-inflammatory',
+    'calorie', 'fiber', 'hydrat', 'ingredient', 'salad', 'plant-based',
+    'carb', 'fat', 'gut', 'digestion', 'probiotic', 'caffeine', 'coffee',
+]
+
+def _is_food_topic(topic):
+    t = topic.lower()
+    return any(kw in t for kw in _FOOD_KEYWORDS)
 
 # ── SLUG ──────────────────────────────────────────────────────────────────
 def slug(title):
@@ -106,20 +123,34 @@ def build_image_prompt(topic, category, custom_prompt=None):
     if custom_prompt and len(custom_prompt) > 30:
         prompt = f"{custom_prompt}. {strict_rules}"
     else:
-        scene = CATEGORY_SCENES.get(category, CATEGORY_SCENES["Mental Wellness"])
-        prompt = (
-            f"Photorealistic wellness lifestyle photo for an article about: {topic}. "
-            f"Scene: a calm, modern, real-life environment reflecting mental wellness. "
-            f"Subject: a young woman (25-35 years old) expressing {scene['emotion']} with natural unposed body language. "
-            f"Details: {scene['action']}, authentic everyday setting, minimal clean background, "
-            f"soft textures like bed sheets, desk, plants, natural light. "
-            f"Lighting: soft natural morning sunlight or dim evening light, warm calming tones (green, beige, soft blue). "
-            f"Style: photorealistic, minimalist wellness aesthetic, depth of field, slightly blurred background, "
-            f"shot like a real camera, not AI look. "
-            f"Mood: emotional but peaceful, relatable and human. "
-            f"Composition: subject slightly off-center, focus on emotion not perfection. "
-            f"{strict_rules}"
-        )
+        # Use food-specific scene for Healthy Lifestyle food/drink articles
+        if category == "Healthy Lifestyle" and _is_food_topic(topic):
+            scene = CATEGORY_SCENES["Healthy Lifestyle - Food"]
+            prompt = (
+                f"Photorealistic food and nutrition lifestyle photo for an article about: {topic}. "
+                f"Scene: {scene['setting']}. "
+                f"Focus: {scene['action']}. "
+                f"Mood: {scene['emotion']}. "
+                f"Styling: editorial food photography, natural overhead or 45-degree angle, "
+                f"soft warm natural light, wooden or marble surface, no artificial props. "
+                f"Style: photorealistic, slightly blurred background, shot like a real camera, not AI look. "
+                f"{strict_rules}"
+            )
+        else:
+            scene = CATEGORY_SCENES.get(category, CATEGORY_SCENES["Mental Wellness"])
+            prompt = (
+                f"Photorealistic wellness lifestyle photo for an article about: {topic}. "
+                f"Scene: a calm, modern, real-life environment reflecting mental wellness. "
+                f"Subject: a young woman (25-35 years old) expressing {scene['emotion']} with natural unposed body language. "
+                f"Details: {scene['action']}, authentic everyday setting, minimal clean background, "
+                f"soft textures like bed sheets, desk, plants, natural light. "
+                f"Lighting: soft natural morning sunlight or dim evening light, warm calming tones (green, beige, soft blue). "
+                f"Style: photorealistic, minimalist wellness aesthetic, depth of field, slightly blurred background, "
+                f"shot like a real camera, not AI look. "
+                f"Mood: emotional but peaceful, relatable and human. "
+                f"Composition: subject slightly off-center, focus on emotion not perfection. "
+                f"{strict_rules}"
+            )
     return f"{prompt} {REAL_PHOTO_RULES}"
 
 # ── COMPRESS IMAGE ────────────────────────────────────────────────────────
