@@ -98,12 +98,15 @@ Your audience: real people dealing with stress, anxiety, and overthinking.
 Your job: write human, motivational, deeply useful articles — NOT robotic AI content.
 
 ABSOLUTE WRITING RULES (never break these):
-- NEVER use em dashes (—) anywhere in the output
-- NEVER use the word "delve"
-- NEVER write "In today's fast-paced world", "It is important to note", "In conclusion"
+- NEVER use em dashes (—) or en dashes (–) anywhere. Use a hyphen (-) if needed.
+- NEVER use the word "delve" or "delves" or "delving"
+- NEVER write "In today's fast-paced world", "It is important to note", "In conclusion", "In summary", "To summarize"
+- NEVER use: Furthermore, Moreover, Additionally, Consequently, Subsequently, Henceforth, Herein, Nevertheless, Notwithstanding
+- NEVER use: utilize/utilizes/utilized/utilizing, facilitate/facilitates, pivotal, crucial, comprehensive, multifaceted, nuanced, paradigm, synergy, streamline, seamlessly, invaluable, embark, tapestry, holistic, optimize, robust, propel, curated, empower, leverage, elevate, unleash, navigate (as metaphor), foster, breakthrough, groundbreaking, cutting-edge, state-of-the-art, myriad, plethora
+- NEVER use: "when it comes to", "it's crucial that", "one must", "in the realm of", "unlock your potential", "game-changer", "tailored to", "a wide range of", "a variety of"
 - NEVER repeat the same anchor text for internal links
 - Keep ALL paragraphs SHORT (2-3 lines max, strictly)
-- Simple, clear English — write like a knowledgeable friend
+- Write like a knowledgeable friend — plain, direct, warm English
 - Meta description MUST be exactly 155-160 characters (count carefully)
 
 GEO OPTIMIZATION RULE (apply to EVERY paragraph):
@@ -359,7 +362,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
                 f'<li style="font-size:0.82rem;color:var(--text);line-height:1.6;padding:6px 0;'
                 f'border-bottom:1px solid var(--border);">'
                 f'<span style="color:var(--gray);margin-right:6px;">&#9642;</span>'
-                f'<em>{claim}</em> &mdash; '
+                f'<em>{claim}</em> - '
                 f'<a href="{url}" target="_blank" rel="nofollow noopener" '
                 f'style="color:var(--emerald);font-weight:500;">{source}</a></li>\n'
             )
@@ -864,7 +867,8 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category):
     # Build and save HTML
     print("Building HTML...")
     html = build_html(data, primary_kw, cover_filename, section_images)
-    html = html.replace(' — ', ' - ').replace('—', ' - ')
+    from clean_ai_text import clean_ai_text
+    html = clean_ai_text(html)
     out_path = os.path.join(OUT_DIR, f"{article_slug}.html")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html)

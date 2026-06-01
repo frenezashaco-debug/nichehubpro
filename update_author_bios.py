@@ -122,7 +122,7 @@ def build_refs_block(refs):
             f'          <li style="font-size:0.82rem;color:var(--text);line-height:1.6;padding:6px 0;'
             f'border-bottom:1px solid var(--border);">'
             f'<span style="color:var(--gray);margin-right:6px;">&#9642;</span>'
-            f'<em>{ref["claim"]}</em> &mdash; '
+            f'<em>{ref["claim"]}</em> - '
             f'<a href="{ref["url"]}" target="_blank" rel="nofollow noopener" '
             f'style="color:var(--emerald);font-weight:500;">{ref["source"]}</a></li>\n'
         )

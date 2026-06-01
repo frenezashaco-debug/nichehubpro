@@ -15,6 +15,7 @@ __pycache__/
 !ping_removal.py
 !ping_indexing.py
 !update_author_bios.py
+!clean_ai_text.py
 
 # Tracking and log files
 *.txt
