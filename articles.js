@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-improve-energy-naturally",
+    "title": "5 Ways to Improve Energy Naturally Without Relying on Caffeine",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "You wake up feeling like you need a nap before breakfast, and by 2 PM you hit a wall so hard that no amount of coffee can fix it. How to improve energy nat",
+    "image": "images/how-to-improve-energy-naturally.jpg",
+    "alt": "Young woman holding water by window, feeling energized naturally",
+    "pins": [
+      {
+        "title": "5 Ways to Improve Energy Naturally Without Caffeine Crashes",
+        "description": "Stop relying on coffee to get through your day. Learn the five science-backed ways to improve energy naturally, including sleep optimization, movement, nutrition, hydration, and stress management. Real strategies for lasting vitality. Try them today."
+      },
+      {
+        "title": "Stop the 3 PM Energy Crash: 5 Natural Methods That Work",
+        "description": "Your afternoon energy crash isn't laziness; it's your body signaling that something is missing. Discover why this happens and how to improve energy naturally with proven daily habits. Start with just one method this week."
+      },
+      {
+        "title": "How to Get More Energy Without Caffeine: Proven Daily Habits",
+        "description": "Tired of energy drinks and crash cycles? Here are five practical ways to improve energy naturally through sleep, movement, eating protein, hydration, and breathing. Build lasting vitality with habits that actually fit your life."
+      }
+    ]
+  },
+  {
     "slug": "morning-routine-for-a-healthy-lifestyle",
     "title": "7 Morning Routine for a Healthy Lifestyle That Changes Everything",
     "category": "Healthy Lifestyle",
