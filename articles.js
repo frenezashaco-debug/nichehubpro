@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-calm-down-when-overwhelmed",
+    "title": "5 Ways to Calm Down When Overwhelmed: Your Emergency Mental Reset",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "Overwhelm hits differently when you're already stretched thin. Your chest tightens, your mind spins, and everything feels too much at once - that's when yo",
+    "image": "images/how-to-calm-down-when-overwhelmed.jpg",
+    "alt": "Woman looking overwhelmed while working at desk with papers",
+    "pins": [
+      {
+        "title": "5 Ways to Calm Down When Overwhelmed: Quick Relief Techniques",
+        "description": "Feeling overwhelmed? Learn 5 science-backed techniques to calm your nervous system in minutes. Box breathing, grounding, and more practical relief methods to regain control and reduce stress fast. Try the 5-4-3-2-1 technique today."
+      },
+      {
+        "title": "Stop Overwhelm Before It Starts: Daily Habits That Actually Work",
+        "description": "Tired of feeling overwhelmed every week? Build three simple daily habits that prevent overwhelm from spiraling. These tiny interventions lower stress, boost resilience, and help you stay calm under pressure. Start one habit today."
+      },
+      {
+        "title": "Overwhelm Relief: How to Reset Your Mind in 10 Minutes",
+        "description": "Overwhelm doesn't require hours to recover from. Discover how a single 10-minute reset can lower your stress and restore mental clarity. Learn the pause technique that actually interrupts the overwhelm cycle. Perfect for overwhelm at work or home."
+      }
+    ]
+  },
+  {
     "slug": "how-to-improve-energy-naturally",
     "title": "5 Ways to Improve Energy Naturally Without Relying on Caffeine",
     "category": "Healthy Lifestyle",
