@@ -54,11 +54,10 @@ _REGEX = [
     (re.compile(r'\s&mdash;\s'),         ', '),
     (re.compile(r'\s&ndash;\s'),         ', '),
 
-    # Spaced hyphen used as clause connector (leftover from prior em-dash conversion)
-    # "motivation - it's about" → "motivation. It's about"
-    # Only triggers when the word after " - " is a common sentence-starter pronoun/conjunction
-    (re.compile(r' - (it\'s|it |that |this |but |so |they |you |we |he |she |the |a |an |not |now |just |one |when |if |as |because )', re.I),
-     lambda m: '. ' + m.group(1)[0].upper() + m.group(1)[1:]),
+    # Spaced hyphen used as clause connector → proper sentence break
+    # " - [any lowercase]" → ". [Uppercase]"
+    # Safe: title/references/source names all start with uppercase so they're untouched
+    (re.compile(r' - ([a-z])'), lambda m: '. ' + m.group(1).upper()),
 
     # Absolute AI bans (from CLAUDE.md rules)
     (re.compile(r'\bdelves?\b', re.I),                         "explores"),
