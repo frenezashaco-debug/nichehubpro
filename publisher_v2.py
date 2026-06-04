@@ -273,7 +273,7 @@ _HF_NEGATIVE = (
 )
 
 _HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell"
-_HF_DELAY = 10  # seconds between HF calls
+_HF_DELAY = 20  # seconds between HF calls
 
 # ── SECTION IMAGE DOWNLOADER — HF FLUX.1-dev ─────────────────────────────
 def download_section_image(prompt, article_slug, index, retries=3, delay=0):
@@ -848,6 +848,10 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category):
         print(f"Cover WebP saved: {os.path.basename(cover_webp_path)}")
     except Exception as _e:
         print(f"WebP conversion skipped: {_e}")
+
+    # Cool-down after cover generation burst (3 HF calls) before section images
+    print("  Cooling down 30s before section images...")
+    time.sleep(30)
 
     # Generate section images (WebP, contextual per section) — delay between calls
     section_images = {}
