@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-build-self-discipline",
+    "title": "5 Ways to Build Self Discipline When You Have None - The Real Fix",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "How to build self discipline when you have none is not about motivation - it's about systems. Most people think discipline requires superhuman willpower, b",
+    "image": "images/how-to-build-self-discipline.jpg",
+    "alt": "woman focused at desk building self discipline routine",
+    "pins": [
+      {
+        "title": "How to Build Self Discipline When You Have None - 5 Real Steps",
+        "description": "Stop relying on willpower. Learn how to build self discipline through systems, not motivation. Practical strategies that actually work for people who struggle with consistency. Start with one tiny habit today and let your brain do the rewiring."
+      },
+      {
+        "title": "Stop Blaming Yourself: Why You Struggle With Self Discipline",
+        "description": "Self discipline isn't about willpower - it's about design. Discover why discipline feels impossible and the exact system shift that makes it automatic. Real psychology. Real solutions. No motivation required."
+      },
+      {
+        "title": "5 Proven Ways to Build Discipline That Actually Stick",
+        "description": "Forget motivation. These five methods - from time-blocking to environmental design - build discipline into your daily life. Start stupidly small and watch your brain rewire itself. Includes the one habit that compounds fastest."
+      }
+    ]
+  },
+  {
     "slug": "why-you-always-feel-stressed",
     "title": "5 Reasons Why You Always Feel Stressed: The Hidden Truth Behind Your Constant Anxiety",
     "category": "Mental Wellness",
