@@ -24,13 +24,15 @@ _SIMPLE = [
     ("&#8212;",    " - "),
     (" &#8211; ",  " - "),
     ("&#8211;",    " - "),
-    # Unicode characters
-    (" — ",   " - "),
-    ("—",     " - "),
-    (" – ",   " - "),
-    ("–",     " - "),
-    (" ― ",   " - "),
-    ("―",     " - "),
+    # Bare em/en dash (no surrounding spaces) → hyphen for compound words
+    ("—",     "-"),
+    ("–",     "-"),
+    ("―",     "-"),
+    # HTML entity forms without spaces
+    ("&mdash;",    "-"),
+    ("&ndash;",    "-"),
+    ("&#8212;",    "-"),
+    ("&#8211;",    "-"),
     # Leftover double-space from removals
     ("  ",         " "),
 ]
@@ -39,6 +41,25 @@ _SIMPLE = [
 # Only replaces inside visible text — patterns chosen to not match HTML tags.
 # Format: (compiled_pattern, replacement_string_or_callable)
 _REGEX = [
+    # Em/en dash with spaces used as clause connector → period + capitalized word
+    # "motivation — it's" → "motivation. It's"
+    (re.compile(r'\s[—–―]\s([a-z])'), lambda m: '. ' + m.group(1).upper()),
+    # HTML entity spaced forms
+    (re.compile(r'\s&mdash;\s([a-z])'),  lambda m: '. ' + m.group(1).upper()),
+    (re.compile(r'\s&ndash;\s([a-z])'),  lambda m: '. ' + m.group(1).upper()),
+    (re.compile(r'\s&#8212;\s([a-z])'),  lambda m: '. ' + m.group(1).upper()),
+    (re.compile(r'\s&#8211;\s([a-z])'),  lambda m: '. ' + m.group(1).upper()),
+    # Any remaining spaced dash → comma (e.g. "calm — focused — grounded" → "calm, focused, grounded")
+    (re.compile(r'\s[—–―]\s'),           ', '),
+    (re.compile(r'\s&mdash;\s'),         ', '),
+    (re.compile(r'\s&ndash;\s'),         ', '),
+
+    # Spaced hyphen used as clause connector (leftover from prior em-dash conversion)
+    # "motivation - it's about" → "motivation. It's about"
+    # Only triggers when the word after " - " is a common sentence-starter pronoun/conjunction
+    (re.compile(r' - (it\'s|it |that |this |but |so |they |you |we |he |she |the |a |an |not |now |just |one |when |if |as |because )', re.I),
+     lambda m: '. ' + m.group(1)[0].upper() + m.group(1)[1:]),
+
     # Absolute AI bans (from CLAUDE.md rules)
     (re.compile(r'\bdelves?\b', re.I),                         "explores"),
     (re.compile(r'\bdelved\b', re.I),                          "explored"),
