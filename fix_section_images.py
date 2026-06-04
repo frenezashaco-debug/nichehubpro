@@ -130,40 +130,47 @@ def generate_section_image(prompt, slug, sec_num, retries=4):
 
 
 def inject_section_images(slug, section_images):
-    """Insert section img tags into the article HTML if not already there."""
+    """Insert section img tags into the article HTML at correct positions."""
     path = os.path.join(ARTICLES_DIR, f"{slug}.html")
     with open(path, encoding="utf-8") as f:
         html = f.read()
 
+    # next_anchor maps sec_idx → the h2 id that follows that section
+    # sec0 (sec1 image) → insert before sec-2
+    # sec2 (sec3 image) → insert before sec-4
+    # sec4 (sec5 image) → insert before real-life
+    NEXT_HEADING = {0: "sec-2", 2: "sec-4", 4: "real-life"}
+
     changed = False
-    for sec_idx, info in section_images.items():
+    for sec_idx in sorted(section_images.keys()):
+        info     = section_images[sec_idx]
         sec_num  = sec_idx + 1
         filename = info["filename"]
         alt      = info["alt_text"]
-        img_tag  = (
+
+        if filename in html:
+            print(f"  sec{sec_num} already in HTML — skipping")
+            continue
+
+        img_tag = (
             f'\n      <img src="../images/{filename}" '
             f'alt="{alt}" '
             f'style="width:100%;max-height:480px;object-fit:cover;border-radius:10px;margin:28px 0 20px;display:block;" '
             f'width="1920" height="1080" loading="lazy">\n'
         )
-        # Already present?
-        if filename in html:
-            print(f"  sec{sec_num} already in HTML — skipping injection")
-            continue
 
-        # Insert after the corresponding h2 section (id="sec-{sec_num}")
-        pattern = re.compile(
-            rf'(<h2 id="sec-{sec_num}"[^>]*>.*?</h2>\s*.*?)(\n      <h2|\n      <div class="inline-promo"|</article>)',
-            re.DOTALL
-        )
-        m = pattern.search(html)
-        if m:
-            insert_pos = m.end(1)
-            html = html[:insert_pos] + img_tag + html[insert_pos:]
-            print(f"  Injected sec{sec_num} image after h2#sec-{sec_num}")
-            changed = True
-        else:
-            print(f"  Could not find injection point for sec{sec_num} — skipping")
+        anchor = NEXT_HEADING.get(sec_idx)
+        if anchor and f'id="{anchor}"' in html:
+            # Find the h2 tag that has this id and insert the image before it
+            pattern = re.compile(rf'(\s*<h2\s[^>]*id="{anchor}"[^>]*>)')
+            m = pattern.search(html)
+            if m:
+                html = html[:m.start()] + img_tag + html[m.start():]
+                print(f"  Injected sec{sec_num} before #{anchor}")
+                changed = True
+                continue
+
+        print(f"  Could not find anchor for sec{sec_num} — skipping")
 
     if changed:
         with open(path, "w", encoding="utf-8") as f:
