@@ -60,8 +60,11 @@ def extract_article_info(slug):
 
 def generate_prompts_via_claude(title, category):
     """Ask Claude to produce 3 section image prompts for the article."""
-    import anthropic
-    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+    import anthropic, httpx
+    client = anthropic.Anthropic(
+        api_key=ANTHROPIC_API_KEY,
+        http_client=httpx.Client(verify=False),
+    )
     system = (
         "You generate humanized photo prompts for wellness article section images. "
         "Rules: always a young woman 25-35 shown from shoulders/collarbone up only — no hands, no objects. "
