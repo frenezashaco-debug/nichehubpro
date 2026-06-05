@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "why-discipline-beats-motivation",
+    "title": "3 Reasons Why Discipline Beats Motivation (And How to Finally Build It)",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "Why discipline beats motivation is the question that separates people who win from people who stay stuck. Most of us wake up fired up, make big promises to",
+    "image": "images/why-discipline-beats-motivation.jpg",
+    "alt": "Young woman focused on writing in notebook at desk daily",
+    "pins": [
+      {
+        "title": "Why Discipline Beats Motivation: The Habit System That Actually Works",
+        "description": "Stop relying on willpower. Discipline is a skill, not a feeling. Learn the science-backed system to build unshakeable discipline and stop quitting after week one. Small daily habits compound into massive results. Start today with this proven 60-day strategy."
+      },
+      {
+        "title": "Stop Waiting to Feel Motivated: Build Discipline Instead",
+        "description": "Motivation always fades by day 5. Discipline doesn't. Discover why discipline beats motivation for achieving your biggest goals and how to build it from zero using the 2-minute rule and habit stacking. Real talk about why you keep failing and how to finally win."
+      },
+      {
+        "title": "3 Reasons Why Your Motivation Dies and What Discipline Does Instead",
+        "description": "Your brain is designed to kill motivation after 10 days - it's not your fault. But discipline survives this crash. Learn the exact neuroscience behind why discipline beats motivation and the simple system to build it without relying on willpower every single day."
+      }
+    ]
+  },
+  {
     "slug": "how-to-build-self-discipline",
     "title": "5 Ways to Build Self Discipline When You Have None - The Real Fix",
     "category": "Productivity",
