@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "best-healthy-snacks-for-energy",
+    "title": "7 Best Healthy Snacks for Energy That Actually Boost Your Brain (No Crash)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "The best healthy snacks for energy are not the candy bars and energy drinks you reach for at 3 p.m. Your body is screaming for fuel, but what you choose in",
+    "image": "images/best-healthy-snacks-for-energy.jpg",
+    "alt": "Woman at desk eating healthy snack for afternoon energy boost",
+    "pins": [
+      {
+        "title": "7 Best Healthy Snacks for Energy That Stop 3 PM Crashes",
+        "description": "Tired of afternoon energy crashes? These healthy snacks for energy combine protein, fat, and fiber to keep you fueled for hours without blood sugar spikes. Almonds, Greek yogurt, and more - all backed by science. Click for the exact snacks to eat daily."
+      },
+      {
+        "title": "Stop Eating Energy Bars - Try These Healthy Snacks Instead",
+        "description": "Most granola bars and energy drinks crash you within 20 minutes. Discover which healthy snacks for energy actually work to boost your brain. Real food-based options that keep focus steady all afternoon without the sugar crash."
+      },
+      {
+        "title": "Try This 3-Minute Healthy Snack for Energy That Lasts Hours",
+        "description": "One simple snack swap can transform your afternoon energy completely. These healthy snacks for energy are easy to prep, portable, and scientifically proven to prevent crashes. See the top 7 options and how to eat them for maximum sustained energy."
+      }
+    ]
+  },
+  {
     "slug": "why-discipline-beats-motivation",
     "title": "3 Reasons Why Discipline Beats Motivation (And How to Finally Build It)",
     "category": "Productivity",
