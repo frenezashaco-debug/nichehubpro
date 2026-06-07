@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "daily-stretching-routine-for-beginners",
+    "title": "5 Daily Stretching Routine for Beginners That Actually Fix Tight Muscles (Even If You've Never Stretched Before)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "A daily stretching routine for beginners doesn't require a yoga mat, gym membership, or years of flexibility practice. Most people don't realize that tight",
+    "image": "images/daily-stretching-routine-for-beginners.jpg",
+    "alt": "Woman stretching her arms overhead in morning light, daily stretching routine",
+    "pins": [
+      {
+        "title": "How to Start a Daily Stretching Routine for Beginners (10-Min Routine)",
+        "description": "A daily stretching routine for beginners doesn't require flexibility or equipment. Learn the 5 simple stretches that ease tight muscles, improve posture, and boost energy in just 10 minutes. Start your morning stretch routine today and feel the difference in your body by day three. No yoga experience needed."
+      },
+      {
+        "title": "Stop Living With Tight Muscles - Simple Stretching Routine for Beginners",
+        "description": "Neck pain, shoulder tension, and lower back stiffness? These are signs your body needs stretching. Discover why beginners see flexibility improvements in just weeks with a simple daily routine. Learn the 5 best stretches to release tension and move freely again. Try this stretching routine tonight."
+      },
+      {
+        "title": "Try This 10-Minute Daily Stretching Routine for Beginners (Free Guide)",
+        "description": "Ready to feel less stiff and move more freely? This beginner-friendly stretching routine takes just 10 minutes and requires zero equipment. Includes exact stretches for neck, shoulders, back, and hips. Start your morning stretch habit today and unlock the flexibility you've been missing. Complete guide inside."
+      }
+    ]
+  },
+  {
     "slug": "best-healthy-snacks-for-energy",
     "title": "7 Best Healthy Snacks for Energy That Actually Boost Your Brain (No Crash)",
     "category": "Healthy Lifestyle",
