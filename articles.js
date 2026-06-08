@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-recover-from-emotional-burnout",
+    "title": "5 Ways to Recover From Emotional Burnout: Your Path Back to Yourself",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "How to recover from emotional burnout is the question that keeps you awake at night when you realize you have nothing left to give. You've pushed yourself ",
+    "image": "images/how-to-recover-from-emotional-burnout.jpg",
+    "alt": "Woman resting at kitchen table in peaceful morning light during emotional recovery",
+    "pins": [
+      {
+        "title": "How to Recover From Emotional Burnout: 5 Steps That Actually Work",
+        "description": "Emotional burnout recovery takes time, but these 5 concrete steps help you rebuild your energy and reset your life. Learn the timeline for recovery, how to set boundaries, and daily habits that work. Your path back to yourself starts with one small change today."
+      },
+      {
+        "title": "Stop Burning Out: The Real Timeline for Emotional Burnout Recovery",
+        "description": "Wondering how long recovery from emotional burnout takes? Most people see improvement in 3-12 months with consistent action. Discover the signs you're experiencing burnout, why it happens, and the exact steps to rebuild your life without relapsing."
+      },
+      {
+        "title": "5 Daily Habits That Speed Up Emotional Burnout Recovery",
+        "description": "Recover from emotional burnout faster with these 5 daily habits that rebuild your capacity and prevent relapse. From morning routines to boundary-setting, learn the practical changes that work when you're completely exhausted and don't know where to start."
+      }
+    ]
+  },
+  {
     "slug": "daily-stretching-routine-for-beginners",
     "title": "5 Daily Stretching Routine for Beginners That Actually Fix Tight Muscles (Even If You've Never Stretched Before)",
     "category": "Healthy Lifestyle",
