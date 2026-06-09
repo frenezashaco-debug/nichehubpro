@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-stop-catastrophic-thinking",
+    "title": "5 Ways to Stop Catastrophic Thinking Before It Controls Your Life",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "How to stop catastrophic thinking starts with one simple truth: your brain is trying to protect you, but it's overdoing the job. Catastrophizing is when yo",
+    "image": "images/how-to-stop-catastrophic-thinking.jpg",
+    "alt": "Woman at desk looking thoughtfully inward during mental clarity moment",
+    "pins": [
+      {
+        "title": "How to Stop Catastrophic Thinking: 5 Proven Techniques That Work",
+        "description": "Tired of your brain jumping to worst-case scenarios? Learn how to stop catastrophic thinking before it spirals. These 5 science-backed techniques help you catch catastrophizing anxiety early and retrain your mind for calm. Start with evidence-checking and grounding today."
+      },
+      {
+        "title": "Stop Catastrophizing Anxiety: Break the Worst-Case Scenario Loop",
+        "description": "Catastrophizing is when your mind predicts disaster without real evidence. But you can break this pattern. Discover the daily habits that rewire your nervous system, stop anxious spirals, and teach your brain that most worries never happen. Real solutions, not just tips."
+      },
+      {
+        "title": "5 Daily Habits to Stop Catastrophic Thinking and Reclaim Peace",
+        "description": "Does your brain always jump to the worst outcome? You're not broken - you just need to retrain your nervous system. These 5 simple daily habits actually work to reduce catastrophizing anxiety by up to 50%. Start with one habit this week and build from there."
+      }
+    ]
+  },
+  {
     "slug": "how-to-recover-from-emotional-burnout",
     "title": "5 Ways to Recover From Emotional Burnout: Your Path Back to Yourself",
     "category": "Mental Wellness",
