@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-create-a-productive-routine",
+    "title": "5 Ways to Create a Productive Routine That Actually Lasts",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "Learning how to create a productive routine is the single best investment you can make in yourself. Most people fail because they try to change everything ",
+    "image": "images/how-to-create-a-productive-routine.jpg",
+    "alt": "Young woman focused on her planner at desk during morning routine planning",
+    "pins": [
+      {
+        "title": "How to Create a Productive Routine That Actually Sticks (Not Another Failed System)",
+        "description": "Stop starting perfect routines you abandon by Wednesday. Learn the 4-step blueprint that 80% of people succeed with - no motivation required. Start with one anchor habit today, and watch how small consistency beats big ambition. Your productive daily schedule doesn't need to be complex, just real."
+      },
+      {
+        "title": "Stop Your Scattered Routine: 5 Signs Your Schedule is Failing You",
+        "description": "Tired before noon? Can't remember what you accomplished? Constantly on email with zero deep work? These aren't personal failures - your routine is broken. Discover the exact warning signs that mean it's time to redesign, and the simple fix that changes everything in weeks."
+      },
+      {
+        "title": "Build Your Productive Routine in 4 Steps (The Science-Backed Way)",
+        "description": "Forget complex systems. Real productivity comes from anchoring habits to what you already do. See the exact 4-step process that turns scattered days into focused, impactful ones. Your productive schedule starts with the next 15 minutes - here's exactly what to do."
+      }
+    ]
+  },
+  {
     "slug": "best-habit-tracker-methods-that-work",
     "title": "5 Best Habit Tracker Methods That Work - Stop Guessing, Start Tracking",
     "category": "Productivity",
