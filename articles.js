@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "benefits-of-walking-every-day",
+    "title": "7 Benefits of Walking Every Day That Transform Your Mind and Body Fast",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "The benefits of walking every day are so real that you might feel them within just one week. A simple 30-minute walk can lower your stress levels, improve ",
+    "image": "images/benefits-of-walking-every-day.jpg",
+    "alt": "Young woman walking peacefully on a tree-lined street in morning light",
+    "pins": [
+      {
+        "title": "7 Benefits of Walking Every Day That Transform Your Health Fast",
+        "description": "Discover what happens when you walk 20 minutes daily: better sleep, less anxiety, more energy, stronger heart, and clearer focus. The science is real. The results are fast. Start your walking habit today and feel the difference within one week."
+      },
+      {
+        "title": "Stop Feeling Tired: Why Daily Walking Changes Everything",
+        "description": "Tired all the time? Walking is the fix nobody talks about. 30 minutes of daily walking boosts energy for hours, improves sleep quality, and reduces stress naturally. No gym membership needed. No complicated routines. Just a simple walk outside."
+      },
+      {
+        "title": "The Daily Walking Habit That Fixed My Anxiety and Sleep",
+        "description": "Walking every day works faster than you think. Real people see anxiety drop, sleep improve, and mood stabilize within 2 weeks. Learn how to start a walking habit that actually sticks and the exact benefits to expect daily."
+      }
+    ]
+  },
+  {
     "slug": "how-to-create-a-productive-routine",
     "title": "5 Ways to Create a Productive Routine That Actually Lasts",
     "category": "Productivity",
