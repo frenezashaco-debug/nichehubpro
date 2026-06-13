@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "best-evening-habits-for-better-sleep",
+    "title": "7 Best Evening Habits for Better Sleep That Actually Work (Science-Backed)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "Best evening habits for better sleep start hours before your head hits the pillow. Most people think sleep quality depends on what happens in bed, but the ",
+    "image": "images/best-evening-habits-for-better-sleep.jpg",
+    "alt": "woman sitting on bed in calm evening light, peaceful expression",
+    "pins": [
+      {
+        "title": "7 Best Evening Habits for Better Sleep (Backed by Science)",
+        "description": "Transform your sleep quality in just 7 days with these proven evening habits. From dimming lights to avoiding screens, discover the exact bedtime routine that helps you fall asleep 30 minutes faster and sleep deeper. Start with one habit tonight and watch your energy transform."
+      },
+      {
+        "title": "Stop Ruining Your Sleep: Evening Habits That Actually Work",
+        "description": "You're not broken. Your evening habits are just working against your body's natural sleep cycle. Learn the 7 science-backed evening habits that signal your brain to produce melatonin and help you sleep through the night without waking. No supplements needed."
+      },
+      {
+        "title": "Try This Evening Routine for Better Sleep (Results in 3 Days)",
+        "description": "These 7 best evening habits for better sleep are simple but powerful. Set a consistent bedtime, dim your lights, stop screens early, and add a wind-down ritual. Most people see better sleep within days when they align their evening habits with their body's natural rhythms."
+      }
+    ]
+  },
+  {
     "slug": "benefits-of-walking-every-day",
     "title": "7 Benefits of Walking Every Day That Transform Your Mind and Body Fast",
     "category": "Healthy Lifestyle",
