@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-deal-with-stress-at-work",
+    "title": "5 Ways to Deal with Stress at Work: Your Daily Escape Plan",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "How to deal with stress at work starts with understanding what's really happening in your body right now. Your heart races, your shoulders tense up, and su",
+    "image": "images/how-to-deal-with-stress-at-work.jpg",
+    "alt": "Woman taking a calming breath at her office desk during work stress",
+    "pins": [
+      {
+        "title": "5 Ways to Deal with Stress at Work Without Quitting",
+        "description": "Learn exactly how to manage work stress with grounding techniques, breathing exercises, and daily habits that actually work. Real strategies for managing anxiety at work when you're drowning in deadlines. Stop bringing workplace stress home - take back your peace starting today with these science-backed methods."
+      },
+      {
+        "title": "Stop Work Stress From Destroying Your Sleep and Health",
+        "description": "Work stress is affecting your sleep, relationships, and health - but most people don't realize it until burnout hits. Discover the hidden signs of workplace stress and 5 immediate techniques to interrupt anxiety spirals before they spiral out of control. Reclaim your nervous system starting tonight."
+      },
+      {
+        "title": "How to Stay Calm at Work When Everything Feels Like a Crisis",
+        "description": "Your nervous system is treating normal work situations like threats. Try these 5 practical stress-management strategies that work even on your busiest days - no meditation app required. Box breathing, grounding, and one boundary that changes everything about how you experience workplace stress."
+      }
+    ]
+  },
+  {
     "slug": "best-evening-habits-for-better-sleep",
     "title": "7 Best Evening Habits for Better Sleep That Actually Work (Science-Backed)",
     "category": "Healthy Lifestyle",
