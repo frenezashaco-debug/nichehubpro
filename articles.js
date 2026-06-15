@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "why-you-feel-mentally-drained",
+    "title": "5 Reasons Why You Feel Mentally Drained (Even After Rest)",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "Why you feel mentally drained might surprise you - it's not always about what you did, but what's happening inside your mind.",
+    "image": "images/why-you-feel-mentally-drained.jpg",
+    "alt": "woman sitting tired on bed with mental fatigue expression",
+    "pins": [
+      {
+        "title": "5 Hidden Reasons You Feel Mentally Drained (Even After Rest)",
+        "description": "Why you feel mentally drained goes deeper than sleep. Learn the real causes of mental fatigue - from overthinking to decision overload - and how to restore your energy in days, not weeks. Simple daily habits that actually work."
+      },
+      {
+        "title": "Stop Mental Fatigue: The Real Reason Your Brain Won't Rest",
+        "description": "Doing nothing still drains your mental energy. Discover why your mind won't quiet down, how mental fatigue differs from physical tiredness, and the proven way to recover your focus and clarity fast."
+      },
+      {
+        "title": "Fix Mental Fatigue in 7 Days: Daily Habits That Actually Work",
+        "description": "Mental exhaustion isn't about sleeping more - it's about resting smarter. Learn 5 science-backed daily habits that reduce brain fog, improve focus, and restore your mental energy. Start tonight with one small change."
+      }
+    ]
+  },
+  {
     "slug": "how-to-deal-with-stress-at-work",
     "title": "5 Ways to Deal with Stress at Work: Your Daily Escape Plan",
     "category": "Mental Wellness",
