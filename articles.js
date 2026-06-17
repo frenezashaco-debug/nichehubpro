@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-avoid-distractions-while-working",
+    "title": "5 Ways to Avoid Distractions While Working - Reclaim Your Focus Today",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "How to avoid distractions while working starts with understanding your brain's weakness for interruption. Most people lose 23 minutes of focus time just re",
+    "image": "images/how-to-avoid-distractions-while-working.jpg",
+    "alt": "woman working focused at laptop during morning focus session",
+    "pins": [
+      {
+        "title": "How to Avoid Distractions While Working - 5 Proven Focus Methods",
+        "description": "Stop losing 23 minutes trying to refocus after interruptions. These 5 science-backed methods eliminate distractions and rewire your brain for sustained focus. From phone placement to time blocking, learn the exact system top performers use. Simple, actionable, and works fast."
+      },
+      {
+        "title": "Stop Getting Distracted at Work - Your Brain Needs This",
+        "description": "Your distraction problem isn't laziness - it's bad design. Most people don't realize their environment and habits are fighting their focus. Discover why your phone destroys productivity and how to build a distraction-free workday that actually sticks."
+      },
+      {
+        "title": "5 Daily Habits That Eliminate Distractions and Boost Productivity",
+        "description": "Replace scattered, busy work with real focus. Learn the exact morning ritual, time blocking strategy, and evening review that top performers use to protect their focus. Build habits that make distraction harder than focus in just 30 days."
+      }
+    ]
+  },
+  {
     "slug": "best-focus-techniques-for-students",
     "title": "5 Best Focus Techniques for Students That Actually Stop Procrastination Cold",
     "category": "Productivity",
