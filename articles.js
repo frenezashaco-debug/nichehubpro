@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "healthy-daily-routine-checklist",
+    "title": "7 Healthy Daily Routine Checklist Items That Finally Make You Feel Alive",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "A healthy daily routine checklist is your personal roadmap to feeling better, sleeping deeper, and waking up with real energy. Most people skip this becaus",
+    "image": "images/healthy-daily-routine-checklist.jpg",
+    "alt": "Young woman reviewing healthy daily routine checklist at kitchen table",
+    "pins": [
+      {
+        "title": "7 Healthy Daily Routine Checklist Items That Transform Your Energy",
+        "description": "Stop feeling exhausted by 3 p.m. This healthy daily routine checklist includes the 7 science-backed habits that actually boost energy, improve sleep, and reduce stress. Start with just 3 items and build from there. No perfection required - just consistency. Your healthiest version is waiting."
+      },
+      {
+        "title": "Stop Trying 10 Habits at Once - Use This Daily Routine Checklist Instead",
+        "description": "Your healthy daily routine fails because you're doing too much. This practical checklist focuses on 7 core habits that compound into real results in 30 days. Print it, check items off daily, and watch your health transform without burnout or motivation."
+      },
+      {
+        "title": "The Exact Daily Routine Checklist That Fixed My Energy (And Sleep)",
+        "description": "A real person's healthy daily routine checklist - simple, printable, and designed for actual life (not Instagram). These 7 daily habits boost focus, improve mood, and help you sleep better. Start small, track progress, and build a routine that actually sticks."
+      }
+    ]
+  },
+  {
     "slug": "how-to-avoid-distractions-while-working",
     "title": "5 Ways to Avoid Distractions While Working - Reclaim Your Focus Today",
     "category": "Productivity",
