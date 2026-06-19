@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-exercise-improves-mental-health",
+    "title": "5 Ways How Exercise Improves Mental Health: The Science-Backed Method That Actually Works",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "How exercise improves mental health is no longer a secret - it's backed by decades of neuroscience research. When you move your body, your brain releases c",
+    "image": "images/how-exercise-improves-mental-health.jpg",
+    "alt": "woman walking peacefully in park during morning exercise routine",
+    "pins": [
+      {
+        "title": "5 Ways Exercise Improves Mental Health: The Science-Backed Method",
+        "description": "Discover how exercise improves mental health by releasing mood-boosting chemicals and rewiring your brain. Just 20 minutes of movement daily can reduce anxiety, fight depression, and transform your mental clarity. Science-backed strategies that actually work. Start your mental health transformation today."
+      },
+      {
+        "title": "Stop Anxiety Before It Starts: How Exercise Rewires Your Brain",
+        "description": "Your nervous system is stuck in fight-or-flight mode, creating constant anxiety and racing thoughts. Exercise is the quickest way to break this cycle - it burns stress hormones and activates your natural calming system. Learn how exercise reduces anxiety in 3-4 weeks of consistent daily movement."
+      },
+      {
+        "title": "Try This 10-Minute Exercise Routine to Instantly Boost Your Mood",
+        "description": "Exercise improves mental health faster than you think. Even 10 minutes of movement triggers endorphin release and serotonin production - the same chemicals that antidepressants target. Start this week with a simple daily habit that takes just minutes but changes your entire mental state."
+      }
+    ]
+  },
+  {
     "slug": "healthy-daily-routine-checklist",
     "title": "7 Healthy Daily Routine Checklist Items That Finally Make You Feel Alive",
     "category": "Healthy Lifestyle",
