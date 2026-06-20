@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-fall-asleep-when-your-mind-wont-stop",
+    "title": "5 Ways to Fall Asleep When Your Mind Won't Stop Racing at Night",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "How to fall asleep when your mind won't stop is one of the most common struggles people face. You lie in bed, eyes closed, but your brain is running at ful",
+    "image": "images/how-to-fall-asleep-when-your-mind-wont-stop.jpg",
+    "alt": "Woman waking peacefully in bed after good sleep at morning light",
+    "pins": [
+      {
+        "title": "How to Fall Asleep Fast When Your Mind Won't Stop Racing",
+        "description": "Struggling with racing thoughts at night? Learn the 4-7-8 breathing technique, body scanning, and evening journaling habits that help you fall asleep in minutes instead of hours. Science-backed methods to quiet your mind and reclaim peaceful sleep. Try the first technique tonight."
+      },
+      {
+        "title": "Stop Racing Thoughts Before Bed With This Simple Trick",
+        "description": "A racing mind at night doesn't mean you have insomnia - it means your nervous system needs help shifting into rest mode. Discover why your thoughts race harder when you try to sleep and the one evening routine that changes everything. Start this week."
+      },
+      {
+        "title": "5 Daily Habits That Finally Stop Nighttime Racing Mind",
+        "description": "You can't force your mind to stop thinking, but you can train your nervous system to relax. These five simple daily habits - from morning sunlight to pre-bed journaling - address the root cause of racing thoughts. Build them into your routine and sleep better within days."
+      }
+    ]
+  },
+  {
     "slug": "how-exercise-improves-mental-health",
     "title": "5 Ways How Exercise Improves Mental Health: The Science-Backed Method That Actually Works",
     "category": "Healthy Lifestyle",
