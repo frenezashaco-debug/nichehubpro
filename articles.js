@@ -3,26 +3,26 @@
 const ARTICLES = [
   {
     "slug": "how-to-fall-asleep-when-your-mind-wont-stop",
-    "title": "5 Ways to Fall Asleep When Your Mind Won't Stop: The Racing Mind Solution",
+    "title": "5 Ways to Fall Asleep When Your Mind Won't Stop Racing at Night",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
     "read_time": "8",
-    "excerpt": "Your mind won't stop. It's 2 AM and you're stuck in a loop of thoughts, replaying conversations, planning tomorrow, worrying about things you can't control",
+    "excerpt": "You're lying in bed at 11 PM, and your mind is running at full speed - replaying conversations, worrying about tomorrow, planning things you forgot. How to",
     "image": "images/how-to-fall-asleep-when-your-mind-wont-stop.jpg",
-    "alt": "Woman resting peacefully in bed with calm expression during early morning",
+    "alt": "Young woman lying awake in bed, struggling with racing mind at night",
     "pins": [
       {
-        "title": "How to Fall Asleep When Your Mind Won't Stop (5 Proven Techniques)",
-        "description": "Your racing mind at night doesn't have to control your sleep. Learn the 4-7-8 breathing technique, body scan meditation, and three other science-backed methods that calm racing thoughts in minutes. Most people fall asleep 20-30 minutes faster with consistent practice. Try these tonight."
+        "title": "How to Fall Asleep Fast When Your Mind Won't Stop Racing",
+        "description": "Stuck with racing thoughts at night? Try the 4-7-8 breathing technique or body scan method - they interrupt your nervous system's stress response in 10-15 minutes. Plus 3 daily habits that prevent racing mind before bedtime even starts. Science-backed, works for anxiety too."
       },
       {
-        "title": "Stop Racing Thoughts at Night: The Body Scan Method That Works Fast",
-        "description": "Lying awake replaying your day? The body scan technique stops racing mind patterns by redirecting your attention to physical sensations instead of thoughts. This simple 10-minute meditation works even on nights when your mind feels completely out of control. No equipment needed."
+        "title": "Stop Racing Mind at Night: 5 Techniques That Actually Work",
+        "description": "Racing thoughts keeping you awake? Your nervous system isn't broken - it just needs the right signals to shift into rest mode. Learn the worry time technique, cognitive shuffle, and evening wind-down habits that calm your mind in minutes. Real solutions for real insomnia."
       },
       {
-        "title": "Racing Mind Keeping You Awake? Try These 5 Daily Habits Tonight",
-        "description": "Your morning sunlight, afternoon exercise, caffeine timing, and evening wind-down directly impact whether your mind races at night. Learn the exact daily habits that prevent racing thoughts before bedtime even starts. Better sleep begins before you go to bed."
+        "title": "Can't Sleep Because Your Brain Won't Shut Off? Try This Tonight",
+        "description": "Bedtime racing mind solved with one simple technique. The body scan method interrupts anxiety loops faster than counting sheep. Plus discover why your mind races specifically at night and how daily stress management prevents it. Better sleep starts with understanding your nervous system."
       }
     ]
   },
