@@ -3,26 +3,26 @@
 const ARTICLES = [
   {
     "slug": "how-to-fall-asleep-when-your-mind-wont-stop",
-    "title": "7 Ways to Fall Asleep When Your Mind Won't Stop: Reclaim Your Peaceful Nights",
+    "title": "5 Ways to Fall Asleep When Your Mind Won't Stop: Silence the Racing Thoughts",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
     "read_time": "8",
-    "excerpt": "Your mind won't shut off. It's 2 AM and you're replaying conversations, worrying about tomorrow, planning things that don't need planning. You know you nee",
+    "excerpt": "How to fall asleep when your mind won't stop is one of the most searched questions by people lying awake at 2 AM. Your brain keeps cycling through tomorrow",
     "image": "images/how-to-fall-asleep-when-your-mind-wont-stop.jpg",
-    "alt": "woman lying awake in bed at night with racing thoughts",
+    "alt": "woman lying in bed at night struggling with racing thoughts and sleep",
     "pins": [
       {
-        "title": "7 Ways to Fall Asleep When Your Mind Won't Stop Racing (Tonight)",
-        "description": "Struggling with a racing mind at night? These 7 science-backed techniques - from 4-7-8 breathing to the cognitive dump - help you quiet your thoughts and fall asleep fast. Stop fighting your brain and start actually resting. Try the first one tonight and see the difference by morning."
+        "title": "How to Fall Asleep Fast When Your Mind Won't Stop - 5 Science Methods",
+        "description": "Racing mind at night keeping you awake? Try the 4-7-8 breathing technique, body scanning, or thought parking to calm your nervous system in minutes. These proven methods help you fall asleep 20-45 minutes faster without medication. See which one works best for your brain."
       },
       {
-        "title": "Stop Racing Thoughts at Night: The 4-7-8 Breathing Hack That Works",
-        "description": "Can't fall asleep because your mind won't stop? The 4-7-8 breathing technique calms your nervous system in just 2 minutes. Inhale 4, hold 7, exhale 8. Repeat 4 times. Most people fall asleep within 15 minutes. No pills, no apps, just breathing that actually works for racing minds."
+        "title": "Stop Your Racing Mind at Night: The 20-Minute Routine That Actually Works",
+        "description": "Tired of lying awake with a spinning mind? A consistent wind-down routine trains your nervous system to shift into sleep mode naturally. Learn the exact steps successful sleepers use to quiet racing thoughts and fall asleep peacefully. No pills, no apps - just real techniques."
       },
       {
-        "title": "Why Your Mind Races at Night (And How to Fix It This Week)",
-        "description": "Your racing mind at night isn't your fault - it's your nervous system stuck in stress mode. Learn why this happens and discover daily habits that prevent nighttime racing thoughts: morning exercise, worry time, consistent sleep schedules, and pre-sleep routines that signal your brain it's time to rest."
+        "title": "5 Proven Ways to Calm a Racing Mind Before Sleep - Tested by Sleep Experts",
+        "description": "Your mind won't stop at night? It's not broken - your nervous system is stuck in alert mode. Discover the fastest ways to fall asleep when overthinking spirals. From breathing to white noise, find your best sleep solution here."
       }
     ]
   },
