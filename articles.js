@@ -3,26 +3,26 @@
 const ARTICLES = [
   {
     "slug": "how-to-fall-asleep-when-your-mind-wont-stop",
-    "title": "5 Ways to Fall Asleep When Your Mind Won't Stop - Tonight's Sleep Breakthrough",
+    "title": "5 Ways to Fall Asleep When Your Mind Won't Stop: End the 3 AM Spiral Tonight",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
     "read_time": "8",
-    "excerpt": "Your eyes are closed, it's 2 AM, and your mind is racing like a freight train. You're running through tomorrow's presentation, replaying an awkward convers",
+    "excerpt": "Your mind is spinning at midnight, and you've been awake for two hours. How to fall asleep when your mind won't stop is one of the most searched questions ",
     "image": "images/how-to-fall-asleep-when-your-mind-wont-stop.jpg",
-    "alt": "Woman in bed at night with a racing mind expression.",
+    "alt": "Young woman on bed at night looking exhausted and overthinking",
     "pins": [
       {
-        "title": "How to Fall Asleep When Your Mind Won't Stop - 5 Proven Techniques",
-        "description": "A racing mind at night is keeping you awake, but there are specific, science-backed techniques that work. Learn how to fall asleep fast when you can't stop thinking, including the 5-4-3-2-1 grounding method, brain dump journaling, and nervous system calming tools. Say goodbye to 2 AM mental spirals and get the deep sleep you deserve tonight."
+        "title": "How to Fall Asleep When Your Mind Won't Stop: 5 Science-Backed Methods",
+        "description": "Stop racing thoughts at night with these proven techniques. The brain-dump journal, 4-7-8 breathing, and grounding exercises help you fall asleep faster and sleep deeper. Learn the methods that actually work for an overtaxed mind."
       },
       {
-        "title": "Stop Racing Thoughts at Night: The Brain Dump Journaling Method",
-        "description": "Your racing mind at night won't quiet down because your brain feels like unfinished thoughts are unsolved problems. The brain dump journaling technique takes just 5 minutes before bed and externalizes all that mental chatter onto paper. This signals to your nervous system that the thoughts are safe and it can finally rest. Try this tonight and watch how quickly your mind settles."
+        "title": "Stop Racing Thoughts at Night: Your Sleep-Saving Strategy",
+        "description": "Racing mind keeping you awake? Try these game-changing sleep techniques based on neuroscience. From progressive muscle relaxation to the cognitive shuffle method, discover how to calm your mind and reclaim your nights."
       },
       {
-        "title": "Calm Your Racing Mind Fast: 4-7-8 Breathing for Deep Sleep",
-        "description": "When you can't stop thinking at night, this specific breathing pattern activates your parasympathetic nervous system in minutes. The 4-7-8 method (inhale 4, hold 7, exhale 8) is one of the most scientifically validated anxiety-reduction tools. Learn exactly how to use it in bed tonight to shift from fight-or-flight into rest mode and finally fall asleep peacefully."
+        "title": "5 Ways to Fall Asleep Fast When Overthinking Won't Let Go",
+        "description": "Tired of lying awake with an overactive mind? These practical methods redirect racing thoughts and activate your nervous system's sleep mode. Start tonight and sleep better by tomorrow. Your brain is ready to rest."
       }
     ]
   },
