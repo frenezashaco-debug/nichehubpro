@@ -3,26 +3,26 @@
 const ARTICLES = [
   {
     "slug": "how-to-fall-asleep-when-your-mind-wont-stop",
-    "title": "5 Ways to Fall Asleep When Your Mind Won't Stop Racing at Night",
+    "title": "3 Ways to Fall Asleep When Your Mind Won't Stop Racing at Night",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
-    "date": "Jun 2026",
+    "date": "Jul 2026",
     "read_time": "8",
-    "excerpt": "You lie in bed staring at the ceiling, and your brain won't shut down. Racing thoughts about tomorrow's meeting, that awkward text you sent, money worries ",
+    "excerpt": "Your mind won't shut off. You've been staring at the ceiling for an hour, replaying conversations, worrying about tomorrow, planning things you can't contr",
     "image": "images/how-to-fall-asleep-when-your-mind-wont-stop.jpg",
-    "alt": "woman lying awake in bed at night struggling with racing thoughts",
+    "alt": "Woman lying awake in bed at night with racing mind and worried expression",
     "pins": [
       {
-        "title": "How to Fall Asleep Fast When Your Mind Won't Stop Racing",
-        "description": "Tired of lying awake at night while your brain replays every worry? Learn the 4-7-8 breathing technique, brain dump method, and daily habits that actually calm racing thoughts. Most people see results in just 1-2 weeks. Stop the mental loop and reclaim your sleep tonight - your exhausted brain will thank you."
+        "title": "How to Fall Asleep When Your Mind Won't Stop Racing - 3 Proven Methods",
+        "description": "Tired of lying awake replaying thoughts and worrying at night? Learn the 5-4-3-2-1 grounding technique, mental anchor method, and progressive body release - three science-backed ways to interrupt racing thoughts and fall asleep fast when your mind won't quiet down. Stop the endless thoughts tonight."
       },
       {
-        "title": "Stop Your Racing Mind at Night: 5 Science-Backed Sleep Hacks",
-        "description": "A racing mind at night isn't a sign of weakness - it's a sign your nervous system needs help. Discover why your thoughts won't quiet down and exactly how to fix it with simple techniques you can start using tonight. Say goodbye to 2 AM panic about not sleeping."
+        "title": "Stop Racing Thoughts at Night: The Grounding Technique That Actually Works",
+        "description": "Racing mind keeping you awake? The 5-4-3-2-1 grounding technique interrupts overthinking loops in minutes by redirecting your brain to sensory experience instead of worry. This method works on the first try for most people and doesn't require meditation or visualization skills. Your fastest path to sleep starts here."
       },
       {
-        "title": "Can't Sleep Because Your Mind Won't Stop? Try This Tonight",
-        "description": "Racing thoughts keeping you awake? This is exactly what happens in your brain and why your sleep is suffering. Learn the one technique that calms your mind fastest, plus daily habits that prevent racing thoughts before they start. Better sleep starts with understanding your nervous system."
+        "title": "Why Your Brain Won't Shut Off at Night and How to Fix It Fast",
+        "description": "Your racing mind at night isn't a sleep disorder - it's your nervous system stuck in alert mode. Discover why your brain activates more when you lie down, what causes racing thoughts, and three tactical techniques to calm your mind and fall asleep naturally without pills or meditation apps."
       }
     ]
   },
