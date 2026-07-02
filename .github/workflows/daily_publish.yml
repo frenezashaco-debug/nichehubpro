@@ -74,6 +74,10 @@ jobs:
             (echo "Push failed again, retrying in 30s..." && sleep 30 && git pull --rebase origin main && git push)
           )
 
+      - name: Ping search engines
+        continue-on-error: true
+        run: python ping_indexing.py --new-only
+
       - name: Push Pinterest pins
         continue-on-error: true
         run: |
