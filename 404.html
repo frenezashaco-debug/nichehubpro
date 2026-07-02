@@ -6,34 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found | NicheHubPro</title>
   <meta name="robots" content="noindex, nofollow">
-  <link rel="canonical" href="https://nichehubpro.com/">  <link rel="stylesheet" href="/style.css">
+  <link rel="canonical" href="https://nichehubpro.com/">
+  <link rel="stylesheet" href="/style.css">
   <script>
-    // Smart redirect: old slug-only URLs → /articles/slug.html
     (function() {
       var path = window.location.pathname;
-      // WordPress feed URLs → homepage
-      if (/\/feed\/?$/.test(path) || /\/feed\/rss2\/?$/.test(path)) {
-        window.location.replace('/');
-        return;
-      }
-      // WordPress search URLs → homepage
-      if (/^\/search\//.test(path) || window.location.search.indexOf('s=') !== -1) {
-        window.location.replace('/');
-        return;
-      }
-      // Strip leading/trailing slashes and get slug
       var slug = path.replace(/^\/|\/$/g, '');
-      // Skip known real paths
-      var realPaths = ['about','contact','privacy','disclaimer','terms','resources',
-                       'mental-wellness','productivity','healthy-lifestyle','all-articles','ebook'];
-      if (slug && realPaths.indexOf(slug) === -1 && slug.indexOf('/') === -1 && slug.indexOf('.') === -1) {
-        // Likely an old-format article URL — try the new path
-        window.location.replace('/articles/' + slug + '.html');
+
+      // WordPress system/admin/feed → homepage
+      if (/\/(feed|wp-login|wp-admin|wp-content|wp-includes|xmlrpc|wp-json)(\/|$)/.test(path) ||
+          /\/feed\/?$/.test(path) || /\/feed\/rss/.test(path)) {
+        window.location.replace('/'); return;
       }
-      // Old /category/X/ → /X/
+      // WordPress search/query strings → homepage
+      if (/^\/search\//.test(path) || /[?&]s=/.test(window.location.search)) {
+        window.location.replace('/'); return;
+      }
+      // /page/2/ style pagination → homepage
+      if (/^\/page\/\d+\/?$/.test(path)) {
+        window.location.replace('/'); return;
+      }
+      // /tag/X/ or /author/X/ → homepage
+      if (/^\/(tag|author)\//.test(path)) {
+        window.location.replace('/'); return;
+      }
+      // /category/X/ → /X/ (our category pages)
       if (/^\/category\//.test(path)) {
-        var cat = path.replace(/^\/category\//, '').replace(/\/$/, '').split('/')[0];
-        window.location.replace('/' + cat + '/');
+        var cat = slug.replace(/^category\//, '').split('/')[0];
+        window.location.replace('/' + cat + '/'); return;
+      }
+      // /YYYY/MM/ date archive → homepage
+      if (/^\/\d{4}(\/\d{2})?\/?$/.test(path)) {
+        window.location.replace('/'); return;
+      }
+      // Known real paths — do nothing, show 404 UI
+      var realPaths = ['about','contact','privacy','disclaimer','terms','resources',
+                       'mental-wellness','productivity','healthy-lifestyle','all-articles','ebook',
+                       'sitemap.xml','robots.txt','favicon.png'];
+      if (realPaths.indexOf(slug) !== -1) return;
+
+      // Single-level slug with no dots → try as article
+      if (slug && slug.indexOf('/') === -1 && slug.indexOf('.') === -1) {
+        window.location.replace('/articles/' + slug + '.html'); return;
       }
     })();
   </script>
