@@ -14,6 +14,7 @@ Usage:
 import sys, os, re, time, json
 sys.stdout.reconfigure(encoding='utf-8')
 from publisher_v2 import generate_article
+from generate_cover import slug as make_slug
 
 BASE_DIR      = os.path.dirname(os.path.abspath(__file__))
 TRACKING_FILE = os.path.join(BASE_DIR, "published_12weeks.txt")
@@ -169,8 +170,7 @@ def load_published():
 
     published = set()
     for day, primary, *_ in PLAN:
-        slug = re.sub(r'[^a-z0-9]+', '-', primary.lower()).strip('-')[:60]
-        if slug in existing_slugs:
+        if make_slug(primary) in existing_slugs:
             published.add(day)
     return published
 
