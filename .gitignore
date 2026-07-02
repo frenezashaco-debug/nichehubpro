@@ -17,6 +17,7 @@ __pycache__/
 !update_author_bios.py
 !clean_ai_text.py
 !fix_section_images.py
+!add_references.py
 
 # Tracking and log files
 *.txt
