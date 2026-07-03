@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "why-anxiety-feels-physical",
+    "title": "5 Reasons Why Anxiety Feels Physical: Your Body's True Story",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Your heart races. Your chest tightens. Your stomach churns. If you've ever wondered why anxiety feels physical, you're not alone - and there's real science",
+    "image": "images/why-anxiety-feels-physical.jpg",
+    "alt": "Woman touching her chest while sitting at desk, experiencing physical anxiety",
+    "pins": [
+      {
+        "title": "Why Anxiety Feels Physical: 5 Science Reasons Your Body Reacts",
+        "description": "Your racing heart, tight chest, and trembling hands during anxiety aren't imaginary - they're your nervous system in overdrive. Learn the biology behind physical anxiety symptoms and discover immediate relief techniques that actually work. Start understanding your body today."
+      },
+      {
+        "title": "Stop Mistaking Anxiety for a Heart Attack - Here's What's Really Happening",
+        "description": "Physical anxiety symptoms feel terrifying because they're real. But understanding WHY your body responds this way changes everything. Find out what cortisol and adrenaline are doing, why doctors find nothing wrong, and how to calm your nervous system fast."
+      },
+      {
+        "title": "5 Daily Habits to Reduce Physical Anxiety Before It Controls Your Day",
+        "description": "Manage physical anxiety symptoms with consistent daily practices that train your nervous system to stay calm. From breathing techniques to movement to boundary-setting, discover the habits that compound into lasting relief and genuine peace."
+      }
+    ]
+  },
+  {
     "slug": "how-to-fall-asleep-when-your-mind-wont-stop",
     "title": "5 Ways to Fall Asleep When Your Mind Won't Stop: The Racing Mind Solution",
     "category": "Mental Wellness",
