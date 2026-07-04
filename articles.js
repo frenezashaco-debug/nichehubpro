@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "focus-vs-motivation-explained",
+    "title": "3 Focus vs Motivation Explained: Why You're Stuck (And What Actually Works)",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Focus vs motivation explained - they sound like the same thing, but they're completely different forces.",
+    "image": "images/focus-vs-motivation-explained.jpg",
+    "alt": "woman focused intently at desk during deep work session",
+    "pins": [
+      {
+        "title": "Focus vs Motivation: Why One Fades & One Grows - Explained",
+        "description": "Discover the real difference between focus and motivation. Learn why motivation crashes after 2-3 weeks and how to build unstoppable focus that actually lasts. Stop waiting for inspiration and start building the skill that wins. Read the complete guide now."
+      },
+      {
+        "title": "Stop Blaming Yourself: Why Your Motivation Always Dies",
+        "description": "You're not lazy. Your motivation fades because that's how neurology works. The problem isn't you - it's that you're building the wrong thing. Focus beats motivation every single time. Learn the science and the fix in this detailed breakdown."
+      },
+      {
+        "title": "Try This: Build Unstoppable Focus in 30 Minutes Daily",
+        "description": "Forget motivation. Build focus through daily rituals that work whether you feel inspired or exhausted. This practical focus-building method creates results in 2-3 weeks. One simple habit that changes everything - start today and watch what's possible."
+      }
+    ]
+  },
+  {
     "slug": "why-anxiety-feels-physical",
     "title": "5 Reasons Why Anxiety Feels Physical: Your Body's True Story",
     "category": "Mental Wellness",
