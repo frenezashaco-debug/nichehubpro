@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-stay-productive-every-day",
+    "title": "5 How to Stay Productive Every Day: The Real Science Behind Consistent Wins",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "How to stay productive every day is not about willpower or motivation - it's about building systems that work with your brain, not against it. Most people ",
+    "image": "images/how-to-stay-productive-every-day.jpg",
+    "alt": "Woman focused at desk writing morning priorities",
+    "pins": [
+      {
+        "title": "5 Daily Habits to Stay Productive Every Single Day (Even When Unmotivated)",
+        "description": "Discover the exact habits that truly productive people use every day - no motivation required. Learn how to stay productive even on tough days with science-backed strategies that actually stick. Stop chasing motivation and start building systems."
+      },
+      {
+        "title": "Stop Losing Productivity: The Real Reason You're Scattered (And How to Fix It)",
+        "description": "Your productivity problem isn't laziness - it's environment and distractions. Find out why you lose focus, what's killing your daily output, and the three changes that fix it immediately. Proven strategies for consistent daily wins."
+      },
+      {
+        "title": "How to Be Productive Every Day Without Burnout: The Real Science",
+        "description": "Learn how truly productive people stay consistent without exhaustion. Includes the five core daily habits, how to work when motivation is zero, and exactly when to rest. Build sustainable productivity that lasts."
+      }
+    ]
+  },
+  {
     "slug": "focus-vs-motivation-explained",
     "title": "3 Focus vs Motivation Explained: Why You're Stuck (And What Actually Works)",
     "category": "Productivity",
