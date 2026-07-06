@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "best-foods-for-better-sleep",
+    "title": "7 Best Foods for Better Sleep That Actually Work (Science-Backed)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Best foods for better sleep can transform your nights from restless to restorative. Most people don't realize that what they eat directly impacts how well ",
+    "image": "images/best-foods-for-better-sleep.jpg",
+    "alt": "Young woman holding bowl of almonds and kiwis in calm evening light",
+    "pins": [
+      {
+        "title": "7 Best Foods for Better Sleep Tonight - Science-Backed",
+        "description": "Tired of sleepless nights? These 7 best foods for better sleep contain natural compounds that help you fall asleep faster and stay asleep longer. Salmon, almonds, kiwis, and more - all proven by sleep research. Start tonight."
+      },
+      {
+        "title": "Stop Eating This Before Bed - Sleep Saboteurs Revealed",
+        "description": "Your sleep problems might be caused by what you eat, not how much you sleep. Discover which common foods block melatonin production and keep you awake. Simple swaps that work immediately."
+      },
+      {
+        "title": "Try This Evening Eating Routine for Sleep That Actually Works",
+        "description": "The best foods for better sleep work best on a consistent schedule. Learn exactly when and what to eat to train your body's natural sleep rhythm. Real examples inside."
+      }
+    ]
+  },
+  {
     "slug": "how-to-stay-productive-every-day",
     "title": "5 How to Stay Productive Every Day: The Real Science Behind Consistent Wins",
     "category": "Productivity",
