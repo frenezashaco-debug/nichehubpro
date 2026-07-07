@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-fix-your-sleep-schedule",
+    "title": "5 Ways to Fix Your Sleep Schedule Fast: The Science-Backed Reset Guide",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "How to fix your sleep schedule starts with understanding your body's natural rhythm, not fighting it. Most people try to force sleep instead of resetting t",
+    "image": "images/how-to-fix-your-sleep-schedule.jpg",
+    "alt": "Woman waking peacefully in morning light by window",
+    "pins": [
+      {
+        "title": "How to Fix Your Sleep Schedule in 7 Days (Science-Backed Reset)",
+        "description": "Stop fighting your sleep schedule - learn how to reset your circadian rhythm in a week with proven light exposure and wake time consistency strategies. This 3-step method works even if you've been on the wrong schedule for months. Most people reset their sleep rhythm in 3-7 days with this approach. Save this guide and start your reset tomorrow."
+      },
+      {
+        "title": "Stop Sleeping at 4 AM: Fix Your Broken Sleep Schedule Fast",
+        "description": "Trapped in a reversed sleep cycle? Your circadian rhythm isn't broken forever - it just needs to be reset. Discover why lock-in wake time works better than any sleep medicine and how morning light exposure rewires your internal clock in days, not weeks. Real solutions for finally sleeping when you need to."
+      },
+      {
+        "title": "Reset Your Sleep Schedule: The 3-Step Method That Actually Works",
+        "description": "Wake time consistency plus morning light equals a reset circadian rhythm. Learn the exact timing, light exposure amount, and gradual bedtime shift method that resets most people's sleep in 3-7 days. Skip the melatonin - use your body's natural rhythm signals instead. Your sleep schedule can change starting today."
+      }
+    ]
+  },
+  {
     "slug": "best-foods-for-better-sleep",
     "title": "7 Best Foods for Better Sleep That Actually Work (Science-Backed)",
     "category": "Healthy Lifestyle",
