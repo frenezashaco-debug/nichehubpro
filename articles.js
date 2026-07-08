@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "why-you-feel-emotionally-numb",
+    "title": "5 Reasons Why You Feel Emotionally Numb: Your Guide to Feeling Again",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Emotional numbness is a protective shield your mind built, and you're not broken for feeling this way.",
+    "image": "images/why-you-feel-emotionally-numb.jpg",
+    "alt": "Woman staring blankly out window, emotionally disconnected and numb",
+    "pins": [
+      {
+        "title": "5 Reasons Why You Feel Emotionally Numb (And What to Do Now)",
+        "description": "Feeling disconnected from life? You're not broken - your nervous system is protecting you. Discover the 5 root causes of emotional numbness and the daily habits that help you feel alive again. Your recovery starts today with one small step."
+      },
+      {
+        "title": "Stop Feeling Numb: How to Reconnect With Your Emotions",
+        "description": "That hollow, disconnected feeling isn't permanent. Emotional numbness happens when stress, trauma, or burnout overload your nervous system. Learn why you feel emotionally numb and the proven practices that wake up your emotional system naturally."
+      },
+      {
+        "title": "Try These 7 Daily Habits to Recover From Emotional Numbness",
+        "description": "Healing emotional numbness takes small, consistent action - not forcing yourself to feel. Start with one of these daily habits: journaling, body scans, time in nature, or meaningful conversation. Reconnect with your feelings in just minutes a day."
+      }
+    ]
+  },
+  {
     "slug": "how-to-fix-your-sleep-schedule",
     "title": "5 Ways to Fix Your Sleep Schedule Fast: The Science-Backed Reset Guide",
     "category": "Healthy Lifestyle",
