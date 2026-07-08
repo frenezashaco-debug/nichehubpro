@@ -45,6 +45,18 @@
                        'sitemap.xml','robots.txt','favicon.png'];
       if (realPaths.indexOf(slug) !== -1) return;
 
+      // Template literal bug URLs (old JS not evaluated) → homepage
+      if (slug.indexOf('${') !== -1 || slug.indexOf('%24%7B') !== -1) {
+        window.location.replace('/'); return;
+      }
+      // /form/... → contact page
+      if (/^\/form\//.test(path)) {
+        window.location.replace('/contact/'); return;
+      }
+      // /cdn-cgi/... → homepage
+      if (/^\/cdn-cgi\//.test(path)) {
+        window.location.replace('/'); return;
+      }
       // Single-level slug with no dots → try as article
       if (slug && slug.indexOf('/') === -1 && slug.indexOf('.') === -1) {
         window.location.replace('/articles/' + slug + '.html'); return;
