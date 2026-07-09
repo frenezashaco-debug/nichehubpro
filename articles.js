@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-build-mental-toughness",
+    "title": "5 Ways to Build Mental Toughness and Resilience Starting Today",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Learning how to build mental toughness changes everything about how you handle life's hardest moments.",
+    "image": "images/how-to-build-mental-toughness.jpg",
+    "alt": "Woman focused at desk building mental toughness and determination",
+    "pins": [
+      {
+        "title": "How to Build Mental Toughness: 5 Daily Habits That Work Fast",
+        "description": "Stop letting stress and anxiety control you. Learn 5 proven strategies to build real mental toughness and resilience starting today. These daily habits rewire your brain to handle challenges without falling apart. Build unshakeable strength one small step at a time."
+      },
+      {
+        "title": "Stop Avoiding Discomfort: Build Mental Toughness in Just 2 Weeks",
+        "description": "Mental toughness isn't about being tough - it's about being brave enough to face hard things. Discover how small daily practices of deliberate discomfort actually build the mental strength you need. Your breakthrough is waiting."
+      },
+      {
+        "title": "Mental Toughness Training: Build Resilience Without Burnout",
+        "description": "Want to stop falling apart when things get hard? Learn exactly how to build mental toughness through proven daily habits that actually work. From cold showers to boundary-setting, these simple techniques transform your mind and your life."
+      }
+    ]
+  },
+  {
     "slug": "why-you-feel-emotionally-numb",
     "title": "5 Reasons Why You Feel Emotionally Numb: Your Guide to Feeling Again",
     "category": "Mental Wellness",
