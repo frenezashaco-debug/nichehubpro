@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "healthy-habits-for-busy-people",
+    "title": "7 Healthy Habits for Busy People That Actually Fit Your Chaotic Life",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Healthy habits for busy people aren't about finding more time - they're about making smarter choices with the time you have. You already know exercise matt",
+    "image": "images/healthy-habits-for-busy-people.jpg",
+    "alt": "Young woman at desk holding water bottle and apple, looking thoughtful",
+    "pins": [
+      {
+        "title": "7 Healthy Habits for Busy People That Actually Stick (No Time Needed)",
+        "description": "Stop waiting for more time. These 7 healthy habits for busy people take 5-15 minutes and stack onto your existing routine. Walking, better sleep, protein snacks, stretching, and morning anchors - all designed for people with chaotic schedules. Start with one habit today and transform your energy."
+      },
+      {
+        "title": "Stop Giving Up on Health Because You're Too Busy - Try This Instead",
+        "description": "Busy professionals skip these 7 healthy habits for busy people and wonder why they crash by 3pm. But when you attach small health habits to your existing routine, everything changes. No gym needed, no meal prep, no perfection - just tiny changes that actually survive your chaos."
+      },
+      {
+        "title": "The 5 Healthy Habits for Busy People That Transform Energy in 2 Weeks",
+        "description": "Feeling exhausted despite doing 'everything right'? Try these 5 healthy habits for busy people: 15-minute walks, consistent sleep, protein snacks, 5-minute stretches, and a solid morning routine. See energy and mood improvements in as little as two weeks - no overhaul required."
+      }
+    ]
+  },
+  {
     "slug": "best-productivity-apps-in-2026",
     "title": "5 Best Productivity Apps in 2026: The Tools Actually Worth Your Time",
     "category": "Productivity",
