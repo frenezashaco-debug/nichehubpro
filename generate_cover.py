@@ -195,7 +195,12 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=
             resp = requests.post(
                 _HF_API_URL,
                 headers={"Authorization": f"Bearer {HF_API_KEY}"},
-                json={"inputs": full_prompt, "parameters": {"width": 1024, "height": 576}},
+                json={"inputs": full_prompt, "parameters": {
+                    "width": 1024, "height": 576,
+                    "negative_prompt": NEGATIVE_PROMPT,
+                    "guidance_scale": 3.5,
+                    "num_inference_steps": 50,
+                }},
                 verify=False,
                 timeout=180,
             )

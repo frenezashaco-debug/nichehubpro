@@ -274,7 +274,12 @@ def download_section_image(prompt, article_slug, index, retries=3, delay=0):
             resp = requests.post(
                 _HF_API_URL,
                 headers={"Authorization": f"Bearer {HF_API_KEY}"},
-                json={"inputs": full_prompt, "parameters": {"width": 1024, "height": 576}},
+                json={"inputs": full_prompt, "parameters": {
+                    "width": 1024, "height": 576,
+                    "negative_prompt": _HF_NEGATIVE,
+                    "guidance_scale": 3.5,
+                    "num_inference_steps": 50,
+                }},
                 verify=False,
                 timeout=180,
             )
