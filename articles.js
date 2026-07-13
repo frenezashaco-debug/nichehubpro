@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-drink-more-water-every-day",
+    "title": "5 Ways to Drink More Water Every Day - Even If You Always Forget",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "How to drink more water every day is one of the simplest yet most overlooked health habits you can build. Most of us know we should drink more, but life ge",
+    "image": "images/how-to-drink-more-water-every-day.jpg",
+    "alt": "Woman holding glass of water at desk, morning routine hydration.",
+    "pins": [
+      {
+        "title": "How to Drink More Water Every Day Without Willpower",
+        "description": "Stop relying on memory and start building automatic habits. Learn 5 science-backed strategies including habit stacking, marked bottles, and visual reminders that make daily water intake effortless. Boost your energy, clarity, and health with simple changes that actually stick. Try the marked bottle method this week."
+      },
+      {
+        "title": "Stop Forgetting to Drink Water - Use These 3 Tricks Instead",
+        "description": "You're not lazy - you just need better systems. Discover why your brain forgets water, the signs of dehydration you're missing, and three proven methods to make hydration automatic. From habit stacking to visual progress tracking, find the strategy that works for your lifestyle and finally feel energized."
+      },
+      {
+        "title": "5 Ways to Drink More Water When You Always Forget",
+        "description": "Tired of afternoon brain fog? Your body needs water, but willpower isn't the answer. Learn how to use habit stacking, marked bottles, accessible placement, flavor tricks, and strategic reminders to transform your daily water intake in just 21 days. Start with one simple change today."
+      }
+    ]
+  },
+  {
     "slug": "healthy-habits-for-busy-people",
     "title": "7 Healthy Habits for Busy People That Actually Fit Your Chaotic Life",
     "category": "Healthy Lifestyle",
