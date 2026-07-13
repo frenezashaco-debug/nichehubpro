@@ -171,7 +171,7 @@ def compress_to_limit(img, max_kb=MAX_KB):
     return buf.getvalue(), 20, buf.tell() / 1024
 
 # ── AI IMAGE GENERATION — HF FLUX.1-dev ──────────────────────────────────
-_HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell"
+_HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-dev"
 
 def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=3):
     """
