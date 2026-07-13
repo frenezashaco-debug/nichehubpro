@@ -40,51 +40,28 @@ CATEGORY_URLS = {
     "Healthy Lifestyle": "../healthy-lifestyle/",
 }
 
-# Real human author profiles — one per category for E-E-A-T
+# Single consistent author across all categories — required for AdSense E-E-A-T
+_SARAH = {
+    "name": "Sarah Mitchell",
+    "initials": "SM",
+    "title": "Health & Wellness Writer",
+    "bio": (
+        "Sarah Mitchell has been writing about mental health, productivity, and healthy living for over 7 years. "
+        "With a background in psychology and a personal history of managing chronic overthinking, "
+        "she translates complex research into clear, actionable advice that people can actually use."
+    ),
+    "color": "#10B981",
+    "default_refs": [
+        {"claim": "Anxiety disorders affect 40 million adults in the United States every year", "source": "Anxiety & Depression Association of America", "url": "https://adaa.org"},
+        {"claim": "Evidence-based approaches like CBT significantly reduce anxiety and stress symptoms", "source": "American Psychological Association", "url": "https://www.apa.org"},
+        {"claim": "Regular mindfulness practice can reduce symptoms of anxiety and depression", "source": "National Institute of Mental Health", "url": "https://www.nimh.nih.gov"},
+    ],
+}
 AUTHORS = {
-    "Mental Wellness": {
-        "name": "Sarah Mitchell",
-        "initials": "SM",
-        "title": "Mental Health Writer & Wellness Coach",
-        "bio": (
-            "Sarah has been writing about anxiety, stress, and mental wellbeing for over 7 years. "
-            "After struggling with chronic overthinking in her late 20s, she trained as a wellness coach "
-            "and now helps readers find practical, science-backed strategies for calmer, clearer living."
-        ),
-        "color": "#10B981",
-        "default_refs": [
-            {"claim": "Anxiety disorders affect 40 million adults in the United States every year", "source": "Anxiety & Depression Association of America", "url": "https://adaa.org"},
-            {"claim": "Evidence-based approaches like CBT significantly reduce anxiety and stress symptoms", "source": "American Psychological Association", "url": "https://www.apa.org"},
-            {"claim": "Regular mindfulness practice can reduce symptoms of anxiety and depression", "source": "National Institute of Mental Health", "url": "https://www.nimh.nih.gov"},
-        ],
-    },
-    "Productivity": {
-        "name": "James Okafor",
-        "initials": "JO",
-        "title": "Productivity Writer & Former Project Manager",
-        "bio": (
-            "James spent 8 years managing high-pressure tech projects before burning out in 2019. "
-            "That experience pushed him to research sustainable focus, habit-building, and deep work systems. "
-            "He now writes practical productivity guides rooted in real-world experience and behavioral science."
-        ),
-        "color": "#3B82F6",
-        "default_refs": [
-            {"claim": "Multitasking reduces productivity by up to 40% according to cognitive research", "source": "American Psychological Association", "url": "https://www.apa.org"},
-            {"claim": "Sleep deprivation severely impairs focus, decision-making, and productivity", "source": "National Sleep Foundation", "url": "https://www.thensf.org"},
-            {"claim": "High-pressure work environments are a leading cause of burnout and disengagement", "source": "Harvard Business Review", "url": "https://hbr.org"},
-        ],
-    },
-    "Healthy Lifestyle": {
-        "name": "Ava Chen",
-        "initials": "AC",
-        "title": "Wellness Writer & Certified Nutrition Coach",
-        "bio": (
-            "Ava is a certified nutrition coach who writes about the science of healthy living. "
-            "From sleep and movement to food and energy, she translates complex research "
-            "into clear, actionable advice that fits real everyday life."
-        ),
-        "color": "#F59E0B",
-        "default_refs": [
+    "Mental Wellness":   _SARAH,
+    "Productivity":      _SARAH,
+    "Healthy Lifestyle": _SARAH,
+    "default_refs": [
             {"claim": "A balanced diet rich in whole foods supports both physical and mental health", "source": "NHS (National Health Service)", "url": "https://www.nhs.uk"},
             {"claim": "Regular physical activity reduces the risk of chronic disease and improves mood", "source": "Mayo Clinic", "url": "https://www.mayoclinic.org"},
             {"claim": "Nutrition and lifestyle choices directly influence long-term health outcomes", "source": "Harvard T.H. Chan School of Public Health", "url": "https://www.hsph.harvard.edu"},
@@ -511,7 +488,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
     "image": "{SITE_URL}/images/{cover_filename}",
     "datePublished": "{today_iso}",
     "dateModified": "{today_iso}",
-    "author": {{ "@type": "Person", "name": "{author_name}", "url": "{SITE_URL}/about/", "jobTitle": "{author_title}" }},
+    "author": {{ "@type": "Person", "name": "{author_name}", "url": "{SITE_URL}/author/sarah-mitchell/", "jobTitle": "{author_title}" }},
     "publisher": {{ "@type": "Organization", "name": "NicheHubPro", "url": "{SITE_URL}", "logo": {{ "@type": "ImageObject", "url": "{SITE_URL}/favicon.png" }} }}
   }}
   </script>
