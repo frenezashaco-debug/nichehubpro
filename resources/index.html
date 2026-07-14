@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free Resources | NicheHubPro &mdash; Ebook &amp; App</title>
-  <meta name="description" content="Free tools to support your wellness journey. Download the 30-Day Discipline Reset ebook and get the IdeaFuel habit and focus timer app, both 100% free.">
+  <title>Free Resources | NicheHubPro &mdash; 3 Free Ebooks &amp; App</title>
+  <meta name="description" content="Free tools to support your wellness and productivity journey. Three free ebooks and the IdeaFuel habit app — no email, no paywall, 100% free.">
   <link rel="canonical" href="https://nichehubpro.com/resources/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -96,6 +96,15 @@
       border-radius: var(--radius-xs); margin-left: 10px; vertical-align: middle;
     }
     .card-app .badge-free { background: var(--emerald-lt); color: var(--emerald-dk); }
+    .card-orange .resource-tag { background: rgba(249,115,22,0.12); color: #FB923C; }
+    .card-orange .badge-free { background: rgba(249,115,22,0.15); color: #FB923C; }
+    .card-orange h2 { color: #fff; }
+    .card-orange p { color: rgba(255,255,255,0.55); }
+    .card-orange .feature-list li { color: rgba(255,255,255,0.65); }
+    .card-orange .feature-dot { background: #FB923C; }
+    .card-orange .resource-btn { background: #F97316; color: #fff; }
+    .card-orange:hover { box-shadow: 0 20px 56px rgba(249,115,22,0.22); }
+    .card-orange .resource-btn-secondary { border: 1px solid rgba(249,115,22,0.25); color: #FB923C; }
     @media (max-width: 700px) {
       .resource-card-header, .resource-card-body { padding-left: 24px; padding-right: 24px; }
     }
@@ -133,7 +142,7 @@
 <div class="cat-header">
   <div class="hero-badge">&#127381; Free Resources</div>
   <h1>Free Tools for Your<br>Wellness Journey</h1>
-  <p>An interactive ebook and a habit tracking app, both 100% free, both built around the same goal: helping you close the gap between knowing and doing.</p>
+  <p>Three free ebooks and a habit tracking app, all 100% free, all built around the same goal: helping you close the gap between knowing and doing.</p>
 </div>
 
 <main>
@@ -190,6 +199,31 @@
     </div>
   </div>
 
+  <!-- EBOOK CARD 3: The Best Productivity Apps in 2026 -->
+  <div class="resource-card card-ebook card-orange" onclick="window.location='/ebook/productivity-apps-2026'">
+    <div class="resource-card-header">
+      <span class="resource-tag">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Free Ebook
+      </span>
+      <div style="font-size:2.4rem;margin-bottom:14px;">&#128196;</div>
+      <h2>The Best Productivity Apps in 2026<span class="badge-free">Free</span></h2>
+    </div>
+    <div class="resource-card-body">
+      <p>20+ apps reviewed and ranked across 5 categories: note-taking, task management, focus, habit tracking, and AI tools. No affiliate links, no sponsored picks. Find your perfect stack in 20 minutes.</p>
+      <ul class="feature-list">
+        <li><span class="feature-dot"></span>19 pages across 5 app categories</li>
+        <li><span class="feature-dot"></span>Honest rankings with pros, cons, and pricing</li>
+        <li><span class="feature-dot"></span>Includes IdeaFuel, Notion, Todoist, Forest and more</li>
+        <li><span class="feature-dot"></span>No email required, completely free</li>
+      </ul>
+      <a href="/ebook/productivity-apps-2026" class="resource-btn" onclick="event.stopPropagation()">
+        Read the Ebook Free
+      </a>
+      <a href="/ebook/productivity-apps-2026/about" class="resource-btn-secondary" onclick="event.stopPropagation()">See what's inside &rarr;</a>
+    </div>
+  </div>
+
   <!-- APP CARD -->
   <div class="resource-card card-app" onclick="window.open('https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel','_blank')">
     <div class="resource-card-header">
@@ -219,11 +253,12 @@
 <section class="section section-dark" style="padding:80px 24px;">
   <div class="container" style="max-width:580px;text-align:center;">
     <div class="section-eyebrow" style="justify-content:center;">Start Today</div>
-    <h2 class="section-title">Two free ebooks. One free app.</h2>
-    <p class="section-sub" style="margin-left:auto;margin-right:auto;margin-bottom:32px;">All three are free, all three are built to help you close the gap between knowing and doing.</p>
+    <h2 class="section-title">Three free ebooks. One free app.</h2>
+    <p class="section-sub" style="margin-left:auto;margin-right:auto;margin-bottom:32px;">All four are free, all four are built to help you close the gap between knowing and doing.</p>
     <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
       <a href="/ebook/30-day-discipline-reset" class="btn">30-Day Discipline Reset &rarr;</a>
       <a href="/ebook/calm-focus-system" class="btn" style="background:#14B8A6;">The Calm Focus System &rarr;</a>
+      <a href="/ebook/productivity-apps-2026" class="btn" style="background:#F97316;">Productivity Apps 2026 &rarr;</a>
       <a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Download the App</a>
     </div>
   </div>
@@ -250,7 +285,9 @@
       <div class="footer-col">
         <h4>Resources</h4>
         <ul>
-          <li><a href="/ebook/">Free Ebook</a></li>
+          <li><a href="/ebook/30-day-discipline-reset">30-Day Discipline Reset</a></li>
+          <li><a href="/ebook/calm-focus-system">Calm Focus System</a></li>
+          <li><a href="/ebook/productivity-apps-2026">Productivity Apps 2026</a></li>
           <li><a href="https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel" target="_blank" rel="noopener">IdeaFuel App</a></li>
         </ul>
       </div>
