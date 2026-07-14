@@ -37,14 +37,12 @@ jobs:
           HF_API_KEY: ${{ secrets.HF_API_KEY }}
           PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
           MAKE_PINTEREST_WEBHOOK: ${{ secrets.MAKE_PINTEREST_WEBHOOK }}
-          MEDIUM_INTEGRATION_TOKEN: ${{ secrets.MEDIUM_INTEGRATION_TOKEN }}
         run: |
           printf 'ANTHROPIC_API_KEY = "%s"\n' "$ANTHROPIC_API_KEY" > config.py
           printf 'HF_API_KEY = "%s"\n' "$HF_API_KEY" >> config.py
           printf 'PINTEREST_ACCESS_TOKEN = "%s"\n' "$PINTEREST_ACCESS_TOKEN" >> config.py
           printf 'MAKE_PINTEREST_WEBHOOK = "%s"\n' "$MAKE_PINTEREST_WEBHOOK" >> config.py
           printf 'OPENAI_API_KEY = ""\n' >> config.py
-          printf 'MEDIUM_INTEGRATION_TOKEN = "%s"\n' "$MEDIUM_INTEGRATION_TOKEN" >> config.py
           python3 -c "import config; print('HF key OK:', bool(config.HF_API_KEY)); print('Anthropic key OK:', bool(config.ANTHROPIC_API_KEY))"
 
       - name: Show current publish status
@@ -79,10 +77,6 @@ jobs:
       - name: Ping search engines
         continue-on-error: true
         run: python ping_indexing.py --new-only
-
-      - name: Publish to Medium
-        continue-on-error: true
-        run: python medium_publisher.py --new
 
       - name: Push Pinterest pins
         continue-on-error: true

@@ -11,7 +11,6 @@ Usage:
 import sys, os, re, time, json, subprocess
 sys.stdout.reconfigure(encoding='utf-8')
 from publisher_v2 import generate_article
-from medium_publisher import publish as medium_publish
 
 def ping_indexing():
     """Submit newly published URLs to Bing/IndexNow via ping_indexing.py."""
@@ -228,17 +227,12 @@ def run_day(day_num):
     print(f"{'='*65}")
 
     success_count = 0
-    published_paths = []
     for i, (primary, secondary, longtail, category) in enumerate(articles, 1):
         if len(articles) > 1:
             print(f"\n  [{i}/{len(articles)}] {primary}")
         result = generate_article(primary, secondary, longtail, category)
         if result:
             success_count += 1
-            slug = re.sub(r'[^a-z0-9]+', '-', primary.lower()).strip('-')[:60]
-            article_path = os.path.join(BASE_DIR, "articles", f"{slug}.html")
-            if os.path.exists(article_path):
-                published_paths.append(article_path)
         if i < len(articles):
             time.sleep(2)
 
@@ -246,10 +240,6 @@ def run_day(day_num):
         mark_published(day_num)
         print(f"\n  Day {day_num} complete: {success_count}/{len(articles)} articles published.")
         ping_indexing()
-        print("\n  Publishing to Medium...")
-        for path in published_paths:
-            medium_publish(path)
-            time.sleep(3)
         return True
     return False
 
