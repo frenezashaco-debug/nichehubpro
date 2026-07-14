@@ -61,12 +61,6 @@ AUTHORS = {
     "Mental Wellness":   _SARAH,
     "Productivity":      _SARAH,
     "Healthy Lifestyle": _SARAH,
-    "default_refs": [
-            {"claim": "A balanced diet rich in whole foods supports both physical and mental health", "source": "NHS (National Health Service)", "url": "https://www.nhs.uk"},
-            {"claim": "Regular physical activity reduces the risk of chronic disease and improves mood", "source": "Mayo Clinic", "url": "https://www.mayoclinic.org"},
-            {"claim": "Nutrition and lifestyle choices directly influence long-term health outcomes", "source": "Harvard T.H. Chan School of Public Health", "url": "https://www.hsph.harvard.edu"},
-        ],
-    },
 }
 
 # ── SYSTEM PROMPT ────────────────────────────────────────────────────────
