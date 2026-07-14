@@ -8,9 +8,22 @@ Usage:
   python batch_30days.py --status  <- show what's done/pending
 """
 
-import sys, os, re, time, json
+import sys, os, re, time, json, subprocess
 sys.stdout.reconfigure(encoding='utf-8')
 from publisher_v2 import generate_article
+
+def ping_indexing():
+    """Submit newly published URLs to Bing/IndexNow via ping_indexing.py."""
+    script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ping_indexing.py")
+    try:
+        result = subprocess.run(
+            [sys.executable, script, "--new-only"],
+            capture_output=True, text=True, timeout=60
+        )
+        for line in result.stdout.strip().splitlines():
+            print(f"  {line}")
+    except Exception as e:
+        print(f"  IndexNow ping failed: {e}")
 
 BASE_DIR      = os.path.dirname(os.path.abspath(__file__))
 TRACKING_FILE = os.path.join(BASE_DIR, "published_30days.txt")
@@ -226,6 +239,7 @@ def run_day(day_num):
     if success_count > 0:
         mark_published(day_num)
         print(f"\n  Day {day_num} complete: {success_count}/{len(articles)} articles published.")
+        ping_indexing()
         return True
     return False
 
