@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-stop-self-sabotaging",
+    "title": "5 Ways to Stop Self Sabotaging Before Success Slips Away",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "How to stop self sabotaging starts with understanding why you do it in the first place. You work hard, get close to your goal, and then something inside yo",
+    "image": "images/how-to-stop-self-sabotaging.jpg",
+    "alt": "Young woman sitting at desk looking uncertain about success and progress",
+    "pins": [
+      {
+        "title": "How to Stop Self Sabotaging: 5 Science-Backed Methods That Actually Work",
+        "description": "Self-sabotage isn't laziness - it's your nervous system protecting you from fear of success. Learn the 5 proven ways to break this pattern, rewire limiting beliefs, and finally let yourself succeed. Stop sabotaging yourself starting today. Your breakthrough is waiting."
+      },
+      {
+        "title": "Stop Ruining Your Success: Why You Self Sabotage and How to Fix It",
+        "description": "You work hard toward your goals, then something inside pulls the emergency brake right before you win. This is self-sabotage, and it stems from deep beliefs about your worth. Discover why it happens and the daily practices that actually break the cycle for good."
+      },
+      {
+        "title": "5 Daily Habits to Prevent Self Sabotage and Unlock Your Real Potential",
+        "description": "Self-sabotage rewires in about 66 days with consistent daily practices. Learn the five small daily habits that reprogram your nervous system to believe success is safe. Stop blocking yourself. Start building the life you actually deserve with these simple, proven techniques."
+      }
+    ]
+  },
+  {
     "slug": "how-to-drink-more-water-every-day",
     "title": "5 Ways to Drink More Water Every Day - Even If You Always Forget",
     "category": "Healthy Lifestyle",
