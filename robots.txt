@@ -1,4 +1,29 @@
 User-agent: *
 Allow: /
 
+# Block WordPress leftovers (site migrated to static HTML)
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-json/
+Disallow: /wp-login.php
+Disallow: /wp-*.php
+
+# Block RSS feed URLs
+Disallow: /*/feed/
+Disallow: /comments/feed/
+
+# Block WordPress category pagination
+Disallow: /category/*/page/
+
+# Block old paginated transformation pages
+Disallow: /page/
+
+# Block internal forms and search
+Disallow: /form/
+Disallow: /search/
+
+# Block old static HTML remnants
+Disallow: /articles.html
+Disallow: /politique-confidentialite.html
+
 Sitemap: https://nichehubpro.com/sitemap.xml
