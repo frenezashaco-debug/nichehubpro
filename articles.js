@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "why-you-feel-lost-in-life",
+    "title": "5 Reasons Why You Feel Lost in Life (And How to Find Your Way Back)",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Feeling lost in life is more common than you think, and it often hits harder than any other emotion. You wake up, go through the motions, and wonder if you",
+    "image": "images/why-you-feel-lost-in-life.jpg",
+    "alt": "Woman gazing out window contemplating life direction indoors",
+    "pins": [
+      {
+        "title": "How to Stop Feeling Lost in Life: 5 Real Reasons + Fixes",
+        "description": "Feeling lost and directionless? Discover the 5 core reasons why you feel lost in life and practical, step-by-step solutions to rebuild clarity and direction. Learn how to align your life with your actual values and stop going through the motions. Start your journey back to purpose today."
+      },
+      {
+        "title": "Stop Feeling Lost: Rebuild Your Direction Starting Today",
+        "description": "That hollow, directionless feeling you have? It's telling you something needs to change. Find out what's really causing your lostness and how to fix it with concrete daily habits. Includes simple morning and evening practices that work."
+      },
+      {
+        "title": "Why You Feel Lost in Life (And How to Find Your Way Back)",
+        "description": "Is unclear values or identity confusion keeping you stuck and directionless? This guide walks you through the real reasons people feel lost and gives you a simple 5-step process to reclaim clarity. No more autopilot living - start building genuine purpose."
+      }
+    ]
+  },
+  {
     "slug": "how-to-stop-self-sabotaging",
     "title": "5 Ways to Stop Self Sabotaging Before Success Slips Away",
     "category": "Mental Wellness",
