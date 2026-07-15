@@ -1,0 +1,76 @@
+# NicheHubPro
+
+> A free mental wellness and productivity publication for people dealing with stress, anxiety, and overthinking. No paywalls. No subscriptions. No fluff.
+
+NicheHubPro publishes practical, human-written guides on mental wellness, productivity, and healthy lifestyle habits. All content is free. The site also offers three free ebooks and a free Android app (IdeaFuel).
+
+## About
+
+- Publisher: NicheHubPro (nichehubpro.com)
+- Focus: Mental wellness, productivity, healthy lifestyle
+- Audience: Adults dealing with stress, anxiety, burnout, and overthinking
+- Content type: Long-form how-to articles, guides, and free ebooks
+- All articles are free to read with no account required
+
+## Free Resources
+
+- [The Best Productivity Apps in 2026 — Free Ebook](https://nichehubpro.com/ebook/productivity-apps-2026/about): Reviews 20+ productivity apps across 5 categories (note-taking, task management, focus, habits, AI tools). Honest rankings, no affiliate links.
+- [30-Day Discipline Reset — Free Ebook](https://nichehubpro.com/ebook/30-day-discipline-reset/about): A 30-day system to rebuild focus, consistency, and momentum. Includes exercises and daily reflections.
+- [Calm Focus System — Free Ebook](https://nichehubpro.com/ebook/calm-focus-system/about): A guide to building calm, sustained focus for people who struggle with anxiety and overthinking.
+- [IdeaFuel — Free Android App](https://play.google.com/store/apps/details?id=com.ideafuel.idea_fuel): A habit tracker and focus timer app. Free, no upsells.
+- [All Resources](https://nichehubpro.com/resources/)
+
+## Mental Wellness Articles
+
+- [How to Calm Anxiety Quickly](https://nichehubpro.com/articles/how-to-calm-anxiety-quickly.html)
+- [How to Stop Overthinking](https://nichehubpro.com/articles/how-to-stop-overthinking.html)
+- [How to Reduce Stress Naturally](https://nichehubpro.com/articles/how-to-reduce-stress-naturally.html)
+- [How to Deal with Anxiety Daily](https://nichehubpro.com/articles/how-to-deal-with-anxiety-daily.html)
+- [How to Calm Your Mind Instantly](https://nichehubpro.com/articles/how-to-calm-your-mind-instantly.html)
+- [How to Feel Calm Instantly](https://nichehubpro.com/articles/how-to-feel-calm-instantly.html)
+- [How to Improve Mental Clarity](https://nichehubpro.com/articles/how-to-improve-mental-clarity.html)
+- [How to Stay Calm Under Pressure](https://nichehubpro.com/articles/how-to-stay-calm-under-pressure.html)
+- [How to Recover from Emotional Burnout](https://nichehubpro.com/articles/how-to-recover-from-emotional-burnout.html)
+- [Emotional Burnout Recovery](https://nichehubpro.com/articles/emotional-burnout-recovery.html)
+- [Anxiety Before Sleep](https://nichehubpro.com/articles/anxiety-before-sleep.html)
+- [Fear of Failure Anxiety](https://nichehubpro.com/articles/fear-of-failure-anxiety.html)
+- [Foods That Reduce Anxiety](https://nichehubpro.com/articles/foods-that-reduce-anxiety.html)
+- [How to Calm Down When Overwhelmed](https://nichehubpro.com/articles/how-to-calm-down-when-overwhelmed.html)
+- [Daily Habits for Better Mental Health](https://nichehubpro.com/articles/daily-habits-for-better-mental-health.html)
+- [How Sleep Affects Mental Health](https://nichehubpro.com/articles/how-sleep-affects-mental-health.html)
+- [How Exercise Improves Mental Health](https://nichehubpro.com/articles/how-exercise-improves-mental-health.html)
+- [All Mental Wellness Articles](https://nichehubpro.com/mental-wellness/)
+
+## Productivity Articles
+
+- [Best Productivity Apps in 2026](https://nichehubpro.com/articles/best-productivity-apps-in-2026.html)
+- [Best Free Productivity Apps for Android in 2026](https://nichehubpro.com/articles/best-free-productivity-apps-for-android-2026.html)
+- [How to Build a Productivity System with Apps in 2026](https://nichehubpro.com/articles/how-to-build-a-productivity-system-with-apps.html)
+- [Best Productivity Systems Explained](https://nichehubpro.com/articles/best-productivity-systems-explained.html)
+- [Best Time Management Techniques Ranked](https://nichehubpro.com/articles/best-time-management-techniques-ranked.html)
+- [How to Stop Procrastinating Immediately](https://nichehubpro.com/articles/how-to-stop-procrastinating-immediately.html)
+- [Time Blocking for Beginners](https://nichehubpro.com/articles/time-blocking-for-beginners.html)
+- [Habit Building System](https://nichehubpro.com/articles/habit-building-system.html)
+- [Best Habit Tracker Methods That Work](https://nichehubpro.com/articles/best-habit-tracker-methods-that-work.html)
+- [Focus vs Motivation Explained](https://nichehubpro.com/articles/focus-vs-motivation-explained.html)
+- [Best Morning Habits for More Energy](https://nichehubpro.com/articles/best-morning-habits-for-more-energy.html)
+- [Daily Self-Care Routine](https://nichehubpro.com/articles/daily-self-care-routine.html)
+- [All Productivity Articles](https://nichehubpro.com/productivity/)
+
+## Healthy Lifestyle Articles
+
+- [Daily Wellness Habits](https://nichehubpro.com/articles/daily-wellness-habits.html)
+- [Healthy Daily Habits](https://nichehubpro.com/articles/healthy-daily-habits.html)
+- [Best Foods for Focus and Concentration](https://nichehubpro.com/articles/best-foods-for-focus-and-concentration.html)
+- [Healthy Sleep Habits That Improve Energy](https://nichehubpro.com/articles/healthy-sleep-habits-that-improve-energy.html)
+- [Healthy Habits for Busy People](https://nichehubpro.com/articles/healthy-habits-for-busy-people.html)
+- [Daily Stretching Routine for Beginners](https://nichehubpro.com/articles/daily-stretching-routine-for-beginners.html)
+- [All Healthy Lifestyle Articles](https://nichehubpro.com/healthy-lifestyle/)
+
+## Site Pages
+
+- [Home](https://nichehubpro.com/)
+- [Start Here / About](https://nichehubpro.com/about/)
+- [All Articles](https://nichehubpro.com/all-articles/)
+- [Resources](https://nichehubpro.com/resources/)
+- [Privacy Policy](https://nichehubpro.com/privacy-policy/)
