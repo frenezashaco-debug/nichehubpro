@@ -401,7 +401,7 @@ def generate_image(prompt, filename, fmt, max_kb, candidates=3):
                     "prompt": full_prompt,
                     "negative_prompt": _HF_NEGATIVE,
                     "image_size": {"width": 1024, "height": 576},
-                    "num_inference_steps": 28,
+                    "num_inference_steps": 50,
                     "guidance_scale": 3.5,
                     "num_images": 1,
                     "seed": attempt * 42,

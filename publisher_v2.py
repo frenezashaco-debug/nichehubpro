@@ -272,7 +272,7 @@ def download_section_image(prompt, article_slug, index, retries=3, delay=0):
                     "prompt": full_prompt,
                     "negative_prompt": _HF_NEGATIVE,
                     "image_size": {"width": 1024, "height": 576},
-                    "num_inference_steps": 28,
+                    "num_inference_steps": 50,
                     "guidance_scale": 3.5,
                     "num_images": 1,
                     "seed": attempt * 13,

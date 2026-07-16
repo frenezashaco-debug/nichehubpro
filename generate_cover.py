@@ -199,7 +199,7 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=
                     "prompt": full_prompt,
                     "negative_prompt": NEGATIVE_PROMPT,
                     "image_size": {"width": 1024, "height": 576},
-                    "num_inference_steps": 28,
+                    "num_inference_steps": 50,
                     "guidance_scale": 3.5,
                     "num_images": 1,
                     "seed": attempt * 42,
