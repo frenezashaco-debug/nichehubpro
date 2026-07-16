@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-track-progress-toward-goals",
+    "title": "5 How to Track Progress Toward Goals: Stop Spinning Your Wheels",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "How to track progress toward goals is the difference between dreams that fade and wins you can actually feel. Most people set goals but never check them ag",
+    "image": "images/how-to-track-progress-toward-goals.jpg",
+    "alt": "woman writing in notebook while tracking progress at desk",
+    "pins": [
+      {
+        "title": "How to Track Progress Toward Goals Without Losing Your Mind",
+        "description": "Stop abandoning tracking systems. Learn the one simple method that actually works - no apps, no spreadsheets, just honest daily recording and weekly reviews. Discover the science behind why tracking transforms vague goals into real wins. Small daily actions, big weekly wins."
+      },
+      {
+        "title": "Stop Failing Your Goals: Track This One Metric Instead",
+        "description": "Most people track the wrong thing. Here's exactly what to measure to prove real progress on your goals. One metric, one system, one week to see the difference. Turn invisible effort into visible proof that you're actually moving forward."
+      },
+      {
+        "title": "The 2-Minute Goal Tracking System That Never Fails",
+        "description": "Your tracking system is too complicated. That's why you quit. Learn how to measure progress with a method so simple you'll actually stick with it. Paper, apps, or spreadsheets - choose the one that matches your brain. Real progress starts now."
+      }
+    ]
+  },
+  {
     "slug": "why-you-feel-lost-in-life",
     "title": "5 Reasons Why You Feel Lost in Life (And How to Find Your Way Back)",
     "category": "Mental Wellness",
