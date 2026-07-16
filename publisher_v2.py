@@ -555,14 +555,11 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
       </div>
     </div>
 
-    <picture>
-      <source srcset="../images/{cover_webp}" type="image/webp">
-      <img src="../images/{cover_filename}"
-           alt="{cover_alt}"
-           style="width:100%;max-height:520px;object-fit:cover;border-radius:var(--radius-lg);margin-bottom:32px;display:block;"
-           width="1920" height="1080"
-           loading="eager" fetchpriority="high">
-    </picture>
+    <img src="https://nichehubpro.com/images/{cover_filename}"
+         alt="{cover_alt}"
+         style="width:100%;max-height:520px;object-fit:cover;border-radius:var(--radius-lg);margin-bottom:32px;display:block;"
+         width="1920" height="1080"
+         loading="eager" fetchpriority="high">
 
     <article class="article-content" id="article-body">
 
