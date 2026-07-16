@@ -16,9 +16,11 @@ IMAGES_DIR   = os.path.join(BASE_DIR, "images")
 ARTICLES_DIR = os.path.join(BASE_DIR, "articles")
 PILLOW_COLOR_THRESHOLD = 2500  # Pillow text cards have <2000 unique colors; real AI photos have 2966+
 
-# Slugs to regenerate even if they pass the Pillow detection (used for quality re-dos).
-# Clear this list once the workflow has run and the covers look good.
+# Slugs to force-regenerate cover even if it passes Pillow detection.
 FORCE_REGEN = set()
+
+# Slugs to force-regenerate section images even if they already exist.
+FORCE_REGEN_SECS = set()
 
 
 def _is_pillow_fallback(jpg_path):
@@ -365,10 +367,21 @@ _FLUX_RULES = (
     "Single photograph only, not a diptych. No text, no logos, no watermarks."
 )
 
-_HF_API_URL = "https://router.huggingface.co/fal-ai/fal-ai/flux/schnell"
+_HF_API_URL = "https://router.huggingface.co/fal-ai/fal-ai/flux/dev"
+
+_HF_NEGATIVE = (
+    "hands, arms, fingers, wrist, palm, fist, holding, mug, cup, coffee, pen, pencil, "
+    "notebook, journal, book, phone, writing, typing, "
+    "artificial skin, plastic skin, porcelain skin, glowing skin, perfect skin, doll face, "
+    "AI generated look, digital art, illustration, painting, CGI render, stock photo, "
+    "model pose, beauty campaign, symmetrical face, flawless complexion, "
+    "studio lighting, rim lighting, smooth skin, airbrushed, retouched, "
+    "watermark, text, logo, anime, cartoon, "
+    "extra fingers, missing fingers, malformed hands, extra hands, fused fingers, bad anatomy"
+)
 
 def generate_image(prompt, filename, fmt, max_kb, candidates=3):
-    """Generate image via HuggingFace (fal-ai FLUX/schnell). Picks best of `candidates`."""
+    """Generate image via HuggingFace (fal-ai FLUX.1-dev). Picks best of `candidates`."""
     try:
         from config import HF_API_KEY
     except ImportError:
@@ -380,14 +393,16 @@ def generate_image(prompt, filename, fmt, max_kb, candidates=3):
 
     for attempt in range(1, candidates + 1):
         try:
-            print(f"    HF FLUX attempt {attempt}/{candidates}...")
+            print(f"    HF FLUX.1-dev attempt {attempt}/{candidates}...")
             resp = requests.post(
                 _HF_API_URL,
                 headers={"Authorization": f"Bearer {HF_API_KEY}"},
                 json={
                     "prompt": full_prompt,
+                    "negative_prompt": _HF_NEGATIVE,
                     "image_size": {"width": 1024, "height": 576},
-                    "num_inference_steps": 4,
+                    "num_inference_steps": 28,
+                    "guidance_scale": 3.5,
                     "num_images": 1,
                     "seed": attempt * 42,
                 },
@@ -413,7 +428,7 @@ def generate_image(prompt, filename, fmt, max_kb, candidates=3):
         except Exception as e:
             print(f"    Candidate {attempt} error: {e}")
         if attempt < candidates:
-            time.sleep(5)
+            time.sleep(10)
 
     if best_img is None:
         return False
@@ -440,8 +455,14 @@ def generate_image(prompt, filename, fmt, max_kb, candidates=3):
 def inject_sections(slug, html_path):
     with open(html_path, "r", encoding="utf-8") as f:
         html = f.read()
+    # Remove any previously injected section img tags to avoid duplicates
+    html = re.sub(
+        r'\n\s*<img src="\.\./images/' + re.escape(slug) + r'-sec\d\.webp"[^>]*>\n\n\s*',
+        '\n      ',
+        html
+    )
     if f"{slug}-sec1.webp" in html:
-        return  # already injected
+        return  # still present after cleanup — skip
     h2s = list(re.finditer(r'<h2[^>]*>[^<]+</h2>', html))
     if len(h2s) < 6:
         print(f"    WARNING: only {len(h2s)} h2s — skipping injection")
@@ -480,7 +501,7 @@ def main():
         if not os.path.exists(cover):
             continue
         bad_cover = _is_pillow_fallback(cover) or slug in FORCE_REGEN
-        no_secs   = not os.path.exists(sec1)
+        no_secs   = not os.path.exists(sec1) or slug in FORCE_REGEN_SECS
         # Also catch: section images exist on disk but were never injected into HTML
         if not no_secs:
             html_path = os.path.join(ARTICLES_DIR, html_file)

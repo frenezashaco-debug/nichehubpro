@@ -170,12 +170,12 @@ def compress_to_limit(img, max_kb=MAX_KB):
     img.convert('RGB').save(buf, format='JPEG', quality=20, optimize=True)
     return buf.getvalue(), 20, buf.tell() / 1024
 
-# ── AI IMAGE GENERATION — HF fal-ai FLUX/schnell ─────────────────────────
-_HF_API_URL = "https://router.huggingface.co/fal-ai/fal-ai/flux/schnell"
+# ── AI IMAGE GENERATION — HF fal-ai FLUX.1-dev ───────────────────────────
+_HF_API_URL = "https://router.huggingface.co/fal-ai/fal-ai/flux/dev"
 
 def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=3):
     """
-    Generate cover image via HuggingFace (fal-ai FLUX/schnell) at 1024x576.
+    Generate cover image via HuggingFace (fal-ai FLUX.1-dev) at 1024x576.
     Generates `candidates` versions, keeps the one with most unique colors (most photorealistic).
     """
     try:
@@ -191,14 +191,16 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=
 
     for attempt in range(1, candidates + 1):
         try:
-            print(f"  HF FLUX attempt {attempt}/{candidates}...")
+            print(f"  HF FLUX.1-dev attempt {attempt}/{candidates}...")
             resp = requests.post(
                 _HF_API_URL,
                 headers={"Authorization": f"Bearer {HF_API_KEY}"},
                 json={
                     "prompt": full_prompt,
+                    "negative_prompt": NEGATIVE_PROMPT,
                     "image_size": {"width": 1024, "height": 576},
-                    "num_inference_steps": 4,
+                    "num_inference_steps": 28,
+                    "guidance_scale": 3.5,
                     "num_images": 1,
                     "seed": attempt * 42,
                 },
@@ -226,12 +228,12 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=
                 print(" — keeping previous")
 
             if attempt < candidates:
-                time.sleep(5)
+                time.sleep(10)
 
         except Exception as e:
             print(f"    Error: {e}")
             if attempt < candidates:
-                time.sleep(5)
+                time.sleep(10)
 
     if best_img:
         print(f"  Selected best candidate: {best_unique} unique colors")

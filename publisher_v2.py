@@ -243,12 +243,12 @@ _HF_NEGATIVE = (
     "extra limbs, extra arms, floating hands, unnatural hands, bad anatomy"
 )
 
-_HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-dev"
+_HF_API_URL = "https://router.huggingface.co/fal-ai/fal-ai/flux/dev"
 _HF_DELAY = 20  # seconds between HF calls
 
-# ── SECTION IMAGE DOWNLOADER — HF FLUX.1-dev ─────────────────────────────
+# ── SECTION IMAGE DOWNLOADER — HF fal-ai FLUX.1-dev ──────────────────────
 def download_section_image(prompt, article_slug, index, retries=3, delay=0):
-    """Download a section image via HF FLUX.1-dev at 1024x576."""
+    """Download a section image via HuggingFace (fal-ai FLUX.1-dev) at 1024x576."""
     try:
         from config import HF_API_KEY
     except ImportError:
@@ -268,17 +268,24 @@ def download_section_image(prompt, article_slug, index, retries=3, delay=0):
             resp = requests.post(
                 _HF_API_URL,
                 headers={"Authorization": f"Bearer {HF_API_KEY}"},
-                json={"inputs": full_prompt, "parameters": {
-                    "width": 1024, "height": 576,
+                json={
+                    "prompt": full_prompt,
                     "negative_prompt": _HF_NEGATIVE,
+                    "image_size": {"width": 1024, "height": 576},
+                    "num_inference_steps": 28,
                     "guidance_scale": 3.5,
-                    "num_inference_steps": 50,
-                }},
+                    "num_images": 1,
+                    "seed": attempt * 13,
+                },
                 verify=False,
                 timeout=180,
             )
             resp.raise_for_status()
-            img = Image.open(io.BytesIO(resp.content)).convert("RGB")
+            data = resp.json()
+            img_url = data["images"][0]["url"]
+            img_resp = requests.get(img_url, verify=False, timeout=60)
+            img_resp.raise_for_status()
+            img = Image.open(io.BytesIO(img_resp.content)).convert("RGB")
             img = img.resize((800, 450), Image.LANCZOS)
             for quality in range(82, 10, -5):
                 buf = io.BytesIO()
