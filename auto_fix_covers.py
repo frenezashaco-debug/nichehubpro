@@ -18,10 +18,7 @@ PILLOW_COLOR_THRESHOLD = 2500  # Pillow text cards have <2000 unique colors; rea
 
 # Slugs to regenerate even if they pass the Pillow detection (used for quality re-dos).
 # Clear this list once the workflow has run and the covers look good.
-FORCE_REGEN = {
-    "daily-habits-for-better-mental-health",
-    "best-time-management-techniques-ranked",
-}
+FORCE_REGEN = set()
 
 
 def _is_pillow_fallback(jpg_path):
@@ -124,6 +121,14 @@ SLUG_PROMPTS = {
             "Candid photo: a young woman, early 30s, sitting at a desk staring blankly at an open laptop, avoiding starting work, elbow on desk, chin resting on hand. Afternoon light. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
             "Lifestyle photo: a young woman, late 20s, writing a task list in a notebook with a pen, organized and intentional. Clean desk, morning light. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
             "Candid photo: a young woman, mid-20s, at her desk working through a checklist, pen in hand, focused and making progress. Warm afternoon light. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
+        ]
+    ),
+    "how-to-track-progress-toward-goals": (
+        "Candid lifestyle photo: a young woman, late 20s, sitting at a plain wooden desk reviewing a handwritten goal list in a small notebook, pen in hand, calm focused expression, checking off a completed item. Plain grey t-shirt. Soft diffused morning light from left window. Simple desk with mug and open planner. Shot on 85mm f/1.8. Photorealistic candid lifestyle. No text, no logos.",
+        [
+            "Candid photo: a young woman, early 30s, at desk writing in an open planner with a pen, checking a calendar on her phone beside her, organized and intentional expression. Afternoon window light. Plain hoodie. Shot on 50mm f/2.0. Photorealistic candid. No text, no logos.",
+            "Lifestyle photo: a young woman, late 20s, sitting back from her desk with a calm satisfied expression, notebook open in front of her showing a completed checklist. Warm late-afternoon light. Plain t-shirt. Shot on 85mm f/1.8. Photorealistic candid. No text, no logos.",
+            "Candid photo: a young woman, mid-20s, at a kitchen table writing in a small journal, coffee mug beside her, concentrated calm expression. Morning light. Plain linen top. Shot on 85mm f/1.8. Photorealistic lifestyle. No text, no logos.",
         ]
     ),
     "sleep-routine-tips": (
@@ -360,10 +365,10 @@ _FLUX_RULES = (
     "Single photograph only, not a diptych. No text, no logos, no watermarks."
 )
 
-_HF_API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell"
+_HF_API_URL = "https://router.huggingface.co/fal-ai/fal-ai/flux/schnell"
 
 def generate_image(prompt, filename, fmt, max_kb, candidates=3):
-    """Generate image via HF FLUX.1-dev at 1024x576. Picks best of `candidates`."""
+    """Generate image via HuggingFace (fal-ai FLUX/schnell). Picks best of `candidates`."""
     try:
         from config import HF_API_KEY
     except ImportError:
@@ -375,30 +380,40 @@ def generate_image(prompt, filename, fmt, max_kb, candidates=3):
 
     for attempt in range(1, candidates + 1):
         try:
-            print(f"    HF FLUX.1-dev attempt {attempt}/{candidates}...")
+            print(f"    HF FLUX attempt {attempt}/{candidates}...")
             resp = requests.post(
                 _HF_API_URL,
                 headers={"Authorization": f"Bearer {HF_API_KEY}"},
-                json={"inputs": full_prompt, "parameters": {"width": 1024, "height": 576}},
+                json={
+                    "prompt": full_prompt,
+                    "image_size": {"width": 1024, "height": 576},
+                    "num_inference_steps": 4,
+                    "num_images": 1,
+                    "seed": attempt * 42,
+                },
                 verify=False,
                 timeout=180,
             )
             resp.raise_for_status()
-            img = Image.open(io.BytesIO(resp.content)).convert("RGB").resize((800, 450), Image.LANCZOS)
+            data = resp.json()
+            img_url = data["images"][0]["url"]
+            img_resp = requests.get(img_url, verify=False, timeout=60)
+            img_resp.raise_for_status()
+            img = Image.open(io.BytesIO(img_resp.content)).convert("RGB").resize((800, 450), Image.LANCZOS)
             small = img.resize((100, 56))
-            data  = small.tobytes()
-            unique = len(set(data[i:i+3] for i in range(0, len(data), 3)))
-            print(f"    Candidate {attempt}: {len(resp.content)//1024}KB, {unique} colors", end="")
+            px    = small.tobytes()
+            unique = len(set(px[i:i+3] for i in range(0, len(px), 3)))
+            print(f"    Candidate {attempt}: {len(img_resp.content)//1024}KB, {unique} colors", end="")
             if unique > best_unique:
                 best_img    = img
                 best_unique = unique
-                print(" — best so far")
+                print(" - best so far")
             else:
-                print(" — keeping previous")
+                print(" - keeping previous")
         except Exception as e:
             print(f"    Candidate {attempt} error: {e}")
         if attempt < candidates:
-            time.sleep(10)
+            time.sleep(5)
 
     if best_img is None:
         return False
@@ -427,7 +442,7 @@ def inject_sections(slug, html_path):
         html = f.read()
     if f"{slug}-sec1.webp" in html:
         return  # already injected
-    h2s = list(re.finditer(r'<h2>[^<]+</h2>', html))
+    h2s = list(re.finditer(r'<h2[^>]*>[^<]+</h2>', html))
     if len(h2s) < 6:
         print(f"    WARNING: only {len(h2s)} h2s — skipping injection")
         return
