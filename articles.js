@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "why-most-people-fail-at-building-habits",
+    "title": "7 Reasons Why Most People Fail at Building Habits (And What Actually Works)",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Why most people fail at building habits is simpler than you think - and it has almost nothing to do with willpower. You've probably started a habit a dozen",
+    "image": "images/why-most-people-fail-at-building-habits.jpg",
+    "alt": "Woman reviewing habit tracking calendar with morning coffee",
+    "pins": [
+      {
+        "title": "7 Reasons Why Most People Fail at Building Habits (Week 3 Kills It)",
+        "description": "Discover the exact reasons habits fail and why it has nothing to do with willpower. Learn what separates people who build lasting habits from those stuck in endless restart cycles. The real culprit: environment design, not discipline. Find out the specific fix that actually works."
+      },
+      {
+        "title": "Stop Failing at Habits - This System Changes Everything",
+        "description": "Most people fail at building habits because they ignore environmental friction, skip the compounding phase, and rely on motivation. This article reveals the 7 real reasons habits collapse and exactly how to prevent failure before it starts. Start your first working system today."
+      },
+      {
+        "title": "Why Discipline Alone Won't Save Your Habits - Here's What Actually Works",
+        "description": "Your willpower isn't the problem. Your system is. Learn why 92% of people fail at habits and the specific three-step redesign that fixes it immediately. Track progress visibly, anchor habits to existing routines, and start absurdly small. That's the formula that actually sticks."
+      }
+    ]
+  },
+  {
     "slug": "how-to-track-progress-toward-goals",
     "title": "5 How to Track Progress Toward Goals: Stop Spinning Your Wheels",
     "category": "Productivity",
