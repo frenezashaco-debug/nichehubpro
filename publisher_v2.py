@@ -98,8 +98,8 @@ JSON STRUCTURE:
   "tldr": "string — 2-3 sentences only. Include primary keyword. Directly answer the article topic.",
   "sections": [
     {
-      "h2": "string — question-based heading (What is X? / What are the signs? / Why does it happen? / How to fix it? / How to manage X daily?)",
-      "content": "string — full HTML. Use <p>, <ul><li>, <strong>. Every <p> max 3 lines. GEO structure per paragraph. At least one <ul> list. At least one <strong> key advice. Min 200 words per section."
+      "h2": "string — heading SPECIFIC to this topic. Choose the 6 most relevant from these options (NEVER use the same pattern for every article): 'What Is X and Why Does It Matter?', 'What Are the Signs of X?', 'Why Does X Happen?', 'How to Fix X: Step-by-Step', 'What Does the Research Say About X?', 'How to Prevent X From Coming Back', 'Daily Habits That Help With X', 'What Experts Say About X', 'The X Method That Actually Works', 'How X Affects Your Brain and Body', 'Common Mistakes People Make With X', 'When to Seek Help for X'. Pick headings that feel natural for THIS specific topic.",
+      "content": "string — full HTML. Use <p>, <ul><li>, <strong>. Every <p> max 3 lines. GEO structure per paragraph. At least one <ul> list. At least one <strong> key advice. Min 300 words per section. VARY content format across sections: some use numbered steps, some use a key insight callout, some compare two approaches."
     }
   ],
   "real_example": "string — EXACTLY 2 separate paragraphs separated by \\n. First paragraph: the problem (person's struggle). Second paragraph: the transformation (how they fixed it). Human story. Relatable. Max 4 lines per paragraph.",
@@ -199,7 +199,7 @@ REQUIREMENTS:
 - Title: number + primary keyword in first 3 words + emotional/catchy ending
 - Intro: primary keyword in first 10 words, 3 short emotional paragraphs
 - TL;DR: 2-3 sentences with primary keyword
-- 5 question-based H2 sections (What is / Signs / Why it happens / How to fix / Daily habits)
+- 6 sections with VARIED headings specific to this topic (see JSON schema — never the same 5 pattern for every article. Choose the 6 most relevant headings for THIS keyword)
 - Each section: GEO structure (statement + fact + advice), bullets, bold key tips
 - Real life example: 2 paragraphs, human story showing transformation
 - {links_block}
@@ -765,8 +765,8 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category):
 
     print("Calling Claude API...")
     message = client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        max_tokens=8192,
+        model="claude-sonnet-4-6",
+        max_tokens=16000,
         messages=[
             {
                 "role": "user",
