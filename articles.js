@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "best-daily-mobility-exercises",
+    "title": "5 Best Daily Mobility Exercises That Unlock Your Stuck Joints (Even If You Sit All Day)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "The best daily mobility exercises are your secret weapon against the stiffness that comes from sitting too much. If you feel creaky when you wake up, tight",
+    "image": "images/best-daily-mobility-exercises.jpg",
+    "alt": "Young woman doing mobility stretches on her bedroom floor in morning light",
+    "pins": [
+      {
+        "title": "5 Best Daily Mobility Exercises You Can Do in 10 Minutes",
+        "description": "Tight hips? Stuck shoulders? These 5 simple mobility exercises take just 10 minutes daily and fix stiffness fast. No equipment needed. Start feeling loose and moving freely within days. These are the best mobility exercises to do every day at home."
+      },
+      {
+        "title": "Stop Living in a Stiff, Aching Body - Try These Mobility Moves",
+        "description": "If sitting all day has left you tight and creaky, mobility exercises are your answer. Learn the best daily mobility routine that reverses stiffness and restores your full range of motion. Perfect for beginners who've never done mobility work before."
+      },
+      {
+        "title": "Try This 10-Minute Daily Mobility Routine for Better Movement",
+        "description": "Unlock stuck joints and improve your movement quality with these proven daily mobility exercises. From hip circles to spinal twists, these moves are designed for real people dealing with real stiffness. Do this routine every morning and feel the difference immediately."
+      }
+    ]
+  },
+  {
     "slug": "why-most-people-fail-at-building-habits",
     "title": "7 Reasons Why Most People Fail at Building Habits (And What Actually Works)",
     "category": "Productivity",
