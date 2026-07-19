@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "healthy-routine-for-working-from-home",
+    "title": "7 Healthy Routine for Working from Home Habits That Keep You Sane and Energized",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Building a healthy routine for working from home is harder than it sounds, and most people figure that out the hard way.",
+    "image": "images/healthy-routine-for-working-from-home.jpg",
+    "alt": "woman working from home at desk with healthy routine",
+    "pins": [
+      {
+        "title": "How to Build a Healthy Routine for Working From Home That Sticks",
+        "description": "Struggling to stay healthy and focused while working from home? These 7 simple habits help you build a real routine that protects your energy and mental health. No burnout, no guilt - just daily habits that actually work. Save this for your next Monday reset."
+      },
+      {
+        "title": "Stop Letting Work From Home Ruin Your Health - Try This Instead",
+        "description": "Working from home can quietly destroy your sleep, posture, and energy if you have no structure. These work from home wellness tips show you exactly what to change and how to do it without overhauling your life. Small habits, big results."
+      },
+      {
+        "title": "Try This Simple Daily Routine to Stay Healthy Working From Home",
+        "description": "If your work from home days feel chaotic and draining, this routine will help. Learn how to stay healthy and productive working from home with six science-backed habits you can start today. Pin this and come back when you need a reset."
+      }
+    ]
+  },
+  {
     "slug": "best-daily-mobility-exercises",
     "title": "5 Best Daily Mobility Exercises That Unlock Your Stuck Joints (Even If You Sit All Day)",
     "category": "Healthy Lifestyle",
