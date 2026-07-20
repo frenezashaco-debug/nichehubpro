@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-build-confidence-through-discipline",
+    "title": "7 Ways to Build Confidence Through Discipline: Rewire Your Self-Belief for Good",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "If you want to build confidence through discipline, you already understand something most people miss: confidence is not a feeling you wait for.",
+    "image": "images/how-to-build-confidence-through-discipline.jpg",
+    "alt": "Young woman journaling at desk building confidence through discipline",
+    "pins": [
+      {
+        "title": "How to Build Confidence Through Discipline (7 Habits That Actually Work)",
+        "description": "Confidence is not something you wait for. You build it through daily discipline, one kept promise at a time. These 7 habits show you exactly how to build real confidence through discipline starting today. Save this for when you need a reminder."
+      },
+      {
+        "title": "Stop Waiting to Feel Confident - Start With Discipline Instead",
+        "description": "Motivation fades. Discipline sticks. If you have been waiting to feel ready before taking action, this is your sign to flip the script. The confidence and discipline link is real, and it starts with just five minutes a day."
+      },
+      {
+        "title": "Try This Daily Habit to Build Confidence From the Inside Out",
+        "description": "One small habit done every day does more for your self-belief than any pep talk. This simple approach to building confidence through discipline shows you how to create evidence your brain cannot ignore. Start with just one step."
+      }
+    ]
+  },
+  {
     "slug": "healthy-routine-for-working-from-home",
     "title": "7 Healthy Routine for Working from Home Habits That Keep You Sane and Energized",
     "category": "Healthy Lifestyle",
