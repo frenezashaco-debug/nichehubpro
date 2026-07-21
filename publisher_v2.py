@@ -745,13 +745,17 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
 
 
 # ── MAIN GENERATOR ────────────────────────────────────────────────────────
-def generate_article(primary_kw, secondary_kw, longtail_kw, category):
+def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_images=False):
     print(f"\n{'='*60}")
     print(f"Keyword : {primary_kw}")
     print(f"Category: {category}")
     print(f"{'='*60}")
 
-    client = anthropic.Anthropic(api_key=API_KEY)
+    import httpx
+    client = anthropic.Anthropic(
+        api_key=API_KEY,
+        http_client=httpx.Client(verify=False),
+    )
 
     # Load real published articles — same category only, exclude current article
     existing_articles = load_existing_articles()
@@ -813,40 +817,45 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category):
         print(f"\nCover concept:\n  {cover_prompt[:120]}...")
 
     # Generate cover image (branded Pillow version)
-    print("\nGenerating cover image...")
     cover_filename = article_slug + ".jpg"
     cover_path = os.path.join(IMAGES_DIR, cover_filename)
-    generate_cover(data["title"], category, cover_path, custom_prompt=cover_prompt)
-    print(f"Cover saved: {cover_filename}")
 
-    # Convert cover JPG to WebP so <picture> tag always has both formats
-    try:
-        from PIL import Image as _PIL
-        cover_webp_path = cover_path.replace(".jpg", ".webp")
-        _img = _PIL.open(cover_path)
-        _img.save(cover_webp_path, "WEBP", quality=78, method=6)
-        print(f"Cover WebP saved: {os.path.basename(cover_webp_path)}")
-    except Exception as _e:
-        print(f"WebP conversion skipped: {_e}")
+    if skip_images and os.path.exists(cover_path):
+        print(f"\nCover image reused: {cover_filename}")
+    else:
+        print("\nGenerating cover image...")
+        generate_cover(data["title"], category, cover_path, custom_prompt=cover_prompt)
+        print(f"Cover saved: {cover_filename}")
 
-    # Cool-down after cover generation burst (3 HF calls) before section images
-    print("  Cooling down 30s before section images...")
-    time.sleep(30)
+        # Convert cover JPG to WebP so <picture> tag always has both formats
+        try:
+            from PIL import Image as _PIL
+            cover_webp_path = cover_path.replace(".jpg", ".webp")
+            _img = _PIL.open(cover_path)
+            _img.save(cover_webp_path, "WEBP", quality=78, method=6)
+            print(f"Cover WebP saved: {os.path.basename(cover_webp_path)}")
+        except Exception as _e:
+            print(f"WebP conversion skipped: {_e}")
+
+        # Cool-down after cover generation burst (3 HF calls) before section images
+        print("  Cooling down 30s before section images...")
+        time.sleep(30)
 
     # Generate section images (WebP, contextual per section) — delay between calls
     section_images = {}
-    for call_num, img_data in enumerate(data.get("section_image_prompts", [])):
-        sec_idx = img_data.get("section_index", 0)
-        prompt  = img_data.get("prompt", "")
-        alt     = img_data.get("alt_text", data["title"])
-        if prompt:
-            filename = download_section_image(
-                prompt, article_slug, sec_idx + 1, delay=_HF_DELAY
-            )
-            if filename:
-                section_images[sec_idx] = {"filename": filename, "alt_text": alt}
-    if section_images:
-        print(f"  {len(section_images)} section image(s) generated")
+    if not skip_images:
+        for call_num, img_data in enumerate(data.get("section_image_prompts", [])):
+            sec_idx = img_data.get("section_index", 0)
+            prompt  = img_data.get("prompt", "")
+            alt     = img_data.get("alt_text", data["title"])
+            if prompt:
+                filename = download_section_image(
+                    prompt, article_slug, sec_idx + 1, delay=_HF_DELAY
+                )
+                if filename:
+                    section_images[sec_idx] = {"filename": filename, "alt_text": alt}
+        if section_images:
+            print(f"  {len(section_images)} section image(s) generated")
 
     # Build and save HTML
     print("Building HTML...")
