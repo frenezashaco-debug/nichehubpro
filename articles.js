@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-reset-your-mindset",
+    "title": "7 Ways to Reset Your Mindset When Everything Feels Stuck",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Learning how to reset your mindset is one of the most powerful things you can do when life starts to feel heavy and pointless.",
+    "image": "images/how-to-reset-your-mindset.jpg",
+    "alt": "young woman journaling mindset reset morning light",
+    "pins": [
+      {
+        "title": "How to Reset Your Mindset When You Feel Completely Stuck",
+        "description": "Feeling stuck in your head and can't shake it? These 7 science-backed mindset reset techniques will help you break the cycle fast. No fluff, just real steps that work. Save this for when you need it most."
+      },
+      {
+        "title": "Stop Letting a Stuck Mindset Drain Your Days - Reset It Now",
+        "description": "A stuck mindset doesn't fix itself - but it can be changed with the right approach. Learn how to reset your mindset using simple daily habits that actually stick. Your brain is more changeable than you think."
+      },
+      {
+        "title": "Try This 5-Step Mindset Reset When Life Feels Heavy",
+        "description": "You don't need a huge life change to reset your mindset. This simple 5-step approach takes under 30 minutes and can shift how you feel today. Start small, stay consistent, and watch things change."
+      }
+    ]
+  },
+  {
     "slug": "how-to-build-confidence-through-discipline",
     "title": "7 Ways to Build Confidence Through Discipline: Rewire Your Self-Belief for Good",
     "category": "Mental Wellness",
