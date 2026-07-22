@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-stop-overthinking-everything",
+    "title": "7 Ways to Stop Overthinking Everything (And Finally Feel Free)",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "If you want to know how to stop overthinking everything, you are not alone - millions of people get stuck in thought loops every single day.",
+    "image": "images/how-to-stop-overthinking-everything.jpg",
+    "alt": "young woman overthinking everything alone on apartment floor",
+    "pins": [
+      {
+        "title": "How to Stop Overthinking Everything (7 Steps That Actually Work)",
+        "description": "Stuck in your head and can't stop overthinking everything? These 7 science-backed steps help you break the loop and make decisions with ease. Start with just one habit today and feel the difference within a week. Save this for when your mind won't slow down."
+      },
+      {
+        "title": "Stop Overthinking Small Decisions - Here's Why Your Brain Gets Stuck",
+        "description": "If you overthink every small decision, your brain isn't broken - it's just treating uncertainty like a threat. Understanding the real overthinking causes is the first step to fixing them. Read this before you spend another hour in your head over nothing."
+      },
+      {
+        "title": "Try This 5-Minute Daily Habit to Quiet an Overactive Mind",
+        "description": "Learning how to stop overthinking everything doesn't require hours of meditation. A simple daily brain dump and a two-minute decision rule can rewire your mental patterns fast. Try it for three days and notice how much lighter your mind feels."
+      }
+    ]
+  },
+  {
     "slug": "how-to-reset-your-mindset",
     "title": "7 Ways to Reset Your Mindset When Everything Feels Stuck",
     "category": "Mental Wellness",
