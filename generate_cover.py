@@ -173,7 +173,7 @@ def compress_to_limit(img, max_kb=MAX_KB):
 # ── AI IMAGE GENERATION — HF fal-ai FLUX.1-dev ───────────────────────────
 _HF_API_URL = "https://router.huggingface.co/fal-ai/fal-ai/flux/dev"
 
-def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=3):
+def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=1):
     """
     Generate cover image via HuggingFace (fal-ai FLUX.1-dev) at 1024x576.
     Generates `candidates` versions, keeps the one with most unique colors (most photorealistic).
@@ -205,12 +205,12 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=
                     "seed": attempt * 42,
                 },
                 verify=False,
-                timeout=180,
+                timeout=90,
             )
             resp.raise_for_status()
             data = resp.json()
             img_url = data["images"][0]["url"]
-            img_resp = requests.get(img_url, verify=False, timeout=60)
+            img_resp = requests.get(img_url, verify=False, timeout=45)
             img_resp.raise_for_status()
             img = Image.open(io.BytesIO(img_resp.content)).convert("RGB")
             img = img.resize((W, H), Image.LANCZOS)

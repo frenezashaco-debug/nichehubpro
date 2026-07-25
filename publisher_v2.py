@@ -244,7 +244,7 @@ _HF_NEGATIVE = (
 )
 
 _HF_API_URL = "https://router.huggingface.co/fal-ai/fal-ai/flux/dev"
-_HF_DELAY = 20  # seconds between HF calls
+_HF_DELAY = 8  # seconds between HF calls
 
 # ── SECTION IMAGE DOWNLOADER — HF fal-ai FLUX.1-dev ──────────────────────
 def download_section_image(prompt, article_slug, index, retries=3, delay=0):
@@ -278,7 +278,7 @@ def download_section_image(prompt, article_slug, index, retries=3, delay=0):
                     "seed": attempt * 13,
                 },
                 verify=False,
-                timeout=180,
+                timeout=90,
             )
             resp.raise_for_status()
             data = resp.json()
@@ -838,8 +838,8 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_image
             print(f"WebP conversion skipped: {_e}")
 
         # Cool-down after cover generation burst (3 HF calls) before section images
-        print("  Cooling down 30s before section images...")
-        time.sleep(30)
+        print("  Cooling down 10s before section images...")
+        time.sleep(10)
 
     # Generate section images (WebP, contextual per section) — delay between calls
     section_images = {}

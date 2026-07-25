@@ -28,6 +28,13 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ hashFiles('requirements*.txt') }}-v1
+          restore-keys: pip-
+
       - name: Install dependencies
         run: pip install anthropic json-repair Pillow requests urllib3
 
@@ -76,9 +83,7 @@ jobs:
 
       - name: Push Pinterest pins
         continue-on-error: true
-        run: |
-          sleep 30
-          python auto_pins.py
+        run: python auto_pins.py
 
       - name: Purge Cloudflare cache
         continue-on-error: true
