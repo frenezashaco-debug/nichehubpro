@@ -68,10 +68,16 @@ jobs:
           git add articles/ images/ articles.js api/articles.json sitemap.xml
           git diff --staged --quiet && echo "Nothing new to commit" || (
             git commit -m "Auto-publish: daily article $(date +'%Y-%m-%d')" &&
-            git pull --rebase origin main &&
+            git pull --rebase -X ours origin main &&
             git push ||
-            (echo "Push failed, retrying in 15s..." && sleep 15 && git pull --rebase origin main && git push) ||
-            (echo "Push failed again, retrying in 30s..." && sleep 30 && git pull --rebase origin main && git push)
+            (echo "Push failed, retrying in 15s..." && sleep 15 &&
+             git rebase --abort 2>/dev/null || true &&
+             git pull --rebase -X ours origin main &&
+             git push) ||
+            (echo "Push failed again, retrying in 30s..." && sleep 30 &&
+             git rebase --abort 2>/dev/null || true &&
+             git pull --rebase -X ours origin main &&
+             git push)
           )
 
       - name: Ping search engines
