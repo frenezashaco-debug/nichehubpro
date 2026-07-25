@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "best-routine-planner-methods",
+    "title": "7 Best Routine Planner Methods That Will Finally Fix Your Chaotic Days",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "The best routine planner methods are not about perfection — they are about building a structure that holds up on your worst days, not just your best ones.",
+    "image": "images/best-routine-planner-methods.jpg",
+    "alt": "woman writing in routine planner at home desk",
+    "pins": [
+      {
+        "title": "How to Find the Best Routine Planner Method That Actually Fits Your Life",
+        "description": "Most planners fail because they were designed for someone else's schedule. These 7 best routine planner methods work for real, messy days and real energy levels. Pick one and try it tonight. Read the full guide at NicheHubPro."
+      },
+      {
+        "title": "Stop Abandoning Your Daily Planner by Wednesday — Here Is Why It Keeps Happening",
+        "description": "Your daily planner strategies are not broken — your approach to planning might be. Learn why most people quit their routines early and exactly how to build one that survives a hard week. Real methods, no fluff."
+      },
+      {
+        "title": "Try This Simple Routine Planner Method If Your Days Always Feel Out of Control",
+        "description": "The MIT method plus time blocking is one of the most effective daily planner strategies for people who feel constantly behind. Takes five minutes to set up the night before. Full breakdown at NicheHubPro."
+      }
+    ]
+  },
+  {
     "slug": "how-to-stop-overthinking-everything",
     "title": "7 Ways to Stop Overthinking Everything (And Finally Feel Free)",
     "category": "Mental Wellness",
