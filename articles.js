@@ -8,21 +8,21 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
     "read_time": "8",
-    "excerpt": "If you want to know how to stop overthinking everything, you are not alone - millions of people get stuck in thought loops every single day.",
+    "excerpt": "If you want to know how to stop overthinking everything, you are not alone - and you are not broken.",
     "image": "images/how-to-stop-overthinking-everything.jpg",
-    "alt": "young woman overthinking everything alone on apartment floor",
+    "alt": "young woman overthinking at desk near window",
     "pins": [
       {
-        "title": "How to Stop Overthinking Everything (7 Steps That Actually Work)",
-        "description": "Stuck in your head and can't stop overthinking everything? These 7 science-backed steps help you break the loop and make decisions with ease. Start with just one habit today and feel the difference within a week. Save this for when your mind won't slow down."
+        "title": "How to Stop Overthinking Everything (7 Habits That Actually Work)",
+        "description": "Struggling to quiet your mind? These 7 practical strategies teach you how to stop overthinking everything - from small decisions to big life choices. Start with just one habit today and feel the difference within weeks. Save this for when your brain won't slow down."
       },
       {
-        "title": "Stop Overthinking Small Decisions - Here's Why Your Brain Gets Stuck",
-        "description": "If you overthink every small decision, your brain isn't broken - it's just treating uncertainty like a threat. Understanding the real overthinking causes is the first step to fixing them. Read this before you spend another hour in your head over nothing."
+        "title": "Stop Overthinking Small Decisions - Here's Why You Get Stuck",
+        "description": "If you overthink every tiny choice, you are not weak - your mental energy is just depleted. Understanding the real overthinking causes helps you break the cycle fast. Read this before your next spiral starts."
       },
       {
-        "title": "Try This 5-Minute Daily Habit to Quiet an Overactive Mind",
-        "description": "Learning how to stop overthinking everything doesn't require hours of meditation. A simple daily brain dump and a two-minute decision rule can rewire your mental patterns fast. Try it for three days and notice how much lighter your mind feels."
+        "title": "Try This Tonight to Stop the Overthinking Loop Before Bed",
+        "description": "The worry window method is one of the simplest ways to stop overthinking everything before it hijacks your sleep. Give your brain 15 minutes to process, then close the loop. This technique works - and it only takes a notebook."
       }
     ]
   },
@@ -1573,31 +1573,6 @@ const ARTICLES = [
       {
         "title": "Try This: The 5-Minute Daily Habit That Reverses Mental Burnout",
         "description": "Recovery from burnout doesn't require dramatic changes. Small daily habits compound into complete transformation. Learn the specific habits that restore energy, protect your peace, and prevent burnout from returning. From morning nervous system resets to end-of-day rituals, these evidence-based practices help you rebuild resilience while working toward lasting healing and sustainable happiness."
-      }
-    ]
-  },
-  {
-    "slug": "how-to-stop-overthinking-everything",
-    "title": "5 Ways to Stop Overthinking Everything: Break Free From the Mental Loop",
-    "category": "Mental Wellness",
-    "cat_slug": "mental-wellness",
-    "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to stop overthinking everything starts with understanding why your brain won't quit. Your mind is trying to protect you by analyzing every detail, but ",
-    "image": "images/how-to-stop-overthinking-everything.jpg",
-    "alt": "Woman pausing at desk to manage overthinking spiral early morning.",
-    "pins": [
-      {
-        "title": "How to Stop Overthinking Everything: 5 Proven Methods That Actually Work",
-        "description": "Stop the mental spiral today. Learn the 5-4-3-2-1 grounding technique, time-boxing, and other science-backed ways to stop overthinking everything. Break free from anxiety and regain mental peace. Your breakthrough starts here."
-      },
-      {
-        "title": "Stop Overthinking Every Decision: The Simple Framework That Works",
-        "description": "Tired of replaying conversations and imagining worst-case scenarios? Stop overthinking everything with this decision-making framework that takes the pressure off. Practical, proven, and fast. Try it today and reclaim your peace."
-      },
-      {
-        "title": "Why You Overthink Everything and How to Break the Pattern Now",
-        "description": "Understanding why you overthink everything is the first step to stopping it. Discover the triggers, recognize the warning signs, and use five daily habits to rewire your brain in just two weeks. Your mental peace is waiting."
       }
     ]
   },
