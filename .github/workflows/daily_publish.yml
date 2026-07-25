@@ -51,16 +51,6 @@ jobs:
       - name: Run batch publisher
         run: python batch_12weeks.py
 
-      - name: Fix cover images
-        continue-on-error: true
-        timeout-minutes: 20
-        run: python auto_fix_covers.py
-
-      - name: Fix missing section images
-        continue-on-error: true
-        timeout-minutes: 15
-        run: python fix_section_images.py
-
       - name: Commit and push
         run: |
           git config user.name "NicheHubPro Bot"
