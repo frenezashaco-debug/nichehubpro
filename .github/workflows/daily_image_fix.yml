@@ -1,10 +1,6 @@
 name: Daily Image Fix
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'articles/*.html'
   workflow_dispatch:
 
 permissions:
