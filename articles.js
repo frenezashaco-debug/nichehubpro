@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-improve-concentration-naturally",
+    "title": "9 Ways to Improve Concentration Naturally (Without Feeling Like Your Brain Is Broken)",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "If you want to know how to improve concentration naturally, you are not alone - and you are not broken.",
+    "image": "images/how-to-improve-concentration-naturally.jpg",
+    "alt": "young woman concentrating naturally at desk by window",
+    "pins": [
+      {
+        "title": "How to Improve Concentration Naturally (9 Habits That Actually Work)",
+        "description": "Struggling to focus without medication? These 9 simple daily habits show you exactly how to improve concentration naturally. No pills, no gimmicks - just real brain science made easy. Save this for your next foggy workday."
+      },
+      {
+        "title": "Stop Blaming Your Brain - Poor Concentration Has a Fix",
+        "description": "Your lack of focus is not a personal failure. Sleep, movement, and environment are the real culprits. Learn how natural focus improvement works and what tiny change to make first. Your brain is more fixable than you think."
+      },
+      {
+        "title": "Try This Daily Routine to Sharpen Your Focus Without Medication",
+        "description": "Want to know how to improve concentration and focus without medication? Start with these five daily habits backed by real research. One small change today can shift your entire attention span. Save this and try it tomorrow morning."
+      }
+    ]
+  },
+  {
     "slug": "best-routine-planner-methods",
     "title": "7 Best Routine Planner Methods That Will Finally Fix Your Chaotic Days",
     "category": "Productivity",
