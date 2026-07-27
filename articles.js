@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "healthy-morning-routine-checklist",
+    "title": "7 Healthy Morning Routine Checklist Habits That Set You Up for the Best Day",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Your healthy morning routine checklist can be the single thing that changes how your entire day feels. Most people wake up rushing, already stressed, alrea",
+    "image": "images/healthy-morning-routine-checklist.jpg",
+    "alt": "woman reviewing healthy morning routine checklist at kitchen table",
+    "pins": [
+      {
+        "title": "How to Build a Healthy Morning Routine Checklist That Actually Sticks",
+        "description": "A healthy morning routine checklist does not have to be complicated or an hour long. These 7 simple habits take under 20 minutes and are backed by real science. Save this pin and start with just two items tomorrow."
+      },
+      {
+        "title": "Stop Waking Up Stressed - Fix Your Morning Wellness Checklist Today",
+        "description": "If your mornings feel chaotic and rushed, your morning wellness checklist might be missing a few key items. From hydration to sunlight exposure, small habits add up fast. Read the full guide and reclaim your mornings."
+      },
+      {
+        "title": "Try This 7-Item Healthy Morning Routine Checklist for More Energy",
+        "description": "Want to feel more focused and less anxious before 9am? This healthy morning routine checklist covers the exact daily habits that support your brain chemistry and energy levels. Pin it and build your own version today."
+      }
+    ]
+  },
+  {
     "slug": "how-to-improve-concentration-naturally",
     "title": "9 Ways to Improve Concentration Naturally (Without Feeling Like Your Brain Is Broken)",
     "category": "Productivity",
