@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-create-sustainable-healthy-habits",
+    "title": "7 Ways How to Create Sustainable Healthy Habits That Actually Last",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Learning how to create sustainable healthy habits is one of the most powerful things you can do for your wellbeing. Most people try to change everything at",
+    "image": "images/how-to-create-sustainable-healthy-habits.jpg",
+    "alt": "woman writing healthy habits plan at kitchen table",
+    "pins": [
+      {
+        "title": "How to Create Sustainable Healthy Habits That Actually Stick",
+        "description": "Most healthy habits fail because people start too big, not because they lack willpower. Learn how to create sustainable healthy habits using a simple science-backed system that works with your brain. Save this for when you are ready to make real, lasting change."
+      },
+      {
+        "title": "Stop Failing at Healthy Habits - Here Is Why They Are Not Sticking",
+        "description": "If your healthy habits keep falling apart after two weeks, the problem is your strategy - not your discipline. Discover the real reasons lasting healthy habits fade and exactly what to do instead. This one shift changes everything."
+      },
+      {
+        "title": "Try This Simple Method to Build Healthy Habits You Actually Keep",
+        "description": "Want to know how to create healthy habits that you actually keep without burnout or extreme willpower? Start with a two-minute version of any habit and build from there. This practical guide shows you the full step-by-step process."
+      }
+    ]
+  },
+  {
     "slug": "healthy-morning-routine-checklist",
     "title": "7 Healthy Morning Routine Checklist Habits That Set You Up for the Best Day",
     "category": "Healthy Lifestyle",
