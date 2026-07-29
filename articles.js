@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "the-psychology-of-discipline",
+    "title": "7 Psychology of Discipline Secrets That Will Change How You See Willpower",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "The psychology of discipline is not about being tough or pushing yourself harder every single day.",
+    "image": "images/the-psychology-of-discipline.jpg",
+    "alt": "young woman focused at desk practicing psychology of discipline",
+    "pins": [
+      {
+        "title": "How to Build Discipline Using Psychology (Not Willpower)",
+        "description": "Most people fail at discipline because they rely on motivation — which always runs out. The psychology of discipline shows your brain builds self-control through small consistent habits, not big effort. Read the full science-backed guide and start with one simple habit today."
+      },
+      {
+        "title": "Stop Blaming Yourself for Lacking Discipline — Here's the Real Reason",
+        "description": "Stress, poor sleep, and decision fatigue are what really destroy discipline — not your character. Discipline psychology science explains exactly why your brain struggles and what to fix first. Save this pin and stop fighting yourself the hard way."
+      },
+      {
+        "title": "Try This Brain-Based Approach to Discipline That Actually Sticks",
+        "description": "The psychology of discipline is not about pushing harder — it's about designing your environment so the right choice becomes automatic. These 7 psychology-backed strategies make self-control feel far less exhausting. Save this to come back to when your motivation runs low."
+      }
+    ]
+  },
+  {
     "slug": "how-to-create-sustainable-healthy-habits",
     "title": "7 Ways How to Create Sustainable Healthy Habits That Actually Last",
     "category": "Healthy Lifestyle",
