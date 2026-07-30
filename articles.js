@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "why-small-habits-create-big-results",
+    "title": "7 Reasons Why Small Habits Create Big Results (And Change Everything)",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Why small habits create big results is one of the most underestimated truths in mental wellness and personal growth. Most people wait for a dramatic moment",
+    "image": "images/why-small-habits-create-big-results.jpg",
+    "alt": "Young woman writing small habits journal in morning kitchen",
+    "pins": [
+      {
+        "title": "How to Use Small Habits to Create Big Life Results (Science Says So)",
+        "description": "Most people try to change everything at once and fail. The compound habits effect shows that tiny daily actions build into massive results over time. Start with one small habit today and let the science do the heavy lifting. Read more at NicheHubPro."
+      },
+      {
+        "title": "Stop Waiting for Motivation - Small Habits Are How Life Actually Changes",
+        "description": "If you keep waiting to feel ready, the compound habits effect is passing you by. Research shows that 1% daily improvement makes you 37 times better in a year. Small habits create big results - and it starts with one tiny action today."
+      },
+      {
+        "title": "Try This: One Tiny Habit That Proves Small Actions Lead to Big Change",
+        "description": "You do not need a dramatic overhaul to transform your life. Learning why small habits create big results starts with understanding how your brain wires itself through repetition. Pick one habit, do it for 60 days, and watch what the compound effect builds."
+      }
+    ]
+  },
+  {
     "slug": "the-psychology-of-discipline",
     "title": "7 Psychology of Discipline Secrets That Will Change How You See Willpower",
     "category": "Mental Wellness",
