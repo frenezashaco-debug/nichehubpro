@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-design-the-perfect-daily-routine",
+    "title": "7 Ways to Design the Perfect Daily Routine That Actually Changes Your Life",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Learning how to design the perfect daily routine is one of the most practical things you can do for your mental health and output. Most people start their ",
+    "image": "images/how-to-design-the-perfect-daily-routine.jpg",
+    "alt": "young woman writing daily routine planner at morning desk",
+    "pins": [
+      {
+        "title": "How to Design the Perfect Daily Routine That Actually Sticks",
+        "description": "Struggling to build a daily schedule that lasts past day three? Learn how to design the perfect daily routine by starting with just two anchor habits and growing from there. Simple, honest, and built for real life. Click to read the full guide."
+      },
+      {
+        "title": "Stop Building a Routine for Your Ideal Self (Do This Instead)",
+        "description": "Most daily routines fail because they are designed for an imaginary version of you. If you want an ideal daily schedule that actually works, it has to match your real energy and real life. Here is what to change first."
+      },
+      {
+        "title": "Try This Simple Daily Routine Framework for More Productive Days",
+        "description": "You do not need a complicated system to have a productive day. This simple daily routine structure blocks your time by energy level, not just hours, so you get more done without burning out. Save this and start today."
+      }
+    ]
+  },
+  {
     "slug": "why-small-habits-create-big-results",
     "title": "7 Reasons Why Small Habits Create Big Results (And Change Everything)",
     "category": "Mental Wellness",
