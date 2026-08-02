@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "healthy-productivity-habits-for-entrepreneurs",
+    "title": "9 Healthy Productivity Habits for Entrepreneurs That Actually Protect Your Energy",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Aug 2026",
+    "read_time": "8",
+    "excerpt": "Healthy productivity habits for entrepreneurs are not about squeezing more hours out of your day - they are about making your best hours count.",
+    "image": "images/healthy-productivity-habits-for-entrepreneurs.jpg",
+    "alt": "young woman working at desk practicing healthy productivity habits",
+    "pins": [
+      {
+        "title": "How to Build Healthy Productivity Habits for Entrepreneurs That Last",
+        "description": "Struggling to stay sharp and energized as a founder? These healthy productivity habits for entrepreneurs protect your focus without burning you out. Small daily shifts that actually stick. Save this for your next planning day."
+      },
+      {
+        "title": "Stop Grinding and Start Using These Entrepreneur Wellness Habits",
+        "description": "Working 12-hour days is not the answer - your entrepreneur wellness habits are. Research shows recovery, sleep, and movement are the real drivers of sustainable output. Stop hustling harder and start recovering smarter."
+      },
+      {
+        "title": "Try This Daily Habit Stack That Successful Entrepreneurs Quietly Follow",
+        "description": "Wondering what healthy habits successful entrepreneurs follow every day? It is simpler than you think - walks, real meals, set sleep times, and single-tasking. Try adding just one of these healthy productivity habits this week and see what shifts."
+      }
+    ]
+  },
+  {
     "slug": "best-self-improvement-systems-explained",
     "title": "7 Best Self Improvement Systems Explained (And Which One Actually Fits Your Life)",
     "category": "Productivity",
