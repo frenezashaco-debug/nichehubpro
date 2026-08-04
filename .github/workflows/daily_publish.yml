@@ -2,7 +2,7 @@ name: Daily Article Publisher
 
 on:
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '0 8 * * 1,3,5'
   workflow_dispatch:
 
 permissions:
@@ -53,10 +53,10 @@ jobs:
           python3 -c "import config; print('HF key OK:', bool(config.HF_API_KEY)); print('Anthropic key OK:', bool(config.ANTHROPIC_API_KEY))"
 
       - name: Show current publish status
-        run: python batch_12weeks.py --status
+        run: python batch_24weeks.py --status
 
       - name: Run batch publisher
-        run: python batch_12weeks.py
+        run: python batch_24weeks.py
 
       - name: Commit and push
         run: |

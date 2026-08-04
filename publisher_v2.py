@@ -176,7 +176,7 @@ def load_existing_articles():
         return []
 
 
-def build_user_prompt(primary_kw, secondary_kw, longtail_kw, category, existing_articles=None):
+def build_user_prompt(primary_kw, secondary_kw, longtail_kw, category, existing_articles=None, cornerstone=False):
     # Build real internal link options from published articles
     if existing_articles:
         links_block = (
@@ -187,7 +187,20 @@ def build_user_prompt(primary_kw, secondary_kw, longtail_kw, category, existing_
     else:
         links_block = "Internal links: 3-5 with unique descriptive anchors relevant to the topic."
 
-    return f"""Write a 1800+ word SEO article for NicheHubPro.
+    length_line = (
+        "Write a 4500+ word comprehensive PILLAR/CORNERSTONE SEO article for NicheHubPro. "
+        "This is a flagship guide meant to be the definitive resource on this topic and a hub other articles link into."
+        if cornerstone else
+        "Write a 1800+ word SEO article for NicheHubPro."
+    )
+    section_count_line = (
+        "9-11 sections with VARIED headings that together cover this topic comprehensively (see JSON schema — never the same pattern for every article). Go deeper than a normal article: include sub-angles, edge cases, and nuance a shorter article would skip."
+        if cornerstone else
+        "6 sections with VARIED headings specific to this topic (see JSON schema — never the same 5 pattern for every article. Choose the 6 most relevant headings for THIS keyword)"
+    )
+    min_section_words = "500" if cornerstone else "300"
+
+    return f"""{length_line}
 
 KEYWORDS:
 - Primary: {primary_kw}
@@ -199,8 +212,8 @@ REQUIREMENTS:
 - Title: number + primary keyword in first 3 words + emotional/catchy ending
 - Intro: primary keyword in first 10 words, 3 short emotional paragraphs
 - TL;DR: 2-3 sentences with primary keyword
-- 6 sections with VARIED headings specific to this topic (see JSON schema — never the same 5 pattern for every article. Choose the 6 most relevant headings for THIS keyword)
-- Each section: GEO structure (statement + fact + advice), bullets, bold key tips
+- {section_count_line}
+- Each section: GEO structure (statement + fact + advice), bullets, bold key tips, min {min_section_words} words
 - Real life example: 2 paragraphs, human story showing transformation
 - {links_block}
 - FAQ: 5 real questions people search on Google about this topic
@@ -745,10 +758,12 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
 
 
 # ── MAIN GENERATOR ────────────────────────────────────────────────────────
-def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_images=False):
+def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_images=False, cornerstone=False):
     print(f"\n{'='*60}")
     print(f"Keyword : {primary_kw}")
     print(f"Category: {category}")
+    if cornerstone:
+        print("Mode    : CORNERSTONE (4500+ words)")
     print(f"{'='*60}")
 
     import httpx
@@ -770,11 +785,11 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_image
     print("Calling Claude API...")
     message = client.messages.create(
         model="claude-sonnet-4-6",
-        max_tokens=16000,
+        max_tokens=26000 if cornerstone else 16000,
         messages=[
             {
                 "role": "user",
-                "content": build_user_prompt(primary_kw, secondary_kw, longtail_kw, category, existing_articles)
+                "content": build_user_prompt(primary_kw, secondary_kw, longtail_kw, category, existing_articles, cornerstone=cornerstone)
             }
         ],
         system=SYSTEM_PROMPT
