@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "the-emotional-root-of-chronic-procrastination",
+    "title": "7 Emotional Root of Chronic Procrastination Truths That Finally Explain Why You Keep Stalling",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Aug 2026",
+    "read_time": "8",
+    "excerpt": "The emotional root of chronic procrastination has nothing to do with being lazy, disorganized, or unmotivated.",
+    "image": "images/the-emotional-root-of-chronic-procrastination.jpg",
+    "alt": "woman staring at laptop dealing with chronic procrastination at desk",
+    "pins": [
+      {
+        "title": "How to Understand the Emotional Root of Chronic Procrastination",
+        "description": "Procrastination is not about laziness. It is about the emotions your brain is trying to avoid. Understanding the emotional root of chronic procrastination is the first step to finally breaking the cycle. Read the full breakdown on NicheHubPro."
+      },
+      {
+        "title": "Stop Blaming Yourself: Procrastination Is Really About Emotions",
+        "description": "If you keep stalling on the same tasks, it is not a discipline problem. The procrastination and anxiety link is real, and your brain is trying to protect you from discomfort. Learn why and what to do about it today."
+      },
+      {
+        "title": "Try This: Name Your Emotion Before Every Task You Avoid",
+        "description": "The emotional root of chronic procrastination hides in unnamed feelings like fear, shame, and dread. One simple habit, naming the emotion before you start, can break the avoidance loop fast. Get the full method at NicheHubPro."
+      }
+    ]
+  },
+  {
     "slug": "how-to-build-a-better-lifestyle-long-term",
     "title": "7 Ways to Build a Better Lifestyle Long Term (Without Burning Out)",
     "category": "Healthy Lifestyle",
