@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-build-a-stress-resistant-morning-routine",
+    "title": "7 Ways to Build a Stress Resistant Morning Routine That Protects Your Whole Day",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Aug 2026",
+    "read_time": "8",
+    "excerpt": "Learning how to build a stress resistant morning routine could be the single most important thing you do for your mental health this year.",
+    "image": "images/how-to-build-a-stress-resistant-morning-routine.jpg",
+    "alt": "Woman practicing stress resistant morning routine at sunrise",
+    "pins": [
+      {
+        "title": "How to Build a Stress Resistant Morning Routine in 30 Minutes",
+        "description": "If your mornings feel chaotic before 8am, your stress is already winning. Learning how to build a stress resistant morning routine takes less time than you think - just a few key habits done consistently. Read the full guide and start tomorrow with one small change."
+      },
+      {
+        "title": "Stop Starting Your Day in Panic Mode - Try This Instead",
+        "description": "Most people unknowingly trigger anxiety the moment they wake up. A stress resilient daily routine protects your nervous system before the demands of the day even begin. Discover which habits actually work - and which common mistakes are keeping you stuck."
+      },
+      {
+        "title": "Try This Simple Morning Routine That Protects You From Daily Stress",
+        "description": "You do not need a 90-minute routine or a perfect morning. This guide shows you exactly how to design a morning routine that protects you from stress using habits that take under 30 minutes. Save this and start with just one step today."
+      }
+    ]
+  },
+  {
     "slug": "why-productivity-hacks-dont-work-long-term",
     "title": "7 Reasons Why Productivity Hacks Dont Work Long Term (And What to Do Instead)",
     "category": "Productivity",
