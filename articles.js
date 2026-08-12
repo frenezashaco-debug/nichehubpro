@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "why-chronic-stress-makes-everything-feel-harder",
+    "title": "7 Reasons Why Chronic Stress Makes Everything Feel Harder (And What to Do About It)",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Aug 2026",
+    "read_time": "8",
+    "excerpt": "Why chronic stress makes everything feel harder is not just a feeling you are imagining. There is real science behind why even small tasks start to feel im",
+    "image": "images/why-chronic-stress-makes-everything-feel-harder.jpg",
+    "alt": "Tired woman at kitchen table showing signs of chronic stress",
+    "pins": [
+      {
+        "title": "How to Tell If Chronic Stress Is Making Everything Feel Harder",
+        "description": "Chronic stress does not just make you anxious - it actually changes how your brain processes information, memory, and emotions. If life feels heavier than it should, your nervous system may be running on empty. Read this to understand what is really happening and what actually helps."
+      },
+      {
+        "title": "Stop Pushing Through When Chronic Stress Is Breaking You Down",
+        "description": "Grinding harder when you are already running on chronic stress only accelerates burnout. Your brain physically cannot perform the same under prolonged cortisol overload. Find out what is happening inside your body and which small daily shifts can start to reverse the damage."
+      },
+      {
+        "title": "Try This If Chronic Stress Is Making Simple Tasks Feel Impossible",
+        "description": "When answering an email feels like climbing a mountain, chronic stress brain effects are likely the reason. Science shows that prolonged stress shrinks the parts of your brain that handle focus and decision-making. Here is a practical, human-focused guide to starting your recovery today."
+      }
+    ]
+  },
+  {
     "slug": "how-to-build-a-stress-resistant-morning-routine",
     "title": "7 Ways to Build a Stress Resistant Morning Routine That Protects Your Whole Day",
     "category": "Healthy Lifestyle",
