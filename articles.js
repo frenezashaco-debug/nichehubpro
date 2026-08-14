@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-protect-your-focus-from-constant-interruptions",
+    "title": "7 Ways to Protect Your Focus From Constant Interruptions (Without Feeling Like a Jerk)",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Aug 2026",
+    "read_time": "8",
+    "excerpt": "How to protect your focus from constant interruptions is one of the most searched productivity questions right now - and for good reason. You sit down to d",
+    "image": "images/how-to-protect-your-focus-from-constant-interruptions.jpg",
+    "alt": "Woman concentrating at desk protecting focus from interruptions",
+    "pins": [
+      {
+        "title": "How to Protect Your Focus From Constant Interruptions (7 Real Strategies)",
+        "description": "Constant interruptions are costing you hours every single day. Learn how to protect your focus with 7 simple strategies that work at home, at work, and everywhere in between. No willpower required - just smarter design. Save this for your next productive morning."
+      },
+      {
+        "title": "Stop Letting Interruptions Steal Your Best Work Hours",
+        "description": "It takes 23 minutes to regain focus after a single interruption. If you are getting interrupted all day, your deep work never actually happens. Discover how to protect your focus when everyone keeps interrupting you with boundaries that people actually respect."
+      },
+      {
+        "title": "Try This Simple Focus Protection System That Takes 5 Minutes to Set Up",
+        "description": "Protecting deep focus does not need a fancy productivity tool or a private office. This 5-minute daily system uses visual signals, time blocks, and one small habit to cut your interruptions dramatically. Start tomorrow morning and feel the difference by noon."
+      }
+    ]
+  },
+  {
     "slug": "why-chronic-stress-makes-everything-feel-harder",
     "title": "7 Reasons Why Chronic Stress Makes Everything Feel Harder (And What to Do About It)",
     "category": "Mental Wellness",
