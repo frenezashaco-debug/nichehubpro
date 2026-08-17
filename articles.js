@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-build-a-routine-that-survives-a-busy-week",
+    "title": "7 Ways to Build a Routine That Survives a Busy Week (Without Falling Apart)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Aug 2026",
+    "read_time": "8",
+    "excerpt": "Knowing how to build a routine that survives a busy week is one of the most practical skills you can develop for your health. Most people design their habi",
+    "image": "images/how-to-build-a-routine-that-survives-a-busy-week.jpg",
+    "alt": "woman writing morning routine plan during a busy week",
+    "pins": [
+      {
+        "title": "How to Build a Routine That Survives Your Busiest Week",
+        "description": "Tired of watching your healthy routine fall apart the second life gets crazy? Learn exactly how to build a routine that survives a busy week with these 7 simple strategies. Your resilient healthy routine starts with just 3 non-negotiable daily anchors. Save this for your next stressful week."
+      },
+      {
+        "title": "Stop Letting Busy Weeks Destroy Your Healthy Habits",
+        "description": "A resilient healthy routine is not about perfection - it is about having a backup plan before the chaos hits. Discover the minimum viable routine method that keeps your healthy habits alive even through your most stressful weeks. Small consistent action beats starting over every time."
+      },
+      {
+        "title": "Try This 15-Minute Routine for Your Most Overwhelming Days",
+        "description": "When your schedule explodes, you do not need to give up on your routine - you need a smaller version of it. This guide shows you how to stick to healthy habits during a busy or stressful week using if-then planning and habit stacking. Even 15 minutes a day keeps your baseline strong."
+      }
+    ]
+  },
+  {
     "slug": "how-to-protect-your-focus-from-constant-interruptions",
     "title": "7 Ways to Protect Your Focus From Constant Interruptions (Without Feeling Like a Jerk)",
     "category": "Productivity",
