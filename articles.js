@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-calm-your-nervous-system-fast",
+    "title": "7 Ways to Calm Your Nervous System Fast When You Feel Like You're Falling Apart",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Aug 2026",
+    "read_time": "8",
+    "excerpt": "If you want to know how to calm your nervous system fast, you are probably already in the thick of it right now. Your heart is racing, your thoughts are sc",
+    "image": "images/how-to-calm-your-nervous-system-fast.jpg",
+    "alt": "Woman practicing how to calm nervous system fast at home",
+    "pins": [
+      {
+        "title": "How to Calm Your Nervous System Fast (7 Techniques That Actually Work)",
+        "description": "Feeling overwhelmed and can't slow down? These 7 nervous system regulation techniques work in minutes, no app required. Save this for the next time stress takes over and you need a real reset fast."
+      },
+      {
+        "title": "Stop Letting Stress Run Your Body: Reset Your Nervous System Today",
+        "description": "If your nervous system feels stuck in overdrive, it is not a character flaw. Learn why chronic stress keeps you trapped in fight-or-flight and what to do about it with simple daily habits that actually stick."
+      },
+      {
+        "title": "Try This 90-Second Breathing Reset to Calm Your Nervous System Fast",
+        "description": "One slow exhale can flip your body from panic to calm in under two minutes. This nervous system regulation technique is backed by science and requires zero equipment. Try it today and feel the difference."
+      }
+    ]
+  },
+  {
     "slug": "how-to-build-a-routine-that-survives-a-busy-week",
     "title": "7 Ways to Build a Routine That Survives a Busy Week (Without Falling Apart)",
     "category": "Healthy Lifestyle",
