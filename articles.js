@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-stay-focused-on-hard-tasks-without-burning-out",
+    "title": "7 Ways to Stay Focused on Hard Tasks Without Burning Out (Even When You're Running on Empty)",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Sep 2026",
+    "read_time": "8",
+    "excerpt": "How to stay focused on hard tasks without burning out is something most people struggle with silently. You sit down to work, and within twenty minutes your",
+    "image": "images/how-to-stay-focused-on-hard-tasks-without-burning-out.jpg",
+    "alt": "young woman focused on hard task at home desk",
+    "pins": [
+      {
+        "title": "How to Stay Focused on Hard Tasks Without Burning Out (7 Real Strategies)",
+        "description": "Struggling to stay focused on hard tasks without burning out? These 7 sustainable focus techniques work with your brain, not against it. No more grinding until you crash. Save this for your next big project."
+      },
+      {
+        "title": "Stop Pushing Through Exhaustion - This Is Why You Burn Out During Hard Work",
+        "description": "If you keep pushing through hard tasks until you are completely drained, you are making the problem worse. Learn how to stay focused on difficult tasks without feeling drained using science-backed recovery habits. Your energy is the engine. Protect it."
+      },
+      {
+        "title": "Try This Simple Focus Reset Before Your Next Hard Task",
+        "description": "Before your next difficult work session, try this: 50 minutes of single-task focus, then a real 10-minute break with no screens. This one shift is at the core of how to stay focused on hard tasks without burning out. Start today."
+      }
+    ]
+  },
+  {
     "slug": "how-to-calm-your-nervous-system-fast",
     "title": "7 Ways to Calm Your Nervous System Fast When You Feel Like You're Falling Apart",
     "category": "Mental Wellness",
