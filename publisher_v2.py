@@ -766,11 +766,7 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_image
         print("Mode    : CORNERSTONE (4500+ words)")
     print(f"{'='*60}")
 
-    import httpx
-    client = anthropic.Anthropic(
-        api_key=API_KEY,
-        http_client=httpx.Client(verify=False),
-    )
+    client = anthropic.Anthropic(api_key=API_KEY)
 
     # Load real published articles — same category only, exclude current article
     existing_articles = load_existing_articles()
