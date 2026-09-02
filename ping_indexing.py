@@ -40,6 +40,12 @@ def load_all_urls():
         f"{SITE_URL}/healthy-lifestyle/",
         f"{SITE_URL}/all-articles/",
         f"{SITE_URL}/about/",
+        f"{SITE_URL}/editorial-policy/",
+        f"{SITE_URL}/anxiety-and-stress/",
+        f"{SITE_URL}/overthinking/",
+        f"{SITE_URL}/burnout-recovery/",
+        f"{SITE_URL}/sleep-and-energy/",
+        f"{SITE_URL}/focus-and-productivity/",
     ]
     article_urls = [f"{SITE_URL}/articles/{a['slug']}.html" for a in arts]
     return static + article_urls
