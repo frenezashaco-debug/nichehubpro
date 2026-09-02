@@ -95,7 +95,32 @@ body {
 img { max-width: 100%; display: block; height: auto; }
 a { color: var(--emerald); text-decoration: none; transition: color var(--trans); }
 a:hover { color: var(--emerald-dk); }
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 3px;
+}
 ul, ol { list-style: none; }
+
+/* Respect user motion preferences and avoid unnecessary paint work. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.health-safety-note {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-left: 4px solid #0F766E;
+  border-radius: var(--radius-sm);
+  background: #F0FDFA;
+  color: #134E4A;
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
 
 /* ── READING PROGRESS BAR ─────────────────────────────────────── */
 #progress-bar {

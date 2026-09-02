@@ -160,6 +160,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var sInput   = overlay.querySelector('.search-input');
     var sResults = overlay.querySelector('.search-results');
+    var articlesLoadPromise;
+
+    // Article metadata is only needed after someone opens the search. Loading it
+    // on every article page adds a large request without helping the initial view.
+    function ensureArticlesLoaded() {
+      if (typeof ARTICLES !== 'undefined') return Promise.resolve();
+      if (articlesLoadPromise) return articlesLoadPromise;
+
+      articlesLoadPromise = new Promise(function(resolve, reject) {
+        var source = document.createElement('script');
+        source.src = '/articles.js';
+        source.async = true;
+        source.onload = resolve;
+        source.onerror = reject;
+        document.head.appendChild(source);
+      });
+      return articlesLoadPromise;
+    }
 
     function catClass(cat) {
       if (!cat) return '';
@@ -205,7 +223,18 @@ document.addEventListener('DOMContentLoaded', function () {
     function openSearch() {
       overlay.classList.add('open');
       sInput.value = '';
-      sResults.innerHTML = '<div class="search-hint">Start typing to find articles&hellip;</div>';
+      if (typeof ARTICLES === 'undefined') {
+        sResults.innerHTML = '<div class="search-hint">Loading articles&hellip;</div>';
+        ensureArticlesLoaded().then(function() {
+          if (overlay.classList.contains('open')) {
+            sResults.innerHTML = '<div class="search-hint">Start typing to find articles&hellip;</div>';
+          }
+        }).catch(function() {
+          sResults.innerHTML = '<div class="search-no-results">Search is temporarily unavailable. Please try again.</div>';
+        });
+      } else {
+        sResults.innerHTML = '<div class="search-hint">Start typing to find articles&hellip;</div>';
+      }
       setTimeout(function() { sInput.focus(); }, 50);
     }
     function closeSearch() { overlay.classList.remove('open'); }
@@ -217,7 +246,15 @@ document.addEventListener('DOMContentLoaded', function () {
       if (e.key === 'Escape') closeSearch();
       if ((e.ctrlKey || e.metaKey) && e.key === 'k') { e.preventDefault(); openSearch(); }
     });
-    sInput.addEventListener('input', function() { doSearch(this.value); });
+    sInput.addEventListener('input', function() {
+      var query = this.value;
+      if (typeof ARTICLES === 'undefined') {
+        sResults.innerHTML = '<div class="search-hint">Loading articles&hellip;</div>';
+        ensureArticlesLoaded().then(function() { doSearch(query); });
+        return;
+      }
+      doSearch(query);
+    });
   }
 
 });
