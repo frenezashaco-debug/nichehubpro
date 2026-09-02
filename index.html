@@ -41,8 +41,6 @@
   <!-- Self-hosted fonts — no Google Fonts round-trip -->
   <link rel="preload" as="font" href="/fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="/fonts/pxiEyp8kv8JHgFVrJJfecg.woff2" type="font/woff2" crossorigin>
-  <!-- LCP image preload — updated daily by publisher -->
-  <link rel="preload" as="image" href="/images/daily-habits-for-better-mental-health.jpg" fetchpriority="high">
   <!-- Critical above-the-fold CSS inlined to eliminate render-blocking -->
   <style>
 @font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -149,8 +147,8 @@ ul,ol{list-style:none}
     <h1>Feel calmer, think clearer,<br>live <em>better</em>.</h1>
     <p>Honest guides on mental wellness, productivity, and healthy living, written the way a knowledgeable friend would talk to you. Not another textbook.</p>
     <div class="hero-btns">
-      <a href="/mental-wellness/" class="btn btn-lg">Start Reading &rarr;</a>
-      <a href="/about/" class="btn btn-ghost btn-lg">Our Story</a>
+      <a href="/anxiety-and-stress/" class="btn btn-lg">I Feel Overwhelmed &rarr;</a>
+      <a href="/focus-and-productivity/" class="btn btn-ghost btn-lg">Build Better Focus</a>
     </div>
     <div class="hero-trust">
       <span class="hero-trust-item">
@@ -159,7 +157,7 @@ ul,ol{list-style:none}
       </span>
       <span class="hero-trust-item">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4"/><path d="M12 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z"/></svg>
-        New articles daily
+        New guides three times a week
       </span>
       <span class="hero-trust-item">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4"/><path d="M12 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z"/></svg>
@@ -173,7 +171,7 @@ ul,ol{list-style:none}
 <div class="stats-bar">
   <div class="stats-bar-inner">
     <div class="stat">
-      <span class="stat-num" id="stat-articles">60+</span>
+      <span class="stat-num" id="stat-articles">137+</span>
       <span class="stat-label">Free articles published</span>
     </div>
     <div class="stat">
@@ -200,11 +198,11 @@ ul,ol{list-style:none}
       <p class="section-sub">Pick a topic that fits where you are. Every guide gives you something real you can use today.</p>
     </div>
     <div class="topic-pills" style="justify-content:center;">
-      <a href="/mental-wellness/" class="topic-pill"><span>🧠</span> Anxiety &amp; Stress</a>
-      <a href="/mental-wellness/" class="topic-pill"><span>💭</span> Overthinking</a>
-      <a href="/productivity/" class="topic-pill"><span>⚡</span> Focus &amp; Productivity</a>
-      <a href="/mental-wellness/" class="topic-pill"><span>🔥</span> Burnout</a>
-      <a href="/healthy-lifestyle/" class="topic-pill"><span>😴</span> Sleep Problems</a>
+      <a href="/anxiety-and-stress/" class="topic-pill"><span>🧠</span> Anxiety &amp; Stress</a>
+      <a href="/overthinking/" class="topic-pill"><span>💭</span> Overthinking</a>
+      <a href="/focus-and-productivity/" class="topic-pill"><span>⚡</span> Focus &amp; Productivity</a>
+      <a href="/burnout-recovery/" class="topic-pill"><span>🔥</span> Burnout</a>
+      <a href="/sleep-and-energy/" class="topic-pill"><span>😴</span> Sleep Problems</a>
       <a href="/productivity/" class="topic-pill"><span>📋</span> Habits &amp; Discipline</a>
       <a href="/healthy-lifestyle/" class="topic-pill"><span>🌿</span> Healthy Lifestyle</a>
       <a href="/mental-wellness/" class="topic-pill"><span>🛡️</span> Emotional Resilience</a>
@@ -250,20 +248,19 @@ ul,ol{list-style:none}
       <div>
         <div class="section-eyebrow">Fresh Guides</div>
         <h2 class="section-title mb-0" style="margin-bottom:0;">Latest articles</h2>
-        <p class="section-sub" style="margin-bottom:0;margin-top:10px;">New guides published every day. Pick one that fits what you're going through right now.</p>
+        <p class="section-sub" style="margin-bottom:0;margin-top:10px;">New practical guides every Monday, Wednesday, and Friday. Pick one that fits what you're going through right now.</p>
       </div>
       <a href="/all-articles/" class="btn btn-outline btn-sm">Browse All &rarr;</a>
     </div>
     <div class="articles-grid" id="latest-grid">
-      <div class="card-skeleton"></div>
-      <div class="card-skeleton"></div>
-      <div class="card-skeleton"></div>
-      <div class="card-skeleton"></div>
-      <div class="card-skeleton"></div>
-      <div class="card-skeleton"></div>
-      <div class="card-skeleton"></div>
-      <div class="card-skeleton"></div>
-      <div class="card-skeleton"></div>
+      <!-- LATEST_CARDS_START -->
+      <article class="card card-featured"><img src="/images/how-to-calm-your-nervous-system-fast.jpg" alt="Woman practicing a calming exercise at home" class="card-featured-img" width="800" height="200" fetchpriority="high"><div class="card-body"><span class="card-tag">Mental Wellness</span><h3><a href="/articles/how-to-calm-your-nervous-system-fast.html">7 Ways to Calm Your Nervous System Fast</a></h3><p>Practical techniques for the moments when stress feels too big to manage alone.</p><a href="/articles/how-to-calm-your-nervous-system-fast.html" class="read-more">Read article &rarr;</a></div></article>
+      <article class="card card-featured"><img src="/images/how-to-build-a-routine-that-survives-a-busy-week.jpg" alt="Woman planning a routine during a busy week" class="card-featured-img" width="800" height="200" loading="lazy"><div class="card-body"><span class="card-tag">Healthy Lifestyle</span><h3><a href="/articles/how-to-build-a-routine-that-survives-a-busy-week.html">How to Build a Routine That Survives a Busy Week</a></h3><p>Build flexible habits that still work when life becomes unpredictable.</p><a href="/articles/how-to-build-a-routine-that-survives-a-busy-week.html" class="read-more">Read article &rarr;</a></div></article>
+      <article class="card card-featured"><img src="/images/how-to-protect-your-focus-from-constant-interruptions.jpg" alt="Woman focused at her desk" class="card-featured-img" width="800" height="200" loading="lazy"><div class="card-body"><span class="card-tag">Productivity</span><h3><a href="/articles/how-to-protect-your-focus-from-constant-interruptions.html">Protect Your Focus From Constant Interruptions</a></h3><p>Set up a calmer workday without needing more willpower.</p><a href="/articles/how-to-protect-your-focus-from-constant-interruptions.html" class="read-more">Read article &rarr;</a></div></article>
+      <article class="card card-featured"><img src="/images/why-chronic-stress-makes-everything-feel-harder.jpg" alt="Tired woman taking a quiet moment at home" class="card-featured-img" width="800" height="200" loading="lazy"><div class="card-body"><span class="card-tag">Mental Wellness</span><h3><a href="/articles/why-chronic-stress-makes-everything-feel-harder.html">Why Chronic Stress Makes Everything Feel Harder</a></h3><p>Understand the effects of chronic stress and take one supportive next step.</p><a href="/articles/why-chronic-stress-makes-everything-feel-harder.html" class="read-more">Read article &rarr;</a></div></article>
+      <article class="card card-featured"><img src="/images/how-to-build-a-stress-resistant-morning-routine.jpg" alt="Woman starting a calm morning routine" class="card-featured-img" width="800" height="200" loading="lazy"><div class="card-body"><span class="card-tag">Healthy Lifestyle</span><h3><a href="/articles/how-to-build-a-stress-resistant-morning-routine.html">Build a Stress-Resistant Morning Routine</a></h3><p>Small morning anchors that protect your energy before the day gets busy.</p><a href="/articles/how-to-build-a-stress-resistant-morning-routine.html" class="read-more">Read article &rarr;</a></div></article>
+      <article class="card card-featured"><img src="/images/why-productivity-hacks-dont-work-long-term.jpg" alt="Person making a simple productivity plan" class="card-featured-img" width="800" height="200" loading="lazy"><div class="card-body"><span class="card-tag">Productivity</span><h3><a href="/articles/why-productivity-hacks-dont-work-long-term.html">Why Productivity Hacks Don&apos;t Work Long Term</a></h3><p>Replace short-term tricks with a system you can actually sustain.</p><a href="/articles/why-productivity-hacks-dont-work-long-term.html" class="read-more">Read article &rarr;</a></div></article>
+      <!-- LATEST_CARDS_END -->
     </div>
   </div>
 </section>
@@ -378,6 +375,7 @@ ul,ol{list-style:none}
         <ul>
           <li><a href="/about/">About Us</a></li>
           <li><a href="/author/sarah-mitchell/">Our Author</a></li>
+          <li><a href="/editorial-policy/">Editorial Policy</a></li>
           <li><a href="/contact/">Contact</a></li>
           <li><a href="/privacy/">Privacy Policy</a></li>
           <li><a href="/disclaimer/">Disclaimer</a></li>

@@ -7,7 +7,7 @@ Usage:
   python publisher_v2.py "how to stop overthinking at night" "Mental Wellness"
 """
 
-import sys, os, re, json, textwrap, io, time
+import sys, os, re, json, textwrap, io, time, html
 from datetime import date
 sys.stdout.reconfigure(encoding='utf-8')
 import anthropic
@@ -153,7 +153,7 @@ JSON STRUCTURE:
     {
       "claim": "string — a specific research finding, statistic, or fact cited in this article. Must directly support something written in the article body.",
       "source": "string — organization name. ONLY use real, well-known organizations: Mayo Clinic, NHS, NIMH, APA, ADAA, Harvard Health, CDC, WHO, American Heart Association, National Sleep Foundation, Harvard Business Review, Psychology Today, Cleveland Clinic, WebMD Medical Team, Healthline Medical Team",
-      "url": "string — the organization HOMEPAGE only. Never invent a specific article URL. Use the root domain (e.g. https://www.mayoclinic.org)"
+      "url": "string — use a direct official source URL only when you are certain it is real and supports the claim. Otherwise use the organization's homepage. Never invent a URL."
     }
   ]
 }"""
@@ -220,7 +220,7 @@ REQUIREMENTS:
 - Conclusion: motivational, encourage one small habit today
 - Cover image: unique realistic wellness photo prompt for this specific topic
 - Section images: 3 unique FLUX prompts in section_image_prompts (indexes 0, 2, 4). Each must show a DIFFERENT scene, person, and moment from each other and from the cover. Contextual to section content. No text, no logos.
-- References: 3-5 entries citing REAL organizations only (Mayo Clinic, NHS, NIMH, APA, ADAA, Harvard Health, CDC, WHO, National Sleep Foundation, Cleveland Clinic, AHA). Use homepage URL only. Each claim must support something written in the article.
+- References: 3-5 entries citing REAL organizations only (Mayo Clinic, NHS, NIMH, APA, ADAA, Harvard Health, CDC, WHO, National Sleep Foundation, Cleveland Clinic, AHA). Each claim must support something written in the article. Never make a precise numerical or clinical claim unless its source URL supports it. Use a direct official source URL only when you are certain it is accurate; otherwise link only to the organisation homepage.
 
 Return ONLY the JSON. No em dashes anywhere."""
 
@@ -950,6 +950,50 @@ def register_article(data, cover_filename):
 
     print(f"  Registered in articles.js ({len(existing)} total)")
     update_sitemap(existing)
+    render_homepage_latest(existing)
+
+
+def render_homepage_latest(articles):
+    """Keep a crawlable, current latest-article grid in the homepage HTML."""
+    index_path = os.path.join(BASE_DIR, "index.html")
+    if not os.path.exists(index_path):
+        return
+
+    with open(index_path, "r", encoding="utf-8") as f:
+        homepage = f.read()
+
+    cards = []
+    for i, article in enumerate(articles[:6]):
+        article_slug = html.escape(article.get("slug", ""), quote=True)
+        title = html.escape(article.get("title", ""))
+        category = html.escape(article.get("category", "Guides"))
+        excerpt = html.escape(article.get("excerpt", ""))
+        image = "/" + article.get("image", "").lstrip("/")
+        alt = html.escape(article.get("alt", title), quote=True)
+        loading = 'fetchpriority="high"' if i == 0 else 'loading="lazy"'
+        cards.append(
+            f'      <article class="card card-featured"><img src="{html.escape(image, quote=True)}" '
+            f'alt="{alt}" class="card-featured-img" width="800" height="200" {loading}>'
+            f'<div class="card-body"><span class="card-tag">{category}</span>'
+            f'<h3><a href="/articles/{article_slug}.html">{title}</a></h3>'
+            f'<p>{excerpt}</p><a href="/articles/{article_slug}.html" class="read-more">'
+            f'Read article &rarr;</a></div></article>'
+        )
+
+    replacement = "<!-- LATEST_CARDS_START -->\n" + "\n".join(cards) + "\n      <!-- LATEST_CARDS_END -->"
+    updated = re.sub(
+        r'<!-- LATEST_CARDS_START -->[\s\S]*?<!-- LATEST_CARDS_END -->',
+        replacement,
+        homepage,
+        count=1,
+    )
+    if updated == homepage:
+        print("  Homepage latest cards not updated: markers missing")
+        return
+
+    with open(index_path, "w", encoding="utf-8") as f:
+        f.write(updated)
+    print("  Homepage latest cards updated")
 
 
 def update_sitemap(articles):
@@ -967,6 +1011,12 @@ def update_sitemap(articles):
         (f"{SITE}/privacy/",            "monthly", "0.4"),
         (f"{SITE}/disclaimer/",         "monthly", "0.4"),
         (f"{SITE}/terms/",              "monthly", "0.4"),
+        (f"{SITE}/editorial-policy/",   "monthly", "0.6"),
+        (f"{SITE}/anxiety-and-stress/", "weekly",  "0.8"),
+        (f"{SITE}/overthinking/",       "weekly",  "0.8"),
+        (f"{SITE}/burnout-recovery/",   "weekly",  "0.8"),
+        (f"{SITE}/sleep-and-energy/",   "weekly",  "0.8"),
+        (f"{SITE}/focus-and-productivity/", "weekly", "0.8"),
     ]
 
     urls = []
