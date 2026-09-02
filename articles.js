@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "why-hydration-affects-your-focus-more-than-you-think",
+    "title": "7 Reasons Why Hydration Affects Your Focus More Than You Think (And How to Fix It Fast)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Sep 2026",
+    "read_time": "8",
+    "excerpt": "Why hydration affects your focus more than you think is one of the most overlooked facts in everyday wellness. Most people reach for coffee when their brai",
+    "image": "images/why-hydration-affects-your-focus-more-than-you-think.jpg",
+    "alt": "young woman drinking water at desk improving focus naturally",
+    "pins": [
+      {
+        "title": "How to Fix Brain Fog With Water (Why Hydration Affects Your Focus More Than You Think)",
+        "description": "Feeling scattered and slow mid-morning? The real culprit might be dehydration. Learn why hydration affects your focus more than you think and get simple daily habits that protect your concentration. Save this for your next slow brain day."
+      },
+      {
+        "title": "Stop Reaching for Coffee - Dehydration is Killing Your Focus",
+        "description": "Mild dehydration causes memory lapses, slow thinking, and mood dips - before you ever feel thirsty. Hydration and mental performance are more connected than most people realize. Try drinking 500ml of water before your first coffee and feel the difference."
+      },
+      {
+        "title": "Try This Simple Hydration Habit That Boosts Focus in 20 Minutes",
+        "description": "Research shows that rehydrating restores cognitive performance in under 30 minutes. If you struggle with afternoon slumps and scattered thinking, this is the fastest fix available. Learn how does dehydration affect focus and energy - and what to do about it starting today."
+      }
+    ]
+  },
+  {
     "slug": "how-to-stay-focused-on-hard-tasks-without-burning-out",
     "title": "7 Ways to Stay Focused on Hard Tasks Without Burning Out (Even When You're Running on Empty)",
     "category": "Productivity",
