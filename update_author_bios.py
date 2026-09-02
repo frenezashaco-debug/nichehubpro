@@ -2,9 +2,9 @@
 """
 update_author_bios.py
 Patches all existing articles with:
-  - Real human author bio (by category)
+  - Transparent editorial-team bio (used for every category)
   - Sources & References section
-  - Person-type author in Article schema
+  - Organization-type author in Article schema
   - Fact-checked badge in meta line
 Run once: python update_author_bios.py
 """
@@ -19,13 +19,12 @@ SITE_URL   = "https://nichehubpro.com"
 
 AUTHORS = {
     "Mental Wellness": {
-        "name": "Sarah Mitchell",
-        "initials": "SM",
-        "title": "Mental Health Writer & Wellness Coach",
+        "name": "NicheHubPro Editorial Team",
+        "initials": "NH",
+        "title": "Editorial Team",
         "bio": (
-            "Sarah has been writing about anxiety, stress, and mental wellbeing for over 7 years. "
-            "After struggling with chronic overthinking in her late 20s, she trained as a wellness coach "
-            "and now helps readers find practical, science-backed strategies for calmer, clearer living."
+            "NicheHubPro publishes general information on mental wellness, productivity, and healthy lifestyle topics. "
+            "Articles include sources for further reading and are not a substitute for professional advice."
         ),
         "color": "#10B981",
         "refs": [
@@ -38,13 +37,12 @@ AUTHORS = {
         ],
     },
     "Productivity": {
-        "name": "James Okafor",
-        "initials": "JO",
-        "title": "Productivity Writer & Former Project Manager",
+        "name": "NicheHubPro Editorial Team",
+        "initials": "NH",
+        "title": "Editorial Team",
         "bio": (
-            "James spent 8 years managing high-pressure tech projects before burning out in 2019. "
-            "That experience pushed him to research sustainable focus, habit-building, and deep work systems. "
-            "He now writes practical productivity guides rooted in real-world experience and behavioral science."
+            "NicheHubPro publishes general information on mental wellness, productivity, and healthy lifestyle topics. "
+            "Articles include sources for further reading and are not a substitute for professional advice."
         ),
         "color": "#3B82F6",
         "refs": [
@@ -57,13 +55,12 @@ AUTHORS = {
         ],
     },
     "Healthy Lifestyle": {
-        "name": "Ava Chen",
-        "initials": "AC",
-        "title": "Wellness Writer & Certified Nutrition Coach",
+        "name": "NicheHubPro Editorial Team",
+        "initials": "NH",
+        "title": "Editorial Team",
         "bio": (
-            "Ava is a certified nutrition coach who writes about the science of healthy living. "
-            "From sleep and movement to food and energy, she translates complex research "
-            "into clear, actionable advice that fits real everyday life."
+            "NicheHubPro publishes general information on mental wellness, productivity, and healthy lifestyle topics. "
+            "Articles include sources for further reading and are not a substitute for professional advice."
         ),
         "color": "#F59E0B",
         "refs": [
@@ -106,7 +103,7 @@ def build_author_block(author, pub_date):
         f'          <p style="font-size:0.87rem;color:var(--text);line-height:1.7;margin:0 0 10px;">{author["bio"]}</p>\n'
         f'          <div style="display:flex;gap:14px;flex-wrap:wrap;">\n'
         f'            <span style="font-size:0.74rem;color:var(--gray);display:flex;align-items:center;gap:4px;">\n'
-        f'              <span style="color:var(--emerald);font-size:0.85rem;">&#10003;</span> Reviewed for accuracy before publishing\n'
+        f'              <span style="color:var(--emerald);font-size:0.85rem;">&#10003;</span> Sources listed for further reading\n'
         f'            </span>\n'
         f'            <span style="font-size:0.74rem;color:var(--gray);">Published {pub_date}</span>\n'
         f'          </div>\n'
@@ -167,7 +164,7 @@ def detect_pub_date(html):
 def patch_schema_author(html, author):
     old = r'"author": \{ "@type": "Organization", "name": "NicheHubPro", "url": "https://nichehubpro\.com" \}'
     new = (
-        f'"author": {{ "@type": "Person", "name": "{author["name"]}", '
+        f'"author": {{ "@type": "Organization", "name": "{author["name"]}", '
         f'"url": "{SITE_URL}/about/", "jobTitle": "{author["title"]}" }}'
     )
     return re.sub(old, new, html)
@@ -231,7 +228,7 @@ def main():
     updated = 0
     skipped = 0
 
-    print(f"Patching {total} articles with human author bios + references...")
+    print(f"Patching {total} articles with transparent editorial bios + references...")
     for fname in files:
         path = os.path.join(ARTICLES_DIR, fname)
         if patch_article(path):

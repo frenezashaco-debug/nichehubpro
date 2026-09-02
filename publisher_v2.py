@@ -40,15 +40,14 @@ CATEGORY_URLS = {
     "Healthy Lifestyle": "../healthy-lifestyle/",
 }
 
-# Single consistent author across all categories — required for AdSense E-E-A-T
-_SARAH = {
-    "name": "Sarah Mitchell",
-    "initials": "SM",
-    "title": "Health & Wellness Writer",
+# The site must not claim an individual author or clinical expertise it cannot verify.
+_EDITORIAL_TEAM = {
+    "name": "NicheHubPro Editorial Team",
+    "initials": "NH",
+    "title": "Editorial Team",
     "bio": (
-        "Sarah Mitchell has been writing about mental health, productivity, and healthy living for over 7 years. "
-        "With a background in psychology and a personal history of managing chronic overthinking, "
-        "she translates complex research into clear, actionable advice that people can actually use."
+        "NicheHubPro publishes practical guides on mental wellness, productivity, and healthy lifestyle topics. "
+        "Articles are general information, include sources for further reading, and are not medical advice."
     ),
     "color": "#10B981",
     "default_refs": [
@@ -58,9 +57,9 @@ _SARAH = {
     ],
 }
 AUTHORS = {
-    "Mental Wellness":   _SARAH,
-    "Productivity":      _SARAH,
-    "Healthy Lifestyle": _SARAH,
+    "Mental Wellness":   _EDITORIAL_TEAM,
+    "Productivity":      _EDITORIAL_TEAM,
+    "Healthy Lifestyle": _EDITORIAL_TEAM,
 }
 
 # ── SYSTEM PROMPT ────────────────────────────────────────────────────────
