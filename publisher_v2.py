@@ -570,7 +570,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
         <span>&#128197; {today_iso}</span>
         <span>&#9203; <span id="read-time">8</span> min read</span>
         <span>&#9997;&#65039; {author_name}</span>
-        <span>&#10003; Fact-checked</span>
+        <span>&#10003; Sources listed</span>
       </div>
     </div>
 
@@ -603,7 +603,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
           <p style="font-size:0.87rem;color:var(--text);line-height:1.7;margin:0 0 10px;">{author_bio}</p>
           <div style="display:flex;gap:14px;flex-wrap:wrap;">
             <span style="font-size:0.74rem;color:var(--gray);display:flex;align-items:center;gap:4px;">
-              <span style="color:var(--emerald);font-size:0.85rem;">&#10003;</span> Reviewed for accuracy before publishing
+              <span style="color:var(--emerald);font-size:0.85rem;">&#10003;</span> Sources listed for further reading
             </span>
             <span style="font-size:0.74rem;color:var(--gray);">Published {today_iso}</span>
           </div>
