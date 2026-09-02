@@ -79,6 +79,12 @@ ABSOLUTE WRITING RULES (never break these):
 - Keep ALL paragraphs SHORT (2-3 lines max, strictly)
 - Write like a knowledgeable friend — plain, direct, warm English
 - Meta description MUST be exactly 155-160 characters (count carefully)
+- Do not invent statistics, study results, clinical outcomes, credentials, personal histories, quotes, or named people.
+- Do not make a medical diagnosis, promise an outcome, or present self-help as a substitute for professional care.
+- Avoid absolutes such as "works instantly", "guaranteed", "rewires your brain", "cures", "proven to", or "will fix".
+- For health, anxiety, panic, sleep, nutrition, or burnout topics, use cautious language such as "may help", "can be worth trying", and "consider speaking with a qualified clinician".
+- A number, percentage, duration, or biological claim may appear only when it is directly supported by one of the references returned in this JSON. If uncertain, omit the number.
+- Every article must include one original, practical editorial tool such as a checklist, decision guide, reflection prompt, or small experiment. Do not give it a medical-sounding name.
 
 GEO OPTIMIZATION RULE (apply to EVERY paragraph):
 Each paragraph must follow this exact structure:
@@ -102,7 +108,7 @@ JSON STRUCTURE:
       "content": "string — full HTML. Use <p>, <ul><li>, <strong>. Every <p> max 3 lines. GEO structure per paragraph. At least one <ul> list. At least one <strong> key advice. Min 300 words per section. VARY content format across sections: some use numbered steps, some use a key insight callout, some compare two approaches."
     }
   ],
-  "real_example": "string — EXACTLY 2 separate paragraphs separated by \\n. First paragraph: the problem (person's struggle). Second paragraph: the transformation (how they fixed it). Human story. Relatable. Max 4 lines per paragraph.",
+  "real_example": "string — EXACTLY 2 separate paragraphs separated by \\n. Write an explicitly labelled illustrative scenario, never a claimed true story. Do not name the person Sarah or any real person, claim a diagnosis, promise a transformation, or state a clinical outcome. Max 4 lines per paragraph.",
   "internal_links": [
     {"anchor": "descriptive anchor text", "slug": "related-article-slug"},
     {"anchor": "different anchor text", "slug": "another-related-slug"},
@@ -214,13 +220,13 @@ REQUIREMENTS:
 - TL;DR: 2-3 sentences with primary keyword
 - {section_count_line}
 - Each section: GEO structure (statement + fact + advice), bullets, bold key tips, min {min_section_words} words
-- Real life example: 2 paragraphs, human story showing transformation
+- Illustrative scenario: 2 paragraphs, clearly labelled as an example, with no named person, diagnosis, claimed clinical outcome, or guaranteed transformation
 - {links_block}
 - FAQ: 5 real questions people search on Google about this topic
 - Conclusion: motivational, encourage one small habit today
 - Cover image: unique realistic wellness photo prompt for this specific topic
 - Section images: 3 unique FLUX prompts in section_image_prompts (indexes 0, 2, 4). Each must show a DIFFERENT scene, person, and moment from each other and from the cover. Contextual to section content. No text, no logos.
-- References: 3-5 entries citing REAL organizations only (Mayo Clinic, NHS, NIMH, APA, ADAA, Harvard Health, CDC, WHO, National Sleep Foundation, Cleveland Clinic, AHA). Each claim must support something written in the article. Never make a precise numerical or clinical claim unless its source URL supports it. Use a direct official source URL only when you are certain it is accurate; otherwise link only to the organisation homepage.
+- References: 3-5 entries citing REAL organizations only (Mayo Clinic, NHS, NIMH, APA, ADAA, Harvard Health, CDC, WHO, National Sleep Foundation, Cleveland Clinic, AHA). Each claim must support something written in the article. Never make a precise numerical, causal, or clinical claim unless its direct source URL supports it. Use a direct official source URL only when you are certain it is accurate; otherwise omit the claim.
 
 Return ONLY the JSON. No em dashes anywhere."""
 
@@ -586,7 +592,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
 
       {sections_html}
 
-      <h2 id="real-life">What Does This Look Like in Real Life?</h2>
+      <h2 id="real-life">An Illustrative Scenario</h2>
       {"".join(f"<p>{p.strip()}</p>" for p in real_example.split(chr(10)) if p.strip())}
 
       <div class="author-block" style="display:flex;gap:18px;align-items:flex-start;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:24px 28px;margin:40px 0;">
@@ -759,6 +765,49 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
 
 
 # ── MAIN GENERATOR ────────────────────────────────────────────────────────
+QUALITY_BLOCKLIST = (
+    r"\b(?:guarantee(?:d)?|cure(?:s|d)?|miracle|instant(?:ly)?|"
+    r"rewire(?:s|d)? your brain|will fix|will heal|medical emergency)\b"
+)
+
+
+def validate_article_quality(data, primary_kw):
+    """Reject weak or unsafe generator output before it can be published."""
+    errors = []
+    meta = (data.get("meta_description") or "").strip()
+    if not 155 <= len(meta) <= 160:
+        errors.append(f"meta description must be 155-160 characters, got {len(meta)}")
+
+    sections = data.get("sections") or []
+    if len(sections) < 5:
+        errors.append(f"expected at least 5 sections, got {len(sections)}")
+
+    references = data.get("references") or []
+    if len(references) < 3:
+        errors.append(f"expected at least 3 references, got {len(references)}")
+    for index, reference in enumerate(references, 1):
+        if not reference.get("claim") or not reference.get("source"):
+            errors.append(f"reference {index} is missing a claim or source")
+        if not str(reference.get("url", "")).startswith("https://"):
+            errors.append(f"reference {index} needs a direct HTTPS URL")
+
+    example = (data.get("real_example") or "").lower()
+    if "sarah" in example:
+        errors.append("illustrative scenario must not present Sarah as a reader case study")
+
+    searchable_fields = [
+        data.get("title", ""), data.get("intro", ""), data.get("tldr", ""),
+        data.get("real_example", ""), data.get("conclusion", ""),
+    ] + [section.get("content", "") for section in sections]
+    article_text = " ".join(searchable_fields)
+    if re.search(QUALITY_BLOCKLIST, article_text, flags=re.IGNORECASE):
+        errors.append("contains a prohibited absolute, cure, instant-result, or medical-emergency claim")
+
+    if primary_kw.lower() not in (data.get("title", "").lower() + " " + meta.lower()):
+        errors.append("primary keyword is missing from the title or meta description")
+    return errors
+
+
 def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_images=False, cornerstone=False):
     print(f"\n{'='*60}")
     print(f"Keyword : {primary_kw}")
@@ -822,6 +871,13 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_image
 
     article_slug = slug(primary_kw)
     data["slug"] = article_slug
+
+    quality_errors = validate_article_quality(data, primary_kw)
+    if quality_errors:
+        print("ERROR: Article failed the pre-publish quality gate:")
+        for error in quality_errors:
+            print(f"  - {error}")
+        return None
 
     # Log the cover image prompt (for future AI image generation)
     cover_prompt = data.get("cover_image_prompt", "")

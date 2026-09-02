@@ -1,8 +1,8 @@
 name: Daily Article Publisher
 
 on:
-  schedule:
-    - cron: '0 8 * * 1,3,5'
+  # Scheduled publishing is intentionally paused during the AdSense
+  # content-quality review. Manual runs remain available below.
   workflow_dispatch:
 
 permissions:
