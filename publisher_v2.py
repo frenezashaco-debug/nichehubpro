@@ -9,6 +9,7 @@ Usage:
 
 import sys, os, re, json, textwrap, io, time, html
 from datetime import date
+from urllib.parse import urlparse
 sys.stdout.reconfigure(encoding='utf-8')
 import anthropic
 import requests, urllib3
@@ -50,11 +51,6 @@ _EDITORIAL_TEAM = {
         "Articles are general information, include sources for further reading, and are not medical advice."
     ),
     "color": "#10B981",
-    "default_refs": [
-        {"claim": "Anxiety disorders affect 40 million adults in the United States every year", "source": "Anxiety & Depression Association of America", "url": "https://adaa.org"},
-        {"claim": "Evidence-based approaches like CBT significantly reduce anxiety and stress symptoms", "source": "American Psychological Association", "url": "https://www.apa.org"},
-        {"claim": "Regular mindfulness practice can reduce symptoms of anxiety and depression", "source": "National Institute of Mental Health", "url": "https://www.nimh.nih.gov"},
-    ],
 }
 AUTHORS = {
     "Mental Wellness":   _EDITORIAL_TEAM,
@@ -157,8 +153,8 @@ JSON STRUCTURE:
   "references": [
     {
       "claim": "string — a specific research finding, statistic, or fact cited in this article. Must directly support something written in the article body.",
-      "source": "string — organization name. ONLY use real, well-known organizations: Mayo Clinic, NHS, NIMH, APA, ADAA, Harvard Health, CDC, WHO, American Heart Association, National Sleep Foundation, Harvard Business Review, Psychology Today, Cleveland Clinic, WebMD Medical Team, Healthline Medical Team",
-      "url": "string — use a direct official source URL only when you are certain it is real and supports the claim. Otherwise use the organization's homepage. Never invent a URL."
+      "source": "string — the named primary or institutional source that directly supports the exact claim",
+      "url": "string — a direct, verified HTTPS page URL from that source. Never use an organization homepage, guessed URL, placeholder, or a source you cannot verify. If no suitable direct source is available, omit the claim and do not return a reference."
     }
   ]
 }"""
@@ -350,7 +346,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
     author_title   = author["title"]
     author_bio     = author["bio"]
     author_color   = author["color"]
-    references     = data.get("references") or author["default_refs"]
+    references     = data["references"]
 
     # Build references HTML
     refs_html = ""
@@ -650,7 +646,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
 
       <div style="margin:40px 0 0;padding:22px 26px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);">
         <p style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--gray);margin:0 0 8px;">Sources &amp; References</p>
-        <p style="font-size:0.78rem;color:var(--gray);margin:0 0 14px;line-height:1.6;">This article draws on research from trusted health and wellness organizations. We encourage you to explore the sources directly.</p>
+        <p style="font-size:0.78rem;color:var(--gray);margin:0 0 14px;line-height:1.6;">Source links are listed for further reading and require editorial verification before publication. They do not make this article a substitute for professional advice.</p>
         <ul style="list-style:none;padding:0;margin:0;">
           {refs_html}
         </ul>
@@ -787,8 +783,12 @@ def validate_article_quality(data, primary_kw):
     for index, reference in enumerate(references, 1):
         if not reference.get("claim") or not reference.get("source"):
             errors.append(f"reference {index} is missing a claim or source")
-        if not str(reference.get("url", "")).startswith("https://"):
+        reference_url = str(reference.get("url", "")).strip()
+        parsed_url = urlparse(reference_url)
+        if not reference_url.startswith("https://"):
             errors.append(f"reference {index} needs a direct HTTPS URL")
+        elif parsed_url.path in ("", "/"):
+            errors.append(f"reference {index} must link to a direct source page, not an organization homepage")
 
     example = (data.get("real_example") or "").lower()
     if "sarah" in example:
