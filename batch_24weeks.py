@@ -17,19 +17,29 @@ Content mix target: ~70% evergreen, ~20% growing trends (concentrated in Phase 4
 generate as 4500+ word pillar guides via publisher_v2.generate_article(cornerstone=True)).
 
 Usage:
-  python batch_24weeks.py             <- publish next unpublished day
-  python batch_24weeks.py --day 5     <- publish specific day
+  python batch_24weeks.py             <- show that publishing is paused
+  python batch_24weeks.py --day 5     <- show that publishing is paused
   python batch_24weeks.py --status    <- show progress
   python batch_24weeks.py --week 3    <- show week 3 articles
 """
 
 import sys, os, re, time, json
 sys.stdout.reconfigure(encoding='utf-8')
-from publisher_v2 import generate_article
-from generate_cover import slug as make_slug
 
 BASE_DIR      = os.path.dirname(os.path.abspath(__file__))
 TRACKING_FILE = os.path.join(BASE_DIR, "published_24weeks.txt")
+
+# AdSense remediation: automated publishing stays off until every new article
+# has a documented human review for sourcing, safety language, and originality.
+# Do not remove this guard simply to resume a publishing cadence.
+PUBLISHING_PAUSED = True
+
+
+def make_slug(title):
+    """Match the publisher slug format without importing publishing dependencies."""
+    value = re.sub(r"[^a-z0-9\s-]", "", title.lower())
+    value = re.sub(r"\s+", "-", value.strip())
+    return re.sub(r"-+", "-", value)[:60]
 
 # ── 24-WEEK PLAN ────────────────────────────────────────────────────────────
 # Format: (day, primary, secondary, longtail, category)
@@ -232,6 +242,10 @@ def show_status():
 
 
 def run_day(day_num):
+    # Keep the expensive publishing dependency behind the editorial pause so a
+    # paused run cannot initialize a model client or write any content.
+    from publisher_v2 import generate_article
+
     entry = next((d for d in PLAN if d[0] == day_num), None)
     if not entry:
         print(f"Day {day_num} not found.")
@@ -251,6 +265,13 @@ def main():
 
     if "--status" in args:
         show_status()
+        return
+
+    if PUBLISHING_PAUSED:
+        print(
+            "Publishing is paused for editorial review. "
+            "New articles must be source-checked and human-reviewed before this plan resumes."
+        )
         return
 
     if "--week" in args:
