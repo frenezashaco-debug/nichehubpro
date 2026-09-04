@@ -63,6 +63,19 @@ def external_urls(markup: str) -> list[str]:
     return sorted(set(urls))
 
 
+def broken_local_targets(markup: str) -> tuple[int, int]:
+    """Return missing article links and missing local image assets."""
+    missing_articles = 0
+    missing_images = 0
+    for href in re.findall(r'href=["\'](?:\.\./|/)?articles/([^"\'#?]+\.html)', markup, re.I):
+        if not (ARTICLES / Path(href).name).exists():
+            missing_articles += 1
+    for src in re.findall(r'src=["\'](?:\.\./|/)?images/([^"\'#?]+)', markup, re.I):
+        if not (ROOT / "images" / Path(src).name).exists():
+            missing_images += 1
+    return missing_articles, missing_images
+
+
 def article_row(path: Path) -> dict[str, object]:
     markup = path.read_text(encoding="utf-8")
     text = visible_text(markup)
@@ -73,6 +86,7 @@ def article_row(path: Path) -> dict[str, object]:
     unsupported = len(UNSUPPORTED_EVIDENCE.findall(text))
     precise = len(PRECISE_CLAIM.findall(text))
     absolutes = len(MEDICAL_ABSOLUTE.findall(text))
+    missing_articles, missing_images = broken_local_targets(markup)
     word_count = len(re.findall(r"\b[\w'-]+\b", text))
     title_match = re.search(r"<title>(.*?)</title>", markup, re.I | re.S)
     title = html.unescape(re.sub(r"\s+", " ", title_match.group(1)).strip()) if title_match else ""
@@ -99,6 +113,12 @@ def article_row(path: Path) -> dict[str, object]:
         issues.append(f"{precise} precise number(s) needing verification")
     if absolutes:
         issues.append(f"{absolutes} absolute claim(s)")
+    if missing_articles:
+        issues.append(f"{missing_articles} broken internal article link(s)")
+        risk += missing_articles * 8
+    if missing_images:
+        issues.append(f"{missing_images} missing local image asset(s)")
+        risk += missing_images * 6
     return {
         "file": path.name,
         "canonical": canonical_url,
@@ -110,6 +130,8 @@ def article_row(path: Path) -> dict[str, object]:
         "evidence_claims": unsupported,
         "precise_claims": precise,
         "absolute_claims": absolutes,
+        "broken_article_links": missing_articles,
+        "missing_image_assets": missing_images,
         "issues": "; ".join(issues) or "No automated risk flag",
     }
 
@@ -129,7 +151,10 @@ def main() -> None:
         "top_25": rows[:25],
         "totals": {
             key: sum(int(row[key]) for row in rows)
-            for key in ("homepage_sources", "named_source_mentions", "evidence_claims", "precise_claims", "absolute_claims")
+            for key in (
+                "homepage_sources", "named_source_mentions", "evidence_claims",
+                "precise_claims", "absolute_claims", "broken_article_links", "missing_image_assets",
+            )
         },
     }
     (REPORTS / "editorial-review-summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
