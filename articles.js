@@ -28,12 +28,12 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stay-focused-on-hard-tasks-without-burning-out",
-    "title": "7 Ways to Stay Focused on Hard Tasks Without Burning Out (Even When You're Running on Empty)",
+    "title": "How to Focus on Hard Tasks Without Pushing Through Burnout",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Sep 2026",
     "read_time": "8",
-    "excerpt": "How to stay focused on hard tasks without burning out is something most people struggle with silently. You sit down to work, and within twenty minutes your",
+    "excerpt": "Practical ways to structure difficult work, notice work stress, take useful breaks, and seek support when focus problems or burnout persist.",
     "image": "images/how-to-stay-focused-on-hard-tasks-without-burning-out.jpg",
     "alt": "young woman focused on hard task at home desk",
     "pins": [
@@ -53,12 +53,12 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-calm-your-nervous-system-fast",
-    "title": "7 Ways to Calm Your Nervous System Fast When You Feel Like You're Falling Apart",
+    "title": "Calming Techniques for Moments of Overwhelm",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Aug 2026",
     "read_time": "8",
-    "excerpt": "If you want to know how to calm your nervous system fast, you are probably already in the thick of it right now. Your heart is racing, your thoughts are sc",
+    "excerpt": "Low-risk calming techniques for moments of overwhelm, with clear limits and guidance on when professional support is needed.",
     "image": "images/how-to-calm-your-nervous-system-fast.jpg",
     "alt": "Woman practicing how to calm nervous system fast at home",
     "pins": [
@@ -78,12 +78,12 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-a-routine-that-survives-a-busy-week",
-    "title": "7 Ways to Build a Routine That Survives a Busy Week (Without Falling Apart)",
+    "title": "How to Build a Flexible Routine for a Busy Week",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Aug 2026",
     "read_time": "8",
-    "excerpt": "Knowing how to build a routine that survives a busy week is one of the most practical skills you can develop for your health. Most people design their habi",
+    "excerpt": "Build a flexible routine for a busy week with smaller fallback habits, realistic planning, and clear limits that support rather than pressure you.",
     "image": "images/how-to-build-a-routine-that-survives-a-busy-week.jpg",
     "alt": "woman writing morning routine plan during a busy week",
     "pins": [
