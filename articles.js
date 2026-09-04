@@ -128,12 +128,12 @@ const ARTICLES = [
   },
   {
     "slug": "why-chronic-stress-makes-everything-feel-harder",
-    "title": "7 Reasons Why Chronic Stress Makes Everything Feel Harder (And What to Do About It)",
+    "title": "Why Ongoing Stress Can Make Daily Life Feel Harder",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Aug 2026",
     "read_time": "8",
-    "excerpt": "Why chronic stress makes everything feel harder is not just a feeling you are imagining. There is real science behind why even small tasks start to feel im",
+    "excerpt": "Understand how ongoing stress can affect daily life, identify supportive next steps, and learn when persistent symptoms should be discussed with a professional.",
     "image": "images/why-chronic-stress-makes-everything-feel-harder.jpg",
     "alt": "Tired woman at kitchen table showing signs of chronic stress",
     "pins": [
