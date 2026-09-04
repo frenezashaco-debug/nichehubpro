@@ -19,6 +19,7 @@ __pycache__/
 !clean_ai_text.py
 !fix_section_images.py
 !add_references.py
+!normalize_article_schema.py
 
 # Tracking and log files
 *.txt

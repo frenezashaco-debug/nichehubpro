@@ -372,15 +372,6 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
                 f'style="color:var(--dark);font-weight:500;">{source}</a></li>\n'
             )
 
-    # Build FAQ schema
-    faq_schema_items = ",\n".join([
-        f'''      {{
-        "@type": "Question",
-        "name": {json.dumps(f["question"])},
-        "acceptedAnswer": {{ "@type": "Answer", "text": {json.dumps(f["answer"])} }}
-      }}''' for f in faq_items
-    ])
-
     # Build TOC from section headings
     toc_items = ""
     for i, sec in enumerate(sections):
@@ -508,20 +499,11 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
     "image": "{SITE_URL}/images/{cover_filename}",
     "datePublished": "{today_iso}",
     "dateModified": "{today_iso}",
-    "author": {{ "@type": "Person", "name": "{author_name}", "url": "{SITE_URL}/author/sarah-mitchell/", "jobTitle": "{author_title}" }},
+    "author": {{ "@type": "Organization", "name": "{author_name}", "url": "{SITE_URL}/editorial-policy/" }},
     "publisher": {{ "@type": "Organization", "name": "NicheHubPro", "url": "{SITE_URL}", "logo": {{ "@type": "ImageObject", "url": "{SITE_URL}/favicon.png" }} }}
   }}
   </script>
 
-  <script type="application/ld+json">
-  {{
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-{faq_schema_items}
-    ]
-  }}
-  </script>
 </head>
 <body>
 
