@@ -20,6 +20,10 @@ __pycache__/
 !fix_section_images.py
 !add_references.py
 !normalize_article_schema.py
+!site_quality_audit.py
+
+# Generated local quality reports
+reports/
 
 # Tracking and log files
 *.txt

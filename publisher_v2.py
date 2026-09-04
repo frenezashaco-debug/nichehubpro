@@ -59,7 +59,7 @@ AUTHORS = {
 }
 
 # ── SYSTEM PROMPT ────────────────────────────────────────────────────────
-SYSTEM_PROMPT = """You are an expert SEO content writer for NicheHubPro, a mental wellness blog.
+SYSTEM_PROMPT = """You are a careful editorial writer for NicheHubPro, a mental wellness blog.
 Your audience: real people dealing with stress, anxiety, and overthinking.
 Your job: write human, motivational, deeply useful articles — NOT robotic AI content.
 
@@ -75,6 +75,8 @@ ABSOLUTE WRITING RULES (never break these):
 - Write like a knowledgeable friend — plain, direct, warm English
 - Meta description MUST be exactly 155-160 characters (count carefully)
 - Do not invent statistics, study results, clinical outcomes, credentials, personal histories, quotes, or named people.
+- Do not name an institution, university, clinic, journal, or expert in the article unless the exact supporting direct URL is returned in references. A generic source name is not evidence.
+- Do not use a percentage, time-to-result, "brain chemical" explanation, or comparison to treatment merely to make the copy persuasive. If a claim cannot be checked, write a practical observation without presenting it as research.
 - Do not make a medical diagnosis, promise an outcome, or present self-help as a substitute for professional care.
 - Avoid absolutes such as "works instantly", "guaranteed", "rewires your brain", "cures", "proven to", or "will fix".
 - For health, anxiety, panic, sleep, nutrition, or burnout topics, use cautious language such as "may help", "can be worth trying", and "consider speaking with a qualified clinician".
@@ -222,6 +224,7 @@ REQUIREMENTS:
 - Cover image: unique realistic wellness photo prompt for this specific topic
 - Section images: 3 unique FLUX prompts in section_image_prompts (indexes 0, 2, 4). Each must show a DIFFERENT scene, person, and moment from each other and from the cover. Contextual to section content. No text, no logos.
 - References: 3-5 entries citing REAL organizations only (Mayo Clinic, NHS, NIMH, APA, ADAA, Harvard Health, CDC, WHO, National Sleep Foundation, Cleveland Clinic, AHA). Each claim must support something written in the article. Never make a precise numerical, causal, or clinical claim unless its direct source URL supports it. Use a direct official source URL only when you are certain it is accurate; otherwise omit the claim.
+- References: use only the direct official page of an institution listed in the publisher's source policy. Never cite an organization homepage, a search result, a guessed URL, a social post, or a general publication page. If three direct sources cannot be verified, return an empty references list and let the publisher reject the draft.
 
 Return ONLY the JSON. No em dashes anywhere."""
 
@@ -747,6 +750,18 @@ QUALITY_BLOCKLIST = (
     r"rewire(?:s|d)? your brain|will fix|will heal|medical emergency)\b"
 )
 
+# References in a publishable draft must come from sources an editor can review.
+# This is intentionally conservative: a draft that needs a new source is safer
+# to reject than a health claim supported by a guessed or generic link.
+AUTHORITATIVE_SOURCE_HOSTS = {
+    "www.cdc.gov", "cdc.gov", "www.nimh.nih.gov", "nimh.nih.gov",
+    "www.nccih.nih.gov", "nccih.nih.gov", "www.nih.gov", "nih.gov",
+    "medlineplus.gov", "www.medlineplus.gov", "www.who.int", "who.int",
+    "www.nhs.uk", "nhs.uk", "www.heart.org", "heart.org",
+    "www.health.gov", "health.gov", "ods.od.nih.gov",
+    "pubmed.ncbi.nlm.nih.gov", "pmc.ncbi.nlm.nih.gov",
+}
+
 
 def validate_article_quality(data, primary_kw):
     """Reject weak or unsafe generator output before it can be published."""
@@ -771,6 +786,8 @@ def validate_article_quality(data, primary_kw):
             errors.append(f"reference {index} needs a direct HTTPS URL")
         elif parsed_url.path in ("", "/"):
             errors.append(f"reference {index} must link to a direct source page, not an organization homepage")
+        elif (parsed_url.hostname or "").lower() not in AUTHORITATIVE_SOURCE_HOSTS:
+            errors.append(f"reference {index} uses a source outside the approved editorial source policy")
 
     example = (data.get("real_example") or "").lower()
     if "sarah" in example:
