@@ -1,7 +1,7 @@
 """
 NicheHubPro — Cover Image Generator
 Uses HF FLUX.1-schnell for all image generation.
-Falls back to branded Pillow cover on error.
+Generation fails closed when a compliant image cannot be created.
 
 Usage:
   python generate_cover.py "how to stop overthinking at night" "Mental Wellness"
@@ -11,7 +11,7 @@ Usage:
 import sys, os, re, io, time, requests, urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 sys.stdout.reconfigure(encoding='utf-8')
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image
 
 OUT_DIR   = os.path.join(os.path.dirname(os.path.abspath(__file__)), "images")
 
@@ -42,27 +42,8 @@ NEGATIVE_PROMPT = (
     "extra hands, three hands, fused fingers, distorted hands, deformed fingers, "
     "extra limbs, extra arms, floating hands, unnatural hands, bad anatomy"
 )
-# Font paths — Windows first, Linux fallback
-def _find_font(win_path, linux_names):
-    if os.path.exists(win_path):
-        return win_path
-    for name in linux_names:
-        for d in ["/usr/share/fonts", "/usr/local/share/fonts", "/usr/share/fonts/truetype"]:
-            for root, _, files in os.walk(d):
-                if name in files:
-                    return os.path.join(root, name)
-    return None
-
-FONT_BOLD = _find_font("c:/Windows/Fonts/arialbd.ttf", ["DejaVuSans-Bold.ttf", "LiberationSans-Bold.ttf"])
-FONT_REG  = _find_font("c:/Windows/Fonts/arial.ttf",   ["DejaVuSans.ttf",      "LiberationSans-Regular.ttf"])
 W, H      = 800, 450
 MAX_KB    = 80
-
-# ── BRAND COLORS (fallback) ───────────────────────────────────────────────
-DARK1  = (30,  42,  47)
-DARK2  = (20,  55,  45)
-GREEN  = (107, 175, 146)
-WHITE  = (255, 255, 255)
 
 CATEGORY_SCENES = {
     "Mental Wellness":   {
@@ -239,66 +220,6 @@ def generate_with_ai(topic, category, custom_prompt=None, retries=3, candidates=
         print(f"  Selected best candidate: {best_unique} unique colors")
     return best_img
 
-# ── PILLOW FALLBACK ───────────────────────────────────────────────────────
-def generate_pillow_cover(title, category):
-    img = Image.new('RGB', (W, H), DARK1)
-    draw = ImageDraw.Draw(img)
-    for y in range(H):
-        t = y / H
-        r = int(DARK1[0] + (DARK2[0] - DARK1[0]) * t)
-        g = int(DARK1[1] + (DARK2[1] - DARK1[1]) * t)
-        b = int(DARK1[2] + (DARK2[2] - DARK1[2]) * t)
-        draw.line([(0, y), (W, y)], fill=(r, g, b))
-
-    overlay = Image.new('RGBA', (W, H), (0, 0, 0, 0))
-    od = ImageDraw.Draw(overlay)
-    for i in range(40):
-        t = i / 40
-        r = int(380 * (1 - t))
-        a = int(50 * (1 - t) ** 2)
-        od.ellipse([int(W*0.75)-r, int(H*0.25)-r, int(W*0.75)+r, int(H*0.25)+r],
-                   fill=(GREEN[0], GREEN[1], GREEN[2], a))
-    img = Image.alpha_composite(img.convert('RGBA'), overlay).convert('RGB')
-    draw = ImageDraw.Draw(img)
-    draw.rectangle([0, 0, W, 4], fill=GREEN)
-
-    try:
-        font_t = ImageFont.truetype(FONT_BOLD, 58 if len(title) <= 50 else 46)
-        font_c = ImageFont.truetype(FONT_BOLD, 22)
-        font_b = ImageFont.truetype(FONT_BOLD, 20)
-        font_u = ImageFont.truetype(FONT_REG,  18)
-    except Exception:
-        font_t = font_c = font_b = font_u = ImageFont.load_default()
-
-    cat_text = category.upper()
-    bx, by = 60, 52
-    bb = draw.textbbox((0,0), cat_text, font=font_c)
-    bw, bh = bb[2]-bb[0]+36, bb[3]-bb[1]+18
-    bi = Image.new('RGBA', (W,H), (0,0,0,0))
-    bd = ImageDraw.Draw(bi)
-    bd.rounded_rectangle([bx, by, bx+bw, by+bh], radius=bh//2,
-                         fill=(107,175,146,40), outline=(107,175,146,120), width=1)
-    img = Image.alpha_composite(img.convert('RGBA'), bi).convert('RGB')
-    draw = ImageDraw.Draw(img)
-    draw.text((bx+18, by+9), cat_text, font=font_c, fill=GREEN)
-
-    words, lines, current = title.split(), [], []
-    for word in words:
-        test = ' '.join(current + [word])
-        if draw.textbbox((0,0), test, font=font_t)[2] > W-120 and current:
-            lines.append(' '.join(current)); current = [word]
-        else:
-            current.append(word)
-    if current: lines.append(' '.join(current))
-    lh = draw.textbbox((0,0),"Ag",font=font_t)[3] + 14
-    ty = 160
-    for line in lines:
-        draw.text((60, ty), line, font=font_t, fill=WHITE); ty += lh
-    draw.rectangle([60, ty+14, 124, ty+18], fill=GREEN)
-    draw.text((60, H-58), "NicheHubPro", font=font_b, fill=WHITE)
-    draw.text((60+134, H-57), "nichehubpro.com", font=font_u, fill=GREEN)
-    return img
-
 # ── MAIN FUNCTION ─────────────────────────────────────────────────────────
 def generate_cover(title, category="Mental Wellness",
                    output_path=None, custom_prompt=None):
@@ -307,11 +228,14 @@ def generate_cover(title, category="Mental Wellness",
     if output_path is None:
         output_path = os.path.join(OUT_DIR, slug(title) + ".jpg")
 
-    # Try AI generation first, fall back to Pillow
+    # Never fall back to a branded graphic: article imagery must never contain
+    # text, logos, signatures, or watermarks.
     img = generate_with_ai(title, category, custom_prompt)
     if img is None:
-        print("  Falling back to Pillow cover...")
-        img = generate_pillow_cover(title, category)
+        raise RuntimeError(
+            "Cover generation failed. No image was saved because a professional "
+            "cover must be a text-free, logo-free, watermark-free photograph."
+        )
 
     # Compress to <100kb
     data, quality, size_kb = compress_to_limit(img)

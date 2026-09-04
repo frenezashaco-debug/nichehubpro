@@ -24,6 +24,7 @@ __pycache__/
 
 # Generated local quality reports
 reports/
+drafts/
 
 # Tracking and log files
 *.txt

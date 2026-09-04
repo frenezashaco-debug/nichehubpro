@@ -33,6 +33,7 @@ API_KEY = _cfg_key or (_env_key if not _env_key.startswith("your-") else "") or 
 BASE_DIR    = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR     = os.path.join(BASE_DIR, "articles")
 IMAGES_DIR  = os.path.join(BASE_DIR, "images")
+DRAFTS_DIR  = os.path.join(BASE_DIR, "drafts")
 SITE_URL    = "https://nichehubpro.com"
 
 CATEGORY_URLS = {
@@ -185,16 +186,16 @@ def build_user_prompt(primary_kw, secondary_kw, longtail_kw, category, existing_
         links_block = (
             "INTERNAL LINKS — you MUST only link to articles from this exact list (real published pages):\n"
             + "\n".join([f'  - slug: "{a["slug"]}" | title: "{a["title"]}"' for a in existing_articles])
-            + "\n  Pick 2-4 of these. Use descriptive anchor text. Never invent slugs not on this list."
+            + "\n  Pick 3-5 of these. Use descriptive anchor text. Never invent slugs not on this list."
         )
     else:
         links_block = "Internal links: 3-5 with unique descriptive anchors relevant to the topic."
 
     length_line = (
-        "Write a 4500+ word comprehensive PILLAR/CORNERSTONE SEO article for NicheHubPro. "
+        "Write a 3500-5000 word comprehensive PILLAR/CORNERSTONE SEO article for NicheHubPro. "
         "This is a flagship guide meant to be the definitive resource on this topic and a hub other articles link into."
         if cornerstone else
-        "Write a 1800+ word SEO article for NicheHubPro."
+        "Write at least 1800 genuine words for NicheHubPro, with a target of 2000-2500 words. Do not pad the article to reach a word count."
     )
     section_count_line = (
         "9-11 sections with VARIED headings that together cover this topic comprehensively (see JSON schema — never the same pattern for every article). Go deeper than a normal article: include sub-angles, edge cases, and nuance a shorter article would skip."
@@ -222,8 +223,8 @@ REQUIREMENTS:
 - FAQ: 5 real questions people search on Google about this topic
 - Conclusion: motivational, encourage one small habit today
 - Cover image: unique realistic wellness photo prompt for this specific topic
-- Section images: 3 unique FLUX prompts in section_image_prompts (indexes 0, 2, 4). Each must show a DIFFERENT scene, person, and moment from each other and from the cover. Contextual to section content. No text, no logos.
-- References: 3-5 entries citing REAL organizations only (Mayo Clinic, NHS, NIMH, APA, ADAA, Harvard Health, CDC, WHO, National Sleep Foundation, Cleveland Clinic, AHA). Each claim must support something written in the article. Never make a precise numerical, causal, or clinical claim unless its direct source URL supports it. Use a direct official source URL only when you are certain it is accurate; otherwise omit the claim.
+- Section images: 3 unique FLUX prompts in section_image_prompts (indexes 0, 2, 4). Each must show a DIFFERENT scene, person, and moment from each other and from the cover. Contextual to section content. No text, no logos, no signatures, and no watermarks.
+- References: 3-5 entries citing only these approved direct institutional or primary sources: CDC, NIMH, NCCIH, NIH, MedlinePlus, WHO, NHS, AHA, HHS, ODS, PubMed, or PMC. Each claim must support something written in the article. Never make a precise numerical, causal, or clinical claim unless its direct source URL supports it. Use a direct official source URL only when you are certain it is accurate; otherwise omit the claim.
 - References: use only the direct official page of an institution listed in the publisher's source policy. Never cite an organization homepage, a search result, a guessed URL, a social post, or a general publication page. If three direct sources cannot be verified, return an empty references list and let the publisher reject the draft.
 
 Return ONLY the JSON. No em dashes anywhere."""
@@ -749,6 +750,12 @@ QUALITY_BLOCKLIST = (
     r"\b(?:guarantee(?:d)?|cure(?:s|d)?|miracle|instant(?:ly)?|"
     r"rewire(?:s|d)? your brain|will fix|will heal|medical emergency)\b"
 )
+EM_DASH_PATTERN = re.compile(r"[\u2013\u2014\u2015]|&(?:mdash|ndash);|&#(?:8211|8212);", re.IGNORECASE)
+AI_CLICHE_PATTERN = re.compile(
+    r"\b(?:in today's fast-paced world|it is important to note|in conclusion|"
+    r"in summary|to summarize|delv(?:e|es|ing)|game-changer|unlock your potential)\b",
+    re.IGNORECASE,
+)
 
 # References in a publishable draft must come from sources an editor can review.
 # This is intentionally conservative: a draft that needs a new source is safer
@@ -763,16 +770,63 @@ AUTHORITATIVE_SOURCE_HOSTS = {
 }
 
 
-def validate_article_quality(data, primary_kw):
-    """Reject weak or unsafe generator output before it can be published."""
+def _visible_word_count(value):
+    """Count reader-visible words, not HTML tags or JSON formatting."""
+    text = re.sub(r"<[^>]+>", " ", str(value or ""))
+    text = html.unescape(text)
+    return len(re.findall(r"[A-Za-z0-9]+(?:['-][A-Za-z0-9]+)*", text))
+
+
+def _prompt_has_no_text_safeguards(prompt):
+    prompt = str(prompt or "").lower()
+    return all(term in prompt for term in ("no text", "no logo", "no watermark"))
+
+
+def validate_article_quality(data, primary_kw, cornerstone=False):
+    """Reject weak, unsafe, or unreviewable generator output before publication."""
     errors = []
     meta = (data.get("meta_description") or "").strip()
     if not 155 <= len(meta) <= 160:
         errors.append(f"meta description must be 155-160 characters, got {len(meta)}")
 
     sections = data.get("sections") or []
-    if len(sections) < 5:
-        errors.append(f"expected at least 5 sections, got {len(sections)}")
+    minimum_sections = 9 if cornerstone else 6
+    if len(sections) < minimum_sections:
+        errors.append(f"expected at least {minimum_sections} sections, got {len(sections)}")
+
+    headings = [re.sub(r"\s+", " ", str(section.get("h2", "")).strip().lower()) for section in sections]
+    if len(headings) != len(set(headings)):
+        errors.append("section headings must be distinct")
+
+    min_section_words = 500 if cornerstone else 300
+    for index, section in enumerate(sections, 1):
+        if not section.get("h2"):
+            errors.append(f"section {index} is missing its heading")
+        if _visible_word_count(section.get("content")) < min_section_words:
+            errors.append(f"section {index} has fewer than {min_section_words} genuine words")
+
+    total_words = _visible_word_count(" ".join([
+        data.get("intro", ""), data.get("tldr", ""), data.get("real_example", ""),
+        data.get("conclusion", ""), *(section.get("content", "") for section in sections),
+    ]))
+    minimum_words = 3500 if cornerstone else 1800
+    if total_words < minimum_words:
+        errors.append(f"article needs at least {minimum_words} genuine words, got {total_words}")
+
+    intro_paragraphs = [paragraph.strip() for paragraph in str(data.get("intro", "")).split("\n") if paragraph.strip()]
+    if len(intro_paragraphs) != 3:
+        errors.append("intro must contain exactly 3 short paragraphs")
+
+    faq = data.get("faq") or []
+    if len(faq) < 5 or any(not item.get("question") or not item.get("answer") for item in faq):
+        errors.append("FAQ must contain 5 complete reader questions and answers")
+
+    internal_links = data.get("internal_links") or []
+    anchors = [str(link.get("anchor", "")).strip().lower() for link in internal_links]
+    if not 3 <= len(internal_links) <= 5:
+        errors.append(f"expected 3-5 internal links, got {len(internal_links)}")
+    if not all(anchors) or len(anchors) != len(set(anchors)):
+        errors.append("internal-link anchor text must be present and unique")
 
     references = data.get("references") or []
     if len(references) < 3:
@@ -792,6 +846,8 @@ def validate_article_quality(data, primary_kw):
     example = (data.get("real_example") or "").lower()
     if "sarah" in example:
         errors.append("illustrative scenario must not present Sarah as a reader case study")
+    if "illustrative" not in example:
+        errors.append("real_example must be labelled as an illustrative scenario")
 
     searchable_fields = [
         data.get("title", ""), data.get("intro", ""), data.get("tldr", ""),
@@ -800,19 +856,92 @@ def validate_article_quality(data, primary_kw):
     article_text = " ".join(searchable_fields)
     if re.search(QUALITY_BLOCKLIST, article_text, flags=re.IGNORECASE):
         errors.append("contains a prohibited absolute, cure, instant-result, or medical-emergency claim")
+    if EM_DASH_PATTERN.search(article_text):
+        errors.append("contains an em dash or en dash")
+    if AI_CLICHE_PATTERN.search(article_text):
+        errors.append("contains a banned AI-style phrase")
+
+    cover_prompt = data.get("cover_image_prompt", "")
+    if not _prompt_has_no_text_safeguards(cover_prompt):
+        errors.append("cover prompt must explicitly prohibit text, logos, and watermarks")
+    image_prompts = data.get("section_image_prompts") or []
+    if len(image_prompts) < 3:
+        errors.append("expected 3 section-image prompts")
+    for index, image_prompt in enumerate(image_prompts, 1):
+        if not _prompt_has_no_text_safeguards(image_prompt.get("prompt", "")):
+            errors.append(f"section image prompt {index} must prohibit text, logos, and watermarks")
 
     if primary_kw.lower() not in (data.get("title", "").lower() + " " + meta.lower()):
         errors.append("primary keyword is missing from the title or meta description")
     return errors
 
 
-def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_images=False, cornerstone=False):
+def save_editorial_draft(data, primary_kw, cornerstone=False):
+    """Store a review packet locally. Drafts never update public site files or webhooks."""
+    os.makedirs(DRAFTS_DIR, exist_ok=True)
+    article_slug = data["slug"]
+    total_words = _visible_word_count(" ".join([
+        data.get("intro", ""), data.get("tldr", ""), data.get("real_example", ""),
+        data.get("conclusion", ""), *(section.get("content", "") for section in data.get("sections", [])),
+    ]))
+    data["editorial_status"] = "requires_human_review"
+    data["editorial_word_count"] = total_words
+
+    draft_path = os.path.join(DRAFTS_DIR, f"{article_slug}.json")
+    with open(draft_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+    references = data.get("references", [])
+    source_lines = "\n".join(
+        f"- {reference.get('source', 'Unknown source')}: {reference.get('url', '')}"
+        for reference in references
+    ) or "- No sources supplied"
+    review_path = os.path.join(DRAFTS_DIR, f"{article_slug}-review.md")
+    review = f"""# Human editorial review required
+
+Title: {data.get('title', '')}
+
+Primary keyword: {primary_kw}
+
+Word count: {total_words}
+
+Content type: {'Cornerstone guide' if cornerstone else 'Standard article'}
+
+## Reviewer checklist
+
+- Confirm every source opens and supports the exact statement beside it.
+- Remove or soften any claim that cannot be supported by those sources.
+- Check the article sounds specific and useful, not templated or repetitive.
+- Confirm advice is safe, practical, and does not replace professional care.
+- Approve the final title, meta description, internal links, and image concepts.
+- Only use `--publish` after this review is complete.
+
+## Sources to verify
+
+{source_lines}
+"""
+    with open(review_path, "w", encoding="utf-8") as f:
+        f.write(review)
+    print(f"Draft saved for human review: drafts/{article_slug}.json")
+    print(f"Review checklist saved: drafts/{article_slug}-review.md")
+    return article_slug
+
+
+def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_images=False,
+                     cornerstone=False, publish=False):
     print(f"\n{'='*60}")
     print(f"Keyword : {primary_kw}")
     print(f"Category: {category}")
     if cornerstone:
-        print("Mode    : CORNERSTONE (4500+ words)")
+        print("Mode    : CORNERSTONE (3500-5000 words)")
+    print(f"Output  : {'PUBLISH' if publish else 'REVIEW DRAFT ONLY'}")
     print(f"{'='*60}")
+
+    if publish:
+        draft_path = os.path.join(DRAFTS_DIR, slug(primary_kw) + ".json")
+        with open(draft_path, encoding="utf-8") as draft_file:
+            reviewed = json.load(draft_file)
+        return publish_reviewed_draft(reviewed, primary_kw, category, skip_images, cornerstone)
 
     client = anthropic.Anthropic(api_key=API_KEY)
 
@@ -870,19 +999,33 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_image
     article_slug = slug(primary_kw)
     data["slug"] = article_slug
 
-    quality_errors = validate_article_quality(data, primary_kw)
+    quality_errors = validate_article_quality(data, primary_kw, cornerstone=cornerstone)
     if quality_errors:
         print("ERROR: Article failed the pre-publish quality gate:")
         for error in quality_errors:
             print(f"  - {error}")
         return None
 
+    return save_editorial_draft(data, primary_kw, cornerstone=cornerstone)
+
+
+def publish_reviewed_draft(data, primary_kw, category, skip_images=False, cornerstone=False):
+    """Publish saved reviewed text without regenerating it."""
+    if data.get("editorial_status") != "approved" or not str(data.get("reviewed_by", "")).strip():
+        raise ValueError("Human review required: record editorial_status=approved and reviewed_by in the draft.")
+    errors = validate_article_quality(data, primary_kw, cornerstone=cornerstone)
+    if errors:
+        raise ValueError("Reviewed draft failed quality checks: " + "; ".join(errors))
+    article_slug = slug(primary_kw)
+    if data.get("slug") != article_slug or data.get("category") != category:
+        raise ValueError("Reviewed draft identity mismatch.")
+
     # Log the cover image prompt (for future AI image generation)
     cover_prompt = data.get("cover_image_prompt", "")
     if cover_prompt:
         print(f"\nCover concept:\n  {cover_prompt[:120]}...")
 
-    # Generate cover image (branded Pillow version)
+    # Generate a no-text, no-watermark cover only after an editor has approved it.
     cover_filename = article_slug + ".jpg"
     cover_path = os.path.join(IMAGES_DIR, cover_filename)
 
@@ -1226,11 +1369,14 @@ def ping_google():
 
 if __name__ == "__main__":
     args = sys.argv[1:]
+    publish = "--publish" in args
+    args = [arg for arg in args if arg != "--publish"]
     if len(args) < 2:
-        print("Usage: python publisher_v2.py \"primary keyword\" \"category\" [\"secondary kw\"] [\"longtail kw\"]")
+        print("Usage: python publisher_v2.py \"primary keyword\" \"category\" [\"secondary kw\"] [\"longtail kw\"] [--publish]")
+        print("Default: creates a local review draft only. Use --publish only after human review.")
         sys.exit(1)
     primary  = args[0]
     category = args[1]
     secondary = args[2] if len(args) > 2 else primary
     longtail  = args[3] if len(args) > 3 else primary
-    generate_article(primary, secondary, longtail, category)
+    generate_article(primary, secondary, longtail, category, publish=publish)
