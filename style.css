@@ -1645,6 +1645,20 @@ img[fetchpriority="high"] { max-height: 520px; object-fit: cover; border-radius:
 .mb-0 { margin-bottom: 0 !important; }
 .divider { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
 
+/* ── EVIDENCE LINKS ──────────────────────────────────────────── */
+.sources-card {
+  margin-top: 24px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-2);
+  color: var(--gray);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.sources-card strong { color: var(--navy); }
+.sources-card a { color: var(--green-dark); font-weight: 600; }
+
 /* ── RESPONSIVE ───────────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .grid-3 { grid-template-columns: repeat(2, 1fr); }

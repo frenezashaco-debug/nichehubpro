@@ -26,7 +26,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 NAMED_SOURCES = re.compile(
     r"\b(?:APA|American Psychological Association|Harvard(?: Health)?|"
     r"Mayo Clinic|Stanford(?: University)?|Cleveland Clinic|"
-    r"National Sleep Foundation|University College London|CDC|WHO|NIMH)\b",
+    r"National Sleep Foundation|University College London|CDC|NIMH)\b",
     re.I,
 )
 UNSUPPORTED_EVIDENCE = re.compile(
@@ -82,7 +82,9 @@ def article_row(path: Path) -> dict[str, object]:
     urls = external_urls(markup)
     source_urls = [url for url in urls if urlparse(url).netloc not in {"play.google.com", "www.pinterest.com"}]
     homepages = [url for url in source_urls if HOME_PAGE.match(url)]
-    named_mentions = len(NAMED_SOURCES.findall(text))
+    # WHO is deliberately handled case-sensitively. With a case-insensitive
+    # pattern, ordinary uses of the word "who" became false institutional hits.
+    named_mentions = len(NAMED_SOURCES.findall(text)) + len(re.findall(r"\bWHO\b", text))
     unsupported = len(UNSUPPORTED_EVIDENCE.findall(text))
     precise = len(PRECISE_CLAIM.findall(text))
     absolutes = len(MEDICAL_ABSOLUTE.findall(text))
