@@ -1346,6 +1346,27 @@ def update_sitemap(articles):
             lastmod = today
         urls.append(f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{lastmod}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>")
 
+    # Keep the sitemap complete even when an older article exists on disk but
+    # is not present in the generated ARTICLES registry yet.
+    known_slugs = {a.get('slug') for a in articles}
+    if os.path.isdir(OUT_DIR):
+        for filename in sorted(os.listdir(OUT_DIR)):
+            if not filename.endswith('.html'):
+                continue
+            article_slug = filename[:-5]
+            if article_slug in known_slugs:
+                continue
+            article_path = os.path.join(OUT_DIR, filename)
+            try:
+                with open(article_path, encoding='utf-8') as article_file:
+                    source = article_file.read()
+                published = re.search(r'"datePublished"\s*:\s*"(\d{4}-\d{2}-\d{2})"', source)
+                lastmod = published.group(1) if published else today
+            except OSError:
+                lastmod = today
+            loc = f"{SITE}/articles/{filename}"
+            urls.append(f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{lastmod}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>")
+
     xml = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\n'
@@ -1355,7 +1376,7 @@ def update_sitemap(articles):
 
     with open(sitemap_path, "w", encoding="utf-8") as f:
         f.write(xml)
-    print(f"  Sitemap updated ({len(articles)} articles)")
+    print(f"  Sitemap updated ({len(articles)} registry articles plus any published files on disk)")
 
 
 def backlink_existing_articles(new_slug, new_title, category):
