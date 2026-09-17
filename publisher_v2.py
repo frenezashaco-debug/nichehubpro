@@ -1206,8 +1206,7 @@ def publish_reviewed_draft(data, primary_kw, category, skip_images=False, corner
     # Reverse linking — inject this article into existing same-category articles
     backlink_existing_articles(article_slug, data["title"], category)
 
-    # Ping Google to re-crawl updated sitemap
-    ping_google()
+    # Google discovers the sitemap through robots.txt and Search Console.
 
     return article_slug
 
@@ -1230,7 +1229,7 @@ def register_article(data, cover_filename):
 
     # Build excerpt from intro (first paragraph, max 155 chars)
     intro = data.get("intro", "")
-    excerpt = intro.split("\n")[0].strip()[:155] if intro else ""
+    excerpt = textwrap.shorten(re.sub(r'<[^>]+>', ' ', intro.split("\n")[0]), width=155, placeholder="...") if intro else ""
 
     # Category slug
     cat_slug = data.get("category", "Mental Wellness").lower().replace(" ", "-")
@@ -1324,6 +1323,8 @@ def update_sitemap(articles):
         (f"{SITE}/disclaimer/",         "monthly", "0.4"),
         (f"{SITE}/terms/",              "monthly", "0.4"),
         (f"{SITE}/editorial-policy/",   "monthly", "0.6"),
+        (f"{SITE}/resources/",          "monthly", "0.7"),
+        (f"{SITE}/all-articles/",       "weekly",  "0.7"),
         (f"{SITE}/anxiety-and-stress/", "weekly",  "0.8"),
         (f"{SITE}/overthinking/",       "weekly",  "0.8"),
         (f"{SITE}/burnout-recovery/",   "weekly",  "0.8"),
@@ -1335,20 +1336,32 @@ def update_sitemap(articles):
     for loc, freq, pri in static_pages:
         urls.append(f"  <url>\n    <loc>{loc}</loc>\n    <changefreq>{freq}</changefreq>\n    <priority>{pri}</priority>\n  </url>")
 
-    today = __import__('datetime').date.today().isoformat()
-    for a in articles:
-        loc = f"{SITE}/articles/{a['slug']}.html"
-        date = a.get('date', '')
+    # Dates from month-only labels or filesystem mtimes are not reliable
+    # editorial modification dates. Omit lastmod unless explicitly recorded.
+    def lastmod_tag(article_slug):
+        path = os.path.join(OUT_DIR, article_slug + '.html')
         try:
-            import datetime
-            lastmod = datetime.datetime.strptime(date, "%B %Y").strftime("%Y-%m") + f"-01"
-        except Exception:
-            lastmod = today
-        urls.append(f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{lastmod}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>")
+            with open(path, encoding='utf-8') as handle:
+                source = handle.read()
+            match = re.search(r'"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})"', source)
+            if match:
+                modified = date.fromisoformat(match.group(1))
+                if modified <= date.today():
+                    return f'    <lastmod>{modified.isoformat()}</lastmod>\n'
+        except (OSError, ValueError):
+            pass
+        return ''
+
+    known_slugs = set()
+    for a in articles:
+        if a['slug'] in known_slugs or not os.path.isfile(os.path.join(OUT_DIR, a['slug'] + '.html')):
+            continue
+        known_slugs.add(a['slug'])
+        loc = f"{SITE}/articles/{a['slug']}.html"
+        urls.append(f"  <url>\n    <loc>{loc}</loc>\n{lastmod_tag(a['slug'])}    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>")
 
     # Keep the sitemap complete even when an older article exists on disk but
     # is not present in the generated ARTICLES registry yet.
-    known_slugs = {a.get('slug') for a in articles}
     if os.path.isdir(OUT_DIR):
         for filename in sorted(os.listdir(OUT_DIR)):
             if not filename.endswith('.html'):
@@ -1356,16 +1369,8 @@ def update_sitemap(articles):
             article_slug = filename[:-5]
             if article_slug in known_slugs:
                 continue
-            article_path = os.path.join(OUT_DIR, filename)
-            try:
-                with open(article_path, encoding='utf-8') as article_file:
-                    source = article_file.read()
-                published = re.search(r'"datePublished"\s*:\s*"(\d{4}-\d{2}-\d{2})"', source)
-                lastmod = published.group(1) if published else today
-            except OSError:
-                lastmod = today
             loc = f"{SITE}/articles/{filename}"
-            urls.append(f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{lastmod}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>")
+            urls.append(f"  <url>\n    <loc>{loc}</loc>\n{lastmod_tag(article_slug)}    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>")
 
     xml = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -1486,20 +1491,6 @@ def send_pinterest_webhook(article_slug, title, category, cover_filename, pins):
             print(f"  Pinterest webhook failed: {r.status_code}")
     except Exception as e:
         print(f"  Pinterest webhook error: {e}")
-
-
-def ping_google():
-    """Ping Google to re-crawl the updated sitemap."""
-    try:
-        import requests
-        url = "https://www.google.com/ping?sitemap=https://nichehubpro.com/sitemap.xml"
-        resp = requests.get(url, timeout=10)
-        if resp.status_code == 200:
-            print("  Google pinged: sitemap re-crawl requested")
-        else:
-            print(f"  Google ping returned {resp.status_code}")
-    except Exception as e:
-        print(f"  Google ping failed (non-critical): {e}")
 
 
 if __name__ == "__main__":

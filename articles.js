@@ -3,12 +3,12 @@
 const ARTICLES = [
   {
     "slug": "the-science-of-habit-formation-explained-simply",
-    "title": "7 Science of Habit Formation Explained Simply - What Your Brain Is Actually Doing",
+    "title": "The Science of Habit Formation: 7 Practical Lessons",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Sep 2026",
     "read_time": "8",
-    "excerpt": "The science of habit formation explained simply can help when a new routine falls apart and you start blaming your willpower. A setback does not automatica",
+    "excerpt": "Understand habit cues, repetition, and rewards, then choose a small routine you can adapt to your everyday life.",
     "image": "images/the-science-of-habit-formation-explained-simply.jpg",
     "alt": "young woman journaling at kitchen table for habit formation",
     "pins": [
@@ -28,12 +28,12 @@ const ARTICLES = [
   },
   {
     "slug": "what-neuroplasticity-means-for-changing-your-habits",
-    "title": "7 Ways What Neuroplasticity Means for Changing Your Habits Can Support Better Routines",
+    "title": "Neuroplasticity and Habit Change: 7 Practical Lessons",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Sep 2026",
     "read_time": "8",
-    "excerpt": "Neuroplasticity and habit change are connected in ways that can make repeated behavior easier to understand. When a habit feels difficult to change, that d",
+    "excerpt": "Explore what neuroplasticity means for habit change, including practical steps and the limits of promises about rewiring your brain.",
     "image": "images/what-neuroplasticity-means-for-changing-your-habits.jpg",
     "alt": "Young woman journaling at desk exploring neuroplasticity and habit change",
     "pins": [
@@ -58,7 +58,7 @@ const ARTICLES = [
     "cat_slug": "healthy-lifestyle",
     "date": "Sep 2026",
     "read_time": "8",
-    "excerpt": "How to build energy that lasts all day without crashing is a practical question when your mornings feel fine but your afternoons become difficult. You may ",
+    "excerpt": "Build a steadier daily routine around sleep, meals, movement, and breaks, and learn when persistent fatigue needs medical attention.",
     "image": "images/how-to-build-energy-that-lasts-all-day-without-crashing.jpg",
     "alt": "Young woman eating protein breakfast for sustained energy without crash",
     "pins": [
@@ -83,7 +83,7 @@ const ARTICLES = [
     "cat_slug": "productivity",
     "date": "Sep 2026",
     "read_time": "8",
-    "excerpt": "How to recover focus after a distraction matters whenever an interruption breaks your train of thought and leaves you unsure where to resume. That experien",
+    "excerpt": "Use a simple restart routine to return to a task after an interruption, with examples for meetings, messages, and noisy workspaces.",
     "image": "images/how-to-recover-focus-after-a-distraction.jpg",
     "alt": "woman regaining focus after distraction at home desk",
     "pins": [
@@ -108,7 +108,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Sep 2026",
     "read_time": "8",
-    "excerpt": "Feeling guilty for resting is a common experience, yet many people rarely talk about it openly.",
+    "excerpt": "Explore why resting can feel uncomfortable and practice setting boundaries that make room for recovery without self-criticism.",
     "image": "images/how-to-stop-feeling-guilty-for-resting.jpg",
     "alt": "Young woman resting on sofa, feeling guilty for resting",
     "pins": [
@@ -133,7 +133,7 @@ const ARTICLES = [
     "cat_slug": "healthy-lifestyle",
     "date": "Sep 2026",
     "read_time": "8",
-    "excerpt": "Why hydration affects your focus more than you think is one of the most overlooked facts in everyday wellness. Most people reach for coffee when their brai",
+    "excerpt": "Recognize possible signs of dehydration, build manageable drinking habits, and understand why difficulty focusing can have other causes.",
     "image": "images/why-hydration-affects-your-focus-more-than-you-think.jpg",
     "alt": "young woman drinking water at desk improving focus naturally",
     "pins": [
