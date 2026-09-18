@@ -1278,7 +1278,7 @@ const ARTICLES = [
   },
   {
     "slug": "best-evening-habits-for-better-sleep",
-    "title": "7 Best Evening Habits for Better Sleep That Actually Work (Science-Backed)",
+    "title": "7 Evening Habits for a More Consistent Bedtime",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jun 2026",
@@ -1803,7 +1803,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-habits-that-actually-stick",
-    "title": "5 Ways to Build Habits That Actually Stick: The Science-Backed Strategy That Finally Works",
+    "title": "5 Practical Ways to Build Habits That Actually Stick",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
@@ -2703,7 +2703,7 @@ const ARTICLES = [
   },
   {
     "slug": "sleep-routine-tips",
-    "title": "7 Sleep Routine Tips That End Your Sleepless Nights Forever",
+    "title": "7 Sleep Routine Tips for a Calmer Evening",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
