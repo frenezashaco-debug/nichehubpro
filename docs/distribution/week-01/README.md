@@ -55,7 +55,7 @@ On September 19, both public profiles opened successfully, but Pinterest display
 Before release:
 
 1. The owner reads and approves the three adaptations and revised website pages. Do not describe this automated review as human or medical validation.
-2. Confirm the deployed pages reflect the changes, their images load, and FAQ controls work.
+2. Deployment checked on September 19 after pushing commit 63d7ad1 and purging only the three article URLs and sitemap in Cloudflare. All three public H1s and modification dates match the revisions. One FAQ was opened successfully on each page. Cover images loaded; the two remaining lazy-loaded habit images returned HTTP 200. The sitemap returned HTTP 200. Recheck if the content changes before publication.
 3. Sign in to the intended Pinterest and Medium accounts in the connected browser.
 4. Check existing drafts and scheduled posts to avoid duplicates. Select the proposed existing boards and confirm a publication time.
 5. Keep source attribution and an honest AI-assistance disclosure. For an actual republication, set Medium's canonical field to the original URL without UTM parameters; these adaptations are standalone pieces, so do not blindly assign a canonical without deciding whether they are equivalent content.
