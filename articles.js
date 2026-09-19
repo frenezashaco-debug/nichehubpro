@@ -53,7 +53,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-energy-that-lasts-all-day-without-crashing",
-    "title": "7 Ways to Build Energy That Lasts All Day Without Crashing (Finally Feel Awake)",
+    "title": "7 Ways to Plan for Steadier Energy During the Day",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Sep 2026",
@@ -128,7 +128,7 @@ const ARTICLES = [
   },
   {
     "slug": "why-hydration-affects-your-focus-more-than-you-think",
-    "title": "7 Reasons Why Hydration Affects Your Focus More Than You Think (And How to Fix It Fast)",
+    "title": "Hydration and Focus: What to Notice and Do",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Sep 2026",
@@ -228,7 +228,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-protect-your-focus-from-constant-interruptions",
-    "title": "7 Ways to Protect Your Focus From Constant Interruptions (Without Feeling Like a Jerk)",
+    "title": "How to Protect Your Focus From Constant Interruptions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Aug 2026",
@@ -278,7 +278,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-a-stress-resistant-morning-routine",
-    "title": "7 Ways to Build a Stress Resistant Morning Routine That Protects Your Whole Day",
+    "title": "7 Ideas for a More Manageable Morning Routine",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Aug 2026",
@@ -328,7 +328,7 @@ const ARTICLES = [
   },
   {
     "slug": "the-emotional-root-of-chronic-procrastination",
-    "title": "7 Emotional Root of Chronic Procrastination Truths That Finally Explain Why You Keep Stalling",
+    "title": "7 Emotional Factors That Can Contribute to Procrastination",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Aug 2026",
@@ -353,7 +353,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-a-better-lifestyle-long-term",
-    "title": "7 Ways to Build a Better Lifestyle Long Term (Without Burning Out)",
+    "title": "7 Ways to Build a Better Lifestyle Over Time",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Aug 2026",
@@ -378,7 +378,7 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-productivity-habits-for-entrepreneurs",
-    "title": "9 Healthy Productivity Habits for Entrepreneurs That Actually Protect Your Energy",
+    "title": "9 Healthy Productivity Habits for Entrepreneurs",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Aug 2026",
@@ -403,7 +403,7 @@ const ARTICLES = [
   },
   {
     "slug": "best-self-improvement-systems-explained",
-    "title": "7 Best Self Improvement Systems Explained (And Which One Actually Fits Your Life)",
+    "title": "7 Self-Improvement Systems Explained",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Aug 2026",
@@ -428,7 +428,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-design-the-perfect-daily-routine",
-    "title": "7 Ways to Design the Perfect Daily Routine That Actually Changes Your Life",
+    "title": "7 Ways to Design a Flexible Daily Routine",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
@@ -453,7 +453,7 @@ const ARTICLES = [
   },
   {
     "slug": "why-small-habits-create-big-results",
-    "title": "7 Reasons Why Small Habits Create Big Results (And Change Everything)",
+    "title": "7 Reasons Small Habits Can Matter",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
@@ -478,7 +478,7 @@ const ARTICLES = [
   },
   {
     "slug": "the-psychology-of-discipline",
-    "title": "7 Psychology of Discipline Secrets That Will Change How You See Willpower",
+    "title": "7 Psychology of Discipline Ideas to Consider",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
@@ -503,7 +503,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-create-sustainable-healthy-habits",
-    "title": "7 Ways How to Create Sustainable Healthy Habits That Actually Last",
+    "title": "7 Ways to Create Sustainable Healthy Habits",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
@@ -528,7 +528,7 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-morning-routine-checklist",
-    "title": "7 Healthy Morning Routine Checklist Habits That Set You Up for the Best Day",
+    "title": "7 Healthy Morning Routine Checklist Ideas",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
@@ -553,7 +553,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-improve-concentration-naturally",
-    "title": "9 Ways to Improve Concentration Naturally (Without Feeling Like Your Brain Is Broken)",
+    "title": "9 Ways to Improve Concentration Naturally Without Quick Fixes",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
@@ -578,7 +578,7 @@ const ARTICLES = [
   },
   {
     "slug": "best-routine-planner-methods",
-    "title": "7 Best Routine Planner Methods That Will Finally Fix Your Chaotic Days",
+    "title": "7 Routine Planner Methods for a More Manageable Day",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
@@ -653,7 +653,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-confidence-through-discipline",
-    "title": "7 Ways to Build Confidence Through Discipline: Rewire Your Self-Belief for Good",
+    "title": "7 Ways to Build Confidence Through Everyday Discipline",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
@@ -678,7 +678,7 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-routine-for-working-from-home",
-    "title": "7 Healthy Routine for Working from Home Habits That Keep You Sane and Energized",
+    "title": "7 Healthy Routine Ideas for Working From Home",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
@@ -703,7 +703,7 @@ const ARTICLES = [
   },
   {
     "slug": "best-daily-mobility-exercises",
-    "title": "5 Best Daily Mobility Exercises That Unlock Your Stuck Joints (Even If You Sit All Day)",
+    "title": "5 Daily Mobility Exercises to Adapt to Your Needs",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
@@ -728,7 +728,7 @@ const ARTICLES = [
   },
   {
     "slug": "why-most-people-fail-at-building-habits",
-    "title": "7 Reasons Why Most People Fail at Building Habits (And What Actually Works)",
+    "title": "5 Reasons Why Most People Fail at Building Habits",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
@@ -753,7 +753,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-track-progress-toward-goals",
-    "title": "5 How to Track Progress Toward Goals: Stop Spinning Your Wheels",
+    "title": "7 Ways to Track Progress Toward Goals That Actually Keep You Motivated",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
@@ -778,7 +778,7 @@ const ARTICLES = [
   },
   {
     "slug": "why-you-feel-lost-in-life",
-    "title": "5 Reasons Why You Feel Lost in Life (And How to Find Your Way Back)",
+    "title": "5 Reasons You May Feel Lost in Life",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
@@ -803,7 +803,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-self-sabotaging",
-    "title": "5 Ways to Stop Self Sabotaging Before Success Slips Away",
+    "title": "7 Ways to Stop Self-Sabotaging Before You Block Your Progress",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
@@ -853,7 +853,7 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-habits-for-busy-people",
-    "title": "7 Healthy Habits for Busy People That Actually Fit Your Chaotic Life",
+    "title": "7 Healthy Habits for Busy People",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
@@ -878,7 +878,7 @@ const ARTICLES = [
   },
   {
     "slug": "best-productivity-apps-in-2026",
-    "title": "5 Best Productivity Apps in 2026: The Tools Actually Worth Your Time",
+    "title": "5 Productivity App Types to Compare in 2026",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
@@ -903,7 +903,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-gamify-your-life-for-productivity",
-    "title": "7 How to Gamify Your Life for Productivity: Turn Your Goals Into a Winning Game",
+    "title": "7 Ways to Use Gamification for Everyday Goals",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
@@ -953,7 +953,7 @@ const ARTICLES = [
   },
   {
     "slug": "why-you-feel-emotionally-numb",
-    "title": "5 Reasons Why You Feel Emotionally Numb: Your Guide to Feeling Again",
+    "title": "7 Possible Contributors to Emotional Numbness",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
@@ -978,7 +978,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-fix-your-sleep-schedule",
-    "title": "5 Ways to Fix Your Sleep Schedule Fast: The Science-Backed Reset Guide",
+    "title": "5 Ways to Support a More Consistent Sleep Schedule",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
@@ -1003,7 +1003,7 @@ const ARTICLES = [
   },
   {
     "slug": "best-foods-for-better-sleep",
-    "title": "7 Best Foods for Better Sleep That Actually Work (Science-Backed)",
+    "title": "7 Food Ideas for a More Comfortable Bedtime",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
@@ -1028,7 +1028,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stay-productive-every-day",
-    "title": "5 How to Stay Productive Every Day: The Real Science Behind Consistent Wins",
+    "title": "5 Ways to Stay Productive Every Day",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
@@ -1053,7 +1053,7 @@ const ARTICLES = [
   },
   {
     "slug": "focus-vs-motivation-explained",
-    "title": "3 Focus vs Motivation Explained: Why You're Stuck (And What Actually Works)",
+    "title": "3 Differences Between Focus and Motivation",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
@@ -1078,7 +1078,7 @@ const ARTICLES = [
   },
   {
     "slug": "why-anxiety-feels-physical",
-    "title": "5 Reasons Why Anxiety Feels Physical: Your Body's True Story",
+    "title": "7 Reasons Why Anxiety Feels Physical and What Your Body Is Actually Telling You",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
@@ -1128,7 +1128,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-exercise-improves-mental-health",
-    "title": "5 Ways How Exercise Improves Mental Health: The Science-Backed Method That Actually Works",
+    "title": "5 Ways Exercise Can Support Mental Health",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jun 2026",
@@ -1153,7 +1153,7 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-daily-routine-checklist",
-    "title": "7 Healthy Daily Routine Checklist Items That Finally Make You Feel Alive",
+    "title": "7 Healthy Daily Routine Checklist Ideas",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jun 2026",
@@ -1178,7 +1178,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-avoid-distractions-while-working",
-    "title": "5 Ways to Avoid Distractions While Working - Reclaim Your Focus Today",
+    "title": "5 Ways to Avoid Distractions While Working",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jun 2026",
@@ -1203,7 +1203,7 @@ const ARTICLES = [
   },
   {
     "slug": "best-focus-techniques-for-students",
-    "title": "5 Best Focus Techniques for Students That Actually Stop Procrastination Cold",
+    "title": "7 Focus Techniques for Students to Try During Study Sessions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jun 2026",
@@ -1228,7 +1228,7 @@ const ARTICLES = [
   },
   {
     "slug": "why-you-feel-mentally-drained",
-    "title": "5 Reasons Why You Feel Mentally Drained (Even After Rest)",
+    "title": "Mentally Drained? 5 Signs and Practical Ways to Recover",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
@@ -1303,7 +1303,7 @@ const ARTICLES = [
   },
   {
     "slug": "benefits-of-walking-every-day",
-    "title": "7 Benefits of Walking Every Day That Transform Your Mind and Body Fast",
+    "title": "7 Benefits of Walking Every Day to Consider",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jun 2026",
@@ -1328,7 +1328,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-create-a-productive-routine",
-    "title": "5 Ways to Create a Productive Routine That Actually Lasts",
+    "title": "7 Ways to Create a Productive Routine",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jun 2026",
@@ -1353,7 +1353,7 @@ const ARTICLES = [
   },
   {
     "slug": "best-habit-tracker-methods-that-work",
-    "title": "5 Best Habit Tracker Methods That Work - Stop Guessing, Start Tracking",
+    "title": "5 Habit Tracker Methods to Compare",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jun 2026",
@@ -1378,7 +1378,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-catastrophic-thinking",
-    "title": "5 Ways to Stop Catastrophic Thinking Before It Controls Your Life",
+    "title": "7 Ways to Respond to Catastrophic Thinking",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
@@ -1428,7 +1428,7 @@ const ARTICLES = [
   },
   {
     "slug": "daily-stretching-routine-for-beginners",
-    "title": "5 Daily Stretching Routine for Beginners That Actually Fix Tight Muscles (Even If You've Never Stretched Before)",
+    "title": "5 Daily Stretching Routine Ideas for Beginners",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jun 2026",
@@ -1453,7 +1453,7 @@ const ARTICLES = [
   },
   {
     "slug": "best-healthy-snacks-for-energy",
-    "title": "7 Best Healthy Snacks for Energy That Actually Boost Your Brain (No Crash)",
+    "title": "7 Healthy Snack Ideas for Steadier Energy",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jun 2026",
@@ -1478,7 +1478,7 @@ const ARTICLES = [
   },
   {
     "slug": "why-discipline-beats-motivation",
-    "title": "3 Reasons Why Discipline Beats Motivation (And How to Finally Build It)",
+    "title": "7 Reasons Discipline Can Support Your Goals",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jun 2026",
@@ -1503,7 +1503,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-self-discipline",
-    "title": "5 Ways to Build Self Discipline When You Have None - The Real Fix",
+    "title": "5 Ways to Build Self-Discipline Gradually",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jun 2026",
@@ -1528,7 +1528,7 @@ const ARTICLES = [
   },
   {
     "slug": "why-you-always-feel-stressed",
-    "title": "5 Reasons Why You Always Feel Stressed: The Hidden Truth Behind Your Constant Anxiety",
+    "title": "5 Possible Contributors to Ongoing Stress",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
@@ -1553,7 +1553,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-calm-down-when-overwhelmed",
-    "title": "5 Ways to Calm Down When Overwhelmed: Your Emergency Mental Reset",
+    "title": "5 Ways to Pause When You Feel Overwhelmed",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
@@ -1603,7 +1603,7 @@ const ARTICLES = [
   },
   {
     "slug": "morning-routine-for-a-healthy-lifestyle",
-    "title": "7 Morning Routine for a Healthy Lifestyle That Changes Everything",
+    "title": "7 Morning Routine Ideas for a Healthy Lifestyle",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
@@ -1628,7 +1628,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-focus-better-at-work",
-    "title": "7 Ways to Focus Better at Work: Stop Getting Distracted and Actually Finish Your Tasks",
+    "title": "9 Ways to Focus Better at Work Without Burning Out",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
@@ -1653,7 +1653,7 @@ const ARTICLES = [
   },
   {
     "slug": "best-time-management-techniques-ranked",
-    "title": "7 Best Time Management Techniques Ranked: Which Ones Actually Work for Your Brain",
+    "title": "7 Best Time Management Techniques Ranked for Real Life",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
@@ -1728,7 +1728,7 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-habits-to-start-this-week",
-    "title": "7 Healthy Habits to Start This Week That Actually Stick (No Willpower Required)",
+    "title": "7 Healthy Habits to Start This Week at Your Own Pace",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
@@ -1753,7 +1753,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-sleep-affects-mental-health",
-    "title": "5 Ways How Sleep Affects Mental Health: Transform Your Mind Tonight",
+    "title": "5 Ways Sleep Can Affect Mental Health",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
@@ -1778,7 +1778,7 @@ const ARTICLES = [
   },
   {
     "slug": "best-productivity-systems-explained",
-    "title": "5 Best Productivity Systems Explained: Stop Drowning in Tasks and Actually Win",
+    "title": "7 Productivity Systems Explained: Choosing a Practical Fit",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
@@ -1878,7 +1878,7 @@ const ARTICLES = [
   },
   {
     "slug": "best-foods-for-focus-and-concentration",
-    "title": "7 Best Foods for Focus and Concentration That Boost Your Brain Power",
+    "title": "9 Best Foods for Focus and Concentration That Fit Real Life",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
@@ -1903,7 +1903,7 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-sleep-habits-that-improve-energy",
-    "title": "7 Healthy Sleep Habits That Improve Energy and Transform Your Entire Day",
+    "title": "7 Sleep Habits to Support Daytime Energy",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
@@ -1928,7 +1928,7 @@ const ARTICLES = [
   },
   {
     "slug": "deep-work-vs-multitasking",
-    "title": "5 Deep Work vs Multitasking: Why Your Brain Demands Single Tasking Now",
+    "title": "Deep Work vs Multitasking: 5 Differences to Consider",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
@@ -2003,7 +2003,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-reduce-anxiety-naturally",
-    "title": "7 Ways to Reduce Anxiety Naturally: Reclaim Your Peace Without Pills",
+    "title": "7 Everyday Strategies to Support Anxiety Management",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "May 2026",
@@ -2053,7 +2053,7 @@ const ARTICLES = [
   },
   {
     "slug": "best-morning-habits-for-more-energy",
-    "title": "5 Best Morning Habits for More Energy That Actually Stick",
+    "title": "7 Morning Habits for More Steady Energy",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
@@ -2078,7 +2078,7 @@ const ARTICLES = [
   },
   {
     "slug": "why-you-feel-tired-all-the-time",
-    "title": "5 Reasons Why You Feel Tired All the Time (And How to Finally Get Your Energy Back)",
+    "title": "7 Reasons You Feel Tired All the Time",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
@@ -2103,7 +2103,7 @@ const ARTICLES = [
   },
   {
     "slug": "pomodoro-technique-explained-for-beginners",
-    "title": "5 Pomodoro Technique Explained for Beginners: Finally Work Without Burning Out",
+    "title": "7 Pomodoro Technique Tips That Actually Help",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
@@ -2128,7 +2128,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-procrastinating-immediately",
-    "title": "5 Ways to Stop Procrastinating Immediately: Break Free From the Delay Trap Today",
+    "title": "7 Practical Ways to Start a Task You Are Avoiding",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
@@ -2153,7 +2153,7 @@ const ARTICLES = [
   },
   {
     "slug": "signs-of-mental-burnout-and-how-to-recover",
-    "title": "7 Signs of Mental Burnout and How to Recover: Your Reset Guide",
+    "title": "9 Signs of Mental Burnout and What to Do Next",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "May 2026",
@@ -2178,7 +2178,7 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-living-tips",
-    "title": "7 Healthy Living Tips That Transform Your Daily Habits (Science-Backed Changes)",
+    "title": "7 Healthy Living Tips for a Busy Routine",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
@@ -2228,7 +2228,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-improve-your-life",
-    "title": "7 Ways to Improve Your Life Starting Today: Your Personal Breakthrough Awaits",
+    "title": "7 Ways to Choose Practical Changes in Your Life",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -2278,7 +2278,7 @@ const ARTICLES = [
   },
   {
     "slug": "habit-building-system",
-    "title": "5 Habit Building System Strategies That Actually Stick (Without the Guilt)",
+    "title": "5 Habit-Building System Strategies That Actually Stick",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Apr 2026",
@@ -2303,7 +2303,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-change-your-mindset",
-    "title": "5 Ways to Change Your Mindset and Transform Your Life Today",
+    "title": "5 Ways to Reconsider Unhelpful Thinking Habits",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -2328,7 +2328,7 @@ const ARTICLES = [
   },
   {
     "slug": "life-balance-habits",
-    "title": "7 Life Balance Habits That Actually Stick (Without Sacrificing Your Career)",
+    "title": "7 Life Balance Habits to Try",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
@@ -2453,7 +2453,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-feel-happy-again",
-    "title": "7 Ways to Feel Happy Again: Your Breakthrough Guide to Joy",
+    "title": "7 Ways to Support Yourself When Happiness Feels Distant",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -2478,7 +2478,7 @@ const ARTICLES = [
   },
   {
     "slug": "natural-energy-boosters",
-    "title": "7 Natural Energy Boosters That Actually Work (No Coffee Crash)",
+    "title": "7 Everyday Options for Supporting Your Energy",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
@@ -2503,7 +2503,7 @@ const ARTICLES = [
   },
   {
     "slug": "deep-work-techniques",
-    "title": "5 Deep Work Techniques That Actually Rewire Your Brain for Focus",
+    "title": "7 Deep Work Techniques to Try",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Apr 2026",
@@ -2528,7 +2528,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-improve-mental-clarity",
-    "title": "5 Ways to Improve Mental Clarity and Focus Fast (Brain Fog Gone)",
+    "title": "7 Ways to Support Mental Clarity During a Busy Week",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -2553,7 +2553,7 @@ const ARTICLES = [
   },
   {
     "slug": "daily-wellness-habits",
-    "title": "5 Daily Wellness Habits That Transform Your Life in Just 30 Days",
+    "title": "5 Daily Wellness Habits to Try at Your Own Pace",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
@@ -2628,7 +2628,7 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-lifestyle-tips",
-    "title": "7 Healthy Lifestyle Tips That Transform Your Life (Without the Guilt)",
+    "title": "7 Healthy Lifestyle Tips to Adapt to Your Day",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
@@ -2653,7 +2653,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stay-motivated",
-    "title": "7 Ways to Stay Motivated Every Single Day: Your Brain's Hidden Cheat Code",
+    "title": "7 Ways to Work With Changing Motivation",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Apr 2026",
@@ -2678,7 +2678,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-confidence",
-    "title": "5 Ways to Build Confidence Fast: Your Mental Breakthrough Starts Today",
+    "title": "5 Ways to Build Confidence Through Small Actions",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -2728,7 +2728,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-procrastination",
-    "title": "5 Ways to Stop Procrastination Today: Finally Break Free From Endless Delay",
+    "title": "7 Ways to Understand and Reduce Procrastination",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Apr 2026",
@@ -2753,7 +2753,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-panic-attacks",
-    "title": "5 Ways to Stop Panic Attacks: Take Back Control Right Now",
+    "title": "5 Ways to Respond to Panic and Know When to Seek Help",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -2778,7 +2778,7 @@ const ARTICLES = [
   },
   {
     "slug": "simple-morning-habits",
-    "title": "5 Simple Morning Habits That Transform Your Entire Day (Science-Backed)",
+    "title": "7 Simple Morning Habits to Try",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
@@ -2803,7 +2803,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-focus-without-distractions",
-    "title": "5 Ways to Focus Without Distractions: Reclaim Your Deep Work Today",
+    "title": "7 Ways to Focus With Fewer Distractions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Apr 2026",
@@ -2828,7 +2828,7 @@ const ARTICLES = [
   },
   {
     "slug": "signs-of-anxiety-disorder",
-    "title": "7 Signs of Anxiety Disorder You're Probably Ignoring (And How to Take Control Back)",
+    "title": "7 Possible Signs of an Anxiety Disorder and When to Seek Help",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -2853,7 +2853,7 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-daily-habits",
-    "title": "7 Healthy Daily Habits That Transform Your Life in 30 Days",
+    "title": "7 Healthy Daily Habits to Build Gradually",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
@@ -2878,7 +2878,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stay-calm-under-pressure",
-    "title": "5 Ways to Stay Calm Under Pressure: Master Your Mind Before Stress Wins",
+    "title": "5 Ways to Respond to Pressure More Deliberately",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -2903,7 +2903,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-detox-your-mind",
-    "title": "5 Ways to Detox Your Mind From Negative Thoughts and Reclaim Your Peace",
+    "title": "5 Safe Ways to Clear Mental Clutter and Calm Negative Thoughts",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -2928,7 +2928,7 @@ const ARTICLES = [
   },
   {
     "slug": "emotional-burnout-recovery",
-    "title": "5 Steps to Emotional Burnout Recovery: Rebuild Your Inner Strength Today",
+    "title": "7 Emotional Burnout Recovery Steps to Consider",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -2953,7 +2953,7 @@ const ARTICLES = [
   },
   {
     "slug": "benefits-of-walking-daily",
-    "title": "7 Benefits of Walking Daily That Transform Your Mental Health Fast",
+    "title": "7 Benefits of Walking Daily to Consider",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
@@ -2978,7 +2978,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-feel-in-control-of-your-mind",
-    "title": "3 Ways to Feel in Control of Your Mind: The Mental Discipline Blueprint",
+    "title": "3 Ways to Respond More Deliberately to Your Thoughts",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -3003,7 +3003,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-increase-energy-naturally",
-    "title": "5 Ways to Increase Energy Naturally: Skip the Caffeine Crash Forever",
+    "title": "5 Everyday Habits to Support Your Energy",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
@@ -3028,7 +3028,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-break-negative-thinking",
-    "title": "5 Ways to Break Negative Thinking Before It Controls Your Life",
+    "title": "5 Ways to Respond to Negative Thinking",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -3053,7 +3053,7 @@ const ARTICLES = [
   },
   {
     "slug": "foods-that-reduce-anxiety",
-    "title": "7 Foods That Reduce Anxiety: Your Brain's Natural Pharmacy Starts Here",
+    "title": "7 Food Choices to Consider Alongside Anxiety Care",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
@@ -3078,7 +3078,7 @@ const ARTICLES = [
   },
   {
     "slug": "fear-of-failure-anxiety",
-    "title": "5 Ways to Overcome Fear of Failure Anxiety Before It Stops You",
+    "title": "5 Ways to Respond to Fear of Failure Anxiety",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -3103,7 +3103,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-sleep-better-naturally",
-    "title": "7 Ways to Sleep Better Naturally: The Science-Backed Method That Actually Works",
+    "title": "7 Sleep Habits to Try and When to Seek Help",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
@@ -3128,7 +3128,7 @@ const ARTICLES = [
   },
   {
     "slug": "anxiety-before-sleep",
-    "title": "5 Ways to Stop Anxiety Before Sleep: Reclaim Your Peaceful Nights",
+    "title": "5 Gentle Ways to Respond to Anxiety Before Sleep",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -3153,7 +3153,7 @@ const ARTICLES = [
   },
   {
     "slug": "morning-routine-for-mental-health",
-    "title": "5 Morning Routine For Mental Health Habits That Actually Stick",
+    "title": "5 Morning Routine Habits for Mental Health",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
@@ -3203,7 +3203,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-feel-calm-instantly",
-    "title": "5 Ways to Feel Calm Instantly: Stop Stress Before It Stops You",
+    "title": "5 Calming Techniques to Try When Stress Builds",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -3253,7 +3253,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-calm-your-mind-instantly",
-    "title": "5 Ways to Calm Your Mind Instantly: Stop the Mental Spiral Right Now",
+    "title": "7 Ways to Calm an Overwhelmed Mind Safely",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -3278,7 +3278,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-control-your-thoughts",
-    "title": "5 Ways to Control Your Thoughts: Stop the Mental Chaos Today",
+    "title": "7 Ways to Control Your Thoughts Without Fighting Your Mind",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -3303,7 +3303,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-anxiety-attacks",
-    "title": "5 Ways to Stop Anxiety Attacks Before They Take Over Your Day",
+    "title": "5 Ways to Respond to Intense Anxiety and Seek Support",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -3328,7 +3328,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-deal-with-anxiety-daily",
-    "title": "5 Ways to Deal with Anxiety Daily: Your Realistic Recovery Plan",
+    "title": "7 Ways to Deal With Anxiety Daily Without Letting It Run Your Life",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -3353,7 +3353,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-relax-your-mind",
-    "title": "5 Ways to Relax Your Mind Fast: The Science-Backed Method That Actually Works",
+    "title": "5 Ways to Make Space for Mental Rest",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -3453,7 +3453,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-overthinking",
-    "title": "5 Ways to Stop Overthinking and Reclaim Your Mental Peace Today",
+    "title": "How to Stop Overthinking: 8 Practical Steps for Calmer Days",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -3478,7 +3478,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-calm-anxiety-quickly",
-    "title": "5 Ways to Calm Anxiety Quickly: Your Morning Game-Changer",
+    "title": "5 Practical Ways to Calm Anxiety Quickly and Safely",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -3503,7 +3503,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-overthinking-at-night",
-    "title": "How to Stop Overthinking at Night: 5 Science-Backed Methods for Deep Sleep",
+    "title": "5 Ways to Stop Overthinking at Night and Finally Sleep",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
