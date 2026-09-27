@@ -64,20 +64,27 @@ for (const source of sources) {
     const classes = new Set();
     const button = {attrs: {}, setAttribute(k,v) { this.attrs[k] = v; },
       addEventListener(_, fn) { this.click = fn; }};
+    const answer = {hidden: true};
     const item = {classList: {contains: k => classes.has(k), add: k => classes.add(k),
-      remove: k => classes.delete(k)}, querySelector: () => button};
+      remove: k => classes.delete(k)}, querySelector: q => q === '.faq-a' ? answer : button};
     button.closest = () => item;
-    return {item, button};
+    return {item, button, answer};
   });
   vm.runInNewContext(source.slice(start, end), {document: {
     querySelectorAll: q => items.map(x => q === '.faq-q' ? x.button : x.item)
   }});
   items[0].button.click();
   assert.equal(items[0].button.attrs['aria-expanded'], 'true');
+  if (source.includes('answer.hidden = isOpen')) assert.equal(items[0].answer.hidden, false);
   items[1].button.click();
   assert.equal(items[0].button.attrs['aria-expanded'], 'false');
   assert.equal(items[1].button.attrs['aria-expanded'], 'true');
+  if (source.includes('answer.hidden = isOpen')) {
+    assert.equal(items[0].answer.hidden, true);
+    assert.equal(items[1].answer.hidden, false);
+  }
   items[1].button.click();
   assert.equal(items[1].button.attrs['aria-expanded'], 'false');
+  if (source.includes('answer.hidden = isOpen')) assert.equal(items[1].answer.hidden, true);
 }
 console.log('PASS: local destinations, metadata, five FAQ items, sources, and accordion transitions.');

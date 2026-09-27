@@ -52,10 +52,14 @@ document.addEventListener('DOMContentLoaded', function () {
         el.classList.remove('open');
         var question = el.querySelector('.faq-q');
         if (question) question.setAttribute('aria-expanded', 'false');
+        var answer = el.querySelector('.faq-a');
+        if (answer) answer.hidden = true;
       });
       // Open clicked if it was closed
       if (!isOpen) item.classList.add('open');
       this.setAttribute('aria-expanded', String(!isOpen));
+      var answer = item.querySelector('.faq-a');
+      if (answer) answer.hidden = isOpen;
     });
   });
 
