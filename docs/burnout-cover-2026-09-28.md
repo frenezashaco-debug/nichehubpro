@@ -1,0 +1,7 @@
+# Emotional burnout cover replacement
+
+Created using the built-in image generation tool on 28 September 2026. This is a generated illustration, not a documentary photograph or testimonial.
+
+Assets: `images/emotional-burnout-garden-break.jpg` and `.webp`, 1200 x 675. Replaces the kitchen-table cover in the article and article directory. Original asset retained for recovery.
+
+Prompt: Create a landscape 16:9 editorial cover photograph-style illustration for an article about recovering from emotional burnout. A relatable woman in her early forties in an ordinary linen shirt pauses on a wooden bench beside a quiet garden path after a walk. Three-quarter side view, medium wide environmental composition. Her shoulders rest naturally, hands separately resting on her thighs, eyes open looking across the garden, tired but thoughtful expression, no smile for camera. Realistic imperfect skin texture, slight under-eye shadows, ordinary hair with a few flyaways, natural fabric creases. Soft warm overcast afternoon daylight, muted olive and earth colours, moderate depth of field, believable documentary 35mm photography, understated framing. Avoid the default glossy AI wellness look: no airbrushed skin, no glamour model, no cinematic glow, no extreme bokeh, no orange colour grading, no symmetrical staging, no dramatic misery. Anatomically accurate hands and face. No text, watermarks, logos, or overlays.
