@@ -2,6 +2,18 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-your-body-clock-affects-when-you-should-exercise",
+    "title": "How Your Body Clock Affects When You Should Exercise: 5 Practical Checks",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Sep 2026",
+    "read_time": "11",
+    "excerpt": "Choose an exercise window around sleep, access, and everyday responsibilities with five practical checks and a flexible planning example.",
+    "image": "images/how-your-body-clock-affects-when-you-should-exercise.jpg",
+    "alt": "Man putting on a light jacket before a walk",
+    "pins": []
+  },
+  {
     "slug": "the-science-of-habit-formation-explained-simply",
     "title": "The Science of Habit Formation: 7 Practical Lessons",
     "category": "Productivity",

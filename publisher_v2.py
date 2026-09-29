@@ -265,7 +265,7 @@ KEYWORDS:
 REQUIREMENTS:
 - Title: number + primary keyword in first 3 words + emotional/catchy ending
 - Intro: primary keyword in first 10 words, 3 short emotional paragraphs
-- TL;DR: 2-3 sentences with primary keyword
+- Summary box: 2-3 sentences with primary keyword. Never include the visible label "TL;DR" or "TL;DR:" in its content.
 - {section_count_line}
 - Each section: GEO structure (statement + explanation + advice), bullets, bold key tips, and at least {min_section_words} visible words of body content. Count the words in each section before returning JSON; do not leave any section short.
 - Meta description: count characters before returning JSON. It must be 155-160 characters inclusive, including spaces, and must contain the primary keyword.
@@ -387,7 +387,8 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
     cover_alt    = data.get("cover_alt_text", title)
     cover_webp   = cover_filename.replace(".jpg", ".webp")
     intro        = data["intro"]
-    tldr         = data["tldr"]
+    # Render only the summary, never a visible TL;DR label.
+    tldr = re.sub(r"^\s*(?:<(?:strong|b)>\s*)?TL;DR\s*:?(?:\s*</(?:strong|b)>)?\s*:?\s*", "", data["tldr"], flags=re.IGNORECASE)
     sections     = data["sections"]
     real_example = data["real_example"]
     internal_links = data.get("internal_links", [])
