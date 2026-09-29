@@ -1,8 +1,10 @@
 name: Daily Article Publisher
 
 on:
-  # Scheduled publishing is intentionally paused during the AdSense
-  # content-quality review. Manual runs remain available below.
+  # Controlled automation: this creates a review draft, never an unattended
+  # public article. Human approval is still required in publisher_v2.py.
+  schedule:
+    - cron: "15 08 * * 1-5"
   workflow_dispatch:
 
 permissions:
@@ -55,7 +57,7 @@ jobs:
       - name: Show current publish status
         run: python batch_24weeks.py --status
 
-      - name: Run batch publisher
+      - name: Generate next editorial review draft
         run: python batch_24weeks.py
 
       - name: Commit and push

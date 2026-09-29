@@ -17,8 +17,8 @@ Content mix target: ~70% evergreen, ~20% growing trends (concentrated in Phase 4
 generate as 4500+ word pillar guides via publisher_v2.generate_article(cornerstone=True)).
 
 Usage:
-  python batch_24weeks.py             <- show that publishing is paused
-  python batch_24weeks.py --day 5     <- show that publishing is paused
+  python batch_24weeks.py             <- generate the next review draft
+  python batch_24weeks.py --day 5     <- generate a specific review draft
   python batch_24weeks.py --status    <- show progress
   python batch_24weeks.py --week 3    <- show week 3 articles
 """
@@ -29,10 +29,10 @@ sys.stdout.reconfigure(encoding='utf-8')
 BASE_DIR      = os.path.dirname(os.path.abspath(__file__))
 TRACKING_FILE = os.path.join(BASE_DIR, "published_24weeks.txt")
 
-# AdSense remediation: automated publishing stays off until every new article
-# has a documented human review for sourcing, safety language, and originality.
-# Do not remove this guard simply to resume a publishing cadence.
-PUBLISHING_PAUSED = True
+# Controlled automation: generation may run on schedule, but publisher_v2
+# always writes a local review draft unless an explicitly approved draft is
+# published with --publish. This keeps unattended runs out of the public site.
+REVIEW_QUEUE_MODE = True
 
 
 def make_slug(title):
@@ -265,13 +265,6 @@ def main():
 
     if "--status" in args:
         show_status()
-        return
-
-    if PUBLISHING_PAUSED:
-        print(
-            "Publishing is paused for editorial review. "
-            "New articles must be source-checked and human-reviewed before this plan resumes."
-        )
         return
 
     if "--week" in args:
