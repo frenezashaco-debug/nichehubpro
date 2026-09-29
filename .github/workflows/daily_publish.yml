@@ -4,7 +4,7 @@ on:
   # Controlled automation: this creates a review draft, never an unattended
   # public article. Human approval is still required in publisher_v2.py.
   schedule:
-    - cron: "15 08 * * 1-5"
+    - cron: "15 08 * * 1,3,5"
   workflow_dispatch:
 
 permissions:
