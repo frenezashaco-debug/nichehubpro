@@ -63,13 +63,11 @@
   </url>
   <url>
     <loc>https://nichehubpro.com/anxiety-and-stress/</loc>
-    <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://nichehubpro.com/overthinking/</loc>
-    <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -80,13 +78,24 @@
   </url>
   <url>
     <loc>https://nichehubpro.com/sleep-and-energy/</loc>
-    <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://nichehubpro.com/focus-and-productivity/</loc>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nichehubpro.com/articles/how-to-train-your-brain-for-longer-attention-spans.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nichehubpro.com/articles/how-your-body-clock-affects-when-you-should-exercise.html</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
@@ -954,5 +963,4 @@
     <priority>0.8</priority>
   </url>
 
-  <url><loc>https://nichehubpro.com/articles/how-your-body-clock-affects-when-you-should-exercise.html</loc><lastmod>2026-09-29</lastmod></url>
 </urlset>

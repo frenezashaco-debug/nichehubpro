@@ -2,6 +2,18 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-train-your-brain-for-longer-attention-spans",
+    "title": "How to Train Your Brain for Longer Attention Spans: 5 Practical Checks",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Sep 2026",
+    "read_time": "8",
+    "excerpt": "How to train your brain for longer attention spans can feel like a frustrating question when you keep losing your place. Start by choosing one task you...",
+    "image": "images/how-to-train-your-brain-for-longer-attention-spans.jpg",
+    "alt": "Woman reading a paperback beside a bright window.",
+    "pins": []
+  },
+  {
     "slug": "how-your-body-clock-affects-when-you-should-exercise",
     "title": "How Your Body Clock Affects When You Should Exercise: 5 Practical Checks",
     "category": "Healthy Lifestyle",
