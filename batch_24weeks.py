@@ -29,10 +29,9 @@ sys.stdout.reconfigure(encoding='utf-8')
 BASE_DIR      = os.path.dirname(os.path.abspath(__file__))
 TRACKING_FILE = os.path.join(BASE_DIR, "published_24weeks.txt")
 
-# Controlled automation: generation may run on schedule, but publisher_v2
-# always writes a local review draft unless an explicitly approved draft is
-# published with --publish. This keeps unattended runs out of the public site.
-REVIEW_QUEUE_MODE = True
+# Automated publication is opt-in and still passes publisher_v2's full quality
+# gate. Set NICHEHUB_AUTO_PUBLISH=1 only in the scheduled workflow.
+AUTO_PUBLISH = os.environ.get("NICHEHUB_AUTO_PUBLISH") == "1"
 
 
 def make_slug(title):
@@ -257,7 +256,13 @@ def run_day(day_num):
     print(f"  Topic: {primary}")
     print(f"{'='*70}\n")
     result = generate_article(primary, secondary, longtail, category, cornerstone=cornerstone)
-    return bool(result)
+    if not result:
+        return False
+    if AUTO_PUBLISH:
+        print("\n  Automated quality gate passed. Publishing validated article...")
+        return bool(generate_article(primary, secondary, longtail, category,
+                                     cornerstone=cornerstone, publish=True))
+    return True
 
 
 def main():

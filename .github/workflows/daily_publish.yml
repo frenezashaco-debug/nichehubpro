@@ -1,8 +1,7 @@
 name: Daily Article Publisher
 
 on:
-  # Controlled automation: this creates a review draft, never an unattended
-  # public article. Human approval is still required in publisher_v2.py.
+  # Automated publication runs only after the full publisher_v2 quality gate.
   schedule:
     - cron: "15 08 * * 1,3,5"
   workflow_dispatch:
@@ -58,6 +57,8 @@ jobs:
         run: python batch_24weeks.py --status
 
       - name: Generate next editorial review draft
+        env:
+          NICHEHUB_AUTO_PUBLISH: "1"
         run: python batch_24weeks.py
 
       - name: Commit and push

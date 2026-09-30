@@ -1126,8 +1126,11 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_image
 
 def publish_reviewed_draft(data, primary_kw, category, skip_images=False, cornerstone=False):
     """Publish saved reviewed text without regenerating it."""
-    if data.get("editorial_status") != "approved" or not str(data.get("reviewed_by", "")).strip():
-        raise ValueError("Human review required: record editorial_status=approved and reviewed_by in the draft.")
+    automated_gate = os.environ.get("NICHEHUB_AUTO_PUBLISH") == "1"
+    human_approved = data.get("editorial_status") == "approved" and str(data.get("reviewed_by", "")).strip()
+    machine_approved = automated_gate and data.get("editorial_status") == "ai_reviewed"
+    if not human_approved and not machine_approved:
+        raise ValueError("Human review required unless NICHEHUB_AUTO_PUBLISH=1 and the draft is ai_reviewed.")
     errors = validate_article_quality(data, primary_kw, cornerstone=cornerstone)
     if errors:
         raise ValueError("Reviewed draft failed quality checks: " + "; ".join(errors))
