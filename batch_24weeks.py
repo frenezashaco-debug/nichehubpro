@@ -283,7 +283,8 @@ def main():
 
     if "--day" in args:
         idx = args.index("--day")
-        run_day(int(args[idx + 1]))
+        if not run_day(int(args[idx + 1])):
+            sys.exit(1)
         return
 
     # Default: publish next unpublished day
@@ -296,7 +297,8 @@ def main():
 
     day_num = next_entry[0]
     print(f"Publishing Day {day_num} (Week {week_of(day_num)}): {next_entry[1]}")
-    run_day(day_num)
+    if not run_day(day_num):
+        sys.exit(1)
 
 
 if __name__ == "__main__":
