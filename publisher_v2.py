@@ -12,7 +12,6 @@ from datetime import date
 from urllib.parse import urlparse
 sys.stdout.reconfigure(encoding='utf-8')
 import anthropic
-import httpx
 import requests
 try:
     import urllib3
@@ -1052,9 +1051,8 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_image
             reviewed = json.load(draft_file)
         return publish_reviewed_draft(reviewed, primary_kw, category, skip_images, cornerstone)
 
-    # Use the dependency installed by CI and retain TLS certificate validation.
-    api_http_client = httpx.Client(timeout=180.0)
-    client = anthropic.Anthropic(api_key=API_KEY, http_client=api_http_client)
+    # Let the SDK select its compatible HTTP transport with TLS validation.
+    client = anthropic.Anthropic(api_key=API_KEY, timeout=180.0)
 
     # Load real published articles — same category only, exclude current article
     existing_articles = load_existing_articles()
