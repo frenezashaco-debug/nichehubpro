@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-dopamine-actually-works-and-why-quick-fixes-backfire",
+    "title": "How Dopamine Actually Works and Why Quick Fixes Backfire (And What to Do Instead)",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Oct 2026",
+    "read_time": "8",
+    "excerpt": "How dopamine actually works and why quick fixes backfire is something most of us figure out the hard way. You reach for your phone, scroll for twenty...",
+    "image": "images/how-dopamine-actually-works-and-why-quick-fixes-backfire.jpg",
+    "alt": "Young woman thinking quietly about dopamine and quick fixes",
+    "pins": [
+      {
+        "title": "How Dopamine Actually Works and Why Quick Fixes Backfire",
+        "description": "Understanding how dopamine actually works and why quick fixes backfire can change how you approach motivation and daily habits. Your brain is built to chase rewards, but shallow hits may leave you feeling worse over time. Read this to find out what actually helps."
+      },
+      {
+        "title": "Stop Chasing Quick Dopamine Hits That Leave You Feeling Empty",
+        "description": "Dopamine and quick gratification are a tricky combination. Quick hits like scrolling and snacking feel like relief but can quietly reduce your ability to enjoy everyday life. Here is what to understand about the cycle and how to start shifting it."
+      },
+      {
+        "title": "Try This Simple Shift If Quick Fixes Keep Leaving You Flat",
+        "description": "If you keep reaching for quick dopamine hits and still feel restless or low, the problem may be in how the cycle works, not your willpower. This article explains why quick fixes backfire and shares small, practical habits worth trying today."
+      }
+    ]
+  },
+  {
     "slug": "how-to-train-your-brain-for-longer-attention-spans",
     "title": "How to Train Your Brain for Longer Attention Spans: 5 Practical Checks",
     "category": "Productivity",
