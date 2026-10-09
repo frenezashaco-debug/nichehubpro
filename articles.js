@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-blood-sugar-swings-affect-your-energy-and-mood",
+    "title": "7 Ways Blood Sugar Swings Affect Your Energy and Mood More Than You Realise",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Oct 2026",
+    "read_time": "8",
+    "excerpt": "How blood sugar swings affect your energy and mood is something most people feel daily but rarely connect to what they ate an hour ago. You feel sharp,...",
+    "image": "images/how-blood-sugar-swings-affect-your-energy-and-mood.jpg",
+    "alt": "young woman eating balanced meal to manage blood sugar energy",
+    "pins": [
+      {
+        "title": "How Blood Sugar Swings Affect Your Energy and Mood Every Day",
+        "description": "That afternoon slump and sudden irritability may be connected to blood sugar energy crashes more than you think. Learn the signs, the common triggers, and small daily habits that may help you feel steadier. Read the full guide on NicheHubPro."
+      },
+      {
+        "title": "Stop Blaming Stress for Your Energy Crashes - It Might Be Your Blood Sugar",
+        "description": "Foggy thinking, short fuse, desperate sugar cravings - these are classic signs of a blood sugar dip, not just a tough day. Understanding how blood sugar swings affect your energy and mood can change how you approach your meals and your mornings."
+      },
+      {
+        "title": "Try This Simple Habit to Reduce Blood Sugar Energy Crashes This Week",
+        "description": "Adding protein to your first meal of the day is one of the smallest changes you can make to support steadier energy. Discover how blood sugar swings affect your energy and mood, and which everyday habits may help you avoid the worst crashes."
+      }
+    ]
+  },
+  {
     "slug": "how-dopamine-actually-works-and-why-quick-fixes-backfire",
     "title": "How Dopamine Actually Works and Why Quick Fixes Backfire (And What to Do Instead)",
     "category": "Mental Wellness",
