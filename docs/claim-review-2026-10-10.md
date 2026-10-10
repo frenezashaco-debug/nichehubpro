@@ -1,5 +1,9 @@
 # Targeted claim corrections, 10 October 2026
 
+## Neuroplasticity follow-up
+
+Aligned the neuroplasticity summary and three FAQ answers: practicing a routine does not establish that an old neural pathway has weakened or disappeared. Replaced the habit-formation guide's single-location storage explanation and deterministic old-pathway claims with behavioral observations. NIMH's habit construct was re-read and linked inline. This targeted pass does not complete the review: long-form neuroscience passages in the neuroplasticity article still need revision, as do remaining claims across the five-article queue.
+
 ## Follow-up: focus recovery and habit formation
 
 Corrected nine passages in the focus-recovery guide and seven in the habit-formation guide. Removed unsupported claims of a nervous-system reset, guaranteed recovery benefits, universal habit-loop mechanisms, and a fixed decline in motivation. Distinguished editorial routines from interventions tested by the cited research. Layout and accordion markup retained. The 165-page technical check passed; this is not a complete factual review of either article. Remaining neuroscience explanations and FAQ consistency still require review.
