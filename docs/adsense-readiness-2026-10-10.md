@@ -17,7 +17,8 @@
 
 - Run an end-to-end publication and verify the live page, sitemap and Make execution.
 - Make needs persistent deduplication keyed by article slug for protection against manual replay or ambiguous webhook timeouts. A successful webhook response is not proof Pinterest created every pin.
-- Inspect the five articles still saying sources require editorial verification; verify sources against claims before changing that notice.
+- Reference-section review completed for the five flagged articles: source summaries now describe what the linked pages actually cover, the APA URL and NHS nutrition link are more specific, and the draft-only notice has been replaced with an explanation of scope. This does not certify every body claim; the full article-level review remains open.
+- Removed several deterministic brain-rewiring claims from the neuroplasticity article. Its neural mechanisms and the other articles' body claims still need a complete evidence audit before claiming medical review.
 - Review all public health claims and author information. Automated structural checks do not establish medical accuracy or originality.
 - Verify consent configuration in AdSense and actual browser behavior. The shared analytics script currently loads GA4 without an explicit consent default; account-level CMP configuration has not been verified.
 - Verify privacy disclosures against deployed services; do not claim analytics data is anonymous without supporting configuration evidence.
