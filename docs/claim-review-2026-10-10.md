@@ -1,5 +1,13 @@
 # Targeted claim corrections, 10 October 2026
 
+## Follow-up: focus recovery and habit formation
+
+Corrected nine passages in the focus-recovery guide and seven in the habit-formation guide. Removed unsupported claims of a nervous-system reset, guaranteed recovery benefits, universal habit-loop mechanisms, and a fixed decline in motivation. Distinguished editorial routines from interventions tested by the cited research. Layout and accordion markup retained. The 165-page technical check passed; this is not a complete factual review of either article. Remaining neuroscience explanations and FAQ consistency still require review.
+
+Sources re-read for this follow-up:
+- https://www.apa.org/topics/research/multitasking
+- https://www.niddk.nih.gov/health-information/diet-nutrition/changing-habits-better-health
+
 Scope: two existing articles, with their layout and FAQ accordion markup retained. This is a targeted correction pass, not certification of every claim or AdSense eligibility.
 
 ## Rest guilt
