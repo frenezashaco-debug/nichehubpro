@@ -1168,6 +1168,12 @@ def publish_reviewed_draft(data, primary_kw, category, skip_images=False, corner
 
     # Generate section images (WebP, contextual per section) — delay between calls
     section_images = {}
+    if skip_images:
+        for img_data in data.get("section_image_prompts", []):
+            sec_idx = img_data.get("section_index", 0)
+            filename = f"{article_slug}-sec{sec_idx + 1}.webp"
+            if os.path.exists(os.path.join(IMAGES_DIR, filename)):
+                section_images[sec_idx] = {"filename": filename, "alt_text": img_data.get("alt_text", data["title"])}
     if not skip_images:
         for call_num, img_data in enumerate(data.get("section_image_prompts", [])):
             sec_idx = img_data.get("section_index", 0)
@@ -1181,6 +1187,12 @@ def publish_reviewed_draft(data, primary_kw, category, skip_images=False, corner
                     section_images[sec_idx] = {"filename": filename, "alt_text": alt}
         if section_images:
             print(f"  {len(section_images)} section image(s) generated")
+
+    if len(section_images) != 3:
+        raise ValueError("Publication blocked: exactly three section images are required.")
+    for image_path in [cover_path, *(os.path.join(IMAGES_DIR, item["filename"]) for item in section_images.values())]:
+        with Image.open(image_path) as generated_image:
+            generated_image.verify()
 
     # Build and save HTML
     print("Building HTML...")
@@ -1196,14 +1208,7 @@ def publish_reviewed_draft(data, primary_kw, category, skip_images=False, corner
     # Register article in articles.js
     register_article(data, cover_filename)
 
-    # Send to Make.com → Pinterest automation
-    send_pinterest_webhook(
-        article_slug,
-        data["title"],
-        data.get("category", category),
-        cover_filename,
-        data.get("pinterest_pins", [])
-    )
+    # Distribution runs once from CI after public deployment is verified.
 
     # Reverse linking — inject this article into existing same-category articles
     backlink_existing_articles(article_slug, data["title"], category)

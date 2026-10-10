@@ -70,12 +70,32 @@ payload = {
 }
 
 # ── Send ───────────────────────────────────────────────────────────────────────
+# A git push does not prove that GitHub Pages has deployed. Check all assets
+# before sending anything to Make. Do not retry a POST with an unknown outcome.
+for public_url in [payload["article_url"], *(pin["image_url"] for pin in enriched_pins)]:
+    ready = False
+    for attempt in range(12):
+        try:
+            check = requests.get(public_url, timeout=20)
+            expected = "image/" if public_url in pin_images else "text/html"
+            if check.status_code == 200 and expected in check.headers.get("Content-Type", ""):
+                ready = True
+                break
+        except requests.RequestException:
+            pass
+        time.sleep(15)
+    if not ready:
+        print("Publication assets are not live yet; Make was not called.")
+        sys.exit(1)
+
 print(f"Sending 3 Pinterest pins for: {slug}")
 try:
     r = requests.post(MAKE_PINTEREST_WEBHOOK, json=payload, timeout=20)
     if r.status_code in (200, 204):
         print(f"OK — 3 pins sent to Make.com for [{category}] board.")
     else:
-        print(f"FAILED — status {r.status_code}: {r.text[:200]}")
+        print(f"Make rejected the request (HTTP {r.status_code}).")
+        sys.exit(1)
 except Exception as e:
-    print(f"ERROR: {e}")
+    print("Make request failed; check its execution history before retrying.")
+    sys.exit(1)
