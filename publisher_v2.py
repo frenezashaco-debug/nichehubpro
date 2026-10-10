@@ -532,7 +532,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
-  <script defer src="/analytics.js"></script>
+  <script defer src="/analytics.js?v=consent-v1"></script>
   <meta charset="UTF-8">
   <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -21,6 +21,10 @@ The batch writes `reports/readiness/latest.json` and `latest.md`. It does not pu
 
 ## Changes in this batch
 
+### Live cache finding and follow-up
+
+On 10 October, a browser visit loaded the old analytics implementation and showed no Privacy choices control. HTTP checks confirmed that the unversioned `/analytics.js` was a Cloudflare cache HIT serving the old script, while a fresh query URL returned the opt-in implementation. Versioned script references (`?v=consent-v1`) now protect newly served pages from that stale asset. Already cached HTML may still need expiry or targeted Cloudflare purging. Browser consent QA must be repeated after deployment; this finding does not validate advertising consent or CMP configuration.
+
 - Added a repeatable local/live audit and machine-readable page-level findings.
 - Optional GA4 now waits for explicit analytics consent. The persistent Privacy choices button permits changing the choice. Advertising consent stays denied in this script.
 - Ebook uses the shared analytics consent flow.

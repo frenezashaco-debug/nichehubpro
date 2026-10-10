@@ -24,7 +24,7 @@ def main():
         file = ROOT / (path.lstrip('/') + ('index.html' if path.endswith('/') else ''))
         text = file.read_text(encoding='utf-8')
         page = Page(text)
-        assert text.count('src="/analytics.js"') == 1, file
+        assert text.count('src="/analytics.js?v=consent-v1"') == 1, file
         assert 'googletagmanager.com/gtag/js' not in text, file
         for tag, attrs in page.tags:
             key = 'href' if tag in ('a', 'link') else 'src'
