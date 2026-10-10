@@ -21,6 +21,7 @@ __pycache__/
 !add_references.py
 !normalize_article_schema.py
 !site_quality_audit.py
+!scripts/readiness_batch.py
 
 # Generated local quality reports
 reports/
