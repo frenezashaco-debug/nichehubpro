@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "what-cognitive-load-does-to-your-decision-making",
+    "title": "7 Things What Cognitive Load Does to Your Decision Making (And How to Finally Think Clearly)",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Oct 2026",
+    "read_time": "8",
+    "excerpt": "What cognitive load does to your decision making is something most people never connect to the poor choices they make on hard days. You snap at someone...",
+    "image": "images/what-cognitive-load-does-to-your-decision-making.jpg",
+    "alt": "Young woman looking mentally overwhelmed while making decisions at desk",
+    "pins": [
+      {
+        "title": "How to Fix What Cognitive Load Does to Your Decision Making Daily",
+        "description": "What cognitive load does to your decision making is subtle but real - it quietly drains your judgment before you even notice. Learn the small daily habits that may help you think more clearly and choose more intentionally. Save this for your next overwhelmed afternoon."
+      },
+      {
+        "title": "Stop Letting Cognitive Load Decision Fatigue Ruin Your Choices",
+        "description": "Cognitive load decision fatigue is why your worst choices tend to happen late in the day, not because of weak willpower. Understanding how mental overload affects your decisions is the first step to doing something about it. Pin this to read when your brain feels full."
+      },
+      {
+        "title": "Try This Simple Reset When Mental Overload Affects Your Decisions",
+        "description": "How does mental overload affect the decisions you make? More than most people realize - and small structural changes can make a real difference. Try making your biggest choice of the day before noon and see what shifts. Save this guide to come back to."
+      }
+    ]
+  },
+  {
     "slug": "how-blood-sugar-swings-affect-your-energy-and-mood",
     "title": "7 Ways Blood Sugar Swings Affect Your Energy and Mood More Than You Realise",
     "category": "Healthy Lifestyle",
