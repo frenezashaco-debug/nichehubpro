@@ -74,18 +74,20 @@ payload = {
 # before sending anything to Make. Do not retry a POST with an unknown outcome.
 for public_url in [payload["article_url"], *(pin["image_url"] for pin in enriched_pins)]:
     ready = False
-    for attempt in range(12):
+    last_status = 'no response'
+    for attempt in range(40):
         try:
             check = requests.get(public_url, timeout=20)
             expected = "image/" if public_url in pin_images else "text/html"
+            last_status = f'HTTP {check.status_code}, type {check.headers.get("Content-Type", "missing")}'
             if check.status_code == 200 and expected in check.headers.get("Content-Type", ""):
                 ready = True
                 break
-        except requests.RequestException:
-            pass
+        except requests.RequestException as exc:
+            last_status = type(exc).__name__
         time.sleep(15)
     if not ready:
-        print("Publication assets are not live yet; Make was not called.")
+        print(f"Publication asset not ready: {public_url} ({last_status}); Make was not called.")
         sys.exit(1)
 
 print(f"Sending 3 Pinterest pins for: {slug}")

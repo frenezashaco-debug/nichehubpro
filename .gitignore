@@ -22,6 +22,8 @@ __pycache__/
 !normalize_article_schema.py
 !site_quality_audit.py
 !scripts/readiness_batch.py
+!scripts/wait_pages_build.py
+!scripts/test_wait_pages_build.py
 
 # Generated local quality reports
 reports/

@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 concurrency:
   group: article-publisher
@@ -60,7 +61,7 @@ jobs:
       - name: Show current publish status
         run: python batch_24weeks.py --status
 
-      - name: Generate next editorial review draft
+      - name: Generate and quality-check next article
         env:
           NICHEHUB_AUTO_PUBLISH: "1"
         run: python batch_24weeks.py
@@ -80,14 +81,16 @@ jobs:
           git push
           echo "published=true" >> "$GITHUB_OUTPUT"
 
+      - name: Deploy publication to GitHub Pages
+        if: steps.publication.outputs.published == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/wait_pages_build.py
+
       - name: Ping search engines
         if: steps.publication.outputs.published == 'true'
         continue-on-error: true
         run: python ping_indexing.py --new-only
-
-      - name: Push Pinterest pins
-        if: steps.publication.outputs.published == 'true'
-        run: python auto_pins.py
 
       - name: Purge Cloudflare cache
         if: steps.publication.outputs.published == 'true'
@@ -105,3 +108,7 @@ jobs:
             -H "Content-Type: application/json" \
             --data '{"purge_everything":true}' \
             | python3 -c "import sys,json; r=json.load(sys.stdin); print('Cache purged OK' if r.get('success') else f'Purge failed: {r}')"
+
+      - name: Push Pinterest pins
+        if: steps.publication.outputs.published == 'true'
+        run: python auto_pins.py
