@@ -3,12 +3,12 @@
 const ARTICLES = [
   {
     "slug": "what-cognitive-load-does-to-your-decision-making",
-    "title": "7 Things What Cognitive Load Does to Your Decision Making (And How to Finally Think Clearly)",
+    "title": "What Cognitive Load Does to Your Decision Making: 5 Practical Checks",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Oct 2026",
     "read_time": "8",
-    "excerpt": "What cognitive load does to your decision making is something most people never connect to the poor choices they make on hard days. You snap at someone...",
+    "excerpt": "Compare everyday choices with a practical worksheet, specific research findings, and clear limits on claims about mental energy.",
     "image": "images/what-cognitive-load-does-to-your-decision-making.jpg",
     "alt": "Young woman looking mentally overwhelmed while making decisions at desk",
     "pins": [
