@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "the-psychology-behind-why-deadlines-make-you-more-productive",
+    "title": "7 Reasons the Psychology Behind Why Deadlines Make You More Productive Actually Makes Sense",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Oct 2026",
+    "read_time": "8",
+    "excerpt": "The psychology behind why deadlines make you more productive is one of those things you feel every time a due date looms closer and you suddenly find...",
+    "image": "images/the-psychology-behind-why-deadlines-make-you-more-productive.jpg",
+    "alt": "woman concentrating at desk studying deadline psychology productivity",
+    "pins": [
+      {
+        "title": "How to Use Deadline Psychology to Finally Get Things Done",
+        "description": "The psychology behind why deadlines make you more productive is simpler than you think. Urgency, focus, and time limits work together to cut through procrastination. Read the full breakdown to start using deadlines as a real tool."
+      },
+      {
+        "title": "Stop Waiting for the Last Minute - Understand Deadline Pressure First",
+        "description": "If you only focus well when a deadline is close, there is a reason for that - and it is not laziness. Deadline psychology for productivity explains why your brain responds to time limits and how to recreate that focus on your own terms."
+      },
+      {
+        "title": "Try This: Set a Fake Deadline Today and See What Happens",
+        "description": "Understanding why deadlines make people more productive gives you a tool you can use any time. Set a tight but realistic time window for your next task and notice whether your focus sharpens. It may be one of the simplest shifts you can make."
+      }
+    ]
+  },
+  {
     "slug": "what-cognitive-load-does-to-your-decision-making",
     "title": "What Cognitive Load Does to Your Decision Making: 5 Practical Checks",
     "category": "Mental Wellness",
