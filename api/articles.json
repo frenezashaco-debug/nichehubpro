@@ -1,8 +1,8 @@
 [
   {
     "id": "what-cognitive-load-does-to-your-decision-making",
-    "title": "7 Things What Cognitive Load Does to Your Decision Making (And How to Finally Think Clearly)",
-    "shortText": "Discover what cognitive load does to your decision making, why mental overload causes poor choices, and simple steps to think more clearly every day. Read on.",
+    "title": "What Cognitive Load Does to Your Decision Making: 5 Practical Checks",
+    "shortText": "Compare everyday choices with a practical worksheet, specific research findings, and clear limits on claims about mental energy.",
     "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/what-cognitive-load-does-to-your-decision-making.html",
     "date": "2026-10-12"
@@ -11,7 +11,7 @@
     "id": "how-blood-sugar-swings-affect-your-energy-and-mood",
     "title": "7 Ways Blood Sugar Swings Affect Your Energy and Mood More Than You Realise",
     "shortText": "Learn how blood sugar swings affect your energy and mood, why crashes happen, and simple daily habits that may help you feel steadier all day long. Read on.",
-    "category": "mental_wellness",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/how-blood-sugar-swings-affect-your-energy-and-mood.html",
     "date": "2026-10-09"
   },
@@ -19,7 +19,7 @@
     "id": "how-dopamine-actually-works-and-why-quick-fixes-backfire",
     "title": "How Dopamine Actually Works and Why Quick Fixes Backfire (And What to Do Instead)",
     "shortText": "Learn how dopamine actually works and why quick fixes backfire, plus simple steps to build lasting motivation and feel better over time. More practical tips.",
-    "category": "productivity",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-dopamine-actually-works-and-why-quick-fixes-backfire.html",
     "date": "2026-10-08"
   },
@@ -27,7 +27,7 @@
     "id": "how-to-train-your-brain-for-longer-attention-spans",
     "title": "How to Train Your Brain for Longer Attention Spans: 5 Practical Checks",
     "shortText": "How to train your brain for longer attention spans: try five practical focus checks, reduce interruptions, and build a routine that fits your real working day.",
-    "category": "mental_wellness",
+    "category": "productivity",
     "url": "https://nichehubpro.com/articles/how-to-train-your-brain-for-longer-attention-spans.html",
     "date": "2026-09-30"
   },
@@ -59,7 +59,7 @@
     "id": "how-to-build-energy-that-lasts-all-day-without-crashing",
     "title": "7 Ways to Plan for Steadier Energy During the Day",
     "shortText": "Learn how to build energy that lasts all day without crashing. Practical, science-aware tips for sustained energy without crash or afternoon slump. Read on.",
-    "category": "mental_wellness",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/how-to-build-energy-that-lasts-all-day-without-crashing.html",
     "date": "2026-09-05"
   },
@@ -75,7 +75,7 @@
     "id": "what-neuroplasticity-means-for-changing-your-habits",
     "title": "Neuroplasticity and Habit Change: 7 Practical Lessons",
     "shortText": "Learn what neuroplasticity means for changing your habits and how small, repeated actions can support better routines without fixed timelines or false promises.",
-    "category": "productivity",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/what-neuroplasticity-means-for-changing-your-habits.html",
     "date": "2026-09-05"
   },
@@ -83,7 +83,7 @@
     "id": "why-hydration-affects-your-focus-more-than-you-think",
     "title": "Hydration and Focus: What to Notice and Do",
     "shortText": "Practical hydration guidance with clear limits and links to public-health sources.",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/why-hydration-affects-your-focus-more-than-you-think.html",
     "date": "2026-09-02"
   },
@@ -99,7 +99,7 @@
     "id": "how-to-calm-your-nervous-system-fast",
     "title": "Calming Techniques for Moments of Overwhelm",
     "shortText": "Practical calming techniques for moments of overwhelm, with clear limits, grounding ideas, and guidance on when professional support is needed.",
-    "category": "healthy_lifestyle",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-calm-your-nervous-system-fast.html",
     "date": "2026-08-19"
   },
@@ -107,7 +107,7 @@
     "id": "how-to-build-a-routine-that-survives-a-busy-week",
     "title": "How to Build a Flexible Routine for a Busy Week",
     "shortText": "Build a flexible routine for a busy week with smaller fallback habits, realistic planning, and clear limits that support rather than pressure you.",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/how-to-build-a-routine-that-survives-a-busy-week.html",
     "date": "2026-08-17"
   },
@@ -131,7 +131,7 @@
     "id": "how-to-build-a-stress-resistant-morning-routine",
     "title": "7 Ideas for a More Manageable Morning Routine",
     "shortText": "Build a more manageable morning routine with seven flexible ideas for light, food, planning, and pauses that suit your own schedule. Practical steps you can",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/how-to-build-a-stress-resistant-morning-routine.html",
     "date": "2026-08-10"
   },
@@ -147,7 +147,7 @@
     "id": "the-emotional-root-of-chronic-procrastination",
     "title": "7 Emotional Factors That Can Contribute to Procrastination",
     "shortText": "Learn the emotional root of chronic procrastination, how fear and shame fuel avoidance, and practical steps to start difficult tasks with less self-blame today.",
-    "category": "productivity",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/the-emotional-root-of-chronic-procrastination.html",
     "date": "2026-08-05"
   },
@@ -163,7 +163,7 @@
     "id": "healthy-productivity-habits-for-entrepreneurs",
     "title": "9 Healthy Productivity Habits for Entrepreneurs",
     "shortText": "Explore nine healthy productivity habits for entrepreneurs, with realistic ways to plan workload, protect breaks, and set sustainable boundaries. Practical",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/healthy-productivity-habits-for-entrepreneurs.html",
     "date": "2026-08-02"
   },
@@ -171,7 +171,7 @@
     "id": "best-self-improvement-systems-explained",
     "title": "7 Self-Improvement Systems Explained",
     "shortText": "Explore seven self-improvement systems and choose a simple framework that you can adapt to your goals, resources, and current responsibilities. Practical steps",
-    "category": "mental_wellness",
+    "category": "productivity",
     "url": "https://nichehubpro.com/articles/best-self-improvement-systems-explained.html",
     "date": "2026-08-01"
   },
@@ -187,7 +187,7 @@
     "id": "why-small-habits-create-big-results",
     "title": "7 Reasons Small Habits Can Matter",
     "shortText": "Explore seven reasons small habits can matter, with practical ways to choose a realistic action and review what helps over time. Practical steps you can use",
-    "category": "productivity",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/why-small-habits-create-big-results.html",
     "date": "2026-07-30"
   },
@@ -203,7 +203,7 @@
     "id": "how-to-create-sustainable-healthy-habits",
     "title": "7 Ways to Create Sustainable Healthy Habits",
     "shortText": "Explore seven ways to create sustainable healthy habits, with smaller steps, realistic planning, and room to restart after setbacks. Practical steps you can",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/how-to-create-sustainable-healthy-habits.html",
     "date": "2026-07-28"
   },
@@ -211,7 +211,7 @@
     "id": "healthy-morning-routine-checklist",
     "title": "7 Healthy Morning Routine Checklist Ideas",
     "shortText": "Seven flexible morning routine ideas for sleep, food, movement, and planning your day.",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/healthy-morning-routine-checklist.html",
     "date": "2026-07-27"
   },
@@ -219,7 +219,7 @@
     "id": "how-to-improve-concentration-naturally",
     "title": "9 Ways to Improve Concentration Naturally Without Quick Fixes",
     "shortText": "Explore nine practical ways to improve concentration through sleep, movement, food, breaks, and environment changes without promising instant results or cures.",
-    "category": "mental_wellness",
+    "category": "productivity",
     "url": "https://nichehubpro.com/articles/how-to-improve-concentration-naturally.html",
     "date": "2026-07-26"
   },
@@ -235,7 +235,7 @@
     "id": "how-to-stop-overthinking-everything",
     "title": "7 Ways to Stop Overthinking Everything (And Finally Feel Free)",
     "shortText": "Learn how to stop overthinking everything with practical steps to interrupt worry loops, make decisions, and regain focus without demanding perfect certainty.",
-    "category": "productivity",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-stop-overthinking-everything.html",
     "date": "2026-07-25"
   },
@@ -323,7 +323,7 @@
     "id": "why-you-feel-tired-all-the-time",
     "title": "7 Reasons You Feel Tired All the Time",
     "shortText": "Explore common causes of feeling tired all the time, sensible daily steps, and warning signs that ongoing fatigue needs a clinical evaluation when it persists.",
-    "category": "mental_wellness",
+    "category": "productivity",
     "url": "https://nichehubpro.com/articles/why-you-feel-tired-all-the-time.html",
     "date": "2026-07-21"
   },
@@ -355,7 +355,7 @@
     "id": "pomodoro-technique-explained-for-beginners",
     "title": "7 Pomodoro Technique Tips That Actually Help",
     "shortText": "Learn the Pomodoro technique for beginners, including how to choose work intervals, take breaks, and adapt the method to your tasks.",
-    "category": "mental_wellness",
+    "category": "productivity",
     "url": "https://nichehubpro.com/articles/pomodoro-technique-explained-for-beginners.html",
     "date": "2026-07-21"
   },
@@ -443,7 +443,7 @@
     "id": "how-to-calm-your-mind-instantly",
     "title": "7 Ways to Calm an Overwhelmed Mind Safely",
     "shortText": "Learn seven gentle ways to calm an overwhelmed mind, use grounding safely, and recognize when persistent anxiety needs professional support and care each day.",
-    "category": "healthy_lifestyle",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-calm-your-mind-instantly.html",
     "date": "2026-07-21"
   },
@@ -467,7 +467,7 @@
     "id": "healthy-routine-for-working-from-home",
     "title": "7 Healthy Routine Ideas for Working From Home",
     "shortText": "Explore seven healthy routine ideas for working from home, with flexible boundaries, breaks, movement, and realistic ways to organise your day. Practical steps",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/healthy-routine-for-working-from-home.html",
     "date": "2026-07-19"
   },
@@ -515,7 +515,7 @@
     "id": "how-to-stop-self-sabotaging",
     "title": "7 Ways to Stop Self-Sabotaging Before You Block Your Progress",
     "shortText": "Learn how to stop self-sabotaging by spotting harmful patterns, testing safer actions, and getting support when fear or self-doubt block progress in daily life.",
-    "category": "healthy_lifestyle",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-stop-self-sabotaging.html",
     "date": "2026-07-14"
   },
@@ -531,7 +531,7 @@
     "id": "healthy-habits-for-busy-people",
     "title": "7 Healthy Habits for Busy People",
     "shortText": "Explore seven flexible healthy habits for busy people, with realistic ideas for food, movement, rest, and planning around a full schedule. Practical steps you",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/healthy-habits-for-busy-people.html",
     "date": "2026-07-12"
   },
@@ -579,7 +579,7 @@
     "id": "how-to-stay-productive-every-day",
     "title": "5 Ways to Stay Productive Every Day",
     "shortText": "Explore five realistic ways to stay productive every day, including planning, breaks, priorities, and adapting your routine when life changes. Practical steps",
-    "category": "mental_wellness",
+    "category": "productivity",
     "url": "https://nichehubpro.com/articles/how-to-stay-productive-every-day.html",
     "date": "2026-07-05"
   },
@@ -595,7 +595,7 @@
     "id": "how-to-fall-asleep-when-your-mind-wont-stop",
     "title": "5 Ways to Fall Asleep When Your Mind Won't Stop: The Racing Mind Solution",
     "shortText": "Learn how to fall asleep when your mind will not stop with practical techniques, calmer routines, and guidance for persistent sleep problems and next steps.",
-    "category": "healthy_lifestyle",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-fall-asleep-when-your-mind-wont-stop.html",
     "date": "2026-07-02"
   },
@@ -611,7 +611,7 @@
     "id": "healthy-daily-routine-checklist",
     "title": "7 Healthy Daily Routine Checklist Ideas",
     "shortText": "Build a healthy daily routine checklist with seven flexible ideas for meals, movement, rest, connection, and planning your own day. Practical steps you can use",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/healthy-daily-routine-checklist.html",
     "date": "2026-06-18"
   },
@@ -635,7 +635,7 @@
     "id": "how-to-deal-with-stress-at-work",
     "title": "5 Ways to Deal with Stress at Work: Your Daily Escape Plan",
     "shortText": "Learn how to deal with stress at work using five practical strategies, healthier boundaries, and guidance for persistent anxiety, fatigue, or sleep problems.",
-    "category": "productivity",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-deal-with-stress-at-work.html",
     "date": "2026-06-14"
   },
@@ -643,7 +643,7 @@
     "id": "best-evening-habits-for-better-sleep",
     "title": "7 Evening Habits for a More Consistent Bedtime",
     "shortText": "Explore seven evening habits for a more consistent bedtime, with adaptable ideas for wind-down time, screens, and a comfortable sleep environment.",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/best-evening-habits-for-better-sleep.html",
     "date": "2026-06-13"
   },
@@ -667,7 +667,7 @@
     "id": "daily-stretching-routine-for-beginners",
     "title": "5 Daily Stretching Routine Ideas for Beginners",
     "shortText": "Try five gentle daily stretching routine ideas for beginners, with reminders to move comfortably and seek qualified advice for pain or injury.",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/daily-stretching-routine-for-beginners.html",
     "date": "2026-06-07"
   },
@@ -683,7 +683,7 @@
     "id": "how-to-build-self-discipline",
     "title": "5 Ways to Build Self-Discipline Gradually",
     "shortText": "Explore five ways to build self-discipline gradually, with smaller commitments, planning, and room to restart after setbacks. Practical steps you can use today.",
-    "category": "mental_wellness",
+    "category": "productivity",
     "url": "https://nichehubpro.com/articles/how-to-build-self-discipline.html",
     "date": "2026-06-04"
   },
@@ -699,7 +699,7 @@
     "id": "how-to-calm-down-when-overwhelmed",
     "title": "5 Ways to Pause When You Feel Overwhelmed",
     "shortText": "Explore five gentle ways to pause when overwhelmed, including grounding and reaching out for support when feelings are persistent or severe.",
-    "category": "healthy_lifestyle",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-calm-down-when-overwhelmed.html",
     "date": "2026-06-02"
   },
@@ -707,7 +707,7 @@
     "id": "how-to-improve-energy-naturally",
     "title": "5 Ways to Improve Energy Naturally Without Relying on Caffeine",
     "shortText": "Learn how to improve energy naturally with science-backed tips. Boost vitality without caffeine, sugar crashes, or exhaustion. Start today.",
-    "category": "mental_wellness",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/how-to-improve-energy-naturally.html",
     "date": "2026-06-01"
   },
@@ -715,7 +715,7 @@
     "id": "morning-routine-for-a-healthy-lifestyle",
     "title": "7 Morning Routine Ideas for a Healthy Lifestyle",
     "shortText": "Explore seven flexible morning routine ideas for a healthy lifestyle, including meals, movement, light, planning, and a pace that fits your day. Practical steps",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/morning-routine-for-a-healthy-lifestyle.html",
     "date": "2026-05-31"
   },
@@ -723,7 +723,7 @@
     "id": "best-time-management-techniques-ranked",
     "title": "7 Best Time Management Techniques Ranked for Real Life",
     "shortText": "Compare 7 best time management techniques, including time blocking and Pomodoro, then choose a method that fits your workload, energy, and attention daily.",
-    "category": "mental_wellness",
+    "category": "productivity",
     "url": "https://nichehubpro.com/articles/best-time-management-techniques-ranked.html",
     "date": "2026-05-29"
   },
@@ -739,7 +739,7 @@
     "id": "daily-habits-for-better-mental-health",
     "title": "7 Daily Habits for Better Mental Health That Actually Stick",
     "shortText": "Discover 7 daily habits for better mental health, with realistic routines that may support sleep, stress management, mood, and everyday wellbeing over time.",
-    "category": "productivity",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/daily-habits-for-better-mental-health.html",
     "date": "2026-05-28"
   },
@@ -747,7 +747,7 @@
     "id": "healthy-habits-to-start-this-week",
     "title": "7 Healthy Habits to Start This Week at Your Own Pace",
     "shortText": "Start 7 realistic healthy habits this week, including movement, sleep, food, and routines that support wellbeing without extreme changes or guilt over time.",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/healthy-habits-to-start-this-week.html",
     "date": "2026-05-25"
   },
@@ -787,7 +787,7 @@
     "id": "healthy-sleep-habits-that-improve-energy",
     "title": "7 Sleep Habits to Support Daytime Energy",
     "shortText": "Learn 7 healthy sleep habits that can support better energy, steadier focus, and a calmer day. Use practical steps and know when to seek professional advice.",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/healthy-sleep-habits-that-improve-energy.html",
     "date": "2026-05-18"
   },
@@ -803,7 +803,7 @@
     "id": "time-blocking-for-beginners",
     "title": "5 Time Blocking for Beginners: Stop Feeling Scattered and Reclaim Your Day",
     "shortText": "Learn time blocking for beginners with a practical schedule. Organize priorities, protect focus, leave room for interruptions, and finish important work well.",
-    "category": "mental_wellness",
+    "category": "productivity",
     "url": "https://nichehubpro.com/articles/time-blocking-for-beginners.html",
     "date": "2026-05-16"
   },
@@ -835,7 +835,7 @@
     "id": "how-to-set-healthy-boundaries",
     "title": "5 Ways to Set Healthy Boundaries Without Guilt (Your Permission Slip Starts Here)",
     "shortText": "Learn how to set healthy boundaries without feeling guilty. 5 practical strategies to protect your peace and relationships. Start today.",
-    "category": "healthy_lifestyle",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-set-healthy-boundaries.html",
     "date": "2026-05-14"
   },
@@ -859,7 +859,7 @@
     "id": "how-to-relax-your-mind",
     "title": "5 Ways to Make Space for Mental Rest",
     "shortText": "Learn how to relax your mind with 5 proven mental relaxation techniques. Science-backed methods to calm anxiety and stop overthinking in minutes.",
-    "category": "healthy_lifestyle",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-relax-your-mind.html",
     "date": "2026-04-12"
   },
@@ -867,7 +867,7 @@
     "id": "how-to-build-discipline",
     "title": "5 Ways to Build Discipline That Actually Stick (Without Willpower Burnout)",
     "shortText": "Learn how to build discipline every day with proven habits. Stop relying on willpower. Start small, stay consistent, transform your life.",
-    "category": "mental_wellness",
+    "category": "productivity",
     "url": "https://nichehubpro.com/articles/how-to-build-discipline.html",
     "date": "2026-04-12"
   },
@@ -875,7 +875,7 @@
     "id": "how-to-stop-overthinking-at-work",
     "title": "5 Ways to Stop Overthinking at Work: Reclaim Your Focus and Peace",
     "shortText": "Learn how to stop overthinking at work with five practical approaches, clear workplace examples, reliable sources, and guidance on when to seek extra support.",
-    "category": "productivity",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-stop-overthinking-at-work.html",
     "date": "2026-04-12"
   },
@@ -907,7 +907,7 @@
     "id": "healthy-living-tips",
     "title": "7 Healthy Living Tips for a Busy Routine",
     "shortText": "Learn seven practical healthy living tips for sleep, movement, food, hydration, and stress, with simple ways to adapt them safely to a busy routine each day.",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/healthy-living-tips.html",
     "date": "2026-04-12"
   },
@@ -923,7 +923,7 @@
     "id": "improve-daily-routine",
     "title": "5 Ways to Improve Daily Routine and Finally Feel Like Yourself Again",
     "shortText": "Learn how to improve your daily routine with practical habits that reduce friction, support your energy, and help you build a steadier, more satisfying day.",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/improve-daily-routine.html",
     "date": "2026-04-12"
   },
@@ -947,7 +947,7 @@
     "id": "daily-wellness-habits",
     "title": "5 Daily Wellness Habits to Try at Your Own Pace",
     "shortText": "Explore five daily wellness habits you can adapt to your needs, including rest, meals, movement, connection, and a realistic pace.",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/daily-wellness-habits.html",
     "date": "2026-04-12"
   },
@@ -963,7 +963,7 @@
     "id": "how-to-stop-overthinking-at-night",
     "title": "5 Ways to Stop Overthinking at Night and Finally Sleep",
     "shortText": "Five gentle ways to respond to racing thoughts at night, with clear limits and guidance on when to seek professional support.",
-    "category": "productivity",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-stop-overthinking-at-night.html",
     "date": "2026-04-12"
   },
@@ -987,7 +987,7 @@
     "id": "natural-energy-boosters",
     "title": "Natural Energy Boosters: 7 Practical Ways to Feel Steadier",
     "shortText": "Natural energy boosters can support steadier days through sleep, meals, movement, and hydration. Try seven practical steps and know when fatigue needs care.",
-    "category": "mental_wellness",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/natural-energy-boosters.html",
     "date": "2026-04-12"
   },
@@ -1003,7 +1003,7 @@
     "id": "how-to-detox-your-mind",
     "title": "5 Safe Ways to Clear Mental Clutter and Calm Negative Thoughts",
     "shortText": "Learn how to clear mental clutter safely with thought-labeling, journaling, boundaries, and support when worry or distress becomes difficult to manage each day.",
-    "category": "healthy_lifestyle",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-detox-your-mind.html",
     "date": "2026-04-12"
   },
@@ -1011,7 +1011,7 @@
     "id": "sleep-routine-tips",
     "title": "7 Sleep Routine Tips for a Calmer Evening",
     "shortText": "Use seven sleep routine tips to build a calmer evening, improve sleep habits, and know when persistent problems need professional support and advice for you.",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/sleep-routine-tips.html",
     "date": "2026-04-12"
   },
@@ -1067,7 +1067,7 @@
     "id": "morning-routine-for-mental-health",
     "title": "5 Morning Routine Habits for Mental Health",
     "shortText": "Build a gentle morning routine for mental health with five practical habits, flexible timing, and guidance for stress, anxiety, and difficult mornings each day.",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/morning-routine-for-mental-health.html",
     "date": "2026-04-12"
   },
@@ -1075,7 +1075,7 @@
     "id": "how-to-feel-calm-instantly",
     "title": "5 Calming Techniques to Try When Stress Builds",
     "shortText": "Learn how to feel calm instantly with 5 science-backed techniques. Reduce anxiety in minutes and reclaim your peace today. Start now.",
-    "category": "healthy_lifestyle",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-feel-calm-instantly.html",
     "date": "2026-04-12"
   },
@@ -1083,7 +1083,7 @@
     "id": "anxiety-before-sleep",
     "title": "5 Gentle Ways to Respond to Anxiety Before Sleep",
     "shortText": "Explore five gentle ways to respond to anxiety before sleep, with practical limits, official sources, and guidance on seeking professional support. Practical",
-    "category": "healthy_lifestyle",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/anxiety-before-sleep.html",
     "date": "2026-04-12"
   },
@@ -1091,7 +1091,7 @@
     "id": "healthy-daily-habits",
     "title": "7 Healthy Daily Habits to Build Gradually",
     "shortText": "Explore seven healthy daily habits you can adapt to your needs, including meals, movement, rest, connection, and a manageable routine.",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/healthy-daily-habits.html",
     "date": "2026-04-12"
   },
@@ -1099,7 +1099,7 @@
     "id": "how-to-stop-overthinking",
     "title": "How to Stop Overthinking: 8 Practical Steps for Calmer Days",
     "shortText": "Learn how to stop overthinking with 8 practical steps for racing thoughts, worry loops, calmer evenings, and clearer decisions without demanding instant calm.",
-    "category": "productivity",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-stop-overthinking.html",
     "date": "2026-04-12"
   },
@@ -1115,7 +1115,7 @@
     "id": "how-to-stay-calm-under-pressure",
     "title": "5 Ways to Respond to Pressure More Deliberately",
     "shortText": "Learn 5 proven stress control techniques to stay calm under pressure. Real strategies that work when deadlines hit and anxiety rises. Master your response today",
-    "category": "healthy_lifestyle",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-stay-calm-under-pressure.html",
     "date": "2026-04-12"
   },
@@ -1123,7 +1123,7 @@
     "id": "how-to-sleep-better-naturally",
     "title": "7 Sleep Habits to Try and When to Seek Help",
     "shortText": "Learn how to sleep better naturally with proven science-backed methods. Discover 7 powerful techniques to fall asleep faster and wake up refreshed daily.",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/how-to-sleep-better-naturally.html",
     "date": "2026-04-12"
   },
@@ -1155,7 +1155,7 @@
     "id": "how-to-change-your-mindset",
     "title": "5 Ways to Reconsider Unhelpful Thinking Habits",
     "shortText": "Learn how to change your mindset with 5 proven techniques. Break limiting beliefs, rewire negative thoughts, and master your mental game starting now.",
-    "category": "productivity",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-change-your-mindset.html",
     "date": "2026-04-12"
   },
@@ -1163,7 +1163,7 @@
     "id": "how-to-calm-anxiety-quickly",
     "title": "5 Practical Ways to Calm Anxiety Quickly and Safely",
     "shortText": "Learn how to calm anxiety quickly with five practical techniques, morning routine ideas, and clear guidance for recurring symptoms and professional support.",
-    "category": "healthy_lifestyle",
+    "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-calm-anxiety-quickly.html",
     "date": "2026-04-12"
   },
@@ -1179,7 +1179,7 @@
     "id": "how-to-increase-energy-naturally",
     "title": "5 Everyday Habits to Support Your Energy",
     "shortText": "Explore five practical ways to support steadier energy, including sleep, meals, movement, and discussing persistent fatigue with a clinician. Practical steps",
-    "category": "productivity",
+    "category": "healthy_lifestyle",
     "url": "https://nichehubpro.com/articles/how-to-increase-energy-naturally.html",
     "date": "2026-04-12"
   },

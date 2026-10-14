@@ -1,4 +1,5 @@
 import os, json, re
+from html import unescape
 from datetime import datetime
 
 try:
@@ -63,11 +64,17 @@ def parse_article(file_path, slug):
     if not description or len(description) < 20:
         description = 'Read about ' + title.lower() + ' on NicheHubPro.'
 
+    # The published article's explicit taxonomy wins over keyword guesses.
+    tag = re.search(r'<span\b[^>]*class=["\']article-tag["\'][^>]*>(.*?)</span>', content, re.I | re.S)
+    categories = {'mental wellness': 'mental_wellness', 'productivity': 'productivity', 'healthy lifestyle': 'healthy_lifestyle'}
+    label = unescape(re.sub(r'<[^>]+>', '', tag.group(1))).strip().lower() if tag else ''
+    category = categories.get(label) or get_category(slug, title)
+
     return {
         'id': slug,
         'title': title,
         'shortText': description[:160],
-        'category': get_category(slug, title),
+        'category': category,
         'url': 'https://nichehubpro.com/articles/' + slug + '.html',
         'date': date
     }
