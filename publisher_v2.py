@@ -10,6 +10,7 @@ Usage:
 import sys, os, re, json, textwrap, io, time, html
 from datetime import date
 from urllib.parse import urlparse
+from publication_checks import publication_blockers
 sys.stdout.reconfigure(encoding='utf-8')
 import anthropic
 import requests
@@ -66,6 +67,7 @@ AUTHORS = {
 
 # ── SYSTEM PROMPT ────────────────────────────────────────────────────────
 SYSTEM_PROMPT = """You are a careful editorial writer for NicheHubPro, a mental wellness blog.
+PUBLICATION SAFETY: In body HTML, use /articles/EXACT-PUBLISHED-SLUG.html for article links, never /SLUG WordPress paths. Only use supplied published slugs in internal_links and related. Do not invent statistical or clinical outcomes in illustrative scenarios. Omit unverifiable statistics; any percentage must have a direct HTTPS source link in its own paragraph and that URL must also appear in references. A source must actually support the claim, not merely discuss the topic. Apply the same safety standards to FAQ answers as to the body. Never assure an unassessed reader that their heart or body is safe, prescribe sun-gazing or cold-water immersion for panic, or claim dopamine resets every 24 hours.
 Your audience: real people dealing with stress, anxiety, and overthinking.
 Your job: write human, motivational, deeply useful articles — NOT robotic AI content.
 
@@ -841,7 +843,7 @@ def _prompt_has_no_text_safeguards(prompt):
 
 def validate_article_quality(data, primary_kw, cornerstone=False):
     """Reject weak, unsafe, or unreviewable generator output before publication."""
-    errors = []
+    errors = publication_blockers(data, BASE_DIR)
     meta = (data.get("meta_description") or "").strip()
     if len(meta) > 160:
         meta = meta[:160].rstrip(" ,;:.!?")
@@ -914,7 +916,7 @@ def validate_article_quality(data, primary_kw, cornerstone=False):
     searchable_fields = [
         data.get("title", ""), data.get("intro", ""), data.get("tldr", ""),
         data.get("real_example", ""), data.get("conclusion", ""),
-    ] + [section.get("content", "") for section in sections]
+    ] + [section.get("content", "") for section in sections] + [str(item.get("question", "")) + " " + str(item.get("answer", "")) for item in faq]
     article_text = " ".join(searchable_fields)
     block_match = re.search(QUALITY_BLOCKLIST, article_text, flags=re.IGNORECASE)
     if block_match:

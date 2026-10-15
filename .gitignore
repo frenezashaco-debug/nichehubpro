@@ -24,6 +24,8 @@ __pycache__/
 !scripts/readiness_batch.py
 !scripts/wait_pages_build.py
 !scripts/test_wait_pages_build.py
+!publication_checks.py
+!scripts/test_publication_checks.py
 
 # Generated local quality reports
 reports/
