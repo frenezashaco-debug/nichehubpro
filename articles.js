@@ -3,26 +3,26 @@
 const ARTICLES = [
   {
     "slug": "the-psychology-behind-why-deadlines-make-you-more-productive",
-    "title": "7 Reasons the Psychology Behind Why Deadlines Make You More Productive Actually Makes Sense",
+    "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Reality Checks",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Oct 2026",
-    "read_time": "8",
-    "excerpt": "The psychology behind why deadlines make you more productive is one of those things you feel every time a due date looms closer and you suddenly find...",
+    "read_time": "6",
+    "excerpt": "Explore the psychology behind why deadlines make you more productive with scope checks, a practical planning card, and room to review quality before delivery.",
     "image": "images/the-psychology-behind-why-deadlines-make-you-more-productive.jpg",
     "alt": "woman concentrating at desk studying deadline psychology productivity",
     "pins": [
       {
-        "title": "How to Use Deadline Psychology to Finally Get Things Done",
-        "description": "The psychology behind why deadlines make you more productive is simpler than you think. Urgency, focus, and time limits work together to cut through procrastination. Read the full breakdown to start using deadlines as a real tool."
+        "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Reality Checks",
+        "description": "Explore the psychology behind why deadlines make you more productive with scope checks, a practical planning card, and room to review quality before delivery."
       },
       {
-        "title": "Stop Waiting for the Last Minute - Understand Deadline Pressure First",
-        "description": "If you only focus well when a deadline is close, there is a reason for that - and it is not laziness. Deadline psychology for productivity explains why your brain responds to time limits and how to recreate that focus on your own terms."
+        "title": "Planning checklist: The Psychology Behind Why Deadlines Make You More Productive",
+        "description": "Explore the psychology behind why deadlines make you more productive with scope checks, a practical planning card, and room to review quality before delivery."
       },
       {
-        "title": "Try This: Set a Fake Deadline Today and See What Happens",
-        "description": "Understanding why deadlines make people more productive gives you a tool you can use any time. Set a tight but realistic time window for your next task and notice whether your focus sharpens. It may be one of the simplest shifts you can make."
+        "title": "Practical questions: The Psychology Behind Why Deadlines Make You More Productive",
+        "description": "Explore the psychology behind why deadlines make you more productive with scope checks, a practical planning card, and room to review quality before delivery."
       }
     ]
   },
@@ -177,26 +177,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-energy-that-lasts-all-day-without-crashing",
-    "title": "7 Ways to Plan for Steadier Energy During the Day",
+    "title": "How to Build Energy That Lasts All Day Without Crashing: 7 Realistic Checks",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Sep 2026",
-    "read_time": "8",
-    "excerpt": "Build a steadier daily routine around sleep, meals, movement, and breaks, and learn when persistent fatigue needs medical attention.",
+    "read_time": "13",
+    "excerpt": "Review how to build energy that lasts all day without crashing with seven realistic checks, an afternoon decision note, and limits on what habits can explain.",
     "image": "images/how-to-build-energy-that-lasts-all-day-without-crashing.jpg",
     "alt": "Young woman eating protein breakfast for sustained energy without crash",
     "pins": [
       {
-        "title": "How to Build Energy That Lasts All Day Without Crashing",
-        "description": "Tired of hitting a wall every afternoon? Learn how to build energy that lasts all day without crashing with simple food, sleep, and movement habits. No extreme diets, no complicated routines. Save this and try one tip today."
+        "title": "How to Build Energy That Lasts All Day Without Crashing: 7 Realistic Checks",
+        "description": "Review how to build energy that lasts all day without crashing with seven realistic checks, an afternoon decision note, and limits on what habits can explain."
       },
       {
-        "title": "Stop the Afternoon Crash: 7 Habits for Sustained Energy Without Crash",
-        "description": "The afternoon slump is not inevitable. These 7 science-aware habits can help you maintain sustained energy without crash from morning to evening. Small changes to your meals and routine can make a real difference. Save this for your next rough afternoon."
+        "title": "Planning checklist: How to Build Energy That Lasts All Day Without Crashing",
+        "description": "Review how to build energy that lasts all day without crashing with seven realistic checks, an afternoon decision note, and limits on what habits can explain."
       },
       {
-        "title": "Try This: How to Have Consistent Energy All Day Without an Afternoon Crash",
-        "description": "If your energy dips every afternoon, your meals, sleep, and movement habits may be the cause. Here is how to have consistent energy all day without an afternoon crash using realistic, beginner-friendly steps. Pin this and pick one habit to try this week."
+        "title": "Practical questions: How to Build Energy That Lasts All Day Without Crashing",
+        "description": "Review how to build energy that lasts all day without crashing with seven realistic checks, an afternoon decision note, and limits on what habits can explain."
       }
     ]
   },
@@ -252,26 +252,26 @@ const ARTICLES = [
   },
   {
     "slug": "why-hydration-affects-your-focus-more-than-you-think",
-    "title": "Hydration and Focus: What to Notice and Do",
+    "title": "Why Hydration Affects Your Focus More Than You Think: 5 Practical Checks",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Sep 2026",
-    "read_time": "8",
-    "excerpt": "Recognize possible signs of dehydration, build manageable drinking habits, and understand why difficulty focusing can have other causes.",
+    "read_time": "9",
+    "excerpt": "Learn why hydration affects your focus more than you think, with practical access checks, individual fluid limits, and warning signs that need medical advice.",
     "image": "images/why-hydration-affects-your-focus-more-than-you-think.jpg",
     "alt": "young woman drinking water at desk improving focus naturally",
     "pins": [
       {
-        "title": "How to Fix Brain Fog With Water (Why Hydration Affects Your Focus More Than You Think)",
-        "description": "Feeling scattered and slow mid-morning? The real culprit might be dehydration. Learn why hydration affects your focus more than you think and get simple daily habits that protect your concentration. Save this for your next slow brain day."
+        "title": "Why Hydration Affects Your Focus More Than You Think: 5 Practical Checks",
+        "description": "Learn why hydration affects your focus more than you think, with practical access checks, individual fluid limits, and warning signs that need medical advice."
       },
       {
-        "title": "Stop Reaching for Coffee - Dehydration is Killing Your Focus",
-        "description": "Mild dehydration causes memory lapses, slow thinking, and mood dips - before you ever feel thirsty. Hydration and mental performance are more connected than most people realize. Try drinking 500ml of water before your first coffee and feel the difference."
+        "title": "Planning checklist: Why Hydration Affects Your Focus More Than You Think",
+        "description": "Learn why hydration affects your focus more than you think, with practical access checks, individual fluid limits, and warning signs that need medical advice."
       },
       {
-        "title": "Try This Simple Hydration Habit That Boosts Focus in 20 Minutes",
-        "description": "Research shows that rehydrating restores cognitive performance in under 30 minutes. If you struggle with afternoon slumps and scattered thinking, this is the fastest fix available. Learn how does dehydration affect focus and energy - and what to do about it starting today."
+        "title": "Practical questions: Why Hydration Affects Your Focus More Than You Think",
+        "description": "Learn why hydration affects your focus more than you think, with practical access checks, individual fluid limits, and warning signs that need medical advice."
       }
     ]
   },
@@ -502,26 +502,26 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-productivity-habits-for-entrepreneurs",
-    "title": "9 Healthy Productivity Habits for Entrepreneurs",
+    "title": "Healthy Productivity Habits for Entrepreneurs: 9 Boundaries Worth Testing",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Aug 2026",
-    "read_time": "8",
-    "excerpt": "Healthy productivity habits for entrepreneurs are not about squeezing more hours out of your day - they are about making your best hours count.",
+    "read_time": "6",
+    "excerpt": "Try healthy productivity habits for entrepreneurs with nine practical boundaries, a weekly capacity check, and a plan for sharing work without health promises.",
     "image": "images/healthy-productivity-habits-for-entrepreneurs.jpg",
     "alt": "young woman working at desk practicing healthy productivity habits",
     "pins": [
       {
-        "title": "How to Build Healthy Productivity Habits for Entrepreneurs That Last",
-        "description": "Struggling to stay sharp and energized as a founder? These healthy productivity habits for entrepreneurs protect your focus without burning you out. Small daily shifts that actually stick. Save this for your next planning day."
+        "title": "Healthy Productivity Habits for Entrepreneurs: 9 Boundaries Worth Testing",
+        "description": "Try healthy productivity habits for entrepreneurs with nine practical boundaries, a weekly capacity check, and a plan for sharing work without health promises."
       },
       {
-        "title": "Stop Grinding and Start Using These Entrepreneur Wellness Habits",
-        "description": "Working 12-hour days is not the answer - your entrepreneur wellness habits are. Research shows recovery, sleep, and movement are the real drivers of sustainable output. Stop hustling harder and start recovering smarter."
+        "title": "Planning checklist: Healthy Productivity Habits for Entrepreneurs",
+        "description": "Try healthy productivity habits for entrepreneurs with nine practical boundaries, a weekly capacity check, and a plan for sharing work without health promises."
       },
       {
-        "title": "Try This Daily Habit Stack That Successful Entrepreneurs Quietly Follow",
-        "description": "Wondering what healthy habits successful entrepreneurs follow every day? It is simpler than you think - walks, real meals, set sleep times, and single-tasking. Try adding just one of these healthy productivity habits this week and see what shifts."
+        "title": "Practical questions: Healthy Productivity Habits for Entrepreneurs",
+        "description": "Try healthy productivity habits for entrepreneurs with nine practical boundaries, a weekly capacity check, and a plan for sharing work without health promises."
       }
     ]
   },
@@ -977,26 +977,26 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-habits-for-busy-people",
-    "title": "7 Healthy Habits for Busy People",
+    "title": "Healthy Habits for Busy People: 7 Flexible Choices for Difficult Weeks",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Healthy habits for busy people aren't about finding more time - they're about making smarter choices with the time you have. You already know exercise matt",
+    "read_time": "6",
+    "excerpt": "Explore healthy habits for busy people with seven adaptable choices, a normal-day and hard-day planning card, and realistic ways to remove everyday obstacles.",
     "image": "images/healthy-habits-for-busy-people.jpg",
     "alt": "Young woman at desk holding water bottle and apple, looking thoughtful",
     "pins": [
       {
-        "title": "7 Healthy Habits for Busy People That Actually Stick (No Time Needed)",
-        "description": "Stop waiting for more time. These 7 healthy habits for busy people take 5-15 minutes and stack onto your existing routine. Walking, better sleep, protein snacks, stretching, and morning anchors - all designed for people with chaotic schedules. Start with one habit today and transform your energy."
+        "title": "Healthy Habits for Busy People: 7 Flexible Choices for Difficult Weeks",
+        "description": "Explore healthy habits for busy people with seven adaptable choices, a normal-day and hard-day planning card, and realistic ways to remove everyday obstacles."
       },
       {
-        "title": "Stop Giving Up on Health Because You're Too Busy - Try This Instead",
-        "description": "Busy professionals skip these 7 healthy habits for busy people and wonder why they crash by 3pm. But when you attach small health habits to your existing routine, everything changes. No gym needed, no meal prep, no perfection - just tiny changes that actually survive your chaos."
+        "title": "Planning checklist: Healthy Habits for Busy People",
+        "description": "Explore healthy habits for busy people with seven adaptable choices, a normal-day and hard-day planning card, and realistic ways to remove everyday obstacles."
       },
       {
-        "title": "The 5 Healthy Habits for Busy People That Transform Energy in 2 Weeks",
-        "description": "Feeling exhausted despite doing 'everything right'? Try these 5 healthy habits for busy people: 15-minute walks, consistent sleep, protein snacks, 5-minute stretches, and a solid morning routine. See energy and mood improvements in as little as two weeks - no overhaul required."
+        "title": "Practical questions: Healthy Habits for Busy People",
+        "description": "Explore healthy habits for busy people with seven adaptable choices, a normal-day and hard-day planning card, and realistic ways to remove everyday obstacles."
       }
     ]
   },
@@ -2602,26 +2602,26 @@ const ARTICLES = [
   },
   {
     "slug": "natural-energy-boosters",
-    "title": "7 Everyday Options for Supporting Your Energy",
+    "title": "Natural Energy Boosters: 7 Options With Realistic Limits",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Natural energy boosters exist within your daily habits, not in a coffee cup. Most people reach for caffeine when fatigue hits, but that leads to crashes, a",
+    "read_time": "10",
+    "excerpt": "Compare natural energy boosters with seven realistic options, an obstacle-based planning checklist, and advice on when tiredness needs professional attention.",
     "image": "images/natural-energy-boosters.jpg",
     "alt": "Woman holding water glass in morning sunlight for natural energy",
     "pins": [
       {
-        "title": "7 Natural Energy Boosters That Beat Caffeine Every Time",
-        "description": "Tired of the coffee crash? Discover 7 science-backed natural energy boosters that work without caffeine. These methods increase energy naturally by addressing the real causes of fatigue. Start with hydration and movement for immediate results. Say goodbye to exhaustion and hello to sustained energy all day long."
+        "title": "Natural Energy Boosters: 7 Options With Realistic Limits",
+        "description": "Compare natural energy boosters with seven realistic options, an obstacle-based planning checklist, and advice on when tiredness needs professional attention."
       },
       {
-        "title": "Stop the 3pm Energy Crash With These Natural Methods",
-        "description": "That afternoon energy dip is predictable and preventable. Learn how to increase energy naturally using the 90-minute reset, protein timing, and strategic movement breaks. These natural energy boosters work within hours, not weeks. Your best energy is just ahead."
+        "title": "Planning checklist: Natural Energy Boosters",
+        "description": "Compare natural energy boosters with seven realistic options, an obstacle-based planning checklist, and advice on when tiredness needs professional attention."
       },
       {
-        "title": "Try This Energy Stack for 7 Days (No Supplements Needed)",
-        "description": "Water + movement + protein + sunlight equals sustained natural energy. This simple energy stacking system uses natural energy boosters you already have access to. Track your results for 7 days and watch your fatigue disappear. The best part? It's completely free."
+        "title": "Practical questions: Natural Energy Boosters",
+        "description": "Compare natural energy boosters with seven realistic options, an obstacle-based planning checklist, and advice on when tiredness needs professional attention."
       }
     ]
   },
@@ -3127,26 +3127,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-increase-energy-naturally",
-    "title": "5 Everyday Habits to Support Your Energy",
+    "title": "How to Increase Energy Naturally: 5 Checks When You Feel Worn Out",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to increase energy naturally is the question millions ask when 3pm fatigue hits hard. You're exhausted, reaching for that third coffee, and nothing see",
+    "read_time": "7",
+    "excerpt": "Learn how to increase energy naturally with five practical routine checks, a fatigue appointment worksheet, and clear limits on what everyday habits can fix.",
     "image": "images/how-to-increase-energy-naturally.jpg",
     "alt": "Woman in morning sunlight holding tea, natural energy boost routine",
     "pins": [
       {
-        "title": "How to Increase Energy Naturally in 5 Days (Without Caffeine)",
-        "description": "Stop the energy crash cycle. These five science-backed natural energy boosters address the real reasons you're tired all the time. Fix your sleep schedule, eat protein for breakfast, get morning sunlight, and stay hydrated. Feel the difference in 5 days or less. Your body is waiting for you to give it what it actually needs."
+        "title": "How to Increase Energy Naturally: 5 Checks When You Feel Worn Out",
+        "description": "Learn how to increase energy naturally with five practical routine checks, a fatigue appointment worksheet, and clear limits on what everyday habits can fix."
       },
       {
-        "title": "Why You Feel Tired All the Time (And How to Fix It)",
-        "description": "Constant fatigue isn't laziness or a medical mystery. It's usually one of five fixable habits: inconsistent sleep, skipped breakfast, no morning light, dehydration, or lack of movement. Most people see energy improvement within 3-5 days of changing even one habit. Start with the one that feels easiest for your life."
+        "title": "Planning checklist: How to Increase Energy Naturally",
+        "description": "Learn how to increase energy naturally with five practical routine checks, a fatigue appointment worksheet, and clear limits on what everyday habits can fix."
       },
       {
-        "title": "5 Natural Energy Boosters That Actually Work (Tested and Real)",
-        "description": "Forget supplements and energy drinks. Your body has natural energy production systems. Morning sunlight, hydration, protein-rich meals, cold water exposure, and movement after eating create genuine, lasting energy without crashes. These aren't tricks, they're biology. Start with just one today and notice the shift."
+        "title": "Practical questions: How to Increase Energy Naturally",
+        "description": "Learn how to increase energy naturally with five practical routine checks, a fatigue appointment worksheet, and clear limits on what everyday habits can fix."
       }
     ]
   },
@@ -3177,26 +3177,26 @@ const ARTICLES = [
   },
   {
     "slug": "foods-that-reduce-anxiety",
-    "title": "7 Food Choices to Consider Alongside Anxiety Care",
+    "title": "Foods That Reduce Anxiety: 7 Options Without Cure Claims",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Foods that reduce anxiety aren't just a wellness trend; they're backed by neuroscience and thousands of people's real success stories. Your gut and brain a",
+    "read_time": "10",
+    "excerpt": "Explore foods that reduce anxiety as part of balanced eating, not a cure: seven flexible options, a backup-meal card, and guidance on seeking qualified support.",
     "image": "images/foods-that-reduce-anxiety.jpg",
     "alt": "Woman holding bowl of blueberries in kitchen, foods that reduce anxiety",
     "pins": [
       {
-        "title": "7 Foods That Reduce Anxiety: Your Brain's Natural Pharmacy",
-        "description": "Discover the science-backed foods that actually calm your nervous system. From magnesium-rich spinach to omega-3 salmon, these seven foods reduce anxiety naturally and work within 2-3 weeks. Start with just one tomorrow and feel the difference. Your anxiety doesn't have to run your life."
+        "title": "Foods That Reduce Anxiety: 7 Options Without Cure Claims",
+        "description": "Explore foods that reduce anxiety as part of balanced eating, not a cure: seven flexible options, a backup-meal card, and guidance on seeking qualified support."
       },
       {
-        "title": "Stop Anxiety With These 7 Powerful Foods Starting Today",
-        "description": "Tired of feeling anxious and jittery? Your diet might be the missing piece. Learn which foods reduce anxiety by supporting neurotransmitter production and gut health. Most people see results within 14 days of simple dietary changes. Read the science-backed guide now."
+        "title": "Planning checklist: Foods That Reduce Anxiety",
+        "description": "Explore foods that reduce anxiety as part of balanced eating, not a cure: seven flexible options, a backup-meal card, and guidance on seeking qualified support."
       },
       {
-        "title": "Try This: Foods That Reduce Anxiety in 30 Days",
-        "description": "A practical 30-day guide to eating for calm. These seven anxiety-reducing foods are affordable, accessible, and actually taste good. No extreme diets needed, just real whole foods that feed your brain what it needs to stay calm and focused. Start your transformation today."
+        "title": "Practical questions: Foods That Reduce Anxiety",
+        "description": "Explore foods that reduce anxiety as part of balanced eating, not a cure: seven flexible options, a backup-meal card, and guidance on seeking qualified support."
       }
     ]
   },
@@ -3227,26 +3227,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-sleep-better-naturally",
-    "title": "7 Sleep Habits to Try and When to Seek Help",
+    "title": "How to Sleep Better Naturally: 7 Practical Checks for Restless Nights",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
     "read_time": "8",
-    "excerpt": "How to sleep better naturally is the question keeping millions awake at night. Most people think they're stuck with insomnia, but the truth is simpler: you",
+    "excerpt": "Learn how to sleep better naturally with 7 practical routine checks, a simple sleep planning worksheet, and guidance on when to ask for professional support.",
     "image": "images/how-to-sleep-better-naturally.jpg",
     "alt": "Woman sleeping peacefully in cool dark bedroom for better sleep quality",
     "pins": [
       {
-        "title": "7 Ways to Sleep Better Naturally: The Complete Sleep Guide",
-        "description": "Stop tossing and turning all night. Learn how to sleep better naturally with science-backed methods including temperature control, light management, and sleep timing. These proven techniques help you fall asleep faster and wake up refreshed without medication. Start tonight and notice the difference within days."
+        "title": "How to Sleep Better Naturally: 7 Practical Checks for Restless Nights",
+        "description": "Learn how to sleep better naturally with 7 practical routine checks, a simple sleep planning worksheet, and guidance on when to ask for professional support."
       },
       {
-        "title": "Stop Waking at 3am: Natural Sleep Solutions That Work",
-        "description": "If you're waking in the middle of the night and can't fall back asleep, it's not your fault. Your bedroom temperature, caffeine timing, and light exposure are likely the culprits. Discover how to improve sleep quality naturally by fixing these three factors. Real results in one week."
+        "title": "Planning checklist: How to Sleep Better Naturally",
+        "description": "Learn how to sleep better naturally with 7 practical routine checks, a simple sleep planning worksheet, and guidance on when to ask for professional support."
       },
       {
-        "title": "How to Fall Asleep Faster Naturally: Try This Tonight",
-        "description": "Forget counting sheep. The fastest way to fall asleep naturally combines a cool dark room, consistent bedtime routine, and strategic wind-down activities. These science-backed habits tell your body it's time to sleep. Implement one tonight and watch your sleep transform in just 21 days."
+        "title": "Practical questions: How to Sleep Better Naturally",
+        "description": "Learn how to sleep better naturally with 7 practical routine checks, a simple sleep planning worksheet, and guidance on when to ask for professional support."
       }
     ]
   },
@@ -3327,26 +3327,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-feel-calm-instantly",
-    "title": "5 Calming Techniques to Try When Stress Builds",
+    "title": "How to Feel Calm Instantly: 5 Gentle Options Without a Quick-Fix Promise",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
     "read_time": "8",
-    "excerpt": "How to feel calm instantly when your nervous system is firing on all cylinders. Your heart races, your palms sweat, and you can't think straight because pa",
+    "excerpt": "Explore how to feel calm instantly without quick-fix promises: five gentle coping options, a personal support card, and signs that call for medical attention.",
     "image": "images/how-to-feel-calm-instantly.jpg",
     "alt": "Woman breathing calmly by window with hand on chest",
     "pins": [
       {
-        "title": "How to Feel Calm Instantly in 60 Seconds: Try This Now",
-        "description": "Discover 5 science-backed techniques to feel calm instantly without meditation. Box breathing, cold water exposure, and grounding work in minutes. Perfect for work stress, anxiety, or panic attacks. Your nervous system responds to these methods immediately. Save this guide and use it today."
+        "title": "How to Feel Calm Instantly: 5 Gentle Options Without a Quick-Fix Promise",
+        "description": "Explore how to feel calm instantly without quick-fix promises: five gentle coping options, a personal support card, and signs that call for medical attention."
       },
       {
-        "title": "Stop Anxiety Fast: 5 Instant Calm Methods That Actually Work",
-        "description": "Learn how to calm your mind fast when stress hits hardest. These proven nervous system techniques take less than 5 minutes and work even if nothing else has. From tactical cold exposure to 5-4-3-2-1 grounding, find the method your body loves. Real results, real relief, real science."
+        "title": "Planning checklist: How to Feel Calm Instantly",
+        "description": "Explore how to feel calm instantly without quick-fix promises: five gentle coping options, a personal support card, and signs that call for medical attention."
       },
       {
-        "title": "Calm Your Nervous System in Stressful Situations: This Trick Works",
-        "description": "The fastest way to relax in stressful situations is activating your parasympathetic nervous system. This simple guide shows you how to hijack your stress response in 60 seconds or less. Box breathing, muscle relaxation, and vagal maneuvers explained clearly. Transform your stress response today."
+        "title": "Practical questions: How to Feel Calm Instantly",
+        "description": "Explore how to feel calm instantly without quick-fix promises: five gentle coping options, a personal support card, and signs that call for medical attention."
       }
     ]
   },
