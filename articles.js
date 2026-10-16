@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-sleep-debt-silently-drains-your-daily-performance",
+    "title": "7 Ways How Sleep Debt Silently Drains Your Daily Performance (And What to Do About It)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Oct 2026",
+    "read_time": "8",
+    "excerpt": "How sleep debt silently drains your daily performance is one of those things most people feel but rarely name. You wake up, grab coffee, and push...",
+    "image": "images/how-sleep-debt-silently-drains-your-daily-performance.jpg",
+    "alt": "tired young woman at kitchen table showing sleep debt effects",
+    "pins": [
+      {
+        "title": "How Sleep Debt Silently Drains Your Daily Performance (7 Signs)",
+        "description": "Sleep debt builds quietly and chips away at your focus, mood, and motivation before you even notice. Learn how sleep debt affects your daily performance and what small habits can help you start recovering. Save this for when you need a practical starting point."
+      },
+      {
+        "title": "Stop Ignoring These Signs of Sleep Debt - Your Performance Depends On It",
+        "description": "Feeling irritable, foggy, and unmotivated most days? Sleep debt effects on performance are often mistaken for stress or personality. Here are the signs most people overlook and what to do instead of just adding more coffee to the problem."
+      },
+      {
+        "title": "Try This Simple Approach to Start Recovering From Sleep Debt",
+        "description": "You do not need a perfect sleep routine to start feeling better. Understanding what is sleep debt and how it affects your daily performance is step one. Try one consistent habit this week and notice what shifts over time."
+      }
+    ]
+  },
+  {
     "slug": "the-psychology-behind-why-deadlines-make-you-more-productive",
     "title": "7 Reasons the Psychology Behind Why Deadlines Make You More Productive Actually Makes Sense",
     "category": "Productivity",
