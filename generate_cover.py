@@ -24,7 +24,7 @@ REAL_PHOTO_RULES = (
     "Face: candid, absorbed, or slightly tired expression — NOT a posed smile, NOT a model face, NOT direct eye contact with camera. "
     "A small real-life imperfection is required: a small blemish, under-eye shadow, slight asymmetry, or redness — NEVER a perfect face. "
     "Clothing: visibly faded, slightly wrinkled, ordinary everyday fabric — old hoodie, plain t-shirt, basic knit — NEVER stylish, tailored, or flattering. "
-    "Frame: shoulders or collarbone up only — never show chest or body below. "
+    "Frame the meaningful activity described in the prompt; include natural hands and objects when relevant. "
     "Lighting: flat natural window light or overcast daylight — NO studio rim light, NO beauty dish, NO glowing halo. "
     "Background: plain and slightly cluttered — bare wall, basic kitchen, ordinary desk — NO styled props, NO magazines staging. "
     "Composition: slightly off-center, imperfect handheld framing — NOT centered, NOT symmetrical. "

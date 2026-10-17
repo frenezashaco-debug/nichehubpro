@@ -18,7 +18,8 @@ for(const[slug,phrases]of Object.entries(forbidden)){
  assert.equal((h.match(/<img\b/g)||[]).length,4,slug+': images');
  assert.equal((h.match(/class="faq-a"/g)||[]).length,5,slug+': FAQ');
  assert(h.includes('This article is for informational purposes only and does not replace professional medical advice.'),slug+': disclaimer');
- assert(h.includes('2026-10-14'),slug+': modification date');
+ const modified=h.match(/"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})"/);
+ assert(modified && modified[1]>='2026-10-14',slug+': modification date must retain or advance the correction date');
  for(const m of h.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g))JSON.parse(m[1]);
 }
 console.log('PASS: ten articles, four images each, five FAQs each, valid JSON-LD and removed-claim regression checks. Not a full medical review.');

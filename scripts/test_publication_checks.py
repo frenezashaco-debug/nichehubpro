@@ -51,6 +51,22 @@ class PublicationChecks(unittest.TestCase):
         self.assertTrue(self.check(conclusion='Remove the unsupported percentage.'))
         self.assertTrue(self.check(tldr='Your dopamine system resets every 24 hours.'))
 
+    def test_encoded_em_dashes(self):
+        for dash in ['\u2014', '&mdash;', '&#8212;', '&#x2014;']:
+            self.assertTrue(self.check(intro='A' + dash + 'B'))
+
+    def test_unsupported_research(self):
+        self.assertTrue(self.check(faq=[{'answer': 'Studies show this works.'}]))
+        self.assertTrue(self.check(intro='This is scientifically proven.'))
+        self.assertTrue(self.check(intro='Images in this article are AI-generated illustrations.'))
+        self.assertTrue(self.check(intro='Research from a university shows this works.'))
+        self.assertTrue(self.check(intro='A study in a journal found this result.'))
+
+    def test_unsupported_mechanism(self):
+        self.assertTrue(self.check(intro='This resets your dopamine.'))
+        self.assertTrue(self.check(intro='Walking burns cortisol.'))
+        self.assertEqual(self.check(intro='Record the next task you want to try.'), [])
+
 
 if __name__ == '__main__':
     unittest.main()

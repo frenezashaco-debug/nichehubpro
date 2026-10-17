@@ -53,6 +53,10 @@ def publication_blockers(data, root):
             if not target.is_file():
                 errors.append(f'internal link has no local destination: {parsed.path}')
         text = html.unescape(re.sub(r'<[^>]+>', ' ', markup))
+        if '\u2014' in text:
+            errors.append('em dash is prohibited, including encoded HTML entities')
+        if re.search(r'Images in this article are AI-generated illustrations', text, re.I):
+            errors.append('unwanted image boilerplate in article copy')
         # Narrow confirmed regressions, not a comprehensive semantic classifier.
         patterns = (
             r'\byour (?:heart|body) is safe\b',
@@ -68,6 +72,12 @@ def publication_blockers(data, root):
         # A nearby citation is a minimum traceability requirement, not evidence validation.
         for block in re.split(r'</(?:p|li|div)>|\n', markup):
             visible = html.unescape(re.sub(r'<[^>]+>', ' ', block))
+            if re.search(r'\b(?:research.{0,90}?(?:shows?|proves?|found)|stud(?:y|ies).{0,90}?(?:shows?|proves?|found)|scientifically proven)\b', visible, re.I):
+                if not any(url in references and url.startswith('https://') for url in Links(block).hrefs):
+                    errors.append('research attribution needs an inline listed source and verification of its scope')
+            if re.search(r'\b(?:boosts?|raises?|lowers?|increases?|reduces?|burns?|resets?|restarts?)\b.{0,45}\b(?:cortisol|dopamine|serotonin)\b|\b(?:rewires? (?:your |the )?brain|vagus nerve responds instantly|dopamine system is offline)\b', visible, re.I):
+                if not any(url in references and url.startswith('https://') for url in Links(block).hrefs):
+                    errors.append('biological mechanism needs an inline listed source and verification of its scope')
             if re.search(r'\b\d+(?:\.\d+)?\s*(?:%|percent\b)', visible, re.I):
                 if not any(url in references and url.startswith('https://') for url in Links(block).hrefs):
                     errors.append('percentage needs an inline link to a listed source; remove it if unverifiable')

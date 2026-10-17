@@ -45,7 +45,10 @@ jobs:
         run: pip install anthropic httpx json-repair Pillow requests urllib3
 
       - name: Test publication blockers
-        run: python scripts/test_publication_checks.py
+        run: |
+          python scripts/test_publication_checks.py
+          python scripts/test_image_publication_checks.py
+          python scripts/test_copy_preservation.py
 
       - name: Create config.py from secrets
         env:

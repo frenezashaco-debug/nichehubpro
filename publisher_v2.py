@@ -109,7 +109,7 @@ JSON STRUCTURE:
   "tldr": "string — 2-3 sentences only. Include primary keyword. Directly answer the article topic.",
   "sections": [
     {
-      "h2": "string — heading SPECIFIC to this topic. Choose the 6 most relevant from these options (NEVER use the same pattern for every article): 'What Is X and Why Does It Matter?', 'What Are the Signs of X?', 'Why Does X Happen?', 'How to Fix X: Step-by-Step', 'What Does the Research Say About X?', 'How to Prevent X From Coming Back', 'Daily Habits That Help With X', 'What Experts Say About X', 'The X Method That Actually Works', 'How X Affects Your Brain and Body', 'Common Mistakes People Make With X', 'When to Seek Help for X'. Pick headings that feel natural for THIS specific topic.",
+      "h2": "string - Return exactly five question-based sections in this order: What is [topic]? What are the signs? Why does it happen? How can [topic] be managed? How can [topic] be managed daily? Make each heading specific to the topic. Include appropriate help-seeking advice within the relevant sections.",
       "content": "string — full HTML. Use <p>, <ul><li>, <strong>. Every <p> max 3 lines. GEO structure per paragraph. At least one <ul> list. At least one <strong> key advice. Min 300 words per section. VARY content format across sections: some use numbered steps, some use a key insight callout, some compare two approaches."
     }
   ],
@@ -127,22 +127,22 @@ JSON STRUCTURE:
     {"question": "real Google question 5?", "answer": "short clear useful answer"}
   ],
   "conclusion": "string — 3 short paragraphs. Motivational. Encourages one small action today. Human and warm.",
-  "cover_image_prompt": "string — UNIQUE humanized photo prompt for THIS article. A REAL PERSON must ALWAYS appear — no exceptions, even for food articles. RULES FOR ALL COVERS: (1) Always a young woman 25-35, candid and real — never a man, never a model pose. (2) Real skin: visible pores, natural imperfections, slight asymmetry, NO AI-smooth skin, NO porcelain complexion. (3) Real hair: messy texture, flyaways, frizz — never perfectly styled. (4) Plain clothing: faded t-shirt, basic linen top, old hoodie — never stylish or fitted. (5) Candid expression: genuinely absorbed, slightly tired, or at ease — never a posed smile. (6) Lighting: flat natural window light or overcast daylight — NO studio rim light, NO beauty lighting. (7) Shot on 85mm f/1.8, shallow depth of field, slightly blurred background. (8) Composition: slightly off-center, imperfect handheld framing. IF FOOD/DRINK ARTICLE: woman is shown interacting with food — holding a bowl or glass, taking a bite, chopping vegetables, or preparing a meal in a real kitchen. Food is visible and contextual. Hands and forearms are allowed. IF NOT FOOD ARTICLE: woman shown from shoulders or collarbone up only, no hands, no objects held. STRUCTURE: 'Candid lifestyle photo: a young woman, [age], [specific location]. [Hair and clothing details]. [Exact expression]. [Action — for food: what she is eating/preparing/holding]. [Lighting]. Shot on 85mm f/1.8. Real skin texture, natural imperfections. Photorealistic. No text, no logos, no watermarks, no AI look.' FORBIDDEN: man, male, fake smile, posed stance, studio lighting, perfect symmetry, smooth skin, AI look, stock photo pose, watermark, text.",
+  "cover_image_prompt": "string - A unique candid lifestyle photograph for this specific topic. Describe a relatable adult person, specific environment, meaningful action, emotion, natural light, warm palette and camera framing. Vary age, gender, appearance, location and composition across articles. Show the actual activity rather than a generic portrait. Use natural skin texture and ordinary unbranded clothing. All four images must depict different people, scenes and moments. No text, no logos, no watermarks, no signatures, no graphic overlays, no collage, no stock-photo poses.",
   "cover_alt_text": "string — short SEO alt text. Format: '[woman/hands/scene] [action] in [setting]'. Max 10 words. Include primary keyword.",
   "section_image_prompts": [
     {
       "section_index": 0,
-      "prompt": "string — UNIQUE humanized photo prompt for section 1 image. RULES: young woman shown from shoulders/collarbone up ONLY — NO hands, NO arms, NO objects held. NEVER a man. Must be completely different scene from cover. Use candid documentary style with specific details: exact setting, exact clothing, exact facial expression, camera style (50mm or 85mm, f/1.8-2.8, shallow DOF), real skin texture. Tied to section 1 topic. No text, no logos, no man.",
+      "prompt": "string - Unique candid photograph illustrating the activity discussed in section 1. Describe a different adult person, setting, action and moment from the cover, with natural skin texture, ordinary clothing and soft natural light. No text, no logos, no watermarks, no signatures, no graphic overlays.",
       "alt_text": "string — 8-10 words describing the scene, include primary keyword"
     },
     {
       "section_index": 2,
-      "prompt": "string — UNIQUE humanized photo prompt for section 3 image. RULES: young woman shown from shoulders/collarbone up ONLY — NO hands, NO arms, NO objects held. NEVER a man. Completely different from cover and section 1. Specific candid moment with exact facial expression and setting details. Solution or progress-focused scene. Camera style included. No text, no logos, no man.",
+      "prompt": "string - Unique candid photograph illustrating a practical action in section 3. Use a different adult person, location and moment from the preceding images. Describe natural details, a meaningful activity and warm natural lighting. No text, no logos, no watermarks, no signatures, no graphic overlays.",
       "alt_text": "string — 8-10 words describing the scene, include primary keyword"
     },
     {
       "section_index": 4,
-      "prompt": "string — UNIQUE humanized photo prompt for section 5 image. RULES: young woman shown from shoulders/collarbone up ONLY — NO hands, NO arms, NO objects held. NEVER a man. Different from all above images. Calming, hopeful, empowering facial expression. Specific lighting, clothing, background. Camera style included. No text, no logos, no man.",
+      "prompt": "string - Unique candid photograph of a realistic daily action from section 5. Use a different adult person, scene and composition from the other three images. Describe ordinary clothing, natural skin texture, surroundings, action and soft warm light. No text, no logos, no watermarks, no signatures, no graphic overlays.",
       "alt_text": "string — 8-10 words describing the scene naturally, include primary keyword"
     }
   ],
@@ -204,11 +204,7 @@ def build_user_prompt(primary_kw, secondary_kw, longtail_kw, category, existing_
         if cornerstone else
         "Write at least 1800 genuine words for NicheHubPro, with a target of 2000-2500 words. Do not pad the article to reach a word count."
     )
-    section_count_line = (
-        "9-11 sections with VARIED headings that together cover this topic comprehensively (see JSON schema — never the same pattern for every article). Go deeper than a normal article: include sub-angles, edge cases, and nuance a shorter article would skip."
-        if cornerstone else
-        "6 sections with VARIED headings specific to this topic (see JSON schema — never the same 5 pattern for every article. Choose the 6 most relevant headings for THIS keyword)"
-    )
+    section_count_line = "Exactly five question-based sections in the order specified in the JSON schema. Use topic-specific wording and useful subheadings within those sections."
     min_section_words = "500" if cornerstone else "250"
 
     source_hints = {
@@ -294,7 +290,7 @@ _HF_RULES = (
     "Face: candid, absorbed, or slightly tired expression — NOT a posed smile, NOT a model face, NOT direct eye contact with camera. "
     "A small real-life imperfection is required: a small blemish, under-eye shadow, slight asymmetry, or redness. "
     "Clothing: visibly faded, slightly wrinkled, ordinary everyday fabric — NEVER stylish or tailored. "
-    "Frame: shoulders or collarbone up only — never show chest, body below, hands, or arms. NO hands in frame under any circumstance. NO objects being held or touched. "
+    "Frame the actual activity described in the prompt; show natural hands and objects when relevant. "
     "Lighting: flat natural window light or overcast daylight — NO studio rim light, NO beauty dish. "
     "Background: plain and slightly cluttered — NO styled props. "
     "Composition: slightly off-center, imperfect handheld framing — NOT centered, NOT symmetrical. "
@@ -304,8 +300,6 @@ _HF_RULES = (
 )
 
 _HF_NEGATIVE = (
-    "hands, arms, fingers, wrist, palm, fist, holding, mug, cup, coffee, pen, pencil, "
-    "notebook, journal, book, phone, writing, typing, "
     "artificial skin, plastic skin, porcelain skin, glowing skin, perfect skin, doll face, "
     "AI generated look, digital art, illustration, painting, CGI render, stock photo, "
     "model pose, beauty campaign, symmetrical face, flawless complexion, "
@@ -807,7 +801,7 @@ QUALITY_BLOCKLIST = (
     r"\b(?:guarantee(?:d)?|cure(?:s|d)?|miracle|instant(?:ly)?|"
     r"rewire(?:s|d)? your brain|will fix|will heal|medical emergency)\b"
 )
-EM_DASH_PATTERN = re.compile(r"[\u2013\u2014\u2015]|&(?:mdash|ndash);|&#(?:8211|8212);", re.IGNORECASE)
+EM_DASH_PATTERN = re.compile(r"[\u2013\u2014\u2015]|&(?:mdash|ndash);|&#(?:8211|8212|8213);|&#x(?:2013|2014|2015);", re.IGNORECASE)
 AI_CLICHE_PATTERN = re.compile(
     r"\b(?:in today's fast-paced world|it is important to note|in conclusion|"
     r"in summary|to summarize|delv(?:e|es|ing)|game-changer|unlock your potential)\b",
@@ -826,6 +820,7 @@ AUTHORITATIVE_SOURCE_HOSTS = {
     "www.nhs.uk", "nhs.uk", "www.heart.org", "heart.org",
     "www.health.gov", "health.gov", "ods.od.nih.gov",
     "pubmed.ncbi.nlm.nih.gov", "pmc.ncbi.nlm.nih.gov",
+    "www.nhlbi.nih.gov", "nhlbi.nih.gov", "www.hse.gov.uk", "hse.gov.uk",
 }
 
 
@@ -852,13 +847,14 @@ def validate_article_quality(data, primary_kw, cornerstone=False):
         errors.append(f"meta description must be 155-160 characters, got {len(meta)}")
 
     sections = data.get("sections") or []
-    minimum_sections = 9 if cornerstone else 6
-    if len(sections) < minimum_sections:
-        errors.append(f"expected at least {minimum_sections} sections, got {len(sections)}")
+    if len(sections) != 5:
+        errors.append(f"expected exactly 5 question-based sections, got {len(sections)}")
 
     headings = [re.sub(r"\s+", " ", str(section.get("h2", "")).strip().lower()) for section in sections]
     if len(headings) != len(set(headings)):
         errors.append("section headings must be distinct")
+    if any(not heading.endswith('?') for heading in headings):
+        errors.append("all five section headings must be questions")
 
     min_section_words = 500 if cornerstone else 220
     for index, section in enumerate(sections, 1):
@@ -880,7 +876,7 @@ def validate_article_quality(data, primary_kw, cornerstone=False):
         errors.append("intro must contain exactly 3 short paragraphs")
 
     faq = data.get("faq") or []
-    if len(faq) < 5 or any(not item.get("question") or not item.get("answer") for item in faq):
+    if len(faq) != 5 or any(not item.get("question") or not item.get("answer") for item in faq):
         errors.append("FAQ must contain 5 complete reader questions and answers")
 
     internal_links = data.get("internal_links") or []
@@ -933,8 +929,8 @@ def validate_article_quality(data, primary_kw, cornerstone=False):
     if not _prompt_has_no_text_safeguards(cover_prompt):
         errors.append("cover prompt must explicitly prohibit text, logos, and watermarks")
     image_prompts = data.get("section_image_prompts") or []
-    if len(image_prompts) < 3:
-        errors.append("expected 3 section-image prompts")
+    if len(image_prompts) != 3 or {p.get("section_index") for p in image_prompts} != {0, 2, 4}:
+        errors.append("expected exactly 3 section-image prompts for section indices 0, 2 and 4")
     for index, image_prompt in enumerate(image_prompts, 1):
         if not _prompt_has_no_text_safeguards(image_prompt.get("prompt", "")):
             errors.append(f"section image prompt {index} must prohibit text, logos, and watermarks")
@@ -971,10 +967,9 @@ def fit_meta_description(meta, primary_kw):
 def sanitize_generated_copy(value):
     """Remove a small set of overpromising words before editorial review."""
     if isinstance(value, str):
-        value = re.sub(r"[\u2013\u2014\u2015]", "-", value)
+        value = EM_DASH_PATTERN.sub("-", value)
         value = re.sub(r"\binstantly\b", "quickly", value, flags=re.IGNORECASE)
         value = re.sub(r"\binstant\b", "quick", value, flags=re.IGNORECASE)
-        value = re.sub(r"\bguaranteed\b", "promised", value, flags=re.IGNORECASE)
         return value
     if isinstance(value, list):
         return [sanitize_generated_copy(item) for item in value]
@@ -1192,9 +1187,14 @@ def publish_reviewed_draft(data, primary_kw, category, skip_images=False, corner
 
     if len(section_images) != 3:
         raise ValueError("Publication blocked: exactly three section images are required.")
-    for image_path in [cover_path, *(os.path.join(IMAGES_DIR, item["filename"]) for item in section_images.values())]:
+    image_paths = [cover_path, *(os.path.join(IMAGES_DIR, item["filename"]) for _, item in sorted(section_images.items()))]
+    for image_path in image_paths:
         with Image.open(image_path) as generated_image:
             generated_image.verify()
+    from image_publication_checks import screen_publication_images
+    visual_client = anthropic.Anthropic(api_key=API_KEY, timeout=180.0)
+    screen_publication_images(visual_client, image_paths, data['title'])
+    print('Four publication images passed automated visual screening.')
 
     # Build and save HTML
     print("Building HTML...")
