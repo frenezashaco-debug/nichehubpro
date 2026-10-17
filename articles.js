@@ -3,12 +3,12 @@
 const ARTICLES = [
   {
     "slug": "how-sleep-debt-silently-drains-your-daily-performance",
-    "title": "7 Ways How Sleep Debt Silently Drains Your Daily Performance (And What to Do About It)",
+    "title": "How Sleep Debt Silently Drains Your Daily Performance: 5 Practical Checks",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Oct 2026",
     "read_time": "8",
-    "excerpt": "How sleep debt silently drains your daily performance is one of those things most people feel but rarely name. You wake up, grab coffee, and push...",
+    "excerpt": "How sleep debt silently drains your daily performance: review sleep patterns, daytime symptoms and practical routine changes, with guidance on seeking support.",
     "image": "images/how-sleep-debt-silently-drains-your-daily-performance.jpg",
     "alt": "tired young woman at kitchen table showing sleep debt effects",
     "pins": [
@@ -58,7 +58,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Oct 2026",
     "read_time": "8",
-    "excerpt": "Compare everyday choices with a practical worksheet, specific research findings, and clear limits on claims about mental energy.",
+    "excerpt": "Learn what cognitive load does to your decision making, with practical checks, clear research limits, and a simple worksheet to help compare everyday choices.",
     "image": "images/what-cognitive-load-does-to-your-decision-making.jpg",
     "alt": "Young woman looking mentally overwhelmed while making decisions at desk",
     "pins": [
@@ -78,7 +78,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-blood-sugar-swings-affect-your-energy-and-mood",
-    "title": "7 Ways Blood Sugar Swings Affect Your Energy and Mood More Than You Realise",
+    "title": "How Blood Sugar Swings Affect Your Energy and Mood: 5 Practical Checks",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Oct 2026",
@@ -103,13 +103,13 @@ const ARTICLES = [
   },
   {
     "slug": "how-dopamine-actually-works-and-why-quick-fixes-backfire",
-    "title": "How Dopamine Actually Works and Why Quick Fixes Backfire (And What to Do Instead)",
+    "title": "How Dopamine Actually Works and Why Quick Fixes Backfire: 5 Practical Checks",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Oct 2026",
     "read_time": "8",
     "excerpt": "How dopamine actually works and why quick fixes backfire: separate neuroscience from habit claims, review daily choices, and seek support when symptoms persist.",
-    "image": "images/how-dopamine-actually-works-and-why-quick-fixes-backfire.jpg",
+    "image": "images/how-dopamine-actually-works-and-why-quick-fixes-backfire-clean-v2.jpg",
     "alt": "Young woman thinking quietly about dopamine and quick fixes",
     "pins": [
       {
@@ -133,7 +133,7 @@ const ARTICLES = [
     "cat_slug": "productivity",
     "date": "Sep 2026",
     "read_time": "8",
-    "excerpt": "How to train your brain for longer attention spans can feel like a frustrating question when you keep losing your place. Start by choosing one task you...",
+    "excerpt": "How to train your brain for longer attention spans: try five practical focus checks, reduce interruptions, and build a routine that fits your real working day.",
     "image": "images/how-to-train-your-brain-for-longer-attention-spans.jpg",
     "alt": "Woman reading a paperback beside a bright window.",
     "pins": []
@@ -145,7 +145,7 @@ const ARTICLES = [
     "cat_slug": "healthy-lifestyle",
     "date": "Sep 2026",
     "read_time": "11",
-    "excerpt": "Choose an exercise window around sleep, access, and everyday responsibilities with five practical checks and a flexible planning example.",
+    "excerpt": "How your body clock affects when you should exercise: compare realistic workout times, protect sleep, and build a flexible plan that fits your actual life.",
     "image": "images/how-your-body-clock-affects-when-you-should-exercise.jpg",
     "alt": "Man putting on a light jacket before a walk",
     "pins": []
@@ -257,7 +257,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Sep 2026",
     "read_time": "8",
-    "excerpt": "Explore why resting can feel uncomfortable and practice setting boundaries that make room for recovery without self-criticism.",
+    "excerpt": "How to stop feeling guilty for resting: learn why rest guilt happens and try practical steps to protect your mental health without forcing productivity today.",
     "image": "images/how-to-stop-feeling-guilty-for-resting.jpg",
     "alt": "Young woman resting on sofa, feeling guilty for resting",
     "pins": [

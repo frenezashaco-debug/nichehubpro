@@ -616,11 +616,11 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
 
       {intro_paragraphs}
 
-      {toc_html}
-
       <div class="tldr">
         <p>{tldr}</p>
       </div>
+
+      {toc_html}
 
       {sections_html}
 
@@ -839,6 +839,8 @@ def _prompt_has_no_text_safeguards(prompt):
 def validate_article_quality(data, primary_kw, cornerstone=False):
     """Reject weak, unsafe, or unreviewable generator output before publication."""
     errors = publication_blockers(data, BASE_DIR)
+    if not re.search(r"\d", str(data.get("title", ""))):
+        errors.append("title must include a number")
     meta = (data.get("meta_description") or "").strip()
     if len(meta) > 160:
         meta = meta[:160].rstrip(" ,;:.!?")
@@ -855,6 +857,11 @@ def validate_article_quality(data, primary_kw, cornerstone=False):
         errors.append("section headings must be distinct")
     if any(not heading.endswith('?') for heading in headings):
         errors.append("all five section headings must be questions")
+    heading_roles = (r"^what\b", r"^what\b.*\bsigns\b", r"^why\b", r"^how\b", r"^how\b.*\bdaily\b")
+    if len(headings) == 5:
+        for index, (heading, role) in enumerate(zip(headings, heading_roles), 1):
+            if not re.search(role, heading):
+                errors.append(f"section {index} must follow the required definition/signs/why/action/daily order")
 
     min_section_words = 500 if cornerstone else 220
     for index, section in enumerate(sections, 1):

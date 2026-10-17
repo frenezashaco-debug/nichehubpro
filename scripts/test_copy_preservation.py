@@ -33,6 +33,28 @@ class CopyPreservation(unittest.TestCase):
         self.assertEqual(sanitize({'intro': 'A&#x2014;B'}), {'intro': 'A-B'})
         self.assertEqual(sanitize('guaranteed recovery'), 'guaranteed recovery')
 
+    def test_generator_requires_number_and_heading_order(self):
+        tree = ast.parse((ROOT / 'publisher_v2.py').read_text(encoding='utf-8'))
+        function = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == 'validate_article_quality')
+        namespace = {
+            're': re, 'BASE_DIR': ROOT, 'publication_blockers': lambda *_: [],
+            '_visible_word_count': lambda _: 4000,
+            '_prompt_has_no_text_safeguards': lambda _: True,
+            'QUALITY_BLOCKLIST': r'(?!)', 'EM_DASH_PATTERN': re.compile(r'\u2014'),
+            'AI_CLICHE_PATTERN': re.compile(r'(?!)'),
+        }
+        exec(compile(ast.Module(body=[function], type_ignores=[]), '<quality-validator>', 'exec'), namespace)
+        data = {'title': 'Focus: 5 Practical Checks', 'meta_description': 'Focus ' + 'a' * 149,
+                'sections': [{'h2': h, 'content': 'Practical copy.'} for h in [
+                    'What is focus?', 'What are the signs?', 'Why does it vary?',
+                    'How can you adjust?', 'How can you manage focus daily?']]}
+        validate = namespace['validate_article_quality']
+        self.assertFalse(any('heading' in e or 'order' in e or 'title must' in e for e in validate(data, 'Focus')))
+        data['title'] = 'Focus without a number'
+        self.assertIn('title must include a number', validate(data, 'Focus'))
+        data['sections'][1]['h2'] = 'How can you change focus?'
+        self.assertTrue(any('section 2 must follow' in e for e in validate(data, 'Focus')))
+
 
 if __name__ == '__main__':
     unittest.main()

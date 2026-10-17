@@ -34,6 +34,7 @@ __pycache__/
 !scripts/close_article_paragraphs.py
 !scripts/repair_article_markup.py
 !scripts/install_clean_article_image.py
+!scripts/audit_latest_ten.py
 
 # Generated local quality reports
 reports/
