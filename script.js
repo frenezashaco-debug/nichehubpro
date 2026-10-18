@@ -107,37 +107,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }, { passive: true });
   }
 
-  // ── NEWSLETTER FORM (Brevo) ───────────────────────────────────
-  var nlForm = document.getElementById('sib-form');
-  if (nlForm) {
-    nlForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      var emailInput = nlForm.querySelector('input[name="EMAIL"]');
-      var email = emailInput.value.trim();
-      var existing = nlForm.querySelector('.nl-error');
-      if (existing) existing.remove();
-      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        var err = document.createElement('p');
-        err.className = 'nl-error';
-        err.style.cssText = 'color:#ff6b6b;font-size:0.85rem;margin:6px 0 0;';
-        err.textContent = email ? 'Please enter a valid email address.' : 'Please enter your email address.';
-        emailInput.parentNode.insertBefore(err, emailInput.nextSibling);
-        emailInput.focus();
-        return;
-      }
-      var btn = nlForm.querySelector('button[type="submit"]');
-      btn.textContent = 'Subscribing...';
-      btn.disabled = true;
-      var data = new FormData(nlForm);
-      fetch(nlForm.action, { method: 'POST', body: data, mode: 'no-cors' })
-        .then(function() {
-          nlForm.innerHTML = '<p style="color:#fff;font-size:1rem;font-weight:600;margin:0;">You\'re subscribed! Welcome to the community.</p>';
-        })
-        .catch(function() {
-          nlForm.innerHTML = '<p style="color:#fff;font-size:1rem;font-weight:600;margin:0;">You\'re subscribed! Welcome to the community.</p>';
-        });
-    });
-  }
+  // Newsletter forms use the existing provider's native POST/confirmation flow.
+  // An opaque no-cors response cannot prove a subscription succeeded.
 
   // ── SEARCH ────────────────────────────────────────────────────
   var navInner = document.querySelector('.nav-inner');

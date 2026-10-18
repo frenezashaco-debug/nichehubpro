@@ -801,6 +801,656 @@ const ARTICLES = [
     ]
   },
   {
+    "slug": "how-to-track-progress-toward-goals",
+    "title": "7 Ways to Track Progress Toward Goals That Actually Keep You Motivated",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "How to track progress toward goals is the difference between dreams that fade and wins you can actually feel. Most people set goals but never check them ag",
+    "image": "images/how-to-track-progress-toward-goals.jpg",
+    "alt": "woman writing in notebook while tracking progress at desk",
+    "pins": [
+      {
+        "title": "How to Track Progress Toward Goals Without Losing Your Mind",
+        "description": "Stop abandoning tracking systems. Learn the one simple method that actually works - no apps, no spreadsheets, just honest daily recording and weekly reviews. Discover the science behind why tracking transforms vague goals into real wins. Small daily actions, big weekly wins."
+      },
+      {
+        "title": "Stop Failing Your Goals: Track This One Metric Instead",
+        "description": "Most people track the wrong thing. Here's exactly what to measure to prove real progress on your goals. One metric, one system, one week to see the difference. Turn invisible effort into visible proof that you're actually moving forward."
+      },
+      {
+        "title": "The 2-Minute Goal Tracking System That Never Fails",
+        "description": "Your tracking system is too complicated. That's why you quit. Learn how to measure progress with a method so simple you'll actually stick with it. Paper, apps, or spreadsheets - choose the one that matches your brain. Real progress starts now."
+      }
+    ]
+  },
+  {
+    "slug": "why-you-feel-emotionally-numb",
+    "title": "7 Possible Contributors to Emotional Numbness",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Discover why you feel emotionally numb, what causes it, and simple steps to reconnect with your feelings and start feeling like yourself again.",
+    "image": "images/why-you-feel-emotionally-numb.jpg",
+    "alt": "Woman staring blankly out window, emotionally disconnected and numb",
+    "pins": [
+      {
+        "title": "5 Reasons Why You Feel Emotionally Numb (And What to Do Now)",
+        "description": "Discover why you feel emotionally numb, what causes it, and simple steps to reconnect with your feelings and start feeling like yourself again."
+      },
+      {
+        "title": "Stop Feeling Numb: How to Reconnect With Your Emotions",
+        "description": "Discover why you feel emotionally numb, what causes it, and simple steps to reconnect with your feelings and start feeling like yourself again."
+      },
+      {
+        "title": "Try These 7 Daily Habits to Recover From Emotional Numbness",
+        "description": "Discover why you feel emotionally numb, what causes it, and simple steps to reconnect with your feelings and start feeling like yourself again."
+      }
+    ]
+  },
+  {
+    "slug": "why-anxiety-feels-physical",
+    "title": "7 Reasons Why Anxiety Feels Physical and What Your Body Is Actually Telling You",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jul 2026",
+    "read_time": "8",
+    "excerpt": "Discover why anxiety feels physical, what body signals can mean, and when to use calming skills or seek professional help for new or persistent symptoms safely.",
+    "image": "images/why-anxiety-feels-physical.jpg",
+    "alt": "Woman touching her chest while sitting at desk, experiencing physical anxiety",
+    "pins": [
+      {
+        "title": "Why Anxiety Feels Physical: 5 Science Reasons Your Body Reacts",
+        "description": "Discover why anxiety feels physical, what body signals can mean, and when to use calming skills or seek professional help for new or persistent symptoms safely."
+      },
+      {
+        "title": "Stop Mistaking Anxiety for a Heart Attack - Here's What's Really Happening",
+        "description": "Discover why anxiety feels physical, what body signals can mean, and when to use calming skills or seek professional help for new or persistent symptoms safely."
+      },
+      {
+        "title": "5 Daily Habits to Reduce Physical Anxiety Before It Controls Your Day",
+        "description": "Discover why anxiety feels physical, what body signals can mean, and when to use calming skills or seek professional help for new or persistent symptoms safely."
+      }
+    ]
+  },
+  {
+    "slug": "best-focus-techniques-for-students",
+    "title": "7 Focus Techniques for Students to Try During Study Sessions",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "The best focus techniques for students aren't about willpower - they're about removing the obstacles your brain faces every single day.",
+    "image": "images/best-focus-techniques-for-students.jpg",
+    "alt": "Young woman studying with focus at wooden desk during daytime",
+    "pins": [
+      {
+        "title": "5 Best Focus Techniques for Students - Stop Wasting Study Time",
+        "description": "Struggling to focus while studying? These 5 best focus techniques for students actually work without relying on willpower. Pomodoro method, time blocking, environmental design, and more. Learn how to study without getting distracted - backed by science and tested by real students. Try the first technique today."
+      },
+      {
+        "title": "Stop Getting Distracted While Studying - 5 Proven Methods",
+        "description": "Your phone and notifications are killing your focus. Here's how to focus and study without getting distracted using simple environmental changes. Remove decision-making, block websites, and create a focus ritual. These best focus techniques for students cut distractions by 50% immediately. See results in one week."
+      },
+      {
+        "title": "How to Study Without Getting Distracted - 25-Minute Focus Hack",
+        "description": "The Pomodoro Technique works because it aligns with how your brain actually functions. Use 25-minute focused blocks to boost retention by 40%. This is one of the best focus techniques for students that's free and takes zero setup. Start tonight and track your improvement."
+      }
+    ]
+  },
+  {
+    "slug": "benefits-of-walking-every-day",
+    "title": "7 Benefits of Walking Every Day to Consider",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "The benefits of walking every day are so real that you might feel them within just one week. A simple 30-minute walk can lower your stress levels, improve ",
+    "image": "images/benefits-of-walking-every-day.jpg",
+    "alt": "Young woman walking peacefully on a tree-lined street in morning light",
+    "pins": [
+      {
+        "title": "7 Benefits of Walking Every Day That Transform Your Health Fast",
+        "description": "Discover what happens when you walk 20 minutes daily: better sleep, less anxiety, more energy, stronger heart, and clearer focus. The science is real. The results are fast. Start your walking habit today and feel the difference within one week."
+      },
+      {
+        "title": "Stop Feeling Tired: Why Daily Walking Changes Everything",
+        "description": "Tired all the time? Walking is the fix nobody talks about. 30 minutes of daily walking boosts energy for hours, improves sleep quality, and reduces stress naturally. No gym membership needed. No complicated routines. Just a simple walk outside."
+      },
+      {
+        "title": "The Daily Walking Habit That Fixed My Anxiety and Sleep",
+        "description": "Walking every day works faster than you think. Real people see anxiety drop, sleep improve, and mood stabilize within 2 weeks. Learn how to start a walking habit that actually sticks and the exact benefits to expect daily."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-create-a-productive-routine",
+    "title": "7 Ways to Create a Productive Routine",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "Explore seven practical ways to create a productive routine, with realistic planning, priorities, breaks, and room for changing responsibilities. Practical",
+    "image": "images/how-to-create-a-productive-routine.jpg",
+    "alt": "Young woman focused on her planner at desk during morning routine planning",
+    "pins": [
+      {
+        "title": "How to Create a Productive Routine That Actually Sticks (Not Another Failed System)",
+        "description": "Explore seven practical ways to create a productive routine, with realistic planning, priorities, breaks, and room for changing responsibilities. Practical"
+      },
+      {
+        "title": "Stop Your Scattered Routine: 5 Signs Your Schedule is Failing You",
+        "description": "Explore seven practical ways to create a productive routine, with realistic planning, priorities, breaks, and room for changing responsibilities. Practical"
+      },
+      {
+        "title": "Build Your Productive Routine in 4 Steps (The Science-Backed Way)",
+        "description": "Explore seven practical ways to create a productive routine, with realistic planning, priorities, breaks, and room for changing responsibilities. Practical"
+      }
+    ]
+  },
+  {
+    "slug": "how-to-stop-catastrophic-thinking",
+    "title": "7 Ways to Respond to Catastrophic Thinking",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "Explore seven ways to respond to catastrophic thinking, with grounding ideas and signs that intrusive thoughts need qualified professional support.",
+    "image": "images/how-to-stop-catastrophic-thinking.jpg",
+    "alt": "Woman at desk looking thoughtfully inward during mental clarity moment",
+    "pins": [
+      {
+        "title": "How to Stop Catastrophic Thinking: 5 Proven Techniques That Work",
+        "description": "Explore seven ways to respond to catastrophic thinking, with grounding ideas and signs that intrusive thoughts need qualified professional support."
+      },
+      {
+        "title": "Stop Catastrophizing Anxiety: Break the Worst-Case Scenario Loop",
+        "description": "Explore seven ways to respond to catastrophic thinking, with grounding ideas and signs that intrusive thoughts need qualified professional support."
+      },
+      {
+        "title": "5 Daily Habits to Stop Catastrophic Thinking and Reclaim Peace",
+        "description": "Explore seven ways to respond to catastrophic thinking, with grounding ideas and signs that intrusive thoughts need qualified professional support."
+      }
+    ]
+  },
+  {
+    "slug": "why-discipline-beats-motivation",
+    "title": "7 Reasons Discipline Can Support Your Goals",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jun 2026",
+    "read_time": "8",
+    "excerpt": "Explore seven ways simple discipline can support your goals, with realistic planning, smaller commitments, and room to restart after setbacks. Practical steps",
+    "image": "images/why-discipline-beats-motivation.jpg",
+    "alt": "Young woman focused on writing in notebook at desk daily",
+    "pins": [
+      {
+        "title": "Why Discipline Beats Motivation: The Habit System That Actually Works",
+        "description": "Explore seven ways simple discipline can support your goals, with realistic planning, smaller commitments, and room to restart after setbacks. Practical steps"
+      },
+      {
+        "title": "Stop Waiting to Feel Motivated: Build Discipline Instead",
+        "description": "Explore seven ways simple discipline can support your goals, with realistic planning, smaller commitments, and room to restart after setbacks. Practical steps"
+      },
+      {
+        "title": "3 Reasons Why Your Motivation Dies and What Discipline Does Instead",
+        "description": "Explore seven ways simple discipline can support your goals, with realistic planning, smaller commitments, and room to restart after setbacks. Practical steps"
+      }
+    ]
+  },
+  {
+    "slug": "how-to-focus-better-at-work",
+    "title": "9 Ways to Focus Better at Work Without Burning Out",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "How to focus better at work starts with understanding why your attention keeps slipping away. Your brain gets pulled toward notifications, thoughts, and ta",
+    "image": "images/how-to-focus-better-at-work.jpg",
+    "alt": "Woman focused on work at desk improving focus better",
+    "pins": [
+      {
+        "title": "7 Ways to Focus Better at Work: Stop Distractions Today",
+        "description": "Struggling to stay focused at work? Discover 7 proven strategies to eliminate distractions, protect your deep work time, and actually finish what you start. Learn how to focus better at work using science-backed techniques that work in any environment. Stop battling your brain and start working with it."
+      },
+      {
+        "title": "Stop Losing Focus at Work: Why Your Brain Keeps Wandering",
+        "description": "Your focus breaks aren't your fault. Learn why you can't focus at work, what actually causes attention to slip, and how to fix the real problem. Most people blame willpower, but the solution is environment and strategy. Finally understand how to improve focus at work without exhaustion."
+      },
+      {
+        "title": "How to Build Daily Focus Habits That Actually Stick",
+        "description": "Want to focus better at work without constant effort? Build sustainable focus habits using the daily practice method. See 30 percent improvement in just 2 weeks. Learn the exact progression from day 1 to week 4 that rewires your attention span and makes deep work automatic."
+      }
+    ]
+  },
+  {
+    "slug": "best-productivity-systems-explained",
+    "title": "7 Productivity Systems Explained: Choosing a Practical Fit",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "The best productivity systems explained can transform how you work, but only if you pick the right one for you.",
+    "image": "images/best-productivity-systems-explained.jpg",
+    "alt": "Woman finding calm with productivity system at desk",
+    "pins": [
+      {
+        "title": "5 Best Productivity Systems Explained: Stop Drowning, Start Winning",
+        "description": "Tired of jumping between apps and systems that don't stick? Discover the 5 best productivity systems explained, from Pomodoro to GTD, and find the one that matches your actual brain. Pick one today and commit for 30 days. Includes exact implementation steps."
+      },
+      {
+        "title": "Stop Failing at Productivity Systems: Here's Why Nothing Sticks",
+        "description": "You're not failing because you lack discipline. Most productivity systems fail because you picked the wrong one for your bottleneck. Learn why 80% of people quit within 30 days and how to choose a system that actually works for your life."
+      },
+      {
+        "title": "Which Productivity System Is Right for You? Take This Test",
+        "description": "Procrastination? Overwhelm? Priority chaos? Match your specific problem to the productivity system that solves it. Pomodoro, GTD, time blocking, Kanban, or Eisenhower Matrix. Find yours and finally feel the relief of a system that sticks."
+      }
+    ]
+  },
+  {
+    "slug": "best-foods-for-focus-and-concentration",
+    "title": "9 Best Foods for Focus and Concentration That Fit Real Life",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "The best foods for focus and concentration can transform your entire workday in ways you've never experienced. Your brain uses 20 percent of your body's en",
+    "image": "images/best-foods-for-focus-and-concentration.jpg",
+    "alt": "woman focused at desk with clear mental concentration",
+    "pins": [
+      {
+        "title": "7 Best Foods for Focus That Actually Sharpen Your Brain",
+        "description": "Stop blaming yourself for afternoon brain fog. These 7 best foods for focus and concentration stabilize your energy, boost dopamine, and keep your mind sharp for hours. Salmon, berries, eggs, nuts, dark chocolate, greens, and whole grains are your brain's real power fuel. Add one to your next meal and notice the difference by tomorrow. Your focus is just waiting for the right nutrition."
+      },
+      {
+        "title": "Stop Brain Fog: The Best Foods for Concentration",
+        "description": "Your 2 PM brain crash isn't laziness. It's malnutrition. Discover which foods eliminate brain fog, improve memory, and keep you mentally sharp all day long. From omega-3 fatty fish to dark chocolate, learn the exact brain foods science proves actually work. Try one today and feel the clarity shift within hours."
+      },
+      {
+        "title": "Try This: 7-Day Brain Food Challenge for Better Focus",
+        "description": "Challenge yourself to eat the best foods for focus and concentration for just 7 days. One salmon meal, daily berries, eggs at breakfast, almonds as snacks. By day 7, notice how your mental clarity improves, your energy stays stable, and your concentration deepens. Your brain knows what it needs. Feed it right."
+      }
+    ]
+  },
+  {
+    "slug": "best-morning-habits-for-more-energy",
+    "title": "7 Morning Habits for More Steady Energy",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Best morning habits for more energy start the night before, not when your alarm goes off. Most people waste their most powerful hours scrolling, rushing, a",
+    "image": "images/best-morning-habits-for-more-energy.jpg",
+    "alt": "Woman standing in morning sunlight radiating natural energy",
+    "pins": [
+      {
+        "title": "5 Best Morning Habits for More Energy (Backed by Science)",
+        "description": "Stop feeling exhausted by 10am. These 5 best morning habits for more energy work because they align with your body's natural circadian rhythm. No coffee crash, no afternoon slump. Start with just one habit this week and watch your entire day transform. Simple, science-backed, and actually sustainable."
+      },
+      {
+        "title": "Stop Wasting Your Morning Energy (Do This Instead)",
+        "description": "Most people sabotage their energy before 7am by scrolling, skipping breakfast, and avoiding sunlight. Your best morning habits for more energy take just 30 minutes total. Discover the exact sequence that transforms your focus, mood, and productivity for the entire day. No complicated routines required."
+      },
+      {
+        "title": "Try This 30-Day Morning Energy Challenge (Results in Days)",
+        "description": "Real energy comes from honoring your body's biology, not grinding harder. These best morning habits for more energy show results by day 3 and transform your entire life by day 30. Learn which habit to start with first, how to build momentum, and how to make it stick forever."
+      }
+    ]
+  },
+  {
+    "slug": "why-you-feel-tired-all-the-time",
+    "title": "7 Reasons You Feel Tired All the Time",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Why you feel tired all the time might have nothing to do with how long you sleep. Constant fatigue affects over 1.5 million Americans annually, and most ne",
+    "image": "images/why-you-feel-tired-all-the-time.jpg",
+    "alt": "Young woman with tea feeling tired in morning light",
+    "pins": [
+      {
+        "title": "Why You Feel Tired All the Time: 5 Hidden Energy Drains",
+        "description": "Discover why constant fatigue happens even after 8 hours of sleep. Learn the nutrient deficiencies, sleep mistakes, and daily habits that drain your energy, plus proven fixes to reclaim your vitality in 2 weeks."
+      },
+      {
+        "title": "Stop Being Tired All the Time: Science-Backed Energy Fixes",
+        "description": "Exhausted no matter how much you sleep? The problem isn't rest, it's what you're doing during the day. Uncover the real causes of constant fatigue and the 5 daily changes that actually work."
+      },
+      {
+        "title": "Try These 7 Daily Habits to End Constant Fatigue for Good",
+        "description": "Break free from persistent tiredness with small, sustainable habits that boost natural energy. From morning sunlight to nutrition timing, these changes create lasting transformation without caffeine crashes."
+      }
+    ]
+  },
+  {
+    "slug": "pomodoro-technique-explained-for-beginners",
+    "title": "7 Pomodoro Technique Tips That Actually Help",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Learn the Pomodoro technique with practical work intervals, useful breaks, and flexible ways to adapt the method to your tasks, schedule, and energy daily.",
+    "image": "images/pomodoro-technique-explained-for-beginners.jpg",
+    "alt": "woman focusing with pomodoro timer on desk morning",
+    "pins": [
+      {
+        "title": "5 Pomodoro Technique Hacks for Beginners: Skip Procrastination for Good",
+        "description": "Learn the Pomodoro technique with practical work intervals, useful breaks, and flexible ways to adapt the method to your tasks, schedule, and energy daily."
+      },
+      {
+        "title": "Stop Struggling With Focus: Try the 25-Minute Pomodoro Method Today",
+        "description": "Learn the Pomodoro technique with practical work intervals, useful breaks, and flexible ways to adapt the method to your tasks, schedule, and energy daily."
+      },
+      {
+        "title": "The Pomodoro Technique Explained: Your Brain's Secret to Deep Work",
+        "description": "Learn the Pomodoro technique with practical work intervals, useful breaks, and flexible ways to adapt the method to your tasks, schedule, and energy daily."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-stop-procrastinating-immediately",
+    "title": "7 Practical Ways to Start a Task You Are Avoiding",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "You know exactly what you need to do, but you can't seem to start. How to stop procrastinating immediately is the question keeping you stuck, refreshing so",
+    "image": "images/how-to-stop-procrastinating-immediately.jpg",
+    "alt": "Woman pausing at desk before starting work task",
+    "pins": [
+      {
+        "title": "How to Stop Procrastinating Immediately: 5 Proven Techniques That Work Now",
+        "description": "Stop procrastinating today with these 5 science-backed techniques that address the real emotion behind delay. Learn the two-minute rule, how to reframe tasks, and why willpower alone never works. Beat procrastination fast with strategies you can use right now. Read the full guide and take back your productivity today."
+      },
+      {
+        "title": "Stop Procrastinating on Things You Actually Want to Do: Here's Why",
+        "description": "Wondering why you procrastinate even when motivated? The truth: procrastination is emotion regulation, not laziness. Discover why you avoid tasks emotionally, the warning signs your body gives before you delay, and how to interrupt the pattern before it steals your day. Transform your relationship with productivity."
+      },
+      {
+        "title": "Try This: The Two-Minute Rule to Break Your Procrastination Habit Today",
+        "description": "The fastest way to stop procrastinating? Commit to just two minutes. This tiny shift bypasses your brain's resistance and gets you started. Learn why the two-minute rule works, how to pair it with your environment, and how to build daily habits that prevent procrastination from returning. Your productivity game is about to change."
+      }
+    ]
+  },
+  {
+    "slug": "signs-of-mental-burnout-and-how-to-recover",
+    "title": "9 Signs of Mental Burnout and What to Do Next",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "May 2026",
+    "read_time": "8",
+    "excerpt": "Learn nine signs of mental burnout, practical recovery steps, and when persistent exhaustion or hopelessness should be discussed with a professional promptly.",
+    "image": "images/signs-of-mental-burnout-and-how-to-recover.jpg",
+    "alt": "Tired young woman looking out window holding coffee during burnout recovery",
+    "pins": [
+      {
+        "title": "7 Signs of Mental Burnout You're Probably Ignoring (And How to Fix It)",
+        "description": "Learn nine signs of mental burnout, practical recovery steps, and when persistent exhaustion or hopelessness should be discussed with a professional promptly."
+      },
+      {
+        "title": "Stop Mental Burnout Before It Takes Over: 7 Recovery Steps",
+        "description": "Learn nine signs of mental burnout, practical recovery steps, and when persistent exhaustion or hopelessness should be discussed with a professional promptly."
+      },
+      {
+        "title": "Try This: The 5-Minute Daily Habit That Reverses Mental Burnout",
+        "description": "Learn nine signs of mental burnout, practical recovery steps, and when persistent exhaustion or hopelessness should be discussed with a professional promptly."
+      }
+    ]
+  },
+  {
+    "slug": "life-balance-habits",
+    "title": "7 Life Balance Habits to Try",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Explore seven life balance habits that can help you make room for work, rest, relationships, and the priorities that matter to you. Practical steps you can use",
+    "image": "images/life-balance-habits.jpg",
+    "alt": "Woman closing laptop to protect life balance habits boundaries",
+    "pins": [
+      {
+        "title": "7 Life Balance Habits That Reduce Burnout Fast (No Guilt)",
+        "description": "Explore seven life balance habits that can help you make room for work, rest, relationships, and the priorities that matter to you. Practical steps you can use"
+      },
+      {
+        "title": "Stop Sacrificing Your Personal Life for Work (Try This Instead)",
+        "description": "Explore seven life balance habits that can help you make room for work, rest, relationships, and the priorities that matter to you. Practical steps you can use"
+      },
+      {
+        "title": "5 Daily Life Balance Habits That Transform Your Week",
+        "description": "Explore seven life balance habits that can help you make room for work, rest, relationships, and the priorities that matter to you. Practical steps you can use"
+      }
+    ]
+  },
+  {
+    "slug": "daily-self-care-routine",
+    "title": "5 Daily Self-Care Routine Habits That Actually Stick (Without Feeling Forced)",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "A daily self-care routine isn't about bubble baths and face masks, though those are nice. It's about small, intentional actions that lower your stress, sta",
+    "image": "images/daily-self-care-routine.jpg",
+    "alt": "Woman drinking water mindfully at kitchen table with morning light, daily self-care routine",
+    "pins": [
+      {
+        "title": "How to Start a Daily Self-Care Routine in 5 Minutes (Real Life Works)",
+        "description": "Stop waiting for the perfect moment. A daily self-care routine doesn't require hours or special products. Start with water, movement, quiet time, intentional eating, and sleep protection. These five habits lower stress, boost focus, and help you feel like yourself again. Build one habit per week and watch the shift happen."
+      },
+      {
+        "title": "Stop Skipping Self-Care (Your Nervous System is Begging You)",
+        "description": "You're exhausted, irritable, and getting sick constantly because you're skipping daily self-care. Your body is sending clear signals. A consistent daily self-care routine rebuilds your resilience in just 2-3 weeks. Learn the five non-negotiable habits successful people protect daily, and why consistency beats perfection every single time."
+      },
+      {
+        "title": "Try This: The 5-Habit Daily Self-Care Routine That Actually Sticks",
+        "description": "Forget complicated wellness plans. This daily self-care routine stacks onto habits you already do: water after waking, movement before lunch, quiet time in afternoon, mindful eating once daily, phone-free bedtime. Small, repeatable, powerful. Women report lower anxiety, better sleep, and stable energy within weeks of starting this routine."
+      }
+    ]
+  },
+  {
+    "slug": "deep-work-techniques",
+    "title": "7 Deep Work Techniques to Try",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Explore seven deep work techniques for planning focused sessions, reducing interruptions, taking breaks, and adapting the method to your work. Practical steps",
+    "image": "images/deep-work-techniques.jpg",
+    "alt": "Woman focused on deep work at desk with coffee during morning hours",
+    "pins": [
+      {
+        "title": "5 Deep Work Techniques That Double Your Productivity in 30 Days",
+        "description": "Explore seven deep work techniques for planning focused sessions, reducing interruptions, taking breaks, and adapting the method to your work. Practical steps"
+      },
+      {
+        "title": "Stop Context-Switching: The Real Reason You Can't Focus",
+        "description": "Explore seven deep work techniques for planning focused sessions, reducing interruptions, taking breaks, and adapting the method to your work. Practical steps"
+      },
+      {
+        "title": "Try This: The 90-Minute Deep Work Habit That Actually Sticks",
+        "description": "Explore seven deep work techniques for planning focused sessions, reducing interruptions, taking breaks, and adapting the method to your work. Practical steps"
+      }
+    ]
+  },
+  {
+    "slug": "how-to-improve-mental-clarity",
+    "title": "7 Ways to Support Mental Clarity During a Busy Week",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to improve mental clarity is the question millions of us are asking right now. Brain fog feels like walking through clouds, and it kills your productiv",
+    "image": "images/how-to-improve-mental-clarity.jpg",
+    "alt": "Young woman improving mental clarity with morning coffee ritual peacefully focused",
+    "pins": [
+      {
+        "title": "How to Improve Mental Clarity in 24 Hours: 5 Brain Fog Fixes",
+        "description": "Stop the mental fog and reclaim your focus. Learn 5 science-backed methods to improve mental clarity and eliminate brain fog fast. From sleep optimization to nervous system regulation, these strategies work within hours. Start with just one today and notice the difference in your thinking power tomorrow."
+      },
+      {
+        "title": "Stop Brain Fog Now: Why Your Mind Feels Cloudy and How to Fix It",
+        "description": "Tired of feeling mentally foggy and exhausted? Brain fog comes from stress, poor sleep, and digital overload, not stupidity. Discover the root causes of brain fog and the exact habits that restore sharp focus and mental clarity. Clear your head and reclaim your productivity."
+      },
+      {
+        "title": "Try This: 4-7-8 Breathing to Clear Brain Fog Instantly (60 Seconds)",
+        "description": "One simple breathing technique to calm your nervous system and restore mental clarity in just 60 seconds. This nervous system reset works better than caffeine and actually helps your brain think clearly. Try it when afternoon brain fog hits and watch your focus return."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-stop-procrastination",
+    "title": "7 Ways to Understand and Reduce Procrastination",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to stop procrastination starts with understanding your own delay patterns and what triggers them. You're not lazy, and you're not broken. Research show",
+    "image": "images/how-to-stop-procrastination.jpg",
+    "alt": "Woman taking a breath before starting work at her desk with focus",
+    "pins": [
+      {
+        "title": "How to Stop Procrastination in 2 Minutes: The Trick That Actually Works",
+        "description": "The 2-minute rule is the most powerful way to stop procrastination before it starts. Instead of forcing yourself to work for hours, commit to just two minutes. Your brain will keep going once the resistance barrier breaks. Learn the five proven strategies that beat procrastination for real. Click to discover how to finally finish what you start."
+      },
+      {
+        "title": "Stop Procrastinating: 5 Strategies That Work When Willpower Fails",
+        "description": "Procrastination isn't about laziness. It's your nervous system trying to escape emotional discomfort. Discover why you procrastinate so much and the five concrete techniques that actually work. From environment design to trigger identification, these strategies reshape your brain's response to difficult tasks. Read now for lasting change."
+      },
+      {
+        "title": "Break Free From Procrastination With This Daily Habit Framework",
+        "description": "Stop procrastination by building tiny daily habits that make action easier than avoidance. Learn the exact framework used by people who beat chronic procrastination for good. No more shame spirals. No more 'tomorrow.' Just practical, doable changes that work with your brain, not against it. Start today."
+      }
+    ]
+  },
+  {
+    "slug": "simple-morning-habits",
+    "title": "7 Simple Morning Habits to Try",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Explore seven simple morning habits, including light, food, movement, and planning, then adapt the ideas to your own schedule. Practical steps you can use today",
+    "image": "images/simple-morning-habits.jpg",
+    "alt": "Young woman drinking water in morning light, establishing simple morning habits",
+    "pins": [
+      {
+        "title": "5 Simple Morning Habits That End Anxiety Before Noon",
+        "description": "Explore seven simple morning habits, including light, food, movement, and planning, then adapt the ideas to your own schedule. Practical steps you can use today"
+      },
+      {
+        "title": "Stop Waking Up Stressed: The Morning Routine That Actually Works",
+        "description": "Explore seven simple morning habits, including light, food, movement, and planning, then adapt the ideas to your own schedule. Practical steps you can use today"
+      },
+      {
+        "title": "Try These 5 Simple Morning Habits for Energy All Day Long",
+        "description": "Explore seven simple morning habits, including light, food, movement, and planning, then adapt the ideas to your own schedule. Practical steps you can use today"
+      }
+    ]
+  },
+  {
+    "slug": "how-to-focus-without-distractions",
+    "title": "7 Ways to Focus With Fewer Distractions",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Learning how to focus without distractions is the single most valuable skill you can build right now. Studies show the average person loses 23 minutes of f",
+    "image": "images/how-to-focus-without-distractions.jpg",
+    "alt": "Woman focused on laptop at home desk without phone distraction",
+    "pins": [
+      {
+        "title": "How to Focus Without Distractions: 5 Science-Backed Strategies",
+        "description": "Stop losing 2 hours a day to distractions. Learn how to focus without distractions at home using proven Pomodoro techniques, environmental design, and daily rituals. Build laser-sharp concentration in just one week. Discover the exact setup that works."
+      },
+      {
+        "title": "Stop Checking Your Phone: Reclaim 3 Hours Daily of Deep Work",
+        "description": "Your phone costs you 25 minutes of focus per interruption. This is how to improve focus fast by removing the biggest distraction. Real strategies for real people who are tired of feeling productive but accomplishing nothing. Start today."
+      },
+      {
+        "title": "Try This 7-Day Focus Rebuild Plan: Notice Results Immediately",
+        "description": "Reset your attention span in one week using this simple plan. How to focus without distractions starts with removing one thing, then building from there. Each day has one specific action. Your productivity will improve by 40% by day 5."
+      }
+    ]
+  },
+  {
+    "slug": "emotional-burnout-recovery",
+    "title": "7 Emotional Burnout Recovery Steps to Consider",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Explore seven supportive emotional burnout recovery steps, including rest, boundaries, connection, and when ongoing symptoms need qualified care.",
+    "image": "images/emotional-burnout-recovery.jpg",
+    "alt": "Woman holding tea by window during emotional burnout recovery moment",
+    "pins": [
+      {
+        "title": "How to Recover from Emotional Burnout Fast: 5 Steps That Work",
+        "description": "Explore seven supportive emotional burnout recovery steps, including rest, boundaries, connection, and when ongoing symptoms need qualified care."
+      },
+      {
+        "title": "Stop the Emotional Burnout Spiral: Start Here Today",
+        "description": "Explore seven supportive emotional burnout recovery steps, including rest, boundaries, connection, and when ongoing symptoms need qualified care."
+      },
+      {
+        "title": "Your Daily Emotional Burnout Recovery Routine (5 Min Plan)",
+        "description": "Explore seven supportive emotional burnout recovery steps, including rest, boundaries, connection, and when ongoing symptoms need qualified care."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-calm-your-mind-instantly",
+    "title": "7 Ways to Calm an Overwhelmed Mind Safely",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "How to calm your mind instantly is something you reach for when your thoughts start spiraling and your chest tightens without warning. Your nervous system i",
+    "image": "images/how-to-calm-your-mind-instantly.jpg",
+    "alt": "young woman sitting cross-legged on floor with closed eyes finding instant calm in morning light",
+    "pins": [
+      {
+        "title": "How to Calm Your Mind Instantly: 5 Techniques That Work in 90 Seconds",
+        "description": "Discover the five science-backed methods for how to calm your mind instantly when anxiety hits. Box breathing, cold water grounding, and the 5-4-3-2-1 sensory technique activate your parasympathetic nervous system in under two minutes. No meditation required. Use them anywhere, anytime your mind starts spiraling."
+      },
+      {
+        "title": "Stop a Racing Mind Fast: The 5 Instant Relaxation Techniques That Actually Work",
+        "description": "Racing thoughts do not have to take over your day. These five instant relaxation techniques work by signaling safety to your nervous system rather than fighting your thoughts. Research shows cortisol drops 15-20% within 90 seconds of slow breathing. Start with box breathing and build from there."
+      },
+      {
+        "title": "Try These 5 Methods to Relax Your Mind Quickly in Any Situation",
+        "description": "Whether you are at work, at home, or mid-panic, these five techniques help you relax your mind quickly without any tools or preparation. From rhythmic breath walks to progressive muscle release, each method is backed by neuroscience and takes under three minutes. Save this for when you need it most."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-control-your-thoughts",
+    "title": "7 Ways to Control Your Thoughts Without Fighting Your Mind",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Apr 2026",
+    "read_time": "8",
+    "excerpt": "Learn how to control your thoughts without fighting them, using grounding, defusion, and routines that support calmer decision-making in daily life with care.",
+    "image": "images/how-to-control-your-thoughts.jpg",
+    "alt": "person managing intrusive thoughts peacefully at desk morning",
+    "pins": [
+      {
+        "title": "How to Control Your Thoughts: 5 Proven Techniques for Anxiety Relief",
+        "description": "Learn how to control your thoughts without fighting them, using grounding, defusion, and routines that support calmer decision-making in daily life with care."
+      },
+      {
+        "title": "Stop Intrusive Thoughts: Why You Can't Control Them (And What Works)",
+        "description": "Learn how to control your thoughts without fighting them, using grounding, defusion, and routines that support calmer decision-making in daily life with care."
+      },
+      {
+        "title": "5 Daily Habits to Master Thought Control: Your Mental Peace Starts Here",
+        "description": "Learn how to control your thoughts without fighting them, using grounding, defusion, and routines that support calmer decision-making in daily life with care."
+      }
+    ]
+  },
+  {
     "slug": "how-to-build-confidence-through-discipline",
     "title": "7 Ways to Build Confidence Through Everyday Discipline",
     "category": "Mental Wellness",
@@ -901,31 +1551,6 @@ const ARTICLES = [
     ]
   },
   {
-    "slug": "how-to-track-progress-toward-goals",
-    "title": "7 Ways to Track Progress Toward Goals That Actually Keep You Motivated",
-    "category": "Productivity",
-    "cat_slug": "productivity",
-    "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "How to track progress toward goals is the difference between dreams that fade and wins you can actually feel. Most people set goals but never check them ag",
-    "image": "images/how-to-track-progress-toward-goals.jpg",
-    "alt": "woman writing in notebook while tracking progress at desk",
-    "pins": [
-      {
-        "title": "How to Track Progress Toward Goals Without Losing Your Mind",
-        "description": "Stop abandoning tracking systems. Learn the one simple method that actually works - no apps, no spreadsheets, just honest daily recording and weekly reviews. Discover the science behind why tracking transforms vague goals into real wins. Small daily actions, big weekly wins."
-      },
-      {
-        "title": "Stop Failing Your Goals: Track This One Metric Instead",
-        "description": "Most people track the wrong thing. Here's exactly what to measure to prove real progress on your goals. One metric, one system, one week to see the difference. Turn invisible effort into visible proof that you're actually moving forward."
-      },
-      {
-        "title": "The 2-Minute Goal Tracking System That Never Fails",
-        "description": "Your tracking system is too complicated. That's why you quit. Learn how to measure progress with a method so simple you'll actually stick with it. Paper, apps, or spreadsheets - choose the one that matches your brain. Real progress starts now."
-      }
-    ]
-  },
-  {
     "slug": "why-you-feel-lost-in-life",
     "title": "5 Reasons You May Feel Lost in Life",
     "category": "Mental Wellness",
@@ -949,6 +1574,30 @@ const ARTICLES = [
         "description": "Is unclear values or identity confusion keeping you stuck and directionless? This guide walks you through the real reasons people feel lost and gives you a simple 5-step process to reclaim clarity. No more autopilot living - start building genuine purpose."
       }
     ]
+  },
+  {
+    "slug": "how-to-build-a-productivity-system-with-apps",
+    "title": "How to Build a Productivity System with Apps in 2026 (Step-by-Step)",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jul 2026",
+    "read_time": "12",
+    "excerpt": "Learn how to build a productivity system with apps in 2026 that actually works. Step-by-step guide to task capture, organization, and daily review habits.",
+    "image": "images/best-productivity-systems-explained.jpg",
+    "alt": "Person building a clean productivity system on laptop with notes and apps open",
+    "pins": []
+  },
+  {
+    "slug": "best-free-productivity-apps-for-android-2026",
+    "title": "7 Free Android Productivity Apps to Compare in 2026",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Jul 2026",
+    "read_time": "6",
+    "excerpt": "Compare free productivity apps for Android with official sources, plan limits, offline notes, and a practical checklist to choose a tool that fits your workday.",
+    "image": "images/best-productivity-apps-in-2026.jpg",
+    "alt": "Person using Android phone with productivity app open at a clean desk",
+    "pins": []
   },
   {
     "slug": "how-to-stop-self-sabotaging",
@@ -1101,31 +1750,6 @@ const ARTICLES = [
     ]
   },
   {
-    "slug": "why-you-feel-emotionally-numb",
-    "title": "7 Possible Contributors to Emotional Numbness",
-    "category": "Mental Wellness",
-    "cat_slug": "mental-wellness",
-    "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Discover why you feel emotionally numb, what causes it, and simple steps to reconnect with your feelings and start feeling like yourself again.",
-    "image": "images/why-you-feel-emotionally-numb.jpg",
-    "alt": "Woman staring blankly out window, emotionally disconnected and numb",
-    "pins": [
-      {
-        "title": "5 Reasons Why You Feel Emotionally Numb (And What to Do Now)",
-        "description": "Discover why you feel emotionally numb, what causes it, and simple steps to reconnect with your feelings and start feeling like yourself again."
-      },
-      {
-        "title": "Stop Feeling Numb: How to Reconnect With Your Emotions",
-        "description": "Discover why you feel emotionally numb, what causes it, and simple steps to reconnect with your feelings and start feeling like yourself again."
-      },
-      {
-        "title": "Try These 7 Daily Habits to Recover From Emotional Numbness",
-        "description": "Discover why you feel emotionally numb, what causes it, and simple steps to reconnect with your feelings and start feeling like yourself again."
-      }
-    ]
-  },
-  {
     "slug": "how-to-fix-your-sleep-schedule",
     "title": "5 Ways to Support a More Consistent Sleep Schedule",
     "category": "Healthy Lifestyle",
@@ -1222,31 +1846,6 @@ const ARTICLES = [
       {
         "title": "Try This: Build Unstoppable Focus in 30 Minutes Daily",
         "description": "Explore three practical differences between focus and motivation, with ways to plan work around your attention and current energy. Practical steps you can use"
-      }
-    ]
-  },
-  {
-    "slug": "why-anxiety-feels-physical",
-    "title": "7 Reasons Why Anxiety Feels Physical and What Your Body Is Actually Telling You",
-    "category": "Mental Wellness",
-    "cat_slug": "mental-wellness",
-    "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Discover why anxiety feels physical, what body signals can mean, and when to use calming skills or seek professional help for new or persistent symptoms safely.",
-    "image": "images/why-anxiety-feels-physical.jpg",
-    "alt": "Woman touching her chest while sitting at desk, experiencing physical anxiety",
-    "pins": [
-      {
-        "title": "Why Anxiety Feels Physical: 5 Science Reasons Your Body Reacts",
-        "description": "Discover why anxiety feels physical, what body signals can mean, and when to use calming skills or seek professional help for new or persistent symptoms safely."
-      },
-      {
-        "title": "Stop Mistaking Anxiety for a Heart Attack - Here's What's Really Happening",
-        "description": "Discover why anxiety feels physical, what body signals can mean, and when to use calming skills or seek professional help for new or persistent symptoms safely."
-      },
-      {
-        "title": "5 Daily Habits to Reduce Physical Anxiety Before It Controls Your Day",
-        "description": "Discover why anxiety feels physical, what body signals can mean, and when to use calming skills or seek professional help for new or persistent symptoms safely."
       }
     ]
   },
@@ -1351,31 +1950,6 @@ const ARTICLES = [
     ]
   },
   {
-    "slug": "best-focus-techniques-for-students",
-    "title": "7 Focus Techniques for Students to Try During Study Sessions",
-    "category": "Productivity",
-    "cat_slug": "productivity",
-    "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "The best focus techniques for students aren't about willpower - they're about removing the obstacles your brain faces every single day.",
-    "image": "images/best-focus-techniques-for-students.jpg",
-    "alt": "Young woman studying with focus at wooden desk during daytime",
-    "pins": [
-      {
-        "title": "5 Best Focus Techniques for Students - Stop Wasting Study Time",
-        "description": "Struggling to focus while studying? These 5 best focus techniques for students actually work without relying on willpower. Pomodoro method, time blocking, environmental design, and more. Learn how to study without getting distracted - backed by science and tested by real students. Try the first technique today."
-      },
-      {
-        "title": "Stop Getting Distracted While Studying - 5 Proven Methods",
-        "description": "Your phone and notifications are killing your focus. Here's how to focus and study without getting distracted using simple environmental changes. Remove decision-making, block websites, and create a focus ritual. These best focus techniques for students cut distractions by 50% immediately. See results in one week."
-      },
-      {
-        "title": "How to Study Without Getting Distracted - 25-Minute Focus Hack",
-        "description": "The Pomodoro Technique works because it aligns with how your brain actually functions. Use 25-minute focused blocks to boost retention by 40%. This is one of the best focus techniques for students that's free and takes zero setup. Start tonight and track your improvement."
-      }
-    ]
-  },
-  {
     "slug": "why-you-feel-mentally-drained",
     "title": "Mentally Drained? 5 Signs and Practical Ways to Recover",
     "category": "Mental Wellness",
@@ -1451,56 +2025,6 @@ const ARTICLES = [
     ]
   },
   {
-    "slug": "benefits-of-walking-every-day",
-    "title": "7 Benefits of Walking Every Day to Consider",
-    "category": "Healthy Lifestyle",
-    "cat_slug": "healthy-lifestyle",
-    "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "The benefits of walking every day are so real that you might feel them within just one week. A simple 30-minute walk can lower your stress levels, improve ",
-    "image": "images/benefits-of-walking-every-day.jpg",
-    "alt": "Young woman walking peacefully on a tree-lined street in morning light",
-    "pins": [
-      {
-        "title": "7 Benefits of Walking Every Day That Transform Your Health Fast",
-        "description": "Discover what happens when you walk 20 minutes daily: better sleep, less anxiety, more energy, stronger heart, and clearer focus. The science is real. The results are fast. Start your walking habit today and feel the difference within one week."
-      },
-      {
-        "title": "Stop Feeling Tired: Why Daily Walking Changes Everything",
-        "description": "Tired all the time? Walking is the fix nobody talks about. 30 minutes of daily walking boosts energy for hours, improves sleep quality, and reduces stress naturally. No gym membership needed. No complicated routines. Just a simple walk outside."
-      },
-      {
-        "title": "The Daily Walking Habit That Fixed My Anxiety and Sleep",
-        "description": "Walking every day works faster than you think. Real people see anxiety drop, sleep improve, and mood stabilize within 2 weeks. Learn how to start a walking habit that actually sticks and the exact benefits to expect daily."
-      }
-    ]
-  },
-  {
-    "slug": "how-to-create-a-productive-routine",
-    "title": "7 Ways to Create a Productive Routine",
-    "category": "Productivity",
-    "cat_slug": "productivity",
-    "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven practical ways to create a productive routine, with realistic planning, priorities, breaks, and room for changing responsibilities. Practical",
-    "image": "images/how-to-create-a-productive-routine.jpg",
-    "alt": "Young woman focused on her planner at desk during morning routine planning",
-    "pins": [
-      {
-        "title": "How to Create a Productive Routine That Actually Sticks (Not Another Failed System)",
-        "description": "Explore seven practical ways to create a productive routine, with realistic planning, priorities, breaks, and room for changing responsibilities. Practical"
-      },
-      {
-        "title": "Stop Your Scattered Routine: 5 Signs Your Schedule is Failing You",
-        "description": "Explore seven practical ways to create a productive routine, with realistic planning, priorities, breaks, and room for changing responsibilities. Practical"
-      },
-      {
-        "title": "Build Your Productive Routine in 4 Steps (The Science-Backed Way)",
-        "description": "Explore seven practical ways to create a productive routine, with realistic planning, priorities, breaks, and room for changing responsibilities. Practical"
-      }
-    ]
-  },
-  {
     "slug": "best-habit-tracker-methods-that-work",
     "title": "5 Habit Tracker Methods to Compare",
     "category": "Productivity",
@@ -1522,31 +2046,6 @@ const ARTICLES = [
       {
         "title": "The Habit Tracking Method That Requires Zero Willpower",
         "description": "Tired of motivation running out? This habit tracking system stacks onto your existing routine so you track automatically - no willpower needed. See exactly how to set it up and why your brain will actually stick with it this time."
-      }
-    ]
-  },
-  {
-    "slug": "how-to-stop-catastrophic-thinking",
-    "title": "7 Ways to Respond to Catastrophic Thinking",
-    "category": "Mental Wellness",
-    "cat_slug": "mental-wellness",
-    "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven ways to respond to catastrophic thinking, with grounding ideas and signs that intrusive thoughts need qualified professional support.",
-    "image": "images/how-to-stop-catastrophic-thinking.jpg",
-    "alt": "Woman at desk looking thoughtfully inward during mental clarity moment",
-    "pins": [
-      {
-        "title": "How to Stop Catastrophic Thinking: 5 Proven Techniques That Work",
-        "description": "Explore seven ways to respond to catastrophic thinking, with grounding ideas and signs that intrusive thoughts need qualified professional support."
-      },
-      {
-        "title": "Stop Catastrophizing Anxiety: Break the Worst-Case Scenario Loop",
-        "description": "Explore seven ways to respond to catastrophic thinking, with grounding ideas and signs that intrusive thoughts need qualified professional support."
-      },
-      {
-        "title": "5 Daily Habits to Stop Catastrophic Thinking and Reclaim Peace",
-        "description": "Explore seven ways to respond to catastrophic thinking, with grounding ideas and signs that intrusive thoughts need qualified professional support."
       }
     ]
   },
@@ -1622,31 +2121,6 @@ const ARTICLES = [
       {
         "title": "Try This 3-Minute Healthy Snack for Energy That Lasts Hours",
         "description": "Explore seven healthy snack ideas for steadier energy, with flexible options and a reminder to seek personalised nutrition advice when needed."
-      }
-    ]
-  },
-  {
-    "slug": "why-discipline-beats-motivation",
-    "title": "7 Reasons Discipline Can Support Your Goals",
-    "category": "Productivity",
-    "cat_slug": "productivity",
-    "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven ways simple discipline can support your goals, with realistic planning, smaller commitments, and room to restart after setbacks. Practical steps",
-    "image": "images/why-discipline-beats-motivation.jpg",
-    "alt": "Young woman focused on writing in notebook at desk daily",
-    "pins": [
-      {
-        "title": "Why Discipline Beats Motivation: The Habit System That Actually Works",
-        "description": "Explore seven ways simple discipline can support your goals, with realistic planning, smaller commitments, and room to restart after setbacks. Practical steps"
-      },
-      {
-        "title": "Stop Waiting to Feel Motivated: Build Discipline Instead",
-        "description": "Explore seven ways simple discipline can support your goals, with realistic planning, smaller commitments, and room to restart after setbacks. Practical steps"
-      },
-      {
-        "title": "3 Reasons Why Your Motivation Dies and What Discipline Does Instead",
-        "description": "Explore seven ways simple discipline can support your goals, with realistic planning, smaller commitments, and room to restart after setbacks. Practical steps"
       }
     ]
   },
@@ -1776,31 +2250,6 @@ const ARTICLES = [
     ]
   },
   {
-    "slug": "how-to-focus-better-at-work",
-    "title": "9 Ways to Focus Better at Work Without Burning Out",
-    "category": "Productivity",
-    "cat_slug": "productivity",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "How to focus better at work starts with understanding why your attention keeps slipping away. Your brain gets pulled toward notifications, thoughts, and ta",
-    "image": "images/how-to-focus-better-at-work.jpg",
-    "alt": "Woman focused on work at desk improving focus better",
-    "pins": [
-      {
-        "title": "7 Ways to Focus Better at Work: Stop Distractions Today",
-        "description": "Struggling to stay focused at work? Discover 7 proven strategies to eliminate distractions, protect your deep work time, and actually finish what you start. Learn how to focus better at work using science-backed techniques that work in any environment. Stop battling your brain and start working with it."
-      },
-      {
-        "title": "Stop Losing Focus at Work: Why Your Brain Keeps Wandering",
-        "description": "Your focus breaks aren't your fault. Learn why you can't focus at work, what actually causes attention to slip, and how to fix the real problem. Most people blame willpower, but the solution is environment and strategy. Finally understand how to improve focus at work without exhaustion."
-      },
-      {
-        "title": "How to Build Daily Focus Habits That Actually Stick",
-        "description": "Want to focus better at work without constant effort? Build sustainable focus habits using the daily practice method. See 30 percent improvement in just 2 weeks. Learn the exact progression from day 1 to week 4 that rewires your attention span and makes deep work automatic."
-      }
-    ]
-  },
-  {
     "slug": "best-time-management-techniques-ranked",
     "title": "7 Best Time Management Techniques Ranked for Real Life",
     "category": "Productivity",
@@ -1926,31 +2375,6 @@ const ARTICLES = [
     ]
   },
   {
-    "slug": "best-productivity-systems-explained",
-    "title": "7 Productivity Systems Explained: Choosing a Practical Fit",
-    "category": "Productivity",
-    "cat_slug": "productivity",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "The best productivity systems explained can transform how you work, but only if you pick the right one for you.",
-    "image": "images/best-productivity-systems-explained.jpg",
-    "alt": "Woman finding calm with productivity system at desk",
-    "pins": [
-      {
-        "title": "5 Best Productivity Systems Explained: Stop Drowning, Start Winning",
-        "description": "Tired of jumping between apps and systems that don't stick? Discover the 5 best productivity systems explained, from Pomodoro to GTD, and find the one that matches your actual brain. Pick one today and commit for 30 days. Includes exact implementation steps."
-      },
-      {
-        "title": "Stop Failing at Productivity Systems: Here's Why Nothing Sticks",
-        "description": "You're not failing because you lack discipline. Most productivity systems fail because you picked the wrong one for your bottleneck. Learn why 80% of people quit within 30 days and how to choose a system that actually works for your life."
-      },
-      {
-        "title": "Which Productivity System Is Right for You? Take This Test",
-        "description": "Procrastination? Overwhelm? Priority chaos? Match your specific problem to the productivity system that solves it. Pomodoro, GTD, time blocking, Kanban, or Eisenhower Matrix. Find yours and finally feel the relief of a system that sticks."
-      }
-    ]
-  },
-  {
     "slug": "how-to-build-habits-that-actually-stick",
     "title": "5 Practical Ways to Build Habits That Actually Stick",
     "category": "Productivity",
@@ -2022,31 +2446,6 @@ const ARTICLES = [
       {
         "title": "Get Your Motivation Back in 20 Minutes Daily (Habit Stack Included)",
         "description": "Feeling unmotivated? Learn why you have no motivation anymore and discover practical strategies to reignite your drive and reclaim your energy today."
-      }
-    ]
-  },
-  {
-    "slug": "best-foods-for-focus-and-concentration",
-    "title": "9 Best Foods for Focus and Concentration That Fit Real Life",
-    "category": "Healthy Lifestyle",
-    "cat_slug": "healthy-lifestyle",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "The best foods for focus and concentration can transform your entire workday in ways you've never experienced. Your brain uses 20 percent of your body's en",
-    "image": "images/best-foods-for-focus-and-concentration.jpg",
-    "alt": "woman focused at desk with clear mental concentration",
-    "pins": [
-      {
-        "title": "7 Best Foods for Focus That Actually Sharpen Your Brain",
-        "description": "Stop blaming yourself for afternoon brain fog. These 7 best foods for focus and concentration stabilize your energy, boost dopamine, and keep your mind sharp for hours. Salmon, berries, eggs, nuts, dark chocolate, greens, and whole grains are your brain's real power fuel. Add one to your next meal and notice the difference by tomorrow. Your focus is just waiting for the right nutrition."
-      },
-      {
-        "title": "Stop Brain Fog: The Best Foods for Concentration",
-        "description": "Your 2 PM brain crash isn't laziness. It's malnutrition. Discover which foods eliminate brain fog, improve memory, and keep you mentally sharp all day long. From omega-3 fatty fish to dark chocolate, learn the exact brain foods science proves actually work. Try one today and feel the clarity shift within hours."
-      },
-      {
-        "title": "Try This: 7-Day Brain Food Challenge for Better Focus",
-        "description": "Challenge yourself to eat the best foods for focus and concentration for just 7 days. One salmon meal, daily berries, eggs at breakfast, almonds as snacks. By day 7, notice how your mental clarity improves, your energy stays stable, and your concentration deepens. Your brain knows what it needs. Feed it right."
       }
     ]
   },
@@ -2201,127 +2600,27 @@ const ARTICLES = [
     ]
   },
   {
-    "slug": "best-morning-habits-for-more-energy",
-    "title": "7 Morning Habits for More Steady Energy",
-    "category": "Healthy Lifestyle",
-    "cat_slug": "healthy-lifestyle",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Best morning habits for more energy start the night before, not when your alarm goes off. Most people waste their most powerful hours scrolling, rushing, a",
-    "image": "images/best-morning-habits-for-more-energy.jpg",
-    "alt": "Woman standing in morning sunlight radiating natural energy",
-    "pins": [
-      {
-        "title": "5 Best Morning Habits for More Energy (Backed by Science)",
-        "description": "Stop feeling exhausted by 10am. These 5 best morning habits for more energy work because they align with your body's natural circadian rhythm. No coffee crash, no afternoon slump. Start with just one habit this week and watch your entire day transform. Simple, science-backed, and actually sustainable."
-      },
-      {
-        "title": "Stop Wasting Your Morning Energy (Do This Instead)",
-        "description": "Most people sabotage their energy before 7am by scrolling, skipping breakfast, and avoiding sunlight. Your best morning habits for more energy take just 30 minutes total. Discover the exact sequence that transforms your focus, mood, and productivity for the entire day. No complicated routines required."
-      },
-      {
-        "title": "Try This 30-Day Morning Energy Challenge (Results in Days)",
-        "description": "Real energy comes from honoring your body's biology, not grinding harder. These best morning habits for more energy show results by day 3 and transform your entire life by day 30. Learn which habit to start with first, how to build momentum, and how to make it stick forever."
-      }
-    ]
-  },
-  {
-    "slug": "why-you-feel-tired-all-the-time",
-    "title": "7 Reasons You Feel Tired All the Time",
-    "category": "Healthy Lifestyle",
-    "cat_slug": "healthy-lifestyle",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Why you feel tired all the time might have nothing to do with how long you sleep. Constant fatigue affects over 1.5 million Americans annually, and most ne",
-    "image": "images/why-you-feel-tired-all-the-time.jpg",
-    "alt": "Young woman with tea feeling tired in morning light",
-    "pins": [
-      {
-        "title": "Why You Feel Tired All the Time: 5 Hidden Energy Drains",
-        "description": "Discover why constant fatigue happens even after 8 hours of sleep. Learn the nutrient deficiencies, sleep mistakes, and daily habits that drain your energy, plus proven fixes to reclaim your vitality in 2 weeks."
-      },
-      {
-        "title": "Stop Being Tired All the Time: Science-Backed Energy Fixes",
-        "description": "Exhausted no matter how much you sleep? The problem isn't rest, it's what you're doing during the day. Uncover the real causes of constant fatigue and the 5 daily changes that actually work."
-      },
-      {
-        "title": "Try These 7 Daily Habits to End Constant Fatigue for Good",
-        "description": "Break free from persistent tiredness with small, sustainable habits that boost natural energy. From morning sunlight to nutrition timing, these changes create lasting transformation without caffeine crashes."
-      }
-    ]
-  },
-  {
-    "slug": "pomodoro-technique-explained-for-beginners",
-    "title": "7 Pomodoro Technique Tips That Actually Help",
-    "category": "Productivity",
-    "cat_slug": "productivity",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Learn the Pomodoro technique with practical work intervals, useful breaks, and flexible ways to adapt the method to your tasks, schedule, and energy daily.",
-    "image": "images/pomodoro-technique-explained-for-beginners.jpg",
-    "alt": "woman focusing with pomodoro timer on desk morning",
-    "pins": [
-      {
-        "title": "5 Pomodoro Technique Hacks for Beginners: Skip Procrastination for Good",
-        "description": "Learn the Pomodoro technique with practical work intervals, useful breaks, and flexible ways to adapt the method to your tasks, schedule, and energy daily."
-      },
-      {
-        "title": "Stop Struggling With Focus: Try the 25-Minute Pomodoro Method Today",
-        "description": "Learn the Pomodoro technique with practical work intervals, useful breaks, and flexible ways to adapt the method to your tasks, schedule, and energy daily."
-      },
-      {
-        "title": "The Pomodoro Technique Explained: Your Brain's Secret to Deep Work",
-        "description": "Learn the Pomodoro technique with practical work intervals, useful breaks, and flexible ways to adapt the method to your tasks, schedule, and energy daily."
-      }
-    ]
-  },
-  {
-    "slug": "how-to-stop-procrastinating-immediately",
-    "title": "7 Practical Ways to Start a Task You Are Avoiding",
-    "category": "Productivity",
-    "cat_slug": "productivity",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "You know exactly what you need to do, but you can't seem to start. How to stop procrastinating immediately is the question keeping you stuck, refreshing so",
-    "image": "images/how-to-stop-procrastinating-immediately.jpg",
-    "alt": "Woman pausing at desk before starting work task",
-    "pins": [
-      {
-        "title": "How to Stop Procrastinating Immediately: 5 Proven Techniques That Work Now",
-        "description": "Stop procrastinating today with these 5 science-backed techniques that address the real emotion behind delay. Learn the two-minute rule, how to reframe tasks, and why willpower alone never works. Beat procrastination fast with strategies you can use right now. Read the full guide and take back your productivity today."
-      },
-      {
-        "title": "Stop Procrastinating on Things You Actually Want to Do: Here's Why",
-        "description": "Wondering why you procrastinate even when motivated? The truth: procrastination is emotion regulation, not laziness. Discover why you avoid tasks emotionally, the warning signs your body gives before you delay, and how to interrupt the pattern before it steals your day. Transform your relationship with productivity."
-      },
-      {
-        "title": "Try This: The Two-Minute Rule to Break Your Procrastination Habit Today",
-        "description": "The fastest way to stop procrastinating? Commit to just two minutes. This tiny shift bypasses your brain's resistance and gets you started. Learn why the two-minute rule works, how to pair it with your environment, and how to build daily habits that prevent procrastination from returning. Your productivity game is about to change."
-      }
-    ]
-  },
-  {
-    "slug": "signs-of-mental-burnout-and-how-to-recover",
-    "title": "9 Signs of Mental Burnout and What to Do Next",
+    "slug": "how-to-set-healthy-boundaries",
+    "title": "5 Ways to Set Healthy Boundaries Without Guilt (Your Permission Slip Starts Here)",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "May 2026",
     "read_time": "8",
-    "excerpt": "Learn nine signs of mental burnout, practical recovery steps, and when persistent exhaustion or hopelessness should be discussed with a professional promptly.",
-    "image": "images/signs-of-mental-burnout-and-how-to-recover.jpg",
-    "alt": "Tired young woman looking out window holding coffee during burnout recovery",
+    "excerpt": "Learn how to set healthy boundaries without feeling guilty. 5 practical strategies to protect your peace and relationships. Start today.",
+    "image": "images/how-to-set-healthy-boundaries.jpg",
+    "alt": "Woman at window showing calm confidence and peaceful resolve",
     "pins": [
       {
-        "title": "7 Signs of Mental Burnout You're Probably Ignoring (And How to Fix It)",
-        "description": "Learn nine signs of mental burnout, practical recovery steps, and when persistent exhaustion or hopelessness should be discussed with a professional promptly."
+        "title": "5 Ways to Set Healthy Boundaries Without Guilt (Start Today)",
+        "description": "Learn how to set healthy boundaries without feeling guilty. 5 practical strategies to protect your peace and relationships. Start today."
       },
       {
-        "title": "Stop Mental Burnout Before It Takes Over: 7 Recovery Steps",
-        "description": "Learn nine signs of mental burnout, practical recovery steps, and when persistent exhaustion or hopelessness should be discussed with a professional promptly."
+        "title": "Stop Feeling Guilty for Setting Boundaries (This Is Why It Happens)",
+        "description": "Learn how to set healthy boundaries without feeling guilty. 5 practical strategies to protect your peace and relationships. Start today."
       },
       {
-        "title": "Try This: The 5-Minute Daily Habit That Reverses Mental Burnout",
-        "description": "Learn nine signs of mental burnout, practical recovery steps, and when persistent exhaustion or hopelessness should be discussed with a professional promptly."
+        "title": "Try This: Daily Boundary Practice That Rewires Your Guilt Response",
+        "description": "Learn how to set healthy boundaries without feeling guilty. 5 practical strategies to protect your peace and relationships. Start today."
       }
     ]
   },
@@ -2476,31 +2775,6 @@ const ARTICLES = [
     ]
   },
   {
-    "slug": "life-balance-habits",
-    "title": "7 Life Balance Habits to Try",
-    "category": "Healthy Lifestyle",
-    "cat_slug": "healthy-lifestyle",
-    "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven life balance habits that can help you make room for work, rest, relationships, and the priorities that matter to you. Practical steps you can use",
-    "image": "images/life-balance-habits.jpg",
-    "alt": "Woman closing laptop to protect life balance habits boundaries",
-    "pins": [
-      {
-        "title": "7 Life Balance Habits That Reduce Burnout Fast (No Guilt)",
-        "description": "Explore seven life balance habits that can help you make room for work, rest, relationships, and the priorities that matter to you. Practical steps you can use"
-      },
-      {
-        "title": "Stop Sacrificing Your Personal Life for Work (Try This Instead)",
-        "description": "Explore seven life balance habits that can help you make room for work, rest, relationships, and the priorities that matter to you. Practical steps you can use"
-      },
-      {
-        "title": "5 Daily Life Balance Habits That Transform Your Week",
-        "description": "Explore seven life balance habits that can help you make room for work, rest, relationships, and the priorities that matter to you. Practical steps you can use"
-      }
-    ]
-  },
-  {
     "slug": "productivity-system",
     "title": "5 Productivity System Strategies That Actually Work Without Burning Out",
     "category": "Productivity",
@@ -2547,31 +2821,6 @@ const ARTICLES = [
       {
         "title": "Reset Your Life Today: 5 Ways to Break Free From Old Patterns",
         "description": "Learn how to reset your life with five practical steps to clear mental clutter, change daily habits, and build a calmer routine that fits your real life today."
-      }
-    ]
-  },
-  {
-    "slug": "daily-self-care-routine",
-    "title": "5 Daily Self-Care Routine Habits That Actually Stick (Without Feeling Forced)",
-    "category": "Healthy Lifestyle",
-    "cat_slug": "healthy-lifestyle",
-    "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "A daily self-care routine isn't about bubble baths and face masks, though those are nice. It's about small, intentional actions that lower your stress, sta",
-    "image": "images/daily-self-care-routine.jpg",
-    "alt": "Woman drinking water mindfully at kitchen table with morning light, daily self-care routine",
-    "pins": [
-      {
-        "title": "How to Start a Daily Self-Care Routine in 5 Minutes (Real Life Works)",
-        "description": "Stop waiting for the perfect moment. A daily self-care routine doesn't require hours or special products. Start with water, movement, quiet time, intentional eating, and sleep protection. These five habits lower stress, boost focus, and help you feel like yourself again. Build one habit per week and watch the shift happen."
-      },
-      {
-        "title": "Stop Skipping Self-Care (Your Nervous System is Begging You)",
-        "description": "You're exhausted, irritable, and getting sick constantly because you're skipping daily self-care. Your body is sending clear signals. A consistent daily self-care routine rebuilds your resilience in just 2-3 weeks. Learn the five non-negotiable habits successful people protect daily, and why consistency beats perfection every single time."
-      },
-      {
-        "title": "Try This: The 5-Habit Daily Self-Care Routine That Actually Sticks",
-        "description": "Forget complicated wellness plans. This daily self-care routine stacks onto habits you already do: water after waking, movement before lunch, quiet time in afternoon, mindful eating once daily, phone-free bedtime. Small, repeatable, powerful. Women report lower anxiety, better sleep, and stable energy within weeks of starting this routine."
       }
     ]
   },
@@ -2647,56 +2896,6 @@ const ARTICLES = [
       {
         "title": "Practical questions: Natural Energy Boosters",
         "description": "Compare natural energy boosters with seven realistic options, an obstacle-based planning checklist, and advice on when tiredness needs professional attention."
-      }
-    ]
-  },
-  {
-    "slug": "deep-work-techniques",
-    "title": "7 Deep Work Techniques to Try",
-    "category": "Productivity",
-    "cat_slug": "productivity",
-    "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven deep work techniques for planning focused sessions, reducing interruptions, taking breaks, and adapting the method to your work. Practical steps",
-    "image": "images/deep-work-techniques.jpg",
-    "alt": "Woman focused on deep work at desk with coffee during morning hours",
-    "pins": [
-      {
-        "title": "5 Deep Work Techniques That Double Your Productivity in 30 Days",
-        "description": "Explore seven deep work techniques for planning focused sessions, reducing interruptions, taking breaks, and adapting the method to your work. Practical steps"
-      },
-      {
-        "title": "Stop Context-Switching: The Real Reason You Can't Focus",
-        "description": "Explore seven deep work techniques for planning focused sessions, reducing interruptions, taking breaks, and adapting the method to your work. Practical steps"
-      },
-      {
-        "title": "Try This: The 90-Minute Deep Work Habit That Actually Sticks",
-        "description": "Explore seven deep work techniques for planning focused sessions, reducing interruptions, taking breaks, and adapting the method to your work. Practical steps"
-      }
-    ]
-  },
-  {
-    "slug": "how-to-improve-mental-clarity",
-    "title": "7 Ways to Support Mental Clarity During a Busy Week",
-    "category": "Mental Wellness",
-    "cat_slug": "mental-wellness",
-    "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to improve mental clarity is the question millions of us are asking right now. Brain fog feels like walking through clouds, and it kills your productiv",
-    "image": "images/how-to-improve-mental-clarity.jpg",
-    "alt": "Young woman improving mental clarity with morning coffee ritual peacefully focused",
-    "pins": [
-      {
-        "title": "How to Improve Mental Clarity in 24 Hours: 5 Brain Fog Fixes",
-        "description": "Stop the mental fog and reclaim your focus. Learn 5 science-backed methods to improve mental clarity and eliminate brain fog fast. From sleep optimization to nervous system regulation, these strategies work within hours. Start with just one today and notice the difference in your thinking power tomorrow."
-      },
-      {
-        "title": "Stop Brain Fog Now: Why Your Mind Feels Cloudy and How to Fix It",
-        "description": "Tired of feeling mentally foggy and exhausted? Brain fog comes from stress, poor sleep, and digital overload, not stupidity. Discover the root causes of brain fog and the exact habits that restore sharp focus and mental clarity. Clear your head and reclaim your productivity."
-      },
-      {
-        "title": "Try This: 4-7-8 Breathing to Clear Brain Fog Instantly (60 Seconds)",
-        "description": "One simple breathing technique to calm your nervous system and restore mental clarity in just 60 seconds. This nervous system reset works better than caffeine and actually helps your brain think clearly. Try it when afternoon brain fog hits and watch your focus return."
       }
     ]
   },
@@ -2876,31 +3075,6 @@ const ARTICLES = [
     ]
   },
   {
-    "slug": "how-to-stop-procrastination",
-    "title": "7 Ways to Understand and Reduce Procrastination",
-    "category": "Productivity",
-    "cat_slug": "productivity",
-    "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to stop procrastination starts with understanding your own delay patterns and what triggers them. You're not lazy, and you're not broken. Research show",
-    "image": "images/how-to-stop-procrastination.jpg",
-    "alt": "Woman taking a breath before starting work at her desk with focus",
-    "pins": [
-      {
-        "title": "How to Stop Procrastination in 2 Minutes: The Trick That Actually Works",
-        "description": "The 2-minute rule is the most powerful way to stop procrastination before it starts. Instead of forcing yourself to work for hours, commit to just two minutes. Your brain will keep going once the resistance barrier breaks. Learn the five proven strategies that beat procrastination for real. Click to discover how to finally finish what you start."
-      },
-      {
-        "title": "Stop Procrastinating: 5 Strategies That Work When Willpower Fails",
-        "description": "Procrastination isn't about laziness. It's your nervous system trying to escape emotional discomfort. Discover why you procrastinate so much and the five concrete techniques that actually work. From environment design to trigger identification, these strategies reshape your brain's response to difficult tasks. Read now for lasting change."
-      },
-      {
-        "title": "Break Free From Procrastination With This Daily Habit Framework",
-        "description": "Stop procrastination by building tiny daily habits that make action easier than avoidance. Learn the exact framework used by people who beat chronic procrastination for good. No more shame spirals. No more 'tomorrow.' Just practical, doable changes that work with your brain, not against it. Start today."
-      }
-    ]
-  },
-  {
     "slug": "how-to-stop-panic-attacks",
     "title": "5 Ways to Respond to Panic and Know When to Seek Help",
     "category": "Mental Wellness",
@@ -2922,56 +3096,6 @@ const ARTICLES = [
       {
         "title": "What to Do During a Panic Attack: 5 Emergency Techniques for Instant Relief",
         "description": "Panic attack hitting right now? Use one of these 5 proven emergency techniques: cold water exposure, box breathing, PMR, or grounding. Each method interrupts your nervous system's false alarm in minutes. Save this guide for when anxiety tries to take over."
-      }
-    ]
-  },
-  {
-    "slug": "simple-morning-habits",
-    "title": "7 Simple Morning Habits to Try",
-    "category": "Healthy Lifestyle",
-    "cat_slug": "healthy-lifestyle",
-    "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven simple morning habits, including light, food, movement, and planning, then adapt the ideas to your own schedule. Practical steps you can use today",
-    "image": "images/simple-morning-habits.jpg",
-    "alt": "Young woman drinking water in morning light, establishing simple morning habits",
-    "pins": [
-      {
-        "title": "5 Simple Morning Habits That End Anxiety Before Noon",
-        "description": "Explore seven simple morning habits, including light, food, movement, and planning, then adapt the ideas to your own schedule. Practical steps you can use today"
-      },
-      {
-        "title": "Stop Waking Up Stressed: The Morning Routine That Actually Works",
-        "description": "Explore seven simple morning habits, including light, food, movement, and planning, then adapt the ideas to your own schedule. Practical steps you can use today"
-      },
-      {
-        "title": "Try These 5 Simple Morning Habits for Energy All Day Long",
-        "description": "Explore seven simple morning habits, including light, food, movement, and planning, then adapt the ideas to your own schedule. Practical steps you can use today"
-      }
-    ]
-  },
-  {
-    "slug": "how-to-focus-without-distractions",
-    "title": "7 Ways to Focus With Fewer Distractions",
-    "category": "Productivity",
-    "cat_slug": "productivity",
-    "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learning how to focus without distractions is the single most valuable skill you can build right now. Studies show the average person loses 23 minutes of f",
-    "image": "images/how-to-focus-without-distractions.jpg",
-    "alt": "Woman focused on laptop at home desk without phone distraction",
-    "pins": [
-      {
-        "title": "How to Focus Without Distractions: 5 Science-Backed Strategies",
-        "description": "Stop losing 2 hours a day to distractions. Learn how to focus without distractions at home using proven Pomodoro techniques, environmental design, and daily rituals. Build laser-sharp concentration in just one week. Discover the exact setup that works."
-      },
-      {
-        "title": "Stop Checking Your Phone: Reclaim 3 Hours Daily of Deep Work",
-        "description": "Your phone costs you 25 minutes of focus per interruption. This is how to improve focus fast by removing the biggest distraction. Real strategies for real people who are tired of feeling productive but accomplishing nothing. Start today."
-      },
-      {
-        "title": "Try This 7-Day Focus Rebuild Plan: Notice Results Immediately",
-        "description": "Reset your attention span in one week using this simple plan. How to focus without distractions starts with removing one thing, then building from there. Each day has one specific action. Your productivity will improve by 40% by day 5."
       }
     ]
   },
@@ -3072,31 +3196,6 @@ const ARTICLES = [
       {
         "title": "Try This: Daily Mental Detox Habit That Takes 10 Minutes",
         "description": "Your mind deserves a detox just like your body. Start with this simple daily practice: write down every worry for 10 minutes, then release it. This brain dump method rewires your brain's default negativity and creates mental clarity. Thousands have used this to break free from anxiety and overthinking."
-      }
-    ]
-  },
-  {
-    "slug": "emotional-burnout-recovery",
-    "title": "7 Emotional Burnout Recovery Steps to Consider",
-    "category": "Mental Wellness",
-    "cat_slug": "mental-wellness",
-    "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven supportive emotional burnout recovery steps, including rest, boundaries, connection, and when ongoing symptoms need qualified care.",
-    "image": "images/emotional-burnout-recovery.jpg",
-    "alt": "Woman holding tea by window during emotional burnout recovery moment",
-    "pins": [
-      {
-        "title": "How to Recover from Emotional Burnout Fast: 5 Steps That Work",
-        "description": "Explore seven supportive emotional burnout recovery steps, including rest, boundaries, connection, and when ongoing symptoms need qualified care."
-      },
-      {
-        "title": "Stop the Emotional Burnout Spiral: Start Here Today",
-        "description": "Explore seven supportive emotional burnout recovery steps, including rest, boundaries, connection, and when ongoing symptoms need qualified care."
-      },
-      {
-        "title": "Your Daily Emotional Burnout Recovery Routine (5 Min Plan)",
-        "description": "Explore seven supportive emotional burnout recovery steps, including rest, boundaries, connection, and when ongoing symptoms need qualified care."
       }
     ]
   },
@@ -3401,56 +3500,6 @@ const ARTICLES = [
     ]
   },
   {
-    "slug": "how-to-calm-your-mind-instantly",
-    "title": "7 Ways to Calm an Overwhelmed Mind Safely",
-    "category": "Mental Wellness",
-    "cat_slug": "mental-wellness",
-    "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to calm your mind instantly is something you reach for when your thoughts start spiraling and your chest tightens without warning. Your nervous system i",
-    "image": "images/how-to-calm-your-mind-instantly.jpg",
-    "alt": "young woman sitting cross-legged on floor with closed eyes finding instant calm in morning light",
-    "pins": [
-      {
-        "title": "How to Calm Your Mind Instantly: 5 Techniques That Work in 90 Seconds",
-        "description": "Discover the five science-backed methods for how to calm your mind instantly when anxiety hits. Box breathing, cold water grounding, and the 5-4-3-2-1 sensory technique activate your parasympathetic nervous system in under two minutes. No meditation required. Use them anywhere, anytime your mind starts spiraling."
-      },
-      {
-        "title": "Stop a Racing Mind Fast: The 5 Instant Relaxation Techniques That Actually Work",
-        "description": "Racing thoughts do not have to take over your day. These five instant relaxation techniques work by signaling safety to your nervous system rather than fighting your thoughts. Research shows cortisol drops 15-20% within 90 seconds of slow breathing. Start with box breathing and build from there."
-      },
-      {
-        "title": "Try These 5 Methods to Relax Your Mind Quickly in Any Situation",
-        "description": "Whether you are at work, at home, or mid-panic, these five techniques help you relax your mind quickly without any tools or preparation. From rhythmic breath walks to progressive muscle release, each method is backed by neuroscience and takes under three minutes. Save this for when you need it most."
-      }
-    ]
-  },
-  {
-    "slug": "how-to-control-your-thoughts",
-    "title": "7 Ways to Control Your Thoughts Without Fighting Your Mind",
-    "category": "Mental Wellness",
-    "cat_slug": "mental-wellness",
-    "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to control your thoughts without fighting them, using grounding, defusion, and routines that support calmer decision-making in daily life with care.",
-    "image": "images/how-to-control-your-thoughts.jpg",
-    "alt": "person managing intrusive thoughts peacefully at desk morning",
-    "pins": [
-      {
-        "title": "How to Control Your Thoughts: 5 Proven Techniques for Anxiety Relief",
-        "description": "Learn how to control your thoughts without fighting them, using grounding, defusion, and routines that support calmer decision-making in daily life with care."
-      },
-      {
-        "title": "Stop Intrusive Thoughts: Why You Can't Control Them (And What Works)",
-        "description": "Learn how to control your thoughts without fighting them, using grounding, defusion, and routines that support calmer decision-making in daily life with care."
-      },
-      {
-        "title": "5 Daily Habits to Master Thought Control: Your Mental Peace Starts Here",
-        "description": "Learn how to control your thoughts without fighting them, using grounding, defusion, and routines that support calmer decision-making in daily life with care."
-      }
-    ]
-  },
-  {
     "slug": "how-to-stop-anxiety-attacks",
     "title": "5 Ways to Respond to Intense Anxiety and Seek Support",
     "category": "Mental Wellness",
@@ -3672,31 +3721,6 @@ const ARTICLES = [
       {
         "title": "Try This Bedtime Routine to Stop Overthinking and Sleep Better Tonight",
         "description": "How to stop overthinking at night with calming strategies that quiet racing thoughts, protect sleep, and help you feel more settled before sleep every night."
-      }
-    ]
-  },
-  {
-    "slug": "how-to-set-healthy-boundaries",
-    "title": "5 Ways to Set Healthy Boundaries Without Guilt (Your Permission Slip Starts Here)",
-    "category": "Mental Wellness",
-    "cat_slug": "mental-wellness",
-    "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to set healthy boundaries without feeling guilty. 5 practical strategies to protect your peace and relationships. Start today.",
-    "image": "images/how-to-set-healthy-boundaries.jpg",
-    "alt": "Woman at window showing calm confidence and peaceful resolve",
-    "pins": [
-      {
-        "title": "5 Ways to Set Healthy Boundaries Without Guilt (Start Today)",
-        "description": "Learn how to set healthy boundaries without feeling guilty. 5 practical strategies to protect your peace and relationships. Start today."
-      },
-      {
-        "title": "Stop Feeling Guilty for Setting Boundaries (This Is Why It Happens)",
-        "description": "Learn how to set healthy boundaries without feeling guilty. 5 practical strategies to protect your peace and relationships. Start today."
-      },
-      {
-        "title": "Try This: Daily Boundary Practice That Rewires Your Guilt Response",
-        "description": "Learn how to set healthy boundaries without feeling guilty. 5 practical strategies to protect your peace and relationships. Start today."
       }
     ]
   }

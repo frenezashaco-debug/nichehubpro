@@ -26,6 +26,8 @@ __pycache__/
 !scripts/test_wait_pages_build.py
 !publication_checks.py
 !image_publication_checks.py
+!distribution_payload.py
+!site_listing.py
 !scripts/test_publication_checks.py
 !scripts/test_image_publication_checks.py
 !scripts/test_copy_preservation.py
@@ -35,6 +37,7 @@ __pycache__/
 !scripts/repair_article_markup.py
 !scripts/install_clean_article_image.py
 !scripts/audit_latest_ten.py
+!scripts/test_distribution_payload.py
 
 # Generated local quality reports
 reports/

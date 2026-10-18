@@ -392,25 +392,6 @@ ul,ol{list-style:none}
 <button id="back-to-top" aria-label="Back to top">&#8593;</button>
 
 <script defer src="script.js"></script>
-<script>
-(function(){
-  var loaded = false;
-  function loadSib(){
-    if(loaded) return; loaded = true;
-    var s = document.createElement('script');
-    s.src = 'https://sibforms.com/forms/end-form/build/main.js';
-    document.body.appendChild(s);
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var input = document.querySelector('#sib-form input[type="email"]');
-    if(input){ input.addEventListener('focus', loadSib, {once:true}); }
-    var section = document.querySelector('.newsletter');
-    if(section && 'IntersectionObserver' in window){
-      new IntersectionObserver(function(e,o){ if(e[0].isIntersecting){ loadSib(); o.disconnect(); }},
-        {rootMargin:'300px'}).observe(section);
-    }
-  });
-})();
-</script>
+
 </body>
 </html>

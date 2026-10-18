@@ -1278,6 +1278,8 @@ def register_article(data, cover_filename):
     print(f"  Registered in articles.js ({len(existing)} total)")
     update_sitemap(existing)
     render_homepage_latest(existing)
+    from site_listing import render_listing_pages
+    render_listing_pages(existing, BASE_DIR)
 
 
 def render_homepage_latest(articles):

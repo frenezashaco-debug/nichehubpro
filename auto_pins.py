@@ -3,6 +3,8 @@ Auto-push 3 Pinterest pins for the most recently published article.
 Called by GitHub Actions AFTER git push so images are live on the site.
 """
 import re, json, requests, sys, time
+from distribution_payload import build_pinterest_payload
+from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
 
 try:
@@ -14,7 +16,6 @@ if not MAKE_PINTEREST_WEBHOOK:
     print("MAKE_PINTEREST_WEBHOOK not configured — skipping."); sys.exit(0)
 
 SITE_URL    = "https://nichehubpro.com"
-RAW_URL     = "https://raw.githubusercontent.com/frenezashaco-debug/nichehubpro/main"
 BOARD_IDS = {
     "Mental Wellness":   "1135118349771004496",
     "Productivity":      "1135118349771004499",
@@ -46,33 +47,18 @@ if not pins:
     print(f"No pin data for '{slug}' — skipping Pinterest."); sys.exit(0)
 
 # ── Build payload ──────────────────────────────────────────────────────────────
-pin_images = [
-    f"{RAW_URL}/images/{slug}.jpg",
-    f"{RAW_URL}/images/{slug}-sec1.webp",
-    f"{RAW_URL}/images/{slug}-sec3.webp",
-]
-
-enriched_pins = []
-for i, pin in enumerate(pins[:3]):
-    enriched_pins.append({
-        "title":       pin.get("title", title),
-        "description": pin.get("description", ""),
-        "image_url":   pin_images[i],
-    })
-
-payload = {
-    "slug":        slug,
-    "title":       title,
-    "category":    category,
-    "board_id":    BOARD_IDS.get(category, ""),
-    "article_url": f"{SITE_URL}/articles/{slug}.html",
-    "pins":        enriched_pins,
-}
+try:
+    payload = build_pinterest_payload(article, Path(__file__).resolve().parent)
+except (ValueError, OSError) as exc:
+    print(f"Pinterest preparation failed: {exc}; Make was not called.")
+    sys.exit(1)
+enriched_pins = payload['pins']
+pin_images = [pin['image_url'] for pin in enriched_pins]
 
 # ── Send ───────────────────────────────────────────────────────────────────────
 # A git push does not prove that GitHub Pages has deployed. Check all assets
 # before sending anything to Make. Do not retry a POST with an unknown outcome.
-for public_url in [payload["article_url"], *(pin["image_url"] for pin in enriched_pins)]:
+for public_url in [payload["canonical_url"], *(pin["image_url"] for pin in enriched_pins)]:
     ready = False
     last_status = 'no response'
     for attempt in range(40):
