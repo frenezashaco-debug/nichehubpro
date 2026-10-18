@@ -827,12 +827,12 @@ const ARTICLES = [
   },
   {
     "slug": "why-you-feel-emotionally-numb",
-    "title": "7 Possible Contributors to Emotional Numbness",
+    "title": "Why You Feel Emotionally Numb: 5 Steps to Find Support",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
     "read_time": "8",
-    "excerpt": "Discover why you feel emotionally numb, what causes it, and simple steps to reconnect with your feelings and start feeling like yourself again.",
+    "excerpt": "Why you feel emotionally numb: understand possible explanations, track changes, prepare for a healthcare visit and choose daily support without self-diagnosis.",
     "image": "images/why-you-feel-emotionally-numb.jpg",
     "alt": "Woman staring blankly out window, emotionally disconnected and numb",
     "pins": [
