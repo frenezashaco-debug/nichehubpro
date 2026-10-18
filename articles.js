@@ -1127,12 +1127,12 @@ const ARTICLES = [
   },
   {
     "slug": "pomodoro-technique-explained-for-beginners",
-    "title": "7 Pomodoro Technique Tips That Actually Help",
+    "title": "Pomodoro Technique Explained: 5 Steps to Get Started",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
     "read_time": "8",
-    "excerpt": "Learn the Pomodoro technique with practical work intervals, useful breaks, and flexible ways to adapt the method to your tasks, schedule, and energy daily.",
+    "excerpt": "Pomodoro technique explained for beginners: try five clear steps, a worked study session, useful breaks, and practical ways to handle interruptions at work.",
     "image": "images/pomodoro-technique-explained-for-beginners.jpg",
     "alt": "woman focusing with pomodoro timer on desk morning",
     "pins": [
