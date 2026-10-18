@@ -1,5 +1,6 @@
 const fs=require('node:fs'),a=require('node:assert/strict');
-const h=fs.readFileSync('articles/pomodoro-technique-explained-for-beginners.html','utf8');
+const slug=process.argv[2]||'pomodoro-technique-explained-for-beginners';
+const h=fs.readFileSync('articles/'+slug+'.html','utf8');
 const blocks=[...h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1]));
 const faq=blocks.find(b=>b['@type']==='FAQPage');
 const visible=[...h.matchAll(/<div class="faq-a">([^<]+)<\/div>/g)].map(m=>m[1]);
@@ -11,5 +12,5 @@ const meta=h.match(/<meta name="description" content="([^"]+)"/)[1];a(meta.lengt
 a(!/[\u2013\u2014\u2015]|&(?:mdash|ndash);|TL;DR:/.test(h));
 const title=h.match(/<h1>([^<]+)<\/h1>/)[1];
 a.equal(blocks.find(b=>b['@type']==='Article').headline,title);
-const api=JSON.parse(fs.readFileSync('api/articles.json','utf8')).find(r=>r.id==='pomodoro-technique-explained-for-beginners');a.equal(api.title,title);
-console.log('PASS: Pomodoro metadata, five sections, four images, summary placement, FAQ/schema agreement and catalogue title.');
+const api=JSON.parse(fs.readFileSync('api/articles.json','utf8')).find(r=>r.id===slug);a.equal(api.title,title);
+console.log('PASS '+slug+': metadata, five sections, four images, summary placement, FAQ/schema agreement and catalogue title.');

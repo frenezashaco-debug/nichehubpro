@@ -1,0 +1,72 @@
+const fs=require('node:fs'),assert=require('node:assert/strict');
+const slug='best-productivity-apps-in-2026',file=`articles/${slug}.html`;
+let h=fs.readFileSync(file,'utf8');
+const title='Best Productivity Apps in 2026: 5 Options for Your Workflow';
+const meta='Best productivity apps in 2026: compare Todoist, Obsidian, Things, Notion and Forest by tasks, costs and limitations, then use a short trial to choose your fit.';
+assert(meta.length>=155&&meta.length<=160,meta.length);
+h=h.replaceAll('5 Productivity App Types to Compare in 2026',title)
+ .replace(/(<meta name="description" content=")[^"]+/, '$1'+meta)
+ .replace(/(<meta property="og:description" content=")[^"]+/, '$1'+meta)
+ .replace(/"description": "[^"]+"/,'"description": '+JSON.stringify(meta))
+ .replace(/"dateModified": "[^"]+"/,'"dateModified": "2026-10-18"');
+const imgs=[...h.matchAll(/<img\b[\s\S]*?>/g)].map(m=>m[0]);assert.equal(imgs.length,4);
+const heads=['What Are the Best Productivity Apps in 2026 for Different Needs?','What Are the Signs Your Current App Does Not Fit?','Why Does Adding More Apps Sometimes Create More Work?','How Can You Choose a Productivity App Without Moving Everything?','How Can You Manage Your Productivity Apps Daily?'];
+const content=`<p>Best productivity apps in 2026 depend on the work you need to organize. If switching tools has become another unfinished task, start by naming one problem: missed actions, scattered notes or interruptions.</p>
+<p>Todoist and Things organize tasks, Obsidian and Notion organize information, and Forest supports timed focus. These are different jobs, so compare a tool against your daily requirements before comparing feature counts.</p>
+<p>This comparison uses official product documentation checked on October 18, 2026, not hands-on testing or a scientific ranking. Use the limitations below to choose one small trial before buying a plan or migrating your work.</p>
+<div class="tldr"><p>The best productivity apps in 2026 shortlist here is Todoist for task lists, Things for personal Apple-device planning, Obsidian for notes, Notion for connected workspace content, and Forest for focus sessions. Choose by your main task, device requirements and cost, then test capture, retrieval and export before committing.</p></div>
+<nav class="toc" aria-label="Table of contents"><div class="toc-title">In this article</div><ol>${heads.map((v,i)=>`<li><a href="#sec-${i+1}">${v}</a></li>`).join('')}<li><a href="#faq">Frequently Asked Questions</a></li></ol></nav>
+<h2 id="sec-1">${heads[0]}</h2>
+<p>The table matches each tool to a distinct job rather than declaring one overall winner. Product features and billing can change; follow the official links and confirm your own device and region before paying.</p>
+<div style="overflow-x:auto;" role="region" aria-label="Productivity app comparison" tabindex="0"><table style="width:100%;border-collapse:collapse;min-width:540px;"><caption>Five options and the limitation to check first</caption><thead><tr><th scope="col">App</th><th scope="col">Consider it for</th><th scope="col">Check before choosing</th></tr></thead><tbody>
+<tr><th scope="row"><a href="https://www.todoist.com/pricing">Todoist</a></th><td>Tasks, due dates and project lists</td><td>Beginner is free with five personal projects. Advanced features depend on the plan.</td></tr>
+<tr><th scope="row"><a href="https://obsidian.md/pricing">Obsidian</a></th><td>A personal collection of notes</td><td>The app is free; official Sync and Publish are optional paid services.</td></tr>
+<tr><th scope="row"><a href="https://culturedcode.com/things/support/articles/2803552/">Things</a></th><td>Personal tasks on Apple devices</td><td>Separate purchases by platform; no Windows, Android or browser app.</td></tr>
+<tr><th scope="row"><a href="https://www.notion.com/pricing">Notion</a></th><td>Notes, pages and databases together</td><td>Free-plan limits differ for solo and multi-member workspaces.</td></tr>
+<tr><th scope="row"><a href="https://www.forestapp.cc/">Forest</a></th><td>A visual timer and focus sessions</td><td>Check blocking permissions and paid features on your device.</td></tr>
+</tbody></table></div>
+<ul><li><strong>Todoist:</strong> try capturing a task and finding it by due date. Its free plan also lists reminders and list/board layouts, so check whether it already covers your use.</li><li><strong>Obsidian:</strong> try writing and linking two notes before adding plugins. Decide separately how to back up and synchronize the information.</li><li><strong>Things:</strong> check every device you need. Cultured Code states that purchases are separate by platform and that real-time shared lists are not supported.</li><li><strong>Notion:</strong> try one project page before building a dashboard. Its free plan lists unlimited pages for individuals, limits for workspaces with multiple members, and 5 MB per uploaded file.</li><li><strong>Forest:</strong> try a short session with necessary communication still available. A visual reward may suit you, but it does not establish better concentration or a treatment effect.</li></ul>
+<p>Offline access deserves its own check. Notion now documents downloaded pages for offline use in desktop and mobile apps; download a sample page and test the actions you actually need before a trip.</p>
+${imgs[1]}
+<h2 id="sec-2">${heads[1]}</h2>
+<p>A mismatch often appears during ordinary actions rather than setup. Record the recurring problem for a few days so you can tell whether it comes from the tool or an unclear routine.</p>
+<ul><li>You record the same task in several places and cannot tell which is current.</li><li>A necessary device or colleague cannot access the information.</li><li>Finding yesterday's note takes longer than rewriting it.</li><li>You need a paid feature before completing your basic workflow.</li><li>Notifications repeatedly interrupt the work the app is meant to support.</li></ul>
+<p><strong>Write the requirement before replacing the tool.</strong> For example, "I need one shared grocery list on Android and iPhone" rules out Things for that job; it says nothing about whether Things suits someone else's personal planning.</p>
+<p>If the list itself is unclear, changing software may preserve the same problem. Use a <a href="/articles/how-to-build-a-productivity-system-with-apps.html">capture and review routine for your apps</a> to decide where tasks and reference notes belong.</p>
+<h2 id="sec-3">${heads[2]}</h2>
+<p>Each extra destination creates another place to check and maintain. This is a workflow cost, not evidence that using three tools means procrastination; identify which tool owns each type of information.</p>
+<ul><li>A calendar can own appointments while a task list owns actions.</li><li>A notes app can hold reference material without duplicating every deadline.</li><li>A focus timer can structure a session without becoming another task database.</li><li>An employer-required system may need to remain the authoritative work record.</li></ul>
+<p>Convenient setup does not guarantee lasting use or reduced anxiety. Compare the effort of capture and retrieval with your previous method, and keep the option that makes those actions easier for your circumstances.</p>
+${imgs[2]}
+<h2 id="sec-4">${heads[3]}</h2>
+<p>A small trial exposes practical limits while keeping migration manageable. Use sample information or a non-sensitive project first, particularly if workplace policy restricts cloud storage or integrations.</p>
+<ul><li><strong>Capture:</strong> add five real actions with clear verbs.</li><li><strong>Retrieve:</strong> find one action and one note from the device you normally use.</li><li><strong>Coordinate:</strong> test sharing only if collaboration is necessary.</li><li><strong>Disconnect:</strong> check what remains available without a connection.</li><li><strong>Leave:</strong> export a sample and open it elsewhere before relying on the tool.</li><li><strong>Price:</strong> check billing period, required seats, platform purchases and renewal terms.</li></ul>
+<p>Compare total cost for your setup rather than an old headline price. Things requires separate purchases for different platforms, whereas optional Obsidian services and paid Todoist or Notion plans involve subscriptions; check the linked official pages for current local prices.</p>
+<p>Keep a short record: task attempted, result, obstacle and feature required. A week is a convenient trial window, not a scientifically established habit deadline; stop earlier if a required feature is missing.</p>
+<p>If you mainly need help starting a work session, a <a href="/articles/pomodoro-technique-explained-for-beginners.html">simple Pomodoro trial with a basic timer</a> may answer that need before you buy a focus subscription.</p>
+<h2 id="sec-5">${heads[4]}</h2>
+<p>A repeatable review gives captured tasks somewhere to go. Choose a moment that already fits your day, then keep the review short enough that it does not displace the work itself.</p>
+<ul><li>At the start of work, choose the next feasible action.</li><li>During work, capture new requests in one agreed place.</li><li>Before stopping, leave a return note for unfinished work.</li><li>At your weekly review, remove duplicates and check upcoming commitments.</li></ul>
+<p>Reserve time only where it helps your actual schedule. These <a href="/articles/time-blocking-for-beginners.html">basics of planning calendar work blocks</a> can connect a task list to available time without turning every task into an appointment.</p>
+<p>Keep the trial criteria visible when the novelty fades. If capturing and retrieving work remain difficult, review your setup using <a href="/articles/best-self-improvement-systems-explained.html">a simple system review</a> rather than assuming more features will solve it.</p>
+${imgs[3]}
+<h2 id="real-life">An Illustrative Scenario</h2>
+<p>Imagine Sarah, a fictional freelancer who stores actions in email drafts and phone notes. She writes two requirements: capture tasks on her phone and retrieve them on her work computer. She tests five tasks before importing her backlog.</p>
+<p>At the end of the trial, Sarah compares missing tasks and time spent finding information. She keeps the tool only if it meets those requirements; this example describes a decision process, not a documented case or a promise of reduced anxiety.</p>
+`;
+const start=h.indexOf('<p>The best productivity apps in 2026');const end=h.indexOf('<div class="author-block"',start);assert(start>0&&end>start);h=h.slice(0,start)+content+'\n '+h.slice(end);
+h=h.replace(/ <div class="sources-card"[\s\S]*?(?= <div class="faq-section")/,' <div class="sources-card"><strong>How this comparison was prepared:</strong> Official feature, support and plan pages linked above were checked on October 18, 2026. Selection is based on task type and constraints, not hands-on benchmarks, user-count rankings or demonstrated health benefits.</div>\n');
+const faqs=[
+['Which productivity app should I try first?','Start with the job you need done: task tracking, reference notes, shared workspace content or timed focus. Then check devices, collaboration and cost. There is no single best option for every workflow.'],
+['Is Notion or Todoist better for productivity?','Todoist is oriented toward tasks and project lists. Notion combines pages and databases in a workspace. Test the same small project in the option whose structure matches your requirements before migrating everything.'],
+['Can I use a free productivity app without upgrading?','Yes, when the free plan covers your requirements. Todoist Beginner lists five personal projects; Notion distinguishes solo use from multi-member workspaces. Obsidian is free with optional paid services. Check the linked plan details before committing.'],
+['Does Things work on Windows or Android?','No. Cultured Code lists Apple platforms and states that Things does not run on Windows, Android or in a web browser. Different platform versions are separate purchases.'],
+['How long should I test a productivity app?','Try a small project across the situations that matter: capture, search, sharing, offline use and export. A week can be a practical starting window, but there is no universal trial length or habit deadline.']];
+h=h.replace(/<div class="faq-section" id="faq">[\s\S]*?(?= <div style="background:linear-gradient)/,`<div class="faq-section" id="faq"><h2>Frequently Asked Questions</h2>${faqs.map(([q,a])=>`<div class="faq-item"><button class="faq-q">${q}<span class="faq-icon">+</span></button><div class="faq-a">${a}</div></div>`).join('')}</div>\n\n`);
+h=h.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g,s=>s.includes('"FAQPage"')?`<script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.map(([name,text])=>({'@type':'Question',name,acceptedAnswer:{'@type':'Answer',text}}))})}</script>`:s);
+h=h.replace(/<h2>Where to Go From Here<\/h2>[\s\S]*?(?= <div style="margin-top:24px)/,`<h2>Where to Go From Here</h2><p>One clear requirement makes the next decision smaller. Write down the problem you want the app to solve today.</p><p>A sample project gives you something concrete to evaluate. Try capture and retrieval before moving your existing work.</p><p>You can keep the tool you already have if it meets your needs. Choose the next small improvement from what the trial shows you.</p>\n\n`);
+assert.equal((h.match(/<img\b/g)||[]).length,4);assert(!/[\u2013\u2014\u2015]/.test(h));fs.writeFileSync(file,h);
+let c=fs.readFileSync('articles.js','utf8');const rows=JSON.parse(c.match(/const ARTICLES = (\[[\s\S]*?\]);/)[1]);const row=rows.find(r=>r.slug===slug);assert(row);row.title=title;row.excerpt=meta;c=c.replace(/const ARTICLES = \[[\s\S]*?\];/,'const ARTICLES = '+JSON.stringify(rows,null,2)+';');fs.writeFileSync('articles.js',c);
+const api=JSON.parse(fs.readFileSync('api/articles.json','utf8'));const record=api.find(r=>r.id===slug);assert(record);record.title=title;record.shortText=meta;fs.writeFileSync('api/articles.json',JSON.stringify(api,null,2)+'\n');
+let sitemap=fs.readFileSync('sitemap.xml','utf8');sitemap=sitemap.replace(/<url>[\s\S]*?<\/url>/g,b=>b.includes('/'+slug+'.html')?b.replace(/<lastmod>[^<]+/,'<lastmod>2026-10-18'):b);fs.writeFileSync('sitemap.xml',sitemap);
+console.log('Updated comparison, sources, FAQ, metadata and catalogues. Meta length: '+meta.length);

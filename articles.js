@@ -1676,12 +1676,12 @@ const ARTICLES = [
   },
   {
     "slug": "best-productivity-apps-in-2026",
-    "title": "5 Productivity App Types to Compare in 2026",
+    "title": "Best Productivity Apps in 2026: 5 Options for Your Workflow",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
     "read_time": "8",
-    "excerpt": "The best productivity apps in 2026 aren't about doing more - they're about doing what matters. Most people chase app after app, hoping one will magically f",
+    "excerpt": "Best productivity apps in 2026: compare Todoist, Obsidian, Things, Notion and Forest by tasks, costs and limitations, then use a short trial to choose your fit.",
     "image": "images/best-productivity-apps-in-2026.jpg",
     "alt": "Woman focused on laptop at desk with productivity apps open",
     "pins": [
