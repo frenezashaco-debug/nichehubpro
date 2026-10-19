@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "why-your-brain-craves-routine-even-when-you-resist-it",
+    "title": "7 Reasons Why Your Brain Craves Routine Even When You Resist It",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Oct 2026",
+    "read_time": "8",
+    "excerpt": "Why your brain craves routine even when you resist it is one of those questions that can stop you mid-scroll and make you think. You tell yourself you...",
+    "image": "images/why-your-brain-craves-routine-even-when-you-resist-it.jpg",
+    "alt": "Man holding coffee mug in quiet kitchen morning routine",
+    "pins": [
+      {
+        "title": "How to Work With Your Brain's Craving for Routine",
+        "description": "Your brain craves routine and predictability for good reason - it is an energy management system, not a personality flaw. Learn why the brain prefers familiar patterns and how small daily anchors can support your mental wellness. Read the full guide on NicheHubPro."
+      },
+      {
+        "title": "Stop Fighting Your Need for Routine - Your Brain Knows Why",
+        "description": "If disrupted plans leave you irritable or scattered, your brain craving routine is likely behind it. Understanding why the brain prefers predictability can change how you build your days. Discover what the science-informed approach looks like in practice."
+      },
+      {
+        "title": "Try This Simple Routine Audit to Support Your Mental Wellness",
+        "description": "When your brain craves routine, even one consistent daily anchor can reduce stress and decision fatigue. This quick self-reflection tool helps you spot where your day needs more predictability. Save this and try it this week."
+      }
+    ]
+  },
+  {
     "slug": "how-sleep-debt-silently-drains-your-daily-performance",
     "title": "How Sleep Debt Silently Drains Your Daily Performance: 5 Practical Checks",
     "category": "Healthy Lifestyle",
