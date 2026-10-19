@@ -942,7 +942,9 @@ def validate_article_quality(data, primary_kw, cornerstone=False):
             screened = sentence
             if not re.search(r'\b(?:unless|until|except|only if)\b', sentence, re.I):
                 screened = re.sub(
-                    r'\bnot a guaranteed (?:outcome|result|solution)\b',
+                    r'\bnot a guaranteed\s+'
+                    r'(?:(?:clinical|medical|health|positive|specific|long-term)\s+){0,2}'
+                    r'(?:outcome|result|solution)\b',
                     lambda match: ' ' * len(match.group(0)), screened, flags=re.I)
             block_match = re.search(QUALITY_BLOCKLIST, screened, flags=re.IGNORECASE)
             if block_match:
