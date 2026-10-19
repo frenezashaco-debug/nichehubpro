@@ -227,26 +227,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-recover-focus-after-a-distraction",
-    "title": "7 Ways to Recover Focus After a Distraction (Without Losing Your Mind)",
+    "title": "How to Recover Focus After a Distraction: 5 Steps to Get Unstuck",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Sep 2026",
     "read_time": "8",
-    "excerpt": "Use a simple restart routine to return to a task after an interruption, with examples for meetings, messages, and noisy workspaces.",
+    "excerpt": "How to recover focus after a distraction: use five practical steps, a copyable restart note, and a review to return to work without promising instant focus.",
     "image": "images/how-to-recover-focus-after-a-distraction.jpg",
     "alt": "woman regaining focus after distraction at home desk",
     "pins": [
       {
-        "title": "How to Recover Focus After a Distraction (7 Real Steps)",
-        "description": "Getting interrupted kills your momentum - but you can recover focus after a distraction faster than you think. These 7 practical steps help you regain focus after interruption without the frustration spiral. Save this for your next scattered workday."
+        "title": "How to Recover Focus After a Distraction: 5 Steps",
+        "description": "Try five practical steps and a restart note to identify your next action after an interruption. Adapt the routine to your work; it does not promise instant concentration."
       },
       {
         "title": "Stop Losing Your Focus Every Time You Get Interrupted",
-        "description": "Every distraction costs you more time than the interruption itself. Learn why it is so hard to regain focus after interruption and what you can do differently starting today. Small habits make a bigger difference than you expect."
+        "description": "Lost your place after a meeting? Use a task-specific note to record the last completed step, your next action, and missing information. Keep only the prompts that help."
       },
       {
         "title": "Try This Simple Routine to Recover Focus After Any Distraction",
-        "description": "A short re-entry routine may be the easiest way to recover focus after a distraction without losing another 20 minutes. Five steps, no willpower required. Pin this and try it the next time you get pulled off track."
+        "description": "Save a simple restart checklist for interrupted work. Find your stopping point, name one action, and check the result. Includes research limits and an illustrative example."
       }
     ]
   },
