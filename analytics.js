@@ -1,4 +1,4 @@
-/* Optional analytics only. Advertising consent requires a certified CMP. */
+/* Optional analytics and article AdSense bootstrap. Ad consent is handled by Google's CMP. */
 (function () {
   'use strict';
   var id = 'G-PHY346X94N';
@@ -13,6 +13,21 @@
     analytics_storage: 'denied', ad_storage: 'denied',
     ad_user_data: 'denied', ad_personalization: 'denied'
   });
+  // Existing articles and publisher_v2.py share this file. Load Google's
+  // published CMP through the AdSense tag, never grant ad consent here.
+  // Keep this independent of the optional Analytics choice.
+  if (/^\/articles\/[^/]+\.html$/.test(window.location.pathname)) {
+    function loadArticleAdsense() {
+      if (document.querySelector('script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]')) return;
+      var ads = document.createElement('script');
+      ads.async = true;
+      ads.crossOrigin = 'anonymous';
+      ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7481817319849340';
+      document.head.appendChild(ads);
+    }
+    if (document.readyState === 'complete') loadArticleAdsense();
+    else window.addEventListener('load', loadArticleAdsense, { once: true });
+  }
   function apply(allowed) {
     allowed = allowed && !externalOptOut;
     window['ga-disable-' + id] = !allowed;
