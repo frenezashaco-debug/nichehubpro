@@ -68,12 +68,20 @@ class CopyPreservation(unittest.TestCase):
                 self.assertTrue(any('section 5 must follow' in e for e in validate(data, 'Focus')))
         data['sections'][4]['h2'] = 'How can you manage focus daily?'
         namespace['QUALITY_BLOCKLIST'] = r'\b(?:cure(?:s|d)?|guaranteed)\b'
-        for sentence in ['This is not a cure.', '<p>This routine is not a cure.</p>']:
+        for sentence in ['This is not a cure.', '<p>This routine is not a cure.</p>',
+                         'This is not a guaranteed outcome.',
+                         '<p>This is not a <strong>guaranteed</strong> outcome.</p>',
+                         'Results are not guaranteed.', 'Improvement is not guaranteed.']:
             data['intro'] = sentence
             self.assertFalse(any('prohibited absolute' in e for e in validate(data, 'Focus')))
         for sentence in ['This cures anxiety.', 'This is not a cure, but it cures anxiety.',
                          'This is not a cure. It cures anxiety.', 'It is guaranteed.',
-                         'This is not a cure for anxiety.', 'This cured anxiety.']:
+                         'This is not a cure for anxiety.', 'This cured anxiety.',
+                         'This is a guaranteed outcome.',
+                         'This is not a guaranteed outcome, but it cures anxiety.',
+                         'This is not a guaranteed outcome. It cures anxiety.',
+                         'Results are not guaranteed unless you follow every step.',
+                         'Results are guaranteed.']:
             with self.subTest(sentence=sentence):
                 data['intro'] = sentence
                 errors = validate(data, 'Focus')

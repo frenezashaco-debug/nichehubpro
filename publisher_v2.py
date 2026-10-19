@@ -929,7 +929,13 @@ def validate_article_quality(data, primary_kw, cornerstone=False):
         plain = html.unescape(re.sub(r"<[^>]+>", " ", str(field)))
         for sentence in re.split(r"(?<=[.!?])\s+|[\r\n]+", plain):
             sentence = re.sub(r"\s+", " ", sentence).strip()
-            if re.fullmatch(r"(?:this|it|this (?:guide|article|routine|exercise)) is not a cure[.!]?", sentence, re.I):
+            disclaimer = (
+                r"(?:(?:this|it|this (?:guide|article|routine|exercise)) is not "
+                r"(?:a cure|a guaranteed (?:outcome|result|solution))|"
+                r"(?:results|outcomes|improvement|success) (?:is|are) not guaranteed)"
+                r"[.!]?"
+            )
+            if re.fullmatch(disclaimer, sentence, re.I):
                 continue
             block_match = re.search(QUALITY_BLOCKLIST, sentence, flags=re.IGNORECASE)
             if block_match:
