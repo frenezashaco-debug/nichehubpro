@@ -1,4 +1,5 @@
 import ast
+import html
 from pathlib import Path
 import re
 import sys
@@ -37,7 +38,7 @@ class CopyPreservation(unittest.TestCase):
         tree = ast.parse((ROOT / 'publisher_v2.py').read_text(encoding='utf-8'))
         function = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == 'validate_article_quality')
         namespace = {
-            're': re, 'BASE_DIR': ROOT, 'publication_blockers': lambda *_: [],
+            're': re, 'html': html, 'BASE_DIR': ROOT, 'publication_blockers': lambda *_: [],
             '_visible_word_count': lambda _: 4000,
             '_prompt_has_no_text_safeguards': lambda _: True,
             'QUALITY_BLOCKLIST': r'(?!)', 'EM_DASH_PATTERN': re.compile(r'\u2014'),
@@ -66,6 +67,18 @@ class CopyPreservation(unittest.TestCase):
                 data['sections'][4]['h2'] = heading
                 self.assertTrue(any('section 5 must follow' in e for e in validate(data, 'Focus')))
         data['sections'][4]['h2'] = 'How can you manage focus daily?'
+        namespace['QUALITY_BLOCKLIST'] = r'\b(?:cure(?:s|d)?|guaranteed)\b'
+        for sentence in ['This is not a cure.', '<p>This routine is not a cure.</p>']:
+            data['intro'] = sentence
+            self.assertFalse(any('prohibited absolute' in e for e in validate(data, 'Focus')))
+        for sentence in ['This cures anxiety.', 'This is not a cure, but it cures anxiety.',
+                         'This is not a cure. It cures anxiety.', 'It is guaranteed.',
+                         'This is not a cure for anxiety.', 'This cured anxiety.']:
+            with self.subTest(sentence=sentence):
+                data['intro'] = sentence
+                errors = validate(data, 'Focus')
+                self.assertTrue(any('prohibited absolute' in e and 'context:' in e for e in errors))
+        namespace['QUALITY_BLOCKLIST'] = r'(?!)'
         data['title'] = 'Focus without a number'
         self.assertIn('title must include a number', validate(data, 'Focus'))
         data['sections'][1]['h2'] = 'How can you change focus?'

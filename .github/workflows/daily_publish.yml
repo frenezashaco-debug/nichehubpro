@@ -74,6 +74,16 @@ jobs:
           NICHEHUB_AUTO_PUBLISH: "1"
         run: python batch_24weeks.py
 
+      - name: Preserve rejected draft for diagnosis
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rejected-article-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .quality-rejected/*.json
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 7
+
       - name: Commit and push
         id: publication
         run: |

@@ -923,12 +923,22 @@ def validate_article_quality(data, primary_kw, cornerstone=False):
         data.get("real_example", ""), data.get("conclusion", ""),
     ] + [section.get("content", "") for section in sections] + [str(item.get("question", "")) + " " + str(item.get("answer", "")) for item in faq]
     article_text = " ".join(searchable_fields)
-    block_match = re.search(QUALITY_BLOCKLIST, article_text, flags=re.IGNORECASE)
-    if block_match:
-        errors.append(
-            "contains a prohibited absolute, cure, instant-result, or medical-emergency claim: "
-            f"{block_match.group(0)}"
-        )
+    # Exempt only complete, explicit disclaimers. Never rewrite published copy
+    # or mask a sentence such as 'not a cure, but it cures anxiety'.
+    for field in searchable_fields:
+        plain = html.unescape(re.sub(r"<[^>]+>", " ", str(field)))
+        for sentence in re.split(r"(?<=[.!?])\s+|[\r\n]+", plain):
+            sentence = re.sub(r"\s+", " ", sentence).strip()
+            if re.fullmatch(r"(?:this|it|this (?:guide|article|routine|exercise)) is not a cure[.!]?", sentence, re.I):
+                continue
+            block_match = re.search(QUALITY_BLOCKLIST, sentence, flags=re.IGNORECASE)
+            if block_match:
+                left = max(0, block_match.start() - 100)
+                excerpt = sentence[left:block_match.end() + 140]
+                errors.append(
+                    "contains a prohibited absolute, cure, instant-result, or medical-emergency claim: "
+                    f"{block_match.group(0)}; context: {excerpt!r}"
+                )
     if EM_DASH_PATTERN.search(article_text):
         errors.append("contains an em dash or en dash")
     if AI_CLICHE_PATTERN.search(article_text):
@@ -1159,6 +1169,12 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_image
         print("ERROR: Article failed the pre-publish quality gate:")
         for error in quality_errors:
             print(f"  - {error}")
+        # Diagnostic-only output, outside publishable drafts and never committed.
+        rejected_dir = os.path.join(BASE_DIR, '.quality-rejected')
+        os.makedirs(rejected_dir, exist_ok=True)
+        with open(os.path.join(rejected_dir, article_slug + '.json'), 'w', encoding='utf-8') as rejected_file:
+            json.dump({'status': 'rejected', 'errors': quality_errors, 'article': data},
+                      rejected_file, ensure_ascii=False, indent=2)
         return None
 
     return save_editorial_draft(data, primary_kw, cornerstone=cornerstone)
