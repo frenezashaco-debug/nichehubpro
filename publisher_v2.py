@@ -937,7 +937,14 @@ def validate_article_quality(data, primary_kw, cornerstone=False):
             )
             if re.fullmatch(disclaimer, sentence, re.I):
                 continue
-            block_match = re.search(QUALITY_BLOCKLIST, sentence, flags=re.IGNORECASE)
+            # Ignore only the negated guarantee token, not the surrounding text.
+            # Keep offsets intact for diagnostics and still inspect later promises.
+            screened = sentence
+            if not re.search(r'\b(?:unless|until|except|only if)\b', sentence, re.I):
+                screened = re.sub(
+                    r'\bnot a guaranteed (?:outcome|result|solution)\b',
+                    lambda match: ' ' * len(match.group(0)), screened, flags=re.I)
+            block_match = re.search(QUALITY_BLOCKLIST, screened, flags=re.IGNORECASE)
             if block_match:
                 left = max(0, block_match.start() - 100)
                 excerpt = sentence[left:block_match.end() + 140]

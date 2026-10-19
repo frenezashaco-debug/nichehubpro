@@ -70,6 +70,7 @@ class CopyPreservation(unittest.TestCase):
         namespace['QUALITY_BLOCKLIST'] = r'\b(?:cure(?:s|d)?|guaranteed)\b'
         for sentence in ['This is not a cure.', '<p>This routine is not a cure.</p>',
                          'This is not a guaranteed outcome.',
+                         'This is one possible pattern, not a guaranteed outcome, and what helps one person may need to be adapted by another.',
                          '<p>This is not a <strong>guaranteed</strong> outcome.</p>',
                          'Results are not guaranteed.', 'Improvement is not guaranteed.']:
             data['intro'] = sentence
@@ -79,6 +80,8 @@ class CopyPreservation(unittest.TestCase):
                          'This is not a cure for anxiety.', 'This cured anxiety.',
                          'This is a guaranteed outcome.',
                          'This is not a guaranteed outcome, but it cures anxiety.',
+                         'This is one pattern, not a guaranteed outcome, but a guaranteed cure.',
+                         'This is not a guaranteed outcome unless you follow the plan.',
                          'This is not a guaranteed outcome. It cures anxiety.',
                          'Results are not guaranteed unless you follow every step.',
                          'Results are guaranteed.']:
