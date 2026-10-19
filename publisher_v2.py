@@ -857,7 +857,9 @@ def validate_article_quality(data, primary_kw, cornerstone=False):
         errors.append("section headings must be distinct")
     if any(not heading.endswith('?') for heading in headings):
         errors.append("all five section headings must be questions")
-    heading_roles = (r"^what\b", r"^what\b.*\bsigns\b", r"^why\b", r"^how\b", r"^how\b.*\bdaily\b")
+    # Equivalent daily-management wording is valid; do not require one literal word.
+    heading_roles = (r"^what\b", r"^what\b.*\bsigns\b", r"^why\b", r"^how\b",
+                     r"^how\b.*\b(?:daily|every day|each day|day-to-day|day to day)\b")
     if len(headings) == 5:
         for index, (heading, role) in enumerate(zip(headings, heading_roles), 1):
             if not re.search(role, heading):

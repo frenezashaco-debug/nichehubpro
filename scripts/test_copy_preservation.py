@@ -50,6 +50,22 @@ class CopyPreservation(unittest.TestCase):
                     'How can you adjust?', 'How can you manage focus daily?']]}
         validate = namespace['validate_article_quality']
         self.assertFalse(any('heading' in e or 'order' in e or 'title must' in e for e in validate(data, 'Focus')))
+        for heading in [
+            "How can you work with your brain's need for routine every day?",
+            'How can you manage focus each day?',
+            'How can you manage focus day-to-day?',
+            'How can you manage focus day to day?',
+            'How can you manage focus daily?',
+        ]:
+            with self.subTest(heading=heading):
+                data['sections'][4]['h2'] = heading
+                self.assertFalse(any('section 5 must follow' in e for e in validate(data, 'Focus')))
+        for heading in ['How can you manage focus?', 'How can you manage focus weekly?',
+                        'Why does focus change every day?', 'How can you manage everydayness?']:
+            with self.subTest(heading=heading):
+                data['sections'][4]['h2'] = heading
+                self.assertTrue(any('section 5 must follow' in e for e in validate(data, 'Focus')))
+        data['sections'][4]['h2'] = 'How can you manage focus daily?'
         data['title'] = 'Focus without a number'
         self.assertIn('title must include a number', validate(data, 'Focus'))
         data['sections'][1]['h2'] = 'How can you change focus?'
