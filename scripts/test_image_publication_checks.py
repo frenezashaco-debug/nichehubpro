@@ -29,6 +29,43 @@ class ImagePublicationChecks(unittest.TestCase):
     def approved(self):
         return {'images': [{'index': i, 'approved': True, 'issues': []} for i in range(4)]}
 
+    def raw_client(self, replies, stop_reason='end_turn'):
+        self.calls = 0
+        def create(**kwargs):
+            self.calls += 1
+            return SimpleNamespace(stop_reason=stop_reason, content=[
+                SimpleNamespace(type='text', text=replies[min(self.calls - 1, len(replies) - 1)])])
+        return SimpleNamespace(messages=SimpleNamespace(create=create))
+
+    def test_markdown_wrapper(self):
+        client = self.raw_client(['```json\n' + json.dumps(self.approved()) + '\n```'])
+        self.assertEqual(screen_publication_images(client, self.paths, 'worry'), self.approved())
+        self.assertEqual(self.calls, 1)
+
+    def test_empty_response_retries_once(self):
+        client = self.raw_client(['', json.dumps(self.approved())])
+        self.assertEqual(screen_publication_images(client, self.paths, 'worry'), self.approved())
+        self.assertEqual(self.calls, 2)
+
+    def test_invalid_response_stays_blocked(self):
+        with self.assertRaisesRegex(ValueError, 'invalid JSON twice'):
+            screen_publication_images(self.raw_client(['not JSON']), self.paths, 'worry')
+        self.assertEqual(self.calls, 2)
+
+    def test_rejection_is_not_retried(self):
+        data = self.approved()
+        data['images'][0]['approved'] = False
+        with self.assertRaises(ValueError):
+            screen_publication_images(self.raw_client([json.dumps(data), json.dumps(self.approved())]), self.paths, 'worry')
+        self.assertEqual(self.calls, 1)
+
+    def test_invalid_types_and_truncation_fail_closed(self):
+        for data in [[], {'images': [None] * 4}]:
+            with self.assertRaises(ValueError):
+                screen_publication_images(self.client(data), self.paths, 'worry')
+        with self.assertRaisesRegex(ValueError, 'truncated'):
+            screen_publication_images(self.raw_client([json.dumps(self.approved())], 'max_tokens'), self.paths, 'worry')
+
     def test_four_visual_results_required(self):
         self.assertEqual(screen_publication_images(self.client(self.approved()), self.paths, 'worry'), self.approved())
         with self.assertRaises(ValueError):
