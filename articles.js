@@ -3,12 +3,12 @@
 const ARTICLES = [
   {
     "slug": "why-your-brain-craves-routine-even-when-you-resist-it",
-    "title": "7 Reasons Why Your Brain Craves Routine Even When You Resist It",
+    "title": "Why Your Brain Craves Routine Even When You Resist It: 5 Practical Checks",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Oct 2026",
     "read_time": "8",
-    "excerpt": "Why your brain craves routine even when you resist it is one of those questions that can stop you mid-scroll and make you think. You tell yourself you...",
+    "excerpt": "Use five practical checks to choose helpful cues, build a flexible fallback, and review your routine without treating it as a mental health test.",
     "image": "images/why-your-brain-craves-routine-even-when-you-resist-it.jpg",
     "alt": "Man holding coffee mug in quiet kitchen morning routine",
     "pins": [

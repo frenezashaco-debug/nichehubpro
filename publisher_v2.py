@@ -683,7 +683,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
 
       <div style="margin:40px 0 0;padding:22px 26px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);">
         <p style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--gray);margin:0 0 8px;">Sources &amp; References</p>
-        <p style="font-size:0.78rem;color:var(--gray);margin:0 0 14px;line-height:1.6;">Source links are listed for further reading and require editorial verification before publication. They do not make this article a substitute for professional advice.</p>
+        <p style="font-size:0.78rem;color:var(--gray);margin:0 0 14px;line-height:1.6;">These references provide background and further reading. Practical exercises are editorial suggestions, not clinically validated interventions. This article does not replace professional advice.</p>
         <ul style="list-style:none;padding:0;margin:0;">
           {refs_html}
         </ul>
