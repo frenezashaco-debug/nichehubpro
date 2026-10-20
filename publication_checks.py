@@ -20,6 +20,39 @@ class Links(HTMLParser):
 def publication_blockers(data, root):
     root = Path(root).resolve()
     errors = []
+    # Inspect rendered body content, not just the model's link inventory.
+    sections = data.get('sections') or []
+    body_fields = [str(data.get(k, '')) for k in ('intro', 'tldr', 'real_example', 'conclusion')]
+    body_fields += [str(s.get('content', '')) for s in sections]
+    body_fields += [str(item.get('answer', '')) for item in data.get('faq', [])]
+    if len(sections) == 5:
+        body_links = []
+        for field in body_fields:
+            for href in Links(field).hrefs:
+                parsed = urlparse(urljoin('https://nichehubpro.com/articles/draft.html', href))
+                if parsed.hostname in ('nichehubpro.com', 'www.nichehubpro.com') and parsed.path.startswith('/articles/'):
+                    if not href.startswith('#'):
+                        body_links.append(href)
+        if not 3 <= len(body_links) <= 5:
+            errors.append(f'rendered body must contain 3-5 article links, got {len(body_links)}')
+        for field in body_fields:
+            paragraphs = re.findall(r'<p\b[^>]*>(.*?)</p>', field, re.S | re.I)
+            if not paragraphs:
+                paragraphs = [part for part in field.splitlines() if part.strip()]
+            for paragraph in paragraphs:
+                visible = html.unescape(re.sub(r'<[^>]+>', ' ', paragraph))
+                if len(visible.split()) > 60:
+                    errors.append('body paragraph exceeds 60 words; split into short paragraphs')
+        promise = re.search(r'\b(\d+)\s+(?:practical\s+)?(checks|steps|reasons|tips|ways|lessons)\b', str(data.get('title', '')), re.I)
+        if promise:
+            count = int(promise[1])
+            noun = promise[2].lower().rstrip('s')
+            body = '\n'.join(body_fields)
+            labels = {int(n) for n in re.findall(r'\b' + noun + r'\s+(\d+)\s*[:.)]', html.unescape(re.sub(r'<[^>]+>', ' ', body)), re.I)}
+            lists = re.findall(r'<ol\b[^>]*>(.*?)</ol>', body, re.S | re.I)
+            matches_list = any(len(re.findall(r'<li\b', block, re.I)) == count for block in lists)
+            if labels != set(range(1, count + 1)) and not matches_list:
+                errors.append('numbered title needs matching explicit numbered labels or an ordered list in the body')
     fields = [data.get(k, '') for k in ('title', 'meta_description', 'intro', 'tldr', 'real_example', 'conclusion')]
     for section in data.get('sections', []):
         fields.extend([section.get('h2', ''), section.get('content', '')])
@@ -65,6 +98,7 @@ def publication_blockers(data, root):
             r'\bdunk your face\b',
             r'\bdopamine.{0,35}resets? every 24 hours\b',
             r'\b(?:remove the unsupported|insert citation|source needed)\b',
+            r'\brequire editorial verification before publication\b',
         )
         for pattern in patterns:
             if re.search(pattern, text, re.I):

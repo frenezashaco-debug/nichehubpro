@@ -23,6 +23,26 @@ class PublicationChecks(unittest.TestCase):
     def test_valid_paths(self):
         self.assertEqual(self.check(intro='<a href="../articles/focus.html">Focus</a><a href="/about/">About</a>', internal_links=[{'slug': 'focus'}]), [])
 
+    def test_rendered_editorial_contract(self):
+        data = dict(title='Focus: 5 Practical Checks', sections=[
+            {'content': f'<p><strong>Check {i}:</strong> Choose a useful action.</p>' +
+             ('<a href="/articles/focus.html">Read more</a>' if i <= 3 else '')}
+            for i in range(1, 6)])
+        self.assertEqual(self.check(**data), [])
+        data['sections'][0]['content'] += '<p>' + 'word ' * 61 + '</p>'
+        self.assertTrue(any('60 words' in e for e in self.check(**data)))
+        data['sections'][0]['content'] = '<p>Check 1: Start here.</p><a href="/articles/focus.html">Focus</a>'
+        data['intro'] = '<a href="/articles/focus.html">Extra</a>' * 3
+        self.assertTrue(any('got 6' in e for e in self.check(**data)))
+        data['intro'] = ''
+        data['title'] = '7 Reasons to Focus'
+        self.assertTrue(any('numbered title' in e for e in self.check(**data)))
+        data['sections'][0]['content'] += '<ol>' + '<li>A reason</li>' * 7 + '</ol>'
+        self.assertFalse(any('numbered title' in e for e in self.check(**data)))
+
+    def test_internal_editorial_note(self):
+        self.assertTrue(self.check(conclusion='Sources require editorial verification before publication.'))
+
     def test_old_wordpress_url(self):
         for url in ['/focus', 'https://nichehubpro.com/focus', '//www.nichehubpro.com/focus']:
             self.assertTrue(self.check(sections=[{'content': f"<a href='{url}'>Focus</a>"}]))

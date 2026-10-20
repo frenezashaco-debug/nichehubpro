@@ -260,8 +260,10 @@ KEYWORDS:
 - Category: {category}
 
 REQUIREMENTS:
-- Title: number + primary keyword in first 3 words + emotional/catchy ending
+- Title: primary keyword first, followed by ": 5 Practical Checks". Include exactly one explicit bold label "Check 1:" through "Check 5:" in each corresponding section. Each check must describe a concrete action; do not promise an unlisted number of reasons.
 - Intro: primary keyword in first 10 words, 3 short emotional paragraphs
+- Keep every prose paragraph at most 60 words, preferably 25-40. Use separate <p> elements in section content, and separate lines for intro, example, and conclusion. This is a readability limit, not a claim about screen line counts.
+- Count actual article hyperlinks across intro, summary, sections, example, FAQ and conclusion: 3-5 in total, not merely 3-5 entries in internal_links. Sidebar and related links are generated separately.
 - Summary box: 2-3 sentences with primary keyword. Never include the visible label "TL;DR" or "TL;DR:" in its content.
 - {section_count_line}
 - Each section: GEO structure (statement + explanation + advice), bullets, bold key tips, and at least {min_section_words} visible words of body content. Count the words in each section before returning JSON; do not leave any section short.
