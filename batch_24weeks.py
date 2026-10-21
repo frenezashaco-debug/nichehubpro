@@ -255,13 +255,10 @@ def run_day(day_num):
     print(f"  DAY {day} | WEEK {week_of(day)} | {category}{' | CORNERSTONE' if cornerstone else ''}")
     print(f"  Topic: {primary}")
     print(f"{'='*70}\n")
-    result = generate_article(primary, secondary, longtail, category, cornerstone=cornerstone)
+    result = generate_article(primary, secondary, longtail, category,
+                              cornerstone=cornerstone, auto_publish=AUTO_PUBLISH)
     if not result:
         return False
-    if AUTO_PUBLISH:
-        print("\n  Automated quality gate passed. Publishing validated article...")
-        return bool(generate_article(primary, secondary, longtail, category,
-                                     cornerstone=cornerstone, publish=True))
     return True
 
 

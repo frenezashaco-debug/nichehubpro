@@ -11,6 +11,7 @@ import sys, os, re, json, textwrap, io, time, html
 from datetime import date
 from urllib.parse import urlparse
 from publication_checks import publication_blockers
+from paragraph_repair import repair_paragraphs
 sys.stdout.reconfigure(encoding='utf-8')
 import anthropic
 import requests
@@ -1104,13 +1105,13 @@ def repair_section_headings(client, data, errors, primary_kw):
 
 
 def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_images=False,
-                     cornerstone=False, publish=False):
+                     cornerstone=False, publish=False, auto_publish=False):
     print(f"\n{'='*60}")
     print(f"Keyword : {primary_kw}")
     print(f"Category: {category}")
     if cornerstone:
         print("Mode    : CORNERSTONE (3500-5000 words)")
-    print(f"Output  : {'PUBLISH' if publish else 'REVIEW DRAFT ONLY'}")
+    print(f"Output  : {'AUTOMATIC PUBLICATION' if auto_publish else 'PUBLISH' if publish else 'REVIEW DRAFT ONLY'}")
     print(f"{'='*60}")
 
     if publish:
@@ -1177,6 +1178,7 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_image
     article_slug = slug(primary_kw)
     data["slug"] = article_slug
     data["meta_description"] = fit_meta_description(data.get("meta_description"), primary_kw)
+    data = repair_paragraphs(data)
 
     quality_errors = validate_article_quality(data, primary_kw, cornerstone=cornerstone)
     if quality_errors:
@@ -1194,6 +1196,9 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_image
                       rejected_file, ensure_ascii=False, indent=2)
         return None
 
+    if auto_publish:
+        data['editorial_status'] = 'automated_checks_passed'
+        return publish_reviewed_draft(data, primary_kw, category, skip_images, cornerstone)
     return save_editorial_draft(data, primary_kw, cornerstone=cornerstone)
 
 
