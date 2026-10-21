@@ -51,6 +51,7 @@ jobs:
           python scripts/test_copy_preservation.py
           python scripts/test_heading_repair.py
           python scripts/test_paragraph_repair.py
+          python scripts/test_article_auto_repair.py
           python scripts/test_distribution_payload.py
 
       - name: Create config.py from secrets

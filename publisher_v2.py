@@ -12,6 +12,7 @@ from datetime import date
 from urllib.parse import urlparse
 from publication_checks import publication_blockers
 from paragraph_repair import repair_paragraphs
+from article_auto_repair import repair_article
 sys.stdout.reconfigure(encoding='utf-8')
 import anthropic
 import requests
@@ -1184,6 +1185,12 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_image
     if quality_errors:
         data = repair_section_headings(client, data, quality_errors, primary_kw)
         quality_errors = validate_article_quality(data, primary_kw, cornerstone=cornerstone)
+    if quality_errors:
+        data, quality_errors = repair_article(
+            client, data, quality_errors,
+            validate=lambda candidate: validate_article_quality(candidate, primary_kw, cornerstone=cornerstone),
+            normalize=lambda candidate: repair_paragraphs(sanitize_generated_copy(candidate)),
+            system_prompt=SYSTEM_PROMPT)
     if quality_errors:
         print("ERROR: Article failed the pre-publish quality gate:")
         for error in quality_errors:
