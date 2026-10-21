@@ -1105,6 +1105,12 @@ def repair_section_headings(client, data, errors, primary_kw):
         return data
 
 
+def normalize_article_candidate(data, primary_kw):
+    data = repair_paragraphs(sanitize_generated_copy(data))
+    data['meta_description'] = fit_meta_description(data.get('meta_description'), primary_kw)
+    return data
+
+
 def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_images=False,
                      cornerstone=False, publish=False, auto_publish=False):
     print(f"\n{'='*60}")
@@ -1189,7 +1195,7 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_image
         data, quality_errors = repair_article(
             client, data, quality_errors,
             validate=lambda candidate: validate_article_quality(candidate, primary_kw, cornerstone=cornerstone),
-            normalize=lambda candidate: repair_paragraphs(sanitize_generated_copy(candidate)),
+            normalize=lambda candidate: normalize_article_candidate(candidate, primary_kw),
             system_prompt=SYSTEM_PROMPT)
     if quality_errors:
         print("ERROR: Article failed the pre-publish quality gate:")

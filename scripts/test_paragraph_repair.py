@@ -31,6 +31,14 @@ class ParagraphRepairTests(unittest.TestCase):
     def test_short_unchanged(self):
         self.assertEqual(split_paragraph('Short paragraph.', '\n'), 'Short paragraph.')
 
+    def test_numbering_moves_from_heading_to_body(self):
+        data = {'sections': [{'h2': 'Check 1: What is focus?', 'content': '<p>Original advice.</p>'}]}
+        result = repair_paragraphs(data)
+        self.assertEqual(result['sections'][0]['h2'], 'What is focus?')
+        self.assertIn('Check 1: What is focus?', result['sections'][0]['content'])
+        self.assertIn('<p>Original advice.</p>', result['sections'][0]['content'])
+        self.assertEqual(repair_paragraphs(result), result)
+
 
 if __name__ == '__main__':
     unittest.main()

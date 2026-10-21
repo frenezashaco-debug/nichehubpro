@@ -35,14 +35,19 @@ def publication_blockers(data, root):
                         body_links.append(href)
         if not 3 <= len(body_links) <= 5:
             errors.append(f'rendered body must contain 3-5 article links, got {len(body_links)}')
-        for field in body_fields:
+        field_names = ['intro', 'tldr', 'real_example', 'conclusion']
+        field_names += [f'section {i+1}' for i in range(len(sections))]
+        field_names += [f'FAQ {i+1}' for i in range(len(data.get('faq', [])))]
+        for field_name, field in zip(field_names, body_fields):
             paragraphs = re.findall(r'<p\b[^>]*>(.*?)</p>', field, re.S | re.I)
             if not paragraphs:
-                paragraphs = [part for part in field.splitlines() if part.strip()]
+                # A compact HTML list is not one giant paragraph.
+                blocks = re.sub(r'</(?:li|h[1-6]|div|ul|ol)>|<br\s*/?>', '\n', field, flags=re.I)
+                paragraphs = [part for part in blocks.splitlines() if part.strip()]
             for paragraph in paragraphs:
                 visible = html.unescape(re.sub(r'<[^>]+>', ' ', paragraph))
                 if len(visible.split()) > 60:
-                    errors.append('body paragraph exceeds 60 words; split into short paragraphs')
+                    errors.append(f'body paragraph exceeds 60 words in {field_name} ({len(visible.split())} words); split or shorten while preserving required paragraph counts')
         promise = re.search(r'\b(\d+)\s+(?:practical\s+)?(checks|steps|reasons|tips|ways|lessons)\b', str(data.get('title', '')), re.I)
         if promise:
             count = int(promise[1])

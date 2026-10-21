@@ -24,7 +24,9 @@ def repair_article(client, data, errors, validate, normalize, system_prompt):
                     '3-5 per section; unwrap surplus links while retaining their anchor text. '
                     'Do not remove external evidence citations. A title promising 5 Practical '
                     'Checks must have Check 1: through Check 5: visibly in the five sections, '
-                    'with meaningful advice corresponding to each label. No em dashes. '
+                    'with meaningful advice corresponding to each label. Put Check N: labels '
+                    'inside section CONTENT, never before the H2 question. Keep meta_description '
+                    '155-160 characters. No em dashes. '
                     'Never weaken health disclaimers or change uncertainty into certainty.\n'
                     + json.dumps({'errors': errors, 'article': data}, ensure_ascii=False)
                 )}])
