@@ -5,10 +5,26 @@ import sys
 from types import SimpleNamespace as NS
 import unittest
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from article_auto_repair import repair_article
+from article_auto_repair import repair_article, repair_fields
 
 
 class RepairTests(unittest.TestCase):
+    def test_targeted_fields(self):
+        self.assertEqual(repair_fields(['body paragraph exceeds 60 words in real_example (71 words)',
+                                       'article needs at least 1800 genuine words, got 1732']),
+                         {'real_example', 'sections'})
+        self.assertIsNone(repair_fields(['unsafe claim']))
+
+    def test_partial_patch_preserves_other_fields(self):
+        original = {'real_example': 'long', 'title': 'keep', 'sections': [{'content': 'keep'}], 'references': []}
+        response = NS(stop_reason='end_turn', content=[NS(type='text', text='{"real_example":"short"}')])
+        result, errors = repair_article(NS(messages=NS(create=lambda **kw: response)), original,
+            ['body paragraph exceeds 60 words in real_example (71 words)'],
+            lambda d: [] if d['real_example'] == 'short' else ['bad'], lambda d: d, 'rules')
+        self.assertEqual(errors, [])
+        self.assertEqual(result['sections'], original['sections'])
+        self.assertEqual(result['title'], original['title'])
+        self.assertEqual(original['real_example'], 'long')
     def run_repair(self, answers, errors=None):
         self.calls = []
         def create(**kwargs):
