@@ -7,7 +7,7 @@ import unittest
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from image_publication_checks import screen_publication_images
+from image_publication_checks import screen_publication_images, screen_with_regeneration, VisualRejection
 
 
 class ImagePublicationChecks(unittest.TestCase):
@@ -94,6 +94,35 @@ class ImagePublicationChecks(unittest.TestCase):
     def test_missing_results_do_not_approve(self):
         with self.assertRaises(ValueError):
             screen_publication_images(self.client({}), self.paths, 'worry')
+
+    def test_regenerates_only_rejected_asset_and_rescreens(self):
+        rejected = self.approved()
+        rejected['images'][2]['approved'] = False
+        changed = []
+        def regenerate(index):
+            changed.append(index)
+            Image.new('RGB', (16, 16), (200, 100, 50)).save(self.paths[index])
+        client = self.raw_client([json.dumps(rejected), json.dumps(self.approved())])
+        screen_with_regeneration(client, self.paths, 'worry', regenerate)
+        self.assertEqual(changed, [2])
+        self.assertEqual(self.calls, 2)
+
+    def test_unchanged_rejected_asset_stays_blocked(self):
+        rejected = self.approved()
+        rejected['images'][0]['approved'] = False
+        with self.assertRaisesRegex(ValueError, 'not replaced'):
+            screen_with_regeneration(self.client(rejected), self.paths, 'worry', lambda index: None)
+
+    def test_repeated_rejection_stays_blocked(self):
+        rejected = self.approved()
+        rejected['images'][0]['approved'] = False
+        changed = []
+        def regenerate(index):
+            changed.append(index)
+            Image.new('RGB', (16, 16), (150 + len(changed), 0, 0)).save(self.paths[index])
+        with self.assertRaises(VisualRejection):
+            screen_with_regeneration(self.client(rejected), self.paths, 'worry', regenerate)
+        self.assertEqual(changed, [0, 0])
 
 
 if __name__ == '__main__':

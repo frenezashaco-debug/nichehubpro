@@ -1289,9 +1289,24 @@ def publish_reviewed_draft(data, primary_kw, category, skip_images=False, corner
     for image_path in image_paths:
         with Image.open(image_path) as generated_image:
             generated_image.verify()
-    from image_publication_checks import screen_publication_images
+    from image_publication_checks import screen_with_regeneration
     visual_client = anthropic.Anthropic(api_key=API_KEY, timeout=180.0)
-    screen_publication_images(visual_client, image_paths, data['title'])
+    def regenerate_rejected_image(index):
+        print(f'Regenerating rejected publication image {index}; full visual screening will run again.')
+        clean_scene = (' Use a different uncluttered scene with an adult person. '
+                       'No containers, packaging, labels, books, screens, signs or printed clothing. '
+                       'Plain unbranded objects only. No text, logos, signatures or watermarks.')
+        if index == 0:
+            generate_cover(data['title'], category, cover_path, custom_prompt=cover_prompt + clean_scene)
+            with Image.open(cover_path) as replacement:
+                replacement.save(cover_path.replace('.jpg', '.webp'), 'WEBP', quality=78, method=6)
+        else:
+            sec_idx = sorted(section_images)[index - 1]
+            spec = next(item for item in data['section_image_prompts'] if item['section_index'] == sec_idx)
+            filename = download_section_image(spec['prompt'] + clean_scene, article_slug, sec_idx + 1, delay=_HF_DELAY)
+            if not filename:
+                raise ValueError('Replacement image generation failed; publication remains blocked.')
+    screen_with_regeneration(visual_client, image_paths, data['title'], regenerate_rejected_image)
     print('Four publication images passed automated visual screening.')
 
     # Build and save HTML

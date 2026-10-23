@@ -11,6 +11,28 @@ from pathlib import Path
 from PIL import Image, ImageOps
 
 
+class VisualRejection(ValueError):
+    def __init__(self, rejected):
+        self.rejected = rejected
+        super().__init__(f'Images rejected by visual screening: {rejected}')
+
+
+def screen_with_regeneration(client, image_paths, topic, regenerate, attempts=2):
+    """Replace rejected assets, never reinterpret a rejection as approval."""
+    for attempt in range(attempts + 1):
+        try:
+            return screen_publication_images(client, image_paths, topic)
+        except VisualRejection as error:
+            if attempt == attempts:
+                raise
+            for item in error.rejected:
+                index = item['index']
+                old_hash = hashlib.sha256(Path(image_paths[index]).read_bytes()).digest()
+                regenerate(index)
+                if hashlib.sha256(Path(image_paths[index]).read_bytes()).digest() == old_hash:
+                    raise ValueError('Rejected image was not replaced; publication remains blocked.')
+
+
 def screen_publication_images(client, image_paths, topic):
     if len(image_paths) != 4:
         raise ValueError('Exactly four images must pass visual screening.')
@@ -67,7 +89,7 @@ def screen_publication_images(client, image_paths, topic):
         raise ValueError('Visual screening returned invalid result types.')
     if {item.get('index') for item in results} != {0, 1, 2, 3}:
         raise ValueError('Visual screening did not identify all four images.')
-    for item in results:
-        if item.get('approved') is not True or item.get('issues') != []:
-            raise ValueError(f'Image {item.get("index")} rejected by visual screening: {item.get("issues")}')
+    rejected = [item for item in results if item['approved'] is not True or item['issues'] != []]
+    if rejected:
+        raise VisualRejection(rejected)
     return result
