@@ -346,7 +346,7 @@ def download_section_image(prompt, article_slug, index, retries=3, delay=0):
                     "num_inference_steps": 50,
                     "guidance_scale": 3.5,
                     "num_images": 1,
-                    "seed": attempt * 13,
+                    "seed": int.from_bytes(os.urandom(4), 'big') % 2147483647,
                 },
                 verify=False,
                 timeout=90,
@@ -1303,7 +1303,14 @@ def publish_reviewed_draft(data, primary_kw, category, skip_images=False, corner
         else:
             sec_idx = sorted(section_images)[index - 1]
             spec = next(item for item in data['section_image_prompts'] if item['section_index'] == sec_idx)
-            filename = download_section_image(spec['prompt'] + clean_scene, article_slug, sec_idx + 1, delay=_HF_DELAY)
+            replacement_prompt = (
+                f"Photorealistic candid wellness photograph illustrating {data['sections'][sec_idx]['heading'] if 'heading' in data['sections'][sec_idx] else data['title']}. "
+                'A relatable adult pausing thoughtfully on a quiet leafy nature path, '
+                'plain solid-color clothing, empty hands, soft warm morning sunlight, '
+                'shallow depth of field with only blurred foliage in the background. '
+                'Natural unposed body language, no walls, posters, notes, buildings or objects. '
+            )
+            filename = download_section_image(replacement_prompt + clean_scene, article_slug, sec_idx + 1, delay=_HF_DELAY)
             if not filename:
                 raise ValueError('Replacement image generation failed; publication remains blocked.')
     screen_with_regeneration(visual_client, image_paths, data['title'], regenerate_rejected_image)
