@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-willpower-works-and-why-it-runs-out",
+    "title": "How Willpower Works and Why It Runs Out: 5 Practical Checks",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Oct 2026",
+    "read_time": "8",
+    "excerpt": "How willpower works and why it runs out is something most people feel before they can explain it. You start the day determined, and by mid-afternoon you...",
+    "image": "images/how-willpower-works-and-why-it-runs-out.jpg",
+    "alt": "Man reviewing morning task list, reflecting on how willpower works",
+    "pins": [
+      {
+        "title": "How Willpower Works and Why It Runs Out (5 Checks to Try)",
+        "description": "Understanding how willpower works and why it runs out can change how you plan your entire day. It is not about trying harder - it is about spending your mental energy on the right things at the right time. Read the 5 practical checks and start with just one small change today."
+      },
+      {
+        "title": "Stop Blaming Yourself When Willpower Runs Out - Here's Why It Happens",
+        "description": "Willpower depletion science shows that fading self-control throughout the day is a predictable pattern, not a character flaw. Sleep, decisions, and stress all drain your mental energy before you realise it. Save this to understand the real reasons willpower runs out and what to do instead."
+      },
+      {
+        "title": "Try This Simple Fix When Your Willpower Runs Out Every Afternoon",
+        "description": "If you always lose momentum by mid-afternoon, it may be because of how willpower works - not how hard you try. One small structural change, like moving your hardest task to morning, can make a real difference. Try the 5 practical checks and see what shifts for you this week."
+      }
+    ]
+  },
+  {
     "slug": "why-your-brain-craves-routine-even-when-you-resist-it",
     "title": "Why Your Brain Craves Routine Even When You Resist It: 5 Practical Checks",
     "category": "Mental Wellness",
