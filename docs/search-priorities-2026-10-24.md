@@ -149,3 +149,9 @@ Completion: commit 0a40312 and generated catalog d10b181 deployed in successful 
 ## Three mental-wellness guides
 
 Revised how-to-stop-negative-thoughts, how-to-build-confidence and how-to-stop-worrying-about-the-future. Removed unsupported biological explanations, fixed outcome timelines and invented success stories. Replaced them with distinct thought-response options, specific-skill practice and seven planning questions. Linked NHS guidance, labelled fictional examples, preserved original publication dates and image assets, and synchronised FAQ/schema, catalog and sitemap. All thirteen editorial batch checks passed. Deployment and public verification pending.
+
+Completion: editorial commit 3e45b3c and generated catalog 4d637b4 deployed successfully in Pages run 40137212314. Submitted a targeted six-URL cache purge; all three public canonical pages returned HTTP 200 and cache MISS with the new scope text and none of the checked old invented-story markers. Sitemap dates are 2026-10-24. Confidence FAQ expanded correctly in browser. Proof: mental-guides-live-proof.png. No AdSense review or indexing request submitted.
+
+## Broken reference repair
+
+Replaced the retired NHS healthy-eating URL in healthy-lifestyle-tips and how-to-improve-energy-naturally with the verified current eight-tips page. Replaced the misspelled and retired WHO workplace-stress Q&A in how-to-deal-with-stress-at-work with the verified Mental health at work fact sheet; aligned its citation summary with organisational risk prevention and worker support. Clarified that energy-guide references do not validate every method or diagnose fatigue. This is a reference repair, not a completed substantive review of those guides. JSON-LD parsing and absence of old URLs/em dashes checked. Original publication dates preserved; modified/sitemap dates updated where needed.
