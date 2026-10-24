@@ -9,7 +9,9 @@ import xml.etree.ElementTree as ET
 root = Path(__file__).resolve().parents[1]
 slugs = sys.argv[1:] or ('healthy-living-tips', 'healthy-daily-habits', 'simple-morning-habits',
                         'how-to-stay-calm-under-pressure', 'improve-daily-routine',
-                        'how-sleep-affects-mental-health', 'best-foods-for-better-sleep')
+                        'how-sleep-affects-mental-health', 'best-foods-for-better-sleep',
+                        'daily-wellness-habits', 'healthy-morning-routine-checklist',
+                        'how-to-create-sustainable-healthy-habits')
 catalog_source = (root / 'articles.js').read_text(encoding='utf-8')
 catalog = json.loads(catalog_source[catalog_source.index('['):catalog_source.rfind(']') + 1])
 sitemap = ET.parse(root / 'sitemap.xml').getroot()

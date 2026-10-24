@@ -727,51 +727,51 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-create-sustainable-healthy-habits",
-    "title": "7 Ways to Create Sustainable Healthy Habits",
+    "title": "How to Create Sustainable Healthy Habits: 7 Review Questions",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven ways to create sustainable healthy habits, with smaller steps, realistic planning, and room to restart after setbacks. Practical steps you can",
+    "read_time": "4",
+    "excerpt": "Learn how to create sustainable healthy habits with seven review questions about purpose, costs, changing constraints and when to adapt, pause or stop a plan.",
     "image": "images/how-to-create-sustainable-healthy-habits.jpg",
     "alt": "woman writing healthy habits plan at kitchen table",
     "pins": [
       {
-        "title": "How to Create Sustainable Healthy Habits That Actually Stick",
-        "description": "Explore seven ways to create sustainable healthy habits, with smaller steps, realistic planning, and room to restart after setbacks. Practical steps you can"
+        "title": "How to Create Sustainable Healthy Habits: 7 Review Questions",
+        "description": "Learn how to create sustainable healthy habits with seven review questions about purpose, costs, changing constraints and when to adapt, pause or stop a plan."
       },
       {
-        "title": "Stop Failing at Healthy Habits - Here Is Why They Are Not Sticking",
-        "description": "Explore seven ways to create sustainable healthy habits, with smaller steps, realistic planning, and room to restart after setbacks. Practical steps you can"
+        "title": "How to Create Sustainable Healthy Habits: 7 Review Questions",
+        "description": "Learn how to create sustainable healthy habits with seven review questions about purpose, costs, changing constraints and when to adapt, pause or stop a plan."
       },
       {
-        "title": "Try This Simple Method to Build Healthy Habits You Actually Keep",
-        "description": "Explore seven ways to create sustainable healthy habits, with smaller steps, realistic planning, and room to restart after setbacks. Practical steps you can"
+        "title": "How to Create Sustainable Healthy Habits: 7 Review Questions",
+        "description": "Learn how to create sustainable healthy habits with seven review questions about purpose, costs, changing constraints and when to adapt, pause or stop a plan."
       }
     ]
   },
   {
     "slug": "healthy-morning-routine-checklist",
-    "title": "7 Healthy Morning Routine Checklist Ideas",
+    "title": "Healthy Morning Routine Checklist: 7 Flexible Prompts",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Build a healthy morning routine checklist with seven flexible ideas for sleep, food, movement, and planning that you can adapt to your own day.",
+    "read_time": "4",
+    "excerpt": "Use a healthy morning routine checklist with seven flexible prompts for essentials, preparation and support, adapted to your waking time and responsibilities.",
     "image": "images/healthy-morning-routine-checklist.jpg",
     "alt": "woman reviewing healthy morning routine checklist at kitchen table",
     "pins": [
       {
-        "title": "How to Build a Healthy Morning Routine Checklist That Actually Sticks",
-        "description": "Build a healthy morning routine checklist with seven flexible ideas for sleep, food, movement, and planning that you can adapt to your own day."
+        "title": "Healthy Morning Routine Checklist: 7 Flexible Prompts",
+        "description": "Use a healthy morning routine checklist with seven flexible prompts for essentials, preparation and support, adapted to your waking time and responsibilities."
       },
       {
-        "title": "Stop Waking Up Stressed - Fix Your Morning Wellness Checklist Today",
-        "description": "Build a healthy morning routine checklist with seven flexible ideas for sleep, food, movement, and planning that you can adapt to your own day."
+        "title": "Healthy Morning Routine Checklist: 7 Flexible Prompts",
+        "description": "Use a healthy morning routine checklist with seven flexible prompts for essentials, preparation and support, adapted to your waking time and responsibilities."
       },
       {
-        "title": "Try This 7-Item Healthy Morning Routine Checklist for More Energy",
-        "description": "Build a healthy morning routine checklist with seven flexible ideas for sleep, food, movement, and planning that you can adapt to your own day."
+        "title": "Healthy Morning Routine Checklist: 7 Flexible Prompts",
+        "description": "Use a healthy morning routine checklist with seven flexible prompts for essentials, preparation and support, adapted to your waking time and responsibilities."
       }
     ]
   },
@@ -2976,26 +2976,26 @@ const ARTICLES = [
   },
   {
     "slug": "daily-wellness-habits",
-    "title": "5 Daily Wellness Habits to Try at Your Own Pace",
+    "title": "Daily Wellness Habits: 5 Ways to Plan Everyday Care",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Explore five daily wellness habits you can adapt to your needs, including rest, meals, movement, connection, and a realistic pace.",
+    "read_time": "4",
+    "excerpt": "Choose daily wellness habits through five areas of everyday care, with practical options for limited time, changing needs and support when symptoms persist.",
     "image": "images/daily-wellness-habits.jpg",
     "alt": "Woman drinking water at kitchen table during morning wellness routine",
     "pins": [
       {
-        "title": "5 Daily Wellness Habits That Change Your Life in 30 Days (Simple)",
-        "description": "Explore five daily wellness habits you can adapt to your needs, including rest, meals, movement, connection, and a realistic pace."
+        "title": "Daily Wellness Habits: 5 Ways to Plan Everyday Care",
+        "description": "Choose daily wellness habits through five areas of everyday care, with practical options for limited time, changing needs and support when symptoms persist."
       },
       {
-        "title": "Stop Failing at Wellness: The One Habit Rule That Actually Works",
-        "description": "Explore five daily wellness habits you can adapt to your needs, including rest, meals, movement, connection, and a realistic pace."
+        "title": "Daily Wellness Habits: 5 Ways to Plan Everyday Care",
+        "description": "Choose daily wellness habits through five areas of everyday care, with practical options for limited time, changing needs and support when symptoms persist."
       },
       {
-        "title": "Try These 5 Daily Wellness Habits Starting Tomorrow Morning",
-        "description": "Explore five daily wellness habits you can adapt to your needs, including rest, meals, movement, connection, and a realistic pace."
+        "title": "Daily Wellness Habits: 5 Ways to Plan Everyday Care",
+        "description": "Choose daily wellness habits through five areas of everyday care, with practical options for limited time, changing needs and support when symptoms persist."
       }
     ]
   },
