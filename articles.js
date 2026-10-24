@@ -3056,7 +3056,7 @@ const ARTICLES = [
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
     "read_time": "8",
-    "excerpt": "Explore seven practical healthy lifestyle tips for sleep, movement, food, stress, hydration, connection, and sustainable daily routines.",
+    "excerpt": "Explore seven practical healthy lifestyle tips for sleep, movement, food, stress, hydration, connection, and rest, with a flexible plan and a weekly review.",
     "image": "images/healthy-lifestyle-tips.jpg",
     "alt": "Woman sipping tea by window, practicing healthy lifestyle tips",
     "pins": [
