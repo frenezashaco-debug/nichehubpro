@@ -1152,26 +1152,26 @@ const ARTICLES = [
   },
   {
     "slug": "best-morning-habits-for-more-energy",
-    "title": "7 Morning Habits for More Steady Energy",
+    "title": "Best Morning Habits for More Energy: 7 Options for a Rushed Start",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Best morning habits for more energy start the night before, not when your alarm goes off. Most people waste their most powerful hours scrolling, rushing, a",
+    "read_time": "4",
+    "excerpt": "Explore the best morning habits for more energy as seven optional ways to address a rushed start, protect rest and seek support for persistent daily tiredness.",
     "image": "images/best-morning-habits-for-more-energy.jpg",
     "alt": "Woman standing in morning sunlight radiating natural energy",
     "pins": [
       {
-        "title": "5 Best Morning Habits for More Energy (Backed by Science)",
-        "description": "Stop feeling exhausted by 10am. These 5 best morning habits for more energy work because they align with your body's natural circadian rhythm. No coffee crash, no afternoon slump. Start with just one habit this week and watch your entire day transform. Simple, science-backed, and actually sustainable."
+        "title": "Best Morning Habits for More Energy: 7 Options for a Rushed Start",
+        "description": "Explore the best morning habits for more energy as seven optional ways to address a rushed start, protect rest and seek support for persistent daily tiredness."
       },
       {
-        "title": "Stop Wasting Your Morning Energy (Do This Instead)",
-        "description": "Most people sabotage their energy before 7am by scrolling, skipping breakfast, and avoiding sunlight. Your best morning habits for more energy take just 30 minutes total. Discover the exact sequence that transforms your focus, mood, and productivity for the entire day. No complicated routines required."
+        "title": "Best Morning Habits for More Energy: 7 Options for a Rushed Start",
+        "description": "Explore the best morning habits for more energy as seven optional ways to address a rushed start, protect rest and seek support for persistent daily tiredness."
       },
       {
-        "title": "Try This 30-Day Morning Energy Challenge (Results in Days)",
-        "description": "Real energy comes from honoring your body's biology, not grinding harder. These best morning habits for more energy show results by day 3 and transform your entire life by day 30. Learn which habit to start with first, how to build momentum, and how to make it stick forever."
+        "title": "Best Morning Habits for More Energy: 7 Options for a Rushed Start",
+        "description": "Explore the best morning habits for more energy as seven optional ways to address a rushed start, protect rest and seek support for persistent daily tiredness."
       }
     ]
   },
@@ -1976,26 +1976,26 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-daily-routine-checklist",
-    "title": "7 Healthy Daily Routine Checklist Ideas",
+    "title": "Healthy Daily Routine Checklist: 7 Prompts for Needs and Support",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Build a healthy daily routine checklist with seven flexible ideas for meals, movement, rest, connection, and planning your own day. Practical steps you can use",
+    "read_time": "4",
+    "excerpt": "Use a healthy daily routine checklist with seven prompts to plan everyday needs, share tasks and review practical barriers, without scoring your own health.",
     "image": "images/healthy-daily-routine-checklist.jpg",
     "alt": "Young woman reviewing healthy daily routine checklist at kitchen table",
     "pins": [
       {
-        "title": "7 Healthy Daily Routine Checklist Items That Transform Your Energy",
-        "description": "Build a healthy daily routine checklist with seven flexible ideas for meals, movement, rest, connection, and planning your own day. Practical steps you can use"
+        "title": "Healthy Daily Routine Checklist: 7 Prompts for Needs and Support",
+        "description": "Use a healthy daily routine checklist with seven prompts to plan everyday needs, share tasks and review practical barriers, without scoring your own health."
       },
       {
-        "title": "Stop Trying 10 Habits at Once - Use This Daily Routine Checklist Instead",
-        "description": "Build a healthy daily routine checklist with seven flexible ideas for meals, movement, rest, connection, and planning your own day. Practical steps you can use"
+        "title": "Healthy Daily Routine Checklist: 7 Prompts for Needs and Support",
+        "description": "Use a healthy daily routine checklist with seven prompts to plan everyday needs, share tasks and review practical barriers, without scoring your own health."
       },
       {
-        "title": "The Exact Daily Routine Checklist That Fixed My Energy (And Sleep)",
-        "description": "Build a healthy daily routine checklist with seven flexible ideas for meals, movement, rest, connection, and planning your own day. Practical steps you can use"
+        "title": "Healthy Daily Routine Checklist: 7 Prompts for Needs and Support",
+        "description": "Use a healthy daily routine checklist with seven prompts to plan everyday needs, share tasks and review practical barriers, without scoring your own health."
       }
     ]
   },
