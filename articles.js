@@ -1951,26 +1951,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-exercise-improves-mental-health",
-    "title": "5 Ways Exercise Can Support Mental Health",
+    "title": "How Exercise Improves Mental Health: 5 Questions for Choosing Activity",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Explore five ways exercise may support mental health, with low-pressure movement ideas and guidance on when to speak with a qualified professional.",
+    "read_time": "4",
+    "excerpt": "Explore how exercise improves mental health with five questions for choosing accessible activity, respecting health needs and keeping professional care in view.",
     "image": "images/how-exercise-improves-mental-health.jpg",
     "alt": "woman walking peacefully in park during morning exercise routine",
     "pins": [
       {
-        "title": "5 Ways Exercise Improves Mental Health: The Science-Backed Method",
-        "description": "Explore five ways exercise may support mental health, with low-pressure movement ideas and guidance on when to speak with a qualified professional."
+        "title": "How Exercise Improves Mental Health: 5 Questions for Choosing Activity",
+        "description": "Explore how exercise improves mental health with five questions for choosing accessible activity, respecting health needs and keeping professional care in view."
       },
       {
-        "title": "Stop Anxiety Before It Starts: How Exercise Rewires Your Brain",
-        "description": "Explore five ways exercise may support mental health, with low-pressure movement ideas and guidance on when to speak with a qualified professional."
+        "title": "How Exercise Improves Mental Health: 5 Questions for Choosing Activity",
+        "description": "Explore how exercise improves mental health with five questions for choosing accessible activity, respecting health needs and keeping professional care in view."
       },
       {
-        "title": "Try This 10-Minute Exercise Routine to Instantly Boost Your Mood",
-        "description": "Explore five ways exercise may support mental health, with low-pressure movement ideas and guidance on when to speak with a qualified professional."
+        "title": "How Exercise Improves Mental Health: 5 Questions for Choosing Activity",
+        "description": "Explore how exercise improves mental health with five questions for choosing accessible activity, respecting health needs and keeping professional care in view."
       }
     ]
   },
@@ -2901,26 +2901,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-discipline",
-    "title": "5 Ways to Build Discipline That Actually Stick (Without Willpower Burnout)",
+    "title": "How to Build Discipline: 5 Steps for a Workable Task Plan",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to build discipline every day with practical habits. Stop relying on willpower. Start small, stay consistent, transform your life.",
+    "read_time": "4",
+    "excerpt": "Learn how to build discipline with five steps for planning a specific task, reducing practical barriers and restarting after interruptions, without streaks.",
     "image": "images/how-to-build-discipline-clean-v2.jpg",
     "alt": "Woman journaling at desk, building daily discipline habit routine",
     "pins": [
       {
-        "title": "5 Ways to Build Discipline Without Relying on Willpower",
-        "description": "Learn how to build discipline every day with practical habits. Stop relying on willpower. Start small, stay consistent, transform your life."
+        "title": "How to Build Discipline: 5 Steps for a Workable Task Plan",
+        "description": "Learn how to build discipline with five steps for planning a specific task, reducing practical barriers and restarting after interruptions, without streaks."
       },
       {
-        "title": "Stop Trying to Build Discipline (Do This Instead)",
-        "description": "Learn how to build discipline every day with practical habits. Stop relying on willpower. Start small, stay consistent, transform your life."
+        "title": "How to Build Discipline: 5 Steps for a Workable Task Plan",
+        "description": "Learn how to build discipline with five steps for planning a specific task, reducing practical barriers and restarting after interruptions, without streaks."
       },
       {
-        "title": "The Two-Day Rule: Build Unstoppable Discipline Starting Today",
-        "description": "Learn how to build discipline every day with practical habits. Stop relying on willpower. Start small, stay consistent, transform your life."
+        "title": "How to Build Discipline: 5 Steps for a Workable Task Plan",
+        "description": "Learn how to build discipline with five steps for planning a specific task, reducing practical barriers and restarting after interruptions, without streaks."
       }
     ]
   },
