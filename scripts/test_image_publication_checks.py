@@ -42,6 +42,25 @@ class ImagePublicationChecks(unittest.TestCase):
         self.assertEqual(screen_publication_images(client, self.paths, 'worry'), self.approved())
         self.assertEqual(self.calls, 1)
 
+    def test_structured_tool_result_without_text(self):
+        def create(**kwargs):
+            self.assertEqual(kwargs['tool_choice']['name'], 'submit_image_screening')
+            self.assertEqual(kwargs['tools'][0]['input_schema']['required'], ['images'])
+            return SimpleNamespace(stop_reason='tool_use', content=[SimpleNamespace(
+                type='tool_use', name='submit_image_screening', input=self.approved())])
+        client = SimpleNamespace(messages=SimpleNamespace(create=create))
+        self.assertEqual(screen_publication_images(client, self.paths, 'worry'), self.approved())
+
+    def test_structured_rejection_and_incomplete_result_stay_blocked(self):
+        for result in [{'images': []}, {'images': [
+                {'index': i, 'approved': i != 2, 'issues': ['watermark'] if i == 2 else []}
+                for i in range(4)]}]:
+            client = SimpleNamespace(messages=SimpleNamespace(create=lambda **kwargs: SimpleNamespace(
+                stop_reason='tool_use', content=[SimpleNamespace(type='tool_use',
+                    name='submit_image_screening', input=result)])))
+            with self.assertRaises(ValueError):
+                screen_publication_images(client, self.paths, 'worry')
+
     def test_empty_response_retries_once(self):
         client = self.raw_client(['', json.dumps(self.approved())])
         self.assertEqual(screen_publication_images(client, self.paths, 'worry'), self.approved())

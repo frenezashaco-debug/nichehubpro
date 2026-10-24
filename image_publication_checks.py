@@ -10,6 +10,27 @@ import re
 from pathlib import Path
 from PIL import Image, ImageOps
 
+SCREENING_TOOL = {
+    'name': 'submit_image_screening',
+    'description': 'Submit the visual inspection results for all four supplied images.',
+    'input_schema': {
+        'type': 'object', 'additionalProperties': False,
+        'required': ['images'],
+        'properties': {'images': {
+            'type': 'array', 'minItems': 4, 'maxItems': 4,
+            'items': {
+                'type': 'object', 'additionalProperties': False,
+                'required': ['index', 'approved', 'issues'],
+                'properties': {
+                    'index': {'type': 'integer', 'enum': [0, 1, 2, 3]},
+                    'approved': {'type': 'boolean'},
+                    'issues': {'type': 'array', 'items': {'type': 'string'}},
+                },
+            },
+        }},
+    },
+}
+
 
 class VisualRejection(ValueError):
     def __init__(self, rejected):
@@ -64,9 +85,18 @@ def screen_publication_images(client, image_paths, topic):
     # Strip a complete Markdown wrapper only; do not invent or repair approvals.
     for attempt in range(2):
         response = client.messages.create(model='claude-sonnet-4-6', max_tokens=2400,
+            tools=[SCREENING_TOOL],
+            tool_choice={'type': 'tool', 'name': SCREENING_TOOL['name'],
+                         'disable_parallel_tool_use': True},
             messages=[{'role': 'user', 'content': content}])
         if getattr(response, 'stop_reason', None) in ('refusal', 'max_tokens'):
             raise ValueError('Visual screening refused or was truncated; publication remains blocked.')
+        calls = [block for block in response.content if getattr(block, 'type', None) == 'tool_use']
+        if calls:
+            if len(calls) != 1 or calls[0].name != SCREENING_TOOL['name']:
+                raise ValueError('Visual screening returned an unexpected tool result.')
+            result = calls[0].input
+            break
         raw = ''.join(block.text for block in response.content if getattr(block, 'type', None) == 'text').strip()
         wrapped = re.fullmatch(r'```(?:json)?\s*([\s\S]*?)\s*```', raw, re.I)
         if wrapped:
