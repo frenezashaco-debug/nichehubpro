@@ -1,12 +1,14 @@
-"""Check the three differentiated lifestyle guides after editorial changes."""
+"""Check the revised editorial batches, or article slugs supplied as arguments."""
 import html
 import json
 from pathlib import Path
 import re
+import sys
 import xml.etree.ElementTree as ET
 
 root = Path(__file__).resolve().parents[1]
-slugs = ('healthy-living-tips', 'healthy-daily-habits', 'simple-morning-habits')
+slugs = sys.argv[1:] or ('healthy-living-tips', 'healthy-daily-habits', 'simple-morning-habits',
+                        'how-to-stay-calm-under-pressure', 'improve-daily-routine')
 catalog_source = (root / 'articles.js').read_text(encoding='utf-8')
 catalog = json.loads(catalog_source[catalog_source.index('['):catalog_source.rfind(']') + 1])
 sitemap = ET.parse(root / 'sitemap.xml').getroot()
@@ -30,7 +32,9 @@ for slug in slugs:
     headings = re.findall(r'<h2>(.*?)</h2>', main)
     assert len(headings) == 5 and all(h.endswith('?') for h in headings)
     assert main.count('<ul>') == 5
-    assert len(re.findall(r'<strong>[1-7]\. ', main)) == 7
+    title = re.search(r'<h1[^>]*>(.*?)</h1>', source, re.S)[1]
+    expected_options = int(re.search(r'\b(\d+)\b', title)[1])
+    assert len(re.findall(r'<strong>\d+\. ', main)) == expected_options
     links = re.findall(r'href="(/articles/[^"#]+)"', main)
     assert len(links) == len(set(links)) == 3
     for link in links:

@@ -2776,26 +2776,26 @@ const ARTICLES = [
   },
   {
     "slug": "improve-daily-routine",
-    "title": "5 Ways to Improve Daily Routine and Finally Feel Like Yourself Again",
+    "title": "Improve Daily Routine: 5 Checks for a Workable Day",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to improve your daily routine with practical habits that reduce friction, support your energy, and help you build a steadier, more satisfying day.",
+    "read_time": "4",
+    "excerpt": "Explore five ways to improve daily routine by reviewing commitments, choosing a workable cue and testing changes around your responsibilities and care needs.",
     "image": "images/improve-daily-routine.jpg",
     "alt": "Woman in cozy sweater sipping tea while planning improve daily routine",
     "pins": [
       {
-        "title": "5 Ways to Improve Daily Routine and Finally Stick With It",
-        "description": "Learn how to improve your daily routine with practical habits that reduce friction, support your energy, and help you build a steadier, more satisfying day."
+        "title": "Improve Daily Routine: 5 Checks for a Workable Day",
+        "description": "Explore five ways to improve daily routine by reviewing commitments, choosing a workable cue and testing changes around your responsibilities and care needs."
       },
       {
-        "title": "Stop Fighting Your Routine. Design One That Works Instead.",
-        "description": "Learn how to improve your daily routine with practical habits that reduce friction, support your energy, and help you build a steadier, more satisfying day."
+        "title": "Improve Daily Routine: 5 Checks for a Workable Day",
+        "description": "Explore five ways to improve daily routine by reviewing commitments, choosing a workable cue and testing changes around your responsibilities and care needs."
       },
       {
-        "title": "The 2-Minute Method to Improve Daily Routine This Week",
-        "description": "Learn how to improve your daily routine with practical habits that reduce friction, support your energy, and help you build a steadier, more satisfying day."
+        "title": "Improve Daily Routine: 5 Checks for a Workable Day",
+        "description": "Explore five ways to improve daily routine by reviewing commitments, choosing a workable cue and testing changes around your responsibilities and care needs."
       }
     ]
   },
@@ -3226,26 +3226,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stay-calm-under-pressure",
-    "title": "5 Ways to Respond to Pressure More Deliberately",
+    "title": "How to Stay Calm Under Pressure: 5 Practical Responses",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn 5 proven stress control techniques to stay calm under pressure. Real strategies that work when deadlines hit and anxiety rises. Master your response today.",
+    "read_time": "4",
+    "excerpt": "Learn how to stay calm under pressure with five practical response options, clear limits, comfortable pauses and ways to ask for support when demands increase.",
     "image": "images/how-to-stay-calm-under-pressure.jpg",
     "alt": "woman practicing calm breathing techniques at her desk under pressure",
     "pins": [
       {
-        "title": "How to Stay Calm Under Pressure: 5 Proven Stress Control Techniques That Work",
-        "description": "Learn 5 proven stress control techniques to stay calm under pressure. Real strategies that work when deadlines hit and anxiety rises. Master your response today."
+        "title": "How to Stay Calm Under Pressure: 5 Practical Responses",
+        "description": "Learn how to stay calm under pressure with five practical response options, clear limits, comfortable pauses and ways to ask for support when demands increase."
       },
       {
-        "title": "Stop Panic Before It Starts: Stay Calm Under Pressure Daily",
-        "description": "Learn 5 proven stress control techniques to stay calm under pressure. Real strategies that work when deadlines hit and anxiety rises. Master your response today."
+        "title": "How to Stay Calm Under Pressure: 5 Practical Responses",
+        "description": "Learn how to stay calm under pressure with five practical response options, clear limits, comfortable pauses and ways to ask for support when demands increase."
       },
       {
-        "title": "5-4-3-2-1 Grounding Technique: Your Instant Calm Hack for High Pressure Situations",
-        "description": "Learn 5 proven stress control techniques to stay calm under pressure. Real strategies that work when deadlines hit and anxiety rises. Master your response today."
+        "title": "How to Stay Calm Under Pressure: 5 Practical Responses",
+        "description": "Learn how to stay calm under pressure with five practical response options, clear limits, comfortable pauses and ways to ask for support when demands increase."
       }
     ]
   },
