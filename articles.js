@@ -1502,26 +1502,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-control-your-thoughts",
-    "title": "7 Ways to Control Your Thoughts Without Fighting Your Mind",
+    "title": "How to Control Your Thoughts: 5 Choices About Your Next Response",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to control your thoughts without fighting them, using grounding, defusion, and routines that support calmer decision-making in daily life with care.",
+    "read_time": "4",
+    "excerpt": "Learn how to control your thoughts as choosing a useful response, with five options for checking a situation and seeking support without forcing mental silence.",
     "image": "images/how-to-control-your-thoughts.jpg",
     "alt": "person managing intrusive thoughts peacefully at desk morning",
     "pins": [
       {
-        "title": "How to Control Your Thoughts: 5 Proven Techniques for Anxiety Relief",
-        "description": "Learn how to control your thoughts without fighting them, using grounding, defusion, and routines that support calmer decision-making in daily life with care."
+        "title": "How to Control Your Thoughts: 5 Choices About Your Next Response",
+        "description": "Learn how to control your thoughts as choosing a useful response, with five options for checking a situation and seeking support without forcing mental silence."
       },
       {
-        "title": "Stop Intrusive Thoughts: Why You Can't Control Them (And What Works)",
-        "description": "Learn how to control your thoughts without fighting them, using grounding, defusion, and routines that support calmer decision-making in daily life with care."
+        "title": "How to Control Your Thoughts: 5 Choices About Your Next Response",
+        "description": "Learn how to control your thoughts as choosing a useful response, with five options for checking a situation and seeking support without forcing mental silence."
       },
       {
-        "title": "5 Daily Habits to Master Thought Control: Your Mental Peace Starts Here",
-        "description": "Learn how to control your thoughts without fighting them, using grounding, defusion, and routines that support calmer decision-making in daily life with care."
+        "title": "How to Control Your Thoughts: 5 Choices About Your Next Response",
+        "description": "Learn how to control your thoughts as choosing a useful response, with five options for checking a situation and seeking support without forcing mental silence."
       }
     ]
   },
@@ -1676,26 +1676,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-self-sabotaging",
-    "title": "7 Ways to Stop Self-Sabotaging Before You Block Your Progress",
+    "title": "How to Stop Self-Sabotaging: 5 Questions About a Repeated Setback",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to stop self-sabotaging by spotting harmful patterns, testing safer actions, and getting support when fear or self-doubt block progress in daily life.",
+    "read_time": "4",
+    "excerpt": "Learn how to stop self sabotaging by examining a repeated setback with five questions about actions, barriers and support, without assuming a hidden root cause.",
     "image": "images/how-to-stop-self-sabotaging.jpg",
     "alt": "Young woman sitting at desk looking uncertain about success and progress",
     "pins": [
       {
-        "title": "How to Stop Self Sabotaging: 5 Science-Backed Methods That Actually Work",
-        "description": "Learn how to stop self-sabotaging by spotting harmful patterns, testing safer actions, and getting support when fear or self-doubt block progress in daily life."
+        "title": "How to Stop Self-Sabotaging: 5 Questions About a Repeated Setback",
+        "description": "Learn how to stop self sabotaging by examining a repeated setback with five questions about actions, barriers and support, without assuming a hidden root cause."
       },
       {
-        "title": "Stop Ruining Your Success: Why You Self Sabotage and How to Fix It",
-        "description": "Learn how to stop self-sabotaging by spotting harmful patterns, testing safer actions, and getting support when fear or self-doubt block progress in daily life."
+        "title": "How to Stop Self-Sabotaging: 5 Questions About a Repeated Setback",
+        "description": "Learn how to stop self sabotaging by examining a repeated setback with five questions about actions, barriers and support, without assuming a hidden root cause."
       },
       {
-        "title": "5 Daily Habits to Prevent Self Sabotage and Unlock Your Real Potential",
-        "description": "Learn how to stop self-sabotaging by spotting harmful patterns, testing safer actions, and getting support when fear or self-doubt block progress in daily life."
+        "title": "How to Stop Self-Sabotaging: 5 Questions About a Repeated Setback",
+        "description": "Learn how to stop self sabotaging by examining a repeated setback with five questions about actions, barriers and support, without assuming a hidden root cause."
       }
     ]
   },
