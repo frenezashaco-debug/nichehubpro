@@ -2051,26 +2051,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-deal-with-stress-at-work",
-    "title": "5 Ways to Deal with Stress at Work: Your Daily Escape Plan",
+    "title": "How to Deal with Stress at Work: 5 Steps for a Support Conversation",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to deal with stress at work using five practical strategies, healthier boundaries, and guidance for persistent anxiety, fatigue, or sleep problems.",
+    "read_time": "4",
+    "excerpt": "Learn how to deal with stress at work through five steps for discussing demands, resources and support, with practical examples and limits of self-help advice.",
     "image": "images/how-to-deal-with-stress-at-work.jpg",
     "alt": "Woman taking a calming breath at her office desk during work stress",
     "pins": [
       {
-        "title": "5 Ways to Deal with Stress at Work Without Quitting",
-        "description": "Learn how to deal with stress at work using five practical strategies, healthier boundaries, and guidance for persistent anxiety, fatigue, or sleep problems."
+        "title": "How to Deal with Stress at Work: 5 Steps for a Support Conversation",
+        "description": "Learn how to deal with stress at work through five steps for discussing demands, resources and support, with practical examples and limits of self-help advice."
       },
       {
-        "title": "Stop Work Stress From Destroying Your Sleep and Health",
-        "description": "Learn how to deal with stress at work using five practical strategies, healthier boundaries, and guidance for persistent anxiety, fatigue, or sleep problems."
+        "title": "How to Deal with Stress at Work: 5 Steps for a Support Conversation",
+        "description": "Learn how to deal with stress at work through five steps for discussing demands, resources and support, with practical examples and limits of self-help advice."
       },
       {
-        "title": "How to Stay Calm at Work When Everything Feels Like a Crisis",
-        "description": "Learn how to deal with stress at work using five practical strategies, healthier boundaries, and guidance for persistent anxiety, fatigue, or sleep problems."
+        "title": "How to Deal with Stress at Work: 5 Steps for a Support Conversation",
+        "description": "Learn how to deal with stress at work through five steps for discussing demands, resources and support, with practical examples and limits of self-help advice."
       }
     ]
   },
@@ -2276,26 +2276,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-improve-energy-naturally",
-    "title": "5 Ways to Improve Energy Naturally Without Relying on Caffeine",
+    "title": "How to Improve Energy Naturally: 5 Checks Before Changing Habits",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to improve energy naturally with science-backed tips. Boost vitality without caffeine, sugar crashes, or exhaustion. Start today.",
+    "read_time": "4",
+    "excerpt": "Learn how to improve energy naturally with five checks on tiredness, everyday demands and available support, plus guidance on when to seek medical assessment.",
     "image": "images/how-to-improve-energy-naturally.jpg",
     "alt": "Young woman holding water by window, feeling energized naturally",
     "pins": [
       {
-        "title": "5 Ways to Improve Energy Naturally Without Caffeine Crashes",
-        "description": "Learn how to improve energy naturally with science-backed tips. Boost vitality without caffeine, sugar crashes, or exhaustion. Start today."
+        "title": "How to Improve Energy Naturally: 5 Checks Before Changing Habits",
+        "description": "Learn how to improve energy naturally with five checks on tiredness, everyday demands and available support, plus guidance on when to seek medical assessment."
       },
       {
-        "title": "Stop the 3 PM Energy Crash: 5 Natural Methods That Work",
-        "description": "Learn how to improve energy naturally with science-backed tips. Boost vitality without caffeine, sugar crashes, or exhaustion. Start today."
+        "title": "How to Improve Energy Naturally: 5 Checks Before Changing Habits",
+        "description": "Learn how to improve energy naturally with five checks on tiredness, everyday demands and available support, plus guidance on when to seek medical assessment."
       },
       {
-        "title": "How to Get More Energy Without Caffeine: Proven Daily Habits",
-        "description": "Learn how to improve energy naturally with science-backed tips. Boost vitality without caffeine, sugar crashes, or exhaustion. Start today."
+        "title": "How to Improve Energy Naturally: 5 Checks Before Changing Habits",
+        "description": "Learn how to improve energy naturally with five checks on tiredness, everyday demands and available support, plus guidance on when to seek medical assessment."
       }
     ]
   },
