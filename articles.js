@@ -877,26 +877,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-track-progress-toward-goals",
-    "title": "7 Ways to Track Progress Toward Goals That Actually Keep You Motivated",
+    "title": "How to Track Progress Toward Goals: 7 Fields for a Useful Record",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "How to track progress toward goals is the difference between dreams that fade and wins you can actually feel. Most people set goals but never check them ag",
+    "read_time": "4",
+    "excerpt": "Learn how to track progress toward goals with seven fields for actions, outcomes and barriers, so each review informs a decision without requiring streaks.",
     "image": "images/how-to-track-progress-toward-goals.jpg",
     "alt": "woman writing in notebook while tracking progress at desk",
     "pins": [
       {
-        "title": "How to Track Progress Toward Goals Without Losing Your Mind",
-        "description": "Stop abandoning tracking systems. Learn the one simple method that actually works - no apps, no spreadsheets, just honest daily recording and weekly reviews. Discover the science behind why tracking transforms vague goals into real wins. Small daily actions, big weekly wins."
+        "title": "How to Track Progress Toward Goals: 7 Fields for a Useful Record",
+        "description": "Learn how to track progress toward goals with seven fields for actions, outcomes and barriers, so each review informs a decision without requiring streaks."
       },
       {
-        "title": "Stop Failing Your Goals: Track This One Metric Instead",
-        "description": "Most people track the wrong thing. Here's exactly what to measure to prove real progress on your goals. One metric, one system, one week to see the difference. Turn invisible effort into visible proof that you're actually moving forward."
+        "title": "How to Track Progress Toward Goals: 7 Fields for a Useful Record",
+        "description": "Learn how to track progress toward goals with seven fields for actions, outcomes and barriers, so each review informs a decision without requiring streaks."
       },
       {
-        "title": "The 2-Minute Goal Tracking System That Never Fails",
-        "description": "Your tracking system is too complicated. That's why you quit. Learn how to measure progress with a method so simple you'll actually stick with it. Paper, apps, or spreadsheets - choose the one that matches your brain. Real progress starts now."
+        "title": "How to Track Progress Toward Goals: 7 Fields for a Useful Record",
+        "description": "Learn how to track progress toward goals with seven fields for actions, outcomes and barriers, so each review informs a decision without requiring streaks."
       }
     ]
   },
@@ -2551,26 +2551,26 @@ const ARTICLES = [
   },
   {
     "slug": "deep-work-vs-multitasking",
-    "title": "Deep Work vs Multitasking: 5 Differences to Consider",
+    "title": "Deep Work vs Multitasking: 5 Choices for a Demanding Task",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Deep work vs multitasking: learn how single-tasking can support focus and clarity. Build attention blocks and protect your energy from constant switching today.",
+    "read_time": "4",
+    "excerpt": "Compare deep work vs multitasking through five practical choices about task demands, interruptions and handoffs, without universal claims about time savings.",
     "image": "images/deep-work-vs-multitasking.jpg",
     "alt": "Woman focusing intently at desk during deep work session",
     "pins": [
       {
-        "title": "Deep Work vs Multitasking: Why Your Brain Needs Single Tasking",
-        "description": "Deep work vs multitasking: learn how single-tasking can support focus and clarity. Build attention blocks and protect your energy from constant switching today."
+        "title": "Deep Work vs Multitasking: 5 Choices for a Demanding Task",
+        "description": "Compare deep work vs multitasking through five practical choices about task demands, interruptions and handoffs, without universal claims about time savings."
       },
       {
-        "title": "Stop Multitasking: Why Deep Work Actually Makes You More Productive",
-        "description": "Deep work vs multitasking: learn how single-tasking can support focus and clarity. Build attention blocks and protect your energy from constant switching today."
+        "title": "Deep Work vs Multitasking: 5 Choices for a Demanding Task",
+        "description": "Compare deep work vs multitasking through five practical choices about task demands, interruptions and handoffs, without universal claims about time savings."
       },
       {
-        "title": "How to Build a Deep Work Habit That Lasts (No Willpower Required)",
-        "description": "Deep work vs multitasking: learn how single-tasking can support focus and clarity. Build attention blocks and protect your energy from constant switching today."
+        "title": "Deep Work vs Multitasking: 5 Choices for a Demanding Task",
+        "description": "Compare deep work vs multitasking through five practical choices about task demands, interruptions and handoffs, without universal claims about time savings."
       }
     ]
   },
