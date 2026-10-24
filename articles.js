@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-gut-health-influences-your-mood-and-energy",
+    "title": "How Gut Health Influences Your Mood and Energy: 5 Practical Checks",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Oct 2026",
+    "read_time": "8",
+    "excerpt": "How gut health influences your mood and energy is something most people never think about until something feels off. You might be sleeping enough,...",
+    "image": "images/how-gut-health-influences-your-mood-and-energy.jpg",
+    "alt": "Man preparing vegetables in kitchen supporting gut health mood",
+    "pins": [
+      {
+        "title": "How Gut Health Influences Your Mood and Energy: 5 Daily Checks",
+        "description": "Did you know how gut health influences your mood and energy levels can be tracked with simple daily habits? These 5 practical checks help you spot patterns and support your gut brain connection mood without overhauling your whole routine. Save this and try Check 1 today."
+      },
+      {
+        "title": "Stop Ignoring These Signs Your Gut Is Affecting Your Mood",
+        "description": "Feeling foggy, flat, or tired for no clear reason? The gut brain connection mood link may be worth exploring. Small shifts in diet, sleep, and movement can support how your gut health influences your mood and energy over time. Pin this as a reminder to start small."
+      },
+      {
+        "title": "Try This Simple Gut and Mood Check-In Every Day This Week",
+        "description": "A five-point daily check-in can help you see how gut health influences your mood and energy in your own life. Track hydration, fibre, movement, stress, and sleep for just seven days. The patterns that emerge are often more useful than any supplement."
+      }
+    ]
+  },
+  {
     "slug": "how-willpower-works-and-why-it-runs-out",
     "title": "How Willpower Works and Why It Runs Out: 5 Practical Checks",
     "category": "Productivity",
