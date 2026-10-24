@@ -53,6 +53,8 @@ jobs:
           python scripts/test_paragraph_repair.py
           python scripts/test_article_auto_repair.py
           python scripts/test_distribution_payload.py
+          python scripts/test_publication_recovery.py
+          python scripts/test_wait_pages_build.py
 
       - name: Create config.py from secrets
         env:
@@ -74,7 +76,7 @@ jobs:
       - name: Generate and quality-check next article
         env:
           NICHEHUB_AUTO_PUBLISH: "1"
-        run: python batch_24weeks.py
+        run: python -u publication_recovery.py
 
       - name: Preserve rejected draft for diagnosis
         if: failure()
@@ -97,8 +99,19 @@ jobs:
             exit 0
           fi
           git commit -m "Auto-publish: daily article $(date +'%Y-%m-%d')"
-          git pull --rebase origin main
-          git push
+          pushed=false
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then
+              pushed=true
+              break
+            fi
+            sleep $((attempt * 10))
+          done
+          if [ "$pushed" != true ]; then
+            echo "Publication push failed after three attempts."
+            exit 1
+          fi
           echo "published=true" >> "$GITHUB_OUTPUT"
 
       - name: Deploy publication to GitHub Pages

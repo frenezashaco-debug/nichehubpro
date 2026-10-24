@@ -4,6 +4,8 @@ import subprocess
 import time
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 
 def wait_for_build(session, base, sha, attempts=60, sleep=time.sleep):
@@ -27,6 +29,9 @@ def main():
     base = 'https://api.github.com/repos/' + os.environ['GITHUB_REPOSITORY'] + '/pages'
     sha = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
     session = requests.Session()
+    session.mount('https://', HTTPAdapter(max_retries=Retry(
+        total=4, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=['GET', 'POST'], respect_retry_after_header=True)))
     session.headers.update({'Authorization': 'Bearer ' + os.environ['GH_TOKEN'],
                             'Accept': 'application/vnd.github+json'})
     response = session.get(base, timeout=30)

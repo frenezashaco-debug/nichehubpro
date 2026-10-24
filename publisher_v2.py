@@ -1127,6 +1127,14 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_image
             reviewed = json.load(draft_file)
         return publish_reviewed_draft(reviewed, primary_kw, category, skip_images, cornerstone)
 
+    if auto_publish:
+        from publication_recovery import load_checkpoint
+        cached = load_checkpoint(BASE_DIR, primary_kw, category,
+            lambda candidate: validate_article_quality(candidate, primary_kw, cornerstone=cornerstone))
+        if cached and cached.get('slug') == slug(primary_kw):
+            print('Resuming validated article text; quality checks passed again.')
+            return publish_reviewed_draft(cached, primary_kw, category, skip_images, cornerstone)
+
     # Let the SDK select its compatible HTTP transport with TLS validation.
     client = anthropic.Anthropic(api_key=API_KEY, timeout=180.0)
 
@@ -1211,6 +1219,8 @@ def generate_article(primary_kw, secondary_kw, longtail_kw, category, skip_image
 
     if auto_publish:
         data['editorial_status'] = 'automated_checks_passed'
+        from publication_recovery import save_checkpoint
+        save_checkpoint(BASE_DIR, primary_kw, category, data)
         return publish_reviewed_draft(data, primary_kw, category, skip_images, cornerstone)
     return save_editorial_draft(data, primary_kw, cornerstone=cornerstone)
 
