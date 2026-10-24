@@ -1407,21 +1407,21 @@ const ARTICLES = [
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
     "read_time": "8",
-    "excerpt": "Explore seven simple morning habits, including light, food, movement, and planning, then adapt the ideas to your own schedule. Practical steps you can use today",
+    "excerpt": "Try seven simple morning habits to prepare for your first tasks after waking, with flexible options for busy days, shift work and changing responsibilities.",
     "image": "images/simple-morning-habits.jpg",
     "alt": "Young woman drinking water in morning light, establishing simple morning habits",
     "pins": [
       {
-        "title": "5 Simple Morning Habits That End Anxiety Before Noon",
-        "description": "Explore seven simple morning habits, including light, food, movement, and planning, then adapt the ideas to your own schedule. Practical steps you can use today"
+        "title": "7 Simple Morning Habits to Try",
+        "description": "Try seven simple morning habits to prepare for your first tasks after waking, with flexible options for busy days, shift work and changing responsibilities."
       },
       {
-        "title": "Stop Waking Up Stressed: The Morning Routine That Actually Works",
-        "description": "Explore seven simple morning habits, including light, food, movement, and planning, then adapt the ideas to your own schedule. Practical steps you can use today"
+        "title": "7 Simple Morning Habits to Try",
+        "description": "Try seven simple morning habits to prepare for your first tasks after waking, with flexible options for busy days, shift work and changing responsibilities."
       },
       {
-        "title": "Try These 5 Simple Morning Habits for Energy All Day Long",
-        "description": "Explore seven simple morning habits, including light, food, movement, and planning, then adapt the ideas to your own schedule. Practical steps you can use today"
+        "title": "7 Simple Morning Habits to Try",
+        "description": "Try seven simple morning habits to prepare for your first tasks after waking, with flexible options for busy days, shift work and changing responsibilities."
       }
     ]
   },
@@ -2706,21 +2706,21 @@ const ARTICLES = [
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
     "read_time": "8",
-    "excerpt": "Learn seven practical healthy living tips for sleep, movement, food, hydration, and stress, with simple ways to adapt them safely to a busy routine each day.",
+    "excerpt": "Use seven healthy living tips to plan food, rest, movement and care around real constraints, with practical fallback options for busy or unpredictable days.",
     "image": "images/healthy-living-tips.jpg",
     "alt": "Woman holding tea with peaceful expression in bright morning kitchen",
     "pins": [
       {
-        "title": "7 Healthy Living Tips That Actually Work (Start Today)",
-        "description": "Learn seven practical healthy living tips for sleep, movement, food, hydration, and stress, with simple ways to adapt them safely to a busy routine each day."
+        "title": "7 Healthy Living Tips for a Busy Routine",
+        "description": "Use seven healthy living tips to plan food, rest, movement and care around real constraints, with practical fallback options for busy or unpredictable days."
       },
       {
-        "title": "Stop Struggling: The Real Secret to Healthy Living Tips",
-        "description": "Learn seven practical healthy living tips for sleep, movement, food, hydration, and stress, with simple ways to adapt them safely to a busy routine each day."
+        "title": "7 Healthy Living Tips for a Busy Routine",
+        "description": "Use seven healthy living tips to plan food, rest, movement and care around real constraints, with practical fallback options for busy or unpredictable days."
       },
       {
-        "title": "Try This: Your 30-Day Healthy Living Tips Challenge",
-        "description": "Learn seven practical healthy living tips for sleep, movement, food, hydration, and stress, with simple ways to adapt them safely to a busy routine each day."
+        "title": "7 Healthy Living Tips for a Busy Routine",
+        "description": "Use seven healthy living tips to plan food, rest, movement and care around real constraints, with practical fallback options for busy or unpredictable days."
       }
     ]
   },
@@ -3206,21 +3206,21 @@ const ARTICLES = [
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
     "read_time": "8",
-    "excerpt": "Explore seven healthy daily habits you can adapt to your needs, including meals, movement, rest, connection, and a manageable routine.",
+    "excerpt": "Build healthy daily habits with seven planning steps: choose one action, set a cue, prepare, adapt and review what fits life without chasing a perfect streak.",
     "image": "images/healthy-daily-habits.jpg",
     "alt": "woman drinking water morning healthy daily habit",
     "pins": [
       {
-        "title": "7 Healthy Daily Habits That Actually Stick (Not Motivation Required)",
-        "description": "Explore seven healthy daily habits you can adapt to your needs, including meals, movement, rest, connection, and a manageable routine."
+        "title": "7 Healthy Daily Habits to Build Gradually",
+        "description": "Build healthy daily habits with seven planning steps: choose one action, set a cue, prepare, adapt and review what fits life without chasing a perfect streak."
       },
       {
-        "title": "Stop Waking Up Exhausted: The Daily Habits You're Missing",
-        "description": "Explore seven healthy daily habits you can adapt to your needs, including meals, movement, rest, connection, and a manageable routine."
+        "title": "7 Healthy Daily Habits to Build Gradually",
+        "description": "Build healthy daily habits with seven planning steps: choose one action, set a cue, prepare, adapt and review what fits life without chasing a perfect streak."
       },
       {
-        "title": "Try This 7-Day Healthy Habit Challenge (Anxiety Edition)",
-        "description": "Explore seven healthy daily habits you can adapt to your needs, including meals, movement, rest, connection, and a manageable routine."
+        "title": "7 Healthy Daily Habits to Build Gradually",
+        "description": "Build healthy daily habits with seven planning steps: choose one action, set a cue, prepare, adapt and review what fits life without chasing a perfect streak."
       }
     ]
   },

@@ -92,3 +92,15 @@ This improves editorial reliability, not proof of future indexing, traffic or Ad
 Deployment verification: Pages run 40046153831 succeeded for f298495. A fresh cache-miss request to the revised article returned HTTP 200 and the corrected copy. The canonical URL still returned the old copy with CF-Cache-Status HIT. Cloudflare authentication expired and requires the user's password, so the canonical URL purge and subsequent recrawl request remain pending. Purge https://nichehubpro.com/articles/healthy-lifestyle-tips.html, https://nichehubpro.com/articles.js and https://nichehubpro.com/sitemap.xml, then verify the canonical copy before requesting indexing.
 
 AdSense account inspected today still shows Needs attention / Low value content and ads.txt Not found, with the displayed last-updated date 1 June 2026. Public ads.txt delivery does not mean AdSense has refreshed its account status. No new AdSense review was submitted.
+
+## Cache follow-up completed
+
+After the owner reconnected to the correct Cloudflare account, submitted a successful exact-URL purge for healthy-lifestyle-tips.html, articles.js, api/articles.json and sitemap.xml. No global purge or cache setting change was made. The canonical article now returns HTTP 200 with the final corrected copy, without the old one-week result promise; the first verification returned CF-Cache-Status MISS and Age 0. The public registry contains the revised excerpt and the public sitemap reports 24 October 2026 as this article's lastmod. The earlier cache/authentication blockers above are resolved.
+
+Search Console then confirmed "Indexing requested" for this article and stated it was added to a priority crawl queue. This confirms request acceptance, not completion of a new crawl or a ranking change. Proof: healthy-lifestyle-indexing-requested.png.
+
+## Three-guide editorial batch
+
+Revised healthy-living-tips (constraints and seven care areas), healthy-daily-habits (seven steps to maintain one action), and simple-morning-habits (seven options for the transition after waking). Removed unsupported symptom attribution, universal water/meal/clock prescriptions, fixed improvement deadlines, neurological promises and invented outcome narratives. Each now has one explicitly fictional two-paragraph planning example, five question sections, seven numbered items, three distinct contextual article links and five matching visible/schema FAQs. Preserved original publication dates, canonical URLs, cover and three section images. Removed the oversized repeated related-link blocks from these pages.
+
+Checked NIDDK behaviour-change guidance and NHS fatigue and sleep guidance. Sources are linked with their scope; these checklists are not presented as tested treatments. Synced catalog excerpts and pin metadata, meta descriptions (156/158/156 characters), modification dates and sitemap lastmod. No Make scenario was changed. Verification: python scripts/check_editorial_batch.py passed for all three pages. Publication and canonical cache verification follow deployment; no AdSense review submitted in this batch.
