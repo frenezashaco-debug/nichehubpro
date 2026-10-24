@@ -3026,26 +3026,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-worrying-about-the-future",
-    "title": "7 Ways to Stop Worrying About the Future: Take Back Control Today",
+    "title": "How to Stop Worrying About the Future: 7 Planning Questions",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to stop worrying about the future with 7 practical techniques. Break free from anxiety and build a calmer, more peaceful mindset starting now.",
+    "read_time": "4",
+    "excerpt": "Learn how to stop worrying about the future with seven useful questions that separate practical problems from uncertainty, with options for support and review.",
     "image": "images/how-to-stop-worrying-about-the-future.jpg",
     "alt": "Woman peacefully looking out window, releasing future worry",
     "pins": [
       {
-        "title": "7 Ways to Stop Worrying About the Future and Reclaim Your Peace",
-        "description": "Learn how to stop worrying about the future with 7 practical techniques. Break free from anxiety and build a calmer, more peaceful mindset starting now."
+        "title": "How to Stop Worrying About the Future: 7 Planning Questions",
+        "description": "Learn how to stop worrying about the future with seven useful questions that separate practical problems from uncertainty, with options for support and review."
       },
       {
-        "title": "Stop Future Worry Before It Controls Your Life: 7 Expert Methods",
-        "description": "Learn how to stop worrying about the future with 7 practical techniques. Break free from anxiety and build a calmer, more peaceful mindset starting now."
+        "title": "How to Stop Worrying About the Future: 7 Planning Questions",
+        "description": "Learn how to stop worrying about the future with seven useful questions that separate practical problems from uncertainty, with options for support and review."
       },
       {
-        "title": "How to Stop Worrying About Things You Cannot Control: Proven Habits",
-        "description": "Learn how to stop worrying about the future with 7 practical techniques. Break free from anxiety and build a calmer, more peaceful mindset starting now."
+        "title": "How to Stop Worrying About the Future: 7 Planning Questions",
+        "description": "Learn how to stop worrying about the future with seven useful questions that separate practical problems from uncertainty, with options for support and review."
       }
     ]
   },
@@ -3101,26 +3101,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-confidence",
-    "title": "5 Ways to Build Confidence Through Small Actions",
+    "title": "How to Build Confidence: 5 Steps for a Specific Skill",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to build confidence: prepare a manageable task, practise with feedback, and review self-doubt using practical steps that fit your circumstances and support.",
+    "read_time": "4",
+    "excerpt": "Explore how to build confidence in one specific skill through realistic preparation, manageable practice and useful feedback, without a fixed result timetable.",
     "image": "images/how-to-build-confidence.jpg",
     "alt": "woman holding coffee in morning light with confident expression building self-confidence",
     "pins": [
       {
-        "title": "How to Build Confidence Fast: 5 Science-Backed Methods That Work",
-        "description": "How to build confidence: prepare a manageable task, practise with feedback, and review self-doubt using practical steps that fit your circumstances and support."
+        "title": "How to Build Confidence: 5 Steps for a Specific Skill",
+        "description": "Explore how to build confidence in one specific skill through realistic preparation, manageable practice and useful feedback, without a fixed result timetable."
       },
       {
-        "title": "Stop Letting Self-Doubt Control You: Build Real Confidence Daily",
-        "description": "How to build confidence: prepare a manageable task, practise with feedback, and review self-doubt using practical steps that fit your circumstances and support."
+        "title": "How to Build Confidence: 5 Steps for a Specific Skill",
+        "description": "Explore how to build confidence in one specific skill through realistic preparation, manageable practice and useful feedback, without a fixed result timetable."
       },
       {
-        "title": "5 Daily Habits to Build Self-Confidence That Actually Stick",
-        "description": "How to build confidence: prepare a manageable task, practise with feedback, and review self-doubt using practical steps that fit your circumstances and support."
+        "title": "How to Build Confidence: 5 Steps for a Specific Skill",
+        "description": "Explore how to build confidence in one specific skill through realistic preparation, manageable practice and useful feedback, without a fixed result timetable."
       }
     ]
   },
@@ -3676,26 +3676,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-negative-thoughts",
-    "title": "5 Ways to Stop Negative Thoughts Before They Spiral Out of Control",
+    "title": "How to Stop Negative Thoughts: 5 Ways to Respond",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to stop negative thoughts: notice recurring worries, try a balanced thought record, and choose practical next steps, with guidance on when to seek support.",
+    "read_time": "4",
+    "excerpt": "Learn how to stop negative thoughts by examining one recurring interpretation, considering evidence and choosing a practical response, with self-help limits.",
     "image": "images/how-to-stop-negative-thoughts.jpg",
     "alt": "Woman pausing during journaling to interrupt negative thoughts with relief",
     "pins": [
       {
-        "title": "How to Stop Negative Thoughts: 5 Science-Backed Techniques",
-        "description": "How to stop negative thoughts: notice recurring worries, try a balanced thought record, and choose practical next steps, with guidance on when to seek support."
+        "title": "How to Stop Negative Thoughts: 5 Ways to Respond",
+        "description": "Learn how to stop negative thoughts by examining one recurring interpretation, considering evidence and choosing a practical response, with self-help limits."
       },
       {
-        "title": "Stop Negative Thinking Spirals Before They Start (Do This Today)",
-        "description": "How to stop negative thoughts: notice recurring worries, try a balanced thought record, and choose practical next steps, with guidance on when to seek support."
+        "title": "How to Stop Negative Thoughts: 5 Ways to Respond",
+        "description": "Learn how to stop negative thoughts by examining one recurring interpretation, considering evidence and choosing a practical response, with self-help limits."
       },
       {
-        "title": "Negative Thoughts Won't Stop? Try This Daily Habit Instead",
-        "description": "How to stop negative thoughts: notice recurring worries, try a balanced thought record, and choose practical next steps, with guidance on when to seek support."
+        "title": "How to Stop Negative Thoughts: 5 Ways to Respond",
+        "description": "Learn how to stop negative thoughts by examining one recurring interpretation, considering evidence and choosing a practical response, with self-help limits."
       }
     ]
   },
