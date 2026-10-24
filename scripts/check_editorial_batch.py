@@ -8,7 +8,8 @@ import xml.etree.ElementTree as ET
 
 root = Path(__file__).resolve().parents[1]
 slugs = sys.argv[1:] or ('healthy-living-tips', 'healthy-daily-habits', 'simple-morning-habits',
-                        'how-to-stay-calm-under-pressure', 'improve-daily-routine')
+                        'how-to-stay-calm-under-pressure', 'improve-daily-routine',
+                        'how-sleep-affects-mental-health', 'best-foods-for-better-sleep')
 catalog_source = (root / 'articles.js').read_text(encoding='utf-8')
 catalog = json.loads(catalog_source[catalog_source.index('['):catalog_source.rfind(']') + 1])
 sitemap = ET.parse(root / 'sitemap.xml').getroot()
@@ -29,7 +30,7 @@ for slug in slugs:
     assert record['excerpt'] == meta
     assert len(re.findall(r'<p>', body.split('<div class="tldr">')[0])) == 3
     main = body.split('<h2>An Illustrative Scenario</h2>')[0]
-    headings = re.findall(r'<h2>(.*?)</h2>', main)
+    headings = re.findall(r'<h2(?: [^>]*)?>(.*?)</h2>', main)
     assert len(headings) == 5 and all(h.endswith('?') for h in headings)
     assert main.count('<ul>') == 5
     title = re.search(r'<h1[^>]*>(.*?)</h1>', source, re.S)[1]

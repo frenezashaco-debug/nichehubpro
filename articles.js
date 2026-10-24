@@ -1851,26 +1851,26 @@ const ARTICLES = [
   },
   {
     "slug": "best-foods-for-better-sleep",
-    "title": "7 Food Ideas for a More Comfortable Bedtime",
+    "title": "Best Foods for Better Sleep: 7 Comfortable Evening Options",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven food ideas for a more comfortable bedtime, while remembering that ongoing sleep issues should be discussed with a clinician.",
+    "read_time": "4",
+    "excerpt": "Explore best foods for better sleep as seven flexible evening meal or snack ideas, with guidance on comfort, reflux, caffeine and when sleep problems need care.",
     "image": "images/best-foods-for-better-sleep.jpg",
     "alt": "Young woman holding bowl of almonds and kiwis in calm evening light",
     "pins": [
       {
-        "title": "7 Best Foods for Better Sleep Tonight - Science-Backed",
-        "description": "Explore seven food ideas for a more comfortable bedtime, while remembering that ongoing sleep issues should be discussed with a clinician."
+        "title": "Best Foods for Better Sleep: 7 Comfortable Evening Options",
+        "description": "Explore best foods for better sleep as seven flexible evening meal or snack ideas, with guidance on comfort, reflux, caffeine and when sleep problems need care."
       },
       {
-        "title": "Stop Eating This Before Bed - Sleep Saboteurs Revealed",
-        "description": "Explore seven food ideas for a more comfortable bedtime, while remembering that ongoing sleep issues should be discussed with a clinician."
+        "title": "Best Foods for Better Sleep: 7 Comfortable Evening Options",
+        "description": "Explore best foods for better sleep as seven flexible evening meal or snack ideas, with guidance on comfort, reflux, caffeine and when sleep problems need care."
       },
       {
-        "title": "Try This Evening Eating Routine for Sleep That Actually Works",
-        "description": "Explore seven food ideas for a more comfortable bedtime, while remembering that ongoing sleep issues should be discussed with a clinician."
+        "title": "Best Foods for Better Sleep: 7 Comfortable Evening Options",
+        "description": "Explore best foods for better sleep as seven flexible evening meal or snack ideas, with guidance on comfort, reflux, caffeine and when sleep problems need care."
       }
     ]
   },
@@ -2426,26 +2426,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-sleep-affects-mental-health",
-    "title": "5 Ways Sleep Can Affect Mental Health",
+    "title": "How Sleep Affects Mental Health: 5 Areas to Discuss",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Explore five ways sleep can affect mental health, with supportive routine ideas and signs that persistent concerns need clinical advice.",
+    "read_time": "4",
+    "excerpt": "Understand how sleep affects mental health through five areas of daily life, with practical observations, treatment boundaries and signs to seek clinical care.",
     "image": "images/how-sleep-affects-mental-health.jpg",
     "alt": "Woman sleeping peacefully in bed at sunrise, mental health recovery",
     "pins": [
       {
-        "title": "5 Ways Sleep Affects Mental Health: End Anxiety Tonight",
-        "description": "Explore five ways sleep can affect mental health, with supportive routine ideas and signs that persistent concerns need clinical advice."
+        "title": "How Sleep Affects Mental Health: 5 Areas to Discuss",
+        "description": "Understand how sleep affects mental health through five areas of daily life, with practical observations, treatment boundaries and signs to seek clinical care."
       },
       {
-        "title": "Stop Anxiety Without Medication: Fix Your Sleep First",
-        "description": "Explore five ways sleep can affect mental health, with supportive routine ideas and signs that persistent concerns need clinical advice."
+        "title": "How Sleep Affects Mental Health: 5 Areas to Discuss",
+        "description": "Understand how sleep affects mental health through five areas of daily life, with practical observations, treatment boundaries and signs to seek clinical care."
       },
       {
-        "title": "Try This: 7-Hour Sleep Challenge for Mental Health",
-        "description": "Explore five ways sleep can affect mental health, with supportive routine ideas and signs that persistent concerns need clinical advice."
+        "title": "How Sleep Affects Mental Health: 5 Areas to Discuss",
+        "description": "Understand how sleep affects mental health through five areas of daily life, with practical observations, treatment boundaries and signs to seek clinical care."
       }
     ]
   },
