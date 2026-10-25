@@ -3,7 +3,7 @@
   "scope": "A full editorial rewrite and the strict batch checks apply only to the listed full-review articles. Other entries have targeted edits or mechanical consistency checks, not a scientific certification or AdSense approval. Pixel watermarks and all external claims have not been individually verified in this pass.",
   "summary": {
     "inventory": 154,
-    "full_review_and_strict_checks": 55,
+    "full_review_and_strict_checks": 58,
     "targeted_scenario_repairs_this_batch": 43,
     "changed_articles_this_batch": 152,
     "body_changed_this_batch": 71
@@ -311,7 +311,9 @@
     },
     {
       "slug": "how-to-fix-your-sleep-schedule",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "source_review": "NHS and NHLBI pages checked for this sleep batch; unsupported statistics and fixed recovery promises removed.",
+      "image_review": "Original variants inspected on contact sheet and covers at original resolution. No visible watermark observed in inspected variants; assets retained."
     },
     {
       "slug": "best-foods-for-better-sleep",
@@ -327,7 +329,9 @@
     },
     {
       "slug": "how-to-fall-asleep-when-your-mind-wont-stop",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "source_review": "NHS and NHLBI pages checked for this sleep batch; unsupported statistics and fixed recovery promises removed.",
+      "image_review": "Original variants inspected on contact sheet and covers at original resolution. No visible watermark observed in inspected variants; assets retained."
     },
     {
       "slug": "how-exercise-improves-mental-health",
@@ -571,7 +575,9 @@
     },
     {
       "slug": "anxiety-before-sleep",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "source_review": "NHS and NHLBI pages checked for this sleep batch; unsupported statistics and fixed recovery promises removed.",
+      "image_review": "Original variants inspected on contact sheet, selected images at original resolution. Exaggerated illustration replaced with separately named anxiety-before-sleep-sec1-clean-v2.webp (72260 bytes); encoded replacement inspected with no visible text or watermark observed."
     },
     {
       "slug": "morning-routine-for-mental-health",

@@ -36,7 +36,9 @@ slugs = sys.argv[1:] or ('healthy-living-tips', 'healthy-daily-habits', 'simple-
                         'how-to-reset-your-mindset', 'how-to-set-healthy-boundaries',
                         'how-to-stop-negative-thinking-patterns', 'how-to-feel-in-control-of-your-mind',
                         'emotional-burnout-recovery', 'best-daily-mobility-exercises',
-                        'daily-stretching-routine-for-beginners')
+                        'daily-stretching-routine-for-beginners',
+                        'anxiety-before-sleep', 'how-to-fall-asleep-when-your-mind-wont-stop',
+                        'how-to-fix-your-sleep-schedule')
 catalog_source = (root / 'articles.js').read_text(encoding='utf-8')
 catalog = json.loads(catalog_source[catalog_source.index('['):catalog_source.rfind(']') + 1])
 sitemap = ET.parse(root / 'sitemap.xml').getroot()
@@ -52,7 +54,9 @@ for slug in slugs:
     assert '\u2014' not in source
     meta = re.search(r'<meta name="description" content="([^"]+)"', source)[1]
     assert 155 <= len(meta) <= 160
-    assert slug.replace('-', ' ') in meta.lower()
+    # Natural apostrophes in words such as "won't" do not change the keyword.
+    keyword_text = re.sub("['\u2019]", '', html.unescape(meta).lower())
+    assert slug.replace('-', ' ') in keyword_text
     record = next(item for item in catalog if item['slug'] == slug)
     assert record['excerpt'] == meta
     assert len(re.findall(r'<p>', body.split('<div class="tldr">')[0])) == 3

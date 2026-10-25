@@ -1826,26 +1826,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-fix-your-sleep-schedule",
-    "title": "5 Ways to Support a More Consistent Sleep Schedule",
+    "title": "How to Fix Your Sleep Schedule: 5 Checks Before Making Changes",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "How to fix your sleep schedule: explore five adaptable planning ideas and review daily constraints, with qualified advice for ongoing or unusual sleep problems.",
+    "read_time": "5",
+    "excerpt": "How to fix your sleep schedule: use five checks to map sleep opportunities, obligations and care needs, without a fixed reset deadline or compulsory wake time.",
     "image": "images/how-to-fix-your-sleep-schedule.jpg",
     "alt": "Woman waking peacefully in morning light by window",
     "pins": [
       {
-        "title": "5 Ways to Support a More Consistent Sleep Schedule",
-        "description": "How to fix your sleep schedule: explore five adaptable planning ideas and review daily constraints, with qualified advice for ongoing or unusual sleep problems."
+        "title": "How to Fix Your Sleep Schedule: 5 Checks Before Making Changes",
+        "description": "How to fix your sleep schedule: use five checks to map sleep opportunities, obligations and care needs, without a fixed reset deadline or compulsory wake time."
       },
       {
-        "title": "5 Ways to Support a More Consistent Sleep Schedule",
-        "description": "How to fix your sleep schedule: explore five adaptable planning ideas and review daily constraints, with qualified advice for ongoing or unusual sleep problems."
+        "title": "How to Fix Your Sleep Schedule: 5 Checks Before Making Changes",
+        "description": "How to fix your sleep schedule: use five checks to map sleep opportunities, obligations and care needs, without a fixed reset deadline or compulsory wake time."
       },
       {
-        "title": "5 Ways to Support a More Consistent Sleep Schedule",
-        "description": "How to fix your sleep schedule: explore five adaptable planning ideas and review daily constraints, with qualified advice for ongoing or unusual sleep problems."
+        "title": "How to Fix Your Sleep Schedule: 5 Checks Before Making Changes",
+        "description": "How to fix your sleep schedule: use five checks to map sleep opportunities, obligations and care needs, without a fixed reset deadline or compulsory wake time."
       }
     ]
   },
@@ -1926,26 +1926,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-fall-asleep-when-your-mind-wont-stop",
-    "title": "5 Ways to Fall Asleep When Your Mind Won't Stop: The Racing Mind Solution",
+    "title": "How to Fall Asleep When Your Mind Won't Stop: 5 Responses to Consider",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to fall asleep when your mind will not stop with practical techniques, calmer routines, and guidance for persistent sleep problems and next steps.",
+    "read_time": "5",
+    "excerpt": "How to fall asleep when your mind won't stop: review five responses to wakefulness and when to discuss treatment, without forcing a technique or sleep deadline.",
     "image": "images/how-to-fall-asleep-when-your-mind-wont-stop.jpg",
     "alt": "Woman lying awake in bed at night with racing mind expression.",
     "pins": [
       {
-        "title": "5 Ways to Fall Asleep When Your Mind Won't Stop: The Racing Mind Solution",
-        "description": "Learn how to fall asleep when your mind will not stop with practical techniques, calmer routines, and guidance for persistent sleep problems and next steps."
+        "title": "How to Fall Asleep When Your Mind Won't Stop: 5 Responses to Consider",
+        "description": "How to fall asleep when your mind won't stop: review five responses to wakefulness and when to discuss treatment, without forcing a technique or sleep deadline."
       },
       {
-        "title": "5 Ways to Fall Asleep When Your Mind Won't Stop: The Racing Mind Solution",
-        "description": "Learn how to fall asleep when your mind will not stop with practical techniques, calmer routines, and guidance for persistent sleep problems and next steps."
+        "title": "How to Fall Asleep When Your Mind Won't Stop: 5 Responses to Consider",
+        "description": "How to fall asleep when your mind won't stop: review five responses to wakefulness and when to discuss treatment, without forcing a technique or sleep deadline."
       },
       {
-        "title": "5 Ways to Fall Asleep When Your Mind Won't Stop: The Racing Mind Solution",
-        "description": "Learn how to fall asleep when your mind will not stop with practical techniques, calmer routines, and guidance for persistent sleep problems and next steps."
+        "title": "How to Fall Asleep When Your Mind Won't Stop: 5 Responses to Consider",
+        "description": "How to fall asleep when your mind won't stop: review five responses to wakefulness and when to discuss treatment, without forcing a technique or sleep deadline."
       }
     ]
   },
@@ -3451,26 +3451,26 @@ const ARTICLES = [
   },
   {
     "slug": "anxiety-before-sleep",
-    "title": "5 Gentle Ways to Respond to Anxiety Before Sleep",
+    "title": "Anxiety Before Sleep: 5 Ways to Give Worries a Next Step",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Explore five gentle ways to respond to anxiety before sleep, with practical limits, official sources, and guidance on seeking professional support. Practical",
+    "read_time": "5",
+    "excerpt": "Anxiety before sleep: use five ways to sort evening worries, prepare a useful next step and seek support when sleep problems persist, without a relief deadline.",
     "image": "images/anxiety-before-sleep.jpg",
     "alt": "Young woman sleeping peacefully in bed with anxiety relief",
     "pins": [
       {
-        "title": "5 Gentle Ways to Respond to Anxiety Before Sleep",
-        "description": "Explore five gentle ways to respond to anxiety before sleep, with practical limits, official sources, and guidance on seeking professional support. Practical"
+        "title": "Anxiety Before Sleep: 5 Ways to Give Worries a Next Step",
+        "description": "Anxiety before sleep: use five ways to sort evening worries, prepare a useful next step and seek support when sleep problems persist, without a relief deadline."
       },
       {
-        "title": "5 Gentle Ways to Respond to Anxiety Before Sleep",
-        "description": "Explore five gentle ways to respond to anxiety before sleep, with practical limits, official sources, and guidance on seeking professional support. Practical"
+        "title": "Anxiety Before Sleep: 5 Ways to Give Worries a Next Step",
+        "description": "Anxiety before sleep: use five ways to sort evening worries, prepare a useful next step and seek support when sleep problems persist, without a relief deadline."
       },
       {
-        "title": "5 Gentle Ways to Respond to Anxiety Before Sleep",
-        "description": "Explore five gentle ways to respond to anxiety before sleep, with practical limits, official sources, and guidance on seeking professional support. Practical"
+        "title": "Anxiety Before Sleep: 5 Ways to Give Worries a Next Step",
+        "description": "Anxiety before sleep: use five ways to sort evening worries, prepare a useful next step and seek support when sleep problems persist, without a relief deadline."
       }
     ]
   },
