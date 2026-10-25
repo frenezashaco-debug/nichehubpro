@@ -227,26 +227,26 @@ const ARTICLES = [
   },
   {
     "slug": "the-science-of-habit-formation-explained-simply",
-    "title": "The Science of Habit Formation: 7 Practical Lessons",
+    "title": "The Science of Habit Formation Explained Simply: 5 Useful Distinctions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Sep 2026",
-    "read_time": "8",
-    "excerpt": "Learn the science of habit formation explained simply, including cues, routines, rewards, and practical steps for building habits that fit your life today.",
+    "read_time": "5",
+    "excerpt": "The science of habit formation explained simply: compare five useful distinctions, examine a cue and action, and review barriers without a fixed-day promise.",
     "image": "images/the-science-of-habit-formation-explained-simply.jpg",
     "alt": "young woman journaling at kitchen table for habit formation",
     "pins": [
       {
-        "title": "How to Use the Science of Habit Formation to Finally Make Change Stick",
-        "description": "Learn the science of habit formation explained simply, including cues, routines, rewards, and practical steps for building habits that fit your life today."
+        "title": "The Science of Habit Formation Explained Simply: 5 Useful Distinctions",
+        "description": "The science of habit formation explained simply: compare five useful distinctions, examine a cue and action, and review barriers without a fixed-day promise."
       },
       {
-        "title": "Stop Blaming Willpower - This Is What Actually Forms a Habit",
-        "description": "Learn the science of habit formation explained simply, including cues, routines, rewards, and practical steps for building habits that fit your life today."
+        "title": "The Science of Habit Formation Explained Simply: 5 Useful Distinctions",
+        "description": "The science of habit formation explained simply: compare five useful distinctions, examine a cue and action, and review barriers without a fixed-day promise."
       },
       {
-        "title": "Try This 3-Part Habit Loop Audit to Fix Any Habit That Keeps Breaking",
-        "description": "Learn the science of habit formation explained simply, including cues, routines, rewards, and practical steps for building habits that fit your life today."
+        "title": "The Science of Habit Formation Explained Simply: 5 Useful Distinctions",
+        "description": "The science of habit formation explained simply: compare five useful distinctions, examine a cue and action, and review barriers without a fixed-day promise."
       }
     ]
   },
@@ -427,26 +427,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-a-routine-that-survives-a-busy-week",
-    "title": "How to Build a Flexible Routine for a Busy Week",
+    "title": "How to Build a Routine That Survives a Busy Week: 5 Decisions",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Aug 2026",
-    "read_time": "8",
-    "excerpt": "Build a flexible routine for a busy week with smaller fallback habits, realistic planning, and clear limits that support rather than pressure you.",
+    "read_time": "5",
+    "excerpt": "How to build a routine that survives a busy week: use decisions to keep, adapt, share or pause tasks while protecting essential needs and asking for support.",
     "image": "images/how-to-build-a-routine-that-survives-a-busy-week.jpg",
     "alt": "woman writing morning routine plan during a busy week",
     "pins": [
       {
-        "title": "How to Build a Routine That Survives Your Busiest Week",
-        "description": "Tired of watching your healthy routine fall apart the second life gets crazy? Learn exactly how to build a routine that survives a busy week with these 7 simple strategies. Your resilient healthy routine starts with just 3 non-negotiable daily anchors. Save this for your next stressful week."
+        "title": "How to Build a Routine That Survives a Busy Week: 5 Decisions",
+        "description": "How to build a routine that survives a busy week: use decisions to keep, adapt, share or pause tasks while protecting essential needs and asking for support."
       },
       {
-        "title": "Stop Letting Busy Weeks Destroy Your Healthy Habits",
-        "description": "A resilient healthy routine is not about perfection - it is about having a backup plan before the chaos hits. Discover the minimum viable routine method that keeps your healthy habits alive even through your most stressful weeks. Small consistent action beats starting over every time."
+        "title": "How to Build a Routine That Survives a Busy Week: 5 Decisions",
+        "description": "How to build a routine that survives a busy week: use decisions to keep, adapt, share or pause tasks while protecting essential needs and asking for support."
       },
       {
-        "title": "Try This 15-Minute Routine for Your Most Overwhelming Days",
-        "description": "When your schedule explodes, you do not need to give up on your routine - you need a smaller version of it. This guide shows you how to stick to healthy habits during a busy or stressful week using if-then planning and habit stacking. Even 15 minutes a day keeps your baseline strong."
+        "title": "How to Build a Routine That Survives a Busy Week: 5 Decisions",
+        "description": "How to build a routine that survives a busy week: use decisions to keep, adapt, share or pause tasks while protecting essential needs and asking for support."
       }
     ]
   },
@@ -1302,26 +1302,26 @@ const ARTICLES = [
   },
   {
     "slug": "daily-self-care-routine",
-    "title": "5 Daily Self-Care Routine Habits That Actually Stick (Without Feeling Forced)",
+    "title": "Daily Self-Care Routine: 7 Ways to Match Care to a Real Need",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "A daily self-care routine isn't about bubble baths and face masks, though those are nice. It's about small, intentional actions that lower your stress, sta",
+    "read_time": "5",
+    "excerpt": "A daily self care routine can start with one unmet need. Review seven care options, practical barriers and support, without buying products or chasing streaks.",
     "image": "images/daily-self-care-routine.jpg",
     "alt": "Woman drinking water mindfully at kitchen table with morning light, daily self-care routine",
     "pins": [
       {
-        "title": "How to Start a Daily Self-Care Routine in 5 Minutes (Real Life Works)",
-        "description": "Stop waiting for the perfect moment. A daily self-care routine doesn't require hours or special products. Start with water, movement, quiet time, intentional eating, and sleep protection. These five habits lower stress, boost focus, and help you feel like yourself again. Build one habit per week and watch the shift happen."
+        "title": "Daily Self-Care Routine: 7 Ways to Match Care to a Real Need",
+        "description": "A daily self care routine can start with one unmet need. Review seven care options, practical barriers and support, without buying products or chasing streaks."
       },
       {
-        "title": "Stop Skipping Self-Care (Your Nervous System is Begging You)",
-        "description": "You're exhausted, irritable, and getting sick constantly because you're skipping daily self-care. Your body is sending clear signals. A consistent daily self-care routine rebuilds your resilience in just 2-3 weeks. Learn the five non-negotiable habits successful people protect daily, and why consistency beats perfection every single time."
+        "title": "Daily Self-Care Routine: 7 Ways to Match Care to a Real Need",
+        "description": "A daily self care routine can start with one unmet need. Review seven care options, practical barriers and support, without buying products or chasing streaks."
       },
       {
-        "title": "Try This: The 5-Habit Daily Self-Care Routine That Actually Sticks",
-        "description": "Forget complicated wellness plans. This daily self-care routine stacks onto habits you already do: water after waking, movement before lunch, quiet time in afternoon, mindful eating once daily, phone-free bedtime. Small, repeatable, powerful. Women report lower anxiety, better sleep, and stable energy within weeks of starting this routine."
+        "title": "Daily Self-Care Routine: 7 Ways to Match Care to a Real Need",
+        "description": "A daily self care routine can start with one unmet need. Review seven care options, practical barriers and support, without buying products or chasing streaks."
       }
     ]
   },
