@@ -2251,26 +2251,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-calm-down-when-overwhelmed",
-    "title": "5 Ways to Pause When You Feel Overwhelmed",
+    "title": "How to Calm Down When Overwhelmed: 5 Choices for Your Next Step",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Explore five gentle ways to pause when overwhelmed, including grounding and reaching out for support when feelings are persistent or severe.",
+    "read_time": "5",
+    "excerpt": "How to calm down when overwhelmed: consider five ways to pause, identify an immediate demand and ask for support, without promises of relief within minutes.",
     "image": "images/how-to-calm-down-when-overwhelmed.jpg",
     "alt": "Woman looking overwhelmed while working at desk with papers",
     "pins": [
       {
-        "title": "5 Ways to Calm Down When Overwhelmed: Quick Relief Techniques",
-        "description": "Explore five gentle ways to pause when overwhelmed, including grounding and reaching out for support when feelings are persistent or severe."
+        "title": "How to Calm Down When Overwhelmed: 5 Choices for Your Next Step",
+        "description": "How to calm down when overwhelmed: consider five ways to pause, identify an immediate demand and ask for support, without promises of relief within minutes."
       },
       {
-        "title": "Stop Overwhelm Before It Starts: Daily Habits That Actually Work",
-        "description": "Explore five gentle ways to pause when overwhelmed, including grounding and reaching out for support when feelings are persistent or severe."
+        "title": "How to Calm Down When Overwhelmed: 5 Choices for Your Next Step",
+        "description": "How to calm down when overwhelmed: consider five ways to pause, identify an immediate demand and ask for support, without promises of relief within minutes."
       },
       {
-        "title": "Overwhelm Relief: How to Reset Your Mind in 10 Minutes",
-        "description": "Explore five gentle ways to pause when overwhelmed, including grounding and reaching out for support when feelings are persistent or severe."
+        "title": "How to Calm Down When Overwhelmed: 5 Choices for Your Next Step",
+        "description": "How to calm down when overwhelmed: consider five ways to pause, identify an immediate demand and ask for support, without promises of relief within minutes."
       }
     ]
   },
@@ -3126,26 +3126,26 @@ const ARTICLES = [
   },
   {
     "slug": "sleep-routine-tips",
-    "title": "7 Sleep Routine Tips for a Calmer Evening",
+    "title": "Sleep Routine Tips: 7 Decisions for a More Workable Evening",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Sleep routine tips are not luxuries, they're survival tools for your brain and body. Most people treat sleep like an afterthought, cramming it in whenever ",
+    "read_time": "5",
+    "excerpt": "Sleep routine tips for a workable evening: review seven decisions about interruptions, comfort and wind-down, and know when ongoing sleep problems need care.",
     "image": "images/sleep-routine-tips.jpg",
     "alt": "Woman reading in bed during evening sleep routine ritual",
     "pins": [
       {
-        "title": "7 Sleep Routine Tips That Transform Your Sleep Tonight",
-        "description": "Stop fighting sleep. These science-backed sleep routine tips rewire your nervous system for natural, deep rest. Learn the exact 30-minute routine that works in just 3 days. Includes daily habits that amplify results. No pills, no gimmicks, just biology."
+        "title": "Sleep Routine Tips: 7 Decisions for a More Workable Evening",
+        "description": "Sleep routine tips for a workable evening: review seven decisions about interruptions, comfort and wind-down, and know when ongoing sleep problems need care."
       },
       {
-        "title": "Stop Waking at 3am: The Sleep Routine Fix That Works",
-        "description": "If you're waking multiple times or can't fall asleep, your routine is broken, not your brain. Discover why sleep routine tips matter more than sleep duration. Real solutions for insomnia that actually stick within two weeks."
+        "title": "Sleep Routine Tips: 7 Decisions for a More Workable Evening",
+        "description": "Sleep routine tips for a workable evening: review seven decisions about interruptions, comfort and wind-down, and know when ongoing sleep problems need care."
       },
       {
-        "title": "Try This 30-Minute Sleep Routine Starting Tonight",
-        "description": "A simple, proven sleep routine tips framework you can start immediately. No equipment needed, no lifestyle overhaul required. Just structured pre-sleep habits that tell your body it's time to rest. See results by tomorrow morning."
+        "title": "Sleep Routine Tips: 7 Decisions for a More Workable Evening",
+        "description": "Sleep routine tips for a workable evening: review seven decisions about interruptions, comfort and wind-down, and know when ongoing sleep problems need care."
       }
     ]
   },
