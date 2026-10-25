@@ -3151,26 +3151,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-panic-attacks",
-    "title": "5 Ways to Respond to Panic and Know When to Seek Help",
+    "title": "How to Stop Panic Attacks: 5 Steps for Support and Follow-Up",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Panic attacks feel like your body is betraying you. Your heart races, your chest tightens, and your mind spins with worst-case scenarios. But here's the tr",
+    "read_time": "5",
+    "excerpt": "How to stop panic attacks has no universal instant answer. Use five steps for safety, your agreed care plan and follow-up, without assuming symptoms are panic.",
     "image": "images/how-to-stop-panic-attacks.jpg",
     "alt": "Young woman meditating calmly during a peaceful morning at home",
     "pins": [
       {
-        "title": "5 Ways to Stop Panic Attacks Instantly: The Grounding Technique That Works",
-        "description": "Learn the exact 5-4-3-2-1 grounding method that calms panic in minutes. Discover how to stop panic attacks using sensory awareness, box breathing, and proven panic attack control techniques that work when anxiety hits hardest. Real science-backed solutions for panic relief."
+        "title": "How to Stop Panic Attacks: 5 Steps for Support and Follow-Up",
+        "description": "How to stop panic attacks has no universal instant answer. Use five steps for safety, your agreed care plan and follow-up, without assuming symptoms are panic."
       },
       {
-        "title": "Stop Panic Attacks Before They Start: 6 Daily Prevention Habits That Work",
-        "description": "Tired of unexpected panic attacks? These 6 daily habits prevent panic episodes before they happen, including sleep optimization, nervous system regulation, and exercise routines. Build real resilience instead of just managing panic when it strikes. Your panic-free future starts today."
+        "title": "How to Stop Panic Attacks: 5 Steps for Support and Follow-Up",
+        "description": "How to stop panic attacks has no universal instant answer. Use five steps for safety, your agreed care plan and follow-up, without assuming symptoms are panic."
       },
       {
-        "title": "What to Do During a Panic Attack: 5 Emergency Techniques for Instant Relief",
-        "description": "Panic attack hitting right now? Use one of these 5 proven emergency techniques: cold water exposure, box breathing, PMR, or grounding. Each method interrupts your nervous system's false alarm in minutes. Save this guide for when anxiety tries to take over."
+        "title": "How to Stop Panic Attacks: 5 Steps for Support and Follow-Up",
+        "description": "How to stop panic attacks has no universal instant answer. Use five steps for safety, your agreed care plan and follow-up, without assuming symptoms are panic."
       }
     ]
   },
