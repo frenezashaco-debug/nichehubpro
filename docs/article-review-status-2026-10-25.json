@@ -1,0 +1,629 @@
+{
+  "date": "2026-10-25",
+  "scope": "A full editorial rewrite and the strict batch checks apply only to the listed full-review articles. Other entries have targeted edits or mechanical consistency checks, not a scientific certification or AdSense approval. Pixel watermarks and all external claims have not been individually verified in this pass.",
+  "summary": {
+    "inventory": 154,
+    "full_review_and_strict_checks": 55,
+    "targeted_scenario_repairs_this_batch": 43,
+    "changed_articles_this_batch": 152,
+    "body_changed_this_batch": 71
+  },
+  "articles": [
+    {
+      "slug": "how-gut-health-influences-your-mood-and-energy",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-willpower-works-and-why-it-runs-out",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "why-your-brain-craves-routine-even-when-you-resist-it",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-sleep-debt-silently-drains-your-daily-performance",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "the-psychology-behind-why-deadlines-make-you-more-productive",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "what-cognitive-load-does-to-your-decision-making",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-blood-sugar-swings-affect-your-energy-and-mood",
+      "review_scope": "preserved_user_local_changes"
+    },
+    {
+      "slug": "how-dopamine-actually-works-and-why-quick-fixes-backfire",
+      "review_scope": "preserved_user_local_changes"
+    },
+    {
+      "slug": "how-to-train-your-brain-for-longer-attention-spans",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-your-body-clock-affects-when-you-should-exercise",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "the-science-of-habit-formation-explained-simply",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "what-neuroplasticity-means-for-changing-your-habits",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-build-energy-that-lasts-all-day-without-crashing",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-recover-focus-after-a-distraction",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-stop-feeling-guilty-for-resting",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "why-hydration-affects-your-focus-more-than-you-think",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-stay-focused-on-hard-tasks-without-burning-out",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-calm-your-nervous-system-fast",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-build-a-routine-that-survives-a-busy-week",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-protect-your-focus-from-constant-interruptions",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "why-chronic-stress-makes-everything-feel-harder",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-build-a-stress-resistant-morning-routine",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "why-productivity-hacks-dont-work-long-term",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "the-emotional-root-of-chronic-procrastination",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-build-a-better-lifestyle-long-term",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "healthy-productivity-habits-for-entrepreneurs",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "best-self-improvement-systems-explained",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-design-the-perfect-daily-routine",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "why-small-habits-create-big-results",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "the-psychology-of-discipline",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-create-sustainable-healthy-habits",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "healthy-morning-routine-checklist",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-improve-concentration-naturally",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "best-routine-planner-methods",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-stop-overthinking-everything",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-reset-your-mindset",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-track-progress-toward-goals",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "why-you-feel-emotionally-numb",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "why-anxiety-feels-physical",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "best-focus-techniques-for-students",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "benefits-of-walking-every-day",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-create-a-productive-routine",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-stop-catastrophic-thinking",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "why-discipline-beats-motivation",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-focus-better-at-work",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "best-productivity-systems-explained",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "best-foods-for-focus-and-concentration",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "best-morning-habits-for-more-energy",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "why-you-feel-tired-all-the-time",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "pomodoro-technique-explained-for-beginners",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-stop-procrastinating-immediately",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "signs-of-mental-burnout-and-how-to-recover",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "life-balance-habits",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "daily-self-care-routine",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "deep-work-techniques",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-improve-mental-clarity",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-stop-procrastination",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "simple-morning-habits",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-focus-without-distractions",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "emotional-burnout-recovery",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-calm-your-mind-instantly",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-control-your-thoughts",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-build-confidence-through-discipline",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "healthy-routine-for-working-from-home",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "best-daily-mobility-exercises",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "why-most-people-fail-at-building-habits",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "why-you-feel-lost-in-life",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-build-a-productivity-system-with-apps",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "best-free-productivity-apps-for-android-2026",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-stop-self-sabotaging",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-drink-more-water-every-day",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "healthy-habits-for-busy-people",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "best-productivity-apps-in-2026",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-gamify-your-life-for-productivity",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-build-mental-toughness",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-fix-your-sleep-schedule",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "best-foods-for-better-sleep",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-stay-productive-every-day",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "focus-vs-motivation-explained",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-fall-asleep-when-your-mind-wont-stop",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-exercise-improves-mental-health",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "healthy-daily-routine-checklist",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-avoid-distractions-while-working",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "why-you-feel-mentally-drained",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-deal-with-stress-at-work",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "best-evening-habits-for-better-sleep",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "best-habit-tracker-methods-that-work",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-recover-from-emotional-burnout",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "daily-stretching-routine-for-beginners",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "best-healthy-snacks-for-energy",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-build-self-discipline",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "why-you-always-feel-stressed",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-calm-down-when-overwhelmed",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-improve-energy-naturally",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "morning-routine-for-a-healthy-lifestyle",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "best-time-management-techniques-ranked",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "daily-habits-for-better-mental-health",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-stop-negative-thinking-patterns",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "healthy-habits-to-start-this-week",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-sleep-affects-mental-health",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-build-habits-that-actually-stick",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-improve-emotional-resilience",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "why-you-have-no-motivation-anymore",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "healthy-sleep-habits-that-improve-energy",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "deep-work-vs-multitasking",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "time-blocking-for-beginners",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "emotional-exhaustion-vs-burnout",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-reduce-anxiety-naturally",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-deal-with-toxic-people",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-set-healthy-boundaries",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "healthy-living-tips",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "success-habits",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-improve-your-life",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "improve-daily-routine",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "habit-building-system",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-change-your-mindset",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "productivity-system",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-reset-your-life",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-build-discipline",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-feel-happy-again",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "natural-energy-boosters",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "daily-wellness-habits",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "time-management-tips",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-stop-worrying-about-the-future",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "healthy-lifestyle-tips",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-stay-motivated",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-build-confidence",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "sleep-routine-tips",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-stop-panic-attacks",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "signs-of-anxiety-disorder",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "healthy-daily-habits",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-stay-calm-under-pressure",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-detox-your-mind",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "benefits-of-walking-daily",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-feel-in-control-of-your-mind",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-increase-energy-naturally",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-break-negative-thinking",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "foods-that-reduce-anxiety",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "fear-of-failure-anxiety",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-sleep-better-naturally",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "anxiety-before-sleep",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "morning-routine-for-mental-health",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-stop-overthinking-at-work",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-feel-calm-instantly",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-stop-worrying",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-stop-anxiety-attacks",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-deal-with-anxiety-daily",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-relax-your-mind",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-reduce-stress-naturally",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    },
+    {
+      "slug": "how-to-stop-negative-thoughts",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "signs-of-mental-exhaustion",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-stop-overthinking",
+      "review_scope": "targeted_scenario_and_consistency_edits"
+    },
+    {
+      "slug": "how-to-calm-anxiety-quickly",
+      "review_scope": "full_editorial_revision_and_strict_checks"
+    },
+    {
+      "slug": "how-to-stop-overthinking-at-night",
+      "review_scope": "targeted_or_mechanical_checks_only"
+    }
+  ]
+}

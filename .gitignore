@@ -38,6 +38,7 @@ __pycache__/
 !scripts/install_clean_article_image.py
 !scripts/audit_latest_ten.py
 !scripts/test_distribution_payload.py
+!scripts/check_article_inventory.py
 
 # Generated local quality reports
 reports/
