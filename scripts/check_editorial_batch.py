@@ -18,7 +18,8 @@ slugs = sys.argv[1:] or ('healthy-living-tips', 'healthy-daily-habits', 'simple-
                         'how-to-build-discipline', 'how-exercise-improves-mental-health',
                         'healthy-daily-routine-checklist', 'best-morning-habits-for-more-energy',
                         'deep-work-vs-multitasking', 'how-to-track-progress-toward-goals',
-                        'how-to-control-your-thoughts', 'how-to-stop-self-sabotaging')
+                        'how-to-control-your-thoughts', 'how-to-stop-self-sabotaging',
+                        'fear-of-failure-anxiety', 'why-chronic-stress-makes-everything-feel-harder')
 catalog_source = (root / 'articles.js').read_text(encoding='utf-8')
 catalog = json.loads(catalog_source[catalog_source.index('['):catalog_source.rfind(']') + 1])
 sitemap = ET.parse(root / 'sitemap.xml').getroot()

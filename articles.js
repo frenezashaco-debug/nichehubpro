@@ -477,26 +477,26 @@ const ARTICLES = [
   },
   {
     "slug": "why-chronic-stress-makes-everything-feel-harder",
-    "title": "Why Ongoing Stress Can Make Daily Life Feel Harder",
+    "title": "Why Chronic Stress Makes Everything Feel Harder: 5 Support Questions",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Aug 2026",
-    "read_time": "8",
-    "excerpt": "Understand how ongoing stress can affect daily life, identify supportive next steps, and learn when persistent symptoms should be discussed with a professional.",
+    "read_time": "4",
+    "excerpt": "Explore why chronic stress makes everything feel harder with five questions about demands, impact and support, without diagnosing symptoms from a checklist.",
     "image": "images/why-chronic-stress-makes-everything-feel-harder.jpg",
     "alt": "Tired woman at kitchen table showing signs of chronic stress",
     "pins": [
       {
-        "title": "How to Tell If Chronic Stress Is Making Everything Feel Harder",
-        "description": "Understand how ongoing stress can affect daily life, identify supportive next steps, and learn when persistent symptoms should be discussed with a professional."
+        "title": "Why Chronic Stress Makes Everything Feel Harder: 5 Support Questions",
+        "description": "Explore why chronic stress makes everything feel harder with five questions about demands, impact and support, without diagnosing symptoms from a checklist."
       },
       {
-        "title": "Stop Pushing Through When Chronic Stress Is Breaking You Down",
-        "description": "Understand how ongoing stress can affect daily life, identify supportive next steps, and learn when persistent symptoms should be discussed with a professional."
+        "title": "Why Chronic Stress Makes Everything Feel Harder: 5 Support Questions",
+        "description": "Explore why chronic stress makes everything feel harder with five questions about demands, impact and support, without diagnosing symptoms from a checklist."
       },
       {
-        "title": "Try This If Chronic Stress Is Making Simple Tasks Feel Impossible",
-        "description": "Understand how ongoing stress can affect daily life, identify supportive next steps, and learn when persistent symptoms should be discussed with a professional."
+        "title": "Why Chronic Stress Makes Everything Feel Harder: 5 Support Questions",
+        "description": "Explore why chronic stress makes everything feel harder with five questions about demands, impact and support, without diagnosing symptoms from a checklist."
       }
     ]
   },
@@ -3401,26 +3401,26 @@ const ARTICLES = [
   },
   {
     "slug": "fear-of-failure-anxiety",
-    "title": "5 Ways to Respond to Fear of Failure Anxiety",
+    "title": "Fear of Failure Anxiety: 5 Questions Before a Difficult Task",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to overcome fear of failure anxiety with 5 practical methods. Stop performance anxiety and take action today with science-backed strategies.",
+    "read_time": "4",
+    "excerpt": "Explore fear of failure anxiety with five questions about a difficult task, realistic preparation and support, without treating mistakes as a personal verdict.",
     "image": "images/fear-of-failure-anxiety.jpg",
     "alt": "Woman sitting at desk contemplating fear of failure anxiety",
     "pins": [
       {
-        "title": "How to Overcome Fear of Failure Anxiety in 5 Real Steps",
-        "description": "Learn how to overcome fear of failure anxiety with 5 practical methods. Stop performance anxiety and take action today with science-backed strategies."
+        "title": "Fear of Failure Anxiety: 5 Questions Before a Difficult Task",
+        "description": "Explore fear of failure anxiety with five questions about a difficult task, realistic preparation and support, without treating mistakes as a personal verdict."
       },
       {
-        "title": "Stop Fear of Failure Anxiety Before It Stops Your Dreams",
-        "description": "Learn how to overcome fear of failure anxiety with 5 practical methods. Stop performance anxiety and take action today with science-backed strategies."
+        "title": "Fear of Failure Anxiety: 5 Questions Before a Difficult Task",
+        "description": "Explore fear of failure anxiety with five questions about a difficult task, realistic preparation and support, without treating mistakes as a personal verdict."
       },
       {
-        "title": "Try This Daily Ritual to Beat Fear of Failure Anxiety",
-        "description": "Learn how to overcome fear of failure anxiety with 5 practical methods. Stop performance anxiety and take action today with science-backed strategies."
+        "title": "Fear of Failure Anxiety: 5 Questions Before a Difficult Task",
+        "description": "Explore fear of failure anxiety with five questions about a difficult task, realistic preparation and support, without treating mistakes as a personal verdict."
       }
     ]
   },
