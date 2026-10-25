@@ -1776,26 +1776,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-gamify-your-life-for-productivity",
-    "title": "7 Ways to Use Gamification for Everyday Goals",
+    "title": "How to Gamify Your Life for Productivity: 5 Design Decisions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to gamify your life for productivity with points, levels, and rewards. Boost focus and motivation with game mechanics that actually work.",
+    "read_time": "5",
+    "excerpt": "How to gamify your life for productivity: make five design decisions about goals, points, quality and limits, then check whether the game supports real work.",
     "image": "images/how-to-gamify-your-life-for-productivity.jpg",
     "alt": "Young woman tracking productivity points and gamification streaks in notebook at desk",
     "pins": [
       {
-        "title": "How to Gamify Your Life for Productivity - Boost Focus 40% Faster",
-        "description": "Learn how to gamify your life for productivity with points, levels, and rewards. Boost focus and motivation with game mechanics that actually work."
+        "title": "How to Gamify Your Life for Productivity: 5 Design Decisions",
+        "description": "How to gamify your life for productivity: make five design decisions about goals, points, quality and limits, then check whether the game supports real work."
       },
       {
-        "title": "Stop Procrastinating With Gamification - Turn Work Into a Winning Game",
-        "description": "Learn how to gamify your life for productivity with points, levels, and rewards. Boost focus and motivation with game mechanics that actually work."
+        "title": "How to Gamify Your Life for Productivity: 5 Design Decisions",
+        "description": "How to gamify your life for productivity: make five design decisions about goals, points, quality and limits, then check whether the game supports real work."
       },
       {
-        "title": "Gamification Productivity Hack - 7 Steps to Level Up Your Goals",
-        "description": "Learn how to gamify your life for productivity with points, levels, and rewards. Boost focus and motivation with game mechanics that actually work."
+        "title": "How to Gamify Your Life for Productivity: 5 Design Decisions",
+        "description": "How to gamify your life for productivity: make five design decisions about goals, points, quality and limits, then check whether the game supports real work."
       }
     ]
   },
@@ -2001,26 +2001,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-avoid-distractions-while-working",
-    "title": "5 Ways to Avoid Distractions While Working",
+    "title": "How to Avoid Distractions While Working: 5 Practical Arrangements",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Explore five ways to avoid distractions while working, with practical changes to your space, notifications, breaks, and task planning. Practical steps you can",
+    "read_time": "5",
+    "excerpt": "How to avoid distractions while working: compare five practical arrangements, preserve urgent contact and use a return note, without fixed focus-time promises.",
     "image": "images/how-to-avoid-distractions-while-working.jpg",
     "alt": "woman working focused at laptop during morning focus session",
     "pins": [
       {
-        "title": "How to Avoid Distractions While Working - 5 Proven Focus Methods",
-        "description": "Explore five ways to avoid distractions while working, with practical changes to your space, notifications, breaks, and task planning. Practical steps you can"
+        "title": "How to Avoid Distractions While Working: 5 Practical Arrangements",
+        "description": "How to avoid distractions while working: compare five practical arrangements, preserve urgent contact and use a return note, without fixed focus-time promises."
       },
       {
-        "title": "Stop Getting Distracted at Work - Your Brain Needs This",
-        "description": "Explore five ways to avoid distractions while working, with practical changes to your space, notifications, breaks, and task planning. Practical steps you can"
+        "title": "How to Avoid Distractions While Working: 5 Practical Arrangements",
+        "description": "How to avoid distractions while working: compare five practical arrangements, preserve urgent contact and use a return note, without fixed focus-time promises."
       },
       {
-        "title": "5 Daily Habits That Eliminate Distractions and Boost Productivity",
-        "description": "Explore five ways to avoid distractions while working, with practical changes to your space, notifications, breaks, and task planning. Practical steps you can"
+        "title": "How to Avoid Distractions While Working: 5 Practical Arrangements",
+        "description": "How to avoid distractions while working: compare five practical arrangements, preserve urgent contact and use a return note, without fixed focus-time promises."
       }
     ]
   },
