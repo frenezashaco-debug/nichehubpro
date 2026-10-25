@@ -1277,26 +1277,26 @@ const ARTICLES = [
   },
   {
     "slug": "life-balance-habits",
-    "title": "7 Life Balance Habits to Try",
+    "title": "Life Balance Habits: 7 Questions for Competing Responsibilities",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven life balance habits that can help you make room for work, rest, relationships, and the priorities that matter to you. Practical steps you can use",
+    "read_time": "4",
+    "excerpt": "Explore life balance habits with seven questions for competing responsibilities, realistic boundaries and shared decisions, without promising hormonal changes.",
     "image": "images/life-balance-habits.jpg",
     "alt": "Woman closing laptop to protect life balance habits boundaries",
     "pins": [
       {
-        "title": "7 Life Balance Habits That Reduce Burnout Fast (No Guilt)",
-        "description": "Explore seven life balance habits that can help you make room for work, rest, relationships, and the priorities that matter to you. Practical steps you can use"
+        "title": "Life Balance Habits: 7 Questions for Competing Responsibilities",
+        "description": "Explore life balance habits with seven questions for competing responsibilities, realistic boundaries and shared decisions, without promising hormonal changes."
       },
       {
-        "title": "Stop Sacrificing Your Personal Life for Work (Try This Instead)",
-        "description": "Explore seven life balance habits that can help you make room for work, rest, relationships, and the priorities that matter to you. Practical steps you can use"
+        "title": "Life Balance Habits: 7 Questions for Competing Responsibilities",
+        "description": "Explore life balance habits with seven questions for competing responsibilities, realistic boundaries and shared decisions, without promising hormonal changes."
       },
       {
-        "title": "5 Daily Life Balance Habits That Transform Your Week",
-        "description": "Explore seven life balance habits that can help you make room for work, rest, relationships, and the priorities that matter to you. Practical steps you can use"
+        "title": "Life Balance Habits: 7 Questions for Competing Responsibilities",
+        "description": "Explore life balance habits with seven questions for competing responsibilities, realistic boundaries and shared decisions, without promising hormonal changes."
       }
     ]
   },
@@ -2526,26 +2526,26 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-sleep-habits-that-improve-energy",
-    "title": "7 Sleep Habits to Support Daytime Energy",
+    "title": "Healthy Sleep Habits That Improve Energy: 7 Points to Discuss",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Learn 7 healthy sleep habits that can support better energy, steadier focus, and a calmer day. Use practical steps and know when to seek professional advice.",
+    "read_time": "4",
+    "excerpt": "Review healthy sleep habits that improve energy through seven clear questions about sleep opportunity, interruptions and care, without promising rapid results.",
     "image": "images/healthy-sleep-habits-that-improve-energy.jpg",
     "alt": "Woman waking peacefully in morning with healthy sleep habits",
     "pins": [
       {
-        "title": "7 Sleep Habits That Give You More Energy All Day Long",
-        "description": "Learn 7 healthy sleep habits that can support better energy, steadier focus, and a calmer day. Use practical steps and know when to seek professional advice."
+        "title": "Healthy Sleep Habits That Improve Energy: 7 Points to Discuss",
+        "description": "Review healthy sleep habits that improve energy through seven clear questions about sleep opportunity, interruptions and care, without promising rapid results."
       },
       {
-        "title": "Stop Waking Exhausted: The Sleep Habits You're Missing",
-        "description": "Learn 7 healthy sleep habits that can support better energy, steadier focus, and a calmer day. Use practical steps and know when to seek professional advice."
+        "title": "Healthy Sleep Habits That Improve Energy: 7 Points to Discuss",
+        "description": "Review healthy sleep habits that improve energy through seven clear questions about sleep opportunity, interruptions and care, without promising rapid results."
       },
       {
-        "title": "Try This: One Sleep Habit That Changes Everything About Your Energy",
-        "description": "Learn 7 healthy sleep habits that can support better energy, steadier focus, and a calmer day. Use practical steps and know when to seek professional advice."
+        "title": "Healthy Sleep Habits That Improve Energy: 7 Points to Discuss",
+        "description": "Review healthy sleep habits that improve energy through seven clear questions about sleep opportunity, interruptions and care, without promising rapid results."
       }
     ]
   },
@@ -3051,26 +3051,26 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-lifestyle-tips",
-    "title": "7 Healthy Lifestyle Tips to Adapt to Your Day",
+    "title": "Healthy Lifestyle Tips: 7 Areas to Review Before Adding a Habit",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven practical healthy lifestyle tips for sleep, movement, food, stress, hydration, connection, and rest, with a flexible plan and a weekly review.",
+    "read_time": "4",
+    "excerpt": "Use healthy lifestyle tips to review seven everyday needs, identify a real barrier and choose suitable support, without treating routines as a health score.",
     "image": "images/healthy-lifestyle-tips.jpg",
     "alt": "Woman sipping tea by window, practicing healthy lifestyle tips",
     "pins": [
       {
-        "title": "7 Healthy Lifestyle Tips That Actually Work (No Perfection Required)",
-        "description": "Explore seven practical healthy lifestyle tips for sleep, movement, food, stress, hydration, connection, and sustainable daily routines."
+        "title": "Healthy Lifestyle Tips: 7 Areas to Review Before Adding a Habit",
+        "description": "Use healthy lifestyle tips to review seven everyday needs, identify a real barrier and choose suitable support, without treating routines as a health score."
       },
       {
-        "title": "Stop Fighting Your Body: 7 Healthy Lifestyle Tips That Stick",
-        "description": "Explore seven practical healthy lifestyle tips for sleep, movement, food, stress, hydration, connection, and sustainable daily routines."
+        "title": "Healthy Lifestyle Tips: 7 Areas to Review Before Adding a Habit",
+        "description": "Use healthy lifestyle tips to review seven everyday needs, identify a real barrier and choose suitable support, without treating routines as a health score."
       },
       {
-        "title": "The 7-Habit System: Healthy Lifestyle Tips That Change Everything",
-        "description": "Explore seven practical healthy lifestyle tips for sleep, movement, food, stress, hydration, connection, and sustainable daily routines."
+        "title": "Healthy Lifestyle Tips: 7 Areas to Review Before Adding a Habit",
+        "description": "Use healthy lifestyle tips to review seven everyday needs, identify a real barrier and choose suitable support, without treating routines as a health score."
       }
     ]
   },

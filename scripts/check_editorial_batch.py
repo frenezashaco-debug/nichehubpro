@@ -19,7 +19,9 @@ slugs = sys.argv[1:] or ('healthy-living-tips', 'healthy-daily-habits', 'simple-
                         'healthy-daily-routine-checklist', 'best-morning-habits-for-more-energy',
                         'deep-work-vs-multitasking', 'how-to-track-progress-toward-goals',
                         'how-to-control-your-thoughts', 'how-to-stop-self-sabotaging',
-                        'fear-of-failure-anxiety', 'why-chronic-stress-makes-everything-feel-harder')
+                        'fear-of-failure-anxiety', 'why-chronic-stress-makes-everything-feel-harder',
+                        'healthy-lifestyle-tips', 'healthy-sleep-habits-that-improve-energy',
+                        'life-balance-habits')
 catalog_source = (root / 'articles.js').read_text(encoding='utf-8')
 catalog = json.loads(catalog_source[catalog_source.index('['):catalog_source.rfind(']') + 1])
 sitemap = ET.parse(root / 'sitemap.xml').getroot()
@@ -57,5 +59,6 @@ for slug in slugs:
     assert 'This article is for informational purposes only and does not replace professional medical advice.' in body
     url = 'https://nichehubpro.com/articles/' + slug + '.html'
     entry = next(item for item in sitemap if item.find('s:loc', ns).text == url)
-    assert entry.find('s:lastmod', ns).text == '2026-10-24'
+    article = next(item for item in documents if item.get('@type') == 'Article')
+    assert entry.find('s:lastmod', ns).text == article['dateModified']
     print(slug + ': editorial structure, metadata, links, images and FAQ/schema checks passed')
