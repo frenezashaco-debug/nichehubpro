@@ -677,26 +677,26 @@ const ARTICLES = [
   },
   {
     "slug": "why-small-habits-create-big-results",
-    "title": "7 Reasons Small Habits Can Matter",
+    "title": "Why Small Habits Create Big Results: 5 Assumptions to Check",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven reasons small habits can matter, with practical ways to choose a realistic action and review what helps over time. Practical steps you can use",
+    "read_time": "5",
+    "excerpt": "Why small habits create big results is a claim to examine. Check assumptions about useful actions, opportunity and feedback before expecting a transformation.",
     "image": "images/why-small-habits-create-big-results.jpg",
     "alt": "Young woman writing small habits journal in morning kitchen",
     "pins": [
       {
-        "title": "How to Use Small Habits to Create Big Life Results (Science Says So)",
-        "description": "Explore seven reasons small habits can matter, with practical ways to choose a realistic action and review what helps over time. Practical steps you can use"
+        "title": "Why Small Habits Create Big Results: 5 Assumptions to Check",
+        "description": "Why small habits create big results is a claim to examine. Check assumptions about useful actions, opportunity and feedback before expecting a transformation."
       },
       {
-        "title": "Stop Waiting for Motivation - Small Habits Are How Life Actually Changes",
-        "description": "Explore seven reasons small habits can matter, with practical ways to choose a realistic action and review what helps over time. Practical steps you can use"
+        "title": "Why Small Habits Create Big Results: 5 Assumptions to Check",
+        "description": "Why small habits create big results is a claim to examine. Check assumptions about useful actions, opportunity and feedback before expecting a transformation."
       },
       {
-        "title": "Try This: One Tiny Habit That Proves Small Actions Lead to Big Change",
-        "description": "Explore seven reasons small habits can matter, with practical ways to choose a realistic action and review what helps over time. Practical steps you can use"
+        "title": "Why Small Habits Create Big Results: 5 Assumptions to Check",
+        "description": "Why small habits create big results is a claim to examine. Check assumptions about useful actions, opportunity and feedback before expecting a transformation."
       }
     ]
   },
@@ -1377,26 +1377,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-procrastination",
-    "title": "7 Ways to Understand and Reduce Procrastination",
+    "title": "How to Stop Procrastination: 5 Questions Before Your Next Attempt",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to stop procrastination starts with understanding your own delay patterns and what triggers them. You're not lazy, and you're not broken. Research show",
+    "read_time": "5",
+    "excerpt": "How to stop procrastination: ask five questions about a delayed task, clarify the next action and needed support, without promising a fixed recovery timetable.",
     "image": "images/how-to-stop-procrastination.jpg",
     "alt": "Woman taking a breath before starting work at her desk with focus",
     "pins": [
       {
-        "title": "How to Stop Procrastination in 2 Minutes: The Trick That Actually Works",
-        "description": "The 2-minute rule is the most powerful way to stop procrastination before it starts. Instead of forcing yourself to work for hours, commit to just two minutes. Your brain will keep going once the resistance barrier breaks. Learn the five proven strategies that beat procrastination for real. Click to discover how to finally finish what you start."
+        "title": "How to Stop Procrastination: 5 Questions Before Your Next Attempt",
+        "description": "How to stop procrastination: ask five questions about a delayed task, clarify the next action and needed support, without promising a fixed recovery timetable."
       },
       {
-        "title": "Stop Procrastinating: 5 Strategies That Work When Willpower Fails",
-        "description": "Procrastination isn't about laziness. It's your nervous system trying to escape emotional discomfort. Discover why you procrastinate so much and the five concrete techniques that actually work. From environment design to trigger identification, these strategies reshape your brain's response to difficult tasks. Read now for lasting change."
+        "title": "How to Stop Procrastination: 5 Questions Before Your Next Attempt",
+        "description": "How to stop procrastination: ask five questions about a delayed task, clarify the next action and needed support, without promising a fixed recovery timetable."
       },
       {
-        "title": "Break Free From Procrastination With This Daily Habit Framework",
-        "description": "Stop procrastination by building tiny daily habits that make action easier than avoidance. Learn the exact framework used by people who beat chronic procrastination for good. No more shame spirals. No more 'tomorrow.' Just practical, doable changes that work with your brain, not against it. Start today."
+        "title": "How to Stop Procrastination: 5 Questions Before Your Next Attempt",
+        "description": "How to stop procrastination: ask five questions about a delayed task, clarify the next action and needed support, without promising a fixed recovery timetable."
       }
     ]
   },
