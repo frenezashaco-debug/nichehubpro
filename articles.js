@@ -377,26 +377,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stay-focused-on-hard-tasks-without-burning-out",
-    "title": "How to Focus on Hard Tasks Without Pushing Through Burnout",
+    "title": "How to Stay Focused on Hard Tasks Without Burning Out: 5 Planning Questions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Sep 2026",
-    "read_time": "8",
-    "excerpt": "Practical ways to structure difficult work, notice work stress, take useful breaks, and seek support when focus problems or burnout persist.",
+    "read_time": "5",
+    "excerpt": "How to stay focused on hard tasks without burning out: use five planning questions to review demands, support and stopping points, without promising prevention.",
     "image": "images/how-to-stay-focused-on-hard-tasks-without-burning-out.jpg",
     "alt": "young woman focused on hard task at home desk",
     "pins": [
       {
-        "title": "How to Stay Focused on Hard Tasks Without Burning Out (7 Real Strategies)",
-        "description": "Struggling to stay focused on hard tasks without burning out? These 7 sustainable focus techniques work with your brain, not against it. No more grinding until you crash. Save this for your next big project."
+        "title": "How to Stay Focused on Hard Tasks Without Burning Out: 5 Planning Questions",
+        "description": "How to stay focused on hard tasks without burning out: use five planning questions to review demands, support and stopping points, without promising prevention."
       },
       {
-        "title": "Stop Pushing Through Exhaustion - This Is Why You Burn Out During Hard Work",
-        "description": "If you keep pushing through hard tasks until you are completely drained, you are making the problem worse. Learn how to stay focused on difficult tasks without feeling drained using science-backed recovery habits. Your energy is the engine. Protect it."
+        "title": "How to Stay Focused on Hard Tasks Without Burning Out: 5 Planning Questions",
+        "description": "How to stay focused on hard tasks without burning out: use five planning questions to review demands, support and stopping points, without promising prevention."
       },
       {
-        "title": "Try This Simple Focus Reset Before Your Next Hard Task",
-        "description": "Before your next difficult work session, try this: 50 minutes of single-task focus, then a real 10-minute break with no screens. This one shift is at the core of how to stay focused on hard tasks without burning out. Start today."
+        "title": "How to Stay Focused on Hard Tasks Without Burning Out: 5 Planning Questions",
+        "description": "How to stay focused on hard tasks without burning out: use five planning questions to review demands, support and stopping points, without promising prevention."
       }
     ]
   },
@@ -2476,26 +2476,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-improve-emotional-resilience",
-    "title": "5 Ways to Improve Emotional Resilience After Hard Times",
+    "title": "How to Improve Emotional Resilience: 5 Support Questions",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to improve emotional resilience with 5 science-backed strategies. Build inner strength after trauma, loss, or burnout. Start today.",
+    "read_time": "5",
+    "excerpt": "How to improve emotional resilience starts with understanding your needs. Use five support questions to plan a next step without a recovery score or deadline.",
     "image": "images/how-to-improve-emotional-resilience.jpg",
     "alt": "Woman gazing peacefully by morning window in mental wellness moment",
     "pins": [
       {
-        "title": "How to Improve Emotional Resilience: 5 Daily Habits That Actually Work",
-        "description": "Learn how to improve emotional resilience with 5 science-backed strategies. Build inner strength after trauma, loss, or burnout. Start today."
+        "title": "How to Improve Emotional Resilience: 5 Support Questions",
+        "description": "How to improve emotional resilience starts with understanding your needs. Use five support questions to plan a next step without a recovery score or deadline."
       },
       {
-        "title": "Stop Falling Apart: Build Emotional Resilience After Hard Times",
-        "description": "Learn how to improve emotional resilience with 5 science-backed strategies. Build inner strength after trauma, loss, or burnout. Start today."
+        "title": "How to Improve Emotional Resilience: 5 Support Questions",
+        "description": "How to improve emotional resilience starts with understanding your needs. Use five support questions to plan a next step without a recovery score or deadline."
       },
       {
-        "title": "Try These 5 Daily Practices to Improve Your Emotional Resilience",
-        "description": "Learn how to improve emotional resilience with 5 science-backed strategies. Build inner strength after trauma, loss, or burnout. Start today."
+        "title": "How to Improve Emotional Resilience: 5 Support Questions",
+        "description": "How to improve emotional resilience starts with understanding your needs. Use five support questions to plan a next step without a recovery score or deadline."
       }
     ]
   },
