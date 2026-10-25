@@ -1627,26 +1627,26 @@ const ARTICLES = [
   },
   {
     "slug": "why-you-feel-lost-in-life",
-    "title": "5 Reasons You May Feel Lost in Life",
+    "title": "Why You Feel Lost in Life: 5 Questions Before a Big Decision",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Feeling lost in life is more common than you think, and it often hits harder than any other emotion. You wake up, go through the motions, and wonder if you",
+    "read_time": "5",
+    "excerpt": "Why you feel lost in life may have several explanations. Use five questions to clarify needs, uncertainty and support before making a major personal change.",
     "image": "images/why-you-feel-lost-in-life.jpg",
     "alt": "Woman gazing out window contemplating life direction indoors",
     "pins": [
       {
-        "title": "How to Stop Feeling Lost in Life: 5 Real Reasons + Fixes",
-        "description": "Feeling lost and directionless? Discover the 5 core reasons why you feel lost in life and practical, step-by-step solutions to rebuild clarity and direction. Learn how to align your life with your actual values and stop going through the motions. Start your journey back to purpose today."
+        "title": "Why You Feel Lost in Life: 5 Questions Before a Big Decision",
+        "description": "Why you feel lost in life may have several explanations. Use five questions to clarify needs, uncertainty and support before making a major personal change."
       },
       {
-        "title": "Stop Feeling Lost: Rebuild Your Direction Starting Today",
-        "description": "That hollow, directionless feeling you have? It's telling you something needs to change. Find out what's really causing your lostness and how to fix it with concrete daily habits. Includes simple morning and evening practices that work."
+        "title": "Why You Feel Lost in Life: 5 Questions Before a Big Decision",
+        "description": "Why you feel lost in life may have several explanations. Use five questions to clarify needs, uncertainty and support before making a major personal change."
       },
       {
-        "title": "Why You Feel Lost in Life (And How to Find Your Way Back)",
-        "description": "Is unclear values or identity confusion keeping you stuck and directionless? This guide walks you through the real reasons people feel lost and gives you a simple 5-step process to reclaim clarity. No more autopilot living - start building genuine purpose."
+        "title": "Why You Feel Lost in Life: 5 Questions Before a Big Decision",
+        "description": "Why you feel lost in life may have several explanations. Use five questions to clarify needs, uncertainty and support before making a major personal change."
       }
     ]
   },
@@ -2501,26 +2501,26 @@ const ARTICLES = [
   },
   {
     "slug": "why-you-have-no-motivation-anymore",
-    "title": "5 Reasons Why You Have No Motivation Anymore (And How to Get It Back)",
+    "title": "Why You Have No Motivation Anymore: 5 Points to Discuss",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Feeling unmotivated? Learn why you have no motivation anymore and discover practical strategies to reignite your drive and reclaim your energy today.",
+    "read_time": "5",
+    "excerpt": "Why you have no motivation anymore needs a look at what changed. Note five discussion points about interest, daily tasks and support, without self-diagnosis.",
     "image": "images/why-you-have-no-motivation-anymore.jpg",
     "alt": "Woman staring out window looking unmotivated and tired at home",
     "pins": [
       {
-        "title": "Why You Have No Motivation Anymore (5 Proven Fixes That Work)",
-        "description": "Feeling unmotivated? Learn why you have no motivation anymore and discover practical strategies to reignite your drive and reclaim your energy today."
+        "title": "Why You Have No Motivation Anymore: 5 Points to Discuss",
+        "description": "Why you have no motivation anymore needs a look at what changed. Note five discussion points about interest, daily tasks and support, without self-diagnosis."
       },
       {
-        "title": "Stop Losing Motivation: The Root Causes No One Talks About",
-        "description": "Feeling unmotivated? Learn why you have no motivation anymore and discover practical strategies to reignite your drive and reclaim your energy today."
+        "title": "Why You Have No Motivation Anymore: 5 Points to Discuss",
+        "description": "Why you have no motivation anymore needs a look at what changed. Note five discussion points about interest, daily tasks and support, without self-diagnosis."
       },
       {
-        "title": "Get Your Motivation Back in 20 Minutes Daily (Habit Stack Included)",
-        "description": "Feeling unmotivated? Learn why you have no motivation anymore and discover practical strategies to reignite your drive and reclaim your energy today."
+        "title": "Why You Have No Motivation Anymore: 5 Points to Discuss",
+        "description": "Why you have no motivation anymore needs a look at what changed. Note five discussion points about interest, daily tasks and support, without self-diagnosis."
       }
     ]
   },

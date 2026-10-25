@@ -26,7 +26,8 @@ slugs = sys.argv[1:] or ('healthy-living-tips', 'healthy-daily-habits', 'simple-
                         'how-to-calm-down-when-overwhelmed', 'sleep-routine-tips',
                         'best-habit-tracker-methods-that-work', 'best-time-management-techniques-ranked',
                         'how-to-avoid-distractions-while-working', 'how-to-gamify-your-life-for-productivity',
-                        'how-to-stop-procrastination', 'why-small-habits-create-big-results')
+                        'how-to-stop-procrastination', 'why-small-habits-create-big-results',
+                        'why-you-feel-lost-in-life', 'why-you-have-no-motivation-anymore')
 catalog_source = (root / 'articles.js').read_text(encoding='utf-8')
 catalog = json.loads(catalog_source[catalog_source.index('['):catalog_source.rfind(']') + 1])
 sitemap = ET.parse(root / 'sitemap.xml').getroot()
