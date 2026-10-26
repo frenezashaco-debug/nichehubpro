@@ -827,26 +827,26 @@ const ARTICLES = [
   },
   {
     "slug": "best-routine-planner-methods",
-    "title": "7 Routine Planner Methods for a More Manageable Day",
+    "title": "Best Routine Planner Methods: 5 Formats to Compare",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven routine planner methods that help you choose priorities, leave room for changes, and build a daily plan you can realistically use. Practical steps",
+    "read_time": "5",
+    "excerpt": "Best routine planner methods: compare five formats for appointments, tasks and shared responsibilities without assuming a fixed ranking or a cortisol benefit.",
     "image": "images/best-routine-planner-methods.jpg",
-    "alt": "woman writing in routine planner at home desk",
+    "alt": "Woman in a green hoodie writing in a notebook",
     "pins": [
       {
-        "title": "7 Routine Planner Methods for a More Manageable Day",
-        "description": "Explore seven routine planner methods that help you choose priorities, leave room for changes, and build a daily plan you can realistically use. Practical steps"
+        "title": "Best Routine Planner Methods: 5 Formats to Compare",
+        "description": "Best routine planner methods: compare five formats for appointments, tasks and shared responsibilities without assuming a fixed ranking or a cortisol benefit."
       },
       {
-        "title": "7 Routine Planner Methods for a More Manageable Day",
-        "description": "Explore seven routine planner methods that help you choose priorities, leave room for changes, and build a daily plan you can realistically use. Practical steps"
+        "title": "Best Routine Planner Methods: 5 Formats to Compare",
+        "description": "Best routine planner methods: compare five formats for appointments, tasks and shared responsibilities without assuming a fixed ranking or a cortisol benefit."
       },
       {
-        "title": "7 Routine Planner Methods for a More Manageable Day",
-        "description": "Explore seven routine planner methods that help you choose priorities, leave room for changes, and build a daily plan you can realistically use. Practical steps"
+        "title": "Best Routine Planner Methods: 5 Formats to Compare",
+        "description": "Best routine planner methods: compare five formats for appointments, tasks and shared responsibilities without assuming a fixed ranking or a cortisol benefit."
       }
     ]
   },
@@ -1102,51 +1102,51 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-focus-better-at-work",
-    "title": "9 Ways to Focus Better at Work Without Burning Out",
+    "title": "How to Focus Better at Work: 5 Task-Clarity Questions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to focus better at work with practical steps for reducing interruptions, protecting attention, and finishing important tasks without burnout today.",
+    "read_time": "5",
+    "excerpt": "How to focus better at work: ask five task-clarity questions about the result, inputs and decisions needed before adding a focus routine to an already busy day.",
     "image": "images/how-to-focus-better-at-work.jpg",
-    "alt": "Woman focused on work at desk improving focus better",
+    "alt": "Woman typing at a laptop by a window",
     "pins": [
       {
-        "title": "9 Ways to Focus Better at Work Without Burning Out",
-        "description": "Learn how to focus better at work with practical steps for reducing interruptions, protecting attention, and finishing important tasks without burnout today."
+        "title": "How to Focus Better at Work: 5 Task-Clarity Questions",
+        "description": "How to focus better at work: ask five task-clarity questions about the result, inputs and decisions needed before adding a focus routine to an already busy day."
       },
       {
-        "title": "9 Ways to Focus Better at Work Without Burning Out",
-        "description": "Learn how to focus better at work with practical steps for reducing interruptions, protecting attention, and finishing important tasks without burnout today."
+        "title": "How to Focus Better at Work: 5 Task-Clarity Questions",
+        "description": "How to focus better at work: ask five task-clarity questions about the result, inputs and decisions needed before adding a focus routine to an already busy day."
       },
       {
-        "title": "9 Ways to Focus Better at Work Without Burning Out",
-        "description": "Learn how to focus better at work with practical steps for reducing interruptions, protecting attention, and finishing important tasks without burnout today."
+        "title": "How to Focus Better at Work: 5 Task-Clarity Questions",
+        "description": "How to focus better at work: ask five task-clarity questions about the result, inputs and decisions needed before adding a focus routine to an already busy day."
       }
     ]
   },
   {
     "slug": "best-productivity-systems-explained",
-    "title": "7 Productivity Systems Explained: Choosing a Practical Fit",
+    "title": "Best Productivity Systems Explained: 5 Comparison Questions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Best productivity systems explained: compare seven planning approaches, consider tasks and constraints, and choose a practical fit without a universal winner.",
+    "read_time": "5",
+    "excerpt": "Best productivity systems explained: use five review questions about purpose, access and upkeep before trying a method, without relying on a brain-type label.",
     "image": "images/best-productivity-systems-explained.jpg",
-    "alt": "Woman finding calm with productivity system at desk",
+    "alt": "Woman writing in a notebook beside a mug",
     "pins": [
       {
-        "title": "7 Productivity Systems Explained: Choosing a Practical Fit",
-        "description": "Best productivity systems explained: compare seven planning approaches, consider tasks and constraints, and choose a practical fit without a universal winner."
+        "title": "Best Productivity Systems Explained: 5 Comparison Questions",
+        "description": "Best productivity systems explained: use five review questions about purpose, access and upkeep before trying a method, without relying on a brain-type label."
       },
       {
-        "title": "7 Productivity Systems Explained: Choosing a Practical Fit",
-        "description": "Best productivity systems explained: compare seven planning approaches, consider tasks and constraints, and choose a practical fit without a universal winner."
+        "title": "Best Productivity Systems Explained: 5 Comparison Questions",
+        "description": "Best productivity systems explained: use five review questions about purpose, access and upkeep before trying a method, without relying on a brain-type label."
       },
       {
-        "title": "7 Productivity Systems Explained: Choosing a Practical Fit",
-        "description": "Best productivity systems explained: compare seven planning approaches, consider tasks and constraints, and choose a practical fit without a universal winner."
+        "title": "Best Productivity Systems Explained: 5 Comparison Questions",
+        "description": "Best productivity systems explained: use five review questions about purpose, access and upkeep before trying a method, without relying on a brain-type label."
       }
     ]
   },
@@ -1227,26 +1227,26 @@ const ARTICLES = [
   },
   {
     "slug": "pomodoro-technique-explained-for-beginners",
-    "title": "Pomodoro Technique Explained: 5 Steps to Get Started",
+    "title": "Pomodoro Technique Explained for Beginners: 5 Timer Questions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Pomodoro technique explained for beginners: try five clear steps, a worked study session, useful breaks, and practical ways to handle interruptions at work.",
+    "read_time": "5",
+    "excerpt": "Pomodoro technique explained for beginners: ask five timer questions about tasks, pauses and interruptions before choosing whether timed work fits your needs.",
     "image": "images/pomodoro-technique-explained-for-beginners.jpg",
-    "alt": "woman focusing with pomodoro timer on desk morning",
+    "alt": "Woman seated at a laptop beside a small clock",
     "pins": [
       {
-        "title": "Pomodoro Technique Explained: 5 Steps to Get Started",
-        "description": "Pomodoro technique explained for beginners: try five clear steps, a worked study session, useful breaks, and practical ways to handle interruptions at work."
+        "title": "Pomodoro Technique Explained for Beginners: 5 Timer Questions",
+        "description": "Pomodoro technique explained for beginners: ask five timer questions about tasks, pauses and interruptions before choosing whether timed work fits your needs."
       },
       {
-        "title": "Pomodoro Technique Explained: 5 Steps to Get Started",
-        "description": "Pomodoro technique explained for beginners: try five clear steps, a worked study session, useful breaks, and practical ways to handle interruptions at work."
+        "title": "Pomodoro Technique Explained for Beginners: 5 Timer Questions",
+        "description": "Pomodoro technique explained for beginners: ask five timer questions about tasks, pauses and interruptions before choosing whether timed work fits your needs."
       },
       {
-        "title": "Pomodoro Technique Explained: 5 Steps to Get Started",
-        "description": "Pomodoro technique explained for beginners: try five clear steps, a worked study session, useful breaks, and practical ways to handle interruptions at work."
+        "title": "Pomodoro Technique Explained for Beginners: 5 Timer Questions",
+        "description": "Pomodoro technique explained for beginners: ask five timer questions about tasks, pauses and interruptions before choosing whether timed work fits your needs."
       }
     ]
   },
@@ -1352,26 +1352,26 @@ const ARTICLES = [
   },
   {
     "slug": "deep-work-techniques",
-    "title": "7 Deep Work Techniques to Try",
+    "title": "Deep Work Techniques: 5 Checks for a Defined Deliverable",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven deep work techniques for planning focused sessions, reducing interruptions, taking breaks, and adapting the method to your work. Practical steps",
+    "read_time": "5",
+    "excerpt": "Deep work techniques: use five checks for a defined deliverable, usable working conditions and a useful stopping point, without promising flow or brain changes.",
     "image": "images/deep-work-techniques.jpg",
-    "alt": "Woman focused on deep work at desk with coffee during morning hours",
+    "alt": "Woman wearing headphones at a laptop",
     "pins": [
       {
-        "title": "7 Deep Work Techniques to Try",
-        "description": "Explore seven deep work techniques for planning focused sessions, reducing interruptions, taking breaks, and adapting the method to your work. Practical steps"
+        "title": "Deep Work Techniques: 5 Checks for a Defined Deliverable",
+        "description": "Deep work techniques: use five checks for a defined deliverable, usable working conditions and a useful stopping point, without promising flow or brain changes."
       },
       {
-        "title": "7 Deep Work Techniques to Try",
-        "description": "Explore seven deep work techniques for planning focused sessions, reducing interruptions, taking breaks, and adapting the method to your work. Practical steps"
+        "title": "Deep Work Techniques: 5 Checks for a Defined Deliverable",
+        "description": "Deep work techniques: use five checks for a defined deliverable, usable working conditions and a useful stopping point, without promising flow or brain changes."
       },
       {
-        "title": "7 Deep Work Techniques to Try",
-        "description": "Explore seven deep work techniques for planning focused sessions, reducing interruptions, taking breaks, and adapting the method to your work. Practical steps"
+        "title": "Deep Work Techniques: 5 Checks for a Defined Deliverable",
+        "description": "Deep work techniques: use five checks for a defined deliverable, usable working conditions and a useful stopping point, without promising flow or brain changes."
       }
     ]
   },
@@ -1452,26 +1452,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-focus-without-distractions",
-    "title": "7 Ways to Focus With Fewer Distractions",
+    "title": "How to Focus Without Distractions: 5 Environment Checks",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to focus with fewer distractions by managing notifications, defining one task, using flexible work blocks, and taking breaks that protect attention.",
+    "read_time": "5",
+    "excerpt": "How to focus without distractions: use environment checks to identify one avoidable obstacle while keeping required contact and accessibility needs available.",
     "image": "images/how-to-focus-without-distractions.jpg",
-    "alt": "Woman focused on laptop at home desk without phone distraction",
+    "alt": "Woman in a green shirt seated near a window",
     "pins": [
       {
-        "title": "7 Ways to Focus With Fewer Distractions",
-        "description": "Learn how to focus with fewer distractions by managing notifications, defining one task, using flexible work blocks, and taking breaks that protect attention."
+        "title": "How to Focus Without Distractions: 5 Environment Checks",
+        "description": "How to focus without distractions: use environment checks to identify one avoidable obstacle while keeping required contact and accessibility needs available."
       },
       {
-        "title": "7 Ways to Focus With Fewer Distractions",
-        "description": "Learn how to focus with fewer distractions by managing notifications, defining one task, using flexible work blocks, and taking breaks that protect attention."
+        "title": "How to Focus Without Distractions: 5 Environment Checks",
+        "description": "How to focus without distractions: use environment checks to identify one avoidable obstacle while keeping required contact and accessibility needs available."
       },
       {
-        "title": "7 Ways to Focus With Fewer Distractions",
-        "description": "Learn how to focus with fewer distractions by managing notifications, defining one task, using flexible work blocks, and taking breaks that protect attention."
+        "title": "How to Focus Without Distractions: 5 Environment Checks",
+        "description": "How to focus without distractions: use environment checks to identify one avoidable obstacle while keeping required contact and accessibility needs available."
       }
     ]
   },
@@ -1901,26 +1901,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stay-productive-every-day",
-    "title": "5 Ways to Stay Productive Every Day",
+    "title": "How to Stay Productive Every Day: 5 Capacity Decisions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Explore five realistic ways to stay productive every day, including planning, breaks, priorities, and adapting your routine when life changes. Practical steps",
+    "read_time": "5",
+    "excerpt": "How to stay productive every day: use five daily decisions to keep, adapt, share, defer or pause a commitment without demanding equal output on difficult days.",
     "image": "images/how-to-stay-productive-every-day.jpg",
-    "alt": "Woman focused at desk writing morning priorities",
+    "alt": "Woman writing in a notebook beside a mug",
     "pins": [
       {
-        "title": "5 Ways to Stay Productive Every Day",
-        "description": "Explore five realistic ways to stay productive every day, including planning, breaks, priorities, and adapting your routine when life changes. Practical steps"
+        "title": "How to Stay Productive Every Day: 5 Capacity Decisions",
+        "description": "How to stay productive every day: use five daily decisions to keep, adapt, share, defer or pause a commitment without demanding equal output on difficult days."
       },
       {
-        "title": "5 Ways to Stay Productive Every Day",
-        "description": "Explore five realistic ways to stay productive every day, including planning, breaks, priorities, and adapting your routine when life changes. Practical steps"
+        "title": "How to Stay Productive Every Day: 5 Capacity Decisions",
+        "description": "How to stay productive every day: use five daily decisions to keep, adapt, share, defer or pause a commitment without demanding equal output on difficult days."
       },
       {
-        "title": "5 Ways to Stay Productive Every Day",
-        "description": "Explore five realistic ways to stay productive every day, including planning, breaks, priorities, and adapting your routine when life changes. Practical steps"
+        "title": "How to Stay Productive Every Day: 5 Capacity Decisions",
+        "description": "How to stay productive every day: use five daily decisions to keep, adapt, share, defer or pause a commitment without demanding equal output on difficult days."
       }
     ]
   },
@@ -2601,26 +2601,26 @@ const ARTICLES = [
   },
   {
     "slug": "time-blocking-for-beginners",
-    "title": "5 Time Blocking for Beginners: Stop Feeling Scattered and Reclaim Your Day",
+    "title": "Time Blocking for Beginners: 5 Calendar Decisions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Learn time blocking for beginners with a practical schedule. Organize priorities, protect focus, leave room for interruptions, and finish important work well.",
-    "image": "images/time-blocking-for-beginners.jpg",
-    "alt": "Woman reviewing her organized time blocking schedule on calendar peacefully",
+    "read_time": "5",
+    "excerpt": "Time blocking for beginners: make five calendar decisions about commitments, scope and room for change, without scheduling every minute or promising results.",
+    "image": "images/time-blocking-for-beginners-clean-v2.jpg",
+    "alt": "Man arranging blank coloured cards on an unlabelled calendar grid",
     "pins": [
       {
-        "title": "5 Time Blocking for Beginners: Stop Feeling Scattered and Reclaim Your Day",
-        "description": "Learn time blocking for beginners with a practical schedule. Organize priorities, protect focus, leave room for interruptions, and finish important work well."
+        "title": "Time Blocking for Beginners: 5 Calendar Decisions",
+        "description": "Time blocking for beginners: make five calendar decisions about commitments, scope and room for change, without scheduling every minute or promising results."
       },
       {
-        "title": "5 Time Blocking for Beginners: Stop Feeling Scattered and Reclaim Your Day",
-        "description": "Learn time blocking for beginners with a practical schedule. Organize priorities, protect focus, leave room for interruptions, and finish important work well."
+        "title": "Time Blocking for Beginners: 5 Calendar Decisions",
+        "description": "Time blocking for beginners: make five calendar decisions about commitments, scope and room for change, without scheduling every minute or promising results."
       },
       {
-        "title": "5 Time Blocking for Beginners: Stop Feeling Scattered and Reclaim Your Day",
-        "description": "Learn time blocking for beginners with a practical schedule. Organize priorities, protect focus, leave room for interruptions, and finish important work well."
+        "title": "Time Blocking for Beginners: 5 Calendar Decisions",
+        "description": "Time blocking for beginners: make five calendar decisions about commitments, scope and room for change, without scheduling every minute or promising results."
       }
     ]
   },
@@ -2876,26 +2876,26 @@ const ARTICLES = [
   },
   {
     "slug": "productivity-system",
-    "title": "5 Productivity System Strategies That Actually Work Without Burning Out",
+    "title": "Productivity System: 5 Checks for Keeping Commitments Visible",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Productivity system planning: consider five approaches to organising work, compare needs and constraints, and avoid treating one method as right for everyone.",
+    "read_time": "5",
+    "excerpt": "Productivity system: use five maintenance checks to keep commitments, next actions and accepted changes visible without copying every task into several tools.",
     "image": "images/productivity-system.jpg",
-    "alt": "Woman writing daily priorities in notebook at calm morning desk",
+    "alt": "Woman writing at a wooden table",
     "pins": [
       {
-        "title": "5 Productivity System Strategies That Actually Work Without Burning Out",
-        "description": "Productivity system planning: consider five approaches to organising work, compare needs and constraints, and avoid treating one method as right for everyone."
+        "title": "Productivity System: 5 Checks for Keeping Commitments Visible",
+        "description": "Productivity system: use five maintenance checks to keep commitments, next actions and accepted changes visible without copying every task into several tools."
       },
       {
-        "title": "5 Productivity System Strategies That Actually Work Without Burning Out",
-        "description": "Productivity system planning: consider five approaches to organising work, compare needs and constraints, and avoid treating one method as right for everyone."
+        "title": "Productivity System: 5 Checks for Keeping Commitments Visible",
+        "description": "Productivity system: use five maintenance checks to keep commitments, next actions and accepted changes visible without copying every task into several tools."
       },
       {
-        "title": "5 Productivity System Strategies That Actually Work Without Burning Out",
-        "description": "Productivity system planning: consider five approaches to organising work, compare needs and constraints, and avoid treating one method as right for everyone."
+        "title": "Productivity System: 5 Checks for Keeping Commitments Visible",
+        "description": "Productivity system: use five maintenance checks to keep commitments, next actions and accepted changes visible without copying every task into several tools."
       }
     ]
   },
@@ -3026,26 +3026,26 @@ const ARTICLES = [
   },
   {
     "slug": "time-management-tips",
-    "title": "5 Time Management Tips That Actually Work: Stop Wasting Hours Every Day",
+    "title": "Time Management Tips: 5 Decisions for Conflicting Deadlines",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Use five practical time management tips to set priorities, protect focus, plan realistic work blocks, and finish more without pushing toward burnout every week.",
+    "read_time": "5",
+    "excerpt": "Time management tips: use five decisions to clarify conflicting deadlines, dependencies and task ownership, without assuming a planner can create more capacity.",
     "image": "images/time-management-tips.jpg",
-    "alt": "Woman writing morning priorities in notebook with coffee and natural light",
+    "alt": "Woman writing in an open notebook at a table",
     "pins": [
       {
-        "title": "5 Time Management Tips That Actually Work: Stop Wasting Hours Every Day",
-        "description": "Use five practical time management tips to set priorities, protect focus, plan realistic work blocks, and finish more without pushing toward burnout every week."
+        "title": "Time Management Tips: 5 Decisions for Conflicting Deadlines",
+        "description": "Time management tips: use five decisions to clarify conflicting deadlines, dependencies and task ownership, without assuming a planner can create more capacity."
       },
       {
-        "title": "5 Time Management Tips That Actually Work: Stop Wasting Hours Every Day",
-        "description": "Use five practical time management tips to set priorities, protect focus, plan realistic work blocks, and finish more without pushing toward burnout every week."
+        "title": "Time Management Tips: 5 Decisions for Conflicting Deadlines",
+        "description": "Time management tips: use five decisions to clarify conflicting deadlines, dependencies and task ownership, without assuming a planner can create more capacity."
       },
       {
-        "title": "5 Time Management Tips That Actually Work: Stop Wasting Hours Every Day",
-        "description": "Use five practical time management tips to set priorities, protect focus, plan realistic work blocks, and finish more without pushing toward burnout every week."
+        "title": "Time Management Tips: 5 Decisions for Conflicting Deadlines",
+        "description": "Time management tips: use five decisions to clarify conflicting deadlines, dependencies and task ownership, without assuming a planner can create more capacity."
       }
     ]
   },

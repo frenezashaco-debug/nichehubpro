@@ -40,7 +40,8 @@ slugs = sys.argv[1:] or ('healthy-living-tips', 'healthy-daily-habits', 'simple-
                         'anxiety-before-sleep', 'how-to-fall-asleep-when-your-mind-wont-stop',
                         'how-to-fix-your-sleep-schedule',
                         'emotional-exhaustion-vs-burnout', 'signs-of-mental-burnout-and-how-to-recover', 'signs-of-mental-exhaustion', 'why-you-feel-tired-all-the-time',
-                        'how-to-recover-focus-after-a-distraction', 'how-to-protect-your-focus-from-constant-interruptions')
+                        'how-to-recover-focus-after-a-distraction', 'how-to-protect-your-focus-from-constant-interruptions',
+                        'time-blocking-for-beginners', 'time-management-tips', 'deep-work-techniques', 'pomodoro-technique-explained-for-beginners', 'how-to-focus-without-distractions', 'how-to-focus-better-at-work', 'how-to-stay-productive-every-day', 'best-routine-planner-methods', 'best-productivity-systems-explained', 'productivity-system')
 catalog_source = (root / 'articles.js').read_text(encoding='utf-8')
 catalog = json.loads(catalog_source[catalog_source.index('['):catalog_source.rfind(']') + 1])
 sitemap = ET.parse(root / 'sitemap.xml').getroot()

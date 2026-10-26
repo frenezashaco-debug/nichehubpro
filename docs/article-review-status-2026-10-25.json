@@ -3,7 +3,7 @@
   "scope": "A full editorial rewrite and the strict batch checks apply only to the listed full-review articles. Other entries have targeted edits or mechanical consistency checks, not a scientific certification or AdSense approval. Pixel watermarks and all external claims have not been individually verified in this pass.",
   "summary": {
     "inventory": 155,
-    "full_review_and_strict_checks": 64,
+    "full_review_and_strict_checks": 74,
     "targeted_scenario_repairs_this_batch": 43,
     "changed_articles_this_batch": 152,
     "body_changed_this_batch": 71
@@ -151,7 +151,9 @@
     },
     {
       "slug": "best-routine-planner-methods",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/planning-ten-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-stop-overthinking-everything",
@@ -195,11 +197,15 @@
     },
     {
       "slug": "how-to-focus-better-at-work",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/planning-ten-editorial-review-2026-10-26.md"
     },
     {
       "slug": "best-productivity-systems-explained",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/planning-ten-editorial-review-2026-10-26.md"
     },
     {
       "slug": "best-foods-for-focus-and-concentration",
@@ -217,7 +223,9 @@
     },
     {
       "slug": "pomodoro-technique-explained-for-beginners",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/planning-ten-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-stop-procrastinating-immediately",
@@ -239,7 +247,9 @@
     },
     {
       "slug": "deep-work-techniques",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/planning-ten-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-improve-mental-clarity",
@@ -255,7 +265,9 @@
     },
     {
       "slug": "how-to-focus-without-distractions",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/planning-ten-editorial-review-2026-10-26.md"
     },
     {
       "slug": "emotional-burnout-recovery",
@@ -333,7 +345,9 @@
     },
     {
       "slug": "how-to-stay-productive-every-day",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/planning-ten-editorial-review-2026-10-26.md"
     },
     {
       "slug": "focus-vs-motivation-explained",
@@ -447,7 +461,9 @@
     },
     {
       "slug": "time-blocking-for-beginners",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/planning-ten-editorial-review-2026-10-26.md"
     },
     {
       "slug": "emotional-exhaustion-vs-burnout",
@@ -493,7 +509,9 @@
     },
     {
       "slug": "productivity-system",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/planning-ten-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-reset-your-life",
@@ -517,7 +535,9 @@
     },
     {
       "slug": "time-management-tips",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/planning-ten-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-stop-worrying-about-the-future",

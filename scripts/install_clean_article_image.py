@@ -6,6 +6,8 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 TARGETS = {
+    'pomo_setup': ('pomodoro-technique-explained-for-beginners', 'pomodoro-technique-explained-for-beginners-sec1-inline-v1.webp', 'Woman setting an unmarked glass sand timer beside a blank closed notebook'),
+    'pomo_break': ('pomodoro-technique-explained-for-beginners', 'pomodoro-technique-explained-for-beginners-sec5-inline-v1.webp', 'Man standing beside an open balcony door looking toward a garden'),
     'fatigue': ('why-you-feel-tired-all-the-time', 'why-you-feel-tired-all-the-time-sec1.webp', 'Woman pausing at a wooden table beside a blank notebook and mug in natural window light'),
     'bedtime': ('anxiety-before-sleep', 'anxiety-before-sleep-sec1.webp', 'Man sitting on the edge of a bed beside a window in the early evening'),
     'deadlines': ('the-psychology-behind-why-deadlines-make-you-more-productive', 'the-psychology-behind-why-deadlines-make-you-more-productive-sec5.webp', 'Man arranging blank task cards to review a realistic deadline plan'),
