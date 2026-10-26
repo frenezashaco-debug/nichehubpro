@@ -1177,26 +1177,26 @@ const ARTICLES = [
   },
   {
     "slug": "why-you-feel-tired-all-the-time",
-    "title": "7 Reasons You Feel Tired All the Time",
+    "title": "Why You Feel Tired All the Time: 5 Points for an Appointment",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Explore common causes of feeling tired all the time, sensible daily steps, and warning signs that ongoing fatigue needs a clinical evaluation when it persists.",
+    "read_time": "5",
+    "excerpt": "Why you feel tired all the time needs an individual explanation. Prepare five points about symptoms, sleep and health changes without self-diagnosing online.",
     "image": "images/why-you-feel-tired-all-the-time.jpg",
     "alt": "Young woman with tea feeling tired in morning light",
     "pins": [
       {
-        "title": "7 Reasons You Feel Tired All the Time",
-        "description": "Explore common causes of feeling tired all the time, sensible daily steps, and warning signs that ongoing fatigue needs a clinical evaluation when it persists."
+        "title": "Why You Feel Tired All the Time: 5 Points for an Appointment",
+        "description": "Why you feel tired all the time needs an individual explanation. Prepare five points about symptoms, sleep and health changes without self-diagnosing online."
       },
       {
-        "title": "7 Reasons You Feel Tired All the Time",
-        "description": "Explore common causes of feeling tired all the time, sensible daily steps, and warning signs that ongoing fatigue needs a clinical evaluation when it persists."
+        "title": "Why You Feel Tired All the Time: 5 Points for an Appointment",
+        "description": "Why you feel tired all the time needs an individual explanation. Prepare five points about symptoms, sleep and health changes without self-diagnosing online."
       },
       {
-        "title": "7 Reasons You Feel Tired All the Time",
-        "description": "Explore common causes of feeling tired all the time, sensible daily steps, and warning signs that ongoing fatigue needs a clinical evaluation when it persists."
+        "title": "Why You Feel Tired All the Time: 5 Points for an Appointment",
+        "description": "Why you feel tired all the time needs an individual explanation. Prepare five points about symptoms, sleep and health changes without self-diagnosing online."
       }
     ]
   },
@@ -1252,26 +1252,26 @@ const ARTICLES = [
   },
   {
     "slug": "signs-of-mental-burnout-and-how-to-recover",
-    "title": "9 Signs of Mental Burnout and What to Do Next",
+    "title": "Signs of Mental Burnout and How to Recover: 5 Support Questions",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Learn nine signs of mental burnout, practical recovery steps, and when persistent exhaustion or hopelessness should be discussed with a professional promptly.",
+    "read_time": "5",
+    "excerpt": "Signs of mental burnout and how to recover: use five questions to discuss work demands and health concerns, without diagnosing yourself or setting a deadline.",
     "image": "images/signs-of-mental-burnout-and-how-to-recover.jpg",
     "alt": "Tired young woman looking out window holding coffee during burnout recovery",
     "pins": [
       {
-        "title": "9 Signs of Mental Burnout and What to Do Next",
-        "description": "Learn nine signs of mental burnout, practical recovery steps, and when persistent exhaustion or hopelessness should be discussed with a professional promptly."
+        "title": "Signs of Mental Burnout and How to Recover: 5 Support Questions",
+        "description": "Signs of mental burnout and how to recover: use five questions to discuss work demands and health concerns, without diagnosing yourself or setting a deadline."
       },
       {
-        "title": "9 Signs of Mental Burnout and What to Do Next",
-        "description": "Learn nine signs of mental burnout, practical recovery steps, and when persistent exhaustion or hopelessness should be discussed with a professional promptly."
+        "title": "Signs of Mental Burnout and How to Recover: 5 Support Questions",
+        "description": "Signs of mental burnout and how to recover: use five questions to discuss work demands and health concerns, without diagnosing yourself or setting a deadline."
       },
       {
-        "title": "9 Signs of Mental Burnout and What to Do Next",
-        "description": "Learn nine signs of mental burnout, practical recovery steps, and when persistent exhaustion or hopelessness should be discussed with a professional promptly."
+        "title": "Signs of Mental Burnout and How to Recover: 5 Support Questions",
+        "description": "Signs of mental burnout and how to recover: use five questions to discuss work demands and health concerns, without diagnosing yourself or setting a deadline."
       }
     ]
   },
@@ -2601,26 +2601,26 @@ const ARTICLES = [
   },
   {
     "slug": "emotional-exhaustion-vs-burnout",
-    "title": "5 Key Differences: Emotional Exhaustion vs Burnout (And Why It Matters)",
+    "title": "Emotional Exhaustion vs Burnout: 5 Distinctions That Matter",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Discover the key differences between emotional exhaustion vs burnout, their warning signs, and proven recovery strategies to reclaim your mental health today.",
+    "read_time": "5",
+    "excerpt": "Emotional exhaustion vs burnout: explore five distinctions about symptoms, work and support, without using a checklist to diagnose the cause or predict results.",
     "image": "images/emotional-exhaustion-vs-burnout.jpg",
     "alt": "Woman experiencing emotional exhaustion looking tired at window",
     "pins": [
       {
-        "title": "5 Key Differences: Emotional Exhaustion vs Burnout (And Why It Matters)",
-        "description": "Discover the key differences between emotional exhaustion vs burnout, their warning signs, and proven recovery strategies to reclaim your mental health today."
+        "title": "Emotional Exhaustion vs Burnout: 5 Distinctions That Matter",
+        "description": "Emotional exhaustion vs burnout: explore five distinctions about symptoms, work and support, without using a checklist to diagnose the cause or predict results."
       },
       {
-        "title": "5 Key Differences: Emotional Exhaustion vs Burnout (And Why It Matters)",
-        "description": "Discover the key differences between emotional exhaustion vs burnout, their warning signs, and proven recovery strategies to reclaim your mental health today."
+        "title": "Emotional Exhaustion vs Burnout: 5 Distinctions That Matter",
+        "description": "Emotional exhaustion vs burnout: explore five distinctions about symptoms, work and support, without using a checklist to diagnose the cause or predict results."
       },
       {
-        "title": "5 Key Differences: Emotional Exhaustion vs Burnout (And Why It Matters)",
-        "description": "Discover the key differences between emotional exhaustion vs burnout, their warning signs, and proven recovery strategies to reclaim your mental health today."
+        "title": "Emotional Exhaustion vs Burnout: 5 Distinctions That Matter",
+        "description": "Emotional exhaustion vs burnout: explore five distinctions about symptoms, work and support, without using a checklist to diagnose the cause or predict results."
       }
     ]
   },
@@ -3701,26 +3701,26 @@ const ARTICLES = [
   },
   {
     "slug": "signs-of-mental-exhaustion",
-    "title": "7 Signs of Mental Exhaustion You're Ignoring (And How to Reclaim Your Energy)",
+    "title": "Signs of Mental Exhaustion: 5 Changes to Discuss",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn the 7 signs of mental exhaustion that most people miss. Burnout symptoms, warning signals, and practical steps to recover your mental health today. Practi",
+    "read_time": "5",
+    "excerpt": "Signs of mental exhaustion: describe five changes in daily life and prepare questions for support, without treating tiredness or a symptom count as a diagnosis.",
     "image": "images/signs-of-mental-exhaustion.jpg",
     "alt": "Exhausted professional experiencing mental fatigue at desk during afternoon work",
     "pins": [
       {
-        "title": "7 Signs of Mental Exhaustion You're Ignoring (And How to Reclaim Your Energy)",
-        "description": "Learn the 7 signs of mental exhaustion that most people miss. Burnout symptoms, warning signals, and practical steps to recover your mental health today. Practi"
+        "title": "Signs of Mental Exhaustion: 5 Changes to Discuss",
+        "description": "Signs of mental exhaustion: describe five changes in daily life and prepare questions for support, without treating tiredness or a symptom count as a diagnosis."
       },
       {
-        "title": "7 Signs of Mental Exhaustion You're Ignoring (And How to Reclaim Your Energy)",
-        "description": "Learn the 7 signs of mental exhaustion that most people miss. Burnout symptoms, warning signals, and practical steps to recover your mental health today. Practi"
+        "title": "Signs of Mental Exhaustion: 5 Changes to Discuss",
+        "description": "Signs of mental exhaustion: describe five changes in daily life and prepare questions for support, without treating tiredness or a symptom count as a diagnosis."
       },
       {
-        "title": "7 Signs of Mental Exhaustion You're Ignoring (And How to Reclaim Your Energy)",
-        "description": "Learn the 7 signs of mental exhaustion that most people miss. Burnout symptoms, warning signals, and practical steps to recover your mental health today. Practi"
+        "title": "Signs of Mental Exhaustion: 5 Changes to Discuss",
+        "description": "Signs of mental exhaustion: describe five changes in daily life and prepare questions for support, without treating tiredness or a symptom count as a diagnosis."
       }
     ]
   },

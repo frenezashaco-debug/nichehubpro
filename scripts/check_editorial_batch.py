@@ -38,7 +38,8 @@ slugs = sys.argv[1:] or ('healthy-living-tips', 'healthy-daily-habits', 'simple-
                         'emotional-burnout-recovery', 'best-daily-mobility-exercises',
                         'daily-stretching-routine-for-beginners',
                         'anxiety-before-sleep', 'how-to-fall-asleep-when-your-mind-wont-stop',
-                        'how-to-fix-your-sleep-schedule')
+                        'how-to-fix-your-sleep-schedule',
+                        'emotional-exhaustion-vs-burnout', 'signs-of-mental-burnout-and-how-to-recover', 'signs-of-mental-exhaustion', 'why-you-feel-tired-all-the-time')
 catalog_source = (root / 'articles.js').read_text(encoding='utf-8')
 catalog = json.loads(catalog_source[catalog_source.index('['):catalog_source.rfind(']') + 1])
 sitemap = ET.parse(root / 'sitemap.xml').getroot()

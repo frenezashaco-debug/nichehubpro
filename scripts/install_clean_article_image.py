@@ -6,6 +6,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 TARGETS = {
+    'fatigue': ('why-you-feel-tired-all-the-time', 'why-you-feel-tired-all-the-time-sec1.webp', 'Woman pausing at a wooden table beside a blank notebook and mug in natural window light'),
     'bedtime': ('anxiety-before-sleep', 'anxiety-before-sleep-sec1.webp', 'Man sitting on the edge of a bed beside a window in the early evening'),
     'deadlines': ('the-psychology-behind-why-deadlines-make-you-more-productive', 'the-psychology-behind-why-deadlines-make-you-more-productive-sec5.webp', 'Man arranging blank task cards to review a realistic deadline plan'),
     'sleep': ('how-sleep-debt-silently-drains-your-daily-performance', 'how-sleep-debt-silently-drains-your-daily-performance-sec5.webp', 'Woman closing bedroom curtains while preparing for a quiet evening'),

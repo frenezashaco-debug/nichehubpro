@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "scope": "A full editorial rewrite and the strict batch checks apply only to the listed full-review articles. Other entries have targeted edits or mechanical consistency checks, not a scientific certification or AdSense approval. Pixel watermarks and all external claims have not been individually verified in this pass.",
   "summary": {
     "inventory": 154,
-    "full_review_and_strict_checks": 58,
+    "full_review_and_strict_checks": 62,
     "targeted_scenario_repairs_this_batch": 43,
     "changed_articles_this_batch": 152,
     "body_changed_this_batch": 71
@@ -203,7 +203,9 @@
     },
     {
       "slug": "why-you-feel-tired-all-the-time",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/exhaustion-editorial-review-2026-10-26.md"
     },
     {
       "slug": "pomodoro-technique-explained-for-beginners",
@@ -215,7 +217,9 @@
     },
     {
       "slug": "signs-of-mental-burnout-and-how-to-recover",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/exhaustion-editorial-review-2026-10-26.md"
     },
     {
       "slug": "life-balance-habits",
@@ -439,7 +443,9 @@
     },
     {
       "slug": "emotional-exhaustion-vs-burnout",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/exhaustion-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-reduce-anxiety-naturally",
@@ -617,7 +623,9 @@
     },
     {
       "slug": "signs-of-mental-exhaustion",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/exhaustion-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-stop-overthinking",
