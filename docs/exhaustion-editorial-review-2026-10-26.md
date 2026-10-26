@@ -25,4 +25,6 @@ Generated with imagegen using this prompt:
 
 ## Validation
 
-The strict batch validator passes all 62 fully reviewed guides. The inventory validator passes all 154 metadata lengths and FAQ/schema pairs; the short-paragraph contract passes on the 152 eligible pages. The two pre-existing locally modified articles about dopamine and blood sugar were excluded from edits and staging. These checks are not AdSense approval or a scientific certification of the remaining 92 guides.
+The strict batch validator passes all 62 fully reviewed guides. The inventory validator passes all 155 metadata lengths and FAQ/schema pairs; the short-paragraph contract passes on the 153 eligible pages. The two pre-existing locally modified articles about dopamine and blood sugar were excluded from edits and staging. These checks are not AdSense approval or a scientific certification of the remaining 93 guides.
+
+The concurrent automatic publication of the mental-energy guide was preserved. Its missing FAQ schema was generated from the five visible answers and its catalogue excerpt aligned with its existing meta description. These are consistency repairs, not a full editorial review of that new article.

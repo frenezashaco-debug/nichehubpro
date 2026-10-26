@@ -8,7 +8,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Oct 2026",
     "read_time": "8",
-    "excerpt": "How to protect your mental energy like a finite resource is a question most people never think to ask - until they hit empty.",
+    "excerpt": "How to protect your mental energy like a finite resource with 5 practical checks. Manage mental energy better every day with these clear, actionable steps.",
     "image": "images/how-to-protect-your-mental-energy-like-a-finite-resource.jpg",
     "alt": "Man reflecting quietly at table supporting mental energy management",
     "pins": [
