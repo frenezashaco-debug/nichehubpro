@@ -2,13 +2,17 @@
   "date": "2026-10-26",
   "scope": "A full editorial rewrite and the strict batch checks apply only to the listed full-review articles. Other entries have targeted edits or mechanical consistency checks, not a scientific certification or AdSense approval. Pixel watermarks and all external claims have not been individually verified in this pass.",
   "summary": {
-    "inventory": 154,
+    "inventory": 155,
     "full_review_and_strict_checks": 62,
     "targeted_scenario_repairs_this_batch": 43,
     "changed_articles_this_batch": 152,
     "body_changed_this_batch": 71
   },
   "articles": [
+    {
+      "slug": "how-to-protect-your-mental-energy-like-a-finite-resource",
+      "review_scope": "new_automated_publication_not_full_editorial_review"
+    },
     {
       "slug": "how-gut-health-influences-your-mood-and-energy",
       "review_scope": "targeted_or_mechanical_checks_only"
