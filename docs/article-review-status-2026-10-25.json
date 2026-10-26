@@ -3,7 +3,7 @@
   "scope": "A full editorial rewrite and the strict batch checks apply only to the listed full-review articles. Other entries have targeted edits or mechanical consistency checks, not a scientific certification or AdSense approval. Pixel watermarks and all external claims have not been individually verified in this pass.",
   "summary": {
     "inventory": 155,
-    "full_review_and_strict_checks": 62,
+    "full_review_and_strict_checks": 64,
     "targeted_scenario_repairs_this_batch": 43,
     "changed_articles_this_batch": 152,
     "body_changed_this_batch": 71
@@ -67,7 +67,9 @@
     },
     {
       "slug": "how-to-recover-focus-after-a-distraction",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/interruptions-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-stop-feeling-guilty-for-resting",
@@ -91,7 +93,9 @@
     },
     {
       "slug": "how-to-protect-your-focus-from-constant-interruptions",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/interruptions-editorial-review-2026-10-26.md"
     },
     {
       "slug": "why-chronic-stress-makes-everything-feel-harder",

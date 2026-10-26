@@ -327,26 +327,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-recover-focus-after-a-distraction",
-    "title": "How to Recover Focus After a Distraction: 5 Steps to Get Unstuck",
+    "title": "How to Recover Focus After a Distraction: 5 Restart Decisions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Sep 2026",
-    "read_time": "8",
-    "excerpt": "How to recover focus after a distraction: use five practical steps, a copyable restart note, and a review to return to work without promising instant focus.",
+    "read_time": "5",
+    "excerpt": "How to recover focus after a distraction: use five decisions to find your place, clarify the next action and handle a blocker without a recovery countdown.",
     "image": "images/how-to-recover-focus-after-a-distraction.jpg",
     "alt": "woman regaining focus after distraction at home desk",
     "pins": [
       {
-        "title": "How to Recover Focus After a Distraction: 5 Steps to Get Unstuck",
-        "description": "How to recover focus after a distraction: use five practical steps, a copyable restart note, and a review to return to work without promising instant focus."
+        "title": "How to Recover Focus After a Distraction: 5 Restart Decisions",
+        "description": "How to recover focus after a distraction: use five decisions to find your place, clarify the next action and handle a blocker without a recovery countdown."
       },
       {
-        "title": "How to Recover Focus After a Distraction: 5 Steps to Get Unstuck",
-        "description": "How to recover focus after a distraction: use five practical steps, a copyable restart note, and a review to return to work without promising instant focus."
+        "title": "How to Recover Focus After a Distraction: 5 Restart Decisions",
+        "description": "How to recover focus after a distraction: use five decisions to find your place, clarify the next action and handle a blocker without a recovery countdown."
       },
       {
-        "title": "How to Recover Focus After a Distraction: 5 Steps to Get Unstuck",
-        "description": "How to recover focus after a distraction: use five practical steps, a copyable restart note, and a review to return to work without promising instant focus."
+        "title": "How to Recover Focus After a Distraction: 5 Restart Decisions",
+        "description": "How to recover focus after a distraction: use five decisions to find your place, clarify the next action and handle a blocker without a recovery countdown."
       }
     ]
   },
@@ -477,26 +477,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-protect-your-focus-from-constant-interruptions",
-    "title": "How to Protect Your Focus From Constant Interruptions",
+    "title": "How to Protect Your Focus From Constant Interruptions: 5 Agreements",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Aug 2026",
-    "read_time": "8",
-    "excerpt": "How to protect your focus from constant interruptions: review availability, task handoffs and suitable support, without expecting uninterrupted focus every day.",
+    "read_time": "5",
+    "excerpt": "How to protect your focus from constant interruptions: make agreements about urgency, coverage and availability without ignoring care or work responsibilities.",
     "image": "images/how-to-protect-your-focus-from-constant-interruptions.jpg",
     "alt": "Woman concentrating at desk protecting focus from interruptions",
     "pins": [
       {
-        "title": "How to Protect Your Focus From Constant Interruptions",
-        "description": "How to protect your focus from constant interruptions: review availability, task handoffs and suitable support, without expecting uninterrupted focus every day."
+        "title": "How to Protect Your Focus From Constant Interruptions: 5 Agreements",
+        "description": "How to protect your focus from constant interruptions: make agreements about urgency, coverage and availability without ignoring care or work responsibilities."
       },
       {
-        "title": "How to Protect Your Focus From Constant Interruptions",
-        "description": "How to protect your focus from constant interruptions: review availability, task handoffs and suitable support, without expecting uninterrupted focus every day."
+        "title": "How to Protect Your Focus From Constant Interruptions: 5 Agreements",
+        "description": "How to protect your focus from constant interruptions: make agreements about urgency, coverage and availability without ignoring care or work responsibilities."
       },
       {
-        "title": "How to Protect Your Focus From Constant Interruptions",
-        "description": "How to protect your focus from constant interruptions: review availability, task handoffs and suitable support, without expecting uninterrupted focus every day."
+        "title": "How to Protect Your Focus From Constant Interruptions: 5 Agreements",
+        "description": "How to protect your focus from constant interruptions: make agreements about urgency, coverage and availability without ignoring care or work responsibilities."
       }
     ]
   },
