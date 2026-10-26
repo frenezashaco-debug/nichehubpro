@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-protect-your-mental-energy-like-a-finite-resource",
+    "title": "How to Protect Your Mental Energy Like a Finite Resource: 5 Practical Checks",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Oct 2026",
+    "read_time": "8",
+    "excerpt": "How to protect your mental energy like a finite resource is a question most people never think to ask - until they hit empty.",
+    "image": "images/how-to-protect-your-mental-energy-like-a-finite-resource.jpg",
+    "alt": "Man reflecting quietly at table supporting mental energy management",
+    "pins": [
+      {
+        "title": "How to Protect Your Mental Energy Like a Finite Resource",
+        "description": "Your mental energy is limited - spending it wisely changes everything. These 5 practical checks show you how to manage your mental energy throughout the day so you stop running on empty. Small shifts, real results over time."
+      },
+      {
+        "title": "Stop Letting These 5 Things Drain Your Mental Energy",
+        "description": "Open loops, constant notifications, and unresolved decisions quietly drain your mental energy all day. Find out which drain is hitting you hardest and what one structural change may help. Your capacity is worth protecting."
+      },
+      {
+        "title": "Try This 3-Point Daily Check-In for Mental Energy Management",
+        "description": "A simple 2-minute check-in at three points in your day can help you catch mental energy depletion before it derails you. This practical tool is part of a 5-step guide to protecting your focus and decision-making every day."
+      }
+    ]
+  },
+  {
     "slug": "how-gut-health-influences-your-mood-and-energy",
     "title": "How Gut Health Influences Your Mood and Energy: 5 Practical Checks",
     "category": "Healthy Lifestyle",
