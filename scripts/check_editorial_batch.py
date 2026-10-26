@@ -41,7 +41,8 @@ slugs = sys.argv[1:] or ('healthy-living-tips', 'healthy-daily-habits', 'simple-
                         'how-to-fix-your-sleep-schedule',
                         'emotional-exhaustion-vs-burnout', 'signs-of-mental-burnout-and-how-to-recover', 'signs-of-mental-exhaustion', 'why-you-feel-tired-all-the-time',
                         'how-to-recover-focus-after-a-distraction', 'how-to-protect-your-focus-from-constant-interruptions',
-                        'time-blocking-for-beginners', 'time-management-tips', 'deep-work-techniques', 'pomodoro-technique-explained-for-beginners', 'how-to-focus-without-distractions', 'how-to-focus-better-at-work', 'how-to-stay-productive-every-day', 'best-routine-planner-methods', 'best-productivity-systems-explained', 'productivity-system')
+                        'time-blocking-for-beginners', 'time-management-tips', 'deep-work-techniques', 'pomodoro-technique-explained-for-beginners', 'how-to-focus-without-distractions', 'how-to-focus-better-at-work', 'how-to-stay-productive-every-day', 'best-routine-planner-methods', 'best-productivity-systems-explained', 'productivity-system',
+                        'why-productivity-hacks-dont-work-long-term', 'best-self-improvement-systems-explained', 'how-to-design-the-perfect-daily-routine', 'the-psychology-of-discipline', 'how-to-create-a-productive-routine', 'why-discipline-beats-motivation', 'how-to-build-confidence-through-discipline', 'why-most-people-fail-at-building-habits', 'how-to-build-mental-toughness', 'how-to-build-self-discipline', 'how-to-build-habits-that-actually-stick', 'success-habits', 'how-to-improve-your-life', 'habit-building-system', 'how-to-change-your-mindset', 'how-to-reset-your-life', 'how-to-stay-motivated', 'focus-vs-motivation-explained', 'healthy-productivity-habits-for-entrepreneurs', 'how-to-build-a-better-lifestyle-long-term')
 catalog_source = (root / 'articles.js').read_text(encoding='utf-8')
 catalog = json.loads(catalog_source[catalog_source.index('['):catalog_source.rfind(']') + 1])
 sitemap = ET.parse(root / 'sitemap.xml').getroot()
@@ -58,7 +59,7 @@ for slug in slugs:
     meta = re.search(r'<meta name="description" content="([^"]+)"', source)[1]
     assert 155 <= len(meta) <= 160
     # Natural apostrophes in words such as "won't" do not change the keyword.
-    keyword_text = re.sub("['\u2019]", '', html.unescape(meta).lower())
+    keyword_text = re.sub("['\u2019]", '', html.unescape(meta).lower()).replace('-', ' ')
     assert slug.replace('-', ' ') in keyword_text
     record = next(item for item in catalog if item['slug'] == slug)
     assert record['excerpt'] == meta

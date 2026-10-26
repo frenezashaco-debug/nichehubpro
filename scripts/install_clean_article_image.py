@@ -6,6 +6,12 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 TARGETS = {
+    'success1': ('success-habits', 'success-habits-sec1.webp', 'Man sorting blank envelopes beside a low table'),
+    'success3': ('success-habits', 'success-habits-sec3-inline-v1.webp', 'Woman comparing unmarked wooden pieces at a table'),
+    'habit5': ('habit-building-system', 'habit-building-system-sec5-inline-v1.webp', 'Man placing a blank closed notebook beside a mug and kettle'),
+    'reset1': ('how-to-reset-your-life', 'how-to-reset-your-life-sec1.webp', 'Woman moving a plain basket onto a shelf beside a chair'),
+    'motivation3': ('how-to-stay-motivated', 'how-to-stay-motivated-sec3.webp', 'Woman looking at an unmarked wooden model beside a closed notebook'),
+
     'pomo_setup': ('pomodoro-technique-explained-for-beginners', 'pomodoro-technique-explained-for-beginners-sec1-inline-v1.webp', 'Woman setting an unmarked glass sand timer beside a blank closed notebook'),
     'pomo_break': ('pomodoro-technique-explained-for-beginners', 'pomodoro-technique-explained-for-beginners-sec5-inline-v1.webp', 'Man standing beside an open balcony door looking toward a garden'),
     'fatigue': ('why-you-feel-tired-all-the-time', 'why-you-feel-tired-all-the-time-sec1.webp', 'Woman pausing at a wooden table beside a blank notebook and mug in natural window light'),
@@ -62,7 +68,8 @@ if args.key in ('discipline', 'dopamine'):
         file.write_text(text, encoding='utf-8', newline='')
 else:
     slug, old, alt = TARGETS[args.key]
-    new = slug + ('-sec5-clean-v2.webp' if '-sec5' in old else '-sec1-clean-v2.webp')
+    section = next(part for part in ('sec1', 'sec3', 'sec5') if '-' + part in old)
+    new = slug + '-' + section + '-clean-v2.webp'
     output = ROOT / 'images' / new
     encode(output, 'WEBP')
     file = ROOT / 'articles' / (slug + '.html')

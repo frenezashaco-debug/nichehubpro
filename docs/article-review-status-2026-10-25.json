@@ -3,7 +3,7 @@
   "scope": "A full editorial rewrite and the strict batch checks apply only to the listed full-review articles. Other entries have targeted edits or mechanical consistency checks, not a scientific certification or AdSense approval. Pixel watermarks and all external claims have not been individually verified in this pass.",
   "summary": {
     "inventory": 155,
-    "full_review_and_strict_checks": 74,
+    "full_review_and_strict_checks": 94,
     "targeted_scenario_repairs_this_batch": 43,
     "changed_articles_this_batch": 152,
     "body_changed_this_batch": 71
@@ -107,7 +107,9 @@
     },
     {
       "slug": "why-productivity-hacks-dont-work-long-term",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "the-emotional-root-of-chronic-procrastination",
@@ -115,19 +117,27 @@
     },
     {
       "slug": "how-to-build-a-better-lifestyle-long-term",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "healthy-productivity-habits-for-entrepreneurs",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "best-self-improvement-systems-explained",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-design-the-perfect-daily-routine",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "why-small-habits-create-big-results",
@@ -135,7 +145,9 @@
     },
     {
       "slug": "the-psychology-of-discipline",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-create-sustainable-healthy-habits",
@@ -185,7 +197,9 @@
     },
     {
       "slug": "how-to-create-a-productive-routine",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-stop-catastrophic-thinking",
@@ -193,7 +207,9 @@
     },
     {
       "slug": "why-discipline-beats-motivation",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-focus-better-at-work",
@@ -283,7 +299,9 @@
     },
     {
       "slug": "how-to-build-confidence-through-discipline",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "healthy-routine-for-working-from-home",
@@ -295,7 +313,9 @@
     },
     {
       "slug": "why-most-people-fail-at-building-habits",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "why-you-feel-lost-in-life",
@@ -331,7 +351,9 @@
     },
     {
       "slug": "how-to-build-mental-toughness",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-fix-your-sleep-schedule",
@@ -351,7 +373,9 @@
     },
     {
       "slug": "focus-vs-motivation-explained",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-fall-asleep-when-your-mind-wont-stop",
@@ -401,7 +425,9 @@
     },
     {
       "slug": "how-to-build-self-discipline",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "why-you-always-feel-stressed",
@@ -441,7 +467,9 @@
     },
     {
       "slug": "how-to-build-habits-that-actually-stick",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-improve-emotional-resilience",
@@ -489,11 +517,15 @@
     },
     {
       "slug": "success-habits",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-improve-your-life",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "improve-daily-routine",
@@ -501,11 +533,15 @@
     },
     {
       "slug": "habit-building-system",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-change-your-mindset",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "productivity-system",
@@ -515,7 +551,9 @@
     },
     {
       "slug": "how-to-reset-your-life",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-build-discipline",
@@ -549,7 +587,9 @@
     },
     {
       "slug": "how-to-stay-motivated",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/twenty-habits-editorial-review-2026-10-26.md"
     },
     {
       "slug": "how-to-build-confidence",

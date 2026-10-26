@@ -552,26 +552,26 @@ const ARTICLES = [
   },
   {
     "slug": "why-productivity-hacks-dont-work-long-term",
-    "title": "7 Reasons Why Productivity Hacks Dont Work Long Term (And What to Do Instead)",
+    "title": "Why Productivity Hacks Don't Work Long Term: 5 Fit Questions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Aug 2026",
-    "read_time": "8",
-    "excerpt": "Why productivity hacks dont work long term: explore seven possible limitations, review practical constraints and choose support beyond a productivity trick.",
+    "read_time": "5",
+    "excerpt": "Why productivity hacks don't work long term: ask five fit questions about the problem, upkeep and context before replacing a tool or blaming your discipline.",
     "image": "images/why-productivity-hacks-dont-work-long-term.jpg",
-    "alt": "woman frustrated at desk showing why productivity hacks fail",
+    "alt": "Woman seated at a laptop beside papers",
     "pins": [
       {
-        "title": "7 Reasons Why Productivity Hacks Dont Work Long Term (And What to Do Instead)",
-        "description": "Why productivity hacks dont work long term: explore seven possible limitations, review practical constraints and choose support beyond a productivity trick."
+        "title": "Why Productivity Hacks Don't Work Long Term: 5 Fit Questions",
+        "description": "Why productivity hacks don't work long term: ask five fit questions about the problem, upkeep and context before replacing a tool or blaming your discipline."
       },
       {
-        "title": "7 Reasons Why Productivity Hacks Dont Work Long Term (And What to Do Instead)",
-        "description": "Why productivity hacks dont work long term: explore seven possible limitations, review practical constraints and choose support beyond a productivity trick."
+        "title": "Why Productivity Hacks Don't Work Long Term: 5 Fit Questions",
+        "description": "Why productivity hacks don't work long term: ask five fit questions about the problem, upkeep and context before replacing a tool or blaming your discipline."
       },
       {
-        "title": "7 Reasons Why Productivity Hacks Dont Work Long Term (And What to Do Instead)",
-        "description": "Why productivity hacks dont work long term: explore seven possible limitations, review practical constraints and choose support beyond a productivity trick."
+        "title": "Why Productivity Hacks Don't Work Long Term: 5 Fit Questions",
+        "description": "Why productivity hacks don't work long term: ask five fit questions about the problem, upkeep and context before replacing a tool or blaming your discipline."
       }
     ]
   },
@@ -602,101 +602,101 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-a-better-lifestyle-long-term",
-    "title": "7 Ways to Build a Better Lifestyle Over Time",
+    "title": "How to Build a Better Lifestyle Long Term: 5 Sustainability Questions",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Aug 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven practical ways to build a better lifestyle over time, with flexible habits for rest, food, movement, and planning. Practical steps you can use",
+    "read_time": "5",
+    "excerpt": "How to build a better lifestyle long term: ask sustainability questions about a change, its access and support without an overhaul or a promised health result.",
     "image": "images/how-to-build-a-better-lifestyle-long-term.jpg",
-    "alt": "young woman sitting quietly at home building a better lifestyle",
+    "alt": "Woman seated beside a table and mug",
     "pins": [
       {
-        "title": "7 Ways to Build a Better Lifestyle Over Time",
-        "description": "Explore seven practical ways to build a better lifestyle over time, with flexible habits for rest, food, movement, and planning. Practical steps you can use"
+        "title": "How to Build a Better Lifestyle Long Term: 5 Sustainability Questions",
+        "description": "How to build a better lifestyle long term: ask sustainability questions about a change, its access and support without an overhaul or a promised health result."
       },
       {
-        "title": "7 Ways to Build a Better Lifestyle Over Time",
-        "description": "Explore seven practical ways to build a better lifestyle over time, with flexible habits for rest, food, movement, and planning. Practical steps you can use"
+        "title": "How to Build a Better Lifestyle Long Term: 5 Sustainability Questions",
+        "description": "How to build a better lifestyle long term: ask sustainability questions about a change, its access and support without an overhaul or a promised health result."
       },
       {
-        "title": "7 Ways to Build a Better Lifestyle Over Time",
-        "description": "Explore seven practical ways to build a better lifestyle over time, with flexible habits for rest, food, movement, and planning. Practical steps you can use"
+        "title": "How to Build a Better Lifestyle Long Term: 5 Sustainability Questions",
+        "description": "How to build a better lifestyle long term: ask sustainability questions about a change, its access and support without an overhaul or a promised health result."
       }
     ]
   },
   {
     "slug": "healthy-productivity-habits-for-entrepreneurs",
-    "title": "Healthy Productivity Habits for Entrepreneurs: 9 Boundaries Worth Testing",
+    "title": "Healthy Productivity Habits for Entrepreneurs: 5 Capacity Agreements",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Aug 2026",
-    "read_time": "6",
-    "excerpt": "Try healthy productivity habits for entrepreneurs with nine practical boundaries, a weekly capacity check, and a plan for sharing work without health promises.",
+    "read_time": "5",
+    "excerpt": "Healthy productivity habits for entrepreneurs: review capacity agreements about workload, availability and help without promising profit or burnout prevention.",
     "image": "images/healthy-productivity-habits-for-entrepreneurs.jpg",
-    "alt": "young woman working at desk practicing healthy productivity habits",
+    "alt": "Woman seated at a laptop beside a glass",
     "pins": [
       {
-        "title": "Healthy Productivity Habits for Entrepreneurs: 9 Boundaries Worth Testing",
-        "description": "Try healthy productivity habits for entrepreneurs with nine practical boundaries, a weekly capacity check, and a plan for sharing work without health promises."
+        "title": "Healthy Productivity Habits for Entrepreneurs: 5 Capacity Agreements",
+        "description": "Healthy productivity habits for entrepreneurs: review capacity agreements about workload, availability and help without promising profit or burnout prevention."
       },
       {
-        "title": "Healthy Productivity Habits for Entrepreneurs: 9 Boundaries Worth Testing",
-        "description": "Try healthy productivity habits for entrepreneurs with nine practical boundaries, a weekly capacity check, and a plan for sharing work without health promises."
+        "title": "Healthy Productivity Habits for Entrepreneurs: 5 Capacity Agreements",
+        "description": "Healthy productivity habits for entrepreneurs: review capacity agreements about workload, availability and help without promising profit or burnout prevention."
       },
       {
-        "title": "Healthy Productivity Habits for Entrepreneurs: 9 Boundaries Worth Testing",
-        "description": "Try healthy productivity habits for entrepreneurs with nine practical boundaries, a weekly capacity check, and a plan for sharing work without health promises."
+        "title": "Healthy Productivity Habits for Entrepreneurs: 5 Capacity Agreements",
+        "description": "Healthy productivity habits for entrepreneurs: review capacity agreements about workload, availability and help without promising profit or burnout prevention."
       }
     ]
   },
   {
     "slug": "best-self-improvement-systems-explained",
-    "title": "Best Self Improvement Systems Explained: 5 Checks Before You Start",
+    "title": "Best Self-Improvement Systems Explained: 5 Scope Decisions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Aug 2026",
-    "read_time": "8",
-    "excerpt": "Best self improvement systems explained: compare habits, task management and goals, then build a small trial with clear actions, limits and a weekly review.",
+    "read_time": "5",
+    "excerpt": "Best self-improvement systems explained: make five decisions before starting a personal project, keeping time, support and the right to change course visible.",
     "image": "images/best-self-improvement-systems-explained.jpg",
-    "alt": "woman writing in notebook planning self improvement systems",
+    "alt": "Woman in a grey hoodie writing in a notebook",
     "pins": [
       {
-        "title": "Best Self Improvement Systems Explained: 5 Checks Before You Start",
-        "description": "Best self improvement systems explained: compare habits, task management and goals, then build a small trial with clear actions, limits and a weekly review."
+        "title": "Best Self-Improvement Systems Explained: 5 Scope Decisions",
+        "description": "Best self-improvement systems explained: make five decisions before starting a personal project, keeping time, support and the right to change course visible."
       },
       {
-        "title": "Best Self Improvement Systems Explained: 5 Checks Before You Start",
-        "description": "Best self improvement systems explained: compare habits, task management and goals, then build a small trial with clear actions, limits and a weekly review."
+        "title": "Best Self-Improvement Systems Explained: 5 Scope Decisions",
+        "description": "Best self-improvement systems explained: make five decisions before starting a personal project, keeping time, support and the right to change course visible."
       },
       {
-        "title": "Best Self Improvement Systems Explained: 5 Checks Before You Start",
-        "description": "Best self improvement systems explained: compare habits, task management and goals, then build a small trial with clear actions, limits and a weekly review."
+        "title": "Best Self-Improvement Systems Explained: 5 Scope Decisions",
+        "description": "Best self-improvement systems explained: make five decisions before starting a personal project, keeping time, support and the right to change course visible."
       }
     ]
   },
   {
     "slug": "how-to-design-the-perfect-daily-routine",
-    "title": "7 Ways to Design a Flexible Daily Routine",
+    "title": "How to Design the Perfect Daily Routine: 5 Real-Life Constraints",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "How to design the perfect daily routine: consider seven flexible planning options for work, rest and practical needs, without requiring a perfect schedule.",
+    "read_time": "5",
+    "excerpt": "How to design the perfect daily routine: check five real-life constraints before arranging activities, without assuming one schedule suits every person or day.",
     "image": "images/how-to-design-the-perfect-daily-routine.jpg",
-    "alt": "young woman writing daily routine planner at morning desk",
+    "alt": "Woman writing in a notebook beside a mug",
     "pins": [
       {
-        "title": "7 Ways to Design a Flexible Daily Routine",
-        "description": "How to design the perfect daily routine: consider seven flexible planning options for work, rest and practical needs, without requiring a perfect schedule."
+        "title": "How to Design the Perfect Daily Routine: 5 Real-Life Constraints",
+        "description": "How to design the perfect daily routine: check five real-life constraints before arranging activities, without assuming one schedule suits every person or day."
       },
       {
-        "title": "7 Ways to Design a Flexible Daily Routine",
-        "description": "How to design the perfect daily routine: consider seven flexible planning options for work, rest and practical needs, without requiring a perfect schedule."
+        "title": "How to Design the Perfect Daily Routine: 5 Real-Life Constraints",
+        "description": "How to design the perfect daily routine: check five real-life constraints before arranging activities, without assuming one schedule suits every person or day."
       },
       {
-        "title": "7 Ways to Design a Flexible Daily Routine",
-        "description": "How to design the perfect daily routine: consider seven flexible planning options for work, rest and practical needs, without requiring a perfect schedule."
+        "title": "How to Design the Perfect Daily Routine: 5 Real-Life Constraints",
+        "description": "How to design the perfect daily routine: check five real-life constraints before arranging activities, without assuming one schedule suits every person or day."
       }
     ]
   },
@@ -727,26 +727,26 @@ const ARTICLES = [
   },
   {
     "slug": "the-psychology-of-discipline",
-    "title": "7 Psychology of Discipline Ideas to Consider",
+    "title": "The Psychology of Discipline: 5 Questions Before Judging Yourself",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven psychology of discipline ideas, with practical ways to design smaller commitments and adapt your routines after setbacks. Practical steps you can",
+    "read_time": "5",
+    "excerpt": "The psychology of discipline: ask five questions about a specific action and its circumstances before explaining a setback through character or brain chemistry.",
     "image": "images/the-psychology-of-discipline.jpg",
-    "alt": "young woman focused at desk practicing psychology of discipline",
+    "alt": "Woman in a grey top seated at a desk",
     "pins": [
       {
-        "title": "7 Psychology of Discipline Ideas to Consider",
-        "description": "Explore seven psychology of discipline ideas, with practical ways to design smaller commitments and adapt your routines after setbacks. Practical steps you can"
+        "title": "The Psychology of Discipline: 5 Questions Before Judging Yourself",
+        "description": "The psychology of discipline: ask five questions about a specific action and its circumstances before explaining a setback through character or brain chemistry."
       },
       {
-        "title": "7 Psychology of Discipline Ideas to Consider",
-        "description": "Explore seven psychology of discipline ideas, with practical ways to design smaller commitments and adapt your routines after setbacks. Practical steps you can"
+        "title": "The Psychology of Discipline: 5 Questions Before Judging Yourself",
+        "description": "The psychology of discipline: ask five questions about a specific action and its circumstances before explaining a setback through character or brain chemistry."
       },
       {
-        "title": "7 Psychology of Discipline Ideas to Consider",
-        "description": "Explore seven psychology of discipline ideas, with practical ways to design smaller commitments and adapt your routines after setbacks. Practical steps you can"
+        "title": "The Psychology of Discipline: 5 Questions Before Judging Yourself",
+        "description": "The psychology of discipline: ask five questions about a specific action and its circumstances before explaining a setback through character or brain chemistry."
       }
     ]
   },
@@ -1027,26 +1027,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-create-a-productive-routine",
-    "title": "7 Ways to Create a Productive Routine",
+    "title": "How to Create a Productive Routine: 5 Sequence Checks",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven practical ways to create a productive routine, with realistic planning, priorities, breaks, and room for changing responsibilities. Practical",
+    "read_time": "5",
+    "excerpt": "How to create a productive routine: use five sequence checks to connect a starting situation, available action and a stopping point without a habit deadline.",
     "image": "images/how-to-create-a-productive-routine.jpg",
-    "alt": "Young woman focused on her planner at desk during morning routine planning",
+    "alt": "Woman writing in a notebook at a desk",
     "pins": [
       {
-        "title": "7 Ways to Create a Productive Routine",
-        "description": "Explore seven practical ways to create a productive routine, with realistic planning, priorities, breaks, and room for changing responsibilities. Practical"
+        "title": "How to Create a Productive Routine: 5 Sequence Checks",
+        "description": "How to create a productive routine: use five sequence checks to connect a starting situation, available action and a stopping point without a habit deadline."
       },
       {
-        "title": "7 Ways to Create a Productive Routine",
-        "description": "Explore seven practical ways to create a productive routine, with realistic planning, priorities, breaks, and room for changing responsibilities. Practical"
+        "title": "How to Create a Productive Routine: 5 Sequence Checks",
+        "description": "How to create a productive routine: use five sequence checks to connect a starting situation, available action and a stopping point without a habit deadline."
       },
       {
-        "title": "7 Ways to Create a Productive Routine",
-        "description": "Explore seven practical ways to create a productive routine, with realistic planning, priorities, breaks, and room for changing responsibilities. Practical"
+        "title": "How to Create a Productive Routine: 5 Sequence Checks",
+        "description": "How to create a productive routine: use five sequence checks to connect a starting situation, available action and a stopping point without a habit deadline."
       }
     ]
   },
@@ -1077,26 +1077,26 @@ const ARTICLES = [
   },
   {
     "slug": "why-discipline-beats-motivation",
-    "title": "7 Reasons Discipline Can Support Your Goals",
+    "title": "Why Discipline Beats Motivation: 5 Assumptions to Reconsider",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven ways simple discipline can support your goals, with realistic planning, smaller commitments, and room to restart after setbacks. Practical steps",
+    "read_time": "5",
+    "excerpt": "Why discipline beats motivation: examine five assumptions about commitment, interest and circumstances without treating a slogan as a universal scientific rule.",
     "image": "images/why-discipline-beats-motivation.jpg",
-    "alt": "Young woman focused on writing in notebook at desk daily",
+    "alt": "Woman writing at a table beside a lamp",
     "pins": [
       {
-        "title": "7 Reasons Discipline Can Support Your Goals",
-        "description": "Explore seven ways simple discipline can support your goals, with realistic planning, smaller commitments, and room to restart after setbacks. Practical steps"
+        "title": "Why Discipline Beats Motivation: 5 Assumptions to Reconsider",
+        "description": "Why discipline beats motivation: examine five assumptions about commitment, interest and circumstances without treating a slogan as a universal scientific rule."
       },
       {
-        "title": "7 Reasons Discipline Can Support Your Goals",
-        "description": "Explore seven ways simple discipline can support your goals, with realistic planning, smaller commitments, and room to restart after setbacks. Practical steps"
+        "title": "Why Discipline Beats Motivation: 5 Assumptions to Reconsider",
+        "description": "Why discipline beats motivation: examine five assumptions about commitment, interest and circumstances without treating a slogan as a universal scientific rule."
       },
       {
-        "title": "7 Reasons Discipline Can Support Your Goals",
-        "description": "Explore seven ways simple discipline can support your goals, with realistic planning, smaller commitments, and room to restart after setbacks. Practical steps"
+        "title": "Why Discipline Beats Motivation: 5 Assumptions to Reconsider",
+        "description": "Why discipline beats motivation: examine five assumptions about commitment, interest and circumstances without treating a slogan as a universal scientific rule."
       }
     ]
   },
@@ -1552,26 +1552,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-confidence-through-discipline",
-    "title": "7 Ways to Build Confidence Through Everyday Discipline",
+    "title": "How to Build Confidence Through Discipline: 5 Feedback Questions",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven practical ways to build confidence through discipline, using small commitments, realistic planning, and a kinder response to setbacks. Practical",
+    "read_time": "5",
+    "excerpt": "How to build confidence through discipline: ask five questions about one attempt without equating completion, confidence or self-worth with a daily streak.",
     "image": "images/how-to-build-confidence-through-discipline.jpg",
-    "alt": "Young woman journaling at desk building confidence through discipline",
+    "alt": "Woman in a grey hoodie writing in a notebook",
     "pins": [
       {
-        "title": "7 Ways to Build Confidence Through Everyday Discipline",
-        "description": "Explore seven practical ways to build confidence through discipline, using small commitments, realistic planning, and a kinder response to setbacks. Practical"
+        "title": "How to Build Confidence Through Discipline: 5 Feedback Questions",
+        "description": "How to build confidence through discipline: ask five questions about one attempt without equating completion, confidence or self-worth with a daily streak."
       },
       {
-        "title": "7 Ways to Build Confidence Through Everyday Discipline",
-        "description": "Explore seven practical ways to build confidence through discipline, using small commitments, realistic planning, and a kinder response to setbacks. Practical"
+        "title": "How to Build Confidence Through Discipline: 5 Feedback Questions",
+        "description": "How to build confidence through discipline: ask five questions about one attempt without equating completion, confidence or self-worth with a daily streak."
       },
       {
-        "title": "7 Ways to Build Confidence Through Everyday Discipline",
-        "description": "Explore seven practical ways to build confidence through discipline, using small commitments, realistic planning, and a kinder response to setbacks. Practical"
+        "title": "How to Build Confidence Through Discipline: 5 Feedback Questions",
+        "description": "How to build confidence through discipline: ask five questions about one attempt without equating completion, confidence or self-worth with a daily streak."
       }
     ]
   },
@@ -1627,26 +1627,26 @@ const ARTICLES = [
   },
   {
     "slug": "why-most-people-fail-at-building-habits",
-    "title": "5 Reasons Why Most People Fail at Building Habits",
+    "title": "Why Most People Fail at Building Habits: 5 Questions About a Missed Attempt",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Why most people fail at building habits is not one universal story. Explore five possible obstacles and review a practical plan without judging missed actions.",
+    "read_time": "5",
+    "excerpt": "Why most people fail at building habits: review questions about a missed action without inventing failure rates, blaming identity or prescribing a restart date.",
     "image": "images/why-most-people-fail-at-building-habits.jpg",
-    "alt": "Woman reviewing habit tracking calendar with morning coffee",
+    "alt": "Woman writing in a notebook beside a mug",
     "pins": [
       {
-        "title": "5 Reasons Why Most People Fail at Building Habits",
-        "description": "Why most people fail at building habits is not one universal story. Explore five possible obstacles and review a practical plan without judging missed actions."
+        "title": "Why Most People Fail at Building Habits: 5 Questions About a Missed Attempt",
+        "description": "Why most people fail at building habits: review questions about a missed action without inventing failure rates, blaming identity or prescribing a restart date."
       },
       {
-        "title": "5 Reasons Why Most People Fail at Building Habits",
-        "description": "Why most people fail at building habits is not one universal story. Explore five possible obstacles and review a practical plan without judging missed actions."
+        "title": "Why Most People Fail at Building Habits: 5 Questions About a Missed Attempt",
+        "description": "Why most people fail at building habits: review questions about a missed action without inventing failure rates, blaming identity or prescribing a restart date."
       },
       {
-        "title": "5 Reasons Why Most People Fail at Building Habits",
-        "description": "Why most people fail at building habits is not one universal story. Explore five possible obstacles and review a practical plan without judging missed actions."
+        "title": "Why Most People Fail at Building Habits: 5 Questions About a Missed Attempt",
+        "description": "Why most people fail at building habits: review questions about a missed action without inventing failure rates, blaming identity or prescribing a restart date."
       }
     ]
   },
@@ -1826,26 +1826,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-mental-toughness",
-    "title": "5 Ways to Build Mental Toughness and Resilience Starting Today",
+    "title": "How to Build Mental Toughness: 5 Support Decisions for a Difficult Situation",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to build mental toughness with 5 practical strategies for resilience. Manage stress, face discomfort safely, and strengthen skills over time each day.",
+    "read_time": "5",
+    "excerpt": "How to build mental toughness: consider five support decisions for a hard situation without treating endurance, emotional suppression or distress as a test.",
     "image": "images/how-to-build-mental-toughness.jpg",
-    "alt": "Woman focused at desk building mental toughness and determination",
+    "alt": "Woman seated at a laptop",
     "pins": [
       {
-        "title": "5 Ways to Build Mental Toughness and Resilience Starting Today",
-        "description": "Learn how to build mental toughness with 5 practical strategies for resilience. Manage stress, face discomfort safely, and strengthen skills over time each day."
+        "title": "How to Build Mental Toughness: 5 Support Decisions for a Difficult Situation",
+        "description": "How to build mental toughness: consider five support decisions for a hard situation without treating endurance, emotional suppression or distress as a test."
       },
       {
-        "title": "5 Ways to Build Mental Toughness and Resilience Starting Today",
-        "description": "Learn how to build mental toughness with 5 practical strategies for resilience. Manage stress, face discomfort safely, and strengthen skills over time each day."
+        "title": "How to Build Mental Toughness: 5 Support Decisions for a Difficult Situation",
+        "description": "How to build mental toughness: consider five support decisions for a hard situation without treating endurance, emotional suppression or distress as a test."
       },
       {
-        "title": "5 Ways to Build Mental Toughness and Resilience Starting Today",
-        "description": "Learn how to build mental toughness with 5 practical strategies for resilience. Manage stress, face discomfort safely, and strengthen skills over time each day."
+        "title": "How to Build Mental Toughness: 5 Support Decisions for a Difficult Situation",
+        "description": "How to build mental toughness: consider five support decisions for a hard situation without treating endurance, emotional suppression or distress as a test."
       }
     ]
   },
@@ -1926,26 +1926,26 @@ const ARTICLES = [
   },
   {
     "slug": "focus-vs-motivation-explained",
-    "title": "3 Differences Between Focus and Motivation",
+    "title": "Focus vs Motivation Explained: 5 Questions to Separate the Obstacle",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Explore three practical differences between focus and motivation, with ways to plan work around your attention and current energy. Practical steps you can use",
+    "read_time": "5",
+    "excerpt": "Focus vs motivation explained: use questions to separate interest, task clarity and access without treating a delay as a diagnosis or a brain-training test.",
     "image": "images/focus-vs-motivation-explained.jpg",
-    "alt": "woman focused intently at desk during deep work session",
+    "alt": "Woman seated at a laptop with a hand near her chin",
     "pins": [
       {
-        "title": "3 Differences Between Focus and Motivation",
-        "description": "Explore three practical differences between focus and motivation, with ways to plan work around your attention and current energy. Practical steps you can use"
+        "title": "Focus vs Motivation Explained: 5 Questions to Separate the Obstacle",
+        "description": "Focus vs motivation explained: use questions to separate interest, task clarity and access without treating a delay as a diagnosis or a brain-training test."
       },
       {
-        "title": "3 Differences Between Focus and Motivation",
-        "description": "Explore three practical differences between focus and motivation, with ways to plan work around your attention and current energy. Practical steps you can use"
+        "title": "Focus vs Motivation Explained: 5 Questions to Separate the Obstacle",
+        "description": "Focus vs motivation explained: use questions to separate interest, task clarity and access without treating a delay as a diagnosis or a brain-training test."
       },
       {
-        "title": "3 Differences Between Focus and Motivation",
-        "description": "Explore three practical differences between focus and motivation, with ways to plan work around your attention and current energy. Practical steps you can use"
+        "title": "Focus vs Motivation Explained: 5 Questions to Separate the Obstacle",
+        "description": "Focus vs motivation explained: use questions to separate interest, task clarity and access without treating a delay as a diagnosis or a brain-training test."
       }
     ]
   },
@@ -2226,26 +2226,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-self-discipline",
-    "title": "5 Ways to Build Self-Discipline Gradually",
+    "title": "How to Build Self-Discipline: 5 Checks Before Making a Promise",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Explore five ways to build self-discipline gradually, with smaller commitments, planning, and room to restart after setbacks. Practical steps you can use today.",
+    "read_time": "5",
+    "excerpt": "How to build self-discipline: make five checks before a promise so its purpose, scope and dependencies remain realistic without punishment or a perfect streak.",
     "image": "images/how-to-build-self-discipline.jpg",
-    "alt": "woman focused at desk building self discipline routine",
+    "alt": "Woman in a light brown top seated indoors",
     "pins": [
       {
-        "title": "5 Ways to Build Self-Discipline Gradually",
-        "description": "Explore five ways to build self-discipline gradually, with smaller commitments, planning, and room to restart after setbacks. Practical steps you can use today."
+        "title": "How to Build Self-Discipline: 5 Checks Before Making a Promise",
+        "description": "How to build self-discipline: make five checks before a promise so its purpose, scope and dependencies remain realistic without punishment or a perfect streak."
       },
       {
-        "title": "5 Ways to Build Self-Discipline Gradually",
-        "description": "Explore five ways to build self-discipline gradually, with smaller commitments, planning, and room to restart after setbacks. Practical steps you can use today."
+        "title": "How to Build Self-Discipline: 5 Checks Before Making a Promise",
+        "description": "How to build self-discipline: make five checks before a promise so its purpose, scope and dependencies remain realistic without punishment or a perfect streak."
       },
       {
-        "title": "5 Ways to Build Self-Discipline Gradually",
-        "description": "Explore five ways to build self-discipline gradually, with smaller commitments, planning, and room to restart after setbacks. Practical steps you can use today."
+        "title": "How to Build Self-Discipline: 5 Checks Before Making a Promise",
+        "description": "How to build self-discipline: make five checks before a promise so its purpose, scope and dependencies remain realistic without punishment or a perfect streak."
       }
     ]
   },
@@ -2476,26 +2476,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-habits-that-actually-stick",
-    "title": "5 Practical Ways to Build Habits That Actually Stick",
+    "title": "How to Build Habits That Actually Stick: 5 Repeat-Opportunity Checks",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to build habits that actually stick with practical, science-informed strategies. Make actions easier to start and recover after missed days with care.",
+    "read_time": "5",
+    "excerpt": "How to build habits that actually stick: check five parts of a repeat opportunity without treating a streak, a small action or a fixed number of days as proof.",
     "image": "images/how-to-build-habits-that-actually-stick.jpg",
-    "alt": "young woman sitting peacefully building sustainable daily habits today",
+    "alt": "Woman looking down at a table in natural light",
     "pins": [
       {
-        "title": "5 Practical Ways to Build Habits That Actually Stick",
-        "description": "Learn how to build habits that actually stick with practical, science-informed strategies. Make actions easier to start and recover after missed days with care."
+        "title": "How to Build Habits That Actually Stick: 5 Repeat-Opportunity Checks",
+        "description": "How to build habits that actually stick: check five parts of a repeat opportunity without treating a streak, a small action or a fixed number of days as proof."
       },
       {
-        "title": "5 Practical Ways to Build Habits That Actually Stick",
-        "description": "Learn how to build habits that actually stick with practical, science-informed strategies. Make actions easier to start and recover after missed days with care."
+        "title": "How to Build Habits That Actually Stick: 5 Repeat-Opportunity Checks",
+        "description": "How to build habits that actually stick: check five parts of a repeat opportunity without treating a streak, a small action or a fixed number of days as proof."
       },
       {
-        "title": "5 Practical Ways to Build Habits That Actually Stick",
-        "description": "Learn how to build habits that actually stick with practical, science-informed strategies. Make actions easier to start and recover after missed days with care."
+        "title": "How to Build Habits That Actually Stick: 5 Repeat-Opportunity Checks",
+        "description": "How to build habits that actually stick: check five parts of a repeat opportunity without treating a streak, a small action or a fixed number of days as proof."
       }
     ]
   },
@@ -2751,51 +2751,51 @@ const ARTICLES = [
   },
   {
     "slug": "success-habits",
-    "title": "7 Success Habits of Highly Successful People That You Can Start Today",
+    "title": "Success Habits: 5 Questions About What Success Means",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven success habits you can adapt to your own goals, including planning, learning, review, rest, and small consistent actions. Practical steps you can",
+    "read_time": "5",
+    "excerpt": "Success habits: use five questions to define a result, recognise constraints and choose feedback without promising wealth, status or a universal daily routine.",
     "image": "images/success-habits.jpg",
-    "alt": "Woman journaling with coffee during quiet morning success habits routine",
+    "alt": "Woman seated at a table beside an open book",
     "pins": [
       {
-        "title": "7 Success Habits of Highly Successful People That You Can Start Today",
-        "description": "Explore seven success habits you can adapt to your own goals, including planning, learning, review, rest, and small consistent actions. Practical steps you can"
+        "title": "Success Habits: 5 Questions About What Success Means",
+        "description": "Success habits: use five questions to define a result, recognise constraints and choose feedback without promising wealth, status or a universal daily routine."
       },
       {
-        "title": "7 Success Habits of Highly Successful People That You Can Start Today",
-        "description": "Explore seven success habits you can adapt to your own goals, including planning, learning, review, rest, and small consistent actions. Practical steps you can"
+        "title": "Success Habits: 5 Questions About What Success Means",
+        "description": "Success habits: use five questions to define a result, recognise constraints and choose feedback without promising wealth, status or a universal daily routine."
       },
       {
-        "title": "7 Success Habits of Highly Successful People That You Can Start Today",
-        "description": "Explore seven success habits you can adapt to your own goals, including planning, learning, review, rest, and small consistent actions. Practical steps you can"
+        "title": "Success Habits: 5 Questions About What Success Means",
+        "description": "Success habits: use five questions to define a result, recognise constraints and choose feedback without promising wealth, status or a universal daily routine."
       }
     ]
   },
   {
     "slug": "how-to-improve-your-life",
-    "title": "7 Ways to Choose Practical Changes in Your Life",
+    "title": "How to Improve Your Life: 5 Questions for Choosing One Change",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to improve your life with 7 practical self-improvement ideas. Choose one manageable change, review your progress, and build a healthier routine today.",
+    "read_time": "5",
+    "excerpt": "How to improve your life: use five questions to choose one change, identify its dependencies and preserve essential needs without a total transformation plan.",
     "image": "images/how-to-improve-your-life.jpg",
-    "alt": "Young woman holding tea, reflecting thoughtfully on personal improvement journey",
+    "alt": "Woman holding a mug beside a window",
     "pins": [
       {
-        "title": "7 Ways to Choose Practical Changes in Your Life",
-        "description": "Learn how to improve your life with 7 practical self-improvement ideas. Choose one manageable change, review your progress, and build a healthier routine today."
+        "title": "How to Improve Your Life: 5 Questions for Choosing One Change",
+        "description": "How to improve your life: use five questions to choose one change, identify its dependencies and preserve essential needs without a total transformation plan."
       },
       {
-        "title": "7 Ways to Choose Practical Changes in Your Life",
-        "description": "Learn how to improve your life with 7 practical self-improvement ideas. Choose one manageable change, review your progress, and build a healthier routine today."
+        "title": "How to Improve Your Life: 5 Questions for Choosing One Change",
+        "description": "How to improve your life: use five questions to choose one change, identify its dependencies and preserve essential needs without a total transformation plan."
       },
       {
-        "title": "7 Ways to Choose Practical Changes in Your Life",
-        "description": "Learn how to improve your life with 7 practical self-improvement ideas. Choose one manageable change, review your progress, and build a healthier routine today."
+        "title": "How to Improve Your Life: 5 Questions for Choosing One Change",
+        "description": "How to improve your life: use five questions to choose one change, identify its dependencies and preserve essential needs without a total transformation plan."
       }
     ]
   },
@@ -2826,51 +2826,51 @@ const ARTICLES = [
   },
   {
     "slug": "habit-building-system",
-    "title": "5 Habit-Building System Strategies That Actually Stick",
+    "title": "Habit Building System: 5 Fields for Reviewing One Repeated Action",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Build a habit-building system with small starts, cues, environment design, tracking, and flexible routines that make progress easier to sustain over time, too.",
+    "read_time": "5",
+    "excerpt": "Habit building system: use fields to record opportunity, action and obstacle without turning tracking into a score or predicting when a habit becomes automatic.",
     "image": "images/habit-building-system.jpg",
-    "alt": "Woman writing in journal at desk with habit building system notebook",
+    "alt": "Hands holding a pen above an open notebook",
     "pins": [
       {
-        "title": "5 Habit-Building System Strategies That Actually Stick",
-        "description": "Build a habit-building system with small starts, cues, environment design, tracking, and flexible routines that make progress easier to sustain over time, too."
+        "title": "Habit Building System: 5 Fields for Reviewing One Repeated Action",
+        "description": "Habit building system: use fields to record opportunity, action and obstacle without turning tracking into a score or predicting when a habit becomes automatic."
       },
       {
-        "title": "5 Habit-Building System Strategies That Actually Stick",
-        "description": "Build a habit-building system with small starts, cues, environment design, tracking, and flexible routines that make progress easier to sustain over time, too."
+        "title": "Habit Building System: 5 Fields for Reviewing One Repeated Action",
+        "description": "Habit building system: use fields to record opportunity, action and obstacle without turning tracking into a score or predicting when a habit becomes automatic."
       },
       {
-        "title": "5 Habit-Building System Strategies That Actually Stick",
-        "description": "Build a habit-building system with small starts, cues, environment design, tracking, and flexible routines that make progress easier to sustain over time, too."
+        "title": "Habit Building System: 5 Fields for Reviewing One Repeated Action",
+        "description": "Habit building system: use fields to record opportunity, action and obstacle without turning tracking into a score or predicting when a habit becomes automatic."
       }
     ]
   },
   {
     "slug": "how-to-change-your-mindset",
-    "title": "5 Ways to Reconsider Unhelpful Thinking Habits",
+    "title": "How to Change Your Mindset: 5 Questions About One Interpretation",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to change your mindset: explore five ways to reconsider thinking habits and practical next steps without forcing positivity or promising a biological reset.",
+    "read_time": "5",
+    "excerpt": "How to change your mindset: examine questions about one interpretation and a useful response without promising brain rewiring, positivity or permanent change.",
     "image": "images/how-to-change-your-mindset.jpg",
-    "alt": "Young woman journaling at desk during mindset change reflection",
+    "alt": "Woman in profile beside a window",
     "pins": [
       {
-        "title": "5 Ways to Reconsider Unhelpful Thinking Habits",
-        "description": "How to change your mindset: explore five ways to reconsider thinking habits and practical next steps without forcing positivity or promising a biological reset."
+        "title": "How to Change Your Mindset: 5 Questions About One Interpretation",
+        "description": "How to change your mindset: examine questions about one interpretation and a useful response without promising brain rewiring, positivity or permanent change."
       },
       {
-        "title": "5 Ways to Reconsider Unhelpful Thinking Habits",
-        "description": "How to change your mindset: explore five ways to reconsider thinking habits and practical next steps without forcing positivity or promising a biological reset."
+        "title": "How to Change Your Mindset: 5 Questions About One Interpretation",
+        "description": "How to change your mindset: examine questions about one interpretation and a useful response without promising brain rewiring, positivity or permanent change."
       },
       {
-        "title": "5 Ways to Reconsider Unhelpful Thinking Habits",
-        "description": "How to change your mindset: explore five ways to reconsider thinking habits and practical next steps without forcing positivity or promising a biological reset."
+        "title": "How to Change Your Mindset: 5 Questions About One Interpretation",
+        "description": "How to change your mindset: examine questions about one interpretation and a useful response without promising brain rewiring, positivity or permanent change."
       }
     ]
   },
@@ -2901,26 +2901,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-reset-your-life",
-    "title": "5 Ways to Reset Your Life and Start Fresh Today",
+    "title": "How to Reset Your Life: 5 Commitment-Sorting Decisions",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to reset your life with five practical steps to clear mental clutter, change daily habits, and build a calmer routine that fits your real life today.",
+    "read_time": "5",
+    "excerpt": "How to reset your life: use five commitment-sorting decisions before making broad changes, keeping essential needs, agreements and consequences clearly visible.",
     "image": "images/how-to-reset-your-life.jpg",
-    "alt": "Woman journaling by window for life reset planning",
+    "alt": "Woman seated beside a window holding an open book",
     "pins": [
       {
-        "title": "5 Ways to Reset Your Life and Start Fresh Today",
-        "description": "Learn how to reset your life with five practical steps to clear mental clutter, change daily habits, and build a calmer routine that fits your real life today."
+        "title": "How to Reset Your Life: 5 Commitment-Sorting Decisions",
+        "description": "How to reset your life: use five commitment-sorting decisions before making broad changes, keeping essential needs, agreements and consequences clearly visible."
       },
       {
-        "title": "5 Ways to Reset Your Life and Start Fresh Today",
-        "description": "Learn how to reset your life with five practical steps to clear mental clutter, change daily habits, and build a calmer routine that fits your real life today."
+        "title": "How to Reset Your Life: 5 Commitment-Sorting Decisions",
+        "description": "How to reset your life: use five commitment-sorting decisions before making broad changes, keeping essential needs, agreements and consequences clearly visible."
       },
       {
-        "title": "5 Ways to Reset Your Life and Start Fresh Today",
-        "description": "Learn how to reset your life with five practical steps to clear mental clutter, change daily habits, and build a calmer routine that fits your real life today."
+        "title": "How to Reset Your Life: 5 Commitment-Sorting Decisions",
+        "description": "How to reset your life: use five commitment-sorting decisions before making broad changes, keeping essential needs, agreements and consequences clearly visible."
       }
     ]
   },
@@ -3101,26 +3101,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stay-motivated",
-    "title": "7 Ways to Work With Changing Motivation",
+    "title": "How to Stay Motivated: 5 Questions About a Goal You Still Want",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven ways to support your motivation, with smaller goals, planning, self-compassion, and room to restart after difficult days. Practical steps you can",
+    "read_time": "5",
+    "excerpt": "How to stay motivated: ask five questions about a goal you want, its demands and available support without promising constant enthusiasm or a dopamine effect.",
     "image": "images/how-to-stay-motivated.jpg",
-    "alt": "Woman writing in notebook with coffee, motivated morning routine",
+    "alt": "Woman writing in a notebook at a table",
     "pins": [
       {
-        "title": "7 Ways to Work With Changing Motivation",
-        "description": "Explore seven ways to support your motivation, with smaller goals, planning, self-compassion, and room to restart after difficult days. Practical steps you can"
+        "title": "How to Stay Motivated: 5 Questions About a Goal You Still Want",
+        "description": "How to stay motivated: ask five questions about a goal you want, its demands and available support without promising constant enthusiasm or a dopamine effect."
       },
       {
-        "title": "7 Ways to Work With Changing Motivation",
-        "description": "Explore seven ways to support your motivation, with smaller goals, planning, self-compassion, and room to restart after difficult days. Practical steps you can"
+        "title": "How to Stay Motivated: 5 Questions About a Goal You Still Want",
+        "description": "How to stay motivated: ask five questions about a goal you want, its demands and available support without promising constant enthusiasm or a dopamine effect."
       },
       {
-        "title": "7 Ways to Work With Changing Motivation",
-        "description": "Explore seven ways to support your motivation, with smaller goals, planning, self-compassion, and room to restart after difficult days. Practical steps you can"
+        "title": "How to Stay Motivated: 5 Questions About a Goal You Still Want",
+        "description": "How to stay motivated: ask five questions about a goal you want, its demands and available support without promising constant enthusiasm or a dopamine effect."
       }
     ]
   },
