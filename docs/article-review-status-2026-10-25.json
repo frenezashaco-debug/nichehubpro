@@ -3,7 +3,7 @@
   "scope": "A full editorial rewrite and the strict batch checks apply only to the listed full-review articles. Other entries have targeted edits or mechanical consistency checks, not a scientific certification or AdSense approval. Pixel watermarks and all external claims have not been individually verified in this pass.",
   "summary": {
     "inventory": 155,
-    "full_review_and_strict_checks": 94,
+    "full_review_and_strict_checks": 114,
     "targeted_scenario_repairs_this_batch": 43,
     "changed_articles_this_batch": 152,
     "body_changed_this_batch": 71
@@ -11,7 +11,9 @@
   "articles": [
     {
       "slug": "how-to-protect-your-mental-energy-like-a-finite-resource",
-      "review_scope": "new_automated_publication_not_full_editorial_review"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "how-gut-health-influences-your-mood-and-energy",
@@ -19,11 +21,15 @@
     },
     {
       "slug": "how-willpower-works-and-why-it-runs-out",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "why-your-brain-craves-routine-even-when-you-resist-it",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "how-sleep-debt-silently-drains-your-daily-performance",
@@ -31,11 +37,15 @@
     },
     {
       "slug": "the-psychology-behind-why-deadlines-make-you-more-productive",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "what-cognitive-load-does-to-your-decision-making",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "how-blood-sugar-swings-affect-your-energy-and-mood",
@@ -47,7 +57,9 @@
     },
     {
       "slug": "how-to-train-your-brain-for-longer-attention-spans",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "how-your-body-clock-affects-when-you-should-exercise",
@@ -59,7 +71,9 @@
     },
     {
       "slug": "what-neuroplasticity-means-for-changing-your-habits",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "how-to-build-energy-that-lasts-all-day-without-crashing",
@@ -73,7 +87,9 @@
     },
     {
       "slug": "how-to-stop-feeling-guilty-for-resting",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "why-hydration-affects-your-focus-more-than-you-think",
@@ -103,7 +119,9 @@
     },
     {
       "slug": "how-to-build-a-stress-resistant-morning-routine",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "why-productivity-hacks-dont-work-long-term",
@@ -113,7 +131,9 @@
     },
     {
       "slug": "the-emotional-root-of-chronic-procrastination",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "how-to-build-a-better-lifestyle-long-term",
@@ -159,7 +179,9 @@
     },
     {
       "slug": "how-to-improve-concentration-naturally",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "best-routine-planner-methods",
@@ -189,7 +211,9 @@
     },
     {
       "slug": "best-focus-techniques-for-students",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "benefits-of-walking-every-day",
@@ -245,7 +269,9 @@
     },
     {
       "slug": "how-to-stop-procrastinating-immediately",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "signs-of-mental-burnout-and-how-to-recover",
@@ -269,7 +295,9 @@
     },
     {
       "slug": "how-to-improve-mental-clarity",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "how-to-stop-procrastination",
@@ -305,7 +333,9 @@
     },
     {
       "slug": "healthy-routine-for-working-from-home",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "best-daily-mobility-exercises",
@@ -339,7 +369,9 @@
     },
     {
       "slug": "healthy-habits-for-busy-people",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "best-productivity-apps-in-2026",
@@ -443,7 +475,9 @@
     },
     {
       "slug": "morning-routine-for-a-healthy-lifestyle",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "best-time-management-techniques-ranked",
@@ -451,7 +485,9 @@
     },
     {
       "slug": "daily-habits-for-better-mental-health",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "how-to-stop-negative-thinking-patterns",
@@ -459,7 +495,9 @@
     },
     {
       "slug": "healthy-habits-to-start-this-week",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "how-sleep-affects-mental-health",
@@ -655,7 +693,9 @@
     },
     {
       "slug": "morning-routine-for-mental-health",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-26",
+      "review_record": "docs/attention-routine-twenty-review-2026-10-26.md"
     },
     {
       "slug": "how-to-stop-overthinking-at-work",

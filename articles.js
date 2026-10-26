@@ -3,26 +3,26 @@
 const ARTICLES = [
   {
     "slug": "how-to-protect-your-mental-energy-like-a-finite-resource",
-    "title": "How to Protect Your Mental Energy Like a Finite Resource: 5 Practical Checks",
+    "title": "How to Protect Your Mental Energy Like a Finite Resource: 5 Demand Checks",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Oct 2026",
-    "read_time": "8",
-    "excerpt": "How to protect your mental energy like a finite resource with 5 practical checks. Manage mental energy better every day with these clear, actionable steps.",
+    "read_time": "5",
+    "excerpt": "How to protect your mental energy like a finite resource: review five demands and support needs without treating a metaphor as a measurable brain-fuel budget.",
     "image": "images/how-to-protect-your-mental-energy-like-a-finite-resource.jpg",
-    "alt": "Man reflecting quietly at table supporting mental energy management",
+    "alt": "Man seated at a table holding a mug",
     "pins": [
       {
-        "title": "How to Protect Your Mental Energy Like a Finite Resource",
-        "description": "Your mental energy is limited - spending it wisely changes everything. These 5 practical checks show you how to manage your mental energy throughout the day so you stop running on empty. Small shifts, real results over time."
+        "title": "How to Protect Your Mental Energy Like a Finite Resource: 5 Demand Checks",
+        "description": "How to protect your mental energy like a finite resource: review five demands and support needs without treating a metaphor as a measurable brain-fuel budget."
       },
       {
-        "title": "Stop Letting These 5 Things Drain Your Mental Energy",
-        "description": "Open loops, constant notifications, and unresolved decisions quietly drain your mental energy all day. Find out which drain is hitting you hardest and what one structural change may help. Your capacity is worth protecting."
+        "title": "How to Protect Your Mental Energy Like a Finite Resource: 5 Demand Checks",
+        "description": "How to protect your mental energy like a finite resource: review five demands and support needs without treating a metaphor as a measurable brain-fuel budget."
       },
       {
-        "title": "Try This 3-Point Daily Check-In for Mental Energy Management",
-        "description": "A simple 2-minute check-in at three points in your day can help you catch mental energy depletion before it derails you. This practical tool is part of a 5-step guide to protecting your focus and decision-making every day."
+        "title": "How to Protect Your Mental Energy Like a Finite Resource: 5 Demand Checks",
+        "description": "How to protect your mental energy like a finite resource: review five demands and support needs without treating a metaphor as a measurable brain-fuel budget."
       }
     ]
   },
@@ -53,51 +53,51 @@ const ARTICLES = [
   },
   {
     "slug": "how-willpower-works-and-why-it-runs-out",
-    "title": "How Willpower Works and Why It Runs Out: 5 Practical Checks",
+    "title": "How Willpower Works and Why It Runs Out: 5 Evidence Questions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Oct 2026",
-    "read_time": "8",
-    "excerpt": "How willpower works and why it runs out explained simply. 5 practical checks to manage willpower depletion and make better decisions throughout your day. Read o",
+    "read_time": "5",
+    "excerpt": "How willpower works and why it runs out: examine five evidence questions before treating self-control as a fuel tank or blaming an afternoon depletion point.",
     "image": "images/how-willpower-works-and-why-it-runs-out.jpg",
-    "alt": "Man reviewing morning task list, reflecting on how willpower works",
+    "alt": "Man looking down while holding a mug",
     "pins": [
       {
-        "title": "How Willpower Works and Why It Runs Out: 5 Practical Checks",
-        "description": "How willpower works and why it runs out explained simply. 5 practical checks to manage willpower depletion and make better decisions throughout your day. Read o"
+        "title": "How Willpower Works and Why It Runs Out: 5 Evidence Questions",
+        "description": "How willpower works and why it runs out: examine five evidence questions before treating self-control as a fuel tank or blaming an afternoon depletion point."
       },
       {
-        "title": "How Willpower Works and Why It Runs Out: 5 Practical Checks",
-        "description": "How willpower works and why it runs out explained simply. 5 practical checks to manage willpower depletion and make better decisions throughout your day. Read o"
+        "title": "How Willpower Works and Why It Runs Out: 5 Evidence Questions",
+        "description": "How willpower works and why it runs out: examine five evidence questions before treating self-control as a fuel tank or blaming an afternoon depletion point."
       },
       {
-        "title": "How Willpower Works and Why It Runs Out: 5 Practical Checks",
-        "description": "How willpower works and why it runs out explained simply. 5 practical checks to manage willpower depletion and make better decisions throughout your day. Read o"
+        "title": "How Willpower Works and Why It Runs Out: 5 Evidence Questions",
+        "description": "How willpower works and why it runs out: examine five evidence questions before treating self-control as a fuel tank or blaming an afternoon depletion point."
       }
     ]
   },
   {
     "slug": "why-your-brain-craves-routine-even-when-you-resist-it",
-    "title": "Why Your Brain Craves Routine Even When You Resist It: 5 Practical Checks",
+    "title": "Why Your Brain Craves Routine Even When You Resist It: 5 Usefulness Checks",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Oct 2026",
-    "read_time": "8",
-    "excerpt": "Why your brain craves routine even when you resist it: explore habits, check what helps, and try five flexible routine checks without making your day rigid.",
+    "read_time": "5",
+    "excerpt": "Why your brain craves routine even when you resist it: examine five usefulness checks without assuming a repeated action is necessary, healthy or hard-wired.",
     "image": "images/why-your-brain-craves-routine-even-when-you-resist-it.jpg",
-    "alt": "Man holding coffee mug in quiet kitchen morning routine",
+    "alt": "Man seated beside a window holding a mug",
     "pins": [
       {
-        "title": "Why Your Brain Craves Routine Even When You Resist It: 5 Practical Checks",
-        "description": "Why your brain craves routine even when you resist it: explore habits, check what helps, and try five flexible routine checks without making your day rigid."
+        "title": "Why Your Brain Craves Routine Even When You Resist It: 5 Usefulness Checks",
+        "description": "Why your brain craves routine even when you resist it: examine five usefulness checks without assuming a repeated action is necessary, healthy or hard-wired."
       },
       {
-        "title": "Why Your Brain Craves Routine Even When You Resist It: 5 Practical Checks",
-        "description": "Why your brain craves routine even when you resist it: explore habits, check what helps, and try five flexible routine checks without making your day rigid."
+        "title": "Why Your Brain Craves Routine Even When You Resist It: 5 Usefulness Checks",
+        "description": "Why your brain craves routine even when you resist it: examine five usefulness checks without assuming a repeated action is necessary, healthy or hard-wired."
       },
       {
-        "title": "Why Your Brain Craves Routine Even When You Resist It: 5 Practical Checks",
-        "description": "Why your brain craves routine even when you resist it: explore habits, check what helps, and try five flexible routine checks without making your day rigid."
+        "title": "Why Your Brain Craves Routine Even When You Resist It: 5 Usefulness Checks",
+        "description": "Why your brain craves routine even when you resist it: examine five usefulness checks without assuming a repeated action is necessary, healthy or hard-wired."
       }
     ]
   },
@@ -128,51 +128,51 @@ const ARTICLES = [
   },
   {
     "slug": "the-psychology-behind-why-deadlines-make-you-more-productive",
-    "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Reality Checks",
+    "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Assumptions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Oct 2026",
-    "read_time": "6",
-    "excerpt": "Explore the psychology behind why deadlines make you more productive with scope checks, a practical planning card, and room to review quality before delivery.",
+    "read_time": "5",
+    "excerpt": "The psychology behind why deadlines make you more productive: test five planning assumptions without treating time pressure as a guarantee of speed or quality.",
     "image": "images/the-psychology-behind-why-deadlines-make-you-more-productive.jpg",
-    "alt": "woman concentrating at desk studying deadline psychology productivity",
+    "alt": "Woman seated at a laptop beside a wall clock",
     "pins": [
       {
-        "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Reality Checks",
-        "description": "Explore the psychology behind why deadlines make you more productive with scope checks, a practical planning card, and room to review quality before delivery."
+        "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Assumptions",
+        "description": "The psychology behind why deadlines make you more productive: test five planning assumptions without treating time pressure as a guarantee of speed or quality."
       },
       {
-        "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Reality Checks",
-        "description": "Explore the psychology behind why deadlines make you more productive with scope checks, a practical planning card, and room to review quality before delivery."
+        "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Assumptions",
+        "description": "The psychology behind why deadlines make you more productive: test five planning assumptions without treating time pressure as a guarantee of speed or quality."
       },
       {
-        "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Reality Checks",
-        "description": "Explore the psychology behind why deadlines make you more productive with scope checks, a practical planning card, and room to review quality before delivery."
+        "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Assumptions",
+        "description": "The psychology behind why deadlines make you more productive: test five planning assumptions without treating time pressure as a guarantee of speed or quality."
       }
     ]
   },
   {
     "slug": "what-cognitive-load-does-to-your-decision-making",
-    "title": "What Cognitive Load Does to Your Decision Making: 5 Practical Checks",
+    "title": "What Cognitive Load Does to Your Decision Making: 5 Information Checks",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Oct 2026",
-    "read_time": "8",
-    "excerpt": "Learn what cognitive load does to your decision making, with practical checks, clear research limits, and a simple worksheet to help compare everyday choices.",
+    "read_time": "5",
+    "excerpt": "What cognitive load does to your decision making: use five information checks without diagnosing overload or assuming reminders solve all kinds of decisions.",
     "image": "images/what-cognitive-load-does-to-your-decision-making.jpg",
-    "alt": "Young woman looking mentally overwhelmed while making decisions at desk",
+    "alt": "Woman seated at a laptop beside a cup",
     "pins": [
       {
-        "title": "What Cognitive Load Does to Your Decision Making: 5 Practical Checks",
-        "description": "Learn what cognitive load does to your decision making, with practical checks, clear research limits, and a simple worksheet to help compare everyday choices."
+        "title": "What Cognitive Load Does to Your Decision Making: 5 Information Checks",
+        "description": "What cognitive load does to your decision making: use five information checks without diagnosing overload or assuming reminders solve all kinds of decisions."
       },
       {
-        "title": "What Cognitive Load Does to Your Decision Making: 5 Practical Checks",
-        "description": "Learn what cognitive load does to your decision making, with practical checks, clear research limits, and a simple worksheet to help compare everyday choices."
+        "title": "What Cognitive Load Does to Your Decision Making: 5 Information Checks",
+        "description": "What cognitive load does to your decision making: use five information checks without diagnosing overload or assuming reminders solve all kinds of decisions."
       },
       {
-        "title": "What Cognitive Load Does to Your Decision Making: 5 Practical Checks",
-        "description": "Learn what cognitive load does to your decision making, with practical checks, clear research limits, and a simple worksheet to help compare everyday choices."
+        "title": "What Cognitive Load Does to Your Decision Making: 5 Information Checks",
+        "description": "What cognitive load does to your decision making: use five information checks without diagnosing overload or assuming reminders solve all kinds of decisions."
       }
     ]
   },
@@ -228,14 +228,14 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-train-your-brain-for-longer-attention-spans",
-    "title": "How to Train Your Brain for Longer Attention Spans: 5 Practical Checks",
+    "title": "How to Train Your Brain for Longer Attention Spans: 5 Task-Practice Checks",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Sep 2026",
-    "read_time": "8",
-    "excerpt": "How to train your brain for longer attention spans: try five practical focus checks, reduce interruptions, and build a routine that fits your real working day.",
+    "read_time": "5",
+    "excerpt": "How to train your brain for longer attention spans: review five task-practice checks without confusing better task performance with a general attention gain.",
     "image": "images/how-to-train-your-brain-for-longer-attention-spans.jpg",
-    "alt": "Woman reading a paperback beside a bright window.",
+    "alt": "Woman reading a book beside a window",
     "pins": []
   },
   {
@@ -277,26 +277,26 @@ const ARTICLES = [
   },
   {
     "slug": "what-neuroplasticity-means-for-changing-your-habits",
-    "title": "Neuroplasticity and Habit Change: 7 Practical Lessons",
+    "title": "What Neuroplasticity Means for Changing Your Habits: 5 Evidence Boundaries",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Sep 2026",
-    "read_time": "8",
-    "excerpt": "Learn what neuroplasticity means for changing your habits and how small, repeated actions can support better routines without fixed timelines or false promises.",
+    "read_time": "5",
+    "excerpt": "What neuroplasticity means for changing your habits: examine evidence boundaries before treating a repeated action, mood or streak as proof of brain rewiring.",
     "image": "images/what-neuroplasticity-means-for-changing-your-habits.jpg",
-    "alt": "Young woman journaling at desk exploring neuroplasticity and habit change",
+    "alt": "Woman writing in a notebook beside a mug",
     "pins": [
       {
-        "title": "Neuroplasticity and Habit Change: 7 Practical Lessons",
-        "description": "Learn what neuroplasticity means for changing your habits and how small, repeated actions can support better routines without fixed timelines or false promises."
+        "title": "What Neuroplasticity Means for Changing Your Habits: 5 Evidence Boundaries",
+        "description": "What neuroplasticity means for changing your habits: examine evidence boundaries before treating a repeated action, mood or streak as proof of brain rewiring."
       },
       {
-        "title": "Neuroplasticity and Habit Change: 7 Practical Lessons",
-        "description": "Learn what neuroplasticity means for changing your habits and how small, repeated actions can support better routines without fixed timelines or false promises."
+        "title": "What Neuroplasticity Means for Changing Your Habits: 5 Evidence Boundaries",
+        "description": "What neuroplasticity means for changing your habits: examine evidence boundaries before treating a repeated action, mood or streak as proof of brain rewiring."
       },
       {
-        "title": "Neuroplasticity and Habit Change: 7 Practical Lessons",
-        "description": "Learn what neuroplasticity means for changing your habits and how small, repeated actions can support better routines without fixed timelines or false promises."
+        "title": "What Neuroplasticity Means for Changing Your Habits: 5 Evidence Boundaries",
+        "description": "What neuroplasticity means for changing your habits: examine evidence boundaries before treating a repeated action, mood or streak as proof of brain rewiring."
       }
     ]
   },
@@ -352,26 +352,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-feeling-guilty-for-resting",
-    "title": "7 Ways: How to Stop Feeling Guilty for Resting Without Feeling Lazy",
+    "title": "How to Stop Feeling Guilty for Resting: 5 Questions About Needs and Expectations",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Sep 2026",
-    "read_time": "8",
-    "excerpt": "How to stop feeling guilty for resting: learn why rest guilt happens and try practical steps to protect your mental health without forcing productivity today.",
+    "read_time": "5",
+    "excerpt": "How to stop feeling guilty for resting: consider five questions about needs, expectations and coverage without making rest depend on output or a worksheet.",
     "image": "images/how-to-stop-feeling-guilty-for-resting.jpg",
-    "alt": "Young woman resting on sofa, feeling guilty for resting",
+    "alt": "Woman reclining on a sofa with eyes closed",
     "pins": [
       {
-        "title": "7 Ways: How to Stop Feeling Guilty for Resting Without Feeling Lazy",
-        "description": "How to stop feeling guilty for resting: learn why rest guilt happens and try practical steps to protect your mental health without forcing productivity today."
+        "title": "How to Stop Feeling Guilty for Resting: 5 Questions About Needs and Expectations",
+        "description": "How to stop feeling guilty for resting: consider five questions about needs, expectations and coverage without making rest depend on output or a worksheet."
       },
       {
-        "title": "7 Ways: How to Stop Feeling Guilty for Resting Without Feeling Lazy",
-        "description": "How to stop feeling guilty for resting: learn why rest guilt happens and try practical steps to protect your mental health without forcing productivity today."
+        "title": "How to Stop Feeling Guilty for Resting: 5 Questions About Needs and Expectations",
+        "description": "How to stop feeling guilty for resting: consider five questions about needs, expectations and coverage without making rest depend on output or a worksheet."
       },
       {
-        "title": "7 Ways: How to Stop Feeling Guilty for Resting Without Feeling Lazy",
-        "description": "How to stop feeling guilty for resting: learn why rest guilt happens and try practical steps to protect your mental health without forcing productivity today."
+        "title": "How to Stop Feeling Guilty for Resting: 5 Questions About Needs and Expectations",
+        "description": "How to stop feeling guilty for resting: consider five questions about needs, expectations and coverage without making rest depend on output or a worksheet."
       }
     ]
   },
@@ -527,26 +527,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-a-stress-resistant-morning-routine",
-    "title": "7 Ideas for a More Manageable Morning Routine",
+    "title": "How to Build a Stress-Resistant Morning Routine: 5 Contingency Decisions",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Aug 2026",
-    "read_time": "8",
-    "excerpt": "Build a more manageable morning routine with seven flexible ideas for light, food, planning, and pauses that suit your own schedule. Practical steps you can",
+    "read_time": "5",
+    "excerpt": "How to build a stress-resistant morning routine: make five contingency decisions for disruptions without promising a stress-proof day or a cortisol change.",
     "image": "images/how-to-build-a-stress-resistant-morning-routine.jpg",
-    "alt": "Woman practicing stress resistant morning routine at sunrise",
+    "alt": "Woman seated on a rug beside a sofa",
     "pins": [
       {
-        "title": "7 Ideas for a More Manageable Morning Routine",
-        "description": "Build a more manageable morning routine with seven flexible ideas for light, food, planning, and pauses that suit your own schedule. Practical steps you can"
+        "title": "How to Build a Stress-Resistant Morning Routine: 5 Contingency Decisions",
+        "description": "How to build a stress-resistant morning routine: make five contingency decisions for disruptions without promising a stress-proof day or a cortisol change."
       },
       {
-        "title": "7 Ideas for a More Manageable Morning Routine",
-        "description": "Build a more manageable morning routine with seven flexible ideas for light, food, planning, and pauses that suit your own schedule. Practical steps you can"
+        "title": "How to Build a Stress-Resistant Morning Routine: 5 Contingency Decisions",
+        "description": "How to build a stress-resistant morning routine: make five contingency decisions for disruptions without promising a stress-proof day or a cortisol change."
       },
       {
-        "title": "7 Ideas for a More Manageable Morning Routine",
-        "description": "Build a more manageable morning routine with seven flexible ideas for light, food, planning, and pauses that suit your own schedule. Practical steps you can"
+        "title": "How to Build a Stress-Resistant Morning Routine: 5 Contingency Decisions",
+        "description": "How to build a stress-resistant morning routine: make five contingency decisions for disruptions without promising a stress-proof day or a cortisol change."
       }
     ]
   },
@@ -577,26 +577,26 @@ const ARTICLES = [
   },
   {
     "slug": "the-emotional-root-of-chronic-procrastination",
-    "title": "7 Emotional Factors That Can Contribute to Procrastination",
+    "title": "The Emotional Root of Chronic Procrastination: 5 Questions Beyond a Single Cause",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Aug 2026",
-    "read_time": "8",
-    "excerpt": "Learn the emotional root of chronic procrastination, how fear and shame fuel avoidance, and practical steps to start difficult tasks with less self-blame today.",
+    "read_time": "5",
+    "excerpt": "The emotional root of chronic procrastination: ask five questions about feelings, clarity and constraints without assuming every delay is emotional avoidance.",
     "image": "images/the-emotional-root-of-chronic-procrastination.jpg",
-    "alt": "woman staring at laptop dealing with chronic procrastination at desk",
+    "alt": "Woman seated at a laptop with a hand near her face",
     "pins": [
       {
-        "title": "7 Emotional Factors That Can Contribute to Procrastination",
-        "description": "Learn the emotional root of chronic procrastination, how fear and shame fuel avoidance, and practical steps to start difficult tasks with less self-blame today."
+        "title": "The Emotional Root of Chronic Procrastination: 5 Questions Beyond a Single Cause",
+        "description": "The emotional root of chronic procrastination: ask five questions about feelings, clarity and constraints without assuming every delay is emotional avoidance."
       },
       {
-        "title": "7 Emotional Factors That Can Contribute to Procrastination",
-        "description": "Learn the emotional root of chronic procrastination, how fear and shame fuel avoidance, and practical steps to start difficult tasks with less self-blame today."
+        "title": "The Emotional Root of Chronic Procrastination: 5 Questions Beyond a Single Cause",
+        "description": "The emotional root of chronic procrastination: ask five questions about feelings, clarity and constraints without assuming every delay is emotional avoidance."
       },
       {
-        "title": "7 Emotional Factors That Can Contribute to Procrastination",
-        "description": "Learn the emotional root of chronic procrastination, how fear and shame fuel avoidance, and practical steps to start difficult tasks with less self-blame today."
+        "title": "The Emotional Root of Chronic Procrastination: 5 Questions Beyond a Single Cause",
+        "description": "The emotional root of chronic procrastination: ask five questions about feelings, clarity and constraints without assuming every delay is emotional avoidance."
       }
     ]
   },
@@ -802,26 +802,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-improve-concentration-naturally",
-    "title": "9 Ways to Improve Concentration Naturally Without Quick Fixes",
+    "title": "How to Improve Concentration Naturally: 5 Support Questions Before a New Routine",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Explore nine practical ways to improve concentration through sleep, movement, food, breaks, and environment changes without promising instant results or cures.",
+    "read_time": "5",
+    "excerpt": "How to improve concentration naturally: ask five questions about the task, needs and ongoing symptoms without assuming lifestyle changes replace assessment.",
     "image": "images/how-to-improve-concentration-naturally.jpg",
-    "alt": "young woman concentrating naturally at desk by window",
+    "alt": "Woman in a green top looking down",
     "pins": [
       {
-        "title": "9 Ways to Improve Concentration Naturally Without Quick Fixes",
-        "description": "Explore nine practical ways to improve concentration through sleep, movement, food, breaks, and environment changes without promising instant results or cures."
+        "title": "How to Improve Concentration Naturally: 5 Support Questions Before a New Routine",
+        "description": "How to improve concentration naturally: ask five questions about the task, needs and ongoing symptoms without assuming lifestyle changes replace assessment."
       },
       {
-        "title": "9 Ways to Improve Concentration Naturally Without Quick Fixes",
-        "description": "Explore nine practical ways to improve concentration through sleep, movement, food, breaks, and environment changes without promising instant results or cures."
+        "title": "How to Improve Concentration Naturally: 5 Support Questions Before a New Routine",
+        "description": "How to improve concentration naturally: ask five questions about the task, needs and ongoing symptoms without assuming lifestyle changes replace assessment."
       },
       {
-        "title": "9 Ways to Improve Concentration Naturally Without Quick Fixes",
-        "description": "Explore nine practical ways to improve concentration through sleep, movement, food, breaks, and environment changes without promising instant results or cures."
+        "title": "How to Improve Concentration Naturally: 5 Support Questions Before a New Routine",
+        "description": "How to improve concentration naturally: ask five questions about the task, needs and ongoing symptoms without assuming lifestyle changes replace assessment."
       }
     ]
   },
@@ -977,26 +977,26 @@ const ARTICLES = [
   },
   {
     "slug": "best-focus-techniques-for-students",
-    "title": "7 Focus Techniques for Students to Try During Study Sessions",
+    "title": "Best Focus Techniques for Students: 5 Checks for a Useful Study Session",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven focus techniques for students, including a flexible study setup, short work blocks, breaks, and ways to reduce distractions. Practical steps you",
+    "read_time": "5",
+    "excerpt": "Best focus techniques for students: use checks for a learning task, retrieval, feedback and spaced review rather than judging study by time or promising grades.",
     "image": "images/best-focus-techniques-for-students.jpg",
-    "alt": "Young woman studying with focus at wooden desk during daytime",
+    "alt": "Woman in a grey hoodie writing at a library table",
     "pins": [
       {
-        "title": "7 Focus Techniques for Students to Try During Study Sessions",
-        "description": "Explore seven focus techniques for students, including a flexible study setup, short work blocks, breaks, and ways to reduce distractions. Practical steps you"
+        "title": "Best Focus Techniques for Students: 5 Checks for a Useful Study Session",
+        "description": "Best focus techniques for students: use checks for a learning task, retrieval, feedback and spaced review rather than judging study by time or promising grades."
       },
       {
-        "title": "7 Focus Techniques for Students to Try During Study Sessions",
-        "description": "Explore seven focus techniques for students, including a flexible study setup, short work blocks, breaks, and ways to reduce distractions. Practical steps you"
+        "title": "Best Focus Techniques for Students: 5 Checks for a Useful Study Session",
+        "description": "Best focus techniques for students: use checks for a learning task, retrieval, feedback and spaced review rather than judging study by time or promising grades."
       },
       {
-        "title": "7 Focus Techniques for Students to Try During Study Sessions",
-        "description": "Explore seven focus techniques for students, including a flexible study setup, short work blocks, breaks, and ways to reduce distractions. Practical steps you"
+        "title": "Best Focus Techniques for Students: 5 Checks for a Useful Study Session",
+        "description": "Best focus techniques for students: use checks for a learning task, retrieval, feedback and spaced review rather than judging study by time or promising grades."
       }
     ]
   },
@@ -1252,26 +1252,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-procrastinating-immediately",
-    "title": "7 Practical Ways to Start a Task You Are Avoiding",
+    "title": "How to Stop Procrastinating Immediately: 5 Feasible First Responses",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to stop procrastinating immediately with 7 practical steps. Break the cycle today and start important tasks without guilt, overwhelm, or waiting.",
+    "read_time": "5",
+    "excerpt": "How to stop procrastinating immediately: choose among five first responses without forcing a countdown, ignoring a dependency or promising the delay ends now.",
     "image": "images/how-to-stop-procrastinating-immediately.jpg",
-    "alt": "Woman pausing at desk before starting work task",
+    "alt": "Woman in a grey hoodie seated indoors",
     "pins": [
       {
-        "title": "7 Practical Ways to Start a Task You Are Avoiding",
-        "description": "Learn how to stop procrastinating immediately with 7 practical steps. Break the cycle today and start important tasks without guilt, overwhelm, or waiting."
+        "title": "How to Stop Procrastinating Immediately: 5 Feasible First Responses",
+        "description": "How to stop procrastinating immediately: choose among five first responses without forcing a countdown, ignoring a dependency or promising the delay ends now."
       },
       {
-        "title": "7 Practical Ways to Start a Task You Are Avoiding",
-        "description": "Learn how to stop procrastinating immediately with 7 practical steps. Break the cycle today and start important tasks without guilt, overwhelm, or waiting."
+        "title": "How to Stop Procrastinating Immediately: 5 Feasible First Responses",
+        "description": "How to stop procrastinating immediately: choose among five first responses without forcing a countdown, ignoring a dependency or promising the delay ends now."
       },
       {
-        "title": "7 Practical Ways to Start a Task You Are Avoiding",
-        "description": "Learn how to stop procrastinating immediately with 7 practical steps. Break the cycle today and start important tasks without guilt, overwhelm, or waiting."
+        "title": "How to Stop Procrastinating Immediately: 5 Feasible First Responses",
+        "description": "How to stop procrastinating immediately: choose among five first responses without forcing a countdown, ignoring a dependency or promising the delay ends now."
       }
     ]
   },
@@ -1377,26 +1377,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-improve-mental-clarity",
-    "title": "7 Ways to Support Mental Clarity During a Busy Week",
+    "title": "How to Improve Mental Clarity: 5 Details for a Care Conversation",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven practical ways to support mental clarity, including sleep, breaks, planning, and noticing when ongoing symptoms need professional care. Practical",
+    "read_time": "5",
+    "excerpt": "How to improve mental clarity: prepare five details about changes in thinking and daily activities without self-diagnosing brain fog or delaying medical help.",
     "image": "images/how-to-improve-mental-clarity.jpg",
-    "alt": "Young woman improving mental clarity with morning coffee ritual peacefully focused",
+    "alt": "Woman writing in a notebook at a table",
     "pins": [
       {
-        "title": "7 Ways to Support Mental Clarity During a Busy Week",
-        "description": "Explore seven practical ways to support mental clarity, including sleep, breaks, planning, and noticing when ongoing symptoms need professional care. Practical"
+        "title": "How to Improve Mental Clarity: 5 Details for a Care Conversation",
+        "description": "How to improve mental clarity: prepare five details about changes in thinking and daily activities without self-diagnosing brain fog or delaying medical help."
       },
       {
-        "title": "7 Ways to Support Mental Clarity During a Busy Week",
-        "description": "Explore seven practical ways to support mental clarity, including sleep, breaks, planning, and noticing when ongoing symptoms need professional care. Practical"
+        "title": "How to Improve Mental Clarity: 5 Details for a Care Conversation",
+        "description": "How to improve mental clarity: prepare five details about changes in thinking and daily activities without self-diagnosing brain fog or delaying medical help."
       },
       {
-        "title": "7 Ways to Support Mental Clarity During a Busy Week",
-        "description": "Explore seven practical ways to support mental clarity, including sleep, breaks, planning, and noticing when ongoing symptoms need professional care. Practical"
+        "title": "How to Improve Mental Clarity: 5 Details for a Care Conversation",
+        "description": "How to improve mental clarity: prepare five details about changes in thinking and daily activities without self-diagnosing brain fog or delaying medical help."
       }
     ]
   },
@@ -1577,26 +1577,26 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-routine-for-working-from-home",
-    "title": "7 Healthy Routine Ideas for Working From Home",
+    "title": "Healthy Routine for Working From Home: 5 Shared-Space Agreements",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven healthy routine ideas for working from home, with flexible boundaries, breaks, movement, and realistic ways to organise your day. Practical steps",
+    "read_time": "5",
+    "excerpt": "Healthy routine for working from home: make agreements about space, contact and transitions without treating a home routine as a guarantee of health or output.",
     "image": "images/healthy-routine-for-working-from-home.jpg",
-    "alt": "woman working from home at desk with healthy routine",
+    "alt": "Woman in a green hoodie seated at a laptop",
     "pins": [
       {
-        "title": "7 Healthy Routine Ideas for Working From Home",
-        "description": "Explore seven healthy routine ideas for working from home, with flexible boundaries, breaks, movement, and realistic ways to organise your day. Practical steps"
+        "title": "Healthy Routine for Working From Home: 5 Shared-Space Agreements",
+        "description": "Healthy routine for working from home: make agreements about space, contact and transitions without treating a home routine as a guarantee of health or output."
       },
       {
-        "title": "7 Healthy Routine Ideas for Working From Home",
-        "description": "Explore seven healthy routine ideas for working from home, with flexible boundaries, breaks, movement, and realistic ways to organise your day. Practical steps"
+        "title": "Healthy Routine for Working From Home: 5 Shared-Space Agreements",
+        "description": "Healthy routine for working from home: make agreements about space, contact and transitions without treating a home routine as a guarantee of health or output."
       },
       {
-        "title": "7 Healthy Routine Ideas for Working From Home",
-        "description": "Explore seven healthy routine ideas for working from home, with flexible boundaries, breaks, movement, and realistic ways to organise your day. Practical steps"
+        "title": "Healthy Routine for Working From Home: 5 Shared-Space Agreements",
+        "description": "Healthy routine for working from home: make agreements about space, contact and transitions without treating a home routine as a guarantee of health or output."
       }
     ]
   },
@@ -1751,26 +1751,26 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-habits-for-busy-people",
-    "title": "Healthy Habits for Busy People: 7 Flexible Choices for Difficult Weeks",
+    "title": "Healthy Habits for Busy People: 5 Ways to Address a Practical Care Obstacle",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
-    "read_time": "6",
-    "excerpt": "Explore healthy habits for busy people with seven adaptable choices, a normal-day and hard-day planning card, and realistic ways to remove everyday obstacles.",
+    "read_time": "5",
+    "excerpt": "Healthy habits for busy people: consider practical obstacles and appropriate support without assuming a tiny habit replaces time, access or individual advice.",
     "image": "images/healthy-habits-for-busy-people.jpg",
-    "alt": "Young woman at desk holding water bottle and apple, looking thoughtful",
+    "alt": "Woman in a grey sweater looking down",
     "pins": [
       {
-        "title": "Healthy Habits for Busy People: 7 Flexible Choices for Difficult Weeks",
-        "description": "Explore healthy habits for busy people with seven adaptable choices, a normal-day and hard-day planning card, and realistic ways to remove everyday obstacles."
+        "title": "Healthy Habits for Busy People: 5 Ways to Address a Practical Care Obstacle",
+        "description": "Healthy habits for busy people: consider practical obstacles and appropriate support without assuming a tiny habit replaces time, access or individual advice."
       },
       {
-        "title": "Healthy Habits for Busy People: 7 Flexible Choices for Difficult Weeks",
-        "description": "Explore healthy habits for busy people with seven adaptable choices, a normal-day and hard-day planning card, and realistic ways to remove everyday obstacles."
+        "title": "Healthy Habits for Busy People: 5 Ways to Address a Practical Care Obstacle",
+        "description": "Healthy habits for busy people: consider practical obstacles and appropriate support without assuming a tiny habit replaces time, access or individual advice."
       },
       {
-        "title": "Healthy Habits for Busy People: 7 Flexible Choices for Difficult Weeks",
-        "description": "Explore healthy habits for busy people with seven adaptable choices, a normal-day and hard-day planning card, and realistic ways to remove everyday obstacles."
+        "title": "Healthy Habits for Busy People: 5 Ways to Address a Practical Care Obstacle",
+        "description": "Healthy habits for busy people: consider practical obstacles and appropriate support without assuming a tiny habit replaces time, access or individual advice."
       }
     ]
   },
@@ -2326,26 +2326,26 @@ const ARTICLES = [
   },
   {
     "slug": "morning-routine-for-a-healthy-lifestyle",
-    "title": "7 Morning Routine Ideas for a Healthy Lifestyle",
+    "title": "Morning Routine for a Healthy Lifestyle: 5 Preparation Checks",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven flexible morning routine ideas for a healthy lifestyle, including meals, movement, light, planning, and a pace that fits your day. Practical steps",
+    "read_time": "5",
+    "excerpt": "Morning routine for a healthy lifestyle: use preparation checks for actual needs and commitments without a compulsory sequence, nutrient target or early start.",
     "image": "images/morning-routine-for-a-healthy-lifestyle.jpg",
-    "alt": "Young woman gazing at morning light by window, establishing calm routine",
+    "alt": "Woman in a light cardigan beside a window",
     "pins": [
       {
-        "title": "7 Morning Routine Ideas for a Healthy Lifestyle",
-        "description": "Explore seven flexible morning routine ideas for a healthy lifestyle, including meals, movement, light, planning, and a pace that fits your day. Practical steps"
+        "title": "Morning Routine for a Healthy Lifestyle: 5 Preparation Checks",
+        "description": "Morning routine for a healthy lifestyle: use preparation checks for actual needs and commitments without a compulsory sequence, nutrient target or early start."
       },
       {
-        "title": "7 Morning Routine Ideas for a Healthy Lifestyle",
-        "description": "Explore seven flexible morning routine ideas for a healthy lifestyle, including meals, movement, light, planning, and a pace that fits your day. Practical steps"
+        "title": "Morning Routine for a Healthy Lifestyle: 5 Preparation Checks",
+        "description": "Morning routine for a healthy lifestyle: use preparation checks for actual needs and commitments without a compulsory sequence, nutrient target or early start."
       },
       {
-        "title": "7 Morning Routine Ideas for a Healthy Lifestyle",
-        "description": "Explore seven flexible morning routine ideas for a healthy lifestyle, including meals, movement, light, planning, and a pace that fits your day. Practical steps"
+        "title": "Morning Routine for a Healthy Lifestyle: 5 Preparation Checks",
+        "description": "Morning routine for a healthy lifestyle: use preparation checks for actual needs and commitments without a compulsory sequence, nutrient target or early start."
       }
     ]
   },
@@ -2376,26 +2376,26 @@ const ARTICLES = [
   },
   {
     "slug": "daily-habits-for-better-mental-health",
-    "title": "7 Daily Habits for Better Mental Health That Actually Stick",
+    "title": "Daily Habits for Better Mental Health: 5 Support Routes to Consider",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Discover 7 daily habits for better mental health, with realistic routines that may support sleep, stress management, mood, and everyday wellbeing over time.",
+    "read_time": "5",
+    "excerpt": "Daily habits for better mental health: consider support routes that fit your needs without treating a routine as prevention, diagnosis or replacement for care.",
     "image": "images/daily-habits-for-better-mental-health.jpg",
-    "alt": "Woman in morning light holding water for daily mental health",
+    "alt": "Woman holding a mug beside a window",
     "pins": [
       {
-        "title": "7 Daily Habits for Better Mental Health That Actually Stick",
-        "description": "Discover 7 daily habits for better mental health, with realistic routines that may support sleep, stress management, mood, and everyday wellbeing over time."
+        "title": "Daily Habits for Better Mental Health: 5 Support Routes to Consider",
+        "description": "Daily habits for better mental health: consider support routes that fit your needs without treating a routine as prevention, diagnosis or replacement for care."
       },
       {
-        "title": "7 Daily Habits for Better Mental Health That Actually Stick",
-        "description": "Discover 7 daily habits for better mental health, with realistic routines that may support sleep, stress management, mood, and everyday wellbeing over time."
+        "title": "Daily Habits for Better Mental Health: 5 Support Routes to Consider",
+        "description": "Daily habits for better mental health: consider support routes that fit your needs without treating a routine as prevention, diagnosis or replacement for care."
       },
       {
-        "title": "7 Daily Habits for Better Mental Health That Actually Stick",
-        "description": "Discover 7 daily habits for better mental health, with realistic routines that may support sleep, stress management, mood, and everyday wellbeing over time."
+        "title": "Daily Habits for Better Mental Health: 5 Support Routes to Consider",
+        "description": "Daily habits for better mental health: consider support routes that fit your needs without treating a routine as prevention, diagnosis or replacement for care."
       }
     ]
   },
@@ -2426,26 +2426,26 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-habits-to-start-this-week",
-    "title": "7 Healthy Habits to Start This Week at Your Own Pace",
+    "title": "Healthy Habits to Start This Week: 5 Suitability Questions Before Choosing One",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Start 7 realistic healthy habits this week, including movement, sleep, food, and routines that support wellbeing without extreme changes or guilt over time.",
+    "read_time": "5",
+    "excerpt": "Healthy habits to start this week: ask suitability questions before one change without a universal two-minute rule, a weekly outcome target or a habit deadline.",
     "image": "images/healthy-habits-to-start-this-week.jpg",
-    "alt": "young woman in morning sunlight with calm expression and healthy habits",
+    "alt": "Woman in a cream top seated indoors",
     "pins": [
       {
-        "title": "7 Healthy Habits to Start This Week at Your Own Pace",
-        "description": "Start 7 realistic healthy habits this week, including movement, sleep, food, and routines that support wellbeing without extreme changes or guilt over time."
+        "title": "Healthy Habits to Start This Week: 5 Suitability Questions Before Choosing One",
+        "description": "Healthy habits to start this week: ask suitability questions before one change without a universal two-minute rule, a weekly outcome target or a habit deadline."
       },
       {
-        "title": "7 Healthy Habits to Start This Week at Your Own Pace",
-        "description": "Start 7 realistic healthy habits this week, including movement, sleep, food, and routines that support wellbeing without extreme changes or guilt over time."
+        "title": "Healthy Habits to Start This Week: 5 Suitability Questions Before Choosing One",
+        "description": "Healthy habits to start this week: ask suitability questions before one change without a universal two-minute rule, a weekly outcome target or a habit deadline."
       },
       {
-        "title": "7 Healthy Habits to Start This Week at Your Own Pace",
-        "description": "Start 7 realistic healthy habits this week, including movement, sleep, food, and routines that support wellbeing without extreme changes or guilt over time."
+        "title": "Healthy Habits to Start This Week: 5 Suitability Questions Before Choosing One",
+        "description": "Healthy habits to start this week: ask suitability questions before one change without a universal two-minute rule, a weekly outcome target or a habit deadline."
       }
     ]
   },
@@ -3501,26 +3501,26 @@ const ARTICLES = [
   },
   {
     "slug": "morning-routine-for-mental-health",
-    "title": "5 Morning Routine Habits for Mental Health",
+    "title": "Morning Routine for Mental Health: 5 Support Handoffs for a Difficult Start",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Build a gentle morning routine for mental health with five practical habits, flexible timing, and guidance for stress, anxiety, and difficult mornings each day.",
+    "read_time": "5",
+    "excerpt": "Morning routine for mental health: use support handoffs for a difficult start without making calmness, productivity or a complete routine a condition for care.",
     "image": "images/morning-routine-for-mental-health.jpg",
-    "alt": "Young woman sipping herbal tea by window at sunrise during morning routine",
+    "alt": "Woman holding a mug in natural light",
     "pins": [
       {
-        "title": "5 Morning Routine Habits for Mental Health",
-        "description": "Build a gentle morning routine for mental health with five practical habits, flexible timing, and guidance for stress, anxiety, and difficult mornings each day."
+        "title": "Morning Routine for Mental Health: 5 Support Handoffs for a Difficult Start",
+        "description": "Morning routine for mental health: use support handoffs for a difficult start without making calmness, productivity or a complete routine a condition for care."
       },
       {
-        "title": "5 Morning Routine Habits for Mental Health",
-        "description": "Build a gentle morning routine for mental health with five practical habits, flexible timing, and guidance for stress, anxiety, and difficult mornings each day."
+        "title": "Morning Routine for Mental Health: 5 Support Handoffs for a Difficult Start",
+        "description": "Morning routine for mental health: use support handoffs for a difficult start without making calmness, productivity or a complete routine a condition for care."
       },
       {
-        "title": "5 Morning Routine Habits for Mental Health",
-        "description": "Build a gentle morning routine for mental health with five practical habits, flexible timing, and guidance for stress, anxiety, and difficult mornings each day."
+        "title": "Morning Routine for Mental Health: 5 Support Handoffs for a Difficult Start",
+        "description": "Morning routine for mental health: use support handoffs for a difficult start without making calmness, productivity or a complete routine a condition for care."
       }
     ]
   },
