@@ -852,26 +852,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-overthinking-everything",
-    "title": "7 Ways to Stop Overthinking Everything (And Finally Feel Free)",
+    "title": "How to Stop Overthinking Everything: 5 Ways to Sort a Tangled Concern",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to stop overthinking everything with practical steps to interrupt worry loops, make decisions, and regain focus without demanding perfect certainty.",
+    "read_time": "5",
+    "excerpt": "How to stop overthinking everything: sort five parts of a tangled concern, identify a practical question and find support without promising complete certainty.",
     "image": "images/how-to-stop-overthinking-everything.jpg",
-    "alt": "young woman overthinking at desk near window",
+    "alt": "Woman seated beside a window with plants",
     "pins": [
       {
-        "title": "7 Ways to Stop Overthinking Everything (And Finally Feel Free)",
-        "description": "Learn how to stop overthinking everything with practical steps to interrupt worry loops, make decisions, and regain focus without demanding perfect certainty."
+        "title": "How to Stop Overthinking Everything: 5 Ways to Sort a Tangled Concern",
+        "description": "How to stop overthinking everything: sort five parts of a tangled concern, identify a practical question and find support without promising complete certainty."
       },
       {
-        "title": "7 Ways to Stop Overthinking Everything (And Finally Feel Free)",
-        "description": "Learn how to stop overthinking everything with practical steps to interrupt worry loops, make decisions, and regain focus without demanding perfect certainty."
+        "title": "How to Stop Overthinking Everything: 5 Ways to Sort a Tangled Concern",
+        "description": "How to stop overthinking everything: sort five parts of a tangled concern, identify a practical question and find support without promising complete certainty."
       },
       {
-        "title": "7 Ways to Stop Overthinking Everything (And Finally Feel Free)",
-        "description": "Learn how to stop overthinking everything with practical steps to interrupt worry loops, make decisions, and regain focus without demanding perfect certainty."
+        "title": "How to Stop Overthinking Everything: 5 Ways to Sort a Tangled Concern",
+        "description": "How to stop overthinking everything: sort five parts of a tangled concern, identify a practical question and find support without promising complete certainty."
       }
     ]
   },
@@ -927,51 +927,51 @@ const ARTICLES = [
   },
   {
     "slug": "why-you-feel-emotionally-numb",
-    "title": "Why You Feel Emotionally Numb: 5 Steps to Find Support",
+    "title": "Why You Feel Emotionally Numb: 5 Details to Share When Seeking Support",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Why you feel emotionally numb: understand possible explanations, track changes, prepare for a healthcare visit and choose daily support without self-diagnosis.",
+    "read_time": "5",
+    "excerpt": "Why you feel emotionally numb: prepare key details about changes in feeling and daily life for a care conversation without diagnosing yourself from a checklist.",
     "image": "images/why-you-feel-emotionally-numb.jpg",
-    "alt": "Woman staring blankly out window, emotionally disconnected and numb",
+    "alt": "Woman looking through a window",
     "pins": [
       {
-        "title": "Why You Feel Emotionally Numb: 5 Steps to Find Support",
-        "description": "Why you feel emotionally numb: understand possible explanations, track changes, prepare for a healthcare visit and choose daily support without self-diagnosis."
+        "title": "Why You Feel Emotionally Numb: 5 Details to Share When Seeking Support",
+        "description": "Why you feel emotionally numb: prepare key details about changes in feeling and daily life for a care conversation without diagnosing yourself from a checklist."
       },
       {
-        "title": "Why You Feel Emotionally Numb: 5 Steps to Find Support",
-        "description": "Why you feel emotionally numb: understand possible explanations, track changes, prepare for a healthcare visit and choose daily support without self-diagnosis."
+        "title": "Why You Feel Emotionally Numb: 5 Details to Share When Seeking Support",
+        "description": "Why you feel emotionally numb: prepare key details about changes in feeling and daily life for a care conversation without diagnosing yourself from a checklist."
       },
       {
-        "title": "Why You Feel Emotionally Numb: 5 Steps to Find Support",
-        "description": "Why you feel emotionally numb: understand possible explanations, track changes, prepare for a healthcare visit and choose daily support without self-diagnosis."
+        "title": "Why You Feel Emotionally Numb: 5 Details to Share When Seeking Support",
+        "description": "Why you feel emotionally numb: prepare key details about changes in feeling and daily life for a care conversation without diagnosing yourself from a checklist."
       }
     ]
   },
   {
     "slug": "why-anxiety-feels-physical",
-    "title": "7 Reasons Why Anxiety Feels Physical and What Your Body Is Actually Telling You",
+    "title": "Why Anxiety Feels Physical: 5 Details to Discuss About Body Symptoms",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Discover why anxiety feels physical, what body signals can mean, and when to use calming skills or seek professional help for new or persistent symptoms safely.",
+    "read_time": "5",
+    "excerpt": "Why anxiety feels physical: organise five details about body symptoms for a medical conversation without assuming that chest pain or breathlessness is anxiety.",
     "image": "images/why-anxiety-feels-physical.jpg",
-    "alt": "Woman touching her chest while sitting at desk, experiencing physical anxiety",
+    "alt": "Woman seated on a bed with her chin on her hand",
     "pins": [
       {
-        "title": "7 Reasons Why Anxiety Feels Physical and What Your Body Is Actually Telling You",
-        "description": "Discover why anxiety feels physical, what body signals can mean, and when to use calming skills or seek professional help for new or persistent symptoms safely."
+        "title": "Why Anxiety Feels Physical: 5 Details to Discuss About Body Symptoms",
+        "description": "Why anxiety feels physical: organise five details about body symptoms for a medical conversation without assuming that chest pain or breathlessness is anxiety."
       },
       {
-        "title": "7 Reasons Why Anxiety Feels Physical and What Your Body Is Actually Telling You",
-        "description": "Discover why anxiety feels physical, what body signals can mean, and when to use calming skills or seek professional help for new or persistent symptoms safely."
+        "title": "Why Anxiety Feels Physical: 5 Details to Discuss About Body Symptoms",
+        "description": "Why anxiety feels physical: organise five details about body symptoms for a medical conversation without assuming that chest pain or breathlessness is anxiety."
       },
       {
-        "title": "7 Reasons Why Anxiety Feels Physical and What Your Body Is Actually Telling You",
-        "description": "Discover why anxiety feels physical, what body signals can mean, and when to use calming skills or seek professional help for new or persistent symptoms safely."
+        "title": "Why Anxiety Feels Physical: 5 Details to Discuss About Body Symptoms",
+        "description": "Why anxiety feels physical: organise five details about body symptoms for a medical conversation without assuming that chest pain or breathlessness is anxiety."
       }
     ]
   },
@@ -1052,26 +1052,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-catastrophic-thinking",
-    "title": "7 Ways to Respond to Catastrophic Thinking",
+    "title": "How to Stop Catastrophic Thinking: 5 Questions About a Worst-Case Prediction",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "How to stop catastrophic thinking: consider seven ways to respond to difficult predictions, check known facts and seek support when distress affects daily life.",
+    "read_time": "5",
+    "excerpt": "How to stop catastrophic thinking: examine five parts of a worst-case prediction and choose a proportionate next response without forcing a positive conclusion.",
     "image": "images/how-to-stop-catastrophic-thinking.jpg",
-    "alt": "Woman at desk looking thoughtfully inward during mental clarity moment",
+    "alt": "Woman holding a pen over an open notebook",
     "pins": [
       {
-        "title": "7 Ways to Respond to Catastrophic Thinking",
-        "description": "How to stop catastrophic thinking: consider seven ways to respond to difficult predictions, check known facts and seek support when distress affects daily life."
+        "title": "How to Stop Catastrophic Thinking: 5 Questions About a Worst-Case Prediction",
+        "description": "How to stop catastrophic thinking: examine five parts of a worst-case prediction and choose a proportionate next response without forcing a positive conclusion."
       },
       {
-        "title": "7 Ways to Respond to Catastrophic Thinking",
-        "description": "How to stop catastrophic thinking: consider seven ways to respond to difficult predictions, check known facts and seek support when distress affects daily life."
+        "title": "How to Stop Catastrophic Thinking: 5 Questions About a Worst-Case Prediction",
+        "description": "How to stop catastrophic thinking: examine five parts of a worst-case prediction and choose a proportionate next response without forcing a positive conclusion."
       },
       {
-        "title": "7 Ways to Respond to Catastrophic Thinking",
-        "description": "How to stop catastrophic thinking: consider seven ways to respond to difficult predictions, check known facts and seek support when distress affects daily life."
+        "title": "How to Stop Catastrophic Thinking: 5 Questions About a Worst-Case Prediction",
+        "description": "How to stop catastrophic thinking: examine five parts of a worst-case prediction and choose a proportionate next response without forcing a positive conclusion."
       }
     ]
   },
@@ -1502,26 +1502,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-calm-your-mind-instantly",
-    "title": "7 Ways to Calm an Overwhelmed Mind Safely",
+    "title": "How to Calm Your Mind Instantly: 5 Choices for an Overwhelming Moment",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn seven gentle ways to calm an overwhelmed mind, use grounding safely, and recognize when persistent anxiety needs professional support and care each day.",
+    "read_time": "5",
+    "excerpt": "How to calm your mind instantly: choose among five practical responses to an overwhelming moment without a deadline for relief or a promise to reset your brain.",
     "image": "images/how-to-calm-your-mind-instantly.jpg",
-    "alt": "young woman sitting cross-legged on floor with closed eyes finding instant calm in morning light",
+    "alt": "Woman sitting with her eyes closed beside a window",
     "pins": [
       {
-        "title": "7 Ways to Calm an Overwhelmed Mind Safely",
-        "description": "Learn seven gentle ways to calm an overwhelmed mind, use grounding safely, and recognize when persistent anxiety needs professional support and care each day."
+        "title": "How to Calm Your Mind Instantly: 5 Choices for an Overwhelming Moment",
+        "description": "How to calm your mind instantly: choose among five practical responses to an overwhelming moment without a deadline for relief or a promise to reset your brain."
       },
       {
-        "title": "7 Ways to Calm an Overwhelmed Mind Safely",
-        "description": "Learn seven gentle ways to calm an overwhelmed mind, use grounding safely, and recognize when persistent anxiety needs professional support and care each day."
+        "title": "How to Calm Your Mind Instantly: 5 Choices for an Overwhelming Moment",
+        "description": "How to calm your mind instantly: choose among five practical responses to an overwhelming moment without a deadline for relief or a promise to reset your brain."
       },
       {
-        "title": "7 Ways to Calm an Overwhelmed Mind Safely",
-        "description": "Learn seven gentle ways to calm an overwhelmed mind, use grounding safely, and recognize when persistent anxiety needs professional support and care each day."
+        "title": "How to Calm Your Mind Instantly: 5 Choices for an Overwhelming Moment",
+        "description": "How to calm your mind instantly: choose among five practical responses to an overwhelming moment without a deadline for relief or a promise to reset your brain."
       }
     ]
   },
@@ -2051,26 +2051,26 @@ const ARTICLES = [
   },
   {
     "slug": "why-you-feel-mentally-drained",
-    "title": "Mentally Drained? 5 Signs and Practical Ways to Recover",
+    "title": "Why You Feel Mentally Drained: 5 Questions About Changes in Daily Life",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Feeling mentally drained? Learn 5 common signs, practical recovery steps, and when persistent mental fatigue deserves professional support and care as needed.",
+    "read_time": "5",
+    "excerpt": "Why you feel mentally drained: describe five changes in activities, timing and demands for a support conversation without assuming a depleted brain-energy tank.",
     "image": "images/why-you-feel-mentally-drained.jpg",
-    "alt": "woman sitting tired on bed with mental fatigue expression",
+    "alt": "Woman seated on a bed looking at her hands",
     "pins": [
       {
-        "title": "Mentally Drained? 5 Signs and Practical Ways to Recover",
-        "description": "Feeling mentally drained? Learn 5 common signs, practical recovery steps, and when persistent mental fatigue deserves professional support and care as needed."
+        "title": "Why You Feel Mentally Drained: 5 Questions About Changes in Daily Life",
+        "description": "Why you feel mentally drained: describe five changes in activities, timing and demands for a support conversation without assuming a depleted brain-energy tank."
       },
       {
-        "title": "Mentally Drained? 5 Signs and Practical Ways to Recover",
-        "description": "Feeling mentally drained? Learn 5 common signs, practical recovery steps, and when persistent mental fatigue deserves professional support and care as needed."
+        "title": "Why You Feel Mentally Drained: 5 Questions About Changes in Daily Life",
+        "description": "Why you feel mentally drained: describe five changes in activities, timing and demands for a support conversation without assuming a depleted brain-energy tank."
       },
       {
-        "title": "Mentally Drained? 5 Signs and Practical Ways to Recover",
-        "description": "Feeling mentally drained? Learn 5 common signs, practical recovery steps, and when persistent mental fatigue deserves professional support and care as needed."
+        "title": "Why You Feel Mentally Drained: 5 Questions About Changes in Daily Life",
+        "description": "Why you feel mentally drained: describe five changes in activities, timing and demands for a support conversation without assuming a depleted brain-energy tank."
       }
     ]
   },
@@ -2151,26 +2151,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-recover-from-emotional-burnout",
-    "title": "5 Ways to Recover From Emotional Burnout: Your Path Back to Yourself",
+    "title": "How to Recover From Emotional Burnout: 5 Support Decisions Beyond a Label",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "How to recover from emotional burnout: consider five support options and practical changes, and seek suitable care when symptoms persist or affect daily life.",
+    "read_time": "5",
+    "excerpt": "How to recover from emotional burnout: make five support decisions about exhaustion, demands and care without a self-diagnosis or a fixed recovery timetable.",
     "image": "images/how-to-recover-from-emotional-burnout.jpg",
-    "alt": "Woman resting at kitchen table in peaceful morning light during emotional recovery",
+    "alt": "Woman seated on a garden bench",
     "pins": [
       {
-        "title": "5 Ways to Recover From Emotional Burnout: Your Path Back to Yourself",
-        "description": "How to recover from emotional burnout: consider five support options and practical changes, and seek suitable care when symptoms persist or affect daily life."
+        "title": "How to Recover From Emotional Burnout: 5 Support Decisions Beyond a Label",
+        "description": "How to recover from emotional burnout: make five support decisions about exhaustion, demands and care without a self-diagnosis or a fixed recovery timetable."
       },
       {
-        "title": "5 Ways to Recover From Emotional Burnout: Your Path Back to Yourself",
-        "description": "How to recover from emotional burnout: consider five support options and practical changes, and seek suitable care when symptoms persist or affect daily life."
+        "title": "How to Recover From Emotional Burnout: 5 Support Decisions Beyond a Label",
+        "description": "How to recover from emotional burnout: make five support decisions about exhaustion, demands and care without a self-diagnosis or a fixed recovery timetable."
       },
       {
-        "title": "5 Ways to Recover From Emotional Burnout: Your Path Back to Yourself",
-        "description": "How to recover from emotional burnout: consider five support options and practical changes, and seek suitable care when symptoms persist or affect daily life."
+        "title": "How to Recover From Emotional Burnout: 5 Support Decisions Beyond a Label",
+        "description": "How to recover from emotional burnout: make five support decisions about exhaustion, demands and care without a self-diagnosis or a fixed recovery timetable."
       }
     ]
   },
@@ -2251,26 +2251,26 @@ const ARTICLES = [
   },
   {
     "slug": "why-you-always-feel-stressed",
-    "title": "5 Possible Contributors to Ongoing Stress",
+    "title": "Why You Always Feel Stressed: 5 Context Questions to Bring to a Conversation",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Why you always feel stressed can have different explanations. Review 5 possible contributors, practical demands and support without diagnosing yourself online.",
+    "read_time": "5",
+    "excerpt": "Why you always feel stressed: examine five parts of your current circumstances and seek useful support without assuming mindset alone or a cortisol diagnosis.",
     "image": "images/why-you-always-feel-stressed.jpg",
-    "alt": "Woman looking tired and stressed at her desk feeling overwhelmed",
+    "alt": "Woman seated at a desk with her hand at her temple",
     "pins": [
       {
-        "title": "5 Possible Contributors to Ongoing Stress",
-        "description": "Why you always feel stressed can have different explanations. Review 5 possible contributors, practical demands and support without diagnosing yourself online."
+        "title": "Why You Always Feel Stressed: 5 Context Questions to Bring to a Conversation",
+        "description": "Why you always feel stressed: examine five parts of your current circumstances and seek useful support without assuming mindset alone or a cortisol diagnosis."
       },
       {
-        "title": "5 Possible Contributors to Ongoing Stress",
-        "description": "Why you always feel stressed can have different explanations. Review 5 possible contributors, practical demands and support without diagnosing yourself online."
+        "title": "Why You Always Feel Stressed: 5 Context Questions to Bring to a Conversation",
+        "description": "Why you always feel stressed: examine five parts of your current circumstances and seek useful support without assuming mindset alone or a cortisol diagnosis."
       },
       {
-        "title": "5 Possible Contributors to Ongoing Stress",
-        "description": "Why you always feel stressed can have different explanations. Review 5 possible contributors, practical demands and support without diagnosing yourself online."
+        "title": "Why You Always Feel Stressed: 5 Context Questions to Bring to a Conversation",
+        "description": "Why you always feel stressed: examine five parts of your current circumstances and seek useful support without assuming mindset alone or a cortisol diagnosis."
       }
     ]
   },
@@ -2651,51 +2651,51 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-reduce-anxiety-naturally",
-    "title": "7 Everyday Strategies to Support Anxiety Management",
+    "title": "How to Reduce Anxiety Naturally: 5 Questions About Everyday Support",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "How to reduce anxiety naturally: consider comfortable self-care options, understand their limits, and find guidance on when to seek professional assessment.",
+    "read_time": "5",
+    "excerpt": "How to reduce anxiety naturally: review five everyday support questions while keeping suitable assessment and treatment available, without a supplement promise.",
     "image": "images/how-to-reduce-anxiety-naturally.jpg",
-    "alt": "Woman breathing peacefully during calm moment at window",
+    "alt": "Woman seated with her eyes closed beside a window",
     "pins": [
       {
-        "title": "7 Everyday Strategies to Support Anxiety Management",
-        "description": "How to reduce anxiety naturally: consider comfortable self-care options, understand their limits, and find guidance on when to seek professional assessment."
+        "title": "How to Reduce Anxiety Naturally: 5 Questions About Everyday Support",
+        "description": "How to reduce anxiety naturally: review five everyday support questions while keeping suitable assessment and treatment available, without a supplement promise."
       },
       {
-        "title": "7 Everyday Strategies to Support Anxiety Management",
-        "description": "How to reduce anxiety naturally: consider comfortable self-care options, understand their limits, and find guidance on when to seek professional assessment."
+        "title": "How to Reduce Anxiety Naturally: 5 Questions About Everyday Support",
+        "description": "How to reduce anxiety naturally: review five everyday support questions while keeping suitable assessment and treatment available, without a supplement promise."
       },
       {
-        "title": "7 Everyday Strategies to Support Anxiety Management",
-        "description": "How to reduce anxiety naturally: consider comfortable self-care options, understand their limits, and find guidance on when to seek professional assessment."
+        "title": "How to Reduce Anxiety Naturally: 5 Questions About Everyday Support",
+        "description": "How to reduce anxiety naturally: review five everyday support questions while keeping suitable assessment and treatment available, without a supplement promise."
       }
     ]
   },
   {
     "slug": "how-to-deal-with-toxic-people",
-    "title": "5 Ways to Deal with Toxic People Without Losing Your Peace",
+    "title": "How to Deal With Toxic People: 5 Decisions About Behaviour and Safety",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to deal with toxic people and protect your mental energy. practical strategies to set boundaries, recognize toxic signs, and reclaim your peace today.",
+    "read_time": "5",
+    "excerpt": "How to deal with toxic people: consider five decisions about specific behaviour, safety and support without diagnosing another person or urging confrontation.",
     "image": "images/how-to-deal-with-toxic-people.jpg",
-    "alt": "Young woman sitting peacefully at kitchen table in morning light",
+    "alt": "Woman seated near a cafe window",
     "pins": [
       {
-        "title": "5 Ways to Deal with Toxic People Without Losing Your Peace",
-        "description": "Learn how to deal with toxic people and protect your mental energy. practical strategies to set boundaries, recognize toxic signs, and reclaim your peace today."
+        "title": "How to Deal With Toxic People: 5 Decisions About Behaviour and Safety",
+        "description": "How to deal with toxic people: consider five decisions about specific behaviour, safety and support without diagnosing another person or urging confrontation."
       },
       {
-        "title": "5 Ways to Deal with Toxic People Without Losing Your Peace",
-        "description": "Learn how to deal with toxic people and protect your mental energy. practical strategies to set boundaries, recognize toxic signs, and reclaim your peace today."
+        "title": "How to Deal With Toxic People: 5 Decisions About Behaviour and Safety",
+        "description": "How to deal with toxic people: consider five decisions about specific behaviour, safety and support without diagnosing another person or urging confrontation."
       },
       {
-        "title": "5 Ways to Deal with Toxic People Without Losing Your Peace",
-        "description": "Learn how to deal with toxic people and protect your mental energy. practical strategies to set boundaries, recognize toxic signs, and reclaim your peace today."
+        "title": "How to Deal With Toxic People: 5 Decisions About Behaviour and Safety",
+        "description": "How to deal with toxic people: consider five decisions about specific behaviour, safety and support without diagnosing another person or urging confrontation."
       }
     ]
   },
@@ -2951,26 +2951,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-feel-happy-again",
-    "title": "7 Ways to Support Yourself When Happiness Feels Distant",
+    "title": "How to Feel Happy Again: 5 Support Choices When Enjoyment Feels Distant",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to feel happy again: consider seven support options, daily care and connection, with professional help when low mood or loss of interest affects your life.",
+    "read_time": "5",
+    "excerpt": "How to feel happy again: consider five support choices when enjoyment feels distant, without forcing gratitude or treating a routine as depression treatment.",
     "image": "images/how-to-feel-happy-again.jpg",
-    "alt": "Young woman finding peace and happiness in quiet morning moment by window",
+    "alt": "Woman seated with her eyes closed in a wooden room",
     "pins": [
       {
-        "title": "7 Ways to Support Yourself When Happiness Feels Distant",
-        "description": "How to feel happy again: consider seven support options, daily care and connection, with professional help when low mood or loss of interest affects your life."
+        "title": "How to Feel Happy Again: 5 Support Choices When Enjoyment Feels Distant",
+        "description": "How to feel happy again: consider five support choices when enjoyment feels distant, without forcing gratitude or treating a routine as depression treatment."
       },
       {
-        "title": "7 Ways to Support Yourself When Happiness Feels Distant",
-        "description": "How to feel happy again: consider seven support options, daily care and connection, with professional help when low mood or loss of interest affects your life."
+        "title": "How to Feel Happy Again: 5 Support Choices When Enjoyment Feels Distant",
+        "description": "How to feel happy again: consider five support choices when enjoyment feels distant, without forcing gratitude or treating a routine as depression treatment."
       },
       {
-        "title": "7 Ways to Support Yourself When Happiness Feels Distant",
-        "description": "How to feel happy again: consider seven support options, daily care and connection, with professional help when low mood or loss of interest affects your life."
+        "title": "How to Feel Happy Again: 5 Support Choices When Enjoyment Feels Distant",
+        "description": "How to feel happy again: consider five support choices when enjoyment feels distant, without forcing gratitude or treating a routine as depression treatment."
       }
     ]
   },
@@ -3201,26 +3201,26 @@ const ARTICLES = [
   },
   {
     "slug": "signs-of-anxiety-disorder",
-    "title": "7 Possible Signs of an Anxiety Disorder and When to Seek Help",
+    "title": "Signs of Anxiety Disorder: 5 Areas to Discuss During an Assessment",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn seven possible signs of an anxiety disorder, how symptoms can affect daily life, and when to seek an evaluation or professional support with care early.",
+    "read_time": "5",
+    "excerpt": "Signs of anxiety disorder: prepare five areas for an assessment about symptoms and daily life without diagnosing yourself or waiting to meet a checklist score.",
     "image": "images/signs-of-anxiety-disorder.jpg",
-    "alt": "Woman practicing breathing exercise for anxiety disorder relief",
+    "alt": "Woman holding a mug at a table",
     "pins": [
       {
-        "title": "7 Possible Signs of an Anxiety Disorder and When to Seek Help",
-        "description": "Learn seven possible signs of an anxiety disorder, how symptoms can affect daily life, and when to seek an evaluation or professional support with care early."
+        "title": "Signs of Anxiety Disorder: 5 Areas to Discuss During an Assessment",
+        "description": "Signs of anxiety disorder: prepare five areas for an assessment about symptoms and daily life without diagnosing yourself or waiting to meet a checklist score."
       },
       {
-        "title": "7 Possible Signs of an Anxiety Disorder and When to Seek Help",
-        "description": "Learn seven possible signs of an anxiety disorder, how symptoms can affect daily life, and when to seek an evaluation or professional support with care early."
+        "title": "Signs of Anxiety Disorder: 5 Areas to Discuss During an Assessment",
+        "description": "Signs of anxiety disorder: prepare five areas for an assessment about symptoms and daily life without diagnosing yourself or waiting to meet a checklist score."
       },
       {
-        "title": "7 Possible Signs of an Anxiety Disorder and When to Seek Help",
-        "description": "Learn seven possible signs of an anxiety disorder, how symptoms can affect daily life, and when to seek an evaluation or professional support with care early."
+        "title": "Signs of Anxiety Disorder: 5 Areas to Discuss During an Assessment",
+        "description": "Signs of anxiety disorder: prepare five areas for an assessment about symptoms and daily life without diagnosing yourself or waiting to meet a checklist score."
       }
     ]
   },
@@ -3376,26 +3376,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-break-negative-thinking",
-    "title": "5 Ways to Respond to Negative Thinking",
+    "title": "How to Break Negative Thinking: 5 Ways to Examine One Interpretation",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to break negative thinking: explore five ways to respond to difficult thought patterns, consider practical next steps and seek support for ongoing distress.",
+    "read_time": "5",
+    "excerpt": "How to break negative thinking: examine five parts of one interpretation without forcing positive thoughts or treating brief reflection as a cure for distress.",
     "image": "images/how-to-break-negative-thinking.jpg",
-    "alt": "Woman journaling and breaking negative thinking patterns at desk",
+    "alt": "Woman looking down beside a window",
     "pins": [
       {
-        "title": "5 Ways to Respond to Negative Thinking",
-        "description": "How to break negative thinking: explore five ways to respond to difficult thought patterns, consider practical next steps and seek support for ongoing distress."
+        "title": "How to Break Negative Thinking: 5 Ways to Examine One Interpretation",
+        "description": "How to break negative thinking: examine five parts of one interpretation without forcing positive thoughts or treating brief reflection as a cure for distress."
       },
       {
-        "title": "5 Ways to Respond to Negative Thinking",
-        "description": "How to break negative thinking: explore five ways to respond to difficult thought patterns, consider practical next steps and seek support for ongoing distress."
+        "title": "How to Break Negative Thinking: 5 Ways to Examine One Interpretation",
+        "description": "How to break negative thinking: examine five parts of one interpretation without forcing positive thoughts or treating brief reflection as a cure for distress."
       },
       {
-        "title": "5 Ways to Respond to Negative Thinking",
-        "description": "How to break negative thinking: explore five ways to respond to difficult thought patterns, consider practical next steps and seek support for ongoing distress."
+        "title": "How to Break Negative Thinking: 5 Ways to Examine One Interpretation",
+        "description": "How to break negative thinking: examine five parts of one interpretation without forcing positive thoughts or treating brief reflection as a cure for distress."
       }
     ]
   },
@@ -3526,101 +3526,101 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-overthinking-at-work",
-    "title": "5 Ways to Stop Overthinking at Work: Reclaim Your Focus and Peace",
+    "title": "How to Stop Overthinking at Work: 5 Clarifications Before Another Revision",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to stop overthinking at work with five practical approaches, clear workplace examples, reliable sources, and guidance on when to seek extra support.",
+    "read_time": "5",
+    "excerpt": "How to stop overthinking at work: ask five clear questions about scope, feedback and authority before another revision, without assuming every delay is anxiety.",
     "image": "images/how-to-stop-overthinking-at-work.jpg",
-    "alt": "Woman pausing at desk with hand to temple showing overthinking.",
+    "alt": "Woman seated with her hand on her forehead",
     "pins": [
       {
-        "title": "5 Ways to Stop Overthinking at Work: Reclaim Your Focus and Peace",
-        "description": "Learn how to stop overthinking at work with five practical approaches, clear workplace examples, reliable sources, and guidance on when to seek extra support."
+        "title": "How to Stop Overthinking at Work: 5 Clarifications Before Another Revision",
+        "description": "How to stop overthinking at work: ask five clear questions about scope, feedback and authority before another revision, without assuming every delay is anxiety."
       },
       {
-        "title": "5 Ways to Stop Overthinking at Work: Reclaim Your Focus and Peace",
-        "description": "Learn how to stop overthinking at work with five practical approaches, clear workplace examples, reliable sources, and guidance on when to seek extra support."
+        "title": "How to Stop Overthinking at Work: 5 Clarifications Before Another Revision",
+        "description": "How to stop overthinking at work: ask five clear questions about scope, feedback and authority before another revision, without assuming every delay is anxiety."
       },
       {
-        "title": "5 Ways to Stop Overthinking at Work: Reclaim Your Focus and Peace",
-        "description": "Learn how to stop overthinking at work with five practical approaches, clear workplace examples, reliable sources, and guidance on when to seek extra support."
+        "title": "How to Stop Overthinking at Work: 5 Clarifications Before Another Revision",
+        "description": "How to stop overthinking at work: ask five clear questions about scope, feedback and authority before another revision, without assuming every delay is anxiety."
       }
     ]
   },
   {
     "slug": "how-to-feel-calm-instantly",
-    "title": "How to Feel Calm Instantly: 5 Gentle Options Without a Quick-Fix Promise",
+    "title": "How to Feel Calm Instantly: 5 Support Requests Before a Pressured Event",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Explore how to feel calm instantly without quick-fix promises: five gentle coping options, a personal support card, and signs that call for medical attention.",
+    "read_time": "5",
+    "excerpt": "How to feel calm instantly: prepare five useful support requests before a pressured event without promising immediate relief or making calm a performance test.",
     "image": "images/how-to-feel-calm-instantly.jpg",
-    "alt": "Woman breathing calmly by window with hand on chest",
+    "alt": "Woman seated on the floor beside a curtain",
     "pins": [
       {
-        "title": "How to Feel Calm Instantly: 5 Gentle Options Without a Quick-Fix Promise",
-        "description": "Explore how to feel calm instantly without quick-fix promises: five gentle coping options, a personal support card, and signs that call for medical attention."
+        "title": "How to Feel Calm Instantly: 5 Support Requests Before a Pressured Event",
+        "description": "How to feel calm instantly: prepare five useful support requests before a pressured event without promising immediate relief or making calm a performance test."
       },
       {
-        "title": "How to Feel Calm Instantly: 5 Gentle Options Without a Quick-Fix Promise",
-        "description": "Explore how to feel calm instantly without quick-fix promises: five gentle coping options, a personal support card, and signs that call for medical attention."
+        "title": "How to Feel Calm Instantly: 5 Support Requests Before a Pressured Event",
+        "description": "How to feel calm instantly: prepare five useful support requests before a pressured event without promising immediate relief or making calm a performance test."
       },
       {
-        "title": "How to Feel Calm Instantly: 5 Gentle Options Without a Quick-Fix Promise",
-        "description": "Explore how to feel calm instantly without quick-fix promises: five gentle coping options, a personal support card, and signs that call for medical attention."
+        "title": "How to Feel Calm Instantly: 5 Support Requests Before a Pressured Event",
+        "description": "How to feel calm instantly: prepare five useful support requests before a pressured event without promising immediate relief or making calm a performance test."
       }
     ]
   },
   {
     "slug": "how-to-stop-worrying",
-    "title": "5 Ways to Stop Worrying: Reclaim Your Peace Starting Today",
+    "title": "How to Stop Worrying: 5 Routes for One Recurring Concern",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to stop worrying with practical techniques that interrupt anxious thought loops, ease uncertainty, and help you return to what you can control right now.",
+    "read_time": "5",
+    "excerpt": "How to stop worrying: choose among five routes for one recurring concern, separating action from uncertainty without promising a worry-free day or full control.",
     "image": "images/how-to-stop-worrying.jpg",
-    "alt": "Person finding relief from worry at kitchen table",
+    "alt": "Woman holding a pen over an open notebook",
     "pins": [
       {
-        "title": "5 Ways to Stop Worrying: Reclaim Your Peace Starting Today",
-        "description": "How to stop worrying with practical techniques that interrupt anxious thought loops, ease uncertainty, and help you return to what you can control right now."
+        "title": "How to Stop Worrying: 5 Routes for One Recurring Concern",
+        "description": "How to stop worrying: choose among five routes for one recurring concern, separating action from uncertainty without promising a worry-free day or full control."
       },
       {
-        "title": "5 Ways to Stop Worrying: Reclaim Your Peace Starting Today",
-        "description": "How to stop worrying with practical techniques that interrupt anxious thought loops, ease uncertainty, and help you return to what you can control right now."
+        "title": "How to Stop Worrying: 5 Routes for One Recurring Concern",
+        "description": "How to stop worrying: choose among five routes for one recurring concern, separating action from uncertainty without promising a worry-free day or full control."
       },
       {
-        "title": "5 Ways to Stop Worrying: Reclaim Your Peace Starting Today",
-        "description": "How to stop worrying with practical techniques that interrupt anxious thought loops, ease uncertainty, and help you return to what you can control right now."
+        "title": "How to Stop Worrying: 5 Routes for One Recurring Concern",
+        "description": "How to stop worrying: choose among five routes for one recurring concern, separating action from uncertainty without promising a worry-free day or full control."
       }
     ]
   },
   {
     "slug": "how-to-stop-anxiety-attacks",
-    "title": "How to Stop Anxiety Attacks: 5 Steps When Fear Feels Overwhelming",
+    "title": "How to Stop Anxiety Attacks: 5 Support Decisions for Intense Fear",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to stop anxiety attacks with five practical coping steps, clear emergency warning signs, and guidance on when to seek professional support and care.",
+    "read_time": "5",
+    "excerpt": "How to stop anxiety attacks: consider five support decisions for intense fear, including urgent assessment when needed, without assuming every episode is panic.",
     "image": "images/how-to-stop-anxiety-attacks.jpg",
-    "alt": "Person practicing breathing exercise on couch during anxiety attack relief",
+    "alt": "Woman seated on a bed with her hands together",
     "pins": [
       {
-        "title": "How to Stop Anxiety Attacks: 5 Steps When Fear Feels Overwhelming",
-        "description": "Learn how to stop anxiety attacks with five practical coping steps, clear emergency warning signs, and guidance on when to seek professional support and care."
+        "title": "How to Stop Anxiety Attacks: 5 Support Decisions for Intense Fear",
+        "description": "How to stop anxiety attacks: consider five support decisions for intense fear, including urgent assessment when needed, without assuming every episode is panic."
       },
       {
-        "title": "How to Stop Anxiety Attacks: 5 Steps When Fear Feels Overwhelming",
-        "description": "Learn how to stop anxiety attacks with five practical coping steps, clear emergency warning signs, and guidance on when to seek professional support and care."
+        "title": "How to Stop Anxiety Attacks: 5 Support Decisions for Intense Fear",
+        "description": "How to stop anxiety attacks: consider five support decisions for intense fear, including urgent assessment when needed, without assuming every episode is panic."
       },
       {
-        "title": "How to Stop Anxiety Attacks: 5 Steps When Fear Feels Overwhelming",
-        "description": "Learn how to stop anxiety attacks with five practical coping steps, clear emergency warning signs, and guidance on when to seek professional support and care."
+        "title": "How to Stop Anxiety Attacks: 5 Support Decisions for Intense Fear",
+        "description": "How to stop anxiety attacks: consider five support decisions for intense fear, including urgent assessment when needed, without assuming every episode is panic."
       }
     ]
   },
@@ -3651,51 +3651,51 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-relax-your-mind",
-    "title": "5 Ways to Make Space for Mental Rest",
+    "title": "How to Relax Your Mind: 5 Checks for a Low-Pressure Rest Activity",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to relax your mind: consider five ways to make room for mental rest, adapt to your situation and seek support when worry or distress affects everyday life.",
+    "read_time": "5",
+    "excerpt": "How to relax your mind: choose a suitable rest activity with five practical checks, without requiring an empty mind, a perfect routine or a biological reset.",
     "image": "images/how-to-relax-your-mind.jpg",
-    "alt": "Person sitting peacefully with closed eyes in calm living room during relaxation",
+    "alt": "Woman reclining on a sofa beside a window",
     "pins": [
       {
-        "title": "5 Ways to Make Space for Mental Rest",
-        "description": "How to relax your mind: consider five ways to make room for mental rest, adapt to your situation and seek support when worry or distress affects everyday life."
+        "title": "How to Relax Your Mind: 5 Checks for a Low-Pressure Rest Activity",
+        "description": "How to relax your mind: choose a suitable rest activity with five practical checks, without requiring an empty mind, a perfect routine or a biological reset."
       },
       {
-        "title": "5 Ways to Make Space for Mental Rest",
-        "description": "How to relax your mind: consider five ways to make room for mental rest, adapt to your situation and seek support when worry or distress affects everyday life."
+        "title": "How to Relax Your Mind: 5 Checks for a Low-Pressure Rest Activity",
+        "description": "How to relax your mind: choose a suitable rest activity with five practical checks, without requiring an empty mind, a perfect routine or a biological reset."
       },
       {
-        "title": "5 Ways to Make Space for Mental Rest",
-        "description": "How to relax your mind: consider five ways to make room for mental rest, adapt to your situation and seek support when worry or distress affects everyday life."
+        "title": "How to Relax Your Mind: 5 Checks for a Low-Pressure Rest Activity",
+        "description": "How to relax your mind: choose a suitable rest activity with five practical checks, without requiring an empty mind, a perfect routine or a biological reset."
       }
     ]
   },
   {
     "slug": "how-to-reduce-stress-naturally",
-    "title": "5 Ways to Reduce Stress Naturally: Your Peace Starts Today",
+    "title": "How to Reduce Stress Naturally: 5 Responses Beyond a Calming Ritual",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to reduce stress naturally: explore five coping options and everyday support, without promising rapid relief or replacing suitable professional assessment.",
+    "read_time": "5",
+    "excerpt": "How to reduce stress naturally: use five practical support responses to a real demand without supplements, a cortisol claim or a promise of a stress-free life.",
     "image": "images/how-to-reduce-stress-naturally.jpg",
-    "alt": "Person taking a deep breath on couch, showing natural stress relief at home",
+    "alt": "Woman standing outdoors with her eyes closed",
     "pins": [
       {
-        "title": "5 Ways to Reduce Stress Naturally: Your Peace Starts Today",
-        "description": "How to reduce stress naturally: explore five coping options and everyday support, without promising rapid relief or replacing suitable professional assessment."
+        "title": "How to Reduce Stress Naturally: 5 Responses Beyond a Calming Ritual",
+        "description": "How to reduce stress naturally: use five practical support responses to a real demand without supplements, a cortisol claim or a promise of a stress-free life."
       },
       {
-        "title": "5 Ways to Reduce Stress Naturally: Your Peace Starts Today",
-        "description": "How to reduce stress naturally: explore five coping options and everyday support, without promising rapid relief or replacing suitable professional assessment."
+        "title": "How to Reduce Stress Naturally: 5 Responses Beyond a Calming Ritual",
+        "description": "How to reduce stress naturally: use five practical support responses to a real demand without supplements, a cortisol claim or a promise of a stress-free life."
       },
       {
-        "title": "5 Ways to Reduce Stress Naturally: Your Peace Starts Today",
-        "description": "How to reduce stress naturally: explore five coping options and everyday support, without promising rapid relief or replacing suitable professional assessment."
+        "title": "How to Reduce Stress Naturally: 5 Responses Beyond a Calming Ritual",
+        "description": "How to reduce stress naturally: use five practical support responses to a real demand without supplements, a cortisol claim or a promise of a stress-free life."
       }
     ]
   },
@@ -3801,26 +3801,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-overthinking-at-night",
-    "title": "5 Ways to Stop Overthinking at Night and Finally Sleep",
+    "title": "How to Stop Overthinking at Night: 5 Questions Before Another Review",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "How to stop overthinking at night with calming strategies that quiet racing thoughts, protect sleep, and help you feel more settled before sleep every night.",
-    "image": "images/how-to-stop-overthinking-at-night.jpg",
-    "alt": "person lying in dim bedroom with calm expression and warm lamp light",
+    "read_time": "5",
+    "excerpt": "How to stop overthinking at night: separate five night concerns from decisions that can wait, without promising quick sleep or making a worry ritual compulsory.",
+    "image": "images/how-to-stop-overthinking-at-night-clean-v2.jpg",
+    "alt": "Woman seated on the edge of a bed beside a warm lamp",
     "pins": [
       {
-        "title": "5 Ways to Stop Overthinking at Night and Finally Sleep",
-        "description": "How to stop overthinking at night with calming strategies that quiet racing thoughts, protect sleep, and help you feel more settled before sleep every night."
+        "title": "How to Stop Overthinking at Night: 5 Questions Before Another Review",
+        "description": "How to stop overthinking at night: separate five night concerns from decisions that can wait, without promising quick sleep or making a worry ritual compulsory."
       },
       {
-        "title": "5 Ways to Stop Overthinking at Night and Finally Sleep",
-        "description": "How to stop overthinking at night with calming strategies that quiet racing thoughts, protect sleep, and help you feel more settled before sleep every night."
+        "title": "How to Stop Overthinking at Night: 5 Questions Before Another Review",
+        "description": "How to stop overthinking at night: separate five night concerns from decisions that can wait, without promising quick sleep or making a worry ritual compulsory."
       },
       {
-        "title": "5 Ways to Stop Overthinking at Night and Finally Sleep",
-        "description": "How to stop overthinking at night with calming strategies that quiet racing thoughts, protect sleep, and help you feel more settled before sleep every night."
+        "title": "How to Stop Overthinking at Night: 5 Questions Before Another Review",
+        "description": "How to stop overthinking at night: separate five night concerns from decisions that can wait, without promising quick sleep or making a worry ritual compulsory."
       }
     ]
   }

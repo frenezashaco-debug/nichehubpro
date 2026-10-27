@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "scope": "A full editorial rewrite and the strict batch checks apply only to the listed full-review articles. Other entries have targeted edits or mechanical consistency checks, not a scientific certification or AdSense approval. Pixel watermarks and all external claims have not been individually verified in this pass.",
   "summary": {
     "inventory": 155,
-    "full_review_and_strict_checks": 114,
+    "full_review_and_strict_checks": 134,
     "targeted_scenario_repairs_this_batch": 43,
     "changed_articles_this_batch": 152,
     "body_changed_this_batch": 71
@@ -191,7 +191,9 @@
     },
     {
       "slug": "how-to-stop-overthinking-everything",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "how-to-reset-your-mindset",
@@ -203,11 +205,15 @@
     },
     {
       "slug": "why-you-feel-emotionally-numb",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "why-anxiety-feels-physical",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "best-focus-techniques-for-students",
@@ -227,7 +233,9 @@
     },
     {
       "slug": "how-to-stop-catastrophic-thinking",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "why-discipline-beats-motivation",
@@ -319,7 +327,9 @@
     },
     {
       "slug": "how-to-calm-your-mind-instantly",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "how-to-control-your-thoughts",
@@ -429,7 +439,9 @@
     },
     {
       "slug": "why-you-feel-mentally-drained",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "how-to-deal-with-stress-at-work",
@@ -445,7 +457,9 @@
     },
     {
       "slug": "how-to-recover-from-emotional-burnout",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "daily-stretching-routine-for-beginners",
@@ -463,7 +477,9 @@
     },
     {
       "slug": "why-you-always-feel-stressed",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "how-to-calm-down-when-overwhelmed",
@@ -539,11 +555,15 @@
     },
     {
       "slug": "how-to-reduce-anxiety-naturally",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "how-to-deal-with-toxic-people",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "how-to-set-healthy-boundaries",
@@ -599,7 +619,9 @@
     },
     {
       "slug": "how-to-feel-happy-again",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "natural-energy-boosters",
@@ -643,7 +665,9 @@
     },
     {
       "slug": "signs-of-anxiety-disorder",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "healthy-daily-habits",
@@ -671,7 +695,9 @@
     },
     {
       "slug": "how-to-break-negative-thinking",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "foods-that-reduce-anxiety",
@@ -699,19 +725,27 @@
     },
     {
       "slug": "how-to-stop-overthinking-at-work",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "how-to-feel-calm-instantly",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "how-to-stop-worrying",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "how-to-stop-anxiety-attacks",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "how-to-deal-with-anxiety-daily",
@@ -719,11 +753,15 @@
     },
     {
       "slug": "how-to-relax-your-mind",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "how-to-reduce-stress-naturally",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     },
     {
       "slug": "how-to-stop-negative-thoughts",
@@ -745,7 +783,9 @@
     },
     {
       "slug": "how-to-stop-overthinking-at-night",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/support-twenty-review-2026-10-27.md"
     }
   ]
 }
