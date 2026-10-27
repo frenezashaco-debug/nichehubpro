@@ -28,26 +28,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-gut-health-influences-your-mood-and-energy",
-    "title": "How Gut Health Influences Your Mood and Energy: 5 Practical Checks",
+    "title": "How Gut Health Influences Your Mood and Energy: 5 Questions About a Claim",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Oct 2026",
-    "read_time": "8",
-    "excerpt": "How gut health influences your mood and energy levels matters more than most people realise. Here are 5 practical checks to support your gut brain connection mo",
+    "read_time": "5",
+    "excerpt": "How gut health influences your mood and energy: check key parts of a claim before choosing a probiotic or diet, without assuming a gut explanation for symptoms.",
     "image": "images/how-gut-health-influences-your-mood-and-energy.jpg",
-    "alt": "Man preparing vegetables in kitchen supporting gut health mood",
+    "alt": "Man preparing vegetables at a kitchen counter",
     "pins": [
       {
-        "title": "How Gut Health Influences Your Mood and Energy: 5 Practical Checks",
-        "description": "How gut health influences your mood and energy levels matters more than most people realise. Here are 5 practical checks to support your gut brain connection mo"
+        "title": "How Gut Health Influences Your Mood and Energy: 5 Questions About a Claim",
+        "description": "How gut health influences your mood and energy: check key parts of a claim before choosing a probiotic or diet, without assuming a gut explanation for symptoms."
       },
       {
-        "title": "How Gut Health Influences Your Mood and Energy: 5 Practical Checks",
-        "description": "How gut health influences your mood and energy levels matters more than most people realise. Here are 5 practical checks to support your gut brain connection mo"
+        "title": "How Gut Health Influences Your Mood and Energy: 5 Questions About a Claim",
+        "description": "How gut health influences your mood and energy: check key parts of a claim before choosing a probiotic or diet, without assuming a gut explanation for symptoms."
       },
       {
-        "title": "How Gut Health Influences Your Mood and Energy: 5 Practical Checks",
-        "description": "How gut health influences your mood and energy levels matters more than most people realise. Here are 5 practical checks to support your gut brain connection mo"
+        "title": "How Gut Health Influences Your Mood and Energy: 5 Questions About a Claim",
+        "description": "How gut health influences your mood and energy: check key parts of a claim before choosing a probiotic or diet, without assuming a gut explanation for symptoms."
       }
     ]
   },
@@ -103,26 +103,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-sleep-debt-silently-drains-your-daily-performance",
-    "title": "How Sleep Debt Silently Drains Your Daily Performance: 5 Practical Checks",
+    "title": "How Sleep Debt Silently Drains Your Daily Performance: 5 Changes to Discuss",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Oct 2026",
-    "read_time": "8",
-    "excerpt": "How sleep debt silently drains your daily performance: review sleep patterns, daytime symptoms and practical routine changes, with guidance on seeking support.",
+    "read_time": "5",
+    "excerpt": "How sleep debt silently drains your daily performance: describe five changes and sleep access without a recovery formula or a claim that sleepiness is safe.",
     "image": "images/how-sleep-debt-silently-drains-your-daily-performance.jpg",
-    "alt": "tired young woman at kitchen table showing sleep debt effects",
+    "alt": "Woman holding a mug at a table",
     "pins": [
       {
-        "title": "How Sleep Debt Silently Drains Your Daily Performance: 5 Practical Checks",
-        "description": "How sleep debt silently drains your daily performance: review sleep patterns, daytime symptoms and practical routine changes, with guidance on seeking support."
+        "title": "How Sleep Debt Silently Drains Your Daily Performance: 5 Changes to Discuss",
+        "description": "How sleep debt silently drains your daily performance: describe five changes and sleep access without a recovery formula or a claim that sleepiness is safe."
       },
       {
-        "title": "How Sleep Debt Silently Drains Your Daily Performance: 5 Practical Checks",
-        "description": "How sleep debt silently drains your daily performance: review sleep patterns, daytime symptoms and practical routine changes, with guidance on seeking support."
+        "title": "How Sleep Debt Silently Drains Your Daily Performance: 5 Changes to Discuss",
+        "description": "How sleep debt silently drains your daily performance: describe five changes and sleep access without a recovery formula or a claim that sleepiness is safe."
       },
       {
-        "title": "How Sleep Debt Silently Drains Your Daily Performance: 5 Practical Checks",
-        "description": "How sleep debt silently drains your daily performance: review sleep patterns, daytime symptoms and practical routine changes, with guidance on seeking support."
+        "title": "How Sleep Debt Silently Drains Your Daily Performance: 5 Changes to Discuss",
+        "description": "How sleep debt silently drains your daily performance: describe five changes and sleep access without a recovery formula or a claim that sleepiness is safe."
       }
     ]
   },
@@ -240,14 +240,14 @@ const ARTICLES = [
   },
   {
     "slug": "how-your-body-clock-affects-when-you-should-exercise",
-    "title": "How Your Body Clock Affects When You Should Exercise: 5 Practical Checks",
+    "title": "How Your Body Clock Affects When You Should Exercise: 5 Scheduling Checks",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Sep 2026",
-    "read_time": "11",
-    "excerpt": "How your body clock affects when you should exercise: compare realistic workout times, protect sleep, and build a flexible plan that fits your actual life.",
+    "read_time": "5",
+    "excerpt": "How your body clock affects when you should exercise: review five scheduling checks without a universal best hour, a chronotype diagnosis or sacrificing sleep.",
     "image": "images/how-your-body-clock-affects-when-you-should-exercise.jpg",
-    "alt": "Man putting on a light jacket before a walk",
+    "alt": "Man putting on a jacket near an open door",
     "pins": []
   },
   {
@@ -302,26 +302,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-energy-that-lasts-all-day-without-crashing",
-    "title": "How to Build Energy That Lasts All Day Without Crashing: 7 Realistic Checks",
+    "title": "How to Build Energy That Lasts All Day Without Crashing: 5 Support Checks",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Sep 2026",
-    "read_time": "13",
-    "excerpt": "Review how to build energy that lasts all day without crashing with seven realistic checks, an afternoon decision note, and limits on what habits can explain.",
+    "read_time": "5",
+    "excerpt": "How to build energy that lasts all day without crashing: review key support needs without promising constant alertness or diagnosing the cause of a daily slump.",
     "image": "images/how-to-build-energy-that-lasts-all-day-without-crashing.jpg",
-    "alt": "Young woman eating protein breakfast for sustained energy without crash",
+    "alt": "Woman eating from a bowl in a kitchen",
     "pins": [
       {
-        "title": "How to Build Energy That Lasts All Day Without Crashing: 7 Realistic Checks",
-        "description": "Review how to build energy that lasts all day without crashing with seven realistic checks, an afternoon decision note, and limits on what habits can explain."
+        "title": "How to Build Energy That Lasts All Day Without Crashing: 5 Support Checks",
+        "description": "How to build energy that lasts all day without crashing: review key support needs without promising constant alertness or diagnosing the cause of a daily slump."
       },
       {
-        "title": "How to Build Energy That Lasts All Day Without Crashing: 7 Realistic Checks",
-        "description": "Review how to build energy that lasts all day without crashing with seven realistic checks, an afternoon decision note, and limits on what habits can explain."
+        "title": "How to Build Energy That Lasts All Day Without Crashing: 5 Support Checks",
+        "description": "How to build energy that lasts all day without crashing: review key support needs without promising constant alertness or diagnosing the cause of a daily slump."
       },
       {
-        "title": "How to Build Energy That Lasts All Day Without Crashing: 7 Realistic Checks",
-        "description": "Review how to build energy that lasts all day without crashing with seven realistic checks, an afternoon decision note, and limits on what habits can explain."
+        "title": "How to Build Energy That Lasts All Day Without Crashing: 5 Support Checks",
+        "description": "How to build energy that lasts all day without crashing: review key support needs without promising constant alertness or diagnosing the cause of a daily slump."
       }
     ]
   },
@@ -377,26 +377,26 @@ const ARTICLES = [
   },
   {
     "slug": "why-hydration-affects-your-focus-more-than-you-think",
-    "title": "Why Hydration Affects Your Focus More Than You Think: 5 Practical Checks",
+    "title": "Why Hydration Affects Your Focus More Than You Think: 5 Claim Checks",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Sep 2026",
-    "read_time": "9",
-    "excerpt": "Learn why hydration affects your focus more than you think, with practical access checks, individual fluid limits, and warning signs that need medical advice.",
+    "read_time": "5",
+    "excerpt": "Why hydration affects your focus more than you think: examine five claim limits without a fixed water target or assuming poor concentration means dehydration.",
     "image": "images/why-hydration-affects-your-focus-more-than-you-think.jpg",
-    "alt": "young woman drinking water at desk improving focus naturally",
+    "alt": "Woman drinking from a glass beside a laptop",
     "pins": [
       {
-        "title": "Why Hydration Affects Your Focus More Than You Think: 5 Practical Checks",
-        "description": "Learn why hydration affects your focus more than you think, with practical access checks, individual fluid limits, and warning signs that need medical advice."
+        "title": "Why Hydration Affects Your Focus More Than You Think: 5 Claim Checks",
+        "description": "Why hydration affects your focus more than you think: examine five claim limits without a fixed water target or assuming poor concentration means dehydration."
       },
       {
-        "title": "Why Hydration Affects Your Focus More Than You Think: 5 Practical Checks",
-        "description": "Learn why hydration affects your focus more than you think, with practical access checks, individual fluid limits, and warning signs that need medical advice."
+        "title": "Why Hydration Affects Your Focus More Than You Think: 5 Claim Checks",
+        "description": "Why hydration affects your focus more than you think: examine five claim limits without a fixed water target or assuming poor concentration means dehydration."
       },
       {
-        "title": "Why Hydration Affects Your Focus More Than You Think: 5 Practical Checks",
-        "description": "Learn why hydration affects your focus more than you think, with practical access checks, individual fluid limits, and warning signs that need medical advice."
+        "title": "Why Hydration Affects Your Focus More Than You Think: 5 Claim Checks",
+        "description": "Why hydration affects your focus more than you think: examine five claim limits without a fixed water target or assuming poor concentration means dehydration."
       }
     ]
   },
@@ -1002,26 +1002,26 @@ const ARTICLES = [
   },
   {
     "slug": "benefits-of-walking-every-day",
-    "title": "7 Benefits of Walking Every Day to Consider",
+    "title": "Benefits of Walking Every Day: 5 Questions About Evidence and Suitability",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven potential benefits of walking every day, plus practical ideas for starting safely and adapting movement to your own needs and abilities. Practical",
+    "read_time": "5",
+    "excerpt": "Benefits of walking every day: review five evidence and suitability questions without a compulsory streak, a universal step count or a promise to treat anxiety.",
     "image": "images/benefits-of-walking-every-day.jpg",
-    "alt": "Young woman walking peacefully on a tree-lined street in morning light",
+    "alt": "Woman standing on a tree-lined path",
     "pins": [
       {
-        "title": "7 Benefits of Walking Every Day to Consider",
-        "description": "Explore seven potential benefits of walking every day, plus practical ideas for starting safely and adapting movement to your own needs and abilities. Practical"
+        "title": "Benefits of Walking Every Day: 5 Questions About Evidence and Suitability",
+        "description": "Benefits of walking every day: review five evidence and suitability questions without a compulsory streak, a universal step count or a promise to treat anxiety."
       },
       {
-        "title": "7 Benefits of Walking Every Day to Consider",
-        "description": "Explore seven potential benefits of walking every day, plus practical ideas for starting safely and adapting movement to your own needs and abilities. Practical"
+        "title": "Benefits of Walking Every Day: 5 Questions About Evidence and Suitability",
+        "description": "Benefits of walking every day: review five evidence and suitability questions without a compulsory streak, a universal step count or a promise to treat anxiety."
       },
       {
-        "title": "7 Benefits of Walking Every Day to Consider",
-        "description": "Explore seven potential benefits of walking every day, plus practical ideas for starting safely and adapting movement to your own needs and abilities. Practical"
+        "title": "Benefits of Walking Every Day: 5 Questions About Evidence and Suitability",
+        "description": "Benefits of walking every day: review five evidence and suitability questions without a compulsory streak, a universal step count or a promise to treat anxiety."
       }
     ]
   },
@@ -1152,26 +1152,26 @@ const ARTICLES = [
   },
   {
     "slug": "best-foods-for-focus-and-concentration",
-    "title": "9 Best Foods for Focus and Concentration That Fit Real Life",
+    "title": "Best Foods for Focus and Concentration: 5 Questions Before a Food Claim",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
-    "read_time": "8",
-    "excerpt": "Discover 9 best foods for focus and concentration, with practical meal ideas for steady energy and a balanced routine without miracle claims or quick fixes.",
+    "read_time": "5",
+    "excerpt": "Best foods for focus and concentration: examine five questions about meals and evidence without ranking foods, promising sharper thinking or changing treatment.",
     "image": "images/best-foods-for-focus-and-concentration.jpg",
-    "alt": "woman focused at desk with clear mental concentration",
+    "alt": "Woman holding a bowl of food at a table",
     "pins": [
       {
-        "title": "9 Best Foods for Focus and Concentration That Fit Real Life",
-        "description": "Discover 9 best foods for focus and concentration, with practical meal ideas for steady energy and a balanced routine without miracle claims or quick fixes."
+        "title": "Best Foods for Focus and Concentration: 5 Questions Before a Food Claim",
+        "description": "Best foods for focus and concentration: examine five questions about meals and evidence without ranking foods, promising sharper thinking or changing treatment."
       },
       {
-        "title": "9 Best Foods for Focus and Concentration That Fit Real Life",
-        "description": "Discover 9 best foods for focus and concentration, with practical meal ideas for steady energy and a balanced routine without miracle claims or quick fixes."
+        "title": "Best Foods for Focus and Concentration: 5 Questions Before a Food Claim",
+        "description": "Best foods for focus and concentration: examine five questions about meals and evidence without ranking foods, promising sharper thinking or changing treatment."
       },
       {
-        "title": "9 Best Foods for Focus and Concentration That Fit Real Life",
-        "description": "Discover 9 best foods for focus and concentration, with practical meal ideas for steady energy and a balanced routine without miracle claims or quick fixes."
+        "title": "Best Foods for Focus and Concentration: 5 Questions Before a Food Claim",
+        "description": "Best foods for focus and concentration: examine five questions about meals and evidence without ranking foods, promising sharper thinking or changing treatment."
       }
     ]
   },
@@ -1677,26 +1677,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-a-productivity-system-with-apps",
-    "title": "How to Build a Productivity System with Apps in 2026 (Step-by-Step)",
+    "title": "How to Build a Productivity System With Apps: 5 Decisions Before Adding Tools",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
-    "read_time": "12",
-    "excerpt": "How to build a productivity system with apps: organise task capture, planning and review around your work, without expecting an app to solve every obstacle.",
+    "read_time": "5",
+    "excerpt": "How to build a productivity system with apps: make five workflow decisions about capture, tasks and calendars without duplicating commitments across more tools.",
     "image": "images/best-productivity-systems-explained.jpg",
-    "alt": "Person building a clean productivity system on laptop with notes and apps open",
+    "alt": "Person writing at a kitchen table",
     "pins": []
   },
   {
     "slug": "best-free-productivity-apps-for-android-2026",
-    "title": "7 Free Android Productivity Apps to Compare in 2026",
+    "title": "Best Free Productivity Apps for Android 2026: 5 Checks for a Basic Task App",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
-    "read_time": "6",
-    "excerpt": "Compare free productivity apps for Android with official sources, plan limits, offline notes, and a practical checklist to choose a tool that fits your workday.",
+    "read_time": "5",
+    "excerpt": "Best free productivity apps for Android 2026: compare documented task options with five checks for limits, accounts and fit, without an invented test ranking.",
     "image": "images/best-productivity-apps-in-2026.jpg",
-    "alt": "Person using Android phone with productivity app open at a clean desk",
+    "alt": "Woman looking at a tablet while seated on a bed",
     "pins": []
   },
   {
@@ -1726,26 +1726,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-drink-more-water-every-day",
-    "title": "5 Ways to Drink More Water Every Day - Even If You Always Forget",
+    "title": "How to Drink More Water Every Day: 5 Access Checks Before a New Target",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Learn five practical ways to drink more water every day, build reminders that fit your routine, and recognize when hydration advice needs medical guidance.",
+    "read_time": "5",
+    "excerpt": "How to drink more water every day: review five access and suitability checks before adding a target, while following any individual advice about fluid intake.",
     "image": "images/how-to-drink-more-water-every-day.jpg",
-    "alt": "Woman holding glass of water at desk, morning routine hydration.",
+    "alt": "Woman holding a glass of water",
     "pins": [
       {
-        "title": "5 Ways to Drink More Water Every Day - Even If You Always Forget",
-        "description": "Learn five practical ways to drink more water every day, build reminders that fit your routine, and recognize when hydration advice needs medical guidance."
+        "title": "How to Drink More Water Every Day: 5 Access Checks Before a New Target",
+        "description": "How to drink more water every day: review five access and suitability checks before adding a target, while following any individual advice about fluid intake."
       },
       {
-        "title": "5 Ways to Drink More Water Every Day - Even If You Always Forget",
-        "description": "Learn five practical ways to drink more water every day, build reminders that fit your routine, and recognize when hydration advice needs medical guidance."
+        "title": "How to Drink More Water Every Day: 5 Access Checks Before a New Target",
+        "description": "How to drink more water every day: review five access and suitability checks before adding a target, while following any individual advice about fluid intake."
       },
       {
-        "title": "5 Ways to Drink More Water Every Day - Even If You Always Forget",
-        "description": "Learn five practical ways to drink more water every day, build reminders that fit your routine, and recognize when hydration advice needs medical guidance."
+        "title": "How to Drink More Water Every Day: 5 Access Checks Before a New Target",
+        "description": "How to drink more water every day: review five access and suitability checks before adding a target, while following any individual advice about fluid intake."
       }
     ]
   },
@@ -1776,26 +1776,26 @@ const ARTICLES = [
   },
   {
     "slug": "best-productivity-apps-in-2026",
-    "title": "Best Productivity Apps in 2026: 5 Options for Your Workflow",
+    "title": "Best Productivity Apps in 2026: 5 Roles to Compare Before Choosing",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
-    "read_time": "8",
-    "excerpt": "Best productivity apps in 2026: compare Todoist, Obsidian, Things, Notion and Forest by tasks, costs and limitations, then use a short trial to choose your fit.",
-    "image": "images/best-productivity-apps-in-2026.jpg",
-    "alt": "Woman focused on laptop at desk with productivity apps open",
+    "read_time": "5",
+    "excerpt": "Best productivity apps in 2026: compare five documented tool roles before choosing, with direct source links and no false hands-on scores or universal winner.",
+    "image": "images/best-productivity-apps-in-2026-clean-v2.jpg",
+    "alt": "Man holding a tablet at a wooden table",
     "pins": [
       {
-        "title": "Best Productivity Apps in 2026: 5 Options for Your Workflow",
-        "description": "Best productivity apps in 2026: compare Todoist, Obsidian, Things, Notion and Forest by tasks, costs and limitations, then use a short trial to choose your fit."
+        "title": "Best Productivity Apps in 2026: 5 Roles to Compare Before Choosing",
+        "description": "Best productivity apps in 2026: compare five documented tool roles before choosing, with direct source links and no false hands-on scores or universal winner."
       },
       {
-        "title": "Best Productivity Apps in 2026: 5 Options for Your Workflow",
-        "description": "Best productivity apps in 2026: compare Todoist, Obsidian, Things, Notion and Forest by tasks, costs and limitations, then use a short trial to choose your fit."
+        "title": "Best Productivity Apps in 2026: 5 Roles to Compare Before Choosing",
+        "description": "Best productivity apps in 2026: compare five documented tool roles before choosing, with direct source links and no false hands-on scores or universal winner."
       },
       {
-        "title": "Best Productivity Apps in 2026: 5 Options for Your Workflow",
-        "description": "Best productivity apps in 2026: compare Todoist, Obsidian, Things, Notion and Forest by tasks, costs and limitations, then use a short trial to choose your fit."
+        "title": "Best Productivity Apps in 2026: 5 Roles to Compare Before Choosing",
+        "description": "Best productivity apps in 2026: compare five documented tool roles before choosing, with direct source links and no false hands-on scores or universal winner."
       }
     ]
   },
@@ -2101,26 +2101,26 @@ const ARTICLES = [
   },
   {
     "slug": "best-evening-habits-for-better-sleep",
-    "title": "7 Evening Habits for a More Consistent Bedtime",
+    "title": "Best Evening Habits for Better Sleep: 5 Preparation Questions",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Best evening habits for better sleep: explore seven adaptable bedtime ideas and practical preparation, with appropriate support for ongoing sleep difficulties.",
+    "read_time": "5",
+    "excerpt": "Best evening habits for better sleep: review five preparation questions about the evening and sleep access, without a perfect ritual or a guarantee of sleep.",
     "image": "images/best-evening-habits-for-better-sleep.jpg",
-    "alt": "woman sitting on bed in calm evening light, peaceful expression",
+    "alt": "Woman seated on a bed looking down",
     "pins": [
       {
-        "title": "7 Evening Habits for a More Consistent Bedtime",
-        "description": "Best evening habits for better sleep: explore seven adaptable bedtime ideas and practical preparation, with appropriate support for ongoing sleep difficulties."
+        "title": "Best Evening Habits for Better Sleep: 5 Preparation Questions",
+        "description": "Best evening habits for better sleep: review five preparation questions about the evening and sleep access, without a perfect ritual or a guarantee of sleep."
       },
       {
-        "title": "7 Evening Habits for a More Consistent Bedtime",
-        "description": "Best evening habits for better sleep: explore seven adaptable bedtime ideas and practical preparation, with appropriate support for ongoing sleep difficulties."
+        "title": "Best Evening Habits for Better Sleep: 5 Preparation Questions",
+        "description": "Best evening habits for better sleep: review five preparation questions about the evening and sleep access, without a perfect ritual or a guarantee of sleep."
       },
       {
-        "title": "7 Evening Habits for a More Consistent Bedtime",
-        "description": "Best evening habits for better sleep: explore seven adaptable bedtime ideas and practical preparation, with appropriate support for ongoing sleep difficulties."
+        "title": "Best Evening Habits for Better Sleep: 5 Preparation Questions",
+        "description": "Best evening habits for better sleep: review five preparation questions about the evening and sleep access, without a perfect ritual or a guarantee of sleep."
       }
     ]
   },
@@ -2201,26 +2201,26 @@ const ARTICLES = [
   },
   {
     "slug": "best-healthy-snacks-for-energy",
-    "title": "7 Healthy Snack Ideas for Steadier Energy",
+    "title": "Best Healthy Snacks for Energy: 5 Ordinary Options to Consider",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jun 2026",
-    "read_time": "8",
-    "excerpt": "Best healthy snacks for energy: compare seven flexible snack ideas, account for preferences and dietary needs, and consider when personalised advice is useful.",
+    "read_time": "5",
+    "excerpt": "Best healthy snacks for energy: consider five ordinary food options and suitability, without a promised energy boost or replacing individual dietary advice.",
     "image": "images/best-healthy-snacks-for-energy.jpg",
-    "alt": "Woman at desk eating healthy snack for afternoon energy boost",
+    "alt": "Woman seated at a table holding a food container",
     "pins": [
       {
-        "title": "7 Healthy Snack Ideas for Steadier Energy",
-        "description": "Best healthy snacks for energy: compare seven flexible snack ideas, account for preferences and dietary needs, and consider when personalised advice is useful."
+        "title": "Best Healthy Snacks for Energy: 5 Ordinary Options to Consider",
+        "description": "Best healthy snacks for energy: consider five ordinary food options and suitability, without a promised energy boost or replacing individual dietary advice."
       },
       {
-        "title": "7 Healthy Snack Ideas for Steadier Energy",
-        "description": "Best healthy snacks for energy: compare seven flexible snack ideas, account for preferences and dietary needs, and consider when personalised advice is useful."
+        "title": "Best Healthy Snacks for Energy: 5 Ordinary Options to Consider",
+        "description": "Best healthy snacks for energy: consider five ordinary food options and suitability, without a promised energy boost or replacing individual dietary advice."
       },
       {
-        "title": "7 Healthy Snack Ideas for Steadier Energy",
-        "description": "Best healthy snacks for energy: compare seven flexible snack ideas, account for preferences and dietary needs, and consider when personalised advice is useful."
+        "title": "Best Healthy Snacks for Energy: 5 Ordinary Options to Consider",
+        "description": "Best healthy snacks for energy: consider five ordinary food options and suitability, without a promised energy boost or replacing individual dietary advice."
       }
     ]
   },
@@ -2976,26 +2976,26 @@ const ARTICLES = [
   },
   {
     "slug": "natural-energy-boosters",
-    "title": "Natural Energy Boosters: 7 Options With Realistic Limits",
+    "title": "Natural Energy Boosters: 5 Questions Before Buying a Quick Fix",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "10",
-    "excerpt": "Compare natural energy boosters with seven realistic options, an obstacle-based planning checklist, and advice on when tiredness needs professional attention.",
+    "read_time": "5",
+    "excerpt": "Natural energy boosters: ask five questions before buying a fix for fatigue, without treating a natural label as proof of safety, usefulness or a diagnosis.",
     "image": "images/natural-energy-boosters.jpg",
-    "alt": "Woman holding water glass in morning sunlight for natural energy",
+    "alt": "Woman stretching her arms near a sunlit window",
     "pins": [
       {
-        "title": "Natural Energy Boosters: 7 Options With Realistic Limits",
-        "description": "Compare natural energy boosters with seven realistic options, an obstacle-based planning checklist, and advice on when tiredness needs professional attention."
+        "title": "Natural Energy Boosters: 5 Questions Before Buying a Quick Fix",
+        "description": "Natural energy boosters: ask five questions before buying a fix for fatigue, without treating a natural label as proof of safety, usefulness or a diagnosis."
       },
       {
-        "title": "Natural Energy Boosters: 7 Options With Realistic Limits",
-        "description": "Compare natural energy boosters with seven realistic options, an obstacle-based planning checklist, and advice on when tiredness needs professional attention."
+        "title": "Natural Energy Boosters: 5 Questions Before Buying a Quick Fix",
+        "description": "Natural energy boosters: ask five questions before buying a fix for fatigue, without treating a natural label as proof of safety, usefulness or a diagnosis."
       },
       {
-        "title": "Natural Energy Boosters: 7 Options With Realistic Limits",
-        "description": "Compare natural energy boosters with seven realistic options, an obstacle-based planning checklist, and advice on when tiredness needs professional attention."
+        "title": "Natural Energy Boosters: 5 Questions Before Buying a Quick Fix",
+        "description": "Natural energy boosters: ask five questions before buying a fix for fatigue, without treating a natural label as proof of safety, usefulness or a diagnosis."
       }
     ]
   },
@@ -3301,26 +3301,26 @@ const ARTICLES = [
   },
   {
     "slug": "benefits-of-walking-daily",
-    "title": "7 Benefits of Walking Daily to Consider",
+    "title": "Benefits of Walking Daily: 5 Access Decisions for a Suitable Opportunity",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Explore seven potential benefits of walking daily, plus practical ideas for starting safely and adapting movement to your needs and abilities. Practical steps",
+    "read_time": "5",
+    "excerpt": "Benefits of walking daily: review five access checks for a suitable opportunity without a compulsory streak, ignoring pain or treating a route as treatment.",
     "image": "images/benefits-of-walking-daily.jpg",
-    "alt": "Woman walking peacefully on nature path during golden hour light",
+    "alt": "Woman walking on a sunlit path",
     "pins": [
       {
-        "title": "7 Benefits of Walking Daily to Consider",
-        "description": "Explore seven potential benefits of walking daily, plus practical ideas for starting safely and adapting movement to your needs and abilities. Practical steps"
+        "title": "Benefits of Walking Daily: 5 Access Decisions for a Suitable Opportunity",
+        "description": "Benefits of walking daily: review five access checks for a suitable opportunity without a compulsory streak, ignoring pain or treating a route as treatment."
       },
       {
-        "title": "7 Benefits of Walking Daily to Consider",
-        "description": "Explore seven potential benefits of walking daily, plus practical ideas for starting safely and adapting movement to your needs and abilities. Practical steps"
+        "title": "Benefits of Walking Daily: 5 Access Decisions for a Suitable Opportunity",
+        "description": "Benefits of walking daily: review five access checks for a suitable opportunity without a compulsory streak, ignoring pain or treating a route as treatment."
       },
       {
-        "title": "7 Benefits of Walking Daily to Consider",
-        "description": "Explore seven potential benefits of walking daily, plus practical ideas for starting safely and adapting movement to your needs and abilities. Practical steps"
+        "title": "Benefits of Walking Daily: 5 Access Decisions for a Suitable Opportunity",
+        "description": "Benefits of walking daily: review five access checks for a suitable opportunity without a compulsory streak, ignoring pain or treating a route as treatment."
       }
     ]
   },
@@ -3351,26 +3351,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-increase-energy-naturally",
-    "title": "How to Increase Energy Naturally: 5 Checks When You Feel Worn Out",
+    "title": "How to Increase Energy Naturally: 5 Requests for Practical Support",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "7",
-    "excerpt": "Learn how to increase energy naturally with five practical routine checks, a fatigue appointment worksheet, and clear limits on what everyday habits can fix.",
+    "read_time": "5",
+    "excerpt": "How to increase energy naturally: prepare five support requests about ordinary needs and fatigue without a promised boost, a detox or an exercise prescription.",
     "image": "images/how-to-increase-energy-naturally.jpg",
-    "alt": "Woman in morning sunlight holding tea, natural energy boost routine",
+    "alt": "Woman holding a glass in a kitchen",
     "pins": [
       {
-        "title": "How to Increase Energy Naturally: 5 Checks When You Feel Worn Out",
-        "description": "Learn how to increase energy naturally with five practical routine checks, a fatigue appointment worksheet, and clear limits on what everyday habits can fix."
+        "title": "How to Increase Energy Naturally: 5 Requests for Practical Support",
+        "description": "How to increase energy naturally: prepare five support requests about ordinary needs and fatigue without a promised boost, a detox or an exercise prescription."
       },
       {
-        "title": "How to Increase Energy Naturally: 5 Checks When You Feel Worn Out",
-        "description": "Learn how to increase energy naturally with five practical routine checks, a fatigue appointment worksheet, and clear limits on what everyday habits can fix."
+        "title": "How to Increase Energy Naturally: 5 Requests for Practical Support",
+        "description": "How to increase energy naturally: prepare five support requests about ordinary needs and fatigue without a promised boost, a detox or an exercise prescription."
       },
       {
-        "title": "How to Increase Energy Naturally: 5 Checks When You Feel Worn Out",
-        "description": "Learn how to increase energy naturally with five practical routine checks, a fatigue appointment worksheet, and clear limits on what everyday habits can fix."
+        "title": "How to Increase Energy Naturally: 5 Requests for Practical Support",
+        "description": "How to increase energy naturally: prepare five support requests about ordinary needs and fatigue without a promised boost, a detox or an exercise prescription."
       }
     ]
   },
@@ -3401,26 +3401,26 @@ const ARTICLES = [
   },
   {
     "slug": "foods-that-reduce-anxiety",
-    "title": "Foods That Reduce Anxiety: 7 Options Without Cure Claims",
+    "title": "Foods That Reduce Anxiety: 5 Questions About a Treatment Claim",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "10",
-    "excerpt": "Explore foods that reduce anxiety as part of balanced eating, not a cure: seven flexible options, a backup-meal card, and guidance on seeking qualified support.",
-    "image": "images/foods-that-reduce-anxiety.jpg",
-    "alt": "Woman holding bowl of blueberries in kitchen, foods that reduce anxiety",
+    "read_time": "5",
+    "excerpt": "Foods that reduce anxiety: ask five questions about a treatment claim and ordinary food access without replacing care, prescribing exclusions or a cure promise.",
+    "image": "images/foods-that-reduce-anxiety-clean-v2.jpg",
+    "alt": "Man arranging vegetables, beans and bread on a plate",
     "pins": [
       {
-        "title": "Foods That Reduce Anxiety: 7 Options Without Cure Claims",
-        "description": "Explore foods that reduce anxiety as part of balanced eating, not a cure: seven flexible options, a backup-meal card, and guidance on seeking qualified support."
+        "title": "Foods That Reduce Anxiety: 5 Questions About a Treatment Claim",
+        "description": "Foods that reduce anxiety: ask five questions about a treatment claim and ordinary food access without replacing care, prescribing exclusions or a cure promise."
       },
       {
-        "title": "Foods That Reduce Anxiety: 7 Options Without Cure Claims",
-        "description": "Explore foods that reduce anxiety as part of balanced eating, not a cure: seven flexible options, a backup-meal card, and guidance on seeking qualified support."
+        "title": "Foods That Reduce Anxiety: 5 Questions About a Treatment Claim",
+        "description": "Foods that reduce anxiety: ask five questions about a treatment claim and ordinary food access without replacing care, prescribing exclusions or a cure promise."
       },
       {
-        "title": "Foods That Reduce Anxiety: 7 Options Without Cure Claims",
-        "description": "Explore foods that reduce anxiety as part of balanced eating, not a cure: seven flexible options, a backup-meal card, and guidance on seeking qualified support."
+        "title": "Foods That Reduce Anxiety: 5 Questions About a Treatment Claim",
+        "description": "Foods that reduce anxiety: ask five questions about a treatment claim and ordinary food access without replacing care, prescribing exclusions or a cure promise."
       }
     ]
   },
@@ -3451,26 +3451,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-sleep-better-naturally",
-    "title": "How to Sleep Better Naturally: 7 Practical Checks for Restless Nights",
+    "title": "How to Sleep Better Naturally: 5 Questions About Access and Appropriate Care",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to sleep better naturally with 7 practical routine checks, a simple sleep planning worksheet, and guidance on when to ask for professional support.",
+    "read_time": "5",
+    "excerpt": "How to sleep better naturally: review five questions about sleep difficulty and practical access without a supplement promise, a rigid ritual or replacing care.",
     "image": "images/how-to-sleep-better-naturally.jpg",
-    "alt": "Woman sleeping peacefully in cool dark bedroom for better sleep quality",
+    "alt": "Woman reclining in bed beside a window",
     "pins": [
       {
-        "title": "How to Sleep Better Naturally: 7 Practical Checks for Restless Nights",
-        "description": "Learn how to sleep better naturally with 7 practical routine checks, a simple sleep planning worksheet, and guidance on when to ask for professional support."
+        "title": "How to Sleep Better Naturally: 5 Questions About Access and Appropriate Care",
+        "description": "How to sleep better naturally: review five questions about sleep difficulty and practical access without a supplement promise, a rigid ritual or replacing care."
       },
       {
-        "title": "How to Sleep Better Naturally: 7 Practical Checks for Restless Nights",
-        "description": "Learn how to sleep better naturally with 7 practical routine checks, a simple sleep planning worksheet, and guidance on when to ask for professional support."
+        "title": "How to Sleep Better Naturally: 5 Questions About Access and Appropriate Care",
+        "description": "How to sleep better naturally: review five questions about sleep difficulty and practical access without a supplement promise, a rigid ritual or replacing care."
       },
       {
-        "title": "How to Sleep Better Naturally: 7 Practical Checks for Restless Nights",
-        "description": "Learn how to sleep better naturally with 7 practical routine checks, a simple sleep planning worksheet, and guidance on when to ask for professional support."
+        "title": "How to Sleep Better Naturally: 5 Questions About Access and Appropriate Care",
+        "description": "How to sleep better naturally: review five questions about sleep difficulty and practical access without a supplement promise, a rigid ritual or replacing care."
       }
     ]
   },
@@ -3751,26 +3751,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-overthinking",
-    "title": "How to Stop Overthinking: 8 Practical Steps for Calmer Days",
+    "title": "How to Stop Overthinking: 5 Boundaries for Repetitive Reviewing",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "8",
-    "excerpt": "Learn how to stop overthinking with 8 practical steps for racing thoughts, worry loops, calmer evenings, and clearer decisions without demanding instant calm.",
+    "read_time": "5",
+    "excerpt": "How to stop overthinking: consider five limits for repetitive reviewing without suppressing every thought, seeking certainty or treating a checklist as therapy.",
     "image": "images/how-to-stop-overthinking.jpg",
-    "alt": "person sitting calmly at desk with journal in natural morning light",
+    "alt": "Woman seated on a sofa looking to the side",
     "pins": [
       {
-        "title": "How to Stop Overthinking: 8 Practical Steps for Calmer Days",
-        "description": "Learn how to stop overthinking with 8 practical steps for racing thoughts, worry loops, calmer evenings, and clearer decisions without demanding instant calm."
+        "title": "How to Stop Overthinking: 5 Boundaries for Repetitive Reviewing",
+        "description": "How to stop overthinking: consider five limits for repetitive reviewing without suppressing every thought, seeking certainty or treating a checklist as therapy."
       },
       {
-        "title": "How to Stop Overthinking: 8 Practical Steps for Calmer Days",
-        "description": "Learn how to stop overthinking with 8 practical steps for racing thoughts, worry loops, calmer evenings, and clearer decisions without demanding instant calm."
+        "title": "How to Stop Overthinking: 5 Boundaries for Repetitive Reviewing",
+        "description": "How to stop overthinking: consider five limits for repetitive reviewing without suppressing every thought, seeking certainty or treating a checklist as therapy."
       },
       {
-        "title": "How to Stop Overthinking: 8 Practical Steps for Calmer Days",
-        "description": "Learn how to stop overthinking with 8 practical steps for racing thoughts, worry loops, calmer evenings, and clearer decisions without demanding instant calm."
+        "title": "How to Stop Overthinking: 5 Boundaries for Repetitive Reviewing",
+        "description": "How to stop overthinking: consider five limits for repetitive reviewing without suppressing every thought, seeking certainty or treating a checklist as therapy."
       }
     ]
   },

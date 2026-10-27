@@ -3,7 +3,7 @@
   "scope": "A full editorial rewrite and the strict batch checks apply only to the listed full-review articles. Other entries have targeted edits or mechanical consistency checks, not a scientific certification or AdSense approval. Pixel watermarks and all external claims have not been individually verified in this pass.",
   "summary": {
     "inventory": 155,
-    "full_review_and_strict_checks": 134,
+    "full_review_and_strict_checks": 153,
     "targeted_scenario_repairs_this_batch": 43,
     "changed_articles_this_batch": 152,
     "body_changed_this_batch": 71
@@ -17,7 +17,9 @@
     },
     {
       "slug": "how-gut-health-influences-your-mood-and-energy",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "how-willpower-works-and-why-it-runs-out",
@@ -33,7 +35,9 @@
     },
     {
       "slug": "how-sleep-debt-silently-drains-your-daily-performance",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "the-psychology-behind-why-deadlines-make-you-more-productive",
@@ -63,7 +67,9 @@
     },
     {
       "slug": "how-your-body-clock-affects-when-you-should-exercise",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "the-science-of-habit-formation-explained-simply",
@@ -77,7 +83,9 @@
     },
     {
       "slug": "how-to-build-energy-that-lasts-all-day-without-crashing",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "how-to-recover-focus-after-a-distraction",
@@ -93,7 +101,9 @@
     },
     {
       "slug": "why-hydration-affects-your-focus-more-than-you-think",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "how-to-stay-focused-on-hard-tasks-without-burning-out",
@@ -223,7 +233,9 @@
     },
     {
       "slug": "benefits-of-walking-every-day",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "how-to-create-a-productive-routine",
@@ -257,7 +269,9 @@
     },
     {
       "slug": "best-foods-for-focus-and-concentration",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "best-morning-habits-for-more-energy",
@@ -363,11 +377,15 @@
     },
     {
       "slug": "how-to-build-a-productivity-system-with-apps",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "best-free-productivity-apps-for-android-2026",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "how-to-stop-self-sabotaging",
@@ -375,7 +393,9 @@
     },
     {
       "slug": "how-to-drink-more-water-every-day",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "healthy-habits-for-busy-people",
@@ -385,7 +405,9 @@
     },
     {
       "slug": "best-productivity-apps-in-2026",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "how-to-gamify-your-life-for-productivity",
@@ -449,7 +471,9 @@
     },
     {
       "slug": "best-evening-habits-for-better-sleep",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "best-habit-tracker-methods-that-work",
@@ -467,7 +491,9 @@
     },
     {
       "slug": "best-healthy-snacks-for-energy",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "how-to-build-self-discipline",
@@ -625,7 +651,9 @@
     },
     {
       "slug": "natural-energy-boosters",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "daily-wellness-habits",
@@ -683,7 +711,9 @@
     },
     {
       "slug": "benefits-of-walking-daily",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "how-to-feel-in-control-of-your-mind",
@@ -691,7 +721,9 @@
     },
     {
       "slug": "how-to-increase-energy-naturally",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "how-to-break-negative-thinking",
@@ -701,7 +733,9 @@
     },
     {
       "slug": "foods-that-reduce-anxiety",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "fear-of-failure-anxiety",
@@ -709,7 +743,9 @@
     },
     {
       "slug": "how-to-sleep-better-naturally",
-      "review_scope": "targeted_or_mechanical_checks_only"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "anxiety-before-sleep",
@@ -775,7 +811,9 @@
     },
     {
       "slug": "how-to-stop-overthinking",
-      "review_scope": "targeted_scenario_and_consistency_edits"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-nineteen-review-2026-10-27.md"
     },
     {
       "slug": "how-to-calm-anxiety-quickly",
