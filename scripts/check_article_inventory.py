@@ -4,7 +4,7 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 
 ROOT=Path(__file__).resolve().parents[1]
-EXCLUDED={'how-blood-sugar-swings-affect-your-energy-and-mood','how-dopamine-actually-works-and-why-quick-fixes-backfire'}
+EXCLUDED=set()  # All inventory articles now have integrated editorial revisions.
 text=(ROOT/'articles.js').read_text(encoding='utf-8')
 catalog=json.loads(text[text.index('['):text.rfind(']')+1]);records={r['slug']:r for r in catalog}
 ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}

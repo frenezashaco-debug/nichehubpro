@@ -178,51 +178,51 @@ const ARTICLES = [
   },
   {
     "slug": "how-blood-sugar-swings-affect-your-energy-and-mood",
-    "title": "How Blood Sugar Swings Affect Your Energy and Mood: 5 Practical Checks",
+    "title": "How Blood Sugar Swings Affect Your Energy and Mood: 5 Questions for Assessment",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Oct 2026",
-    "read_time": "8",
-    "excerpt": "How blood sugar swings affect your energy and mood: distinguish symptoms from a diagnosis, prepare a record, and know when to seek appropriate medical care.",
+    "read_time": "5",
+    "excerpt": "How blood sugar swings affect your energy and mood: prepare key assessment questions without diagnosing a crash from symptoms or replacing a diabetes care plan.",
     "image": "images/how-blood-sugar-swings-affect-your-energy-and-mood.jpg",
-    "alt": "young woman eating balanced meal to manage blood sugar energy",
+    "alt": "Woman eating from a bowl at a kitchen table",
     "pins": [
       {
-        "title": "How Blood Sugar Swings Affect Your Energy and Mood Every Day",
-        "description": "How blood sugar swings affect your energy and mood: distinguish symptoms from a diagnosis, prepare a record, and know when to seek appropriate medical care."
+        "title": "How Blood Sugar Swings Affect Your Energy and Mood: 5 Questions for Assessment",
+        "description": "How blood sugar swings affect your energy and mood: prepare key assessment questions without diagnosing a crash from symptoms or replacing a diabetes care plan."
       },
       {
-        "title": "Stop Blaming Stress for Your Energy Crashes - It Might Be Your Blood Sugar",
-        "description": "How blood sugar swings affect your energy and mood: distinguish symptoms from a diagnosis, prepare a record, and know when to seek appropriate medical care."
+        "title": "How Blood Sugar Swings Affect Your Energy and Mood: 5 Questions for Assessment",
+        "description": "How blood sugar swings affect your energy and mood: prepare key assessment questions without diagnosing a crash from symptoms or replacing a diabetes care plan."
       },
       {
-        "title": "Try This Simple Habit to Reduce Blood Sugar Energy Crashes This Week",
-        "description": "How blood sugar swings affect your energy and mood: distinguish symptoms from a diagnosis, prepare a record, and know when to seek appropriate medical care."
+        "title": "How Blood Sugar Swings Affect Your Energy and Mood: 5 Questions for Assessment",
+        "description": "How blood sugar swings affect your energy and mood: prepare key assessment questions without diagnosing a crash from symptoms or replacing a diabetes care plan."
       }
     ]
   },
   {
     "slug": "how-dopamine-actually-works-and-why-quick-fixes-backfire",
-    "title": "How Dopamine Actually Works and Why Quick Fixes Backfire: 5 Practical Checks",
+    "title": "How Dopamine Actually Works and Why Quick Fixes Backfire: 5 Evidence Boundaries",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Oct 2026",
-    "read_time": "8",
-    "excerpt": "How dopamine actually works and why quick fixes backfire: separate neuroscience from habit claims, review daily choices, and seek support when symptoms persist.",
+    "read_time": "5",
+    "excerpt": "How dopamine actually works and why quick fixes backfire: review key evidence boundaries without a brain reset claim, a chemical diagnosis or banning enjoyment.",
     "image": "images/how-dopamine-actually-works-and-why-quick-fixes-backfire-clean-v2.jpg",
-    "alt": "Young woman thinking quietly about dopamine and quick fixes",
+    "alt": "Woman standing beside a table and a guitar",
     "pins": [
       {
-        "title": "How Dopamine Actually Works and Why Quick Fixes Backfire",
-        "description": "How dopamine actually works and why quick fixes backfire: separate neuroscience from habit claims, review daily choices, and seek support when symptoms persist."
+        "title": "How Dopamine Actually Works and Why Quick Fixes Backfire: 5 Evidence Boundaries",
+        "description": "How dopamine actually works and why quick fixes backfire: review key evidence boundaries without a brain reset claim, a chemical diagnosis or banning enjoyment."
       },
       {
-        "title": "Stop Chasing Quick Dopamine Hits That Leave You Feeling Empty",
-        "description": "How dopamine actually works and why quick fixes backfire: separate neuroscience from habit claims, review daily choices, and seek support when symptoms persist."
+        "title": "How Dopamine Actually Works and Why Quick Fixes Backfire: 5 Evidence Boundaries",
+        "description": "How dopamine actually works and why quick fixes backfire: review key evidence boundaries without a brain reset claim, a chemical diagnosis or banning enjoyment."
       },
       {
-        "title": "Try This Simple Shift If Quick Fixes Keep Leaving You Flat",
-        "description": "How dopamine actually works and why quick fixes backfire: separate neuroscience from habit claims, review daily choices, and seek support when symptoms persist."
+        "title": "How Dopamine Actually Works and Why Quick Fixes Backfire: 5 Evidence Boundaries",
+        "description": "How dopamine actually works and why quick fixes backfire: review key evidence boundaries without a brain reset claim, a chemical diagnosis or banning enjoyment."
       }
     ]
   },

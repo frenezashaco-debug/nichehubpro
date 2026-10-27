@@ -1,12 +1,10 @@
 {
   "date": "2026-10-27",
-  "scope": "A full editorial rewrite and the strict batch checks apply only to the listed full-review articles. Other entries have targeted edits or mechanical consistency checks, not a scientific certification or AdSense approval. Pixel watermarks and all external claims have not been individually verified in this pass.",
+  "scope": "All 155 inventory articles have a recorded full editorial revision and pass the strict structural checks. This is not clinical peer review, a certification of every external claim, pixel-level verification of the image library or AdSense approval.",
   "summary": {
     "inventory": 155,
-    "full_review_and_strict_checks": 153,
-    "targeted_scenario_repairs_this_batch": 43,
-    "changed_articles_this_batch": 152,
-    "body_changed_this_batch": 71
+    "full_review_and_strict_checks": 155,
+    "remaining_full_review": 0
   },
   "articles": [
     {
@@ -53,11 +51,15 @@
     },
     {
       "slug": "how-blood-sugar-swings-affect-your-energy-and-mood",
-      "review_scope": "preserved_user_local_changes"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-two-review-2026-10-27.md"
     },
     {
       "slug": "how-dopamine-actually-works-and-why-quick-fixes-backfire",
-      "review_scope": "preserved_user_local_changes"
+      "review_scope": "full_editorial_revision_and_strict_checks",
+      "review_date": "2026-10-27",
+      "review_record": "docs/final-two-review-2026-10-27.md"
     },
     {
       "slug": "how-to-train-your-brain-for-longer-attention-spans",
@@ -825,5 +827,10 @@
       "review_date": "2026-10-27",
       "review_record": "docs/support-twenty-review-2026-10-27.md"
     }
-  ]
+  ],
+  "earlier_cleanup_counts": {
+    "targeted_scenario_repairs_this_batch": 43,
+    "changed_articles_this_batch": 152,
+    "body_changed_this_batch": 71
+  }
 }
