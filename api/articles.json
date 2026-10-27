@@ -88,11 +88,11 @@
     "date": "2026-09-29"
   },
   {
-    "id": "how-to-stop-feeling-guilty-for-resting",
-    "title": "How to Stop Feeling Guilty for Resting: 5 Questions About Needs and Expectations",
-    "shortText": "How to stop feeling guilty for resting: consider five questions about needs, expectations and coverage without making rest depend on output or a worksheet.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-stop-feeling-guilty-for-resting.html",
+    "id": "how-to-recover-focus-after-a-distraction",
+    "title": "How to Recover Focus After a Distraction: 5 Restart Decisions",
+    "shortText": "How to recover focus after a distraction: use five decisions to find your place, clarify the next action and handle a blocker without a recovery countdown.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/how-to-recover-focus-after-a-distraction.html",
     "date": "2026-09-05"
   },
   {
@@ -104,19 +104,11 @@
     "date": "2026-09-05"
   },
   {
-    "id": "how-to-build-energy-that-lasts-all-day-without-crashing",
-    "title": "How to Build Energy That Lasts All Day Without Crashing: 7 Realistic Checks",
-    "shortText": "Review how to build energy that lasts all day without crashing with seven realistic checks, an afternoon decision note, and limits on what habits can explain.",
-    "category": "healthy_lifestyle",
-    "url": "https://nichehubpro.com/articles/how-to-build-energy-that-lasts-all-day-without-crashing.html",
-    "date": "2026-09-05"
-  },
-  {
-    "id": "how-to-recover-focus-after-a-distraction",
-    "title": "How to Recover Focus After a Distraction: 5 Restart Decisions",
-    "shortText": "How to recover focus after a distraction: use five decisions to find your place, clarify the next action and handle a blocker without a recovery countdown.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/how-to-recover-focus-after-a-distraction.html",
+    "id": "how-to-stop-feeling-guilty-for-resting",
+    "title": "How to Stop Feeling Guilty for Resting: 5 Questions About Needs and Expectations",
+    "shortText": "How to stop feeling guilty for resting: consider five questions about needs, expectations and coverage without making rest depend on output or a worksheet.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-stop-feeling-guilty-for-resting.html",
     "date": "2026-09-05"
   },
   {
@@ -125,6 +117,14 @@
     "shortText": "What neuroplasticity means for changing your habits: examine evidence boundaries before treating a repeated action, mood or streak as proof of brain rewiring.",
     "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/what-neuroplasticity-means-for-changing-your-habits.html",
+    "date": "2026-09-05"
+  },
+  {
+    "id": "how-to-build-energy-that-lasts-all-day-without-crashing",
+    "title": "How to Build Energy That Lasts All Day Without Crashing: 7 Realistic Checks",
+    "shortText": "Review how to build energy that lasts all day without crashing with seven realistic checks, an afternoon decision note, and limits on what habits can explain.",
+    "category": "healthy_lifestyle",
+    "url": "https://nichehubpro.com/articles/how-to-build-energy-that-lasts-all-day-without-crashing.html",
     "date": "2026-09-05"
   },
   {
@@ -281,11 +281,147 @@
   },
   {
     "id": "how-to-stop-overthinking-everything",
-    "title": "7 Ways to Stop Overthinking Everything (And Finally Feel Free)",
-    "shortText": "Learn how to stop overthinking everything with practical steps to interrupt worry loops, make decisions, and regain focus without demanding perfect certainty.",
+    "title": "How to Stop Overthinking Everything: 5 Ways to Sort a Tangled Concern",
+    "shortText": "How to stop overthinking everything: sort five parts of a tangled concern, identify a practical question and find support without promising complete certainty.",
     "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-stop-overthinking-everything.html",
     "date": "2026-07-25"
+  },
+  {
+    "id": "how-to-improve-mental-clarity",
+    "title": "How to Improve Mental Clarity: 5 Details for a Care Conversation",
+    "shortText": "How to improve mental clarity: prepare five details about changes in thinking and daily activities without self-diagnosing brain fog or delaying medical help.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-improve-mental-clarity.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "daily-self-care-routine",
+    "title": "Daily Self-Care Routine: 7 Ways to Match Care to a Real Need",
+    "shortText": "A daily self care routine can start with one unmet need. Review seven care options, practical barriers and support, without buying products or chasing streaks.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/daily-self-care-routine.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "pomodoro-technique-explained-for-beginners",
+    "title": "Pomodoro Technique Explained for Beginners: 5 Timer Questions",
+    "shortText": "Pomodoro technique explained for beginners: ask five timer questions about tasks, pauses and interruptions before choosing whether timed work fits your needs.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/pomodoro-technique-explained-for-beginners.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "emotional-burnout-recovery",
+    "title": "Emotional Burnout Recovery: 5 Questions About Care and Demands",
+    "shortText": "Emotional burnout recovery: use five questions to discuss symptoms, demands and support, without diagnosing the cause or setting a fixed timetable for recovery.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/emotional-burnout-recovery.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "how-to-stop-procrastination",
+    "title": "How to Stop Procrastination: 5 Questions Before Your Next Attempt",
+    "shortText": "How to stop procrastination: ask five questions about a delayed task, clarify the next action and needed support, without promising a fixed recovery timetable.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/how-to-stop-procrastination.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "how-to-focus-better-at-work",
+    "title": "How to Focus Better at Work: 5 Task-Clarity Questions",
+    "shortText": "How to focus better at work: ask five task-clarity questions about the result, inputs and decisions needed before adding a focus routine to an already busy day.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/how-to-focus-better-at-work.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "best-morning-habits-for-more-energy",
+    "title": "Best Morning Habits for More Energy: 7 Options for a Rushed Start",
+    "shortText": "Explore the best morning habits for more energy as seven optional ways to address a rushed start, protect rest and seek support for persistent daily tiredness.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/best-morning-habits-for-more-energy.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "how-to-stop-procrastinating-immediately",
+    "title": "How to Stop Procrastinating Immediately: 5 Feasible First Responses",
+    "shortText": "How to stop procrastinating immediately: choose among five first responses without forcing a countdown, ignoring a dependency or promising the delay ends now.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/how-to-stop-procrastinating-immediately.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "how-to-calm-your-mind-instantly",
+    "title": "How to Calm Your Mind Instantly: 5 Choices for an Overwhelming Moment",
+    "shortText": "How to calm your mind instantly: choose among five practical responses to an overwhelming moment without a deadline for relief or a promise to reset your brain.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-calm-your-mind-instantly.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "how-to-focus-without-distractions",
+    "title": "How to Focus Without Distractions: 5 Environment Checks",
+    "shortText": "How to focus without distractions: use environment checks to identify one avoidable obstacle while keeping required contact and accessibility needs available.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/how-to-focus-without-distractions.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "why-anxiety-feels-physical",
+    "title": "Why Anxiety Feels Physical: 5 Details to Discuss About Body Symptoms",
+    "shortText": "Why anxiety feels physical: organise five details about body symptoms for a medical conversation without assuming that chest pain or breathlessness is anxiety.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/why-anxiety-feels-physical.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "best-focus-techniques-for-students",
+    "title": "Best Focus Techniques for Students: 5 Checks for a Useful Study Session",
+    "shortText": "Best focus techniques for students: use checks for a learning task, retrieval, feedback and spaced review rather than judging study by time or promising grades.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/best-focus-techniques-for-students.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "why-you-feel-emotionally-numb",
+    "title": "Why You Feel Emotionally Numb: 5 Details to Share When Seeking Support",
+    "shortText": "Why you feel emotionally numb: prepare key details about changes in feeling and daily life for a care conversation without diagnosing yourself from a checklist.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/why-you-feel-emotionally-numb.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "signs-of-mental-burnout-and-how-to-recover",
+    "title": "Signs of Mental Burnout and How to Recover: 5 Support Questions",
+    "shortText": "Signs of mental burnout and how to recover: use five questions to discuss work demands and health concerns, without diagnosing yourself or setting a deadline.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/signs-of-mental-burnout-and-how-to-recover.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "why-discipline-beats-motivation",
+    "title": "Why Discipline Beats Motivation: 5 Assumptions to Reconsider",
+    "shortText": "Why discipline beats motivation: examine five assumptions about commitment, interest and circumstances without treating a slogan as a universal scientific rule.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/why-discipline-beats-motivation.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "simple-morning-habits",
+    "title": "7 Simple Morning Habits to Try",
+    "shortText": "Try seven simple morning habits to prepare for your first tasks after waking, with flexible options for busy days, shift work and changing responsibilities.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/simple-morning-habits.html",
+    "date": "2026-07-21"
+  },
+  {
+    "id": "how-to-create-a-productive-routine",
+    "title": "How to Create a Productive Routine: 5 Sequence Checks",
+    "shortText": "How to create a productive routine: use five sequence checks to connect a starting situation, available action and a stopping point without a habit deadline.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/how-to-create-a-productive-routine.html",
+    "date": "2026-07-21"
   },
   {
     "id": "best-productivity-systems-explained",
@@ -304,115 +440,11 @@
     "date": "2026-07-21"
   },
   {
-    "id": "deep-work-techniques",
-    "title": "Deep Work Techniques: 5 Checks for a Defined Deliverable",
-    "shortText": "Deep work techniques: use five checks for a defined deliverable, usable working conditions and a useful stopping point, without promising flow or brain changes.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/deep-work-techniques.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "signs-of-mental-burnout-and-how-to-recover",
-    "title": "Signs of Mental Burnout and How to Recover: 5 Support Questions",
-    "shortText": "Signs of mental burnout and how to recover: use five questions to discuss work demands and health concerns, without diagnosing yourself or setting a deadline.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/signs-of-mental-burnout-and-how-to-recover.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "how-to-stop-procrastinating-immediately",
-    "title": "How to Stop Procrastinating Immediately: 5 Feasible First Responses",
-    "shortText": "How to stop procrastinating immediately: choose among five first responses without forcing a countdown, ignoring a dependency or promising the delay ends now.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/how-to-stop-procrastinating-immediately.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "best-focus-techniques-for-students",
-    "title": "Best Focus Techniques for Students: 5 Checks for a Useful Study Session",
-    "shortText": "Best focus techniques for students: use checks for a learning task, retrieval, feedback and spaced review rather than judging study by time or promising grades.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/best-focus-techniques-for-students.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "simple-morning-habits",
-    "title": "7 Simple Morning Habits to Try",
-    "shortText": "Try seven simple morning habits to prepare for your first tasks after waking, with flexible options for busy days, shift work and changing responsibilities.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/simple-morning-habits.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "daily-self-care-routine",
-    "title": "Daily Self-Care Routine: 7 Ways to Match Care to a Real Need",
-    "shortText": "A daily self care routine can start with one unmet need. Review seven care options, practical barriers and support, without buying products or chasing streaks.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/daily-self-care-routine.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "emotional-burnout-recovery",
-    "title": "Emotional Burnout Recovery: 5 Questions About Care and Demands",
-    "shortText": "Emotional burnout recovery: use five questions to discuss symptoms, demands and support, without diagnosing the cause or setting a fixed timetable for recovery.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/emotional-burnout-recovery.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "how-to-improve-mental-clarity",
-    "title": "How to Improve Mental Clarity: 5 Details for a Care Conversation",
-    "shortText": "How to improve mental clarity: prepare five details about changes in thinking and daily activities without self-diagnosing brain fog or delaying medical help.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-improve-mental-clarity.html",
-    "date": "2026-07-21"
-  },
-  {
     "id": "why-you-feel-tired-all-the-time",
     "title": "Why You Feel Tired All the Time: 5 Points for an Appointment",
     "shortText": "Why you feel tired all the time needs an individual explanation. Prepare five points about symptoms, sleep and health changes without self-diagnosing online.",
     "category": "productivity",
     "url": "https://nichehubpro.com/articles/why-you-feel-tired-all-the-time.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "how-to-create-a-productive-routine",
-    "title": "How to Create a Productive Routine: 5 Sequence Checks",
-    "shortText": "How to create a productive routine: use five sequence checks to connect a starting situation, available action and a stopping point without a habit deadline.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/how-to-create-a-productive-routine.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "how-to-focus-better-at-work",
-    "title": "How to Focus Better at Work: 5 Task-Clarity Questions",
-    "shortText": "How to focus better at work: ask five task-clarity questions about the result, inputs and decisions needed before adding a focus routine to an already busy day.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/how-to-focus-better-at-work.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "how-to-stop-procrastination",
-    "title": "How to Stop Procrastination: 5 Questions Before Your Next Attempt",
-    "shortText": "How to stop procrastination: ask five questions about a delayed task, clarify the next action and needed support, without promising a fixed recovery timetable.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/how-to-stop-procrastination.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "pomodoro-technique-explained-for-beginners",
-    "title": "Pomodoro Technique Explained for Beginners: 5 Timer Questions",
-    "shortText": "Pomodoro technique explained for beginners: ask five timer questions about tasks, pauses and interruptions before choosing whether timed work fits your needs.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/pomodoro-technique-explained-for-beginners.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "how-to-track-progress-toward-goals",
-    "title": "How to Track Progress Toward Goals: 7 Fields for a Useful Record",
-    "shortText": "Learn how to track progress toward goals with seven fields for actions, outcomes and barriers, so each review informs a decision without requiring streaks.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-track-progress-toward-goals.html",
     "date": "2026-07-21"
   },
   {
@@ -424,6 +456,14 @@
     "date": "2026-07-21"
   },
   {
+    "id": "benefits-of-walking-every-day",
+    "title": "7 Benefits of Walking Every Day to Consider",
+    "shortText": "Explore seven potential benefits of walking every day, plus practical ideas for starting safely and adapting movement to your own needs and abilities. Practical",
+    "category": "healthy_lifestyle",
+    "url": "https://nichehubpro.com/articles/benefits-of-walking-every-day.html",
+    "date": "2026-07-21"
+  },
+  {
     "id": "how-to-control-your-thoughts",
     "title": "How to Control Your Thoughts: 5 Choices About Your Next Response",
     "shortText": "Learn how to control your thoughts as choosing a useful response, with five options for checking a situation and seeking support without forcing mental silence.",
@@ -432,35 +472,19 @@
     "date": "2026-07-21"
   },
   {
-    "id": "how-to-stop-catastrophic-thinking",
-    "title": "7 Ways to Respond to Catastrophic Thinking",
-    "shortText": "How to stop catastrophic thinking: consider seven ways to respond to difficult predictions, check known facts and seek support when distress affects daily life.",
+    "id": "how-to-track-progress-toward-goals",
+    "title": "How to Track Progress Toward Goals: 7 Fields for a Useful Record",
+    "shortText": "Learn how to track progress toward goals with seven fields for actions, outcomes and barriers, so each review informs a decision without requiring streaks.",
     "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-stop-catastrophic-thinking.html",
+    "url": "https://nichehubpro.com/articles/how-to-track-progress-toward-goals.html",
     "date": "2026-07-21"
   },
   {
-    "id": "why-anxiety-feels-physical",
-    "title": "7 Reasons Why Anxiety Feels Physical and What Your Body Is Actually Telling You",
-    "shortText": "Discover why anxiety feels physical, what body signals can mean, and when to use calming skills or seek professional help for new or persistent symptoms safely.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/why-anxiety-feels-physical.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "why-discipline-beats-motivation",
-    "title": "Why Discipline Beats Motivation: 5 Assumptions to Reconsider",
-    "shortText": "Why discipline beats motivation: examine five assumptions about commitment, interest and circumstances without treating a slogan as a universal scientific rule.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/why-discipline-beats-motivation.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "best-morning-habits-for-more-energy",
-    "title": "Best Morning Habits for More Energy: 7 Options for a Rushed Start",
-    "shortText": "Explore the best morning habits for more energy as seven optional ways to address a rushed start, protect rest and seek support for persistent daily tiredness.",
+    "id": "deep-work-techniques",
+    "title": "Deep Work Techniques: 5 Checks for a Defined Deliverable",
+    "shortText": "Deep work techniques: use five checks for a defined deliverable, usable working conditions and a useful stopping point, without promising flow or brain changes.",
     "category": "productivity",
-    "url": "https://nichehubpro.com/articles/best-morning-habits-for-more-energy.html",
+    "url": "https://nichehubpro.com/articles/deep-work-techniques.html",
     "date": "2026-07-21"
   },
   {
@@ -472,35 +496,11 @@
     "date": "2026-07-21"
   },
   {
-    "id": "benefits-of-walking-every-day",
-    "title": "7 Benefits of Walking Every Day to Consider",
-    "shortText": "Explore seven potential benefits of walking every day, plus practical ideas for starting safely and adapting movement to your own needs and abilities. Practical",
-    "category": "healthy_lifestyle",
-    "url": "https://nichehubpro.com/articles/benefits-of-walking-every-day.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "how-to-focus-without-distractions",
-    "title": "How to Focus Without Distractions: 5 Environment Checks",
-    "shortText": "How to focus without distractions: use environment checks to identify one avoidable obstacle while keeping required contact and accessibility needs available.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/how-to-focus-without-distractions.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "how-to-calm-your-mind-instantly",
-    "title": "7 Ways to Calm an Overwhelmed Mind Safely",
-    "shortText": "Learn seven gentle ways to calm an overwhelmed mind, use grounding safely, and recognize when persistent anxiety needs professional support and care each day.",
+    "id": "how-to-stop-catastrophic-thinking",
+    "title": "How to Stop Catastrophic Thinking: 5 Questions About a Worst-Case Prediction",
+    "shortText": "How to stop catastrophic thinking: examine five parts of a worst-case prediction and choose a proportionate next response without forcing a positive conclusion.",
     "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-calm-your-mind-instantly.html",
-    "date": "2026-07-21"
-  },
-  {
-    "id": "why-you-feel-emotionally-numb",
-    "title": "Why You Feel Emotionally Numb: 5 Steps to Find Support",
-    "shortText": "Why you feel emotionally numb: understand possible explanations, track changes, prepare for a healthcare visit and choose daily support without self-diagnosis.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/why-you-feel-emotionally-numb.html",
+    "url": "https://nichehubpro.com/articles/how-to-stop-catastrophic-thinking.html",
     "date": "2026-07-21"
   },
   {
@@ -536,14 +536,6 @@
     "date": "2026-07-17"
   },
   {
-    "id": "how-to-build-a-productivity-system-with-apps",
-    "title": "How to Build a Productivity System with Apps in 2026 (Step-by-Step)",
-    "shortText": "How to build a productivity system with apps: organise task capture, planning and review around your work, without expecting an app to solve every obstacle.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/how-to-build-a-productivity-system-with-apps.html",
-    "date": "2026-07-15"
-  },
-  {
     "id": "why-you-feel-lost-in-life",
     "title": "Why You Feel Lost in Life: 5 Questions Before a Big Decision",
     "shortText": "Why you feel lost in life may have several explanations. Use five questions to clarify needs, uncertainty and support before making a major personal change.",
@@ -557,6 +549,14 @@
     "shortText": "Compare free productivity apps for Android with official sources, plan limits, offline notes, and a practical checklist to choose a tool that fits your workday.",
     "category": "productivity",
     "url": "https://nichehubpro.com/articles/best-free-productivity-apps-for-android-2026.html",
+    "date": "2026-07-15"
+  },
+  {
+    "id": "how-to-build-a-productivity-system-with-apps",
+    "title": "How to Build a Productivity System with Apps in 2026 (Step-by-Step)",
+    "shortText": "How to build a productivity system with apps: organise task capture, planning and review around your work, without expecting an app to solve every obstacle.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/how-to-build-a-productivity-system-with-apps.html",
     "date": "2026-07-15"
   },
   {
@@ -673,8 +673,8 @@
   },
   {
     "id": "why-you-feel-mentally-drained",
-    "title": "Mentally Drained? 5 Signs and Practical Ways to Recover",
-    "shortText": "Feeling mentally drained? Learn 5 common signs, practical recovery steps, and when persistent mental fatigue deserves professional support and care as needed.",
+    "title": "Why You Feel Mentally Drained: 5 Questions About Changes in Daily Life",
+    "shortText": "Why you feel mentally drained: describe five changes in activities, timing and demands for a support conversation without assuming a depleted brain-energy tank.",
     "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/why-you-feel-mentally-drained.html",
     "date": "2026-06-15"
@@ -705,8 +705,8 @@
   },
   {
     "id": "how-to-recover-from-emotional-burnout",
-    "title": "5 Ways to Recover From Emotional Burnout: Your Path Back to Yourself",
-    "shortText": "How to recover from emotional burnout: consider five support options and practical changes, and seek suitable care when symptoms persist or affect daily life.",
+    "title": "How to Recover From Emotional Burnout: 5 Support Decisions Beyond a Label",
+    "shortText": "How to recover from emotional burnout: make five support decisions about exhaustion, demands and care without a self-diagnosis or a fixed recovery timetable.",
     "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-recover-from-emotional-burnout.html",
     "date": "2026-06-08"
@@ -737,8 +737,8 @@
   },
   {
     "id": "why-you-always-feel-stressed",
-    "title": "5 Possible Contributors to Ongoing Stress",
-    "shortText": "Why you always feel stressed can have different explanations. Review 5 possible contributors, practical demands and support without diagnosing yourself online.",
+    "title": "Why You Always Feel Stressed: 5 Context Questions to Bring to a Conversation",
+    "shortText": "Why you always feel stressed: examine five parts of your current circumstances and seek useful support without assuming mindset alone or a cortisol diagnosis.",
     "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/why-you-always-feel-stressed.html",
     "date": "2026-06-03"
@@ -865,16 +865,16 @@
   },
   {
     "id": "how-to-deal-with-toxic-people",
-    "title": "5 Ways to Deal with Toxic People Without Losing Your Peace",
-    "shortText": "Learn how to deal with toxic people and protect your mental energy. practical strategies to set boundaries, recognize toxic signs, and reclaim your peace today.",
+    "title": "How to Deal With Toxic People: 5 Decisions About Behaviour and Safety",
+    "shortText": "How to deal with toxic people: consider five decisions about specific behaviour, safety and support without diagnosing another person or urging confrontation.",
     "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-deal-with-toxic-people.html",
     "date": "2026-05-15"
   },
   {
     "id": "how-to-reduce-anxiety-naturally",
-    "title": "7 Everyday Strategies to Support Anxiety Management",
-    "shortText": "How to reduce anxiety naturally: consider comfortable self-care options, understand their limits, and find guidance on when to seek professional assessment.",
+    "title": "How to Reduce Anxiety Naturally: 5 Questions About Everyday Support",
+    "shortText": "How to reduce anxiety naturally: review five everyday support questions while keeping suitable assessment and treatment available, without a supplement promise.",
     "category": "mental_wellness",
     "url": "https://nichehubpro.com/articles/how-to-reduce-anxiety-naturally.html",
     "date": "2026-05-15"
@@ -888,171 +888,19 @@
     "date": "2026-05-14"
   },
   {
-    "id": "how-to-stop-negative-thoughts",
-    "title": "How to Stop Negative Thoughts: 5 Ways to Respond",
-    "shortText": "Learn how to stop negative thoughts by examining one recurring interpretation, considering evidence and choosing a practical response, with self-help limits.",
+    "id": "how-to-calm-anxiety-quickly",
+    "title": "How to Calm Anxiety Quickly: 5 Choices for a Difficult Morning",
+    "shortText": "How to calm anxiety quickly: consider five morning coping choices, check whether help is needed and avoid treating speed or a perfect routine as the goal today.",
     "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-stop-negative-thoughts.html",
+    "url": "https://nichehubpro.com/articles/how-to-calm-anxiety-quickly.html",
     "date": "2026-04-12"
   },
   {
-    "id": "healthy-lifestyle-tips",
-    "title": "Healthy Lifestyle Tips: 7 Areas to Review Before Adding a Habit",
-    "shortText": "Use healthy lifestyle tips to review seven everyday needs, identify a real barrier and choose suitable support, without treating routines as a health score.",
-    "category": "healthy_lifestyle",
-    "url": "https://nichehubpro.com/articles/healthy-lifestyle-tips.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-relax-your-mind",
-    "title": "5 Ways to Make Space for Mental Rest",
-    "shortText": "How to relax your mind: consider five ways to make room for mental rest, adapt to your situation and seek support when worry or distress affects everyday life.",
+    "id": "how-to-reset-your-life",
+    "title": "How to Reset Your Life: 5 Commitment-Sorting Decisions",
+    "shortText": "How to reset your life: use five commitment-sorting decisions before making broad changes, keeping essential needs, agreements and consequences clearly visible.",
     "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-relax-your-mind.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-build-discipline",
-    "title": "How to Build Discipline: 5 Steps for a Workable Task Plan",
-    "shortText": "Learn how to build discipline with five steps for planning a specific task, reducing practical barriers and restarting after interruptions, without streaks.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/how-to-build-discipline.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-stop-overthinking-at-work",
-    "title": "5 Ways to Stop Overthinking at Work: Reclaim Your Focus and Peace",
-    "shortText": "Learn how to stop overthinking at work with five practical approaches, clear workplace examples, reliable sources, and guidance on when to seek extra support.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-stop-overthinking-at-work.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "fear-of-failure-anxiety",
-    "title": "Fear of Failure Anxiety: 5 Questions Before a Difficult Task",
-    "shortText": "Explore fear of failure anxiety with five questions about a difficult task, realistic preparation and support, without treating mistakes as a personal verdict.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/fear-of-failure-anxiety.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "success-habits",
-    "title": "Success Habits: 5 Questions About What Success Means",
-    "shortText": "Success habits: use five questions to define a result, recognise constraints and choose feedback without promising wealth, status or a universal daily routine.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/success-habits.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-stay-motivated",
-    "title": "How to Stay Motivated: 5 Questions About a Goal You Still Want",
-    "shortText": "How to stay motivated: ask five questions about a goal you want, its demands and available support without promising constant enthusiasm or a dopamine effect.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/how-to-stay-motivated.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "healthy-living-tips",
-    "title": "7 Healthy Living Tips for a Busy Routine",
-    "shortText": "Use seven healthy living tips to plan food, rest, movement and care around real constraints, with practical fallback options for busy or unpredictable days.",
-    "category": "healthy_lifestyle",
-    "url": "https://nichehubpro.com/articles/healthy-living-tips.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-build-confidence",
-    "title": "How to Build Confidence: 5 Steps for a Specific Skill",
-    "shortText": "Explore how to build confidence in one specific skill through realistic preparation, manageable practice and useful feedback, without a fixed result timetable.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-build-confidence.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "improve-daily-routine",
-    "title": "Improve Daily Routine: 5 Checks for a Workable Day",
-    "shortText": "Explore five ways to improve daily routine by reviewing commitments, choosing a workable cue and testing changes around your responsibilities and care needs.",
-    "category": "healthy_lifestyle",
-    "url": "https://nichehubpro.com/articles/improve-daily-routine.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "signs-of-mental-exhaustion",
-    "title": "Signs of Mental Exhaustion: 5 Changes to Discuss",
-    "shortText": "Signs of mental exhaustion: describe five changes in daily life and prepare questions for support, without treating tiredness or a symptom count as a diagnosis.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/signs-of-mental-exhaustion.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "signs-of-anxiety-disorder",
-    "title": "7 Possible Signs of an Anxiety Disorder and When to Seek Help",
-    "shortText": "Learn seven possible signs of an anxiety disorder, how symptoms can affect daily life, and when to seek an evaluation or professional support with care early.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/signs-of-anxiety-disorder.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "daily-wellness-habits",
-    "title": "Daily Wellness Habits: 5 Ways to Plan Everyday Care",
-    "shortText": "Choose daily wellness habits through five areas of everyday care, with practical options for limited time, changing needs and support when symptoms persist.",
-    "category": "healthy_lifestyle",
-    "url": "https://nichehubpro.com/articles/daily-wellness-habits.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-break-negative-thinking",
-    "title": "5 Ways to Respond to Negative Thinking",
-    "shortText": "How to break negative thinking: explore five ways to respond to difficult thought patterns, consider practical next steps and seek support for ongoing distress.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-break-negative-thinking.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-stop-overthinking-at-night",
-    "title": "5 Ways to Stop Overthinking at Night and Finally Sleep",
-    "shortText": "How to stop overthinking at night with calming strategies that quiet racing thoughts, protect sleep, and help you feel more settled before sleep every night.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-stop-overthinking-at-night.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-feel-in-control-of-your-mind",
-    "title": "How to Feel in Control of Your Mind: 5 Decisions Within Reach",
-    "shortText": "How to feel in control of your mind: consider five decisions about attention, action and support, without expecting to control each thought or feeling you have.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-feel-in-control-of-your-mind.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-deal-with-anxiety-daily",
-    "title": "How to Deal With Anxiety Daily: 5 Support Decisions",
-    "shortText": "How to deal with anxiety daily: use five support decisions to plan care, practical help and follow-up without a mandatory routine or a deadline for improvement.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-deal-with-anxiety-daily.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "natural-energy-boosters",
-    "title": "Natural Energy Boosters: 7 Options With Realistic Limits",
-    "shortText": "Compare natural energy boosters with seven realistic options, an obstacle-based planning checklist, and advice on when tiredness needs professional attention.",
-    "category": "healthy_lifestyle",
-    "url": "https://nichehubpro.com/articles/natural-energy-boosters.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "time-management-tips",
-    "title": "Time Management Tips: 5 Decisions for Conflicting Deadlines",
-    "shortText": "Time management tips: use five decisions to clarify conflicting deadlines, dependencies and task ownership, without assuming a planner can create more capacity.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/time-management-tips.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-detox-your-mind",
-    "title": "How to Detox Your Mind: 5 Ways to Sort Concerns Without a Cleanse",
-    "shortText": "How to detox your mind means no literal cleanse. Use five ways to sort worries, identify practical action and seek support without treating thoughts as toxins.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-detox-your-mind.html",
+    "url": "https://nichehubpro.com/articles/how-to-reset-your-life.html",
     "date": "2026-04-12"
   },
   {
@@ -1064,163 +912,11 @@
     "date": "2026-04-12"
   },
   {
-    "id": "how-to-stop-worrying",
-    "title": "5 Ways to Stop Worrying: Reclaim Your Peace Starting Today",
-    "shortText": "How to stop worrying with practical techniques that interrupt anxious thought loops, ease uncertainty, and help you return to what you can control right now.",
+    "id": "how-to-stop-negative-thoughts",
+    "title": "How to Stop Negative Thoughts: 5 Ways to Respond",
+    "shortText": "Learn how to stop negative thoughts by examining one recurring interpretation, considering evidence and choosing a practical response, with self-help limits.",
     "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-stop-worrying.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-stop-anxiety-attacks",
-    "title": "How to Stop Anxiety Attacks: 5 Steps When Fear Feels Overwhelming",
-    "shortText": "Learn how to stop anxiety attacks with five practical coping steps, clear emergency warning signs, and guidance on when to seek professional support and care.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-stop-anxiety-attacks.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-feel-happy-again",
-    "title": "7 Ways to Support Yourself When Happiness Feels Distant",
-    "shortText": "How to feel happy again: consider seven support options, daily care and connection, with professional help when low mood or loss of interest affects your life.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-feel-happy-again.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-improve-your-life",
-    "title": "How to Improve Your Life: 5 Questions for Choosing One Change",
-    "shortText": "How to improve your life: use five questions to choose one change, identify its dependencies and preserve essential needs without a total transformation plan.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-improve-your-life.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "productivity-system",
-    "title": "Productivity System: 5 Checks for Keeping Commitments Visible",
-    "shortText": "Productivity system: use five maintenance checks to keep commitments, next actions and accepted changes visible without copying every task into several tools.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/productivity-system.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-stop-panic-attacks",
-    "title": "How to Stop Panic Attacks: 5 Steps for Support and Follow-Up",
-    "shortText": "How to stop panic attacks has no universal instant answer. Use five steps for safety, your agreed care plan and follow-up, without assuming symptoms are panic.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-stop-panic-attacks.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "morning-routine-for-mental-health",
-    "title": "Morning Routine for Mental Health: 5 Support Handoffs for a Difficult Start",
-    "shortText": "Morning routine for mental health: use support handoffs for a difficult start without making calmness, productivity or a complete routine a condition for care.",
-    "category": "healthy_lifestyle",
-    "url": "https://nichehubpro.com/articles/morning-routine-for-mental-health.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-feel-calm-instantly",
-    "title": "How to Feel Calm Instantly: 5 Gentle Options Without a Quick-Fix Promise",
-    "shortText": "Explore how to feel calm instantly without quick-fix promises: five gentle coping options, a personal support card, and signs that call for medical attention.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-feel-calm-instantly.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "anxiety-before-sleep",
-    "title": "Anxiety Before Sleep: 5 Ways to Give Worries a Next Step",
-    "shortText": "Anxiety before sleep: use five ways to sort evening worries, prepare a useful next step and seek support when sleep problems persist, without a relief deadline.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/anxiety-before-sleep.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "healthy-daily-habits",
-    "title": "7 Healthy Daily Habits to Build Gradually",
-    "shortText": "Build healthy daily habits with seven planning steps: choose one action, set a cue, prepare, adapt and review what fits life without chasing a perfect streak.",
-    "category": "healthy_lifestyle",
-    "url": "https://nichehubpro.com/articles/healthy-daily-habits.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-stop-overthinking",
-    "title": "How to Stop Overthinking: 8 Practical Steps for Calmer Days",
-    "shortText": "Learn how to stop overthinking with 8 practical steps for racing thoughts, worry loops, calmer evenings, and clearer decisions without demanding instant calm.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-stop-overthinking.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-reduce-stress-naturally",
-    "title": "5 Ways to Reduce Stress Naturally: Your Peace Starts Today",
-    "shortText": "How to reduce stress naturally: explore five coping options and everyday support, without promising rapid relief or replacing suitable professional assessment.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-reduce-stress-naturally.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-stay-calm-under-pressure",
-    "title": "How to Stay Calm Under Pressure: 5 Practical Responses",
-    "shortText": "Learn how to stay calm under pressure with five practical response options, clear limits, comfortable pauses and ways to ask for support when demands increase.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-stay-calm-under-pressure.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-sleep-better-naturally",
-    "title": "How to Sleep Better Naturally: 7 Practical Checks for Restless Nights",
-    "shortText": "Learn how to sleep better naturally with 7 practical routine checks, a simple sleep planning worksheet, and guidance on when to ask for professional support.",
-    "category": "healthy_lifestyle",
-    "url": "https://nichehubpro.com/articles/how-to-sleep-better-naturally.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "foods-that-reduce-anxiety",
-    "title": "Foods That Reduce Anxiety: 7 Options Without Cure Claims",
-    "shortText": "Explore foods that reduce anxiety as part of balanced eating, not a cure: seven flexible options, a backup-meal card, and guidance on seeking qualified support.",
-    "category": "healthy_lifestyle",
-    "url": "https://nichehubpro.com/articles/foods-that-reduce-anxiety.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "habit-building-system",
-    "title": "Habit Building System: 5 Fields for Reviewing One Repeated Action",
-    "shortText": "Habit building system: use fields to record opportunity, action and obstacle without turning tracking into a score or predicting when a habit becomes automatic.",
-    "category": "productivity",
-    "url": "https://nichehubpro.com/articles/habit-building-system.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "benefits-of-walking-daily",
-    "title": "7 Benefits of Walking Daily to Consider",
-    "shortText": "Explore seven potential benefits of walking daily, plus practical ideas for starting safely and adapting movement to your needs and abilities. Practical steps",
-    "category": "healthy_lifestyle",
-    "url": "https://nichehubpro.com/articles/benefits-of-walking-daily.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-change-your-mindset",
-    "title": "How to Change Your Mindset: 5 Questions About One Interpretation",
-    "shortText": "How to change your mindset: examine questions about one interpretation and a useful response without promising brain rewiring, positivity or permanent change.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-change-your-mindset.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-calm-anxiety-quickly",
-    "title": "How to Calm Anxiety Quickly: 5 Choices for a Difficult Morning",
-    "shortText": "How to calm anxiety quickly: consider five morning coping choices, check whether help is needed and avoid treating speed or a perfect routine as the goal today.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-calm-anxiety-quickly.html",
-    "date": "2026-04-12"
-  },
-  {
-    "id": "how-to-stop-worrying-about-the-future",
-    "title": "How to Stop Worrying About the Future: 7 Planning Questions",
-    "shortText": "Learn how to stop worrying about the future with seven useful questions that separate practical problems from uncertainty, with options for support and review.",
-    "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-stop-worrying-about-the-future.html",
+    "url": "https://nichehubpro.com/articles/how-to-stop-negative-thoughts.html",
     "date": "2026-04-12"
   },
   {
@@ -1232,11 +928,315 @@
     "date": "2026-04-12"
   },
   {
-    "id": "how-to-reset-your-life",
-    "title": "How to Reset Your Life: 5 Commitment-Sorting Decisions",
-    "shortText": "How to reset your life: use five commitment-sorting decisions before making broad changes, keeping essential needs, agreements and consequences clearly visible.",
+    "id": "how-to-build-discipline",
+    "title": "How to Build Discipline: 5 Steps for a Workable Task Plan",
+    "shortText": "Learn how to build discipline with five steps for planning a specific task, reducing practical barriers and restarting after interruptions, without streaks.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/how-to-build-discipline.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-feel-happy-again",
+    "title": "How to Feel Happy Again: 5 Support Choices When Enjoyment Feels Distant",
+    "shortText": "How to feel happy again: consider five support choices when enjoyment feels distant, without forcing gratitude or treating a routine as depression treatment.",
     "category": "mental_wellness",
-    "url": "https://nichehubpro.com/articles/how-to-reset-your-life.html",
+    "url": "https://nichehubpro.com/articles/how-to-feel-happy-again.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-detox-your-mind",
+    "title": "How to Detox Your Mind: 5 Ways to Sort Concerns Without a Cleanse",
+    "shortText": "How to detox your mind means no literal cleanse. Use five ways to sort worries, identify practical action and seek support without treating thoughts as toxins.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-detox-your-mind.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-build-confidence",
+    "title": "How to Build Confidence: 5 Steps for a Specific Skill",
+    "shortText": "Explore how to build confidence in one specific skill through realistic preparation, manageable practice and useful feedback, without a fixed result timetable.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-build-confidence.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-feel-calm-instantly",
+    "title": "How to Feel Calm Instantly: 5 Support Requests Before a Pressured Event",
+    "shortText": "How to feel calm instantly: prepare five useful support requests before a pressured event without promising immediate relief or making calm a performance test.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-feel-calm-instantly.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-stop-overthinking-at-night",
+    "title": "How to Stop Overthinking at Night: 5 Questions Before Another Review",
+    "shortText": "How to stop overthinking at night: separate five night concerns from decisions that can wait, without promising quick sleep or making a worry ritual compulsory.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-stop-overthinking-at-night.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-stop-worrying-about-the-future",
+    "title": "How to Stop Worrying About the Future: 7 Planning Questions",
+    "shortText": "Learn how to stop worrying about the future with seven useful questions that separate practical problems from uncertainty, with options for support and review.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-stop-worrying-about-the-future.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-stay-motivated",
+    "title": "How to Stay Motivated: 5 Questions About a Goal You Still Want",
+    "shortText": "How to stay motivated: ask five questions about a goal you want, its demands and available support without promising constant enthusiasm or a dopamine effect.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/how-to-stay-motivated.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-improve-your-life",
+    "title": "How to Improve Your Life: 5 Questions for Choosing One Change",
+    "shortText": "How to improve your life: use five questions to choose one change, identify its dependencies and preserve essential needs without a total transformation plan.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-improve-your-life.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "foods-that-reduce-anxiety",
+    "title": "Foods That Reduce Anxiety: 7 Options Without Cure Claims",
+    "shortText": "Explore foods that reduce anxiety as part of balanced eating, not a cure: seven flexible options, a backup-meal card, and guidance on seeking qualified support.",
+    "category": "healthy_lifestyle",
+    "url": "https://nichehubpro.com/articles/foods-that-reduce-anxiety.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-stop-panic-attacks",
+    "title": "How to Stop Panic Attacks: 5 Steps for Support and Follow-Up",
+    "shortText": "How to stop panic attacks has no universal instant answer. Use five steps for safety, your agreed care plan and follow-up, without assuming symptoms are panic.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-stop-panic-attacks.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-break-negative-thinking",
+    "title": "How to Break Negative Thinking: 5 Ways to Examine One Interpretation",
+    "shortText": "How to break negative thinking: examine five parts of one interpretation without forcing positive thoughts or treating brief reflection as a cure for distress.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-break-negative-thinking.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-change-your-mindset",
+    "title": "How to Change Your Mindset: 5 Questions About One Interpretation",
+    "shortText": "How to change your mindset: examine questions about one interpretation and a useful response without promising brain rewiring, positivity or permanent change.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-change-your-mindset.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "success-habits",
+    "title": "Success Habits: 5 Questions About What Success Means",
+    "shortText": "Success habits: use five questions to define a result, recognise constraints and choose feedback without promising wealth, status or a universal daily routine.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/success-habits.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "healthy-daily-habits",
+    "title": "7 Healthy Daily Habits to Build Gradually",
+    "shortText": "Build healthy daily habits with seven planning steps: choose one action, set a cue, prepare, adapt and review what fits life without chasing a perfect streak.",
+    "category": "healthy_lifestyle",
+    "url": "https://nichehubpro.com/articles/healthy-daily-habits.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "natural-energy-boosters",
+    "title": "Natural Energy Boosters: 7 Options With Realistic Limits",
+    "shortText": "Compare natural energy boosters with seven realistic options, an obstacle-based planning checklist, and advice on when tiredness needs professional attention.",
+    "category": "healthy_lifestyle",
+    "url": "https://nichehubpro.com/articles/natural-energy-boosters.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-stop-anxiety-attacks",
+    "title": "How to Stop Anxiety Attacks: 5 Support Decisions for Intense Fear",
+    "shortText": "How to stop anxiety attacks: consider five support decisions for intense fear, including urgent assessment when needed, without assuming every episode is panic.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-stop-anxiety-attacks.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-stop-overthinking-at-work",
+    "title": "How to Stop Overthinking at Work: 5 Clarifications Before Another Revision",
+    "shortText": "How to stop overthinking at work: ask five clear questions about scope, feedback and authority before another revision, without assuming every delay is anxiety.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-stop-overthinking-at-work.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "healthy-living-tips",
+    "title": "7 Healthy Living Tips for a Busy Routine",
+    "shortText": "Use seven healthy living tips to plan food, rest, movement and care around real constraints, with practical fallback options for busy or unpredictable days.",
+    "category": "healthy_lifestyle",
+    "url": "https://nichehubpro.com/articles/healthy-living-tips.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "improve-daily-routine",
+    "title": "Improve Daily Routine: 5 Checks for a Workable Day",
+    "shortText": "Explore five ways to improve daily routine by reviewing commitments, choosing a workable cue and testing changes around your responsibilities and care needs.",
+    "category": "healthy_lifestyle",
+    "url": "https://nichehubpro.com/articles/improve-daily-routine.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-stay-calm-under-pressure",
+    "title": "How to Stay Calm Under Pressure: 5 Practical Responses",
+    "shortText": "Learn how to stay calm under pressure with five practical response options, clear limits, comfortable pauses and ways to ask for support when demands increase.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-stay-calm-under-pressure.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-deal-with-anxiety-daily",
+    "title": "How to Deal With Anxiety Daily: 5 Support Decisions",
+    "shortText": "How to deal with anxiety daily: use five support decisions to plan care, practical help and follow-up without a mandatory routine or a deadline for improvement.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-deal-with-anxiety-daily.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "anxiety-before-sleep",
+    "title": "Anxiety Before Sleep: 5 Ways to Give Worries a Next Step",
+    "shortText": "Anxiety before sleep: use five ways to sort evening worries, prepare a useful next step and seek support when sleep problems persist, without a relief deadline.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/anxiety-before-sleep.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "signs-of-mental-exhaustion",
+    "title": "Signs of Mental Exhaustion: 5 Changes to Discuss",
+    "shortText": "Signs of mental exhaustion: describe five changes in daily life and prepare questions for support, without treating tiredness or a symptom count as a diagnosis.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/signs-of-mental-exhaustion.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-feel-in-control-of-your-mind",
+    "title": "How to Feel in Control of Your Mind: 5 Decisions Within Reach",
+    "shortText": "How to feel in control of your mind: consider five decisions about attention, action and support, without expecting to control each thought or feeling you have.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-feel-in-control-of-your-mind.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-sleep-better-naturally",
+    "title": "How to Sleep Better Naturally: 7 Practical Checks for Restless Nights",
+    "shortText": "Learn how to sleep better naturally with 7 practical routine checks, a simple sleep planning worksheet, and guidance on when to ask for professional support.",
+    "category": "healthy_lifestyle",
+    "url": "https://nichehubpro.com/articles/how-to-sleep-better-naturally.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "signs-of-anxiety-disorder",
+    "title": "Signs of Anxiety Disorder: 5 Areas to Discuss During an Assessment",
+    "shortText": "Signs of anxiety disorder: prepare five areas for an assessment about symptoms and daily life without diagnosing yourself or waiting to meet a checklist score.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/signs-of-anxiety-disorder.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "productivity-system",
+    "title": "Productivity System: 5 Checks for Keeping Commitments Visible",
+    "shortText": "Productivity system: use five maintenance checks to keep commitments, next actions and accepted changes visible without copying every task into several tools.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/productivity-system.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "fear-of-failure-anxiety",
+    "title": "Fear of Failure Anxiety: 5 Questions Before a Difficult Task",
+    "shortText": "Explore fear of failure anxiety with five questions about a difficult task, realistic preparation and support, without treating mistakes as a personal verdict.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/fear-of-failure-anxiety.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-relax-your-mind",
+    "title": "How to Relax Your Mind: 5 Checks for a Low-Pressure Rest Activity",
+    "shortText": "How to relax your mind: choose a suitable rest activity with five practical checks, without requiring an empty mind, a perfect routine or a biological reset.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-relax-your-mind.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "daily-wellness-habits",
+    "title": "Daily Wellness Habits: 5 Ways to Plan Everyday Care",
+    "shortText": "Choose daily wellness habits through five areas of everyday care, with practical options for limited time, changing needs and support when symptoms persist.",
+    "category": "healthy_lifestyle",
+    "url": "https://nichehubpro.com/articles/daily-wellness-habits.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "habit-building-system",
+    "title": "Habit Building System: 5 Fields for Reviewing One Repeated Action",
+    "shortText": "Habit building system: use fields to record opportunity, action and obstacle without turning tracking into a score or predicting when a habit becomes automatic.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/habit-building-system.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "time-management-tips",
+    "title": "Time Management Tips: 5 Decisions for Conflicting Deadlines",
+    "shortText": "Time management tips: use five decisions to clarify conflicting deadlines, dependencies and task ownership, without assuming a planner can create more capacity.",
+    "category": "productivity",
+    "url": "https://nichehubpro.com/articles/time-management-tips.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-stop-worrying",
+    "title": "How to Stop Worrying: 5 Routes for One Recurring Concern",
+    "shortText": "How to stop worrying: choose among five routes for one recurring concern, separating action from uncertainty without promising a worry-free day or full control.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-stop-worrying.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-reduce-stress-naturally",
+    "title": "How to Reduce Stress Naturally: 5 Responses Beyond a Calming Ritual",
+    "shortText": "How to reduce stress naturally: use five practical support responses to a real demand without supplements, a cortisol claim or a promise of a stress-free life.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-reduce-stress-naturally.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "benefits-of-walking-daily",
+    "title": "7 Benefits of Walking Daily to Consider",
+    "shortText": "Explore seven potential benefits of walking daily, plus practical ideas for starting safely and adapting movement to your needs and abilities. Practical steps",
+    "category": "healthy_lifestyle",
+    "url": "https://nichehubpro.com/articles/benefits-of-walking-daily.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "healthy-lifestyle-tips",
+    "title": "Healthy Lifestyle Tips: 7 Areas to Review Before Adding a Habit",
+    "shortText": "Use healthy lifestyle tips to review seven everyday needs, identify a real barrier and choose suitable support, without treating routines as a health score.",
+    "category": "healthy_lifestyle",
+    "url": "https://nichehubpro.com/articles/healthy-lifestyle-tips.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "morning-routine-for-mental-health",
+    "title": "Morning Routine for Mental Health: 5 Support Handoffs for a Difficult Start",
+    "shortText": "Morning routine for mental health: use support handoffs for a difficult start without making calmness, productivity or a complete routine a condition for care.",
+    "category": "healthy_lifestyle",
+    "url": "https://nichehubpro.com/articles/morning-routine-for-mental-health.html",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "how-to-stop-overthinking",
+    "title": "How to Stop Overthinking: 8 Practical Steps for Calmer Days",
+    "shortText": "Learn how to stop overthinking with 8 practical steps for racing thoughts, worry loops, calmer evenings, and clearer decisions without demanding instant calm.",
+    "category": "mental_wellness",
+    "url": "https://nichehubpro.com/articles/how-to-stop-overthinking.html",
     "date": "2026-04-12"
   }
 ]
