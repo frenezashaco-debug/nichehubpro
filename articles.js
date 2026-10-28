@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "what-deep-work-really-requires-beyond-just-focus",
+    "title": "What Deep Work Really Requires Beyond Just Focus: 5 Practical Checks",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Oct 2026",
+    "read_time": "8",
+    "excerpt": "What deep work really requires beyond just focus is a question most productivity advice skips entirely.",
+    "image": "images/what-deep-work-really-requires-beyond-just-focus.jpg",
+    "alt": "Man writing notes at desk, deep work session in morning light",
+    "pins": [
+      {
+        "title": "How to Set Up Real Deep Work Conditions in 5 Checks",
+        "description": "What deep work really requires beyond just focus is a set of conditions, not just a quiet room. These 5 practical checks help you prepare your environment, energy, and task before every session. Save this and run through it before your next focused block."
+      },
+      {
+        "title": "Stop Blaming Your Focus - Your Deep Work Setup May Be the Problem",
+        "description": "If deep work keeps stalling, the issue is often the conditions, not your concentration. Understanding what deep work requirements actually include can shift how you approach every session. Pin this as a reminder to check before you sit down."
+      },
+      {
+        "title": "Try This Before Your Next Deep Work Session",
+        "description": "Write one sentence describing what finished looks like. That single step addresses one of the most common reasons deep work sessions stall. These 5 checks show what you actually need to do real deep work consistently."
+      }
+    ]
+  },
+  {
     "slug": "how-to-protect-your-mental-energy-like-a-finite-resource",
     "title": "How to Protect Your Mental Energy Like a Finite Resource: 5 Demand Checks",
     "category": "Mental Wellness",
