@@ -1,4 +1,4 @@
-import os, json, re
+import os, json, re, argparse
 from html import unescape
 from datetime import datetime
 
@@ -80,11 +80,14 @@ def parse_article(file_path, slug):
     }
 
 def main():
+    parser = argparse.ArgumentParser(description='Generate or verify the public article catalogue.')
+    parser.add_argument('--check', action='store_true', help='Fail if the catalogue differs from the published HTML files.')
+    args = parser.parse_args()
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     articles_dir = os.path.join(root, 'articles')
     articles = []
 
-    for filename in os.listdir(articles_dir):
+    for filename in sorted(os.listdir(articles_dir)):
         if not filename.endswith('.html'):
             continue
         slug = filename[:-5]  # remove .html
@@ -92,10 +95,24 @@ def main():
         article = parse_article(file_path, slug)
         if article:
             articles.append(article)
+        else:
+            raise ValueError('Cannot catalogue published article: ' + filename)
 
     articles.sort(key=lambda x: x['date'], reverse=True)
 
     out = os.path.join(root, 'api', 'articles.json')
+    if args.check:
+        with open(out, 'r', encoding='utf-8') as f:
+            existing = json.load(f)
+        if existing != articles:
+            expected_ids = {row['id'] for row in articles}
+            actual_ids = {row['id'] for row in existing}
+            raise SystemExit('Article catalogue is out of sync. Missing: ' +
+                             ', '.join(sorted(expected_ids - actual_ids)) +
+                             '; stale: ' + ', '.join(sorted(actual_ids - expected_ids)) +
+                             '. Regenerate it before publication.')
+        print('PASS - all ' + str(len(articles)) + ' published articles match api/articles.json')
+        return
     os.makedirs(os.path.dirname(out), exist_ok=True)
     with open(out, 'w', encoding='utf-8') as f:
         json.dump(articles, f, indent=2, ensure_ascii=False)

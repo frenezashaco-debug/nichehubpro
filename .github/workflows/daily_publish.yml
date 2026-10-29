@@ -88,6 +88,13 @@ jobs:
           if-no-files-found: ignore
           retention-days: 7
 
+      # GITHUB_TOKEN pushes do not trigger the separate push-based catalogue workflow.
+      # Publish HTML and its API catalogue atomically in this workflow instead.
+      - name: Synchronize article catalogue
+        run: |
+          python scripts/generate_articles_json.py
+          python scripts/generate_articles_json.py --check
+
       - name: Commit and push
         id: publication
         run: |

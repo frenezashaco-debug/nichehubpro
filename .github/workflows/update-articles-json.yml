@@ -25,6 +25,8 @@ jobs:
 
       - run: python scripts/generate_articles_json.py
 
+      - run: python scripts/generate_articles_json.py --check
+
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
