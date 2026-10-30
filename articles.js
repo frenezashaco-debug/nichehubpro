@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-build-a-recovery-routine-after-high-stress-days",
+    "title": "How to Build a Recovery Routine After High Stress Days: 5 Practical Checks",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Oct 2026",
+    "read_time": "8",
+    "excerpt": "How to build a recovery routine after high stress days is a question worth taking seriously. When your body and mind have been running on high alert,...",
+    "image": "images/how-to-build-a-recovery-routine-after-high-stress-days.jpg",
+    "alt": "Man unwinding with warm drink after high stress day",
+    "pins": [
+      {
+        "title": "How to Build a Recovery Routine After High Stress Days (5 Checks)",
+        "description": "Not sure how to recover physically and mentally after a stressful day? These 5 practical checks help you build a stress recovery routine that actually fits your evenings. No overhaul needed - just one reliable sequence to try tonight."
+      },
+      {
+        "title": "Stop Carrying Yesterday's Stress Into Today - Try This",
+        "description": "When high-stress days stack up, your body pays the price. A simple stress recovery routine can help break the cycle without adding more to your to-do list. Save this for the next time you need a place to start."
+      },
+      {
+        "title": "Try This 5-Step Stress Recovery Routine After a Hard Day",
+        "description": "Learning how to build a recovery routine after high stress days does not have to be complicated. These 5 checks cover sleep, movement, food, tension, and mindset - all in one easy evening sequence worth pinning."
+      }
+    ]
+  },
+  {
     "slug": "what-deep-work-really-requires-beyond-just-focus",
     "title": "What Deep Work Really Requires Beyond Just Focus: 5 Practical Checks",
     "category": "Productivity",
