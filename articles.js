@@ -8,7 +8,7 @@ const ARTICLES = [
     "cat_slug": "healthy-lifestyle",
     "date": "Oct 2026",
     "read_time": "8",
-    "excerpt": "How to build a recovery routine after high stress days is a question worth taking seriously. When your body and mind have been running on high alert,...",
+    "excerpt": "Learn how to build a recovery routine after high stress days with 5 practical checks to help you recover physically and mentally after a stressful day. Read on.",
     "image": "images/how-to-build-a-recovery-routine-after-high-stress-days.jpg",
     "alt": "Man unwinding with warm drink after high stress day",
     "pins": [
@@ -33,7 +33,7 @@ const ARTICLES = [
     "cat_slug": "productivity",
     "date": "Oct 2026",
     "read_time": "8",
-    "excerpt": "What deep work really requires beyond just focus is a question most productivity advice skips entirely.",
+    "excerpt": "What deep work really requires beyond just focus is more than silence. These 5 practical checks show what you actually need for real deep work. Start today.",
     "image": "images/what-deep-work-really-requires-beyond-just-focus.jpg",
     "alt": "Man writing notes at desk, deep work session in morning light",
     "pins": [

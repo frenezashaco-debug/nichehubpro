@@ -498,6 +498,14 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
           <div class="faq-a">{f['answer']}</div>
         </div>"""
 
+    faq_schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{"@type": "Question", "name": f["question"],
+                        "acceptedAnswer": {"@type": "Answer", "text": f["answer"]}}
+                       for f in faq_items],
+    }, ensure_ascii=False).replace("<", "\\u003c")
+
     # Build internal links HTML (max 3)
     related_html = "".join([
         f'<li><a href="../articles/{r["slug"]}.html" style="font-size:0.92rem;font-weight:500;color:var(--dark);">→ {r["anchor"] if "anchor" in r else r.get("title","")}</a></li>'
@@ -562,6 +570,7 @@ def build_html(data, keyword_day, cover_filename, section_images=None):
     "publisher": {{ "@type": "Organization", "name": "NicheHubPro", "url": "{SITE_URL}", "logo": {{ "@type": "ImageObject", "url": "{SITE_URL}/favicon.png" }} }}
   }}
   </script>
+  <script type="application/ld+json">{faq_schema}</script>
 
 </head>
 <body>
@@ -1366,9 +1375,9 @@ def register_article(data, cover_filename):
             except Exception:
                 existing = []
 
-    # Build excerpt from intro (first paragraph, max 155 chars)
+    # Keep card copy consistent with the validated article description.
     intro = data.get("intro", "")
-    excerpt = textwrap.shorten(re.sub(r'<[^>]+>', ' ', intro.split("\n")[0]), width=155, placeholder="...") if intro else ""
+    excerpt = data["meta_description"]
 
     # Category slug
     cat_slug = data.get("category", "Mental Wellness").lower().replace(" ", "-")
