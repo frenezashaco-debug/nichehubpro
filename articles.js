@@ -577,17 +577,17 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-a-stress-resistant-morning-routine",
-    "title": "How to Build a Stress-Resistant Morning Routine: 5 Contingency Decisions",
+    "title": "How to Build a Stress-Resistant Morning Routine: 5 Practical Checks",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Aug 2026",
-    "read_time": "5",
-    "excerpt": "How to build a stress-resistant morning routine: make five contingency decisions for disruptions without promising a stress-proof day or a cortisol change.",
+    "read_time": "8",
+    "excerpt": "How to build a stress-resistant morning routine with 5 practical checks for calmer starts, flexible planning, and support during difficult weekdays at home.",
     "image": "images/how-to-build-a-stress-resistant-morning-routine.jpg",
-    "alt": "Woman seated on a rug beside a sofa",
+    "alt": "Woman seated calmly on a rug beside a sofa in soft morning light",
     "pins": [
       {
-        "title": "How to Build a Stress-Resistant Morning Routine: 5 Contingency Decisions",
+        "title": "How to Build a Stress-Resistant Morning Routine: 5 Practical Checks",
         "description": "How to build a stress-resistant morning routine: make five contingency decisions for disruptions without promising a stress-proof day or a cortisol change."
       },
       {
