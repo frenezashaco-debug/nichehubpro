@@ -182,7 +182,7 @@ const ARTICLES = [
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Oct 2026",
-    "read_time": "5",
+    "read_time": "3",
     "excerpt": "The psychology behind why deadlines make you more productive: test five planning assumptions without treating time pressure as a guarantee of speed or quality.",
     "image": "images/the-psychology-behind-why-deadlines-make-you-more-productive.jpg",
     "alt": "Woman seated at a laptop beside a wall clock",
@@ -192,11 +192,11 @@ const ARTICLES = [
         "description": "The psychology behind why deadlines make you more productive: test five planning assumptions without treating time pressure as a guarantee of speed or quality."
       },
       {
-        "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Assumptions",
+        "title": "Planning checklist: The Psychology Behind Why Deadlines Make You More Productive",
         "description": "The psychology behind why deadlines make you more productive: test five planning assumptions without treating time pressure as a guarantee of speed or quality."
       },
       {
-        "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Assumptions",
+        "title": "Practical questions: The Psychology Behind Why Deadlines Make You More Productive",
         "description": "The psychology behind why deadlines make you more productive: test five planning assumptions without treating time pressure as a guarantee of speed or quality."
       }
     ]
@@ -356,7 +356,7 @@ const ARTICLES = [
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Sep 2026",
-    "read_time": "5",
+    "read_time": "3",
     "excerpt": "How to build energy that lasts all day without crashing: review key support needs without promising constant alertness or diagnosing the cause of a daily slump.",
     "image": "images/how-to-build-energy-that-lasts-all-day-without-crashing.jpg",
     "alt": "Woman eating from a bowl in a kitchen",
@@ -366,11 +366,11 @@ const ARTICLES = [
         "description": "How to build energy that lasts all day without crashing: review key support needs without promising constant alertness or diagnosing the cause of a daily slump."
       },
       {
-        "title": "How to Build Energy That Lasts All Day Without Crashing: 5 Support Checks",
+        "title": "Planning checklist: How to Build Energy That Lasts All Day Without Crashing",
         "description": "How to build energy that lasts all day without crashing: review key support needs without promising constant alertness or diagnosing the cause of a daily slump."
       },
       {
-        "title": "How to Build Energy That Lasts All Day Without Crashing: 5 Support Checks",
+        "title": "Practical questions: How to Build Energy That Lasts All Day Without Crashing",
         "description": "How to build energy that lasts all day without crashing: review key support needs without promising constant alertness or diagnosing the cause of a daily slump."
       }
     ]
@@ -431,7 +431,7 @@ const ARTICLES = [
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Sep 2026",
-    "read_time": "5",
+    "read_time": "3",
     "excerpt": "Why hydration affects your focus more than you think: examine five claim limits without a fixed water target or assuming poor concentration means dehydration.",
     "image": "images/why-hydration-affects-your-focus-more-than-you-think.jpg",
     "alt": "Woman drinking from a glass beside a laptop",
@@ -441,11 +441,11 @@ const ARTICLES = [
         "description": "Why hydration affects your focus more than you think: examine five claim limits without a fixed water target or assuming poor concentration means dehydration."
       },
       {
-        "title": "Why Hydration Affects Your Focus More Than You Think: 5 Claim Checks",
+        "title": "Planning checklist: Why Hydration Affects Your Focus More Than You Think",
         "description": "Why hydration affects your focus more than you think: examine five claim limits without a fixed water target or assuming poor concentration means dehydration."
       },
       {
-        "title": "Why Hydration Affects Your Focus More Than You Think: 5 Claim Checks",
+        "title": "Practical questions: Why Hydration Affects Your Focus More Than You Think",
         "description": "Why hydration affects your focus more than you think: examine five claim limits without a fixed water target or assuming poor concentration means dehydration."
       }
     ]
@@ -681,7 +681,7 @@ const ARTICLES = [
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Aug 2026",
-    "read_time": "5",
+    "read_time": "4",
     "excerpt": "Healthy productivity habits for entrepreneurs: review capacity agreements about workload, availability and help without promising profit or burnout prevention.",
     "image": "images/healthy-productivity-habits-for-entrepreneurs.jpg",
     "alt": "Woman seated at a laptop beside a glass",
@@ -691,11 +691,11 @@ const ARTICLES = [
         "description": "Healthy productivity habits for entrepreneurs: review capacity agreements about workload, availability and help without promising profit or burnout prevention."
       },
       {
-        "title": "Healthy Productivity Habits for Entrepreneurs: 5 Capacity Agreements",
+        "title": "Planning checklist: Healthy Productivity Habits for Entrepreneurs",
         "description": "Healthy productivity habits for entrepreneurs: review capacity agreements about workload, availability and help without promising profit or burnout prevention."
       },
       {
-        "title": "Healthy Productivity Habits for Entrepreneurs: 5 Capacity Agreements",
+        "title": "Practical questions: Healthy Productivity Habits for Entrepreneurs",
         "description": "Healthy productivity habits for entrepreneurs: review capacity agreements about workload, availability and help without promising profit or burnout prevention."
       }
     ]
@@ -1805,7 +1805,7 @@ const ARTICLES = [
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
-    "read_time": "5",
+    "read_time": "3",
     "excerpt": "Healthy habits for busy people: consider practical obstacles and appropriate support without assuming a tiny habit replaces time, access or individual advice.",
     "image": "images/healthy-habits-for-busy-people.jpg",
     "alt": "Woman in a grey sweater looking down",
@@ -1815,11 +1815,11 @@ const ARTICLES = [
         "description": "Healthy habits for busy people: consider practical obstacles and appropriate support without assuming a tiny habit replaces time, access or individual advice."
       },
       {
-        "title": "Healthy Habits for Busy People: 5 Ways to Address a Practical Care Obstacle",
+        "title": "Planning checklist: Healthy Habits for Busy People",
         "description": "Healthy habits for busy people: consider practical obstacles and appropriate support without assuming a tiny habit replaces time, access or individual advice."
       },
       {
-        "title": "Healthy Habits for Busy People: 5 Ways to Address a Practical Care Obstacle",
+        "title": "Practical questions: Healthy Habits for Busy People",
         "description": "Healthy habits for busy people: consider practical obstacles and appropriate support without assuming a tiny habit replaces time, access or individual advice."
       }
     ]
@@ -3030,7 +3030,7 @@ const ARTICLES = [
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "5",
+    "read_time": "3",
     "excerpt": "Natural energy boosters: ask five questions before buying a fix for fatigue, without treating a natural label as proof of safety, usefulness or a diagnosis.",
     "image": "images/natural-energy-boosters.jpg",
     "alt": "Woman stretching her arms near a sunlit window",
@@ -3040,11 +3040,11 @@ const ARTICLES = [
         "description": "Natural energy boosters: ask five questions before buying a fix for fatigue, without treating a natural label as proof of safety, usefulness or a diagnosis."
       },
       {
-        "title": "Natural Energy Boosters: 5 Questions Before Buying a Quick Fix",
+        "title": "Planning checklist: Natural Energy Boosters",
         "description": "Natural energy boosters: ask five questions before buying a fix for fatigue, without treating a natural label as proof of safety, usefulness or a diagnosis."
       },
       {
-        "title": "Natural Energy Boosters: 5 Questions Before Buying a Quick Fix",
+        "title": "Practical questions: Natural Energy Boosters",
         "description": "Natural energy boosters: ask five questions before buying a fix for fatigue, without treating a natural label as proof of safety, usefulness or a diagnosis."
       }
     ]
@@ -3405,7 +3405,7 @@ const ARTICLES = [
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "5",
+    "read_time": "4",
     "excerpt": "How to increase energy naturally: prepare five support requests about ordinary needs and fatigue without a promised boost, a detox or an exercise prescription.",
     "image": "images/how-to-increase-energy-naturally.jpg",
     "alt": "Woman holding a glass in a kitchen",
@@ -3415,11 +3415,11 @@ const ARTICLES = [
         "description": "How to increase energy naturally: prepare five support requests about ordinary needs and fatigue without a promised boost, a detox or an exercise prescription."
       },
       {
-        "title": "How to Increase Energy Naturally: 5 Requests for Practical Support",
+        "title": "Planning checklist: How to Increase Energy Naturally",
         "description": "How to increase energy naturally: prepare five support requests about ordinary needs and fatigue without a promised boost, a detox or an exercise prescription."
       },
       {
-        "title": "How to Increase Energy Naturally: 5 Requests for Practical Support",
+        "title": "Practical questions: How to Increase Energy Naturally",
         "description": "How to increase energy naturally: prepare five support requests about ordinary needs and fatigue without a promised boost, a detox or an exercise prescription."
       }
     ]
@@ -3455,7 +3455,7 @@ const ARTICLES = [
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "5",
+    "read_time": "4",
     "excerpt": "Foods that reduce anxiety: ask five questions about a treatment claim and ordinary food access without replacing care, prescribing exclusions or a cure promise.",
     "image": "images/foods-that-reduce-anxiety-clean-v2.jpg",
     "alt": "Man arranging vegetables, beans and bread on a plate",
@@ -3465,11 +3465,11 @@ const ARTICLES = [
         "description": "Foods that reduce anxiety: ask five questions about a treatment claim and ordinary food access without replacing care, prescribing exclusions or a cure promise."
       },
       {
-        "title": "Foods That Reduce Anxiety: 5 Questions About a Treatment Claim",
+        "title": "Planning checklist: Foods That Reduce Anxiety",
         "description": "Foods that reduce anxiety: ask five questions about a treatment claim and ordinary food access without replacing care, prescribing exclusions or a cure promise."
       },
       {
-        "title": "Foods That Reduce Anxiety: 5 Questions About a Treatment Claim",
+        "title": "Practical questions: Foods That Reduce Anxiety",
         "description": "Foods that reduce anxiety: ask five questions about a treatment claim and ordinary food access without replacing care, prescribing exclusions or a cure promise."
       }
     ]
@@ -3505,7 +3505,7 @@ const ARTICLES = [
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "5",
+    "read_time": "4",
     "excerpt": "How to sleep better naturally: review five questions about sleep difficulty and practical access without a supplement promise, a rigid ritual or replacing care.",
     "image": "images/how-to-sleep-better-naturally.jpg",
     "alt": "Woman reclining in bed beside a window",
@@ -3515,11 +3515,11 @@ const ARTICLES = [
         "description": "How to sleep better naturally: review five questions about sleep difficulty and practical access without a supplement promise, a rigid ritual or replacing care."
       },
       {
-        "title": "How to Sleep Better Naturally: 5 Questions About Access and Appropriate Care",
+        "title": "Planning checklist: How to Sleep Better Naturally",
         "description": "How to sleep better naturally: review five questions about sleep difficulty and practical access without a supplement promise, a rigid ritual or replacing care."
       },
       {
-        "title": "How to Sleep Better Naturally: 5 Questions About Access and Appropriate Care",
+        "title": "Practical questions: How to Sleep Better Naturally",
         "description": "How to sleep better naturally: review five questions about sleep difficulty and practical access without a supplement promise, a rigid ritual or replacing care."
       }
     ]
@@ -3605,7 +3605,7 @@ const ARTICLES = [
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "5",
+    "read_time": "3",
     "excerpt": "How to feel calm instantly: prepare five useful support requests before a pressured event without promising immediate relief or making calm a performance test.",
     "image": "images/how-to-feel-calm-instantly.jpg",
     "alt": "Woman seated on the floor beside a curtain",
@@ -3615,11 +3615,11 @@ const ARTICLES = [
         "description": "How to feel calm instantly: prepare five useful support requests before a pressured event without promising immediate relief or making calm a performance test."
       },
       {
-        "title": "How to Feel Calm Instantly: 5 Support Requests Before a Pressured Event",
+        "title": "Planning checklist: How to Feel Calm Instantly",
         "description": "How to feel calm instantly: prepare five useful support requests before a pressured event without promising immediate relief or making calm a performance test."
       },
       {
-        "title": "How to Feel Calm Instantly: 5 Support Requests Before a Pressured Event",
+        "title": "Practical questions: How to Feel Calm Instantly",
         "description": "How to feel calm instantly: prepare five useful support requests before a pressured event without promising immediate relief or making calm a performance test."
       }
     ]

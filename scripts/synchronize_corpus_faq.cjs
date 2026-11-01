@@ -36,7 +36,9 @@ for (const name of fs.readdirSync(path.join(root, 'articles')).filter(n => n.end
  if (replacements[slug]) {
   const container = h.match(/<div class="(?:faq|faq-section)"[^>]*>/);
   const start = container ? container.index : -1;
-  if (start < 0) throw Error('Missing FAQ container: ' + slug);
+  if (start < 0) {
+   console.warn('Skipping legacy FAQ replacement without a compatible container: ' + slug);
+  } else {
   const tags = /<\/?div\b[^>]*>/g;
   tags.lastIndex = start;
   let depth = 0, end;
@@ -47,6 +49,7 @@ for (const name of fs.readdirSync(path.join(root, 'articles')).filter(n => n.end
   if (!end) throw Error('Unclosed FAQ container: ' + slug);
   const markup = container[0] + (container[0].includes('faq-section') ? '<h2>Frequently Asked Questions</h2>' : '') + replacements[slug].map(([q, a]) => '<div class="faq-item"><button class="faq-q">' + q + '<span class="faq-icon">+</span></button><div class="faq-a">' + a + '</div></div>').join('\n') + '</div>';
   h = h.slice(0, start) + markup + h.slice(end);
+  }
  }
  if (slug === 'why-you-feel-mentally-drained') h = h.replace(/(<div class="faq-item">)<h3>([^<]+)<\/h3>/g, '$1<button class="faq-q">$2<span class="faq-icon">+</span></button>');
  const faqs = [...h.matchAll(/<button\b[^>]*class="faq-q"[^>]*>([\s\S]*?)<span class="faq-icon">[\s\S]*?<div\b[^>]*class="faq-a"[^>]*>([\s\S]*?)<\/div>/g)]
