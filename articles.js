@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-stay-emotionally-steady-during-high-pressure-weeks",
+    "title": "How to Stay Emotionally Steady During High Pressure Weeks: 5 Practical Checks",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Nov 2026",
+    "read_time": "8",
+    "excerpt": "Learn how to stay emotionally steady during high pressure weeks with 5 practical checks that support calm, clear thinking when stress peaks. Read the guide.",
+    "image": "images/how-to-stay-emotionally-steady-during-high-pressure-weeks.jpg",
+    "alt": "Woman sitting quietly with tea managing emotional stability under pressure",
+    "pins": [
+      {
+        "title": "How to Stay Emotionally Steady During High Pressure Weeks",
+        "description": "High pressure weeks drain emotional reserves fast. These 5 practical checks help you spot warning signs early and respond with one small, useful action before stress compounds. Try Check 2 today - it takes under a minute."
+      },
+      {
+        "title": "Stop Losing Emotional Stability the Moment Things Get Busy",
+        "description": "Most people only notice their emotional steadiness is slipping when they are already deep in a spiral. Learn how to catch your personal early warning signs and use a simple daily anchor to stay grounded during hard weeks."
+      },
+      {
+        "title": "Try This 2-Minute End-of-Day Review During Your Next Stressful Week",
+        "description": "A two-minute review before bed can help break the replay loop that keeps you awake during high pressure weeks. Name one thing that went okay, one thing that was hard, and one small action for tomorrow. That is it."
+      }
+    ]
+  },
+  {
     "slug": "how-to-build-a-recovery-routine-after-high-stress-days",
     "title": "How to Build a Recovery Routine After High Stress Days: 5 Practical Checks",
     "category": "Healthy Lifestyle",
