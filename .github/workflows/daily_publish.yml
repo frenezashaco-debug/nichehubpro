@@ -94,6 +94,8 @@ jobs:
         run: |
           python scripts/generate_articles_json.py
           python scripts/generate_articles_json.py --check
+          python scripts/refresh_homepage_latest.py
+          python scripts/refresh_homepage_latest.py --check
 
       - name: Commit and push
         id: publication
