@@ -1081,7 +1081,10 @@ Content type: {'Cornerstone guide' if cornerstone else 'Standard article'}
 
 def repair_section_headings(client, data, errors, primary_kw):
     """One narrow repair attempt; never change section content or bypass validation."""
-    if not errors or any("required definition/signs/why/action/daily order" not in error for error in errors):
+    # Heading order is independent of length, metadata, or wording errors. Repair
+    # it whenever it is present, then let the unchanged full validator decide
+    # whether the candidate still needs the broader editorial repair below.
+    if not any("required definition/signs/why/action/daily order" in error for error in errors):
         return data
     sections = data.get("sections") or []
     if len(sections) != 5:

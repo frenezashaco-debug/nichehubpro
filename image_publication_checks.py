@@ -10,6 +10,11 @@ import re
 from pathlib import Path
 from PIL import Image, ImageOps
 
+try:
+    from json_repair import repair_json
+except ImportError:  # The production workflow installs json-repair explicitly.
+    repair_json = None
+
 SCREENING_TOOL = {
     'name': 'submit_image_screening',
     'description': 'Submit the visual inspection results for all four supplied images.',
@@ -54,7 +59,42 @@ def screen_with_regeneration(client, image_paths, topic, regenerate, attempts=2)
                     raise ValueError('Rejected image was not replaced; publication remains blocked.')
 
 
-def screen_publication_images(client, image_paths, topic):
+def _decode_screening_result(raw):
+    """Decode a non-empty screening response without fabricating approvals."""
+    raw = str(raw or "").strip()
+    if not raw:
+        raise ValueError("empty visual screening response")
+    wrapped = re.fullmatch(r'```(?:json)?\s*([\s\S]*?)\s*```', raw, re.I)
+    if wrapped:
+        raw = wrapped.group(1).strip()
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        if repair_json is None:
+            raise
+        # json-repair only restores JSON syntax. The exact four-image schema and
+        # every explicit approval are still validated below, so it cannot turn a
+        # rejection or an incomplete response into a passing result.
+        return repair_json(raw, return_objects=True)
+
+
+def _has_complete_screening_schema(result):
+    images = result.get('images') if isinstance(result, dict) else None
+    return (
+        isinstance(images, list)
+        and len(images) == 4
+        and all(
+            isinstance(item, dict)
+            and type(item.get('index')) is int
+            and type(item.get('approved')) is bool
+            and isinstance(item.get('issues'), list)
+            for item in images
+        )
+        and {item.get('index') for item in images} == {0, 1, 2, 3}
+    )
+
+
+def screen_publication_images(client, image_paths, topic, format_attempts=4):
     if len(image_paths) != 4:
         raise ValueError('Exactly four images must pass visual screening.')
     hashes = [hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in image_paths]
@@ -81,9 +121,11 @@ def screen_publication_images(client, image_paths, topic):
             {'type': 'image', 'source': {'type': 'base64', 'media_type': 'image/jpeg',
              'data': base64.b64encode(buffer.getvalue()).decode('ascii')}}
         ])
-    # Retry response formatting once, never retry a substantive visual rejection.
-    # Strip a complete Markdown wrapper only; do not invent or repair approvals.
-    for attempt in range(2):
+    # Retry transport/formatting failures, never retry a substantive rejection.
+    # A structured schema is still mandatory before an image can be approved.
+    result = None
+    last_format_error = None
+    for attempt in range(format_attempts):
         response = client.messages.create(model='claude-sonnet-4-6', max_tokens=2400,
             tools=[SCREENING_TOOL],
             tool_choice={'type': 'tool', 'name': SCREENING_TOOL['name'],
@@ -97,17 +139,20 @@ def screen_publication_images(client, image_paths, topic):
                 raise ValueError('Visual screening returned an unexpected tool result.')
             result = calls[0].input
             break
-        raw = ''.join(block.text for block in response.content if getattr(block, 'type', None) == 'text').strip()
-        wrapped = re.fullmatch(r'```(?:json)?\s*([\s\S]*?)\s*```', raw, re.I)
-        if wrapped:
-            raw = wrapped.group(1).strip()
         try:
-            result = json.loads(raw)
+            raw = ''.join(block.text for block in response.content if getattr(block, 'type', None) == 'text')
+            result = _decode_screening_result(raw)
+            if not _has_complete_screening_schema(result):
+                raise ValueError('incomplete visual screening schema')
             break
-        except json.JSONDecodeError:
-            if attempt == 1:
-                raise ValueError('Visual screening returned empty or invalid JSON twice; publication remains blocked.') from None
-            print('Visual screening response format invalid; retrying once on the same four images.')
+        except (TypeError, ValueError, json.JSONDecodeError) as error:
+            last_format_error = error
+            if attempt + 1 == format_attempts:
+                raise ValueError(
+                    f'Visual screening returned empty or invalid JSON after {format_attempts} attempts; '
+                    'publication remains blocked.'
+                ) from None
+            print(f'Visual screening response format invalid; retrying ({attempt + 1}/{format_attempts}) on the same four images.')
     if not isinstance(result, dict):
         raise ValueError('Visual screening must return a JSON object.')
     results = result.get('images')

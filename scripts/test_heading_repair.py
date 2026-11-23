@@ -38,10 +38,11 @@ class HeadingRepair(unittest.TestCase):
         self.assertEqual([s['content'] for s in result['sections']], [s['content'] for s in before['sections']])
         self.assertEqual([s['h2'] for s in result['sections']], headings)
 
-    def test_other_quality_errors_do_not_trigger_repair(self):
-        result = repair(self.client('{}'), self.data, self.errors + ['unsafe claim'], 'focus')
-        self.assertIs(result, self.data)
-        self.assertEqual(self.calls, 0)
+    def test_heading_repair_runs_alongside_other_quality_errors(self):
+        headings = ['What is focus?', 'What are the signs?', 'Why does it happen?', 'How can you act?', 'How can you manage focus daily?']
+        result = repair(self.client(json.dumps({'headings': headings})), self.data, self.errors + ['unsafe claim'], 'focus')
+        self.assertEqual(self.calls, 1)
+        self.assertEqual([s['h2'] for s in result['sections']], headings)
 
     def test_invalid_or_unrepairable_response_fails_closed(self):
         for answer in ['not json', '{"cannot_repair":true}', '{"headings":["one"]}', '[]', RuntimeError('offline')]:

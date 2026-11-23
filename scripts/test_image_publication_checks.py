@@ -67,9 +67,17 @@ class ImagePublicationChecks(unittest.TestCase):
         self.assertEqual(self.calls, 2)
 
     def test_invalid_response_stays_blocked(self):
-        with self.assertRaisesRegex(ValueError, 'invalid JSON twice'):
+        with self.assertRaisesRegex(ValueError, 'invalid JSON after 4 attempts'):
             screen_publication_images(self.raw_client(['not JSON']), self.paths, 'worry')
-        self.assertEqual(self.calls, 2)
+        self.assertEqual(self.calls, 4)
+
+    def test_recoverable_json_format_is_validated_normally(self):
+        # The repair path may restore a missing final brace, but all four explicit
+        # approvals still have to be present and schema-valid afterwards.
+        raw = json.dumps(self.approved())[:-1]
+        client = self.raw_client([raw])
+        self.assertEqual(screen_publication_images(client, self.paths, 'worry'), self.approved())
+        self.assertEqual(self.calls, 1)
 
     def test_rejection_is_not_retried(self):
         data = self.approved()
