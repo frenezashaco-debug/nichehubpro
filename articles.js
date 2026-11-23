@@ -203,26 +203,26 @@ const ARTICLES = [
   },
   {
     "slug": "the-psychology-behind-why-deadlines-make-you-more-productive",
-    "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Assumptions",
+    "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Reality Checks",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Oct 2026",
-    "read_time": "3",
-    "excerpt": "The psychology behind why deadlines make you more productive: test five planning assumptions without treating time pressure as a guarantee of speed or quality.",
+    "read_time": "5",
+    "excerpt": "Explore the psychology behind why deadlines make you more productive with scope checks, a practical planning card, and room to review quality before delivery.",
     "image": "images/the-psychology-behind-why-deadlines-make-you-more-productive.jpg",
     "alt": "Woman seated at a laptop beside a wall clock",
     "pins": [
       {
-        "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Assumptions",
-        "description": "The psychology behind why deadlines make you more productive: test five planning assumptions without treating time pressure as a guarantee of speed or quality."
+        "title": "The Psychology Behind Why Deadlines Make You More Productive: 5 Reality Checks",
+        "description": "Explore the psychology behind why deadlines make you more productive with scope checks, a practical planning card, and room to review quality before delivery."
       },
       {
         "title": "Planning checklist: The Psychology Behind Why Deadlines Make You More Productive",
-        "description": "The psychology behind why deadlines make you more productive: test five planning assumptions without treating time pressure as a guarantee of speed or quality."
+        "description": "Explore the psychology behind why deadlines make you more productive with scope checks, a practical planning card, and room to review quality before delivery."
       },
       {
         "title": "Practical questions: The Psychology Behind Why Deadlines Make You More Productive",
-        "description": "The psychology behind why deadlines make you more productive: test five planning assumptions without treating time pressure as a guarantee of speed or quality."
+        "description": "Explore the psychology behind why deadlines make you more productive with scope checks, a practical planning card, and room to review quality before delivery."
       }
     ]
   },
@@ -702,26 +702,26 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-productivity-habits-for-entrepreneurs",
-    "title": "Healthy Productivity Habits for Entrepreneurs: 5 Capacity Agreements",
+    "title": "Healthy Productivity Habits for Entrepreneurs: 9 Boundaries Worth Testing",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Aug 2026",
-    "read_time": "4",
-    "excerpt": "Healthy productivity habits for entrepreneurs: review capacity agreements about workload, availability and help without promising profit or burnout prevention.",
+    "read_time": "5",
+    "excerpt": "Try healthy productivity habits for entrepreneurs with nine practical boundaries, a weekly capacity check, and a plan for sharing work without health promises.",
     "image": "images/healthy-productivity-habits-for-entrepreneurs.jpg",
     "alt": "Woman seated at a laptop beside a glass",
     "pins": [
       {
-        "title": "Healthy Productivity Habits for Entrepreneurs: 5 Capacity Agreements",
-        "description": "Healthy productivity habits for entrepreneurs: review capacity agreements about workload, availability and help without promising profit or burnout prevention."
+        "title": "Healthy Productivity Habits for Entrepreneurs: 9 Boundaries Worth Testing",
+        "description": "Try healthy productivity habits for entrepreneurs with nine practical boundaries, a weekly capacity check, and a plan for sharing work without health promises."
       },
       {
         "title": "Planning checklist: Healthy Productivity Habits for Entrepreneurs",
-        "description": "Healthy productivity habits for entrepreneurs: review capacity agreements about workload, availability and help without promising profit or burnout prevention."
+        "description": "Try healthy productivity habits for entrepreneurs with nine practical boundaries, a weekly capacity check, and a plan for sharing work without health promises."
       },
       {
         "title": "Practical questions: Healthy Productivity Habits for Entrepreneurs",
-        "description": "Healthy productivity habits for entrepreneurs: review capacity agreements about workload, availability and help without promising profit or burnout prevention."
+        "description": "Try healthy productivity habits for entrepreneurs with nine practical boundaries, a weekly capacity check, and a plan for sharing work without health promises."
       }
     ]
   },
@@ -1826,26 +1826,26 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-habits-for-busy-people",
-    "title": "Healthy Habits for Busy People: 5 Ways to Address a Practical Care Obstacle",
+    "title": "Healthy Habits for Busy People: 7 Flexible Choices for Difficult Weeks",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
-    "read_time": "3",
-    "excerpt": "Healthy habits for busy people: consider practical obstacles and appropriate support without assuming a tiny habit replaces time, access or individual advice.",
+    "read_time": "5",
+    "excerpt": "Explore healthy habits for busy people with seven adaptable choices, a normal-day and hard-day planning card, and realistic ways to remove everyday obstacles.",
     "image": "images/healthy-habits-for-busy-people.jpg",
     "alt": "Woman in a grey sweater looking down",
     "pins": [
       {
-        "title": "Healthy Habits for Busy People: 5 Ways to Address a Practical Care Obstacle",
-        "description": "Healthy habits for busy people: consider practical obstacles and appropriate support without assuming a tiny habit replaces time, access or individual advice."
+        "title": "Healthy Habits for Busy People: 7 Flexible Choices for Difficult Weeks",
+        "description": "Explore healthy habits for busy people with seven adaptable choices, a normal-day and hard-day planning card, and realistic ways to remove everyday obstacles."
       },
       {
         "title": "Planning checklist: Healthy Habits for Busy People",
-        "description": "Healthy habits for busy people: consider practical obstacles and appropriate support without assuming a tiny habit replaces time, access or individual advice."
+        "description": "Explore healthy habits for busy people with seven adaptable choices, a normal-day and hard-day planning card, and realistic ways to remove everyday obstacles."
       },
       {
         "title": "Practical questions: Healthy Habits for Busy People",
-        "description": "Healthy habits for busy people: consider practical obstacles and appropriate support without assuming a tiny habit replaces time, access or individual advice."
+        "description": "Explore healthy habits for busy people with seven adaptable choices, a normal-day and hard-day planning card, and realistic ways to remove everyday obstacles."
       }
     ]
   },
@@ -3426,26 +3426,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-increase-energy-naturally",
-    "title": "How to Increase Energy Naturally: 5 Requests for Practical Support",
+    "title": "How to Increase Energy Naturally: 5 Checks When You Feel Worn Out",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
-    "read_time": "4",
-    "excerpt": "How to increase energy naturally: prepare five support requests about ordinary needs and fatigue without a promised boost, a detox or an exercise prescription.",
+    "read_time": "5",
+    "excerpt": "Learn how to increase energy naturally with five practical routine checks, a fatigue appointment worksheet, and clear limits on what everyday habits can fix.",
     "image": "images/how-to-increase-energy-naturally.jpg",
     "alt": "Woman holding a glass in a kitchen",
     "pins": [
       {
-        "title": "How to Increase Energy Naturally: 5 Requests for Practical Support",
-        "description": "How to increase energy naturally: prepare five support requests about ordinary needs and fatigue without a promised boost, a detox or an exercise prescription."
+        "title": "How to Increase Energy Naturally: 5 Checks When You Feel Worn Out",
+        "description": "Learn how to increase energy naturally with five practical routine checks, a fatigue appointment worksheet, and clear limits on what everyday habits can fix."
       },
       {
         "title": "Planning checklist: How to Increase Energy Naturally",
-        "description": "How to increase energy naturally: prepare five support requests about ordinary needs and fatigue without a promised boost, a detox or an exercise prescription."
+        "description": "Learn how to increase energy naturally with five practical routine checks, a fatigue appointment worksheet, and clear limits on what everyday habits can fix."
       },
       {
         "title": "Practical questions: How to Increase Energy Naturally",
-        "description": "How to increase energy naturally: prepare five support requests about ordinary needs and fatigue without a promised boost, a detox or an exercise prescription."
+        "description": "Learn how to increase energy naturally with five practical routine checks, a fatigue appointment worksheet, and clear limits on what everyday habits can fix."
       }
     ]
   },
@@ -3626,26 +3626,26 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-feel-calm-instantly",
-    "title": "How to Feel Calm Instantly: 5 Support Requests Before a Pressured Event",
+    "title": "How to Feel Calm Instantly: 5 Gentle Options Without a Quick-Fix Promise",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
-    "read_time": "3",
-    "excerpt": "How to feel calm instantly: prepare five useful support requests before a pressured event without promising immediate relief or making calm a performance test.",
+    "read_time": "6",
+    "excerpt": "Explore how to feel calm instantly without quick-fix promises: five gentle coping options, a personal support card, and signs that call for medical attention.",
     "image": "images/how-to-feel-calm-instantly.jpg",
     "alt": "Woman seated on the floor beside a curtain",
     "pins": [
       {
-        "title": "How to Feel Calm Instantly: 5 Support Requests Before a Pressured Event",
-        "description": "How to feel calm instantly: prepare five useful support requests before a pressured event without promising immediate relief or making calm a performance test."
+        "title": "How to Feel Calm Instantly: 5 Gentle Options Without a Quick-Fix Promise",
+        "description": "Explore how to feel calm instantly without quick-fix promises: five gentle coping options, a personal support card, and signs that call for medical attention."
       },
       {
         "title": "Planning checklist: How to Feel Calm Instantly",
-        "description": "How to feel calm instantly: prepare five useful support requests before a pressured event without promising immediate relief or making calm a performance test."
+        "description": "Explore how to feel calm instantly without quick-fix promises: five gentle coping options, a personal support card, and signs that call for medical attention."
       },
       {
         "title": "Practical questions: How to Feel Calm Instantly",
-        "description": "How to feel calm instantly: prepare five useful support requests before a pressured event without promising immediate relief or making calm a performance test."
+        "description": "Explore how to feel calm instantly without quick-fix promises: five gentle coping options, a personal support card, and signs that call for medical attention."
       }
     ]
   },

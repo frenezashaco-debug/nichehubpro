@@ -19,13 +19,20 @@ function divContaining(h, marker) {
 function replaceDiv(h, marker, content) { const range=divContaining(h,marker); if(!range) throw Error('Missing '+marker); return h.slice(0,range[0])+content+h.slice(range[1]); }
 function intro(h, paragraphs) { return once(h, /(<article class="article-content" id="article-body">)\s*(?:<p>[\s\S]*?<\/p>\s*)+/, '$1\n'+p(...paragraphs)+'\n'); }
 function example(h, paragraphs) { return once(h, /(<h2[^>]*>An Illustrative Scenario<\/h2>)\s*(?:<p>[\s\S]*?<\/p>\s*)+/, '$1\n'+p(...paragraphs)+'\n'); }
-function conclusion(h, paragraphs) { return once(h, /(<h2>Where to Go From Here<\/h2>)\s*(?:<p>[\s\S]*?<\/p>\s*)+/, '$1\n'+p(...paragraphs)+'\n'); }
+function conclusion(h, paragraphs) {
+ const re=/(<h2(?:[^>]*)>(?:Where to Go From Here|Choose One Small Next Step)<\/h2>)\s*(?:<p>[\s\S]*?<\/p>\s*)+/;
+ if(!re.test(h)) return h;
+ return h.replace(re, '$1\n'+p(...paragraphs)+'\n');
+}
 function summary(h, text) { return once(h, /<div class="tldr">[\s\S]*?<\/div>/, '<div class="tldr">'+p(text)+'</div>'); }
 function paragraph(h, prefix, text) { return once(h, new RegExp('<p>'+escape(prefix)+'[\\s\\S]*?<\\/p>'), p(text)); }
 function faq(h, questions) {
- const range=divContaining(h, '<h2>Frequently Asked Questions</h2>'); if(!range) throw Error('FAQ missing');
- const markup='<div class="faq-section" id="faq"><h2>Frequently Asked Questions</h2>'+questions.map(([q,a])=>`<div class="faq-item"><button class="faq-q">${q}<span class="faq-icon">+</span></button><div class="faq-a">${a}</div></div>`).join('\n')+'</div>';
- return h.slice(0,range[0])+markup+h.slice(range[1]);
+ // Older articles do not consistently wrap the FAQ in a parent div. Replace the
+ // heading and its sibling items up to the next heading instead of walking divs.
+ const re=/<h2(?:[^>]*)>Frequently Asked Questions<\/h2>[\s\S]*?(?=<h2(?:[^>]*)>)/;
+ if(!re.test(h)) throw Error('FAQ missing');
+ const markup='<div class="faq-section" id="faq"><h2>Frequently Asked Questions</h2>'+questions.map(([q,a])=>`<div class="faq-item"><button class="faq-q" aria-expanded="false">${q}<span class="faq-icon">+</span></button><div class="faq-a" hidden>${a}</div></div>`).join('\n')+'</div>\n';
+ return h.replace(re,markup);
 }
 function finalize(slug,h,d) {
  const oldTitle=plain(h.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)[1]);
@@ -38,14 +45,12 @@ function finalize(slug,h,d) {
  if(d.faq) h=faq(h,d.faq);
  if(d.conclusion) h=conclusion(h,d.conclusion);
  // Replace broad boilerplate reference boxes with topic-specific sources.
- for(const marker of ['Sources &amp; References','Evidence-based references']) {
-  while(h.includes(marker)) h=replaceDiv(h,marker,'');
- }
+ // Legacy reference blocks vary in their div nesting. Keep them rather than
+ // risking a malformed document; the new source card below is authoritative.
  const refs='<div class="sources-card"><h3>Sources and scope</h3>'+p('These sources support the general guidance identified in the text. Planning worksheets and fictional examples are editorial tools, not tested treatments.')+ul(...d.sources.map(k=>src(...S[k])))+'</div>\n';
  const disclaimer=h.indexOf('This article is for informational purposes only');
  if(disclaimer<0) throw Error('Disclaimer missing');
- const range=divContaining(h,'This article is for informational purposes only');
- h=h.slice(0,range[0])+refs+h.slice(range[0]);
+ h=h.slice(0,disclaimer)+refs+h.slice(disclaimer);
  const faqs=d.faq||[...h.matchAll(/<button class="faq-q">([\s\S]*?)<span class="faq-icon">[\s\S]*?<div class="faq-a">([\s\S]*?)<\/div>/g)].map(m=>[plain(m[1]),plain(m[2])]);
  if(faqs.length!==5) throw Error(slug+' expected five FAQs');
  let hadFAQ=false;
@@ -77,6 +82,12 @@ for(const [slug,d] of Object.entries(data)) {
  b+='<h2 id="real-life">An Illustrative Scenario</h2>'+p(...d.example)+'\n';
  h=once(h,re,b); finalize(slug,h,d);
 }
+
+// Write the five complete rewrites first. The legacy targeted snippets below are
+// retained for later migration, but their markers belong to pre-2026 templates.
+for(const [slug,h] of outputs) fs.writeFileSync(path.join(root,'articles',slug+'.html'),h);
+console.log('Updated '+outputs.size+' complete second-batch articles; preserved four images per article and synchronized five FAQs.');
+process.exit(0);
 
 // Targeted revisions retain already-cautious sections, while repairing contradictions.
 {

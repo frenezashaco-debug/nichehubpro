@@ -2,7 +2,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 const vm=require('node:vm');
 const root=path.resolve(__dirname,'..');
-const slugs=[...Object.keys(require('./second_batch_content.cjs').data),'foods-that-reduce-anxiety','natural-energy-boosters','why-hydration-affects-your-focus-more-than-you-think','how-to-build-energy-that-lasts-all-day-without-crashing','how-to-sleep-better-naturally'];
+const slugs=[...Object.keys(require('./second_batch_content.cjs').data)];
 const jsFile=path.join(root,'articles.js'), apiFile=path.join(root,'api/articles.json');
 const original=fs.readFileSync(jsFile,'utf8');
 const catalogue=vm.runInNewContext(original+';ARTICLES');
@@ -39,4 +39,4 @@ for(const slug of slugs){
 fs.writeFileSync(jsFile,original.slice(0,original.indexOf('const ARTICLES ='))+'const ARTICLES = '+JSON.stringify(catalogue,null,2)+';\n');
 fs.writeFileSync(apiFile,JSON.stringify(api,null,2)+'\n');
 fs.writeFileSync(path.join(root,'sitemap.xml'),sitemap);
-console.log('Synchronized ten article titles, summaries, read times, pin copy, and sitemap dates. No publication triggered.');
+console.log('Synchronized five complete second-batch article titles, summaries, read times, pin copy, and sitemap dates. No publication triggered.');
