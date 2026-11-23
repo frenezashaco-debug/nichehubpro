@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-structure-your-week-for-maximum-energy-and-output",
+    "title": "How to Structure Your Week for Maximum Energy and Output: 5 Practical Checks",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Nov 2026",
+    "read_time": "8",
+    "excerpt": "Learn how to structure your week for maximum energy and output with 5 practical checks for smarter weekly energy planning starting today. More practical tips.",
+    "image": "images/how-to-structure-your-week-for-maximum-energy-and-output.jpg",
+    "alt": "man planning weekly energy schedule at kitchen table",
+    "pins": [
+      {
+        "title": "How to Structure Your Week for Maximum Energy and Output",
+        "description": "Stop planning by deadline alone. Learning how to structure your week for maximum energy and output means matching hard tasks to your sharpest hours. Try the 5-check system this Sunday and see how different Monday feels. Save this for your next planning session."
+      },
+      {
+        "title": "Stop Letting Low-Energy Slots Swallow Your Best Work",
+        "description": "If your most demanding tasks keep landing in your most exhausted hours, your weekly structure may be the problem - not your effort. Weekly energy planning helps you place hard work where your focus is actually available. Read the full guide for 5 practical checks."
+      },
+      {
+        "title": "Try This Simple Weekly Energy Audit Before Next Monday",
+        "description": "A 10-minute Sunday habit of mapping your energy patterns can change how manageable your whole week feels. Weekly energy planning is about working with your natural rhythms, not fighting them. Pin this and use the 3-point audit in Check 5 this week."
+      }
+    ]
+  },
+  {
     "slug": "how-to-stay-emotionally-steady-during-high-pressure-weeks",
     "title": "How to Stay Emotionally Steady During High Pressure Weeks: 5 Practical Checks",
     "category": "Mental Wellness",
