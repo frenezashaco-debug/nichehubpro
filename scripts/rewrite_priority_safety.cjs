@@ -71,11 +71,15 @@ sources:[['https://www.nhlbi.nih.gov/health/sleep-deprivation/healthy-sleep-habi
 for(const [slug,d]of Object.entries(datasets)){
  const file=path.join(root,'articles',slug+'.html');let html=fs.readFileSync(file,'utf8');
  const match=html.match(/(<article\b[^>]*>)([\s\S]*?)(<\/article>)/i);if(!match)throw Error('Missing article');
- const original=match[2];const author=original.indexOf('<div class="author-block');if(author<0)throw Error('Missing author');
+ const original=match[2];
+ const faqStart=original.indexOf('<h2>Frequently Asked Questions</h2>');
+ if(faqStart<0)throw Error('Missing FAQ section');
  const images=[...original.matchAll(/<img\b[^>]*>/gi)].map(m=>m[0]);
- let tail=original.slice(author).replace(/<img\b[^>]*>/gi,'');
+ // Current templates keep the FAQ, author and disclosure directly in the
+ // article rather than in an author block. Preserve that tail safely.
+ let tail=original.slice(faqStart).replace(/<img\b[^>]*>/gi,'');
  let i=0;tail=tail.replace(/(<div class="faq-a">)[\s\S]*?<\/div>/g,(_,start)=>start+d.faq[i++]+'</div>');if(i!==5)throw Error('FAQ count');
- tail=tail.replace(/(<h2>Where to Go From Here<\/h2>)[\s\S]*?(?=\s*<div)/,'$1'+d.conclusion.map(p).join(''));
+ tail=tail.replace(/(<h2(?:[^>]*)>(?:Where to Go From Here|Choose One Small Next Step)<\/h2>)[\s\S]*?(?=\s*<h2[^>]*>Sources|\s*<p>Written|\s*<p>This article)/,'$1'+d.conclusion.map(p).join(''));
  const sources='<div class="sources-box"><h2>Sources &amp; References</h2>'+p('These sources support the specific points named below. Planning examples and worksheets are editorial suggestions, not clinical tests or reported outcomes.')+ul(d.sources.map(([url,label,scope])=>`<a href="${url}" target="_blank" rel="noopener">${label}</a>: ${scope}`))+'</div>';
  // Remove obsolete reference panels instead of retaining contradictory attribution.
  tail=tail.replace(/<div[^>]*>\s*<p[^>]*>Sources &amp; References<\/p>[\s\S]*?<\/ul>\s*<\/div>/, '');
@@ -85,7 +89,9 @@ for(const [slug,d]of Object.entries(datasets)){
  let imageIndex=0;
  body+=d.sections.map(([heading,paras,items],n)=>`<h2 id="sec-${n+1}">${heading}</h2>`+paras.map(p).join('')+ul(items)+(n<images.length?images[imageIndex++]:'')).join('');
  while(imageIndex<images.length)body+=images[imageIndex++];
- body+='<h2>An Illustrative Scenario</h2>'+d.example.map(p).join('')+tail+sources;
+ const disclaimerIndex=tail.indexOf('This article is for informational purposes only');
+ if(disclaimerIndex<0)throw Error('Missing disclaimer');
+ body+='<h2>An Illustrative Scenario</h2>'+d.example.map(p).join('')+tail.slice(0,disclaimerIndex)+sources+tail.slice(disclaimerIndex);
  html=html.replace(match[0],match[1]+body+match[3]);
  html=html.replace(/("dateModified"\s*:\s*")[^"]+/, '$12026-10-14');
  if((html.match(/<img\b/g)||[]).length!==(fs.readFileSync(file,'utf8').match(/<img\b/g)||[]).length)throw Error('Image loss');
