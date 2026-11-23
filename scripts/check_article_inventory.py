@@ -16,7 +16,9 @@ for path in sorted((ROOT/'articles').glob('*.html')):
     body=re.search(r'<article\b[^>]*>(.*?)</article>',source,re.S)[1]
     meta=html.unescape(re.search(r'<meta name="description" content="([^"]*)"',source)[1])
     assert 155<=len(meta)<=160,(slug,'meta',len(meta));counts['descriptions_155_to_160']+=1
-    assert '\u2014' not in html.unescape(source),(slug,'em dash')
+    decoded=html.unescape(source)
+    assert not re.search(r'[\u2013\u2014\u2015]',decoded),(slug,'dash punctuation')
+    assert not re.search(r'\b(?:watermark|ai-generated|generated illustration)\b',plain(body),re.I),(slug,'image disclosure or watermark text')
     assert not re.search(r'\bdelve\b',plain(body),re.I),(slug,'prohibited wording')
     documents=[json.loads(x) for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)]
     faq=next(x for x in documents if x.get('@type')=='FAQPage')
