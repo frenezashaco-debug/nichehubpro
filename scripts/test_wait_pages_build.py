@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import Mock
-from wait_pages_build import wait_for_build
+from wait_pages_build import wait_for_build, wait_for_managed_deployment
 
 
 class PagesTests(unittest.TestCase):
@@ -26,6 +26,24 @@ class PagesTests(unittest.TestCase):
         session = self.session([{'commit': 'old', 'status': 'built'}])
         with self.assertRaises(RuntimeError):
             wait_for_build(session, 'https://example.test/pages', 'new', 1, Mock())
+
+    def test_waits_for_managed_pages_deployment_for_exact_commit(self):
+        session = self.session([
+            {'workflow_runs': []},
+            {'workflow_runs': [
+                {'name': 'pages build and deployment', 'status': 'in_progress', 'head_sha': 'new'},
+                {'name': 'pages build and deployment', 'status': 'completed', 'conclusion': 'success', 'head_sha': 'new'},
+            ]},
+        ])
+        wait_for_managed_deployment(session, 'https://example.test', 'new', 2, Mock())
+        self.assertEqual(session.get.call_count, 2)
+
+    def test_failed_managed_pages_deployment_blocks_distribution(self):
+        session = self.session([{'workflow_runs': [
+            {'name': 'pages build and deployment', 'status': 'completed', 'conclusion': 'failure', 'head_sha': 'new'},
+        ]}])
+        with self.assertRaises(RuntimeError):
+            wait_for_managed_deployment(session, 'https://example.test', 'new', 1, Mock())
 
 
 if __name__ == '__main__':

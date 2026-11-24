@@ -25,8 +25,34 @@ def wait_for_build(session, base, sha, attempts=60, sleep=time.sleep):
     raise RuntimeError('Timed out waiting for the publication commit to deploy.')
 
 
+def wait_for_managed_deployment(session, repository_base, sha, attempts=60, sleep=time.sleep):
+    """Wait for the Pages workflow that GitHub starts for this exact commit."""
+    for _ in range(attempts):
+        response = session.get(
+            repository_base + '/actions/runs',
+            params={'head_sha': sha, 'per_page': 100},
+            timeout=30,
+        )
+        response.raise_for_status()
+        runs = response.json().get('workflow_runs', [])
+        pages_runs = [
+            run for run in runs
+            if run.get('head_sha') == sha and 'pages' in run.get('name', '').lower()
+        ]
+        for run in pages_runs:
+            if run.get('status') != 'completed':
+                continue
+            if run.get('conclusion') == 'success':
+                print('GitHub Pages deployed commit ' + sha)
+                return
+            raise RuntimeError('GitHub Pages deployment failed; inspect its workflow log.')
+        sleep(15)
+    raise RuntimeError('Timed out waiting for the managed Pages deployment.')
+
+
 def main():
-    base = 'https://api.github.com/repos/' + os.environ['GITHUB_REPOSITORY'] + '/pages'
+    repository_base = 'https://api.github.com/repos/' + os.environ['GITHUB_REPOSITORY']
+    base = repository_base + '/pages'
     sha = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
     session = requests.Session()
     session.mount('https://', HTTPAdapter(max_retries=Retry(
@@ -38,7 +64,8 @@ def main():
     response.raise_for_status()
     settings = response.json()
     if settings.get('build_type', 'legacy') != 'legacy':
-        raise RuntimeError('Pages uses a custom workflow; run its deployment before distribution.')
+        wait_for_managed_deployment(session, repository_base, sha)
+        return
     if settings.get('source', {}).get('branch') != 'main':
         raise RuntimeError('Pages source is not main; refusing to build the wrong branch.')
     wait_for_build(session, base, sha)
