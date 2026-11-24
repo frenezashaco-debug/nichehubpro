@@ -74,7 +74,7 @@ Your audience: real people dealing with stress, anxiety, and overthinking.
 Your job: write human, motivational, deeply useful articles — NOT robotic AI content.
 
 ABSOLUTE WRITING RULES (never break these):
-- NEVER use em dashes (—) or en dashes (–) anywhere. Do not substitute spaced hyphens for sentence punctuation. Rewrite with commas, colons, or separate sentences. Reserve hyphens for compound words such as "low-pressure" and "two-minute". Use semicolons only between closely related complete sentences, never to introduce examples or bracket phrases.
+- NEVER use dash characters in reader-facing copy. Rewrite compound words as separate words, and use commas, colons, or separate sentences instead of dash punctuation. Use semicolons only between closely related complete sentences, never to introduce examples or bracket phrases.
 - NEVER use the word "delve" or "delves" or "delving"
 - NEVER write "In today's fast-paced world", "It is important to note", "In conclusion", "In summary", "To summarize"
 - NEVER use: Furthermore, Moreover, Additionally, Consequently, Subsequently, Henceforth, Herein, Nevertheless, Notwithstanding
@@ -815,6 +815,7 @@ QUALITY_BLOCKLIST = (
     r"rewire(?:s|d)? your brain|will fix|will heal|medical emergency)\b"
 )
 EM_DASH_PATTERN = re.compile(r"[\u2013\u2014\u2015]|&(?:mdash|ndash);|&#(?:8211|8212|8213);|&#x(?:2013|2014|2015);", re.IGNORECASE)
+WORD_HYPHEN_PATTERN = re.compile(r"(?<=[A-Za-z])[-\u2010-\u2015](?=[A-Za-z])")
 AI_CLICHE_PATTERN = re.compile(
     r"\b(?:in today's fast-paced world|it is important to note|in conclusion|"
     r"in summary|to summarize|delv(?:e|es|ing)|game-changer|unlock your potential)\b",
@@ -969,6 +970,8 @@ def validate_article_quality(data, primary_kw, cornerstone=False):
                 )
     if EM_DASH_PATTERN.search(article_text):
         errors.append("contains an em dash or en dash")
+    if WORD_HYPHEN_PATTERN.search(article_text):
+        errors.append("contains a hyphenated word; rewrite it as separate words")
     if AI_CLICHE_PATTERN.search(article_text):
         errors.append("contains a banned AI-style phrase")
 
@@ -1014,7 +1017,8 @@ def fit_meta_description(meta, primary_kw):
 def sanitize_generated_copy(value):
     """Remove a small set of overpromising words before editorial review."""
     if isinstance(value, str):
-        value = EM_DASH_PATTERN.sub("-", value)
+        value = EM_DASH_PATTERN.sub(" ", value)
+        value = WORD_HYPHEN_PATTERN.sub(" ", value)
         value = re.sub(r"\binstantly\b", "quickly", value, flags=re.IGNORECASE)
         value = re.sub(r"\binstant\b", "quick", value, flags=re.IGNORECASE)
         return value

@@ -108,7 +108,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Oct 2026",
     "read_time": "5",
-    "excerpt": "How to protect your mental energy like a finite resource: review five demands and support needs without treating a metaphor as a measurable brain-fuel budget.",
+    "excerpt": "How to protect your mental energy like a finite resource: review five demands and support needs without treating a metaphor as a measurable brain fuel budget.",
     "image": "images/how-to-protect-your-mental-energy-like-a-finite-resource.jpg",
     "alt": "Man seated at a table holding a mug",
     "pins": [
@@ -158,7 +158,7 @@ const ARTICLES = [
     "cat_slug": "productivity",
     "date": "Oct 2026",
     "read_time": "5",
-    "excerpt": "How willpower works and why it runs out: examine five evidence questions before treating self-control as a fuel tank or blaming an afternoon depletion point.",
+    "excerpt": "How willpower works and why it runs out: examine five evidence questions before treating self control as a fuel tank or blaming an afternoon depletion point.",
     "image": "images/how-willpower-works-and-why-it-runs-out.jpg",
     "alt": "Man looking down while holding a mug",
     "pins": [
@@ -183,7 +183,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Oct 2026",
     "read_time": "5",
-    "excerpt": "Why your brain craves routine even when you resist it: examine five usefulness checks without assuming a repeated action is necessary, healthy or hard-wired.",
+    "excerpt": "Why your brain craves routine even when you resist it: examine five usefulness checks without assuming a repeated action is necessary, healthy or hard wired.",
     "image": "images/why-your-brain-craves-routine-even-when-you-resist-it.jpg",
     "alt": "Man seated beside a window holding a mug",
     "pins": [
@@ -328,12 +328,12 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-train-your-brain-for-longer-attention-spans",
-    "title": "How to Train Your Brain for Longer Attention Spans: 5 Task-Practice Checks",
+    "title": "How to Train Your Brain for Longer Attention Spans: 5 Task Practice Checks",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Sep 2026",
     "read_time": "5",
-    "excerpt": "How to train your brain for longer attention spans: review five task-practice checks without confusing better task performance with a general attention gain.",
+    "excerpt": "How to train your brain for longer attention spans: review five task practice checks without confusing better task performance with a general attention gain.",
     "image": "images/how-to-train-your-brain-for-longer-attention-spans.jpg",
     "alt": "Woman reading a book beside a window",
     "pins": []
@@ -357,7 +357,7 @@ const ARTICLES = [
     "cat_slug": "productivity",
     "date": "Sep 2026",
     "read_time": "5",
-    "excerpt": "The science of habit formation explained simply: compare five useful distinctions, examine a cue and action, and review barriers without a fixed-day promise.",
+    "excerpt": "The science of habit formation explained simply: compare five useful distinctions, examine a cue and action, and review barriers without a fixed day promise.",
     "image": "images/the-science-of-habit-formation-explained-simply.jpg",
     "alt": "young woman journaling at kitchen table for habit formation",
     "pins": [
@@ -627,12 +627,12 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-a-stress-resistant-morning-routine",
-    "title": "How to Build a Stress-Resistant Morning Routine: 5 Practical Checks",
+    "title": "How to Build a Stress Resistant Morning Routine: 5 Practical Checks",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Aug 2026",
     "read_time": "8",
-    "excerpt": "How to build a stress-resistant morning routine with 5 practical checks for calmer starts, flexible planning, and support during difficult weekdays at home.",
+    "excerpt": "How to build a stress resistant morning routine with 5 practical checks for calmer starts, flexible planning, and support during difficult weekdays at home.",
     "image": "images/how-to-build-a-stress-resistant-morning-routine.jpg",
     "alt": "Woman seated calmly on a rug beside a sofa in soft morning light",
     "pins": [
@@ -752,12 +752,12 @@ const ARTICLES = [
   },
   {
     "slug": "best-self-improvement-systems-explained",
-    "title": "Best Self-Improvement Systems Explained: 5 Scope Decisions",
+    "title": "Best Self Improvement Systems Explained: 5 Scope Decisions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Aug 2026",
     "read_time": "5",
-    "excerpt": "Best self-improvement systems explained: make five decisions before starting a personal project, keeping time, support and the right to change course visible.",
+    "excerpt": "Best self improvement systems explained: make five decisions before starting a personal project, keeping time, support and the right to change course visible.",
     "image": "images/best-self-improvement-systems-explained.jpg",
     "alt": "Woman in a grey hoodie writing in a notebook",
     "pins": [
@@ -777,12 +777,12 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-design-the-perfect-daily-routine",
-    "title": "How to Design the Perfect Daily Routine: 5 Real-Life Constraints",
+    "title": "How to Design the Perfect Daily Routine: 5 Real Life Constraints",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jul 2026",
     "read_time": "5",
-    "excerpt": "How to design the perfect daily routine: check five real-life constraints before arranging activities, without assuming one schedule suits every person or day.",
+    "excerpt": "How to design the perfect daily routine: check five real life constraints before arranging activities, without assuming one schedule suits every person or day.",
     "image": "images/how-to-design-the-perfect-daily-routine.jpg",
     "alt": "Woman writing in a notebook beside a mug",
     "pins": [
@@ -1152,12 +1152,12 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-catastrophic-thinking",
-    "title": "How to Stop Catastrophic Thinking: 5 Questions About a Worst-Case Prediction",
+    "title": "How to Stop Catastrophic Thinking: 5 Questions About a Worst Case Prediction",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
     "read_time": "5",
-    "excerpt": "How to stop catastrophic thinking: examine five parts of a worst-case prediction and choose a proportionate next response without forcing a positive conclusion.",
+    "excerpt": "How to stop catastrophic thinking: examine five parts of a worst case prediction and choose a proportionate next response without forcing a positive conclusion.",
     "image": "images/how-to-stop-catastrophic-thinking.jpg",
     "alt": "Woman holding a pen over an open notebook",
     "pins": [
@@ -1202,12 +1202,12 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-focus-better-at-work",
-    "title": "How to Focus Better at Work: 5 Task-Clarity Questions",
+    "title": "How to Focus Better at Work: 5 Task Clarity Questions",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
     "read_time": "5",
-    "excerpt": "How to focus better at work: ask five task-clarity questions about the result, inputs and decisions needed before adding a focus routine to an already busy day.",
+    "excerpt": "How to focus better at work: ask five task clarity questions about the result, inputs and decisions needed before adding a focus routine to an already busy day.",
     "image": "images/how-to-focus-better-at-work.jpg",
     "alt": "Woman typing at a laptop by a window",
     "pins": [
@@ -1232,7 +1232,7 @@ const ARTICLES = [
     "cat_slug": "productivity",
     "date": "May 2026",
     "read_time": "5",
-    "excerpt": "Best productivity systems explained: use five review questions about purpose, access and upkeep before trying a method, without relying on a brain-type label.",
+    "excerpt": "Best productivity systems explained: use five review questions about purpose, access and upkeep before trying a method, without relying on a brain type label.",
     "image": "images/best-productivity-systems-explained.jpg",
     "alt": "Woman writing in a notebook beside a mug",
     "pins": [
@@ -1307,7 +1307,7 @@ const ARTICLES = [
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
     "read_time": "5",
-    "excerpt": "Why you feel tired all the time needs an individual explanation. Prepare five points about symptoms, sleep and health changes without self-diagnosing online.",
+    "excerpt": "Why you feel tired all the time needs an individual explanation. Prepare five points about symptoms, sleep and health changes without self diagnosing online.",
     "image": "images/why-you-feel-tired-all-the-time.jpg",
     "alt": "Young woman with tea feeling tired in morning light",
     "pins": [
@@ -1427,7 +1427,7 @@ const ARTICLES = [
   },
   {
     "slug": "daily-self-care-routine",
-    "title": "Daily Self-Care Routine: 7 Ways to Match Care to a Real Need",
+    "title": "Daily Self Care Routine: 7 Ways to Match Care to a Real Need",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
@@ -1482,7 +1482,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
     "read_time": "5",
-    "excerpt": "How to improve mental clarity: prepare five details about changes in thinking and daily activities without self-diagnosing brain fog or delaying medical help.",
+    "excerpt": "How to improve mental clarity: prepare five details about changes in thinking and daily activities without self diagnosing brain fog or delaying medical help.",
     "image": "images/how-to-improve-mental-clarity.jpg",
     "alt": "Woman writing in a notebook at a table",
     "pins": [
@@ -1657,7 +1657,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
     "read_time": "5",
-    "excerpt": "How to build confidence through discipline: ask five questions about one attempt without equating completion, confidence or self-worth with a daily streak.",
+    "excerpt": "How to build confidence through discipline: ask five questions about one attempt without equating completion, confidence or self worth with a daily streak.",
     "image": "images/how-to-build-confidence-through-discipline.jpg",
     "alt": "Woman in a grey hoodie writing in a notebook",
     "pins": [
@@ -1677,7 +1677,7 @@ const ARTICLES = [
   },
   {
     "slug": "healthy-routine-for-working-from-home",
-    "title": "Healthy Routine for Working From Home: 5 Shared-Space Agreements",
+    "title": "Healthy Routine for Working From Home: 5 Shared Space Agreements",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
@@ -1801,7 +1801,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-self-sabotaging",
-    "title": "How to Stop Self-Sabotaging: 5 Questions About a Repeated Setback",
+    "title": "How to Stop Self Sabotaging: 5 Questions About a Repeated Setback",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Jul 2026",
@@ -1856,7 +1856,7 @@ const ARTICLES = [
     "cat_slug": "healthy-lifestyle",
     "date": "Jul 2026",
     "read_time": "5",
-    "excerpt": "Explore healthy habits for busy people with seven adaptable choices, a normal-day and hard-day planning card, and realistic ways to remove everyday obstacles.",
+    "excerpt": "Explore healthy habits for busy people with seven adaptable choices, a normal day and hard day planning card, and realistic ways to remove everyday obstacles.",
     "image": "images/healthy-habits-for-busy-people.jpg",
     "alt": "Woman in a grey sweater looking down",
     "pins": [
@@ -1881,7 +1881,7 @@ const ARTICLES = [
     "cat_slug": "productivity",
     "date": "Jul 2026",
     "read_time": "5",
-    "excerpt": "Best productivity apps in 2026: compare five documented tool roles before choosing, with direct source links and no false hands-on scores or universal winner.",
+    "excerpt": "Best productivity apps in 2026: compare five documented tool roles before choosing, with direct source links and no false hands on scores or universal winner.",
     "image": "images/best-productivity-apps-in-2026-clean-v2.jpg",
     "alt": "Man holding a tablet at a wooden table",
     "pins": [
@@ -2031,7 +2031,7 @@ const ARTICLES = [
     "cat_slug": "productivity",
     "date": "Jul 2026",
     "read_time": "5",
-    "excerpt": "Focus vs motivation explained: use questions to separate interest, task clarity and access without treating a delay as a diagnosis or a brain-training test.",
+    "excerpt": "Focus vs motivation explained: use questions to separate interest, task clarity and access without treating a delay as a diagnosis or a brain training test.",
     "image": "images/focus-vs-motivation-explained.jpg",
     "alt": "Woman seated at a laptop with a hand near her chin",
     "pins": [
@@ -2131,7 +2131,7 @@ const ARTICLES = [
     "cat_slug": "productivity",
     "date": "Jun 2026",
     "read_time": "5",
-    "excerpt": "How to avoid distractions while working: compare five practical arrangements, preserve urgent contact and use a return note, without fixed focus-time promises.",
+    "excerpt": "How to avoid distractions while working: compare five practical arrangements, preserve urgent contact and use a return note, without fixed focus time promises.",
     "image": "images/how-to-avoid-distractions-while-working.jpg",
     "alt": "woman working focused at laptop during morning focus session",
     "pins": [
@@ -2156,7 +2156,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
     "read_time": "5",
-    "excerpt": "Why you feel mentally drained: describe five changes in activities, timing and demands for a support conversation without assuming a depleted brain-energy tank.",
+    "excerpt": "Why you feel mentally drained: describe five changes in activities, timing and demands for a support conversation without assuming a depleted brain energy tank.",
     "image": "images/why-you-feel-mentally-drained.jpg",
     "alt": "Woman seated on a bed looking at her hands",
     "pins": [
@@ -2181,7 +2181,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
     "read_time": "4",
-    "excerpt": "Learn how to deal with stress at work through five steps for discussing demands, resources and support, with practical examples and limits of self-help advice.",
+    "excerpt": "Learn how to deal with stress at work through five steps for discussing demands, resources and support, with practical examples and limits of self help advice.",
     "image": "images/how-to-deal-with-stress-at-work.jpg",
     "alt": "Woman taking a calming breath at her office desk during work stress",
     "pins": [
@@ -2256,7 +2256,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Jun 2026",
     "read_time": "5",
-    "excerpt": "How to recover from emotional burnout: make five support decisions about exhaustion, demands and care without a self-diagnosis or a fixed recovery timetable.",
+    "excerpt": "How to recover from emotional burnout: make five support decisions about exhaustion, demands and care without a self diagnosis or a fixed recovery timetable.",
     "image": "images/how-to-recover-from-emotional-burnout.jpg",
     "alt": "Woman seated on a garden bench",
     "pins": [
@@ -2326,12 +2326,12 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-self-discipline",
-    "title": "How to Build Self-Discipline: 5 Checks Before Making a Promise",
+    "title": "How to Build Self Discipline: 5 Checks Before Making a Promise",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "Jun 2026",
     "read_time": "5",
-    "excerpt": "How to build self-discipline: make five checks before a promise so its purpose, scope and dependencies remain realistic without punishment or a perfect streak.",
+    "excerpt": "How to build self discipline: make five checks before a promise so its purpose, scope and dependencies remain realistic without punishment or a perfect streak.",
     "image": "images/how-to-build-self-discipline.jpg",
     "alt": "Woman in a light brown top seated indoors",
     "pins": [
@@ -2531,7 +2531,7 @@ const ARTICLES = [
     "cat_slug": "healthy-lifestyle",
     "date": "May 2026",
     "read_time": "5",
-    "excerpt": "Healthy habits to start this week: ask suitability questions before one change without a universal two-minute rule, a weekly outcome target or a habit deadline.",
+    "excerpt": "Healthy habits to start this week: ask suitability questions before one change without a universal two minute rule, a weekly outcome target or a habit deadline.",
     "image": "images/healthy-habits-to-start-this-week.jpg",
     "alt": "Woman in a cream top seated indoors",
     "pins": [
@@ -2576,7 +2576,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-build-habits-that-actually-stick",
-    "title": "How to Build Habits That Actually Stick: 5 Repeat-Opportunity Checks",
+    "title": "How to Build Habits That Actually Stick: 5 Repeat Opportunity Checks",
     "category": "Productivity",
     "cat_slug": "productivity",
     "date": "May 2026",
@@ -2631,7 +2631,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "May 2026",
     "read_time": "5",
-    "excerpt": "Why you have no motivation anymore needs a look at what changed. Note five discussion points about interest, daily tasks and support, without self-diagnosis.",
+    "excerpt": "Why you have no motivation anymore needs a look at what changed. Note five discussion points about interest, daily tasks and support, without self diagnosis.",
     "image": "images/why-you-have-no-motivation-anymore.jpg",
     "alt": "Woman staring out window looking unmotivated and tired at home",
     "pins": [
@@ -3001,12 +3001,12 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-reset-your-life",
-    "title": "How to Reset Your Life: 5 Commitment-Sorting Decisions",
+    "title": "How to Reset Your Life: 5 Commitment Sorting Decisions",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
     "read_time": "5",
-    "excerpt": "How to reset your life: use five commitment-sorting decisions before making broad changes, keeping essential needs, agreements and consequences clearly visible.",
+    "excerpt": "How to reset your life: use five commitment sorting decisions before making broad changes, keeping essential needs, agreements and consequences clearly visible.",
     "image": "images/how-to-reset-your-life.jpg",
     "alt": "Woman seated beside a window holding an open book",
     "pins": [
@@ -3256,7 +3256,7 @@ const ARTICLES = [
     "cat_slug": "healthy-lifestyle",
     "date": "Apr 2026",
     "read_time": "5",
-    "excerpt": "Sleep routine tips for a workable evening: review seven decisions about interruptions, comfort and wind-down, and know when ongoing sleep problems need care.",
+    "excerpt": "Sleep routine tips for a workable evening: review seven decisions about interruptions, comfort and wind down, and know when ongoing sleep problems need care.",
     "image": "images/sleep-routine-tips.jpg",
     "alt": "Woman reading in bed during evening sleep routine ritual",
     "pins": [
@@ -3276,12 +3276,12 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-stop-panic-attacks",
-    "title": "How to Stop Panic Attacks: 5 Steps for Support and Follow-Up",
+    "title": "How to Stop Panic Attacks: 5 Steps for Support and Follow Up",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
     "read_time": "5",
-    "excerpt": "How to stop panic attacks has no universal instant answer. Use five steps for safety, your agreed care plan and follow-up, without assuming symptoms are panic.",
+    "excerpt": "How to stop panic attacks has no universal instant answer. Use five steps for safety, your agreed care plan and follow up, without assuming symptoms are panic.",
     "image": "images/how-to-stop-panic-attacks.jpg",
     "alt": "Young woman meditating calmly during a peaceful morning at home",
     "pins": [
@@ -3651,12 +3651,12 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-feel-calm-instantly",
-    "title": "How to Feel Calm Instantly: 5 Gentle Options Without a Quick-Fix Promise",
+    "title": "How to Feel Calm Instantly: 5 Gentle Options Without a Quick Fix Promise",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
     "read_time": "6",
-    "excerpt": "Explore how to feel calm instantly without quick-fix promises: five gentle coping options, a personal support card, and signs that call for medical attention.",
+    "excerpt": "Explore how to feel calm instantly without quick fix promises: five gentle coping options, a personal support card, and signs that call for medical attention.",
     "image": "images/how-to-feel-calm-instantly.jpg",
     "alt": "Woman seated on the floor beside a curtain",
     "pins": [
@@ -3681,7 +3681,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
     "read_time": "5",
-    "excerpt": "How to stop worrying: choose among five routes for one recurring concern, separating action from uncertainty without promising a worry-free day or full control.",
+    "excerpt": "How to stop worrying: choose among five routes for one recurring concern, separating action from uncertainty without promising a worry free day or full control.",
     "image": "images/how-to-stop-worrying.jpg",
     "alt": "Woman holding a pen over an open notebook",
     "pins": [
@@ -3731,7 +3731,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
     "read_time": "5",
-    "excerpt": "How to deal with anxiety daily: use five support decisions to plan care, practical help and follow-up without a mandatory routine or a deadline for improvement.",
+    "excerpt": "How to deal with anxiety daily: use five support decisions to plan care, practical help and follow up without a mandatory routine or a deadline for improvement.",
     "image": "images/how-to-deal-with-anxiety-daily.jpg",
     "alt": "person practicing breathing exercise at desk in morning dealing with daily anxiety",
     "pins": [
@@ -3751,7 +3751,7 @@ const ARTICLES = [
   },
   {
     "slug": "how-to-relax-your-mind",
-    "title": "How to Relax Your Mind: 5 Checks for a Low-Pressure Rest Activity",
+    "title": "How to Relax Your Mind: 5 Checks for a Low Pressure Rest Activity",
     "category": "Mental Wellness",
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
@@ -3781,7 +3781,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
     "read_time": "5",
-    "excerpt": "How to reduce stress naturally: use five practical support responses to a real demand without supplements, a cortisol claim or a promise of a stress-free life.",
+    "excerpt": "How to reduce stress naturally: use five practical support responses to a real demand without supplements, a cortisol claim or a promise of a stress free life.",
     "image": "images/how-to-reduce-stress-naturally.jpg",
     "alt": "Woman standing outdoors with her eyes closed",
     "pins": [
@@ -3806,7 +3806,7 @@ const ARTICLES = [
     "cat_slug": "mental-wellness",
     "date": "Apr 2026",
     "read_time": "4",
-    "excerpt": "Learn how to stop negative thoughts by examining one recurring interpretation, considering evidence and choosing a practical response, with self-help limits.",
+    "excerpt": "Learn how to stop negative thoughts by examining one recurring interpretation, considering evidence and choosing a practical response, with self help limits.",
     "image": "images/how-to-stop-negative-thoughts.jpg",
     "alt": "Woman pausing during journaling to interrupt negative thoughts with relief",
     "pins": [

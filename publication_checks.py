@@ -6,6 +6,9 @@ from pathlib import Path
 from urllib.parse import unquote, urljoin, urlparse
 
 
+WORD_HYPHEN = re.compile(r'(?<=[A-Za-z])[-\u2010-\u2015](?=[A-Za-z])')
+
+
 class Links(HTMLParser):
     def __init__(self, markup):
         super().__init__(convert_charrefs=True)
@@ -93,6 +96,8 @@ def publication_blockers(data, root):
         text = html.unescape(re.sub(r'<[^>]+>', ' ', markup))
         if '\u2014' in text:
             errors.append('em dash is prohibited, including encoded HTML entities')
+        if WORD_HYPHEN.search(text):
+            errors.append('hyphenated word is prohibited in reader-facing copy')
         if re.search(r'Images in this article are AI-generated illustrations', text, re.I):
             errors.append('unwanted image boilerplate in article copy')
         # Narrow confirmed regressions, not a comprehensive semantic classifier.
