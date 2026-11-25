@@ -6,6 +6,7 @@
   if (window.nicheHubConsentInitialized) return;
   window.nicheHubConsentInitialized = true;
   var key = 'nhp-analytics-choice-v1';
+  var isPrivacyPolicy = /^\/privacy\/?$/.test(window.location.pathname) || window.location.pathname === '/privacy.html';
   var externalOptOut = window['ga-disable-' + id] === true;
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
@@ -32,7 +33,8 @@
     allowed = allowed && !externalOptOut;
     window['ga-disable-' + id] = !allowed;
     window.gtag('consent', 'update', { analytics_storage: allowed ? 'granted' : 'denied' });
-    if (!allowed || window.nicheHubAnalyticsLoaded) return;
+    // The privacy policy remains accessible without loading optional measurement.
+    if (!allowed || isPrivacyPolicy || window.nicheHubAnalyticsLoaded) return;
     window.nicheHubAnalyticsLoaded = true;
     window.gtag('js', new Date());
     window.gtag('config', id);
