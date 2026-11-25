@@ -23,6 +23,12 @@ class PublicationChecks(unittest.TestCase):
     def test_valid_paths(self):
         self.assertEqual(self.check(intro='<a href="../articles/focus.html">Focus</a><a href="/about/">About</a>', internal_links=[{'slug': 'focus'}]), [])
 
+    def test_known_unrelated_reference_is_blocked(self):
+        for url in ['https://www.cdc.gov/sleep/about/index.html', 'https://www.nhs.uk/live-well/eat-well/']:
+            errors = self.check(references=[{'url': url, 'claim': 'Physical activity can support health.'}])
+            self.assertTrue(any('unrelated sleep or diet' in e for e in errors))
+        self.assertFalse(any('unrelated sleep or diet' in e for e in self.check(references=[{'url': 'https://www.cdc.gov/sleep/about/index.html', 'claim': 'Sleep supports health.'}])))
+
     def test_rendered_editorial_contract(self):
         data = dict(title='Focus: 5 Practical Checks', sections=[
             {'content': f'<p><strong>Check {i}:</strong> Choose a useful action.</p>' +

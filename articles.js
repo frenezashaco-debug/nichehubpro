@@ -28,26 +28,26 @@ const ARTICLES = [
   },
   {
     "slug": "why-active-recovery-matters-more-than-rest-days",
-    "title": "Why Active Recovery Matters More Than Rest Days: 5 Practical Checks",
+    "title": "Why Active Recovery and Rest Days Both Matter: 5 Practical Checks",
     "category": "Healthy Lifestyle",
     "cat_slug": "healthy-lifestyle",
     "date": "Nov 2026",
     "read_time": "8",
-    "excerpt": "Why active recovery matters more than rest days explained in 5 practical checks. Discover active recovery benefits and whether gentle movement beats full rest.",
+    "excerpt": "Explore active recovery and rest days with five practical checks, evidence limits, and guidance for choosing an approach that fits your needs and circumstances.",
     "image": "images/why-active-recovery-matters-more-than-rest-days.jpg",
     "alt": "man walking on tree lined path during active recovery morning",
     "pins": [
       {
         "title": "How to Use Active Recovery Instead of Full Rest Days",
-        "description": "Why active recovery matters more than rest days is something many people overlook. Gentle movement on off days can support circulation and reduce stiffness without wearing you out. Read the full guide for 5 practical checks to find what works for you."
+        "description": "Explore five practical checks for choosing gentle movement or rest, with attention to comfort and the limits of recovery evidence."
       },
       {
         "title": "Stop Spending Rest Days Feeling Heavy and Stiff",
-        "description": "If full rest days leave you feeling worse than before, active recovery may be worth trying. Light walking, stretching, or easy cycling can make a noticeable difference to how your body feels by the next morning. Discover the 5 checks to get it right."
+        "description": "Some people prefer gentle movement on a recovery day. Explore five checks and learn when rest or professional advice may be appropriate."
       },
       {
         "title": "Try This Simple Active Recovery Habit This Week",
-        "description": "Active recovery benefits are real, but only when you keep the intensity genuinely low. A 20 to 30 minute easy walk is enough to get started. Use these 5 practical checks to decide whether active recovery or full rest is right for your off days."
+        "description": "Explore how a gentle walk might fit your routine, alongside rest and practical checks for individual circumstances."
       }
     ]
   },

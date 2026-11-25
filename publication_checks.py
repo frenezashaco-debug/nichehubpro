@@ -23,6 +23,15 @@ class Links(HTMLParser):
 def publication_blockers(data, root):
     root = Path(root).resolve()
     errors = []
+    # Narrow, evidence-based guard for known incorrect source pairings. This
+    # cannot establish that any other source supports its associated claim.
+    for reference in data.get('references', []):
+        url = str(reference.get('url', '')).rstrip('/').lower()
+        claim = str(reference.get('claim', '')).lower()
+        activity = re.search(r'\b(?:physical activity|exercise|movement)\b', claim)
+        if activity and (url == 'https://www.cdc.gov/sleep/about/index.html' or
+                         url == 'https://www.nhs.uk/live-well/eat-well'):
+            errors.append('reference claim about physical activity uses an unrelated sleep or diet page; verify and cite direct evidence')
     # Inspect rendered body content, not just the model's link inventory.
     sections = data.get('sections') or []
     body_fields = [str(data.get(k, '')) for k in ('intro', 'tldr', 'real_example', 'conclusion')]

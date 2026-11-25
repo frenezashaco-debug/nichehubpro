@@ -224,8 +224,10 @@ def build_user_prompt(primary_kw, secondary_kw, longtail_kw, category, existing_
         ),
         "Healthy Lifestyle": (
             "Use these verified direct pages where relevant: "
-            "https://www.cdc.gov/sleep/about/index.html ; "
+            "https://www.cdc.gov/physical-activity-basics/health-benefits/adults.html ; "
             "https://www.niddk.nih.gov/health-information/diet-nutrition/changing-habits-better-health ; "
+            "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/ ; "
+            "https://www.cdc.gov/sleep/about/index.html ; "
             "https://www.nhs.uk/live-well/eat-well/"
         ),
     }.get(category, "Use three direct pages from the approved source policy.")
@@ -277,7 +279,7 @@ REQUIREMENTS:
 - Cover image: unique realistic wellness photo prompt for this specific topic
 - Section images: 3 unique FLUX prompts in section_image_prompts (indexes 0, 2, 4). Each must show a DIFFERENT scene, person, and moment from each other and from the cover. Contextual to section content. No text, no logos, no signatures, and no watermarks.
 - References: 3-5 entries citing only these approved direct institutional or primary sources: CDC, NIMH, NCCIH, NIH, MedlinePlus, WHO, NHS, AHA, HHS, ODS, APA, PubMed, or PMC. Each claim must support something written in the article. Never make a precise numerical, causal, or clinical claim unless its direct source URL supports it. Use a direct official source URL only when you are certain it is accurate; otherwise omit the claim.
-- References: use only the exact direct URLs supplied in Source selection for this article. Never cite another domain, an organization homepage, a search result, a guessed URL, a social post, or a general publication page. If three supplied pages cannot support modest claims, return an empty references list and let the publisher reject the draft.
+- References: use only the exact direct URLs supplied in Source selection for this article. Match each specific claim to its actual page topic: sleep pages support sleep claims, diet pages support diet claims, and physical activity pages support activity claims only within their stated scope. Never infer biological mechanisms, comparative recovery outcomes, or individual needs from unrelated general guidance. Never cite another domain, an organization homepage, a search result, a guessed URL, a social post, or a general publication page. If three supplied pages cannot support modest claims, return an empty references list and let the publisher reject the draft.
 - Source selection for this article: {source_hints}. Return at least three references when these pages support claims in the article. Keep claims modest so each reference directly supports the wording.
 - Language safety: do not use absolute or medical promises such as "always", "never", "proven", "will fix", "will heal", "cure", "instant", "instantly", "guaranteed", or "rewire your brain" anywhere in the title, body, FAQ, example, or conclusion. Prefer precise language such as "may", "can support", "some people find", and "over time".
 - Image prompts: repeat the exact safeguards "No text, no logos, no watermarks" in every cover and section-image prompt.
