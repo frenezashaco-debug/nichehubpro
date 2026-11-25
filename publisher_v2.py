@@ -1014,18 +1014,22 @@ def fit_meta_description(meta, primary_kw):
     return candidate[:160].rstrip(" ,;:") + "."
 
 
-def sanitize_generated_copy(value):
+def sanitize_generated_copy(value, field=''):
     """Remove a small set of overpromising words before editorial review."""
     if isinstance(value, str):
-        value = EM_DASH_PATTERN.sub(" ", value)
-        value = WORD_HYPHEN_PATTERN.sub(" ", value)
-        value = re.sub(r"\binstantly\b", "quickly", value, flags=re.IGNORECASE)
-        value = re.sub(r"\binstant\b", "quick", value, flags=re.IGNORECASE)
-        return value
+        if field in ('slug', 'url', 'href'):
+            return value
+        parts = re.split(r'(<[^>]+>)', value)
+        for index in range(0, len(parts), 2):
+            parts[index] = EM_DASH_PATTERN.sub(" ", parts[index])
+            parts[index] = WORD_HYPHEN_PATTERN.sub(" ", parts[index])
+            parts[index] = re.sub(r"\binstantly\b", "quickly", parts[index], flags=re.IGNORECASE)
+            parts[index] = re.sub(r"\binstant\b", "quick", parts[index], flags=re.IGNORECASE)
+        return ''.join(parts)
     if isinstance(value, list):
-        return [sanitize_generated_copy(item) for item in value]
+        return [sanitize_generated_copy(item, field) for item in value]
     if isinstance(value, dict):
-        cleaned = {key: sanitize_generated_copy(item) for key, item in value.items()}
+        cleaned = {key: sanitize_generated_copy(item, key) for key, item in value.items()}
         if isinstance(cleaned.get("internal_links"), list):
             cleaned["internal_links"] = cleaned["internal_links"][:5]
         return cleaned

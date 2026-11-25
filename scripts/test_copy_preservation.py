@@ -1,5 +1,6 @@
 import ast
 import html
+import json
 from pathlib import Path
 import re
 import sys
@@ -17,22 +18,26 @@ class CopyPreservation(unittest.TestCase):
 
     def test_code_links_and_schema_preserved(self):
         text = '<a href="/articles/elevated-risk.html">Elevated risk</a><script type="application/ld+json">{"name":"significantly elevated"}</script>'
-        self.assertEqual(clean_ai_text(text), text)
+        cleaned = clean_ai_text(text)
+        self.assertIn('<a href="/articles/elevated-risk.html">Elevated risk</a>', cleaned)
+        schema = re.search(r'<script type="application/ld\+json">(.*?)</script>', cleaned, re.S)
+        self.assertEqual(json.loads(schema.group(1)), {'name': 'significantly elevated'})
 
     def test_dash_variants_and_explicit_bans(self):
         for dash in ['\u2014', '&mdash;', '&#8212;', '&#x2014;', '&#X2014;']:
-            self.assertEqual(clean_ai_text('<p>A' + dash + 'B</p>'), '<p>A-B</p>')
+            self.assertEqual(clean_ai_text('<p>A' + dash + 'B</p>'), '<p>A B</p>')
         self.assertNotIn('delve', clean_ai_text('<p>We delve into the plan.</p>'))
 
     def test_publisher_sanitizer_preserves_guarantee_for_rejection(self):
         # Extract only the pure sanitizer; never import publisher/config/secrets.
         tree = ast.parse((ROOT / 'publisher_v2.py').read_text(encoding='utf-8'))
         function = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == 'sanitize_generated_copy')
-        namespace = {'re': re, 'EM_DASH_PATTERN': re.compile(r'[\u2013\u2014\u2015]|&(?:mdash|ndash);|&#(?:8211|8212|8213);|&#x(?:2013|2014|2015);', re.I)}
+        namespace = {'re': re, 'EM_DASH_PATTERN': re.compile(r'[\u2013\u2014\u2015]|&(?:mdash|ndash);|&#(?:8211|8212|8213);|&#x(?:2013|2014|2015);', re.I), 'WORD_HYPHEN_PATTERN': re.compile(r'(?<=[A-Za-z])[-\u2010-\u2015](?=[A-Za-z])')}
         exec(compile(ast.Module(body=[function], type_ignores=[]), '<sanitizer>', 'exec'), namespace)
         sanitize = namespace['sanitize_generated_copy']
-        self.assertEqual(sanitize({'intro': 'A&#x2014;B'}), {'intro': 'A-B'})
+        self.assertEqual(sanitize({'intro': 'A&#x2014;B'}), {'intro': 'A B'})
         self.assertEqual(sanitize('guaranteed recovery'), 'guaranteed recovery')
+        self.assertEqual(sanitize({'slug': 'active-recovery', 'url': 'https://example.org/active-recovery', 'intro': '<a href="/active-recovery">stress-free</a>'}), {'slug': 'active-recovery', 'url': 'https://example.org/active-recovery', 'intro': '<a href="/active-recovery">stress free</a>'})
 
     def test_generator_requires_number_and_heading_order(self):
         tree = ast.parse((ROOT / 'publisher_v2.py').read_text(encoding='utf-8'))
@@ -42,6 +47,7 @@ class CopyPreservation(unittest.TestCase):
             '_visible_word_count': lambda _: 4000,
             '_prompt_has_no_text_safeguards': lambda _: True,
             'QUALITY_BLOCKLIST': r'(?!)', 'EM_DASH_PATTERN': re.compile(r'\u2014'),
+            'WORD_HYPHEN_PATTERN': re.compile(r'(?<=[A-Za-z])[-\u2010-\u2015](?=[A-Za-z])'),
             'AI_CLICHE_PATTERN': re.compile(r'(?!)'),
         }
         exec(compile(ast.Module(body=[function], type_ignores=[]), '<quality-validator>', 'exec'), namespace)
