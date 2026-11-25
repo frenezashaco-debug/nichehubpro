@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-to-build-mental-stamina-for-long-term-goals",
+    "title": "How to Build Mental Stamina for Long Term Goals: 5 Practical Checks",
+    "category": "Mental Wellness",
+    "cat_slug": "mental-wellness",
+    "date": "Nov 2026",
+    "read_time": "8",
+    "excerpt": "Learn how to build mental stamina for long term goals with 5 practical checks that support focus, resilience, and steady daily progress. More practical tips.",
+    "image": "images/how-to-build-mental-stamina-for-long-term-goals.jpg",
+    "alt": "Man writing in notebook to build mental stamina for long term goals",
+    "pins": [
+      {
+        "title": "How to Build Mental Stamina for Long Term Goals: 5 Practical Checks",
+        "description": "Struggling to stay consistent with a big goal? Mental stamina for long term goals is less about willpower and more about the conditions you create each day. These 5 practical checks may help you stay steady when motivation fades. Save this for your next slow week."
+      },
+      {
+        "title": "Stop Pushing Harder When Your Long Term Goal Feels Exhausting",
+        "description": "If your mental stamina for long term goals is running low, pushing harder is rarely the answer. Learn to spot the early signs of depletion and make one small adjustment before you stall completely. Read the full guide for 5 honest checks."
+      },
+      {
+        "title": "Try This Two Week Daily Experiment to Support Your Mental Stamina",
+        "description": "Building mental stamina for long term goals can start with something as simple as one sentence each evening. This small daily habit helps you spot patterns in your focus and energy before they become bigger problems. Tap to read the full 5-check guide."
+      }
+    ]
+  },
+  {
     "slug": "why-active-recovery-matters-more-than-rest-days",
     "title": "Why Active Recovery Matters More Than Rest Days: 5 Practical Checks",
     "category": "Healthy Lifestyle",
