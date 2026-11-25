@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "why-active-recovery-matters-more-than-rest-days",
+    "title": "Why Active Recovery Matters More Than Rest Days: 5 Practical Checks",
+    "category": "Healthy Lifestyle",
+    "cat_slug": "healthy-lifestyle",
+    "date": "Nov 2026",
+    "read_time": "8",
+    "excerpt": "Why active recovery matters more than rest days explained in 5 practical checks. Discover active recovery benefits and whether gentle movement beats full rest.",
+    "image": "images/why-active-recovery-matters-more-than-rest-days.jpg",
+    "alt": "man walking on tree lined path during active recovery morning",
+    "pins": [
+      {
+        "title": "How to Use Active Recovery Instead of Full Rest Days",
+        "description": "Why active recovery matters more than rest days is something many people overlook. Gentle movement on off days can support circulation and reduce stiffness without wearing you out. Read the full guide for 5 practical checks to find what works for you."
+      },
+      {
+        "title": "Stop Spending Rest Days Feeling Heavy and Stiff",
+        "description": "If full rest days leave you feeling worse than before, active recovery may be worth trying. Light walking, stretching, or easy cycling can make a noticeable difference to how your body feels by the next morning. Discover the 5 checks to get it right."
+      },
+      {
+        "title": "Try This Simple Active Recovery Habit This Week",
+        "description": "Active recovery benefits are real, but only when you keep the intensity genuinely low. A 20 to 30 minute easy walk is enough to get started. Use these 5 practical checks to decide whether active recovery or full rest is right for your off days."
+      }
+    ]
+  },
+  {
     "slug": "how-to-structure-your-week-for-maximum-energy-and-output",
     "title": "How to Structure Your Week for Maximum Energy and Output: 5 Practical Checks",
     "category": "Productivity",
