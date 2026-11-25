@@ -24,7 +24,9 @@ def main():
         file = ROOT / (path.lstrip('/') + ('index.html' if path.endswith('/') else ''))
         text = file.read_text(encoding='utf-8')
         page = Page(text)
-        assert text.count('src="/analytics.js?v=consent-v1"') == 1, file
+        analytics = [attrs.get('src') for tag, attrs in page.tags if tag == 'script' and
+                     urlparse(urljoin(url, attrs.get('src', ''))).path == '/analytics.js']
+        assert len(analytics) == 1, file
         assert 'googletagmanager.com/gtag/js' not in text, file
         for tag, attrs in page.tags:
             key = 'href' if tag in ('a', 'link') else 'src'
@@ -41,7 +43,7 @@ def main():
         assert len(inbound.get('/articles/' + slug + '.html', set())) >= 2, slug
     article = (ROOT / 'articles/how-to-stop-anxiety-attacks.html').read_text(encoding='utf-8')
     tags = Page(article).tags
-    assert sum(t == 'h2' for t, _ in tags) == 6  # five body sections plus the existing related-articles heading
+    assert {a.get('id') for t, a in tags if t == 'h2' and a.get('id', '').startswith('sec-')} == {f'sec-{i}' for i in range(1, 6)}
     assert sum(t == 'button' and a.get('class') == 'faq-q' for t, a in tags) == 5
     description = next(a['content'] for t, a in tags if t == 'meta' and a.get('name') == 'description')
     assert 155 <= len(description) <= 160

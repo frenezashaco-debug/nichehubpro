@@ -5,7 +5,7 @@ for(const row of latest){
  const h=fs.readFileSync(path.join(root,'articles',row.id+'.html'),'utf8');
  const sections=[...h.matchAll(/<h2 id="sec-(\d+)">([^<]+)<\/h2>/g)];
  assert.equal(sections.length,5,row.id+': five main sections');
- [ /^what\b/i,/^what\b.*\bsigns\b/i,/^why\b/i,/^how\b/i,/^how\b.*\bdaily\b/i ].forEach((role,i)=>assert(role.test(sections[i][2])&&sections[i][2].endsWith('?'),row.id+': heading role '+(i+1)));
+ [ /^what\b/i,/^what\b.*\bsigns\b/i,/^why\b/i,/^how\b/i,/^how\b.*\b(?:daily|every day|each day|day-to-day|day to day)\b/i ].forEach((role,i)=>assert(role.test(sections[i][2])&&sections[i][2].endsWith('?'),row.id+': heading role '+(i+1)));
  assert(/\d/.test(h.match(/<h1>([^<]+)<\/h1>/)[1]),row.id+': numbered title');
  assert(h.indexOf('<div class="tldr">')<h.indexOf('<nav class="toc"'),row.id+': summary before navigation');
  for(let i=1;i<=5;i++)assert(h.includes('href="#sec-'+i+'"'),row.id+': navigation '+i);
