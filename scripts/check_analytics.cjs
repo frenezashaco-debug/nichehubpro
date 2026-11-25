@@ -30,6 +30,15 @@ function run(disabled, saved, blockedStorage = false) {
   }
   const allow = elements.find(el => el.textContent === 'Allow analytics');
   const decline = elements.find(el => el.textContent === 'Decline analytics');
+  const ads = elements.find(el => el.textContent === 'Advertising privacy choices');
+  assert.equal(ads.hidden, true);
+  let revocations = 0;
+  window.googlefc.showRevocationMessage = () => { revocations++; };
+  window.__tcfapi = (_command, _version, callback) => callback({gdprApplies: true}, true);
+  window.googlefc.callbackQueue[0].CONSENT_API_READY();
+  assert.equal(ads.hidden, false);
+  ads.click();
+  assert.equal(revocations, 1);
   allow.click(); allow.click();
   assert.equal(appended.length, disabled ? 0 : 1);
   decline.click();

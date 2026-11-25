@@ -69,6 +69,24 @@
     var link = document.createElement('a');
     link.href = '/privacy/'; link.textContent = 'Privacy policy';
     panel.appendChild(link);
+    // Google exposes this only after its CMP is ready. It is separate from
+    // the site's Analytics choice and never grants advertising consent.
+    window.googlefc = window.googlefc || {};
+    window.googlefc.callbackQueue = window.googlefc.callbackQueue || [];
+    var adSettings = button('Advertising privacy choices', function () {
+      if (typeof window.googlefc.showRevocationMessage === 'function') {
+        panel.hidden = true;
+        window.googlefc.showRevocationMessage();
+      }
+    }, panel);
+    adSettings.hidden = true;
+    window.googlefc.callbackQueue.push({CONSENT_API_READY: function () {
+      if (typeof window.__tcfapi !== 'function') return;
+      window.__tcfapi('addEventListener', 2, function (data, success) {
+        adSettings.hidden = !(success && data && data.gdprApplies &&
+          typeof window.googlefc.showRevocationMessage === 'function');
+      });
+    }});
     document.body.appendChild(panel);
     panel.hidden = choice === 'granted' || choice === 'denied' || externalOptOut;
     var settings = button('Privacy choices', function () { panel.hidden = false; }, document.body);

@@ -33,6 +33,6 @@ for (const choice of [null, 'denied', 'granted']) {
   }
 }
 const articles = fs.readdirSync(path.join(root, 'articles')).filter(f => f.endsWith('.html'));
-for (const file of articles) assert.match(fs.readFileSync(path.join(root, 'articles', file), 'utf8'), /src="\/analytics\.js/);
+for (const file of articles) assert.match(fs.readFileSync(path.join(root, 'articles', file), 'utf8'), /src="(?:\/|\.\.\/)analytics\.js/);
 assert.match(fs.readFileSync(path.join(root, 'publisher_v2.py'), 'utf8'), /src="\/analytics\.js/);
 console.log(`PASS: ${articles.length} articles + generator share bootstrap; no duplicates, no automatic ad consent, Analytics opt-in preserved.`);
