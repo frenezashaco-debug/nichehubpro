@@ -8,7 +8,7 @@ def repair_fields(errors):
     """Use a partial patch when only length errors remain."""
     fields = set()
     for error in errors:
-        match = re.search(r'body paragraph exceeds 60 words in (intro|real_example|conclusion)\b', error)
+        match = re.search(r'body paragraph exceeds 60 words in (intro|tldr|real_example|conclusion)\b', error)
         if match:
             fields.add(match[1])
         elif re.search(r'article needs at least \d+ genuine words', error):
@@ -29,7 +29,7 @@ def repair_article(client, data, errors, validate, normalize, system_prompt):
                 'Return a JSON object containing ONLY these replacement fields: '
                 + ', '.join(sorted(fields)) + '. All other fields will be preserved exactly. '
                 'For intro/conclusion use exactly 3 newline-separated paragraphs, and for '
-                'real_example exactly 2. Target 35-45 words PER paragraph, never over 60. '
+                'real_example exactly 2. Keep tldr concise. Target 35-45 words PER paragraph, never over 60. '
                 'Retain the illustrative label and uncertainty. If sections is requested, '
                 'preserve all five sections, headings, links, labels and existing advice; '
                 'add at least 300 useful words of concrete task-specific instructions or '

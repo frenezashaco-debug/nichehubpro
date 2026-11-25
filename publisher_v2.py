@@ -936,7 +936,8 @@ def validate_article_quality(data, primary_kw, cornerstone=False):
         data.get("title", ""), data.get("intro", ""), data.get("tldr", ""),
         data.get("real_example", ""), data.get("conclusion", ""),
     ] + [section.get("content", "") for section in sections] + [str(item.get("question", "")) + " " + str(item.get("answer", "")) for item in faq]
-    article_text = " ".join(searchable_fields)
+    # Check reader-visible prose, not hyphens in HTML link destinations.
+    article_text = html.unescape(" ".join(re.sub(r"<[^>]+>", " ", str(field)) for field in searchable_fields))
     # Exempt only complete, explicit disclaimers. Never rewrite published copy
     # or mask a sentence such as 'not a cure, but it cures anxiety'.
     for field in searchable_fields:

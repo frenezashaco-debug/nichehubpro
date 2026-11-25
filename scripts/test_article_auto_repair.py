@@ -10,6 +10,7 @@ from article_auto_repair import repair_article, repair_fields
 
 class RepairTests(unittest.TestCase):
     def test_targeted_fields(self):
+        self.assertEqual(repair_fields(['body paragraph exceeds 60 words in tldr (69 words)']), {'tldr'})
         self.assertEqual(repair_fields(['body paragraph exceeds 60 words in real_example (71 words)',
                                        'article needs at least 1800 genuine words, got 1732']),
                          {'real_example', 'sections'})

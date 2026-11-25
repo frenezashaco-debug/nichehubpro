@@ -56,6 +56,10 @@ class CopyPreservation(unittest.TestCase):
                     'What is focus?', 'What are the signs?', 'Why does it vary?',
                     'How can you adjust?', 'How can you manage focus daily?']]}
         validate = namespace['validate_article_quality']
+        data['intro'] = '<a href="/articles/active-recovery.html">Active recovery</a>'
+        self.assertFalse(any('hyphenated word' in e for e in validate(data, 'Focus')))
+        data['intro'] = '<a href="/articles/active-recovery.html">Active-recovery</a>'
+        self.assertTrue(any('hyphenated word' in e for e in validate(data, 'Focus')))
         self.assertFalse(any('heading' in e or 'order' in e or 'title must' in e for e in validate(data, 'Focus')))
         for heading in [
             "How can you work with your brain's need for routine every day?",
