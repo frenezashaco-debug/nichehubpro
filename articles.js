@@ -2,6 +2,31 @@
 // Updated by publisher_v2.py on each publish
 const ARTICLES = [
   {
+    "slug": "how-high-performers-manage-energy-instead-of-time",
+    "title": "How High Performers Manage Energy Instead of Time: 5 Practical Checks",
+    "category": "Productivity",
+    "cat_slug": "productivity",
+    "date": "Nov 2026",
+    "read_time": "8",
+    "excerpt": "Discover how high performers manage energy instead of time with 5 practical checks. Shift your focus and work smarter starting today. Practical guide inside.",
+    "image": "images/how-high-performers-manage-energy-instead-of-time.jpg",
+    "alt": "Man writing in notebook managing energy instead of time at desk",
+    "pins": [
+      {
+        "title": "How High Performers Manage Energy Instead of Time: 5 Checks",
+        "description": "Most people track hours carefully and still feel drained by Wednesday. High performers manage energy instead of time by matching their best work to their peak capacity windows. Read these 5 practical checks and try the first one today."
+      },
+      {
+        "title": "Stop Filling Your Calendar and Start Managing Your Energy",
+        "description": "A packed schedule is not the same as a productive one. Energy management vs time management asks a different question: are you in the right state for the work you have planned? These 5 checks help you find out and shift your approach."
+      },
+      {
+        "title": "Try This One Daily Habit to Manage Energy Like a High Performer",
+        "description": "A brief end of day review asking just three questions can help you spot your personal energy patterns and plan smarter. This is how high performers manage energy instead of time, and it takes less than five minutes to start."
+      }
+    ]
+  },
+  {
     "slug": "how-to-build-mental-stamina-for-long-term-goals",
     "title": "How to Build Mental Stamina for Long Term Goals: 5 Practical Checks",
     "category": "Mental Wellness",
